@@ -218,35 +218,33 @@ IndexedDB. "Met" means she opened the card or it appeared in a class she built.
 
 ## 4. Screens
 
-Phone first; the layout also works on a laptop. Five tabs along the bottom:
+Redirected by Bowen on 6 October 2026 after the first slice: fewer tabs, no
+homework, anatomy first. Four tabs along the bottom:
 
-1. **Home (Hôm nay).** Review due today, "before class" quick links (the
-   sequence or script she used last), and one gentle line, not a streak.
-2. **Learn (Học).** Body Map, Pose Library, Philosophy & Meditation. The Body
-   Map is a front and back figure; tapping a region plays the word and opens
-   its term card with the plain phrase, the Vietnamese, an example cue and the
-   poses that use it. The Pose Library filters by style and family; a pose card
-   has the three names with audio, cues (each tappable), modifications and
-   props, muscles (linked to the Body Map), and "add to class".
-3. **Practice (Luyện).** Cue Coach (type or dictate, get the natural version
-   with Vietnamese explanations, hear it, save it), Teacher Talk (she practises
-   replying to a student's question, with a Vietnamese aside), Listen & Flow (a native voice cues a sequence while she
-   follows, with a big pause button), Class Builder (pick poses or a style, get a
-   script, rehearse from a teleprompter).
-4. **Review (Ôn).** Today's cards, a few minutes at a time. Quiet progress:
-   "words you know", nothing else.
-5. **Mine (Của tôi).** Phrasebook, saved classes, settings: language and support
-   level, voice choice, offline downloads, backup.
+1. **Poses (Tư thế).** The library, filtered by style. A pose card has the
+   three names with audio, cues (each tappable, saveable), breath, modifications
+   and props, safety notes, and the muscles and joints involved, each opening
+   its anatomy card.
+2. **Anatomy (Cơ thể).** The centre of the app. Three views: Muscles, Bones
+   and joints, Movements. The muscle figure is the OpenStax textbook drawing
+   (front and back, surface on one side and deep on the other) with the leader
+   lines removed and 48 traced tappable regions; the skeleton is the
+   public-domain LadyofHats vector with one group per bone. A searchable index
+   in English or Vietnamese sits under the figure, grouped by region. Each
+   card: real name with audio and stress, Latin where it differs, plain
+   teaching phrase with audio, standard and everyday Vietnamese, what it does,
+   where she feels it, three to five cues in context tagged Vinyasa, Yin or
+   Ashtanga, poses that work it and stretch it, the word's pronunciation trap
+   in Vietnamese, what lies beneath and what is nearby.
+3. **Speech (Luyện nói).** The Cue Coach, plus the lines she has saved.
+4. **Phrases (Câu nói).** Class talk by moment: welcoming, breath,
+   transitions, safety and adjustments, Yin holds, savasana, closing. Each line
+   in English and Vietnamese with audio, playable one by one or as a group.
 
-Every card has a small "Suggest a fix" link. Every English word or phrase plays
-on tap. The look: warm off-white, sage and clay accents, a serif for headings
-and a system sans for text, generous spacing, one primary action per screen.
-No confetti.
-
-**Support level** (in settings, changeable any time): *Full* shows Vietnamese
-first with English beneath; *Balanced* shows English first with Vietnamese
-beneath; *Light* shows English with Vietnamese on tap. The interface language
-itself is Vietnamese or English, separately.
+Removed: the Today screen, Review and the spaced-repetition scheduler, the
+"words you know" count, Listen & Flow, Class Builder and Teacher Talk (the
+last three may return later as tools, not as homework). Settings (language,
+support level, theme, backup) live behind a gear in each header.
 
 ## 5. Build order
 
