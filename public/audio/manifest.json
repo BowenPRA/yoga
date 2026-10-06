@@ -394,5 +394,35 @@
   "text": "tailbone",
   "kind": "term",
   "tokens": 38
+ },
+ "root-down__example": {
+  "hash": "434ad3142ddc",
+  "text": "Root down through the outer edge of your back foot.",
+  "kind": "example",
+  "tokens": 98
+ },
+ "lengthen": {
+  "hash": "cbaf7fcfa16a",
+  "text": "lengthen",
+  "kind": "term",
+  "tokens": 34
+ },
+ "draw-in": {
+  "hash": "9b135797220f",
+  "text": "draw in",
+  "kind": "term",
+  "tokens": 46
+ },
+ "draw-in__example": {
+  "hash": "54c89708c0ce",
+  "text": "Draw your belly in gently.",
+  "kind": "example",
+  "tokens": 75
+ },
+ "soften": {
+  "hash": "36b43b4f2a1e",
+  "text": "soften",
+  "kind": "term",
+  "tokens": 35
  }
 }

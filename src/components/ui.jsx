@@ -29,7 +29,7 @@ export function Header({ title, subtitle, back, right }) {
 }
 
 export function Card({ children, className = '', onClick, to }) {
-  const cls = `block rounded-2xl bg-paper border border-line shadow-card p-4 ${onClick || to ? 'active:scale-[0.99] transition-transform' : ''} ${className}`
+  const cls = `block min-w-0 rounded-2xl bg-paper border border-line shadow-card p-4 ${onClick || to ? 'active:scale-[0.99] transition-transform' : ''} ${className}`
   if (to) return <Link to={to} className={cls}>{children}</Link>
   if (onClick) return <button onClick={onClick} className={`${cls} w-full text-left`}>{children}</button>
   return <div className={cls}>{children}</div>

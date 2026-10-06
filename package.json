@@ -10,8 +10,9 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "api": "node api/dev-server.mjs",
     "audio": "python scripts/gen_audio.py",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "node scripts/build-pages.mjs",
+    "deploy": "gh-pages -d dist",
+    "build:pages": "node scripts/build-pages.mjs"
   },
   "dependencies": {
     "idb": "^8.0.3",

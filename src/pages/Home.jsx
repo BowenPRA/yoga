@@ -48,7 +48,7 @@ export default function Home() {
       </Card>
 
       <Section title={t.home.startHere}>
-        <div className="grid gap-2">
+        <div className="grid grid-cols-1 gap-2">
           <NavCard to="/learn/poses" title={t.home.poses} sub={t.learn.posesSub} icon={<PersonStanding size={22} />} />
           <NavCard to="/learn/body" title={t.home.body} sub={t.learn.bodySub} icon={<Leaf size={22} />} />
           <NavCard to="/practice/coach" title={t.home.coach} sub={t.practice.coachSub} icon={<Mic size={22} />} />

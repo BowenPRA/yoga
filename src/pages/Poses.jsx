@@ -19,14 +19,15 @@ export default function Poses() {
           <Chip key={s} active={style === s} onClick={() => setStyle(s)}>{t.poses[s]}</Chip>
         ))}
       </div>
-      <div className="grid gap-2">
+      <div className="grid grid-cols-1 gap-2">
         {list.map((p) => (
           <Card key={p.id} className="!p-0">
             <div className="flex items-center gap-3 p-4">
               <PlayButton id={`${p.id}__en`} size={40} />
               <Link to={`/learn/poses/${p.id}`} className="flex-1 min-w-0">
                 <div className="font-serif text-lg text-ink">{p.en}</div>
-                <div className="text-sm text-muted truncate">{p.sa} · {p.vi}</div>
+                <div className="text-sm text-muted">{p.sa}</div>
+                <div className="text-sm text-muted">{p.vi}</div>
                 <div className="mt-1 flex gap-1">
                   {p.styles.map((s) => (
                     <span key={s} className="rounded-full bg-sand px-2 py-0.5 text-[11px] text-muted">{t.poses[s]}</span>

@@ -7,7 +7,7 @@ export default function Practice() {
   return (
     <>
       <Header title={t.practice.title} />
-      <div className="grid gap-2">
+      <div className="grid grid-cols-1 gap-2">
         <NavCard to="/practice/coach" title={t.practice.coach} sub={t.practice.coachSub} icon={<Mic size={22} />} />
         <NavCard title={t.practice.talk} sub={t.practice.talkSub} icon={<MessageCircle size={22} />} soon />
         <NavCard title={t.practice.flow} sub={t.practice.flowSub} icon={<Headphones size={22} />} soon />
