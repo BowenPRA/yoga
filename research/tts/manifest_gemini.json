@@ -1,0 +1,447 @@
+[
+ {
+  "provider": "gem25pro-sulafat",
+  "model": "gemini-2.5-pro-preview-tts",
+  "voice": "Sulafat",
+  "sample": "warrior",
+  "file": "gem25pro-sulafat__warrior.wav",
+  "ok": true,
+  "mime": "audio/L16;codec=pcm;rate=24000",
+  "usage": {
+   "promptTokenCount": 68,
+   "candidatesTokenCount": 301,
+   "totalTokenCount": 369,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 68
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "AUDIO",
+     "tokenCount": 301
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "seconds": 11.9,
+  "audio_seconds": 12.1
+ },
+ {
+  "provider": "gem25pro-sulafat",
+  "model": "gemini-2.5-pro-preview-tts",
+  "voice": "Sulafat",
+  "sample": "savasana",
+  "file": "gem25pro-sulafat__savasana.wav",
+  "ok": true,
+  "mime": "audio/L16;codec=pcm;rate=24000",
+  "usage": {
+   "promptTokenCount": 61,
+   "candidatesTokenCount": 379,
+   "totalTokenCount": 440,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 61
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "AUDIO",
+     "tokenCount": 379
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "seconds": 16.7,
+  "audio_seconds": 15.2
+ },
+ {
+  "provider": "gem25pro-sulafat",
+  "model": "gemini-2.5-pro-preview-tts",
+  "voice": "Sulafat",
+  "sample": "sanskrit",
+  "file": "gem25pro-sulafat__sanskrit.wav",
+  "ok": true,
+  "mime": "audio/L16;codec=pcm;rate=24000",
+  "usage": {
+   "promptTokenCount": 121,
+   "candidatesTokenCount": 280,
+   "totalTokenCount": 401,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 121
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "AUDIO",
+     "tokenCount": 280
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "seconds": 11.1,
+  "audio_seconds": 11.2
+ },
+ {
+  "provider": "gem25pro-sulafat",
+  "model": "gemini-2.5-pro-preview-tts",
+  "voice": "Sulafat",
+  "sample": "pali",
+  "file": "gem25pro-sulafat__pali.wav",
+  "ok": true,
+  "mime": "audio/L16;codec=pcm;rate=24000",
+  "usage": {
+   "promptTokenCount": 59,
+   "candidatesTokenCount": 186,
+   "totalTokenCount": 245,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 59
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "AUDIO",
+     "tokenCount": 186
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "seconds": 8.7,
+  "audio_seconds": 7.5
+ },
+ {
+  "provider": "gem25pro-sulafat",
+  "model": "gemini-2.5-pro-preview-tts",
+  "voice": "Sulafat",
+  "sample": "vietnamese",
+  "file": "gem25pro-sulafat__vietnamese.wav",
+  "ok": true,
+  "mime": "audio/L16;codec=pcm;rate=24000",
+  "usage": {
+   "promptTokenCount": 51,
+   "candidatesTokenCount": 148,
+   "totalTokenCount": 199,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 51
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "AUDIO",
+     "tokenCount": 148
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "seconds": 7.4,
+  "audio_seconds": 5.9
+ },
+ {
+  "provider": "gem38-sulafat",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "sample": "warrior",
+  "file": "gem38-sulafat__warrior.wav",
+  "ok": true,
+  "mime": "audio/wav",
+  "usage": {
+   "input_tokens": 233,
+   "output_audio_tokens": 313
+  },
+  "seconds": 8.8,
+  "audio_seconds": 12.5
+ },
+ {
+  "provider": "gem38-sulafat",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "sample": "savasana",
+  "file": "gem38-sulafat__savasana.wav",
+  "ok": true,
+  "mime": "audio/wav",
+  "usage": {
+   "input_tokens": 229,
+   "output_audio_tokens": 472
+  },
+  "seconds": 11.4,
+  "audio_seconds": 18.9
+ },
+ {
+  "provider": "gem38-sulafat",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "sample": "sanskrit",
+  "file": "gem38-sulafat__sanskrit.wav",
+  "ok": true,
+  "mime": "audio/wav",
+  "usage": {
+   "input_tokens": 225,
+   "output_audio_tokens": 304
+  },
+  "seconds": 8.9,
+  "audio_seconds": 12.2
+ },
+ {
+  "provider": "gem38-sulafat",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "sample": "pali",
+  "file": "gem38-sulafat__pali.wav",
+  "ok": true,
+  "mime": "audio/wav",
+  "usage": {
+   "input_tokens": 217,
+   "output_audio_tokens": 209
+  },
+  "seconds": 6.7,
+  "audio_seconds": 8.4
+ },
+ {
+  "provider": "gem38-sulafat",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "sample": "vietnamese",
+  "file": "gem38-sulafat__vietnamese.wav",
+  "ok": true,
+  "mime": "audio/wav",
+  "usage": {
+   "input_tokens": 226,
+   "output_audio_tokens": 149
+  },
+  "seconds": 8.1,
+  "audio_seconds": 6.0
+ },
+ {
+  "provider": "gem38-achernar",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Achernar",
+  "sample": "warrior",
+  "file": "gem38-achernar__warrior.wav",
+  "ok": true,
+  "mime": "audio/wav",
+  "usage": {
+   "input_tokens": 233,
+   "output_audio_tokens": 340
+  },
+  "seconds": 9.2,
+  "audio_seconds": 13.6
+ },
+ {
+  "provider": "gem38-achernar",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Achernar",
+  "sample": "savasana",
+  "file": "gem38-achernar__savasana.wav",
+  "ok": true,
+  "mime": "audio/wav",
+  "usage": {
+   "input_tokens": 229,
+   "output_audio_tokens": 495
+  },
+  "seconds": 10.5,
+  "audio_seconds": 19.8
+ },
+ {
+  "provider": "gem38-achernar",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Achernar",
+  "sample": "sanskrit",
+  "file": "gem38-achernar__sanskrit.wav",
+  "ok": true,
+  "mime": "audio/wav",
+  "usage": {
+   "input_tokens": 225,
+   "output_audio_tokens": 266
+  },
+  "seconds": 7.7,
+  "audio_seconds": 10.6
+ },
+ {
+  "provider": "gem38-achernar",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Achernar",
+  "sample": "pali",
+  "file": "gem38-achernar__pali.wav",
+  "ok": true,
+  "mime": "audio/wav",
+  "usage": {
+   "input_tokens": 217,
+   "output_audio_tokens": 239
+  },
+  "seconds": 7.6,
+  "audio_seconds": 9.6
+ },
+ {
+  "provider": "gem38-achernar",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Achernar",
+  "sample": "vietnamese",
+  "file": "gem38-achernar__vietnamese.wav",
+  "ok": true,
+  "mime": "audio/wav",
+  "usage": {
+   "input_tokens": 226,
+   "output_audio_tokens": 132
+  },
+  "seconds": 6.2,
+  "audio_seconds": 5.3
+ },
+ {
+  "provider": "gem38-charon",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Charon",
+  "sample": "warrior",
+  "file": "gem38-charon__warrior.wav",
+  "ok": true,
+  "mime": "audio/wav",
+  "usage": {
+   "input_tokens": 291,
+   "output_audio_tokens": 360
+  },
+  "seconds": 8.8,
+  "audio_seconds": 14.4
+ },
+ {
+  "provider": "gem38-charon",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Charon",
+  "sample": "savasana",
+  "file": "gem38-charon__savasana.wav",
+  "ok": true,
+  "mime": "audio/wav",
+  "usage": {
+   "input_tokens": 287,
+   "output_audio_tokens": 452
+  },
+  "seconds": 11.2,
+  "audio_seconds": 18.1
+ },
+ {
+  "provider": "gem38-charon",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Charon",
+  "sample": "sanskrit",
+  "file": "gem38-charon__sanskrit.wav",
+  "ok": true,
+  "mime": "audio/wav",
+  "usage": {
+   "input_tokens": 283,
+   "output_audio_tokens": 291
+  },
+  "seconds": 8.6,
+  "audio_seconds": 11.6
+ },
+ {
+  "provider": "gem38-charon",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Charon",
+  "sample": "pali",
+  "file": "gem38-charon__pali.wav",
+  "ok": true,
+  "mime": "audio/wav",
+  "usage": {
+   "input_tokens": 275,
+   "output_audio_tokens": 246
+  },
+  "seconds": 7.2,
+  "audio_seconds": 9.8
+ },
+ {
+  "provider": "gem38-charon",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Charon",
+  "sample": "vietnamese",
+  "file": "gem38-charon__vietnamese.wav",
+  "ok": true,
+  "mime": "audio/wav",
+  "usage": {
+   "input_tokens": 284,
+   "output_audio_tokens": 137
+  },
+  "seconds": 6.7,
+  "audio_seconds": 5.5
+ },
+ {
+  "provider": "gem38lite-sulafat",
+  "model": "gemini-3.8-flash-lite-tts",
+  "voice": "Sulafat",
+  "sample": "warrior",
+  "file": "gem38lite-sulafat__warrior.wav",
+  "ok": true,
+  "mime": "audio/wav",
+  "usage": {
+   "input_tokens": 233,
+   "output_audio_tokens": 354
+  },
+  "seconds": 7.7,
+  "audio_seconds": 14.2
+ },
+ {
+  "provider": "gem38lite-sulafat",
+  "model": "gemini-3.8-flash-lite-tts",
+  "voice": "Sulafat",
+  "sample": "savasana",
+  "file": "gem38lite-sulafat__savasana.wav",
+  "ok": true,
+  "mime": "audio/wav",
+  "usage": {
+   "input_tokens": 229,
+   "output_audio_tokens": 390
+  },
+  "seconds": 9.5,
+  "audio_seconds": 15.6
+ },
+ {
+  "provider": "gem38lite-sulafat",
+  "model": "gemini-3.8-flash-lite-tts",
+  "voice": "Sulafat",
+  "sample": "sanskrit",
+  "file": "gem38lite-sulafat__sanskrit.wav",
+  "ok": true,
+  "mime": "audio/wav",
+  "usage": {
+   "input_tokens": 225,
+   "output_audio_tokens": 204
+  },
+  "seconds": 6.4,
+  "audio_seconds": 8.2
+ },
+ {
+  "provider": "gem38lite-sulafat",
+  "model": "gemini-3.8-flash-lite-tts",
+  "voice": "Sulafat",
+  "sample": "pali",
+  "file": "gem38lite-sulafat__pali.wav",
+  "ok": true,
+  "mime": "audio/wav",
+  "usage": {
+   "input_tokens": 217,
+   "output_audio_tokens": 215
+  },
+  "seconds": 7.1,
+  "audio_seconds": 8.6
+ },
+ {
+  "provider": "gem38lite-sulafat",
+  "model": "gemini-3.8-flash-lite-tts",
+  "voice": "Sulafat",
+  "sample": "vietnamese",
+  "file": "gem38lite-sulafat__vietnamese.wav",
+  "ok": true,
+  "mime": "audio/wav",
+  "usage": {
+   "input_tokens": 226,
+   "output_audio_tokens": 151
+  },
+  "seconds": 6.2,
+  "audio_seconds": 6.0
+ }
+]

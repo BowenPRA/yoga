@@ -1,0 +1,166 @@
+[
+ {
+  "cue": "warrior",
+  "model": "gemini-3.6-flash",
+  "seconds": 11.2,
+  "usage": {
+   "promptTokenCount": 382,
+   "candidatesTokenCount": 400,
+   "totalTokenCount": 2418,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 382
+    }
+   ],
+   "thoughtsTokenCount": 1636,
+   "serviceTier": "standard"
+  },
+  "result": {
+   "natural": "Bend your front knee, making sure it doesn't go past your toes. Keep your back leg straight and strong. Open your hips, and reach both arms parallel to the floor.",
+   "changes": [
+    {
+     "from": "Bend your knee front",
+     "to": "Bend your front knee",
+     "why_vi": "Trong tiếng Anh, tính từ chỉ vị trí 'front' cần đứng trước danh từ 'knee'."
+    },
+    {
+     "from": "straight strong",
+     "to": "straight and strong",
+     "why_vi": "Cần thêm từ nối 'and' giữa hai tính từ để câu văn tự nhiên và êm tai hơn."
+    },
+    {
+     "from": "two arm parallel with the floor",
+     "to": "both arms parallel to the floor",
+     "why_vi": "Dùng 'both arms' tự nhiên hơn 'two arm', nhớ có 's' số nhiều và đi với giới từ 'parallel to'."
+    }
+   ],
+   "pronunciation": [
+    {
+     "word": "arms",
+     "tip_vi": "Chú ý âm cuối /mz/ số nhiều, tránh đọc thành 'am'."
+    },
+    {
+     "word": "parallel",
+     "tip_vi": "Nhấn trọng âm vào âm tiết đầu tiên /ˈpær.ə.lel/."
+    },
+    {
+     "word": "straight",
+     "tip_vi": "Chú ý rèn cụm phụ âm /str/ ở đầu và bật rõ âm /t/ ở cuối."
+    }
+   ],
+   "praise_vi": "Lời hô của bạn rất rõ ràng, đi đúng các điểm định tuyến quan trọng nhất của Warrior II!"
+  }
+ },
+ {
+  "cue": "fold",
+  "model": "gemini-3.6-flash",
+  "seconds": 11.2,
+  "usage": {
+   "promptTokenCount": 383,
+   "candidatesTokenCount": 517,
+   "totalTokenCount": 2461,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 383
+    }
+   ],
+   "thoughtsTokenCount": 1561,
+   "serviceTier": "standard"
+  },
+  "result": {
+   "natural": "Breathe in, reach your arms up. Breathe out, fold forward, reach for the floor. If you can't, bend your knees a little, that's totally fine.",
+   "changes": [
+    {
+     "from": "Breath in, hand up",
+     "to": "Breathe in, reach your arms up",
+     "why_vi": "'Breath' là danh từ, động từ hít vào phải dùng 'breathe' (đọc âm i dài). Dùng 'arms' số nhiều thay vì 'hand' vì mình vươn cả hai cánh tay."
+    },
+    {
+     "from": "Breath out, fold down, touch the floor",
+     "to": "Breathe out, fold forward, reach for the floor",
+     "why_vi": "Giáo viên bản xứ thường dùng 'fold forward' (gập về trước) và 'reach for the floor' nghe tự nhiên hơn."
+    },
+    {
+     "from": "If cannot, bend knee a little, no problem",
+     "to": "If you can't, bend your knees a little, that's totally fine",
+     "why_vi": "Cần thêm chủ ngữ 'you' sau 'if', dùng 'knees' số nhiều, và 'that's totally fine' nghe lịch sự, tự nhiên hơn 'no problem'."
+    }
+   ],
+   "pronunciation": [
+    {
+     "word": "Breathe",
+     "tip_vi": "Phát âm là /briːð/ với âm 'i' dài, khác với danh từ 'breath' phát âm là /breθ/."
+    },
+    {
+     "word": "Knees",
+     "tip_vi": "Chữ 'k' là âm câm, đọc là /niːz/ và nhớ phát âm rõ âm 'z' ở cuối."
+    },
+    {
+     "word": "Floor",
+     "tip_vi": "Bật rõ cụm phụ âm /fl/ ở đầu từ và uốn lưỡi cho âm /r/ ở cuối."
+    }
+   ],
+   "praise_vi": "Câu hô của chị rất đúng nhịp hít thở, thông điệp rõ ràng và cho học viên lựa chọn biến thể rất chu đáo!"
+  }
+ },
+ {
+  "cue": "pigeon",
+  "model": "gemini-3.6-flash",
+  "seconds": 11.4,
+  "usage": {
+   "promptTokenCount": 411,
+   "candidatesTokenCount": 413,
+   "totalTokenCount": 1943,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 411
+    }
+   ],
+   "thoughtsTokenCount": 1119,
+   "serviceTier": "standard"
+  },
+  "result": {
+   "natural": "Now we'll move into Sleeping Swan. Bring your right leg forward, opening the hip. We'll stay here for three minutes, so relax and don't push too hard. If you feel any pain in your knee, you can place a pillow under your hip.",
+   "changes": [
+    {
+     "from": "we do the sleeping swan",
+     "to": "we'll move into Sleeping Swan",
+     "why_vi": "Giáo viên bản xứ hiếm khi nói 'do a pose'. Thay vào đó, dùng 'move into' hoặc 'come into' nghe nhẹ nhàng và mang tính dẫn dắt hơn trong Yin yoga."
+    },
+    {
+     "from": "Put the right leg in front",
+     "to": "Bring your right leg forward",
+     "why_vi": "Cụm từ 'bring... forward' tự nhiên hơn từ 'put' khi hướng dẫn di chuyển chân trong yoga."
+    },
+    {
+     "from": "don't push too much",
+     "to": "don't push too hard",
+     "why_vi": "Người bản xứ thường dùng 'push too hard' thay vì 'push too much' khi nhắc học viên không ép sức."
+    },
+    {
+     "from": "in the knee",
+     "to": "in your knee",
+     "why_vi": "Khi nói về bộ phận cơ thể của học viên, bạn nên dùng tính từ sở hữu 'your' thay vì mạo từ 'the'."
+    }
+   ],
+   "pronunciation": [
+    {
+     "word": "knee",
+     "tip_vi": "Chữ 'k' là âm câm, bạn chỉ phát âm là /niː/ giống như từ 'need' nhưng bỏ 'd'."
+    },
+    {
+     "word": "swan",
+     "tip_vi": "Đọc là /swɒn/, nhớ chu môi ở âm /w/ và không đọc tách thành hai âm tiết."
+    },
+    {
+     "word": "pillow",
+     "tip_vi": "Trọng âm rơi vào âm tiết đầu tiên 'PIL-low', âm 'i' phát âm ngắn và gọn."
+    }
+   ],
+   "praise_vi": "Lời hô của bạn rất tuyệt vì có đầy đủ thời gian giữ thế và phương án hỗ trợ an toàn cho gối của học viên."
+  }
+ }
+]

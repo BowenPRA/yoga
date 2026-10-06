@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yoga English · voice and coach tests</title>
+<style>
+  :root {
+    --bg: #f6f3ee; --card: #ffffff; --ink: #2b2a27; --muted: #6f6a62; --line: #e6e0d6;
+    --sage: #6f8f7a; --sage-soft: #e4ece6; --clay: #b9704f; --clay-soft: #f3e3da; --gold-soft: #f4ecd8;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.5 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 1100px; margin: 0 auto; padding: 24px 16px 80px; }
+  header h1 { font-weight: 500; font-size: 28px; margin: 0 0 4px; letter-spacing: -0.01em; }
+  header p { color: var(--muted); margin: 0; }
+  h2 { font-weight: 500; font-size: 22px; margin: 48px 0 8px; }
+  h3 { font-weight: 500; font-size: 18px; margin: 0 0 6px; }
+  .lead { color: var(--muted); margin: 0 0 20px; max-width: 70ch; }
+  .note { background: var(--gold-soft); border-radius: 12px; padding: 12px 16px; margin: 16px 0; max-width: 80ch; }
+  .sample, .cue { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px; margin: 14px 0; }
+  .text { font-size: 18px; margin: 0 0 4px; }
+  .style { color: var(--muted); font-size: 14px; margin: 0 0 14px; }
+  .style span { color: var(--sage); }
+  .voices { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px; }
+  .voice { border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; background: #fcfbf9; }
+  .voice-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 6px; }
+  .voice-name { font-size: 14px; }
+  .badge { font-size: 11px; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+  .badge.free { background: var(--sage-soft); color: #3f5e4b; }
+  .badge.paid { background: var(--clay-soft); color: #7d4a32; }
+  audio { width: 100%; height: 36px; }
+  .voice-meta { display: flex; gap: 10px; font-size: 12px; color: var(--muted); margin-top: 4px; align-items: baseline; }
+  .dur { min-width: 2.5em; }
+  .chk.ok { color: #3f5e4b; } .chk.bad { color: #a33; } .chk.warn { color: #8a6d1f; }
+  table { border-collapse: collapse; width: 100%; background: var(--card); border-radius: 12px; overflow: hidden; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-weight: 500; color: var(--muted); font-size: 13px; }
+  td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .orig { font-size: 17px; margin: 0 0 14px; }
+  .orig span { color: var(--clay); font-size: 14px; display: block; }
+  .models { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px; }
+  .model { border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; background: #fcfbf9; }
+  .model h4 { margin: 0 0 8px; font-weight: 500; font-size: 15px; }
+  .model h4 small { display: block; color: var(--muted); font-weight: 400; font-size: 12px; }
+  .natural { font-size: 16px; margin: 0 0 10px; }
+  ul { padding-left: 0; list-style: none; margin: 0; }
+  .changes li { margin: 0 0 8px; font-size: 14px; }
+  .from { text-decoration: line-through; color: var(--muted); }
+  .arr { color: var(--sage); }
+  .vi { color: #4a4640; font-size: 13.5px; margin-top: 2px; }
+  .pron-h { font-size: 12px; color: var(--muted); margin: 10px 0 4px; text-transform: uppercase; letter-spacing: 0.06em; }
+  .pron li { font-size: 14px; margin-bottom: 6px; }
+  .praise { font-size: 13.5px; color: #3f5e4b; background: var(--sage-soft); border-radius: 8px; padding: 6px 10px; margin: 10px 0 0; }
+  .meta { font-size: 12px; color: var(--muted); margin-top: 8px; }
+  details { margin-top: 12px; }
+  summary { cursor: pointer; color: var(--muted); font-size: 14px; }
+  details .models { margin-top: 12px; }
+  .err { color: #a33; font-size: 14px; }
+  @media (max-width: 600px) { .voices, .models { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>Yoga English · voice and coaching tests</h1>
+  <p>6 October 2026 · Every voice reads the same five sentences. Every model receives the same three cues and the same prompt.</p>
+</header>
+
+<h2>1. Text-to-speech</h2>
+<p class="lead">Only free voices and Gemini voices were tested, following your rule. ElevenLabs, OpenAI and Azure were ruled out on cost before testing. Each clip was transcribed back by Gemini to confirm it says the sample text and nothing else.</p>
+<div class="note">The first Gemini 3.8 run <b>read my style instructions aloud</b> (“You are a calm, warm yoga teacher…”), because 3.8 moved to a new request format where the text is a verbatim transcript and the direction goes in a separate style field. The clips below are from the corrected run. The older 2.5 model takes the direction inside the prompt and worked first time.</div>
+
+    <section class="sample">
+      <h3>Warrior II cue</h3>
+      <p class="text">“Bend your front knee so it stacks over your ankle. Reach your arms out wide, and gaze softly over your front fingertips. Stay here for five breaths.”</p>
+      <p class="style"><span>Direction given to Gemini:</span> You are a calm, warm yoga teacher cueing a class. Speak at an unhurried teaching pace with a gentle, encouraging tone.</p>
+      <div class="voices">
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">edge-tts · Aria (US)</span>
+            <span class="badge free">free</span>
+          </div>
+          <audio controls preload="metadata" src="tts/edge-aria__warrior.mp3"></audio>
+          <div class="voice-meta">
+            <span class="dur">12s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">edge-tts · Ava Multilingual (US)</span>
+            <span class="badge free">free</span>
+          </div>
+          <audio controls preload="metadata" src="tts/edge-ava__warrior.mp3"></audio>
+          <div class="voice-meta">
+            <span class="dur">11s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">edge-tts · Andrew Multilingual (US, male)</span>
+            <span class="badge free">free</span>
+          </div>
+          <audio controls preload="metadata" src="tts/edge-andrew__warrior.mp3"></audio>
+          <div class="voice-meta">
+            <span class="dur">10s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">edge-tts · Sonia (UK)</span>
+            <span class="badge free">free</span>
+          </div>
+          <audio controls preload="metadata" src="tts/edge-sonia__warrior.mp3"></audio>
+          <div class="voice-meta">
+            <span class="dur">11s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">Gemini 3.8 Flash TTS · Sulafat (warm)</span>
+            <span class="badge paid">Gemini key</span>
+          </div>
+          <audio controls preload="metadata" src="tts/gem38-sulafat__warrior.wav"></audio>
+          <div class="voice-meta">
+            <span class="dur">12s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">Gemini 3.8 Flash TTS · Achernar (soft)</span>
+            <span class="badge paid">Gemini key</span>
+          </div>
+          <audio controls preload="metadata" src="tts/gem38-achernar__warrior.wav"></audio>
+          <div class="voice-meta">
+            <span class="dur">14s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">Gemini 3.8 Flash TTS · Charon (male)</span>
+            <span class="badge paid">Gemini key</span>
+          </div>
+          <audio controls preload="metadata" src="tts/gem38-charon__warrior.wav"></audio>
+          <div class="voice-meta">
+            <span class="dur">14s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">Gemini 3.8 Flash-Lite TTS · Sulafat</span>
+            <span class="badge paid">Gemini key</span>
+          </div>
+          <audio controls preload="metadata" src="tts/gem38lite-sulafat__warrior.wav"></audio>
+          <div class="voice-meta">
+            <span class="dur">14s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">Gemini 2.5 Pro TTS (preview) · Sulafat</span>
+            <span class="badge paid">Gemini key</span>
+          </div>
+          <audio controls preload="metadata" src="tts/gem25pro-sulafat__warrior.wav"></audio>
+          <div class="voice-meta">
+            <span class="dur">12s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div></div>
+    </section>
+    <section class="sample">
+      <h3>Savasana line</h3>
+      <p class="text">“Let your whole body become heavy. Soften your jaw. Soften the space between your eyebrows. There is nothing left to do.”</p>
+      <p class="style"><span>Direction given to Gemini:</span> You are a yoga teacher guiding final relaxation. Speak very slowly and softly, almost a whisper, with long pauses between sentences.</p>
+      <div class="voices">
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">edge-tts · Aria (US)</span>
+            <span class="badge free">free</span>
+          </div>
+          <audio controls preload="metadata" src="tts/edge-aria__savasana.mp3"></audio>
+          <div class="voice-meta">
+            <span class="dur">13s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">edge-tts · Ava Multilingual (US)</span>
+            <span class="badge free">free</span>
+          </div>
+          <audio controls preload="metadata" src="tts/edge-ava__savasana.mp3"></audio>
+          <div class="voice-meta">
+            <span class="dur">10s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">edge-tts · Andrew Multilingual (US, male)</span>
+            <span class="badge free">free</span>
+          </div>
+          <audio controls preload="metadata" src="tts/edge-andrew__savasana.mp3"></audio>
+          <div class="voice-meta">
+            <span class="dur">10s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">edge-tts · Sonia (UK)</span>
+            <span class="badge free">free</span>
+          </div>
+          <audio controls preload="metadata" src="tts/edge-sonia__savasana.mp3"></audio>
+          <div class="voice-meta">
+            <span class="dur">11s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">Gemini 3.8 Flash TTS · Sulafat (warm)</span>
+            <span class="badge paid">Gemini key</span>
+          </div>
+          <audio controls preload="metadata" src="tts/gem38-sulafat__savasana.wav"></audio>
+          <div class="voice-meta">
+            <span class="dur">19s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">Gemini 3.8 Flash TTS · Achernar (soft)</span>
+            <span class="badge paid">Gemini key</span>
+          </div>
+          <audio controls preload="metadata" src="tts/gem38-achernar__savasana.wav"></audio>
+          <div class="voice-meta">
+            <span class="dur">20s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">Gemini 3.8 Flash TTS · Charon (male)</span>
+            <span class="badge paid">Gemini key</span>
+          </div>
+          <audio controls preload="metadata" src="tts/gem38-charon__savasana.wav"></audio>
+          <div class="voice-meta">
+            <span class="dur">18s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">Gemini 3.8 Flash-Lite TTS · Sulafat</span>
+            <span class="badge paid">Gemini key</span>
+          </div>
+          <audio controls preload="metadata" src="tts/gem38lite-sulafat__savasana.wav"></audio>
+          <div class="voice-meta">
+            <span class="dur">16s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">Gemini 2.5 Pro TTS (preview) · Sulafat</span>
+            <span class="badge paid">Gemini key</span>
+          </div>
+          <audio controls preload="metadata" src="tts/gem25pro-sulafat__savasana.wav"></audio>
+          <div class="voice-meta">
+            <span class="dur">15s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div></div>
+    </section>
+    <section class="sample">
+      <h3>Three Sanskrit pose names</h3>
+      <p class="text">“Virabhadrasana Two. Adho Mukha Svanasana. Utthita Trikonasana.”</p>
+      <p class="style"><span>Direction given to Gemini:</span> You are a yoga teacher saying Sanskrit pose names clearly for students to repeat. Say each name slowly and distinctly, with a pause after each one, using the standard pronunciation heard in yoga studios: vee-rah-bah-DRAH-sah-nah, AH-doh MOO-kah shvah-NAH-sah-nah, oot-TEE-tah trik-oh-NAH-sah-nah.</p>
+      <div class="voices">
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">edge-tts · Aria (US)</span>
+            <span class="badge free">free</span>
+          </div>
+          <audio controls preload="metadata" src="tts/edge-aria__sanskrit.mp3"></audio>
+          <div class="voice-meta">
+            <span class="dur">8s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">edge-tts · Ava Multilingual (US)</span>
+            <span class="badge free">free</span>
+          </div>
+          <audio controls preload="metadata" src="tts/edge-ava__sanskrit.mp3"></audio>
+          <div class="voice-meta">
+            <span class="dur">6s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">edge-tts · Andrew Multilingual (US, male)</span>
+            <span class="badge free">free</span>
+          </div>
+          <audio controls preload="metadata" src="tts/edge-andrew__sanskrit.mp3"></audio>
+          <div class="voice-meta">
+            <span class="dur">7s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">edge-tts · Sonia (UK)</span>
+            <span class="badge free">free</span>
+          </div>
+          <audio controls preload="metadata" src="tts/edge-sonia__sanskrit.mp3"></audio>
+          <div class="voice-meta">
+            <span class="dur">7s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">Gemini 3.8 Flash TTS · Sulafat (warm)</span>
+            <span class="badge paid">Gemini key</span>
+          </div>
+          <audio controls preload="metadata" src="tts/gem38-sulafat__sanskrit.wav"></audio>
+          <div class="voice-meta">
+            <span class="dur">12s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">Gemini 3.8 Flash TTS · Achernar (soft)</span>
+            <span class="badge paid">Gemini key</span>
+          </div>
+          <audio controls preload="metadata" src="tts/gem38-achernar__sanskrit.wav"></audio>
+          <div class="voice-meta">
+            <span class="dur">11s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">Gemini 3.8 Flash TTS · Charon (male)</span>
+            <span class="badge paid">Gemini key</span>
+          </div>
+          <audio controls preload="metadata" src="tts/gem38-charon__sanskrit.wav"></audio>
+          <div class="voice-meta">
+            <span class="dur">12s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">Gemini 3.8 Flash-Lite TTS · Sulafat</span>
+            <span class="badge paid">Gemini key</span>
+          </div>
+          <audio controls preload="metadata" src="tts/gem38lite-sulafat__sanskrit.wav"></audio>
+          <div class="voice-meta">
+            <span class="dur">8s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">Gemini 2.5 Pro TTS (preview) · Sulafat</span>
+            <span class="badge paid">Gemini key</span>
+          </div>
+          <audio controls preload="metadata" src="tts/gem25pro-sulafat__sanskrit.wav"></audio>
+          <div class="voice-meta">
+            <span class="dur">11s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div></div>
+    </section>
+    <section class="sample">
+      <h3>Pali term</h3>
+      <p class="text">“Anicca. Impermanence. Everything that arises will also pass away.”</p>
+      <p class="style"><span>Direction given to Gemini:</span> You are a meditation teacher introducing a Pali word. Say &#x27;anicca&#x27; as ah-NEE-cha, slowly and clearly, then continue in a quiet, reflective tone.</p>
+      <div class="voices">
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">edge-tts · Aria (US)</span>
+            <span class="badge free">free</span>
+          </div>
+          <audio controls preload="metadata" src="tts/edge-aria__pali.mp3"></audio>
+          <div class="voice-meta">
+            <span class="dur">7s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">edge-tts · Ava Multilingual (US)</span>
+            <span class="badge free">free</span>
+          </div>
+          <audio controls preload="metadata" src="tts/edge-ava__pali.mp3"></audio>
+          <div class="voice-meta">
+            <span class="dur">6s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">edge-tts · Andrew Multilingual (US, male)</span>
+            <span class="badge free">free</span>
+          </div>
+          <audio controls preload="metadata" src="tts/edge-andrew__pali.mp3"></audio>
+          <div class="voice-meta">
+            <span class="dur">6s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">edge-tts · Sonia (UK)</span>
+            <span class="badge free">free</span>
+          </div>
+          <audio controls preload="metadata" src="tts/edge-sonia__pali.mp3"></audio>
+          <div class="voice-meta">
+            <span class="dur">6s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">Gemini 3.8 Flash TTS · Sulafat (warm)</span>
+            <span class="badge paid">Gemini key</span>
+          </div>
+          <audio controls preload="metadata" src="tts/gem38-sulafat__pali.wav"></audio>
+          <div class="voice-meta">
+            <span class="dur">8s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">Gemini 3.8 Flash TTS · Achernar (soft)</span>
+            <span class="badge paid">Gemini key</span>
+          </div>
+          <audio controls preload="metadata" src="tts/gem38-achernar__pali.wav"></audio>
+          <div class="voice-meta">
+            <span class="dur">10s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">Gemini 3.8 Flash TTS · Charon (male)</span>
+            <span class="badge paid">Gemini key</span>
+          </div>
+          <audio controls preload="metadata" src="tts/gem38-charon__pali.wav"></audio>
+          <div class="voice-meta">
+            <span class="dur">10s</span>
+            <span class="chk warn" title="transcribed as: anicha impermanence. Everything that arises will also pass away">! transcribed as: anicha impermanence. Everything that arises will also pass away</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">Gemini 3.8 Flash-Lite TTS · Sulafat</span>
+            <span class="badge paid">Gemini key</span>
+          </div>
+          <audio controls preload="metadata" src="tts/gem38lite-sulafat__pali.wav"></audio>
+          <div class="voice-meta">
+            <span class="dur">9s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">Gemini 2.5 Pro TTS (preview) · Sulafat</span>
+            <span class="badge paid">Gemini key</span>
+          </div>
+          <audio controls preload="metadata" src="tts/gem25pro-sulafat__pali.wav"></audio>
+          <div class="voice-meta">
+            <span class="dur">8s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div></div>
+    </section>
+    <section class="sample">
+      <h3>Vietnamese explanation</h3>
+      <p class="text">“Cơ tứ đầu đùi là nhóm cơ ở mặt trước đùi, giúp bạn duỗi thẳng đầu gối.”</p>
+      <p class="style"><span>Direction given to Gemini:</span> Speak this Vietnamese sentence naturally, like a friendly teacher explaining anatomy, at a relaxed pace.</p>
+      <div class="voices">
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">edge-tts · Ava Multilingual (US)</span>
+            <span class="badge free">free</span>
+          </div>
+          <audio controls preload="metadata" src="tts/edge-ava__vietnamese.mp3"></audio>
+          <div class="voice-meta">
+            <span class="dur">5s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">edge-tts · Andrew Multilingual (US, male)</span>
+            <span class="badge free">free</span>
+          </div>
+          <audio controls preload="metadata" src="tts/edge-andrew__vietnamese.mp3"></audio>
+          <div class="voice-meta">
+            <span class="dur">6s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">edge-tts · Nam Minh (vi-VN, male)</span>
+            <span class="badge free">free</span>
+          </div>
+          <audio controls preload="metadata" src="tts/edge-namminh__vietnamese.mp3"></audio>
+          <div class="voice-meta">
+            <span class="dur">5s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">Gemini 3.8 Flash TTS · Sulafat (warm)</span>
+            <span class="badge paid">Gemini key</span>
+          </div>
+          <audio controls preload="metadata" src="tts/gem38-sulafat__vietnamese.wav"></audio>
+          <div class="voice-meta">
+            <span class="dur">6s</span>
+            <span class="chk ok" title="matches (transcriber cut short)">✓ matches (transcriber cut short)</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">Gemini 3.8 Flash TTS · Achernar (soft)</span>
+            <span class="badge paid">Gemini key</span>
+          </div>
+          <audio controls preload="metadata" src="tts/gem38-achernar__vietnamese.wav"></audio>
+          <div class="voice-meta">
+            <span class="dur">5s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">Gemini 3.8 Flash TTS · Charon (male)</span>
+            <span class="badge paid">Gemini key</span>
+          </div>
+          <audio controls preload="metadata" src="tts/gem38-charon__vietnamese.wav"></audio>
+          <div class="voice-meta">
+            <span class="dur">6s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">Gemini 3.8 Flash-Lite TTS · Sulafat</span>
+            <span class="badge paid">Gemini key</span>
+          </div>
+          <audio controls preload="metadata" src="tts/gem38lite-sulafat__vietnamese.wav"></audio>
+          <div class="voice-meta">
+            <span class="dur">6s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div>
+        <div class="voice">
+          <div class="voice-head">
+            <span class="voice-name">Gemini 2.5 Pro TTS (preview) · Sulafat</span>
+            <span class="badge paid">Gemini key</span>
+          </div>
+          <audio controls preload="metadata" src="tts/gem25pro-sulafat__vietnamese.wav"></audio>
+          <div class="voice-meta">
+            <span class="dur">6s</span>
+            <span class="chk ok" title="says exactly the sample text">✓ says exactly the sample text</span>
+          </div>
+        </div></div>
+    </section>
+
+<h3 style="margin-top:28px">What it would cost</h3>
+<p class="lead">Assumes the full content set is about 2,000 fixed clips averaging 8 seconds (4.4 hours of audio), generated once, plus the Cue Coach speaking about 20 corrected cues a day. Gemini bills audio at 25 tokens per second. Prices are the standard tier through 31 December 2026; <b>Google has announced they double on 1 January 2027</b>, so fixed content should be generated this year. Every Gemini model here also has a free-of-charge tier with rate limits, so light live use may cost nothing.</p>
+<table>
+  <tr><th>Voice</th><th>Price</th><th>All fixed content, once</th><th>Live Cue Coach, per month</th><th>Notes</th></tr>
+  <tr><td>edge-tts (Microsoft, unofficial)</td><td>free</td><td class="num">$0</td><td class="num">$0</td><td>No account. Unofficial endpoint, so it could break; fixed content is safe once generated. Cannot run live from the phone without a small server.</td></tr>
+  <tr><td>Gemini 3.8 Flash TTS</td><td>$9 / 1M audio tokens</td><td class="num">about $3.60</td><td class="num">about $1.40</td><td>Style-directed. 30 voices. Vietnamese supported.</td></tr>
+  <tr><td>Gemini 3.8 Flash-Lite TTS</td><td>$6 / 1M audio tokens</td><td class="num">about $2.40</td><td class="num">about $0.90</td><td>Same API, cheaper tier.</td></tr>
+  <tr><td>Gemini 2.5 Pro TTS (preview)</td><td>$20 / 1M audio tokens</td><td class="num">about $8</td><td class="num">about $3</td><td>Older; preview models get retired.</td></tr>
+  <tr><td colspan="5" style="color:var(--muted);font-size:13px">Ruled out by the free rule, listed for completeness: ElevenLabs $50 to $100 per 1M characters (about $20 to $40 for the fixed content); OpenAI gpt-4o-mini-tts about $0.015 per minute (about $4); Google Cloud Chirp 3 HD $30 per 1M characters (about $12) and needs a Google Cloud project; Azure Neural HD $22 per 1M characters (about $9) and needs an Azure account.</td></tr>
+</table>
+
+<h2>2. Cue Coach</h2>
+<p class="lead">Three cues written the way an intermediate Vietnamese speaker might write them. Each model was asked for the natural teacher version, two to four changes explained in Vietnamese, up to three pronunciation warnings, and one honest line of praise. Gemini 3.8 Flash and 3.6 Flash think before answering (slower, costs more output tokens); Flash-Lite answers in about three seconds.</p>
+
+    <section class="cue">
+      <h3>Warrior II, a Vinyasa class</h3>
+      <p class="orig"><span>Her cue:</span> “Bend your knee front, the knee not over the toe. Keep the back leg straight strong. Open the hip, two arm parallel with the floor.”</p>
+      <div class="models">
+    <div class="model">
+      <h4>Gemini 3.8 Flash<small>$0.75 in / $3.75 out per 1M · thinks before answering</small></h4>
+      <p class="natural">“Bend into your front knee, knee not past your toes. Keep your back leg straight and strong. Open your hips, arms parallel to the floor.”</p>
+      <ul class="changes"><li><span class="from">knee front</span> <span class="arr">→</span> <span class="to">front knee</span><div class="vi">Trong tiếng Anh, từ chỉ vị trí bổ nghĩa như &#x27;front&#x27; phải đứng trước danh từ.</div></li><li><span class="from">straight strong</span> <span class="arr">→</span> <span class="to">straight and strong</span><div class="vi">Thêm liên từ &#x27;and&#x27; giữa hai tính từ giúp câu nói nhịp nhàng và tự nhiên hơn nhiều.</div></li><li><span class="from">Open the hip</span> <span class="arr">→</span> <span class="to">Open your hips</span><div class="vi">Vùng hông thường dùng số nhiều &#x27;hips&#x27; và đi với &#x27;your&#x27; để tạo cảm giác gần gũi, hướng dẫn trực tiếp cho học viên.</div></li><li><span class="from">two arm parallel with</span> <span class="arr">→</span> <span class="to">arms parallel to</span><div class="vi">Chỉ cần dùng số nhiều &#x27;arms&#x27; là học viên hiểu cả hai tay, và tính từ &#x27;parallel&#x27; chuẩn nhất là đi với giới từ &#x27;to&#x27;.</div></li></ul>
+      <div class="pron-h">Pronunciation</div>
+      <ul class="pron"><li><b>straight</b><div class="vi">Bật mượt cụm phụ âm /str/ ở đầu và nhớ kết thúc bằng âm bật hơi /t/ rõ ràng.</div></li><li><b>parallel</b><div class="vi">Nhấn trọng âm rõ vào âm tiết đầu /ˈpær.ə.lel/, tránh đọc đều đều ba âm.</div></li><li><b>toes</b><div class="vi">Đọc rõ nguyên âm đôi /oʊ/ và nhớ phát âm âm rung /z/ ở đuôi, tránh nuốt âm.</div></li></ul>
+      <p class="praise">Trình tự hướng dẫn định tuyến từ chân trước, chân sau đến hông và tay của bạn cực kỳ logic và chuẩn Vinyasa.</p>
+      <div class="meta">15.2s · 382 tokens in, 1495 out (incl. thinking)</div>
+    </div>
+    <div class="model">
+      <h4>Gemini 3.6 Flash<small>same price as 3.8 · the model the Y8 backend uses</small></h4>
+      <p class="natural">“Bend your front knee, making sure it doesn&#x27;t go past your toes. Keep your back leg straight and strong. Open your hips, and reach both arms parallel to the floor.”</p>
+      <ul class="changes"><li><span class="from">Bend your knee front</span> <span class="arr">→</span> <span class="to">Bend your front knee</span><div class="vi">Trong tiếng Anh, tính từ chỉ vị trí &#x27;front&#x27; cần đứng trước danh từ &#x27;knee&#x27;.</div></li><li><span class="from">straight strong</span> <span class="arr">→</span> <span class="to">straight and strong</span><div class="vi">Cần thêm từ nối &#x27;and&#x27; giữa hai tính từ để câu văn tự nhiên và êm tai hơn.</div></li><li><span class="from">two arm parallel with the floor</span> <span class="arr">→</span> <span class="to">both arms parallel to the floor</span><div class="vi">Dùng &#x27;both arms&#x27; tự nhiên hơn &#x27;two arm&#x27;, nhớ có &#x27;s&#x27; số nhiều và đi với giới từ &#x27;parallel to&#x27;.</div></li></ul>
+      <div class="pron-h">Pronunciation</div>
+      <ul class="pron"><li><b>arms</b><div class="vi">Chú ý âm cuối /mz/ số nhiều, tránh đọc thành &#x27;am&#x27;.</div></li><li><b>parallel</b><div class="vi">Nhấn trọng âm vào âm tiết đầu tiên /ˈpær.ə.lel/.</div></li><li><b>straight</b><div class="vi">Chú ý rèn cụm phụ âm /str/ ở đầu và bật rõ âm /t/ ở cuối.</div></li></ul>
+      <p class="praise">Lời hô của bạn rất rõ ràng, đi đúng các điểm định tuyến quan trọng nhất của Warrior II!</p>
+      <div class="meta">11.2s · 382 tokens in, 2036 out (incl. thinking)</div>
+    </div>
+    <div class="model">
+      <h4>Gemini 3.5 Flash-Lite<small>$0.30 in / $2.50 out per 1M · no thinking, 3s</small></h4>
+      <p class="natural">“Bend your front knee, make sure it doesn&#x27;t go past your toes. Keep your back leg strong and straight. Open your hips and keep your arms parallel to the floor.”</p>
+      <ul class="changes"><li><span class="from">knee front</span> <span class="arr">→</span> <span class="to">front knee</span><div class="vi">Trong tiếng Anh, tính từ chỉ vị trí (front) thường đặt trước danh từ (knee) chứ không đặt sau như tiếng Việt.</div></li><li><span class="from">the knee not over the toe</span> <span class="arr">→</span> <span class="to">it doesn&#x27;t go past your toes</span><div class="vi">Giáo viên bản xứ thường dùng cấu trúc &#x27;go past&#x27; và thêm &#x27;doesn&#x27;t&#x27; để câu lệnh mượt mà và tự nhiên hơn trong lớp.</div></li><li><span class="from">two arm parallel</span> <span class="arr">→</span> <span class="to">your arms parallel</span><div class="vi">Đừng quên thêm &#x27;s&#x27; vào &#x27;arms&#x27; vì mình có hai tay, và dùng &#x27;your&#x27; nghe sẽ gần gũi và mang tính chỉ dẫn trực tiếp hơn.</div></li></ul>
+      <div class="pron-h">Pronunciation</div>
+      <ul class="pron"><li><b>parallel</b><div class="vi">Từ này trọng âm rơi vào âm tiết đầu tiên (PAH-ra-lel), nhớ phát âm rõ các âm &#x27;L&#x27; ở cuối nhé.</div></li><li><b>straight</b><div class="vi">Cụm phụ âm &#x27;str-&#x27; ở đầu rất dễ bị thiếu âm &#x27;t&#x27;, hãy đọc chậm và mím nhẹ môi trước khi cuộn lưỡi.</div></li></ul>
+      <p class="praise">Cậu diễn đạt rất rõ ý, học viên nghe qua là hiểu ngay cần phải làm gì với chân và tay rồi.</p>
+      <div class="meta">2.8s · 382 tokens in, 412 out (incl. thinking)</div>
+    </div></div>
+      <details><summary>Reference: what Claude produced for the same cue (ruled out, Gemini only)</summary><div class="models"><div class="model"><h4>Claude Sonnet 5.5 (reference only)</h4><p class="err">no result</p></div><div class="model"><h4>Claude Opus 5.5 (reference only)</h4><p class="err">no result</p></div></div></details>
+    </section>
+    <section class="cue">
+      <h3>Sun salutation, moving from Mountain into a standing forward fold</h3>
+      <p class="orig"><span>Her cue:</span> “Breath in, hand up. Breath out, fold down, touch the floor. If cannot, bend knee a little, no problem.”</p>
+      <div class="models">
+    <div class="model">
+      <h4>Gemini 3.8 Flash<small>$0.75 in / $3.75 out per 1M · thinks before answering</small></h4>
+      <p class="natural">“Breathe in, arms up. Breathe out, fold forward, touch the floor. If you can&#x27;t, bend your knees a little, that&#x27;s fine.”</p>
+      <ul class="changes"><li><span class="from">Breath in / Breath out</span> <span class="arr">→</span> <span class="to">Breathe in / Breathe out</span><div class="vi">&#x27;Breath&#x27; là danh từ (hơi thở), còn động từ chỉ hành động hít thở phải có chữ e ở cuối (&#x27;breathe&#x27;), hoặc bạn có thể dùng &#x27;Inhale/Exhale&#x27; cho ngắn gọn.</div></li><li><span class="from">hand up</span> <span class="arr">→</span> <span class="to">arms up</span><div class="vi">Khi vươn lên ta nâng cả cánh tay nên dùng &#x27;arms&#x27; số nhiều thay vì chỉ &#x27;hand&#x27; (bàn tay).</div></li><li><span class="from">fold down</span> <span class="arr">→</span> <span class="to">fold forward</span><div class="vi">Trong yoga, động tác gập người luôn dùng cụm tự nhiên chuẩn là &#x27;fold forward&#x27; (gập về phía trước).</div></li><li><span class="from">If cannot, bend knee</span> <span class="arr">→</span> <span class="to">If you can&#x27;t, bend your knees</span><div class="vi">Tiếng Anh luôn cần chủ ngữ (&#x27;you&#x27;) và nhớ thêm &#x27;s&#x27; vào &#x27;knees&#x27; vì chúng ta gập cả hai đầu gối.</div></li></ul>
+      <div class="pron-h">Pronunciation</div>
+      <ul class="pron"><li><b>breathe</b><div class="vi">Kéo dài nguyên âm /iː/ và đặt đầu lưỡi giữa hai răng để phát âm âm đuôi /ð/ có rung nhẹ.</div></li><li><b>fold</b><div class="vi">Chú ý uốn đầu lưỡi chạm vòm họng cho âm /l/ rồi mới chặn nhẹ âm /d/, tránh đọc thành &#x27;phâu&#x27;.</div></li><li><b>knees</b><div class="vi">Âm &#x27;k&#x27; câm, phát âm là /niːz/ với nguyên âm dài và rung nhẹ âm /z/ ở cuối.</div></li></ul>
+      <p class="praise">Nhịp cue gắn liền hơi thở với chuyển động rất tốt, lại có sẵn phương án điều chỉnh (option) rất chu đáo cho học viên.</p>
+      <div class="meta">20.0s · 383 tokens in, 1792 out (incl. thinking)</div>
+    </div>
+    <div class="model">
+      <h4>Gemini 3.6 Flash<small>same price as 3.8 · the model the Y8 backend uses</small></h4>
+      <p class="natural">“Breathe in, reach your arms up. Breathe out, fold forward, reach for the floor. If you can&#x27;t, bend your knees a little, that&#x27;s totally fine.”</p>
+      <ul class="changes"><li><span class="from">Breath in, hand up</span> <span class="arr">→</span> <span class="to">Breathe in, reach your arms up</span><div class="vi">&#x27;Breath&#x27; là danh từ, động từ hít vào phải dùng &#x27;breathe&#x27; (đọc âm i dài). Dùng &#x27;arms&#x27; số nhiều thay vì &#x27;hand&#x27; vì mình vươn cả hai cánh tay.</div></li><li><span class="from">Breath out, fold down, touch the floor</span> <span class="arr">→</span> <span class="to">Breathe out, fold forward, reach for the floor</span><div class="vi">Giáo viên bản xứ thường dùng &#x27;fold forward&#x27; (gập về trước) và &#x27;reach for the floor&#x27; nghe tự nhiên hơn.</div></li><li><span class="from">If cannot, bend knee a little, no problem</span> <span class="arr">→</span> <span class="to">If you can&#x27;t, bend your knees a little, that&#x27;s totally fine</span><div class="vi">Cần thêm chủ ngữ &#x27;you&#x27; sau &#x27;if&#x27;, dùng &#x27;knees&#x27; số nhiều, và &#x27;that&#x27;s totally fine&#x27; nghe lịch sự, tự nhiên hơn &#x27;no problem&#x27;.</div></li></ul>
+      <div class="pron-h">Pronunciation</div>
+      <ul class="pron"><li><b>Breathe</b><div class="vi">Phát âm là /briːð/ với âm &#x27;i&#x27; dài, khác với danh từ &#x27;breath&#x27; phát âm là /breθ/.</div></li><li><b>Knees</b><div class="vi">Chữ &#x27;k&#x27; là âm câm, đọc là /niːz/ và nhớ phát âm rõ âm &#x27;z&#x27; ở cuối.</div></li><li><b>Floor</b><div class="vi">Bật rõ cụm phụ âm /fl/ ở đầu từ và uốn lưỡi cho âm /r/ ở cuối.</div></li></ul>
+      <p class="praise">Câu hô của chị rất đúng nhịp hít thở, thông điệp rõ ràng và cho học viên lựa chọn biến thể rất chu đáo!</p>
+      <div class="meta">11.2s · 383 tokens in, 2078 out (incl. thinking)</div>
+    </div>
+    <div class="model">
+      <h4>Gemini 3.5 Flash-Lite<small>$0.30 in / $2.50 out per 1M · no thinking, 3s</small></h4>
+      <p class="natural">“Breathe in, reach your hands up. Breathe out, fold forward, touch the floor. If you can&#x27;t, bend your knees a little bit, no problem.”</p>
+      <ul class="changes"><li><span class="from">Breath in</span> <span class="arr">→</span> <span class="to">Breathe in</span><div class="vi">Nhớ thêm &#x27;e&#x27; ở cuối thành &#x27;breathe&#x27; khi dùng làm động từ hít vào nhé, &#x27;breath&#x27; là danh từ em ạ.</div></li><li><span class="from">hand up</span> <span class="arr">→</span> <span class="to">hands up</span><div class="vi">Mình có hai tay nên nhớ thêm &#x27;s&#x27; vào hands để câu tự nhiên hơn.</div></li><li><span class="from">If cannot</span> <span class="arr">→</span> <span class="to">If you can&#x27;t</span><div class="vi">Trong tiếng Anh giao tiếp lớp học, mình nên thêm chủ ngữ &#x27;you&#x27; vào sau if thay vì bỏ gọn như văn viết.</div></li></ul>
+      <div class="pron-h">Pronunciation</div>
+      <ul class="pron"><li><b>breathe</b><div class="vi">Nhớ phát âm âm &#x27;th&#x27; rung ở cuối từ, đừng đọc thành &#x27;bri-tờ&#x27; nhé.</div></li><li><b>hands</b><div class="vi">Từ này có cụm phụ âm cuối &#x27;nds&#x27;, nhớ phát âm đủ âm &#x27;s&#x27; ở cuối nha em.</div></li></ul>
+      <p class="praise">Ý nghĩa các ý trong câu của em rất rõ ràng và học viên dễ làm theo ngay.</p>
+      <div class="meta">2.4s · 383 tokens in, 361 out (incl. thinking)</div>
+    </div></div>
+      <details><summary>Reference: what Claude produced for the same cue (ruled out, Gemini only)</summary><div class="models"><div class="model"><h4>Claude Sonnet 5.5 (reference only)</h4><p class="err">no result</p></div><div class="model"><h4>Claude Opus 5.5 (reference only)</h4><p class="err">no result</p></div></div></details>
+    </section>
+    <section class="cue">
+      <h3>Yin class, Sleeping Swan (the Yin version of Pigeon), a 3-minute hold</h3>
+      <p class="orig"><span>Her cue:</span> “Now we do the sleeping swan. Put the right leg in front, the hip open. Stay here 3 minutes, relax, don&#x27;t push too much. If you feel pain in the knee you can put a pillow under the hip.”</p>
+      <div class="models">
+    <div class="model">
+      <h4>Gemini 3.8 Flash<small>$0.75 in / $3.75 out per 1M · thinks before answering</small></h4>
+      <p class="natural">“Let&#x27;s move into Sleeping Swan. Bring your right leg forward, letting the hip open. We&#x27;ll stay here for three minutes—relax and don&#x27;t push too hard. If you feel any pain in your knee, you can place a pillow under your hip.”</p>
+      <ul class="changes"><li><span class="from">Now we do the sleeping swan</span> <span class="arr">→</span> <span class="to">Let&#x27;s move into Sleeping Swan</span><div class="vi">Giáo viên bản xứ ít khi dùng &#x27;we do&#x27;, họ chuộng các cụm nhẹ nhàng hơn như &#x27;Let&#x27;s move into&#x27; hoặc &#x27;Coming into&#x27;, rất hợp với không khí lớp Yin.</div></li><li><span class="from">Put the right leg in front</span> <span class="arr">→</span> <span class="to">Bring your right leg forward</span><div class="vi">Trong chỉ dẫn chuyển động cơ thể, động từ &#x27;bring ... forward&#x27; nghe chuẩn yoga và tự nhiên hơn nhiều so với &#x27;put ... in front&#x27;.</div></li><li><span class="from">Stay here 3 minutes</span> <span class="arr">→</span> <span class="to">We&#x27;ll stay here for three minutes</span><div class="vi">Khi nói về khoảng thời gian giữ thế, bạn nhớ thêm giới từ &#x27;for&#x27; (for three minutes) để câu văn tròn trịa và đúng ngữ pháp nhé.</div></li><li><span class="from">don&#x27;t push too much</span> <span class="arr">→</span> <span class="to">don&#x27;t push too hard</span><div class="vi">Khi nói về lực đẩy hay sự gắng sức thể chất, người bản xứ dùng cụm &#x27;push too hard&#x27; thay vì &#x27;push too much&#x27;.</div></li></ul>
+      <div class="pron-h">Pronunciation</div>
+      <ul class="pron"><li><b>three</b><div class="vi">Đặt đầu lưỡi giữa hai hàm răng và thổi nhẹ hơi cho âm /θ/, tránh phát âm thành &#x27;tri&#x27; hay &#x27;ti-ri&#x27;.</div></li><li><b>Swan</b><div class="vi">Đọc lướt nhanh cụm phụ âm /sw/ và nhớ khép lưỡi chạm vòm họng để bật nhẹ âm cuối /n/.</div></li><li><b>knee</b><div class="vi">Chữ &#x27;k&#x27; là âm câm, bạn chỉ phát âm /niː/ với nguyên âm &#x27;i&#x27; kéo dài một chút nhé.</div></li></ul>
+      <p class="praise">Lời dẫn của bạn rất mạch lạc, vừa hướng dẫn vào thế rõ ràng vừa chu đáo đưa ra phương án chỉnh sửa (dùng gối) để bảo vệ khớp gối cho học viên.</p>
+      <div class="meta">17.2s · 411 tokens in, 1653 out (incl. thinking)</div>
+    </div>
+    <div class="model">
+      <h4>Gemini 3.6 Flash<small>same price as 3.8 · the model the Y8 backend uses</small></h4>
+      <p class="natural">“Now we&#x27;ll move into Sleeping Swan. Bring your right leg forward, opening the hip. We&#x27;ll stay here for three minutes, so relax and don&#x27;t push too hard. If you feel any pain in your knee, you can place a pillow under your hip.”</p>
+      <ul class="changes"><li><span class="from">we do the sleeping swan</span> <span class="arr">→</span> <span class="to">we&#x27;ll move into Sleeping Swan</span><div class="vi">Giáo viên bản xứ hiếm khi nói &#x27;do a pose&#x27;. Thay vào đó, dùng &#x27;move into&#x27; hoặc &#x27;come into&#x27; nghe nhẹ nhàng và mang tính dẫn dắt hơn trong Yin yoga.</div></li><li><span class="from">Put the right leg in front</span> <span class="arr">→</span> <span class="to">Bring your right leg forward</span><div class="vi">Cụm từ &#x27;bring... forward&#x27; tự nhiên hơn từ &#x27;put&#x27; khi hướng dẫn di chuyển chân trong yoga.</div></li><li><span class="from">don&#x27;t push too much</span> <span class="arr">→</span> <span class="to">don&#x27;t push too hard</span><div class="vi">Người bản xứ thường dùng &#x27;push too hard&#x27; thay vì &#x27;push too much&#x27; khi nhắc học viên không ép sức.</div></li><li><span class="from">in the knee</span> <span class="arr">→</span> <span class="to">in your knee</span><div class="vi">Khi nói về bộ phận cơ thể của học viên, bạn nên dùng tính từ sở hữu &#x27;your&#x27; thay vì mạo từ &#x27;the&#x27;.</div></li></ul>
+      <div class="pron-h">Pronunciation</div>
+      <ul class="pron"><li><b>knee</b><div class="vi">Chữ &#x27;k&#x27; là âm câm, bạn chỉ phát âm là /niː/ giống như từ &#x27;need&#x27; nhưng bỏ &#x27;d&#x27;.</div></li><li><b>swan</b><div class="vi">Đọc là /swɒn/, nhớ chu môi ở âm /w/ và không đọc tách thành hai âm tiết.</div></li><li><b>pillow</b><div class="vi">Trọng âm rơi vào âm tiết đầu tiên &#x27;PIL-low&#x27;, âm &#x27;i&#x27; phát âm ngắn và gọn.</div></li></ul>
+      <p class="praise">Lời hô của bạn rất tuyệt vì có đầy đủ thời gian giữ thế và phương án hỗ trợ an toàn cho gối của học viên.</p>
+      <div class="meta">11.4s · 411 tokens in, 1532 out (incl. thinking)</div>
+    </div>
+    <div class="model">
+      <h4>Gemini 3.5 Flash-Lite<small>$0.30 in / $2.50 out per 1M · no thinking, 3s</small></h4>
+      <p class="natural">“Now let&#x27;s move into Sleeping Swan. Bring your right leg forward, keeping the hip open. Stay here for three minutes, relax, and don&#x27;t push too hard. If you feel any pain in your knee, you can place a block or pillow under your hip.”</p>
+      <ul class="changes"><li><span class="from">do the sleeping swan</span> <span class="arr">→</span> <span class="to">move into Sleeping Swan</span><div class="vi">Trong yoga tiếng Anh, giáo viên thường dùng &#x27;move into&#x27; hoặc &#x27;come into&#x27; nghe mượt mà hơn là &#x27;do&#x27;.</div></li><li><span class="from">don&#x27;t push too much</span> <span class="arr">→</span> <span class="to">don&#x27;t push too hard</span><div class="vi">Với cường độ hoặc sức ép, người bản xứ hay dùng &#x27;too hard&#x27; thay vì &#x27;too much&#x27; để tự nhiên hơn.</div></li><li><span class="from">put a pillow</span> <span class="arr">→</span> <span class="to">place a block or pillow</span><div class="vi">Dùng từ &#x27;place&#x27; nghe nhẹ nhàng và chuẩn phong cách yoga hơn là &#x27;put&#x27;.</div></li></ul>
+      <div class="pron-h">Pronunciation</div>
+      <ul class="pron"><li><b>sleeping</b><div class="vi">Nhớ kéo dài nguyên âm &#x27;ee&#x27; ở giữa và phát âm âm &#x27;ng&#x27; cuối rõ ràng.</div></li><li><b>three</b><div class="vi">Đặt lưỡi giữa hai hàm răng và thổi hơi mạnh để phát âm âm &#x27;th&#x27; chuẩn hơn.</div></li><li><b>pillow</b><div class="vi">Nhấn trọng âm vào âm tiết đầu tiên &#x27;pil-&#x27;, âm &#x27;ow&#x27; phía sau đọc lướt nhẹ.</div></li></ul>
+      <p class="praise">Bạn dùng từ rất dễ hiểu, học viên nghe qua là làm theo được ngay.</p>
+      <div class="meta">3.2s · 411 tokens in, 428 out (incl. thinking)</div>
+    </div></div>
+      <details><summary>Reference: what Claude produced for the same cue (ruled out, Gemini only)</summary><div class="models"><div class="model"><h4>Claude Sonnet 5.5 (reference only)</h4><p class="err">no result</p></div><div class="model"><h4>Claude Opus 5.5 (reference only)</h4><p class="err">no result</p></div></div></details>
+    </section>
+
+<h3 style="margin-top:28px">Cost of the Cue Coach</h3>
+<table>
+  <tr><th>Model</th><th>Per corrected cue</th><th>20 cues a day, per month</th><th>Latency measured</th></tr>
+  <tr><td>Gemini 3.8 Flash</td><td class="num">about $0.007</td><td class="num">about $4</td><td class="num">15 to 20 s</td></tr>
+  <tr><td>Gemini 3.6 Flash</td><td class="num">about $0.007</td><td class="num">about $4</td><td class="num">11 s</td></tr>
+  <tr><td>Gemini 3.5 Flash-Lite</td><td class="num">about $0.001</td><td class="num">about $0.70</td><td class="num">3 s</td></tr>
+</table>
+<p class="lead" style="margin-top:12px">Twenty cues a day is a heavy estimate; a few a day is more likely, and the free tier may cover it entirely.</p>
+</main>
+</body>
+</html>

@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+.vercel/
+.claude/settings.local.json
+.DS_Store
+Thumbs.db
+
+# Listening-test audio: regenerate with research/gen_*.py
+research/tts/*.wav
+research/tts/*.mp3

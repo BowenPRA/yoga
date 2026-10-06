@@ -1,0 +1,135 @@
+[
+ {
+  "provider": "edge-aria",
+  "voice": "en-US-AriaNeural",
+  "sample": "warrior",
+  "file": "edge-aria__warrior.mp3",
+  "ok": true
+ },
+ {
+  "provider": "edge-aria",
+  "voice": "en-US-AriaNeural",
+  "sample": "savasana",
+  "file": "edge-aria__savasana.mp3",
+  "ok": true
+ },
+ {
+  "provider": "edge-aria",
+  "voice": "en-US-AriaNeural",
+  "sample": "sanskrit",
+  "file": "edge-aria__sanskrit.mp3",
+  "ok": true
+ },
+ {
+  "provider": "edge-aria",
+  "voice": "en-US-AriaNeural",
+  "sample": "pali",
+  "file": "edge-aria__pali.mp3",
+  "ok": true
+ },
+ {
+  "provider": "edge-ava",
+  "voice": "en-US-AvaMultilingualNeural",
+  "sample": "warrior",
+  "file": "edge-ava__warrior.mp3",
+  "ok": true
+ },
+ {
+  "provider": "edge-ava",
+  "voice": "en-US-AvaMultilingualNeural",
+  "sample": "savasana",
+  "file": "edge-ava__savasana.mp3",
+  "ok": true
+ },
+ {
+  "provider": "edge-ava",
+  "voice": "en-US-AvaMultilingualNeural",
+  "sample": "sanskrit",
+  "file": "edge-ava__sanskrit.mp3",
+  "ok": true
+ },
+ {
+  "provider": "edge-ava",
+  "voice": "en-US-AvaMultilingualNeural",
+  "sample": "pali",
+  "file": "edge-ava__pali.mp3",
+  "ok": true
+ },
+ {
+  "provider": "edge-ava",
+  "voice": "en-US-AvaMultilingualNeural",
+  "sample": "vietnamese",
+  "file": "edge-ava__vietnamese.mp3",
+  "ok": true
+ },
+ {
+  "provider": "edge-andrew",
+  "voice": "en-US-AndrewMultilingualNeural",
+  "sample": "warrior",
+  "file": "edge-andrew__warrior.mp3",
+  "ok": true
+ },
+ {
+  "provider": "edge-andrew",
+  "voice": "en-US-AndrewMultilingualNeural",
+  "sample": "savasana",
+  "file": "edge-andrew__savasana.mp3",
+  "ok": true
+ },
+ {
+  "provider": "edge-andrew",
+  "voice": "en-US-AndrewMultilingualNeural",
+  "sample": "sanskrit",
+  "file": "edge-andrew__sanskrit.mp3",
+  "ok": true
+ },
+ {
+  "provider": "edge-andrew",
+  "voice": "en-US-AndrewMultilingualNeural",
+  "sample": "pali",
+  "file": "edge-andrew__pali.mp3",
+  "ok": true
+ },
+ {
+  "provider": "edge-andrew",
+  "voice": "en-US-AndrewMultilingualNeural",
+  "sample": "vietnamese",
+  "file": "edge-andrew__vietnamese.mp3",
+  "ok": true
+ },
+ {
+  "provider": "edge-sonia",
+  "voice": "en-GB-SoniaNeural",
+  "sample": "warrior",
+  "file": "edge-sonia__warrior.mp3",
+  "ok": true
+ },
+ {
+  "provider": "edge-sonia",
+  "voice": "en-GB-SoniaNeural",
+  "sample": "savasana",
+  "file": "edge-sonia__savasana.mp3",
+  "ok": true
+ },
+ {
+  "provider": "edge-sonia",
+  "voice": "en-GB-SoniaNeural",
+  "sample": "sanskrit",
+  "file": "edge-sonia__sanskrit.mp3",
+  "ok": true
+ },
+ {
+  "provider": "edge-sonia",
+  "voice": "en-GB-SoniaNeural",
+  "sample": "pali",
+  "file": "edge-sonia__pali.mp3",
+  "ok": true
+ },
+ {
+  "provider": "edge-hoaimy",
+  "voice": "vi-VN-HoaiMyNeural",
+  "sample": "vietnamese",
+  "file": "edge-hoaimy__vietnamese.mp3",
+  "ok": false
+ }
+]

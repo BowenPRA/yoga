@@ -1,0 +1,150 @@
+[
+ {
+  "cue": "warrior",
+  "model": "gemini-3.5-flash-lite",
+  "seconds": 2.8,
+  "usage": {
+   "promptTokenCount": 382,
+   "candidatesTokenCount": 412,
+   "totalTokenCount": 794,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 382
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "result": {
+   "natural": "Bend your front knee, make sure it doesn't go past your toes. Keep your back leg strong and straight. Open your hips and keep your arms parallel to the floor.",
+   "changes": [
+    {
+     "from": "knee front",
+     "to": "front knee",
+     "why_vi": "Trong tiếng Anh, tính từ chỉ vị trí (front) thường đặt trước danh từ (knee) chứ không đặt sau như tiếng Việt."
+    },
+    {
+     "from": "the knee not over the toe",
+     "to": "it doesn't go past your toes",
+     "why_vi": "Giáo viên bản xứ thường dùng cấu trúc 'go past' và thêm 'doesn't' để câu lệnh mượt mà và tự nhiên hơn trong lớp."
+    },
+    {
+     "from": "two arm parallel",
+     "to": "your arms parallel",
+     "why_vi": "Đừng quên thêm 's' vào 'arms' vì mình có hai tay, và dùng 'your' nghe sẽ gần gũi và mang tính chỉ dẫn trực tiếp hơn."
+    }
+   ],
+   "pronunciation": [
+    {
+     "word": "parallel",
+     "tip_vi": "Từ này trọng âm rơi vào âm tiết đầu tiên (PAH-ra-lel), nhớ phát âm rõ các âm 'L' ở cuối nhé."
+    },
+    {
+     "word": "straight",
+     "tip_vi": "Cụm phụ âm 'str-' ở đầu rất dễ bị thiếu âm 't', hãy đọc chậm và mím nhẹ môi trước khi cuộn lưỡi."
+    }
+   ],
+   "praise_vi": "Cậu diễn đạt rất rõ ý, học viên nghe qua là hiểu ngay cần phải làm gì với chân và tay rồi."
+  }
+ },
+ {
+  "cue": "fold",
+  "model": "gemini-3.5-flash-lite",
+  "seconds": 2.4,
+  "usage": {
+   "promptTokenCount": 383,
+   "candidatesTokenCount": 361,
+   "totalTokenCount": 744,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 383
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "result": {
+   "natural": "Breathe in, reach your hands up. Breathe out, fold forward, touch the floor. If you can't, bend your knees a little bit, no problem.",
+   "changes": [
+    {
+     "from": "Breath in",
+     "to": "Breathe in",
+     "why_vi": "Nhớ thêm 'e' ở cuối thành 'breathe' khi dùng làm động từ hít vào nhé, 'breath' là danh từ em ạ."
+    },
+    {
+     "from": "hand up",
+     "to": "hands up",
+     "why_vi": "Mình có hai tay nên nhớ thêm 's' vào hands để câu tự nhiên hơn."
+    },
+    {
+     "from": "If cannot",
+     "to": "If you can't",
+     "why_vi": "Trong tiếng Anh giao tiếp lớp học, mình nên thêm chủ ngữ 'you' vào sau if thay vì bỏ gọn như văn viết."
+    }
+   ],
+   "pronunciation": [
+    {
+     "word": "breathe",
+     "tip_vi": "Nhớ phát âm âm 'th' rung ở cuối từ, đừng đọc thành 'bri-tờ' nhé."
+    },
+    {
+     "word": "hands",
+     "tip_vi": "Từ này có cụm phụ âm cuối 'nds', nhớ phát âm đủ âm 's' ở cuối nha em."
+    }
+   ],
+   "praise_vi": "Ý nghĩa các ý trong câu của em rất rõ ràng và học viên dễ làm theo ngay."
+  }
+ },
+ {
+  "cue": "pigeon",
+  "model": "gemini-3.5-flash-lite",
+  "seconds": 3.2,
+  "usage": {
+   "promptTokenCount": 411,
+   "candidatesTokenCount": 428,
+   "totalTokenCount": 839,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 411
+    }
+   ],
+   "serviceTier": "standard"
+  },
+  "result": {
+   "natural": "Now let's move into Sleeping Swan. Bring your right leg forward, keeping the hip open. Stay here for three minutes, relax, and don't push too hard. If you feel any pain in your knee, you can place a block or pillow under your hip.",
+   "changes": [
+    {
+     "from": "do the sleeping swan",
+     "to": "move into Sleeping Swan",
+     "why_vi": "Trong yoga tiếng Anh, giáo viên thường dùng 'move into' hoặc 'come into' nghe mượt mà hơn là 'do'."
+    },
+    {
+     "from": "don't push too much",
+     "to": "don't push too hard",
+     "why_vi": "Với cường độ hoặc sức ép, người bản xứ hay dùng 'too hard' thay vì 'too much' để tự nhiên hơn."
+    },
+    {
+     "from": "put a pillow",
+     "to": "place a block or pillow",
+     "why_vi": "Dùng từ 'place' nghe nhẹ nhàng và chuẩn phong cách yoga hơn là 'put'."
+    }
+   ],
+   "pronunciation": [
+    {
+     "word": "sleeping",
+     "tip_vi": "Nhớ kéo dài nguyên âm 'ee' ở giữa và phát âm âm 'ng' cuối rõ ràng."
+    },
+    {
+     "word": "three",
+     "tip_vi": "Đặt lưỡi giữa hai hàm răng và thổi hơi mạnh để phát âm âm 'th' chuẩn hơn."
+    },
+    {
+     "word": "pillow",
+     "tip_vi": "Nhấn trọng âm vào âm tiết đầu tiên 'pil-', âm 'ow' phía sau đọc lướt nhẹ."
+    }
+   ],
+   "praise_vi": "Bạn dùng từ rất dễ hiểu, học viên nghe qua là làm theo được ngay."
+  }
+ }
+]
