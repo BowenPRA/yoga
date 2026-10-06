@@ -8,7 +8,9 @@ const API = 'https://generativelanguage.googleapis.com/v1beta'
 
 export const MODELS = {
   coach: process.env.GEMINI_MODEL_COACH || 'gemini-3.8-flash',
-  tts: process.env.GEMINI_MODEL_TTS || 'gemini-3.8-flash-tts',
+  // Lite for live speech: each TTS model has its own daily request cap
+  // (100/day on Tier 1), and the full model's cap is reserved for content.
+  tts: process.env.GEMINI_MODEL_TTS || 'gemini-3.8-flash-lite-tts',
 }
 export const VOICE = process.env.GEMINI_VOICE || 'Sulafat'
 
