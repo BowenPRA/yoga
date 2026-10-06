@@ -1,0 +1,10 @@
+dist
+research
+public
+src
+content
+scripts
+docs
+node_modules
+.claude
+*.md

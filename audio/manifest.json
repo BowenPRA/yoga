@@ -1,0 +1,434 @@
+{
+ "quadriceps": {
+  "hash": "2439e17dab76",
+  "text": "quadriceps",
+  "kind": "term",
+  "tokens": 38
+ },
+ "quadriceps__plain": {
+  "hash": "a4a0dae90cf3",
+  "text": "the front of your thighs",
+  "kind": "plain",
+  "tokens": 64
+ },
+ "quadriceps__example": {
+  "hash": "d729b7c19015",
+  "text": "Press through your front foot and feel the front of your thigh working.",
+  "kind": "example",
+  "tokens": 142
+ },
+ "hamstrings": {
+  "hash": "f722fb02268d",
+  "text": "hamstrings",
+  "kind": "term",
+  "tokens": 44
+ },
+ "hamstrings__plain": {
+  "hash": "331aea311c25",
+  "text": "the back of your thighs",
+  "kind": "plain",
+  "tokens": 59
+ },
+ "hamstrings__example": {
+  "hash": "6f1aaba2553c",
+  "text": "Bend your knees a little to soften the back of your thighs.",
+  "kind": "example",
+  "tokens": 104
+ },
+ "glutes": {
+  "hash": "b4ade2edf3e2",
+  "text": "glutes",
+  "kind": "term",
+  "tokens": 35
+ },
+ "glutes__plain": {
+  "hash": "9dc4b736bfd4",
+  "text": "your seat",
+  "kind": "plain",
+  "tokens": 35
+ },
+ "glutes__example": {
+  "hash": "96009f7dfa0c",
+  "text": "Squeeze your seat gently to support your lower back.",
+  "kind": "example",
+  "tokens": 105
+ },
+ "gluteus-medius": {
+  "hash": "f1f6aec5d769",
+  "text": "gluteus medius",
+  "kind": "term",
+  "tokens": 61
+ },
+ "gluteus-medius__plain": {
+  "hash": "5e19549d86ed",
+  "text": "the side of your hip",
+  "kind": "plain",
+  "tokens": 57
+ },
+ "gluteus-medius__example": {
+  "hash": "219d0ea36495",
+  "text": "Keep your front knee tracking over your toes; feel the side of your hip switch on.",
+  "kind": "example",
+  "tokens": 198
+ },
+ "hip-adductors": {
+  "hash": "b61cbd4018d5",
+  "text": "hip adductors",
+  "kind": "term",
+  "tokens": 56
+ },
+ "hip-adductors__plain": {
+  "hash": "31767072e32e",
+  "text": "your inner thighs",
+  "kind": "plain",
+  "tokens": 60
+ },
+ "hip-adductors__example": {
+  "hash": "cf9642fa9962",
+  "text": "Let your inner thighs open as you sink into the pose.",
+  "kind": "example",
+  "tokens": 122
+ },
+ "hip-flexors": {
+  "hash": "3606f012a10e",
+  "text": "hip flexors",
+  "kind": "term",
+  "tokens": 56
+ },
+ "hip-flexors__plain": {
+  "hash": "1cf1a1be586a",
+  "text": "the front of your hips",
+  "kind": "plain",
+  "tokens": 53
+ },
+ "hip-flexors__example": {
+  "hash": "8f3e9b458e5b",
+  "text": "Reach your back leg long to stretch the front of your hip.",
+  "kind": "example",
+  "tokens": 119
+ },
+ "piriformis": {
+  "hash": "51241031a314",
+  "text": "piriformis",
+  "kind": "term",
+  "tokens": 41
+ },
+ "piriformis__plain": {
+  "hash": "8660cd03c462",
+  "text": "deep in your outer hip",
+  "kind": "plain",
+  "tokens": 60
+ },
+ "piriformis__example": {
+  "hash": "090466e05fd2",
+  "text": "You should feel this deep in your outer hip, not in your knee.",
+  "kind": "example",
+  "tokens": 121
+ },
+ "calves": {
+  "hash": "191c20933f0a",
+  "text": "calves",
+  "kind": "term",
+  "tokens": 40
+ },
+ "calves__plain": {
+  "hash": "27dc580f1850",
+  "text": "the back of your lower legs",
+  "kind": "plain",
+  "tokens": 78
+ },
+ "calves__example": {
+  "hash": "d2408b8ef13b",
+  "text": "Pedal your feet to wake up your calves.",
+  "kind": "example",
+  "tokens": 93
+ },
+ "deltoids": {
+  "hash": "0ef4c430c24a",
+  "text": "deltoids",
+  "kind": "term",
+  "tokens": 44
+ },
+ "deltoids__plain": {
+  "hash": "3921d26e2787",
+  "text": "your shoulders",
+  "kind": "plain",
+  "tokens": 47
+ },
+ "deltoids__example": {
+  "hash": "70bfe462d845",
+  "text": "Reach through your fingertips and let your shoulders stay soft.",
+  "kind": "example",
+  "tokens": 140
+ },
+ "triceps": {
+  "hash": "517727a9b6ae",
+  "text": "triceps",
+  "kind": "term",
+  "tokens": 41
+ },
+ "triceps__plain": {
+  "hash": "6d9ed1663af2",
+  "text": "the back of your upper arms",
+  "kind": "plain",
+  "tokens": 74
+ },
+ "triceps__example": {
+  "hash": "d4d166d88ec5",
+  "text": "Straighten your arms without locking your elbows.",
+  "kind": "example",
+  "tokens": 102
+ },
+ "abdominals": {
+  "hash": "84217e76a217",
+  "text": "abdominals",
+  "kind": "term",
+  "tokens": 45
+ },
+ "abdominals__plain": {
+  "hash": "9975d6fe4211",
+  "text": "your belly",
+  "kind": "plain",
+  "tokens": 39
+ },
+ "abdominals__example": {
+  "hash": "b81169aa8127",
+  "text": "Draw your belly in gently to support your spine.",
+  "kind": "example",
+  "tokens": 101
+ },
+ "spine": {
+  "hash": "ced216f65628",
+  "text": "spine",
+  "kind": "term",
+  "tokens": 39
+ },
+ "spine__plain": {
+  "hash": "2ac983560694",
+  "text": "your back",
+  "kind": "plain",
+  "tokens": 39
+ },
+ "spine__example": {
+  "hash": "4ef28660f347",
+  "text": "Lengthen through your spine from your tailbone to the crown of your head.",
+  "kind": "example",
+  "tokens": 151
+ },
+ "sacrum": {
+  "hash": "db24ce1f958b",
+  "text": "sacrum",
+  "kind": "term",
+  "tokens": 32
+ },
+ "sacrum__plain": {
+  "hash": "cff15c69cbba",
+  "text": "the base of your spine",
+  "kind": "plain",
+  "tokens": 64
+ },
+ "sacrum__example": {
+  "hash": "65f36fcd6ea4",
+  "text": "Let the base of your spine feel heavy toward the floor.",
+  "kind": "example",
+  "tokens": 119
+ },
+ "pelvis": {
+  "hash": "6a0c73910b9d",
+  "text": "pelvis",
+  "kind": "term",
+  "tokens": 43
+ },
+ "pelvis__plain": {
+  "hash": "515cf13bccca",
+  "text": "your hips",
+  "kind": "plain",
+  "tokens": 38
+ },
+ "pelvis__example": {
+  "hash": "516b3fc56fcc",
+  "text": "Keep your hips level, like a bowl of water you don’t want to spill.",
+  "kind": "example",
+  "tokens": 158
+ },
+ "sit-bones": {
+  "hash": "31d409cff9e5",
+  "text": "sitting bones",
+  "kind": "term",
+  "tokens": 46
+ },
+ "sit-bones__plain": {
+  "hash": "1c75c58c4fc5",
+  "text": "your sitting bones",
+  "kind": "plain",
+  "tokens": 49
+ },
+ "sit-bones__example": {
+  "hash": "e90958b096a6",
+  "text": "Lift your sitting bones up toward the ceiling.",
+  "kind": "example",
+  "tokens": 88
+ },
+ "hips": {
+  "hash": "fbe82eedd958",
+  "text": "hips",
+  "kind": "term",
+  "tokens": 34
+ },
+ "hips__plain": {
+  "hash": "515cf13bccca",
+  "text": "your hips",
+  "kind": "plain",
+  "tokens": 37
+ },
+ "hips__example": {
+  "hash": "bb4aae05d29b",
+  "text": "Open your hips to the side wall.",
+  "kind": "example",
+  "tokens": 68
+ },
+ "knees": {
+  "hash": "541c6865edde",
+  "text": "knees",
+  "kind": "term",
+  "tokens": 39
+ },
+ "knees__plain": {
+  "hash": "73df81ac712b",
+  "text": "your knees",
+  "kind": "plain",
+  "tokens": 57
+ },
+ "knees__example": {
+  "hash": "e5ed1864c0b6",
+  "text": "Bend your front knee so it stacks over your ankle.",
+  "kind": "example",
+  "tokens": 108
+ },
+ "ankles": {
+  "hash": "a5dfad82610a",
+  "text": "ankles",
+  "kind": "term",
+  "tokens": 32
+ },
+ "ankles__plain": {
+  "hash": "1cf2b04b5a9a",
+  "text": "your ankles",
+  "kind": "plain",
+  "tokens": 40
+ },
+ "ankles__example": {
+  "hash": "515ae7ae714a",
+  "text": "Stack your knee over your ankle, not past it.",
+  "kind": "example",
+  "tokens": 106
+ },
+ "wrists": {
+  "hash": "4aacac3033e2",
+  "text": "wrists",
+  "kind": "term",
+  "tokens": 33
+ },
+ "wrists__plain": {
+  "hash": "b1008e39ea30",
+  "text": "your wrists",
+  "kind": "plain",
+  "tokens": 44
+ },
+ "wrists__example": {
+  "hash": "ccbced38beb2",
+  "text": "If your wrists complain, come down onto your forearms.",
+  "kind": "example",
+  "tokens": 108
+ },
+ "shoulders": {
+  "hash": "ea7a332528e9",
+  "text": "shoulders",
+  "kind": "term",
+  "tokens": 47
+ },
+ "shoulders__plain": {
+  "hash": "3921d26e2787",
+  "text": "your shoulders",
+  "kind": "plain",
+  "tokens": 46
+ },
+ "heels": {
+  "hash": "d69e4b2029f7",
+  "text": "heels",
+  "kind": "term",
+  "tokens": 39
+ },
+ "heels__plain": {
+  "hash": "de2fdf02e6c9",
+  "text": "your heels",
+  "kind": "plain",
+  "tokens": 40
+ },
+ "heels__example": {
+  "hash": "318a2e388a0e",
+  "text": "Reach your heels toward the floor; they don’t have to touch.",
+  "kind": "example",
+  "tokens": 103
+ },
+ "crown": {
+  "hash": "b67a6e7cdc50",
+  "text": "crown of the head",
+  "kind": "term",
+  "tokens": 62
+ },
+ "crown__plain": {
+  "hash": "4b3fa06eddda",
+  "text": "the top of your head",
+  "kind": "plain",
+  "tokens": 53
+ },
+ "crown__example": {
+  "hash": "6dd3d022126a",
+  "text": "Lengthen through the crown of your head.",
+  "kind": "example",
+  "tokens": 74
+ },
+ "tailbone": {
+  "hash": "ca0766d04631",
+  "text": "tailbone",
+  "kind": "term",
+  "tokens": 38
+ },
+ "root-down__example": {
+  "hash": "434ad3142ddc",
+  "text": "Root down through the outer edge of your back foot.",
+  "kind": "example",
+  "tokens": 98
+ },
+ "lengthen": {
+  "hash": "cbaf7fcfa16a",
+  "text": "lengthen",
+  "kind": "term",
+  "tokens": 34
+ },
+ "draw-in": {
+  "hash": "9b135797220f",
+  "text": "draw in",
+  "kind": "term",
+  "tokens": 46
+ },
+ "draw-in__example": {
+  "hash": "54c89708c0ce",
+  "text": "Draw your belly in gently.",
+  "kind": "example",
+  "tokens": 75
+ },
+ "soften": {
+  "hash": "36b43b4f2a1e",
+  "text": "soften",
+  "kind": "term",
+  "tokens": 35
+ },
+ "press": {
+  "hash": "adb7daa66a85",
+  "text": "press",
+  "kind": "term",
+  "tokens": 32
+ }
+}
