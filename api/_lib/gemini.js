@@ -12,6 +12,9 @@ export const MODELS = {
   // (100/day on Tier 1), and the full model's cap is reserved for content.
   tts: process.env.GEMINI_MODEL_TTS || 'gemini-3.8-flash-lite-tts',
 }
+// Each TTS model has its own daily request cap, so live speech walks down this
+// list when one is exhausted. All use the Interactions API.
+export const TTS_FALLBACKS = (process.env.GEMINI_TTS_FALLBACKS || 'gemini-3.8-flash-lite-tts,gemini-3.1-flash-tts-preview,gemini-3.8-flash-tts').split(',')
 export const VOICE = process.env.GEMINI_VOICE || 'Sulafat'
 
 const ORIGINS = (process.env.ALLOWED_ORIGINS || '').split(',').map((s) => s.trim()).filter(Boolean)
@@ -90,7 +93,20 @@ export async function generateJSON({ system, prompt, schema, model = MODELS.coac
  * Speech through the Interactions API (the 3.8 TTS models). The text is a
  * verbatim transcript; delivery goes in the style annotation. Returns WAV bytes.
  */
-export async function speak({ text, style, voice = VOICE, model = MODELS.tts }) {
+export async function speak({ text, style, voice = VOICE, models = TTS_FALLBACKS }) {
+  let lastErr
+  for (const model of models) {
+    try {
+      return await speakWith({ text, style, voice, model })
+    } catch (err) {
+      lastErr = err
+      if (!/429|quota|rate/i.test(err.message)) throw err
+    }
+  }
+  throw lastErr
+}
+
+async function speakWith({ text, style, voice, model }) {
   const body = {
     model,
     input: [{ type: 'user_input', content: [{ type: 'text', text, annotations: [{ type: 'speech_metadata', style }] }] }],

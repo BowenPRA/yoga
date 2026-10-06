@@ -42,7 +42,7 @@ MODEL = os.environ.get("TTS_MODEL", PREFERRED)
 VOICE = "Sulafat"
 PRICE_PER_M = {"gemini-3.8-flash-tts": 9.0, "gemini-3.8-flash-lite-tts": 6.0}
 BATCH = 6
-BATCH_CHARS = 700
+BATCH_CHARS = 520  # long lines get fewer per request; short names get six
 GAP = " Leave a clear silence of two full seconds between paragraphs; each paragraph is a separate line to be read on its own."
 
 STYLES = {
@@ -138,7 +138,7 @@ def encode(ff, wav_path, mp3_path, start=None, end=None):
     subprocess.run(cmd, check=True)
 
 
-def silences(ff, wav_path, min_len=0.75, noise="-38dB"):
+def silences(ff, wav_path, min_len=0.3, noise="-38dB"):
     """Interior silences as (start, end) pairs, via ffmpeg silencedetect."""
     r = subprocess.run([ff, "-i", wav_path, "-af", f"silencedetect=noise={noise}:d={min_len}", "-f", "null", "-"],
                        capture_output=True, text=True)
@@ -147,9 +147,22 @@ def silences(ff, wav_path, min_len=0.75, noise="-38dB"):
     dur = re.search(r"Duration: (\d+):(\d+):([0-9.]+)", r.stderr)
     total = int(dur.group(1)) * 3600 + int(dur.group(2)) * 60 + float(dur.group(3)) if dur else None
     pairs = list(zip(starts, ends))
-    # drop leading/trailing silence
     pairs = [(a, b) for a, b in pairs if a > 0.2 and (total is None or b < total - 0.2)]
     return pairs, total
+
+
+def pick_gaps(pairs, n):
+    """Choose the n longest silences as the gaps between items, if they stand
+    clearly apart from the sentence pauses. Returns them in time order or None."""
+    if len(pairs) < n:
+        return None
+    ranked = sorted(pairs, key=lambda p: p[1] - p[0], reverse=True)
+    chosen, rest = ranked[:n], ranked[n:]
+    shortest_chosen = min(b - a for a, b in chosen)
+    longest_rest = max((b - a for a, b in rest), default=0.0)
+    if shortest_chosen < 0.45 or (rest and shortest_chosen < longest_rest * 1.25):
+        return None
+    return sorted(chosen)
 
 
 def digest(clip):
@@ -194,13 +207,11 @@ def do_batch(batch, k, ff, manifest):
     with open(tmp, "wb") as f:
         f.write(wav)
     pairs, total = silences(ff, tmp)
-    if len(pairs) != len(batch) - 1:
-        # try a slightly looser detection before giving up
-        pairs, total = silences(ff, tmp, min_len=0.5, noise="-35dB")
-    if len(pairs) != len(batch) - 1:
+    gaps = pick_gaps(pairs, len(batch) - 1)
+    if gaps is None or total is None:
         os.remove(tmp)
         return None
-    cuts = [0.0] + [(a + b) / 2 for a, b in pairs] + [total]
+    cuts = [0.0] + [(a + b) / 2 for a, b in gaps] + [total]
     per = tok / len(batch)
     for c, a, b in zip(batch, cuts[:-1], cuts[1:]):
         encode(ff, tmp, os.path.join(OUT, c["id"] + ".mp3"), a, b)
