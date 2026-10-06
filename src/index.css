@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Colour tokens as RGB triples so Tailwind can add alpha. Light is the default;
+   dark is a swap of the same names. The palette is a studio, not a classroom:
+   warm off-white, ink rather than black, sage and clay as the only accents. */
+:root {
+  --sand: 246 243 238;
+  --paper: 255 253 249;
+  --ink: 43 42 39;
+  --muted: 111 106 98;
+  --line: 230 224 214;
+  --sage: 111 143 122;
+  --sage-soft: 228 236 230;
+  --sage-deep: 79 110 91;
+  --clay: 185 112 79;
+  --clay-soft: 243 227 218;
+  --gold-soft: 244 236 216;
+}
+.dark {
+  --sand: 30 29 27;
+  --paper: 40 39 36;
+  --ink: 236 232 225;
+  --muted: 160 154 144;
+  --line: 62 60 55;
+  --sage: 134 166 145;
+  --sage-soft: 48 58 51;
+  --sage-deep: 170 198 180;
+  --clay: 206 139 106;
+  --clay-soft: 68 52 44;
+  --gold-soft: 66 60 46;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  @apply bg-sand text-ink font-sans antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* The shell fills the visible viewport. dvh tracks the real visible height on
+   a phone, where 100vh includes the address bar; vh is the fallback. */
+.app-screen {
+  height: 100vh;
+  height: 100dvh;
+  overscroll-behavior-y: none;
+}
+
+/* Safe areas for the bottom tab bar on phones with a home indicator. */
+.pb-safe {
+  padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+/* A quiet pulse for the word currently being spoken. */
+@keyframes speaking {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.55;
+  }
+}
+.speaking {
+  animation: speaking 1.2s ease-in-out infinite;
+}

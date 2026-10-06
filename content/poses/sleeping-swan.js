@@ -1,0 +1,41 @@
+export const sleepingSwan = {
+  id: 'sleeping-swan',
+  styles: ['yin'],
+  family: 'hip-opener',
+  en: 'Sleeping Swan',
+  sa: 'Eka Pāda Rājakapotāsana',
+  saNote: { en: 'The Yin name is Sleeping Swan. The Sanskrit belongs to the yang version, Pigeon.', vi: 'Tên Yin là Thiên nga ngủ. Tên Sanskrit thuộc về phiên bản yang, tư thế Bồ câu.' },
+  say: 'EH-kah PAH-dah rah-jah-kah-poh-TAH-sah-nah',
+  vi: 'Thiên nga ngủ',
+  yin: { holdMinutes: 3, note: { en: 'Three to five minutes each side. Muscles stay soft; the stretch is for the hip, not the knee.', vi: 'Ba đến năm phút mỗi bên. Cơ giữ mềm; kéo giãn ở hông, không phải ở gối.' } },
+  breath: {
+    en: 'Breathe slowly and let each exhale soften you a little further. There is nowhere to get to.',
+    vi: 'Thở chậm và để mỗi hơi thở ra giúp bạn mềm hơn một chút. Không cần phải đến đâu cả.',
+  },
+  cues: [
+    { id: 'sleeping-swan__cue-1', kind: 'transition', en: 'Bring your right knee forward, behind your right wrist.', vi: 'Đưa gối phải lên trước, đặt phía sau cổ tay phải.' },
+    { id: 'sleeping-swan__cue-2', kind: 'alignment', en: 'Let your shin angle back toward your left hip. It doesn’t need to be parallel.', vi: 'Để ống chân chếch về phía hông trái. Không cần phải song song.' },
+    { id: 'sleeping-swan__cue-3', kind: 'alignment', en: 'Walk your back leg straight behind you.', vi: 'Đưa chân sau duỗi thẳng ra phía sau.' },
+    { id: 'sleeping-swan__cue-4', kind: 'transition', en: 'Fold forward slowly, and rest on your forearms or your forehead.', vi: 'Từ từ gập người về trước, tựa lên cẳng tay hoặc trán.' },
+    { id: 'sleeping-swan__cue-5', kind: 'soften', en: 'Find your edge. Enough to feel it, not so much that you tense against it.', vi: 'Tìm ngưỡng của bạn. Đủ để cảm nhận, nhưng không căng cứng chống lại nó.' },
+    { id: 'sleeping-swan__cue-6', kind: 'soften', en: 'Let the muscles go soft. We’re here for three minutes.', vi: 'Để các cơ mềm ra. Chúng ta ở đây ba phút.' },
+    { id: 'sleeping-swan__cue-7', kind: 'safety', en: 'If you feel any sharp pain in your knee, come out of the pose.', vi: 'Nếu thấy đau nhói ở gối, hãy thoát khỏi tư thế.' },
+    { id: 'sleeping-swan__cue-8', kind: 'transition', en: 'To come out, press your hands down and slowly lift up.', vi: 'Để thoát thế, ấn hai tay xuống và từ từ nâng người lên.' },
+  ],
+  modifications: [
+    { id: 'sleeping-swan__mod-1', en: 'Place a bolster or a folded blanket under your front hip so your hips stay level.', vi: 'Kê gối ôm hoặc chăn gấp dưới hông trước để hai bên hông cân bằng.', props: ['bolster', 'blanket'] },
+    { id: 'sleeping-swan__mod-2', en: 'Rest your forehead on a block or on your stacked fists.', vi: 'Tựa trán lên gạch hoặc lên hai nắm tay chồng lên nhau.', props: ['block'] },
+    { id: 'sleeping-swan__mod-3', en: 'If the knee complains, lie on your back and take Eye of the Needle instead.', vi: 'Nếu gối khó chịu, nằm ngửa và chuyển sang tư thế Lỗ kim (số 4 nằm).', props: [] },
+  ],
+  safety: [
+    { id: 'sleeping-swan__safe-1', en: 'The sensation belongs in the outer hip. Pain in the knee means come out.', vi: 'Cảm giác căng phải ở bên ngoài hông. Đau ở gối nghĩa là cần thoát thế.' },
+    { id: 'sleeping-swan__safe-2', en: 'Come out slowly. After a long hold the joint needs a moment.', vi: 'Thoát thế từ từ. Sau khi giữ lâu, khớp cần một chút thời gian.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['piriformis', 'glutes', 'hip-flexors'],
+  },
+  joints: ['hips', 'knees'],
+  transitionsTo: ['child-pose', 'reclined-twist'],
+  figure: 'sleeping-swan',
+}

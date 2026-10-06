@@ -1,0 +1,200 @@
+/**
+ * Body terms for the vertical slice: the muscles, bones and joints the three
+ * poses touch. Two registers each: `en` is the technical word, `plain` is
+ * what a teacher says in class. `vi` is the standard Vietnamese anatomy term
+ * (to be checked against the glossary in step 6 of the plan), `viPlain` the
+ * everyday phrase.
+ *
+ *   say      stress respelling for her eyes, capitals on the stressed syllable
+ *   traps    pronunciation targets for Vietnamese speakers (see CLAUDE.md)
+ *   bodyMap  region id on the figure (figure: 'front' | 'back')
+ */
+export const BODY = [
+  // --- muscles ---
+  {
+    id: 'quadriceps', domain: 'body', group: 'muscle',
+    en: 'quadriceps', plain: 'the front of your thighs',
+    vi: 'cơ tứ đầu đùi', viPlain: 'mặt trước đùi',
+    say: 'KWOD-ri-seps', traps: ['stress', 'final-s'],
+    example: { en: 'Press through your front foot and feel the front of your thigh working.', vi: 'Ấn qua bàn chân trước và cảm nhận mặt trước đùi đang làm việc.' },
+    bodyMap: { figure: 'front', region: 'quadriceps' },
+  },
+  {
+    id: 'hamstrings', domain: 'body', group: 'muscle',
+    en: 'hamstrings', plain: 'the back of your thighs',
+    vi: 'cơ gân kheo', viPlain: 'mặt sau đùi',
+    say: 'HAM-strings', traps: ['cluster-str', 'final-ngz'],
+    example: { en: 'Bend your knees a little to soften the back of your thighs.', vi: 'Hơi chùng gối để mặt sau đùi được thả lỏng.' },
+    bodyMap: { figure: 'back', region: 'hamstrings' },
+  },
+  {
+    id: 'glutes', domain: 'body', group: 'muscle',
+    en: 'glutes', plain: 'your seat',
+    vi: 'cơ mông', viPlain: 'mông',
+    say: 'GLOOTS', traps: ['cluster-gl', 'final-ts'],
+    example: { en: 'Squeeze your seat gently to support your lower back.', vi: 'Siết nhẹ cơ mông để nâng đỡ phần lưng dưới.' },
+    bodyMap: { figure: 'back', region: 'glutes' },
+  },
+  {
+    id: 'gluteus-medius', domain: 'body', group: 'muscle',
+    en: 'gluteus medius', plain: 'the side of your hip',
+    vi: 'cơ mông nhỡ', viPlain: 'bên hông',
+    say: 'GLOO-tee-us MEE-dee-us', traps: ['stress'],
+    example: { en: 'Keep your front knee tracking over your toes; feel the side of your hip switch on.', vi: 'Giữ gối trước thẳng hướng với mũi chân; cảm nhận bên hông được kích hoạt.' },
+    bodyMap: { figure: 'back', region: 'gluteus-medius' },
+  },
+  {
+    id: 'hip-adductors', domain: 'body', group: 'muscle',
+    en: 'hip adductors', plain: 'your inner thighs',
+    vi: 'cơ khép đùi', viPlain: 'mặt trong đùi',
+    say: 'a-DUK-ters', traps: ['stress', 'final-z'],
+    example: { en: 'Let your inner thighs open as you sink into the pose.', vi: 'Để mặt trong đùi mở ra khi bạn hạ sâu vào tư thế.' },
+    bodyMap: { figure: 'front', region: 'hip-adductors' },
+  },
+  {
+    id: 'hip-flexors', domain: 'body', group: 'muscle',
+    en: 'hip flexors', plain: 'the front of your hips',
+    vi: 'cơ gấp hông', viPlain: 'phía trước hông',
+    say: 'HIP FLEK-sers', traps: ['short-i', 'cluster-fl', 'final-z'],
+    example: { en: 'Reach your back leg long to stretch the front of your hip.', vi: 'Duỗi dài chân sau để kéo giãn phía trước hông.' },
+    bodyMap: { figure: 'front', region: 'hip-flexors' },
+  },
+  {
+    id: 'piriformis', domain: 'body', group: 'muscle',
+    en: 'piriformis', plain: 'deep in your outer hip',
+    vi: 'cơ hình lê', viPlain: 'sâu bên ngoài hông',
+    say: 'pir-i-FOR-mis', traps: ['stress', 'final-s'],
+    example: { en: 'You should feel this deep in your outer hip, not in your knee.', vi: 'Bạn nên cảm thấy căng sâu bên ngoài hông, không phải ở đầu gối.' },
+    bodyMap: { figure: 'back', region: 'piriformis' },
+  },
+  {
+    id: 'calves', domain: 'body', group: 'muscle',
+    en: 'calves', plain: 'the back of your lower legs',
+    vi: 'cơ bắp chân', viPlain: 'bắp chân',
+    say: 'KAHVZ', traps: ['final-vz', 'long-a'],
+    example: { en: 'Pedal your feet to wake up your calves.', vi: 'Đạp luân phiên hai bàn chân để làm ấm bắp chân.' },
+    bodyMap: { figure: 'back', region: 'calves' },
+  },
+  {
+    id: 'deltoids', domain: 'body', group: 'muscle',
+    en: 'deltoids', plain: 'your shoulders',
+    vi: 'cơ delta', viPlain: 'vai',
+    say: 'DEL-toydz', traps: ['stress', 'final-dz'],
+    example: { en: 'Reach through your fingertips and let your shoulders stay soft.', vi: 'Vươn qua đầu ngón tay và giữ vai thả lỏng.' },
+    bodyMap: { figure: 'front', region: 'deltoids' },
+  },
+  {
+    id: 'triceps', domain: 'body', group: 'muscle',
+    en: 'triceps', plain: 'the back of your upper arms',
+    vi: 'cơ tam đầu cánh tay', viPlain: 'mặt sau cánh tay',
+    say: 'TRY-seps', traps: ['cluster-tr', 'final-ps'],
+    example: { en: 'Straighten your arms without locking your elbows.', vi: 'Duỗi thẳng tay nhưng không khoá khuỷu.' },
+    bodyMap: { figure: 'back', region: 'triceps' },
+  },
+  {
+    id: 'abdominals', domain: 'body', group: 'muscle',
+    en: 'abdominals', plain: 'your belly',
+    vi: 'cơ bụng', viPlain: 'bụng',
+    say: 'ab-DOM-i-nals', traps: ['stress', 'final-z'],
+    example: { en: 'Draw your belly in gently to support your spine.', vi: 'Hóp nhẹ bụng để nâng đỡ cột sống.' },
+    bodyMap: { figure: 'front', region: 'abdominals' },
+  },
+
+  // --- bones and joints ---
+  {
+    id: 'spine', domain: 'body', group: 'bone',
+    en: 'spine', plain: 'your back',
+    vi: 'cột sống', viPlain: 'lưng',
+    say: 'SPYN', traps: ['cluster-sp', 'final-n'],
+    example: { en: 'Lengthen through your spine from your tailbone to the crown of your head.', vi: 'Kéo dài cột sống từ xương cụt đến đỉnh đầu.' },
+    bodyMap: { figure: 'back', region: 'spine' },
+  },
+  {
+    id: 'sacrum', domain: 'body', group: 'bone',
+    en: 'sacrum', plain: 'the base of your spine',
+    vi: 'xương cùng', viPlain: 'phần dưới cùng của cột sống',
+    say: 'SAY-krum', traps: ['stress', 'cluster-kr'],
+    example: { en: 'Let the base of your spine feel heavy toward the floor.', vi: 'Để phần dưới cột sống nặng xuống về phía sàn.' },
+    bodyMap: { figure: 'back', region: 'sacrum' },
+  },
+  {
+    id: 'pelvis', domain: 'body', group: 'bone',
+    en: 'pelvis', plain: 'your hips',
+    vi: 'xương chậu', viPlain: 'khung chậu',
+    say: 'PEL-vis', traps: ['stress', 'final-s'],
+    example: { en: 'Keep your hips level, like a bowl of water you don’t want to spill.', vi: 'Giữ khung chậu cân bằng, như một bát nước bạn không muốn làm đổ.' },
+    bodyMap: { figure: 'front', region: 'pelvis' },
+  },
+  {
+    id: 'sit-bones', domain: 'body', group: 'bone',
+    en: 'sitting bones', plain: 'your sitting bones',
+    vi: 'xương ngồi', viPlain: 'xương ngồi',
+    say: 'SIT-ing bohnz', traps: ['short-i', 'final-z'],
+    example: { en: 'Lift your sitting bones up toward the ceiling.', vi: 'Nâng xương ngồi lên hướng về trần nhà.' },
+    bodyMap: { figure: 'back', region: 'sit-bones' },
+  },
+  {
+    id: 'hips', domain: 'body', group: 'joint',
+    en: 'hips', plain: 'your hips',
+    vi: 'khớp háng', viPlain: 'hông',
+    say: 'HIPS', traps: ['short-i', 'final-ps'],
+    example: { en: 'Open your hips to the side wall.', vi: 'Mở hông hướng về bức tường bên.' },
+    bodyMap: { figure: 'front', region: 'hips' },
+  },
+  {
+    id: 'knees', domain: 'body', group: 'joint',
+    en: 'knees', plain: 'your knees',
+    vi: 'khớp gối', viPlain: 'đầu gối',
+    say: 'NEEZ', traps: ['final-z', 'long-ee'],
+    example: { en: 'Bend your front knee so it stacks over your ankle.', vi: 'Gập gối trước sao cho gối thẳng trên mắt cá chân.' },
+    bodyMap: { figure: 'front', region: 'knees' },
+  },
+  {
+    id: 'ankles', domain: 'body', group: 'joint',
+    en: 'ankles', plain: 'your ankles',
+    vi: 'khớp cổ chân', viPlain: 'cổ chân',
+    say: 'ANG-kuls', traps: ['stress', 'final-z'],
+    example: { en: 'Stack your knee over your ankle, not past it.', vi: 'Đặt gối thẳng trên cổ chân, không đưa quá về phía trước.' },
+    bodyMap: { figure: 'front', region: 'ankles' },
+  },
+  {
+    id: 'wrists', domain: 'body', group: 'joint',
+    en: 'wrists', plain: 'your wrists',
+    vi: 'khớp cổ tay', viPlain: 'cổ tay',
+    say: 'RISTS', traps: ['cluster-sts', 'short-i'],
+    example: { en: 'If your wrists complain, come down onto your forearms.', vi: 'Nếu cổ tay khó chịu, hạ xuống chống bằng cẳng tay.' },
+    bodyMap: { figure: 'front', region: 'wrists' },
+  },
+  {
+    id: 'shoulders', domain: 'body', group: 'joint',
+    en: 'shoulders', plain: 'your shoulders',
+    vi: 'khớp vai', viPlain: 'vai',
+    say: 'SHOHL-derz', traps: ['cluster-ld', 'final-z'],
+    example: { en: 'Relax your shoulders away from your ears.', vi: 'Thả lỏng vai, hạ vai xa khỏi tai.' },
+    bodyMap: { figure: 'back', region: 'shoulders' },
+  },
+  {
+    id: 'heels', domain: 'body', group: 'bone',
+    en: 'heels', plain: 'your heels',
+    vi: 'gót chân', viPlain: 'gót chân',
+    say: 'HEELZ', traps: ['long-ee', 'final-lz'],
+    example: { en: 'Reach your heels toward the floor; they don’t have to touch.', vi: 'Hướng gót chân xuống sàn; không nhất thiết phải chạm.' },
+    bodyMap: { figure: 'back', region: 'heels' },
+  },
+  {
+    id: 'crown', domain: 'body', group: 'bone',
+    en: 'crown of the head', plain: 'the top of your head',
+    vi: 'đỉnh đầu', viPlain: 'đỉnh đầu',
+    say: 'KROWN', traps: ['cluster-kr', 'final-n'],
+    example: { en: 'Lengthen through the crown of your head.', vi: 'Kéo dài lên qua đỉnh đầu.' },
+    bodyMap: { figure: 'front', region: 'crown' },
+  },
+  {
+    id: 'tailbone', domain: 'body', group: 'bone',
+    en: 'tailbone', plain: 'your tailbone',
+    vi: 'xương cụt', viPlain: 'xương cụt',
+    say: 'TAYL-bohn', traps: ['final-l', 'final-n'],
+    example: { en: 'Let your tailbone drop toward your heels.', vi: 'Để xương cụt hạ xuống hướng về gót chân.' },
+    bodyMap: { figure: 'back', region: 'tailbone' },
+  },
+]

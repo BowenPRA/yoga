@@ -13,6 +13,10 @@ From Bowen on 6 October 2026:
 - **Vietnamese is the main language**, English a toggle, with a support level
   that shows less Vietnamese as she improves.
 - **It is a surprise.** She cannot be asked anything. Bowen answers for her.
+- **Everything is for her teaching.** No student-facing features. Teacher Talk
+  is her rehearsing what to say to a student; the student side is text prompts.
+- **The voice is Gemini 3.8 Flash TTS, Sulafat (warm)**, for all content,
+  chosen by Bowen from the listening test on 6 October 2026.
 
 What the tests showed (details and audio on the comparison page):
 
@@ -79,7 +83,7 @@ pattern. The Gemini key lives only there.
 | Endpoint | Does | Model |
 |---|---|---|
 | `POST /api/coach` | Cue Coach: natural version, changes explained in Vietnamese, pronunciation warnings | gemini-3.8-flash, low thinking |
-| `POST /api/talk` | Teacher Talk: one turn of a student role-play, with a Vietnamese aside | gemini-3.8-flash |
+| `POST /api/talk` | Teacher Talk: she practises answering a student; Gemini plays the student in text and coaches her reply, with a Vietnamese aside | gemini-3.8-flash |
 | `POST /api/class` | Class Builder: full script with transitions and breath cues from chosen poses or a style | gemini-3.8-flash |
 | `POST /api/speak` | Live speech for AI-written text (corrected cues, generated scripts) | gemini-3.8-flash-lite-tts |
 | `POST /api/pronounce` | Optional: her recording of a cue, returns which words to fix, in Vietnamese | gemini-3.8-flash (audio in) |
@@ -217,8 +221,8 @@ Phone first; the layout also works on a laptop. Five tabs along the bottom:
    has the three names with audio, cues (each tappable), modifications and
    props, muscles (linked to the Body Map), and "add to class".
 3. **Practice (Luyện).** Cue Coach (type or dictate, get the natural version
-   with Vietnamese explanations, hear it, save it), Teacher Talk (role-play with
-   a Vietnamese aside), Listen & Flow (a native voice cues a sequence while she
+   with Vietnamese explanations, hear it, save it), Teacher Talk (she practises
+   replying to a student's question, with a Vietnamese aside), Listen & Flow (a native voice cues a sequence while she
    follows, with a big pause button), Class Builder (pick poses or a style, get a
    script, rehearse from a teleprompter).
 4. **Review (Ôn).** Today's cards, a few minutes at a time. Quiet progress:
@@ -307,8 +311,7 @@ Answer in any order; defaults are in brackets.
    works (the browser's dictation on iPhone is Siri's; Android Chrome's is
    Google's and better behaved), whether the PWA installs from Safari or Chrome,
    and how audio autoplay is handled.
-2. **Which voice?** From the comparison page. [Gemini 3.8 Flash TTS, Sulafat
-   for most content, Charon as a second voice for Teacher Talk students.]
+2. ~~Which voice?~~ Answered: Gemini 3.8 Flash TTS, Sulafat, everywhere.
 3. **Which Cue Coach model?** 3.8 Flash (best Vietnamese, 15 to 20 seconds in
    the test, likely under 10 with low thinking) or Flash-Lite (3 seconds, less
    careful Vietnamese). [3.8 Flash with low thinking; I will measure and fall
