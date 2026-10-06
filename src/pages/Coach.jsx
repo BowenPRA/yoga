@@ -123,7 +123,7 @@ export default function Coach() {
           <div className="rounded-2xl bg-paper border border-line shadow-card p-4">
             <div className="text-xs text-muted line-through">{cue}</div>
             <div className="mt-1 text-[13px] font-semibold uppercase tracking-wider text-sage-deep">{t.coach.natural}</div>
-            <p className="mt-1 font-serif text-[22px] leading-snug text-ink">“{result.natural}”</p>
+            <p className="mt-1 font-serif text-[19px] leading-snug text-ink">“{result.natural}”</p>
             {result.meaning_vi && <p className="mt-1 text-sm text-muted">{result.meaning_vi}</p>}
             <div className="mt-3 flex gap-2">
               <Button onClick={listen} kind={speaking ? 'secondary' : 'primary'}>

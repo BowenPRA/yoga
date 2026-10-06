@@ -45,13 +45,13 @@ export default function Body() {
       </div>
       <div className="rounded-2xl bg-paper border border-line shadow-card divide-y divide-line">
         {list.map((x) => (
-          <button key={x.id} onClick={() => { setView(x.bodyMap?.figure || view); setTerm(x) }} className="flex w-full items-center gap-3 px-3 py-2.5 text-left hover:bg-sand">
+          <div key={x.id} role="button" tabIndex={0} onClick={() => { setView(x.bodyMap?.figure || view); setTerm(x) }} onKeyDown={(e) => e.key === 'Enter' && setTerm(x)} className="flex w-full cursor-pointer items-center gap-3 px-3 py-2.5 text-left hover:bg-sand">
             <PlayButton id={x.id} size={34} />
             <div className="flex-1 min-w-0">
               <div className="text-ink">{x.en} <span className="text-xs text-clay">{x.say}</span></div>
               <div className="text-sm text-muted truncate">{x.vi}{x.plain && x.plain !== x.en ? ` · ${x.plain}` : ''}</div>
             </div>
-          </button>
+          </div>
         ))}
       </div>
       <TermSheet term={term} onClose={() => setTerm(null)} />

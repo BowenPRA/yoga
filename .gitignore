@@ -11,3 +11,6 @@ Thumbs.db
 # Listening-test audio: regenerate with research/gen_*.py
 research/tts/*.wav
 research/tts/*.mp3
+
+.vercel
+.env*

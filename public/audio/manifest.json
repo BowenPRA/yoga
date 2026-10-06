@@ -220,5 +220,179 @@
   "text": "sacrum",
   "kind": "term",
   "tokens": 32
+ },
+ "sacrum__plain": {
+  "hash": "cff15c69cbba",
+  "text": "the base of your spine",
+  "kind": "plain",
+  "tokens": 64
+ },
+ "sacrum__example": {
+  "hash": "65f36fcd6ea4",
+  "text": "Let the base of your spine feel heavy toward the floor.",
+  "kind": "example",
+  "tokens": 119
+ },
+ "pelvis": {
+  "hash": "6a0c73910b9d",
+  "text": "pelvis",
+  "kind": "term",
+  "tokens": 43
+ },
+ "pelvis__plain": {
+  "hash": "515cf13bccca",
+  "text": "your hips",
+  "kind": "plain",
+  "tokens": 38
+ },
+ "pelvis__example": {
+  "hash": "516b3fc56fcc",
+  "text": "Keep your hips level, like a bowl of water you don’t want to spill.",
+  "kind": "example",
+  "tokens": 158
+ },
+ "sit-bones": {
+  "hash": "31d409cff9e5",
+  "text": "sitting bones",
+  "kind": "term",
+  "tokens": 46
+ },
+ "sit-bones__plain": {
+  "hash": "1c75c58c4fc5",
+  "text": "your sitting bones",
+  "kind": "plain",
+  "tokens": 49
+ },
+ "sit-bones__example": {
+  "hash": "e90958b096a6",
+  "text": "Lift your sitting bones up toward the ceiling.",
+  "kind": "example",
+  "tokens": 88
+ },
+ "hips": {
+  "hash": "fbe82eedd958",
+  "text": "hips",
+  "kind": "term",
+  "tokens": 34
+ },
+ "hips__plain": {
+  "hash": "515cf13bccca",
+  "text": "your hips",
+  "kind": "plain",
+  "tokens": 37
+ },
+ "hips__example": {
+  "hash": "bb4aae05d29b",
+  "text": "Open your hips to the side wall.",
+  "kind": "example",
+  "tokens": 68
+ },
+ "knees": {
+  "hash": "541c6865edde",
+  "text": "knees",
+  "kind": "term",
+  "tokens": 39
+ },
+ "knees__plain": {
+  "hash": "73df81ac712b",
+  "text": "your knees",
+  "kind": "plain",
+  "tokens": 57
+ },
+ "knees__example": {
+  "hash": "e5ed1864c0b6",
+  "text": "Bend your front knee so it stacks over your ankle.",
+  "kind": "example",
+  "tokens": 108
+ },
+ "ankles": {
+  "hash": "a5dfad82610a",
+  "text": "ankles",
+  "kind": "term",
+  "tokens": 32
+ },
+ "ankles__plain": {
+  "hash": "1cf2b04b5a9a",
+  "text": "your ankles",
+  "kind": "plain",
+  "tokens": 40
+ },
+ "ankles__example": {
+  "hash": "515ae7ae714a",
+  "text": "Stack your knee over your ankle, not past it.",
+  "kind": "example",
+  "tokens": 106
+ },
+ "wrists": {
+  "hash": "4aacac3033e2",
+  "text": "wrists",
+  "kind": "term",
+  "tokens": 33
+ },
+ "wrists__plain": {
+  "hash": "b1008e39ea30",
+  "text": "your wrists",
+  "kind": "plain",
+  "tokens": 44
+ },
+ "wrists__example": {
+  "hash": "ccbced38beb2",
+  "text": "If your wrists complain, come down onto your forearms.",
+  "kind": "example",
+  "tokens": 108
+ },
+ "shoulders": {
+  "hash": "ea7a332528e9",
+  "text": "shoulders",
+  "kind": "term",
+  "tokens": 47
+ },
+ "shoulders__plain": {
+  "hash": "3921d26e2787",
+  "text": "your shoulders",
+  "kind": "plain",
+  "tokens": 46
+ },
+ "heels": {
+  "hash": "d69e4b2029f7",
+  "text": "heels",
+  "kind": "term",
+  "tokens": 39
+ },
+ "heels__plain": {
+  "hash": "de2fdf02e6c9",
+  "text": "your heels",
+  "kind": "plain",
+  "tokens": 40
+ },
+ "heels__example": {
+  "hash": "318a2e388a0e",
+  "text": "Reach your heels toward the floor; they don’t have to touch.",
+  "kind": "example",
+  "tokens": 103
+ },
+ "crown": {
+  "hash": "b67a6e7cdc50",
+  "text": "crown of the head",
+  "kind": "term",
+  "tokens": 62
+ },
+ "crown__plain": {
+  "hash": "4b3fa06eddda",
+  "text": "the top of your head",
+  "kind": "plain",
+  "tokens": 53
+ },
+ "crown__example": {
+  "hash": "6dd3d022126a",
+  "text": "Lengthen through the crown of your head.",
+  "kind": "example",
+  "tokens": 74
+ },
+ "tailbone": {
+  "hash": "ca0766d04631",
+  "text": "tailbone",
+  "kind": "term",
+  "tokens": 38
  }
 }

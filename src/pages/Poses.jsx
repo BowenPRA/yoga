@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { ChevronRight } from 'lucide-react'
 import { useLang } from '../lib/i18n.jsx'
 import { POSES } from '../lib/content.js'
@@ -20,10 +21,10 @@ export default function Poses() {
       </div>
       <div className="grid gap-2">
         {list.map((p) => (
-          <Card key={p.id} to={`/learn/poses/${p.id}`}>
-            <div className="flex items-center gap-3">
+          <Card key={p.id} className="!p-0">
+            <div className="flex items-center gap-3 p-4">
               <PlayButton id={`${p.id}__en`} size={40} />
-              <div className="flex-1 min-w-0">
+              <Link to={`/learn/poses/${p.id}`} className="flex-1 min-w-0">
                 <div className="font-serif text-lg text-ink">{p.en}</div>
                 <div className="text-sm text-muted truncate">{p.sa} · {p.vi}</div>
                 <div className="mt-1 flex gap-1">
@@ -31,8 +32,8 @@ export default function Poses() {
                     <span key={s} className="rounded-full bg-sand px-2 py-0.5 text-[11px] text-muted">{t.poses[s]}</span>
                   ))}
                 </div>
-              </div>
-              <ChevronRight size={18} className="text-muted" />
+              </Link>
+              <Link to={`/learn/poses/${p.id}`} aria-label={p.en}><ChevronRight size={18} className="text-muted" /></Link>
             </div>
           </Card>
         ))}
