@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anatomy diagram candidates</title>
+<style>
+  :root { --bg:#f6f3ee; --card:#fff; --ink:#2b2a27; --muted:#6f6a62; --line:#e6e0d6; --sage:#4f6e5b; --clay:#b9704f; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.5 system-ui, sans-serif; }
+  main { max-width:1200px; margin:0 auto; padding:24px 16px 80px; }
+  h1 { font-weight:500; font-size:28px; margin:0 0 4px; } h2 { font-weight:500; font-size:22px; margin:40px 0 8px; }
+  p.lead { color:var(--muted); max-width:75ch; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:16px; }
+  .c { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:14px; }
+  .c img { width:100%; height:420px; object-fit:contain; object-position:top; background:#faf8f4; border-radius:10px; }
+  .c h3 { font-weight:500; font-size:17px; margin:10px 0 2px; }
+  .meta { font-size:13px; color:var(--muted); }
+  .tag { display:inline-block; font-size:11px; padding:2px 8px; border-radius:999px; background:#e4ece6; color:var(--sage); margin-right:4px; }
+  .tag.warn { background:#f3e3da; color:#7d4a32; }
+  .verdict { margin-top:8px; font-size:14px; }
+  .pick { border-color: var(--sage); box-shadow: 0 0 0 2px #e4ece6; }
+  table { border-collapse:collapse; width:100%; background:var(--card); font-size:15px; border-radius:12px; overflow:hidden; }
+  th,td { text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { color:var(--muted); font-weight:500; font-size:13px; }
+</style>
+</head>
+<body><main>
+<h1>Anatomy diagram candidates</h1>
+<p class="lead">Open-licence artwork that could be the Anatomy tab's figure. Every one is tappable in the same way: a transparent region per muscle or bone over the artwork, lit up when selected, with the real name, the plain phrase, the Vietnamese, audio, and the cues that use it. The art decides how it feels.</p>
+
+<h2>Muscles</h2>
+<div class="grid">
+  <div class="c pick">
+    <img src="anatomy/openstax-1105-preview.png" alt="">
+    <h3>OpenStax Anatomy &amp; Physiology, figure 11.5</h3>
+    <div class="meta"><span class="tag">CC BY 4.0</span> 1304 × 3033 JPG · front and back · superficial on one side, deep on the other</div>
+    <div class="verdict"><b>Recommended.</b> Textbook-clear, every muscle a yoga teacher names is drawn and distinct (iliopsoas, piriformis region, gluteus medius, serratus, erector group, QL implied). Clean enough to look calm in the app. Labels are baked into the image but sit in the margins, so the figure can be cropped out and our own tappable regions and labels laid over it.</div>
+  </div>
+  <div class="c">
+    <img src="anatomy/Bougle-Human-muscular-system-anterior-ca-svg.png" alt="">
+    <h3>Bouglé, <i>Le corps humain</i> (1899), vectorised</h3>
+    <div class="meta"><span class="tag">CC BY-SA 3.0</span> 1821 × 2908 · front and back · an embedded bitmap with vector leader lines</div>
+    <div class="verdict">The most beautiful option, a real anatomical plate; it would make the tab feel like a studio wall chart. Busier and darker than OpenStax, and the share-alike licence means the app's figure files would carry the same licence (fine for a free app). Labels are Catalan and easily removed.</div>
+  </div>
+  <div class="c">
+    <img src="anatomy/Muscles-anterior-labeled-png.png" alt="">
+    <h3>Häggström medical gallery</h3>
+    <div class="meta"><span class="tag">Public domain</span> 1664 × 1632 PNG · front and back</div>
+    <div class="verdict">Fully labelled and public domain, but the drawing is flatter and the labels are baked over the body, so they would have to be painted out. A fallback.</div>
+  </div>
+  <div class="c">
+    <img src="anatomy/Frontal-View-muscular-System-EMG-svg.png" alt="">
+    <h3>EMG electrode chart (Hanbo)</h3>
+    <div class="meta"><span class="tag">CC BY-SA 4.0</span> true vector, 788 paths · front only</div>
+    <div class="verdict">A real vector body, but front only and the muscle paths are not separated by name. Not worth the work.</div>
+  </div>
+  <div class="c">
+    <img src="anatomy/Muscular-system-svg.png" alt="">
+    <h3>Muscular system.svg (Termininja)</h3>
+    <div class="meta"><span class="tag">CC BY-SA 3.0</span> true vector, 43 paths · front only</div>
+    <div class="verdict">Coarse, front only. No.</div>
+  </div>
+  <div class="c">
+    <img src="anatomy/rmh-male-front.png" alt="">
+    <h3>Code libraries (react-muscle-highlighter, body-muscles)</h3>
+    <div class="meta"><span class="tag">MIT / Apache 2.0</span> stylised gym-app bodies with 23 to 70 regions</div>
+    <div class="verdict">Easy to wire up, but they look like a fitness tracker, not anatomy, and the region names are gym groups ("abs", "upper back"). Wrong feel for her.</div>
+  </div>
+</div>
+
+<h2>Bones and joints</h2>
+<div class="grid">
+  <div class="c pick">
+    <img src="anatomy/Human-skeleton-front-en-svg.png" alt="">
+    <h3>Human skeleton, front and back (LadyofHats)</h3>
+    <div class="meta"><span class="tag">Public domain</span> true vector SVG · 909 / 1144 paths · front and back</div>
+    <div class="verdict"><b>Recommended.</b> The standard Wikipedia skeleton: clean, accurate, public domain, a real vector so bones can be highlighted exactly. Labels are separate text elements and come off cleanly. Covers every landmark she cues: sit bones, sacrum, tailbone, pelvis, sternum, clavicles, scapulae, spine segments, patella, heel.</div>
+  </div>
+  <div class="c">
+    <img src="anatomy/Posterior-Hip-Muscles-1-svg.png" alt="">
+    <h3>Close-ups where the big figure is too small</h3>
+    <div class="meta"><span class="tag">CC BY-SA 3.0</span> e.g. posterior hip (piriformis and the deep rotators)</div>
+    <div class="verdict">For the hip, shoulder and foot, a zoomed detail drawing sits under the main figure. Wikimedia has serviceable ones; the hip is the one that matters most for Yin.</div>
+  </div>
+</div>
+
+<h2>How the tab would be built on the recommended pair</h2>
+<table>
+  <tr><th>Layer</th><th>What</th></tr>
+  <tr><td>Figure</td><td>OpenStax muscles (front, back) cropped free of labels; LadyofHats skeleton (front, back). A toggle: Muscles / Bones. Pinch-zoom on the phone; three preset zooms (upper body, hips, legs).</td></tr>
+  <tr><td>Regions</td><td>About 45 muscles and 30 bones and landmarks, each a traced polygon over the artwork. Tap lights it up and opens the card; an "Also here" row shows what is deep under it (psoas under the abdominals, piriformis under the glutes).</td></tr>
+  <tr><td>Card</td><td>Real name with audio and stress, plain teaching phrase with audio, Vietnamese (standard term and everyday phrase), what it does in one line, where she feels it, 3 to 5 cues that use it in context by style (Vinyasa, Yin, Ashtanga), poses that work it and poses that stretch it, the mistake Vietnamese speakers make with the word, and the neighbouring structures.</td></tr>
+  <tr><td>Index</td><td>An A to Z list under the figure, searchable in English or Vietnamese, grouped by region (shoulder girdle, spine and trunk, hip, knee and lower leg, foot, arm and hand), for when she knows the word and wants the card.</td></tr>
+  <tr><td>Actions</td><td>A third view, "Movements": flexion, extension, rotation, abduction, adduction, pronation, supination, plantar and dorsiflexion, each with the plain verb teachers use ("fold", "arch", "turn out") and a cue.</td></tr>
+</table>
+</main></body></html>
