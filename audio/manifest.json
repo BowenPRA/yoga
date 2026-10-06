@@ -168,18 +168,20 @@
   "model": "gemini-3.8-flash-tts"
  },
  "deltoids": {
-  "hash": "09e5f4c455e0",
+  "hash": "37768aebf0ec",
   "text": "deltoids",
   "kind": "term",
-  "tokens": 44,
-  "model": "gemini-3.8-flash-tts"
+  "tokens": 64,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
  },
  "deltoids__plain": {
-  "hash": "58b34881dae7",
-  "text": "your shoulders",
+  "hash": "d59bc9117ea9",
+  "text": "the caps of your shoulders",
   "kind": "plain",
-  "tokens": 47,
-  "model": "gemini-3.8-flash-tts"
+  "tokens": 120,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
  },
  "deltoids__example": {
   "hash": "8429ea1308b9",
@@ -259,11 +261,12 @@
   "model": "gemini-3.8-flash-tts"
  },
  "sacrum__plain": {
-  "hash": "c89f5b59e256",
-  "text": "the base of your spine",
+  "hash": "0b78da45e5ef",
+  "text": "the flat bone at the base of your spine",
   "kind": "plain",
-  "tokens": 64,
-  "model": "gemini-3.8-flash-tts"
+  "tokens": 82,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
  },
  "sacrum__example": {
   "hash": "f1e6420aa518",
@@ -301,11 +304,12 @@
   "model": "gemini-3.8-flash-tts"
  },
  "sit-bones__plain": {
-  "hash": "70244e18b297",
-  "text": "your sitting bones",
+  "hash": "84ed6c2e9f01",
+  "text": "the bones you sit on",
   "kind": "plain",
-  "tokens": 49,
-  "model": "gemini-3.8-flash-tts"
+  "tokens": 82,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
  },
  "sit-bones__example": {
   "hash": "23c673dc2f7e",
@@ -803,5 +807,773 @@
   "kind": "example",
   "tokens": 120,
   "model": "gemini-3.8-flash-lite-tts"
+ },
+ "sternocleidomastoid": {
+  "hash": "d21632ab6f51",
+  "text": "sternocleidomastoid",
+  "kind": "term",
+  "tokens": 64,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "trapezius": {
+  "hash": "2cb610fd625e",
+  "text": "trapezius",
+  "kind": "term",
+  "tokens": 64,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "levator-scapulae": {
+  "hash": "e3235df622e6",
+  "text": "levator scapulae",
+  "kind": "term",
+  "tokens": 64,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "rhomboids": {
+  "hash": "d571c3a61d76",
+  "text": "rhomboids",
+  "kind": "term",
+  "tokens": 64,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "rotator-cuff": {
+  "hash": "645625376a05",
+  "text": "rotator cuff",
+  "kind": "term",
+  "tokens": 64,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "teres-major": {
+  "hash": "b114391310c9",
+  "text": "teres major",
+  "kind": "term",
+  "tokens": 71,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "pectoralis-major": {
+  "hash": "2974b4a61022",
+  "text": "pectoralis major",
+  "kind": "term",
+  "tokens": 71,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "pectoralis-minor": {
+  "hash": "0d54f43134fa",
+  "text": "pectoralis minor",
+  "kind": "term",
+  "tokens": 71,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "serratus-anterior": {
+  "hash": "aab5bf58dc27",
+  "text": "serratus anterior",
+  "kind": "term",
+  "tokens": 71,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "latissimus-dorsi": {
+  "hash": "27d6fa57d5d8",
+  "text": "latissimus dorsi",
+  "kind": "term",
+  "tokens": 71,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "erector-spinae": {
+  "hash": "a82b369c2281",
+  "text": "erector spinae",
+  "kind": "term",
+  "tokens": 71,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "sternocleidomastoid__plain": {
+  "hash": "2bcc4b549f47",
+  "text": "the long muscle at the side of your neck",
+  "kind": "plain",
+  "tokens": 120,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "trapezius__plain": {
+  "hash": "f52bc7daac5c",
+  "text": "the top of your shoulders and upper back",
+  "kind": "plain",
+  "tokens": 120,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "levator-scapulae__plain": {
+  "hash": "d62f8b7503a6",
+  "text": "the muscle that lifts your shoulder blade",
+  "kind": "plain",
+  "tokens": 120,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "rhomboids__plain": {
+  "hash": "43bfae689dc4",
+  "text": "the muscles between your shoulder blades",
+  "kind": "plain",
+  "tokens": 120,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "rotator-cuff__plain": {
+  "hash": "176359634930",
+  "text": "the small muscles that hold your shoulder in its socket",
+  "kind": "plain",
+  "tokens": 120,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "teres-major__plain": {
+  "hash": "0a5b4eb73913",
+  "text": "the muscle under your armpit at the back",
+  "kind": "plain",
+  "tokens": 98,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "pectoralis-major__plain": {
+  "hash": "311b27748f08",
+  "text": "your chest",
+  "kind": "plain",
+  "tokens": 98,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "pectoralis-minor__plain": {
+  "hash": "c3a20b13e76c",
+  "text": "the small muscle under your chest",
+  "kind": "plain",
+  "tokens": 98,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "serratus-anterior__plain": {
+  "hash": "fc01673b8cde",
+  "text": "the muscle along the side of your ribs",
+  "kind": "plain",
+  "tokens": 98,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "latissimus-dorsi__plain": {
+  "hash": "2361fa3ac945",
+  "text": "the big muscles of your mid back",
+  "kind": "plain",
+  "tokens": 98,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "erector-spinae__plain": {
+  "hash": "892dbe05d05f",
+  "text": "the long muscles along your spine",
+  "kind": "plain",
+  "tokens": 98,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "quadratus-lumborum__plain": {
+  "hash": "81002ad6cfb6",
+  "text": "the deep muscle of your lower back and waist",
+  "kind": "plain",
+  "tokens": 115,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "biceps-brachii__plain": {
+  "hash": "d497f0df4ee1",
+  "text": "the front of your upper arms",
+  "kind": "plain",
+  "tokens": 115,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "triceps-brachii__plain": {
+  "hash": "e9be720553ba",
+  "text": "the back of your upper arms",
+  "kind": "plain",
+  "tokens": 115,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "forearm-flexors__plain": {
+  "hash": "8a586a5f4f99",
+  "text": "the inside of your forearms",
+  "kind": "plain",
+  "tokens": 115,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "forearm-extensors__plain": {
+  "hash": "178c0f8904a1",
+  "text": "the outside of your forearms",
+  "kind": "plain",
+  "tokens": 115,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "rectus-abdominis__plain": {
+  "hash": "6a887197be3b",
+  "text": "the front of your belly",
+  "kind": "plain",
+  "tokens": 115,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "external-oblique__plain": {
+  "hash": "6b07de09aa9c",
+  "text": "the sides of your waist",
+  "kind": "plain",
+  "tokens": 97,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "internal-oblique__plain": {
+  "hash": "bdce7ca6a3c2",
+  "text": "the deeper layer of your waist",
+  "kind": "plain",
+  "tokens": 97,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "transversus-abdominis__plain": {
+  "hash": "beff32f634d4",
+  "text": "your deep belly, like a corset",
+  "kind": "plain",
+  "tokens": 97,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "diaphragm__plain": {
+  "hash": "0b06140bb381",
+  "text": "your breathing muscle, under your ribs",
+  "kind": "plain",
+  "tokens": 97,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "pelvic-floor__plain": {
+  "hash": "32d887eceb6d",
+  "text": "the floor of your pelvis",
+  "kind": "plain",
+  "tokens": 97,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "iliopsoas__plain": {
+  "hash": "11a8953064c8",
+  "text": "your deep hip flexors",
+  "kind": "plain",
+  "tokens": 97,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "tensor-fasciae-latae__plain": {
+  "hash": "d231c42d9ce5",
+  "text": "the muscle at the outer front of your hip",
+  "kind": "plain",
+  "tokens": 115,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "gluteus-maximus__plain": {
+  "hash": "8abcc64faa8e",
+  "text": "your seat",
+  "kind": "plain",
+  "tokens": 115,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "gluteus-minimus__plain": {
+  "hash": "1e5c3e925483",
+  "text": "the small deep muscle of your outer hip",
+  "kind": "plain",
+  "tokens": 115,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "deep-rotators__plain": {
+  "hash": "f8507cb50350",
+  "text": "the small muscles deep in your hip",
+  "kind": "plain",
+  "tokens": 115,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "sartorius__plain": {
+  "hash": "5474dfcc5b0f",
+  "text": "the long strap muscle across your thigh",
+  "kind": "plain",
+  "tokens": 115,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "it-band__plain": {
+  "hash": "1b8884642bbb",
+  "text": "the thick band down the outside of your thigh",
+  "kind": "plain",
+  "tokens": 115,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "tibialis-anterior__plain": {
+  "hash": "af2e429db7f9",
+  "text": "the front of your shin",
+  "kind": "plain",
+  "tokens": 91,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "tibialis-posterior__plain": {
+  "hash": "fe4c182ad775",
+  "text": "the deep muscle that holds up your arch",
+  "kind": "plain",
+  "tokens": 91,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "fibularis-longus__plain": {
+  "hash": "80fd8ab964e6",
+  "text": "the outside of your lower leg",
+  "kind": "plain",
+  "tokens": 91,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "achilles-tendon__plain": {
+  "hash": "0ca8b0cc7332",
+  "text": "the cord above your heel",
+  "kind": "plain",
+  "tokens": 91,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "plantar-fascia__plain": {
+  "hash": "f381ae138ca8",
+  "text": "the sole of your foot",
+  "kind": "plain",
+  "tokens": 91,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "jaw__plain": {
+  "hash": "14e1965167a7",
+  "text": "your jaw",
+  "kind": "plain",
+  "tokens": 91,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "cervical-spine__plain": {
+  "hash": "486a0ec041fa",
+  "text": "your neck",
+  "kind": "plain",
+  "tokens": 82,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "thoracic-spine__plain": {
+  "hash": "553a8b275d73",
+  "text": "your upper back",
+  "kind": "plain",
+  "tokens": 82,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "lumbar-spine__plain": {
+  "hash": "6f5e2e0a1d7d",
+  "text": "your lower back",
+  "kind": "plain",
+  "tokens": 82,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "hip-points__plain": {
+  "hash": "05179e1d27f1",
+  "text": "the bony points at the front of your hips",
+  "kind": "plain",
+  "tokens": 82,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "pubic-bone__plain": {
+  "hash": "de34cf4d7606",
+  "text": "the bone at the front of your pelvis",
+  "kind": "plain",
+  "tokens": 66,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "hip-joint__plain": {
+  "hash": "c95e1275169c",
+  "text": "your hip socket",
+  "kind": "plain",
+  "tokens": 66,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "femur__plain": {
+  "hash": "59c05a2abdab",
+  "text": "your thigh bone",
+  "kind": "plain",
+  "tokens": 66,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "knee__plain": {
+  "hash": "91dfe892b5ea",
+  "text": "your knee",
+  "kind": "plain",
+  "tokens": 66,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "kneecap__plain": {
+  "hash": "097b9f5dd43a",
+  "text": "your kneecap",
+  "kind": "plain",
+  "tokens": 66,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "shin-bone__plain": {
+  "hash": "11ec3e780bd1",
+  "text": "your shin",
+  "kind": "plain",
+  "tokens": 66,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "ankle__plain": {
+  "hash": "eb4cf6c9bb8e",
+  "text": "your ankle",
+  "kind": "plain",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "heel__plain": {
+  "hash": "c4eb1d7d2475",
+  "text": "your heel",
+  "kind": "plain",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "arch__plain": {
+  "hash": "ab70f8ce5c65",
+  "text": "the arch of your foot",
+  "kind": "plain",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "toes__plain": {
+  "hash": "f74e2c32ed4b",
+  "text": "your toes",
+  "kind": "plain",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "ribs__plain": {
+  "hash": "2a70a082ecd1",
+  "text": "your ribs",
+  "kind": "plain",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "sternum__plain": {
+  "hash": "ce8067418d25",
+  "text": "the centre of your chest",
+  "kind": "plain",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "collarbones__plain": {
+  "hash": "68b920d404a2",
+  "text": "your collarbones",
+  "kind": "plain",
+  "tokens": 69,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "shoulder-blades__plain": {
+  "hash": "1693188f8b31",
+  "text": "your shoulder blades",
+  "kind": "plain",
+  "tokens": 69,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "shoulder-joint__plain": {
+  "hash": "9a3eb98ce950",
+  "text": "your shoulder",
+  "kind": "plain",
+  "tokens": 69,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "upper-arm-bone__plain": {
+  "hash": "17a57936ce75",
+  "text": "your upper arm",
+  "kind": "plain",
+  "tokens": 69,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "elbow__plain": {
+  "hash": "b53d9585d4a5",
+  "text": "your elbow",
+  "kind": "plain",
+  "tokens": 69,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "forearm-bones__plain": {
+  "hash": "3abc454e3109",
+  "text": "your forearm",
+  "kind": "plain",
+  "tokens": 69,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "wrist__plain": {
+  "hash": "e8719ceedabd",
+  "text": "your wrist",
+  "kind": "plain",
+  "tokens": 38,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "hands__plain": {
+  "hash": "2441ec95bd14",
+  "text": "your hands",
+  "kind": "plain",
+  "tokens": 44,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "flexion__plain": {
+  "hash": "f0c1a57568c1",
+  "text": "bend, fold, curl",
+  "kind": "plain",
+  "tokens": 108,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "extension__plain": {
+  "hash": "a219294ed9ab",
+  "text": "straighten, lengthen, arch, open",
+  "kind": "plain",
+  "tokens": 146,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "lateral-flexion__plain": {
+  "hash": "b43fc64d6413",
+  "text": "side bend",
+  "kind": "plain",
+  "tokens": 50,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "rotation__plain": {
+  "hash": "2258070f5df9",
+  "text": "twist, turn",
+  "kind": "plain",
+  "tokens": 70,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "external-rotation__plain": {
+  "hash": "52197607e6ab",
+  "text": "turn out, open",
+  "kind": "plain",
+  "tokens": 64,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "internal-rotation__plain": {
+  "hash": "c00cedfb769b",
+  "text": "turn in",
+  "kind": "plain",
+  "tokens": 39,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "abduction__plain": {
+  "hash": "cfe196501bf4",
+  "text": "lift out to the side, widen",
+  "kind": "plain",
+  "tokens": 108,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "adduction__plain": {
+  "hash": "cb4670020692",
+  "text": "draw in, squeeze together",
+  "kind": "plain",
+  "tokens": 105,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "plantar-flexion__plain": {
+  "hash": "325aeb028274",
+  "text": "point your foot",
+  "kind": "plain",
+  "tokens": 54,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "dorsiflexion__plain": {
+  "hash": "c51befb49596",
+  "text": "flex your foot",
+  "kind": "plain",
+  "tokens": 56,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "pronation-supination__plain": {
+  "hash": "063d8e072dea",
+  "text": "turn your palm down / turn your palm up",
+  "kind": "plain",
+  "tokens": 148,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "protraction-retraction__plain": {
+  "hash": "6332bc60e01e",
+  "text": "spread your shoulder blades / squeeze your shoulder blades",
+  "kind": "plain",
+  "tokens": 173,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "elevation-depression__plain": {
+  "hash": "cd85d76ab930",
+  "text": "shrug up / draw down",
+  "kind": "plain",
+  "tokens": 127,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "pelvic-tilt__plain": {
+  "hash": "3b98196248b7",
+  "text": "tip your pelvis forward / tuck your tailbone",
+  "kind": "plain",
+  "tokens": 119,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "sternocleidomastoid__cue-1": {
+  "hash": "e661af1bb4fc",
+  "text": "Let your head be heavy; you don’t need to hold it up with your neck.",
+  "kind": "cue-vinyasa",
+  "tokens": 125,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "trapezius__cue-1": {
+  "hash": "13934f6e193c",
+  "text": "Relax your shoulders away from your ears.",
+  "kind": "cue-vinyasa",
+  "tokens": 125,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "trapezius__cue-2": {
+  "hash": "1bf83a59b331",
+  "text": "Slide your shoulder blades down your back.",
+  "kind": "cue-vinyasa",
+  "tokens": 125,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "levator-scapulae__cue-2": {
+  "hash": "02ff7a75b224",
+  "text": "Keep your shoulder blades heavy as you reach up.",
+  "kind": "cue-vinyasa",
+  "tokens": 125,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "rhomboids__cue-1": {
+  "hash": "40ec32a36f65",
+  "text": "Draw your shoulder blades toward each other and lift your chest.",
+  "kind": "cue-vinyasa",
+  "tokens": 125,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "deltoids__cue-1": {
+  "hash": "e1ba20ec4071",
+  "text": "Reach out through your fingertips; let the shoulders stay soft while the arms work.",
+  "kind": "cue-vinyasa",
+  "tokens": 125,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "rotator-cuff__cue-1": {
+  "hash": "a09c1ac67b9e",
+  "text": "Rotate your upper arms outward so the shoulders feel wide.",
+  "kind": "cue-vinyasa",
+  "tokens": 105,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "teres-major__cue-1": {
+  "hash": "99e8c8a66c4d",
+  "text": "Lift your armpits toward the ceiling in Downward Dog.",
+  "kind": "cue-vinyasa",
+  "tokens": 105,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "pectoralis-major__cue-1": {
+  "hash": "d54d6ae119a9",
+  "text": "Open your chest toward the ceiling.",
+  "kind": "cue-vinyasa",
+  "tokens": 105,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "pectoralis-major__cue-2": {
+  "hash": "9df3539e2483",
+  "text": "Broaden across your collarbones.",
+  "kind": "cue-vinyasa",
+  "tokens": 105,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "pectoralis-minor__cue-2": {
+  "hash": "43df5d6d6f05",
+  "text": "Lift the front of your shoulders away from the floor.",
+  "kind": "cue-vinyasa",
+  "tokens": 105,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "serratus-anterior__cue-1": {
+  "hash": "8c1deb2b8d25",
+  "text": "Push the floor away and feel your upper back broaden.",
+  "kind": "cue-vinyasa",
+  "tokens": 105,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
  }
 }
