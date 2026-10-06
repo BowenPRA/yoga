@@ -30,10 +30,10 @@ export const downwardDog = {
     { id: 'downward-dog__safe-2', en: 'Late in pregnancy, keep the hold short, or choose a gentler option.', vi: 'Ở giai đoạn cuối thai kỳ, giữ ngắn thôi, hoặc chọn một lựa chọn nhẹ nhàng hơn.' },
   ],
   muscles: {
-    working: ['triceps', 'deltoids', 'quadriceps', 'abdominals'],
-    lengthening: ['hamstrings', 'calves', 'spine'],
+    working: ['triceps-brachii', 'deltoids', 'serratus-anterior', 'quadriceps', 'transversus-abdominis'],
+    lengthening: ['hamstrings', 'calves', 'latissimus-dorsi', 'erector-spinae', 'achilles-tendon'],
   },
-  joints: ['wrists', 'shoulders', 'hips', 'ankles'],
+  joints: ['wrist', 'shoulder-joint', 'hip-joint', 'ankle', 'sit-bones'],
   transitionsTo: ['plank', 'low-lunge', 'standing-forward-fold'],
   figure: 'downward-dog',
 }

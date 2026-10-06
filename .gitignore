@@ -14,3 +14,5 @@ research/tts/*.mp3
 
 .vercel
 .env*
+research/anatomy/*.svg
+research/anatomy/_tts_tmp/

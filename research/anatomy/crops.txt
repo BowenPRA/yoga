@@ -1,0 +1,3 @@
+split 1445
+front (np.int64(281), np.int64(10), np.int64(951), np.int64(1279))
+back (np.int64(339), np.int64(204), np.int64(876), np.int64(1430))

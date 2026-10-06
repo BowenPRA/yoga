@@ -5,9 +5,10 @@ import { useLang } from '../lib/i18n.jsx'
 import { getPose, getTerm } from '../lib/content.js'
 import { audio } from '../lib/audio.js'
 import { learn } from '../lib/learning.js'
+import { useNavigate } from 'react-router-dom'
 import { store } from '../lib/store.js'
 import { Bi, Button, Chip, Header, PlayButton, Say, SayHint, Section } from '../components/ui.jsx'
-import TermSheet from '../components/TermSheet.jsx'
+import AnatomyCard from '../components/AnatomyCard.jsx'
 import SuggestFix from '../components/SuggestFix.jsx'
 
 export default function Pose() {
@@ -15,14 +16,12 @@ export default function Pose() {
   const pose = getPose(id)
   const { t } = useLang()
   const [term, setTerm] = useState(null)
+  const navigate = useNavigate()
   const [playingAll, setPlayingAll] = useState(false)
   const [saved, setSaved] = useState({})
   const stopRef = useRef(false)
 
-  useEffect(() => {
-    if (pose) learn.meetPose(pose)
-    return () => { stopRef.current = true; audio.stop() }
-  }, [pose])
+  useEffect(() => () => { stopRef.current = true; audio.stop() }, [pose])
 
   useEffect(() => {
     if (!pose) return
@@ -33,7 +32,7 @@ export default function Pose() {
     })
   }, [pose])
 
-  if (!pose) return <Navigate to="/learn/poses" replace />
+  if (!pose) return <Navigate to="/poses" replace />
   const note = pose.ashtanga?.note || pose.yin?.note
 
   const playAll = async () => {
@@ -45,7 +44,7 @@ export default function Pose() {
   }
 
   const save = async (c) => {
-    await learn.savePhrase({ id: c.id, en: c.en, vi: c.vi, source: pose.id, kind: 'cue' })
+    await learn.savePhrase({ id: c.id, en: c.en, vi: c.vi, source: pose.id })
     setSaved((s) => ({ ...s, [c.id]: true }))
   }
 
@@ -56,7 +55,7 @@ export default function Pose() {
 
   return (
     <>
-      <Header title={pose.en} subtitle={pose.vi} back="/learn/poses" />
+      <Header title={pose.en} subtitle={pose.vi} back="/poses" />
 
       <div className="rounded-2xl bg-paper border border-line shadow-card p-4">
         <div className="flex items-center gap-3">
@@ -150,14 +149,14 @@ export default function Pose() {
         )}
         {pose.joints?.length > 0 && (
           <div>
-            <div className="mb-1 text-xs text-muted">{t.body.bones}</div>
+            <div className="mb-1 text-xs text-muted">{t.poses.joints}</div>
             <div className="flex flex-wrap gap-2">{muscleChips(pose.joints)}</div>
           </div>
         )}
       </Section>
 
       <div className="mt-8"><SuggestFix target={pose.id} /></div>
-      <TermSheet term={term} onClose={() => setTerm(null)} />
+      <AnatomyCard term={term} onClose={() => setTerm(null)} onOpen={(tid) => { const x = getTerm(tid); setTerm(null); navigate(`/anatomy/${x?.kind === 'movement' ? 'movements' : x?.isBone ? 'bones' : 'muscles'}/${tid}`) }} />
     </>
   )
 }

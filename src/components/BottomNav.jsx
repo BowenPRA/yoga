@@ -1,29 +1,36 @@
 import { NavLink } from 'react-router-dom'
-import { Sun, BookOpen, Mic, Layers, User } from 'lucide-react'
+import { PersonStanding, Mic, MessageSquareText } from 'lucide-react'
 import { useLang } from '../lib/i18n.jsx'
 
+function BodyIcon({ size = 20, strokeWidth = 1.8 }) {
+  // A small anatomical mark: a torso outline with a heart-side accent.
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="4" r="2" />
+      <path d="M7 9h10l-1 7h-8z" />
+      <path d="M8 16v5M16 16v5M7 9l-3 4M17 9l3 4" />
+    </svg>
+  )
+}
+
 const TABS = [
-  { to: '/', key: 'home', Icon: Sun, end: true },
-  { to: '/learn', key: 'learn', Icon: BookOpen },
-  { to: '/practice', key: 'practice', Icon: Mic },
-  { to: '/review', key: 'review', Icon: Layers },
-  { to: '/mine', key: 'mine', Icon: User },
+  { to: '/poses', key: 'poses', Icon: PersonStanding },
+  { to: '/anatomy', key: 'anatomy', Icon: BodyIcon },
+  { to: '/speech', key: 'speech', Icon: Mic },
+  { to: '/phrases', key: 'phrases', Icon: MessageSquareText },
 ]
 
 export default function BottomNav() {
   const { t } = useLang()
   return (
     <nav className="fixed bottom-0 inset-x-0 z-20 bg-paper/95 backdrop-blur border-t border-line pb-safe">
-      <div className="mx-auto max-w-xl grid grid-cols-5">
-        {TABS.map(({ to, key, Icon, end }) => (
+      <div className="mx-auto max-w-xl grid grid-cols-4">
+        {TABS.map(({ to, key, Icon }) => (
           <NavLink
             key={key}
             to={to}
-            end={end}
             className={({ isActive }) =>
-              `flex flex-col items-center gap-0.5 py-2 text-[11px] font-medium transition-colors ${
-                isActive ? 'text-sage-deep' : 'text-muted'
-              }`
+              `flex flex-col items-center gap-0.5 py-2 text-[11px] font-medium transition-colors ${isActive ? 'text-sage-deep' : 'text-muted'}`
             }
           >
             {({ isActive }) => (

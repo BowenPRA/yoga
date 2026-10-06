@@ -4,6 +4,7 @@ import { ChevronRight } from 'lucide-react'
 import { useLang } from '../lib/i18n.jsx'
 import { POSES } from '../lib/content.js'
 import { Card, Chip, Header, PlayButton } from '../components/ui.jsx'
+import { SettingsButton } from '../components/SettingsSheet.jsx'
 
 const STYLES = ['all', 'vinyasa', 'ashtanga', 'yin']
 
@@ -13,7 +14,7 @@ export default function Poses() {
   const list = POSES.filter((p) => style === 'all' || p.styles.includes(style))
   return (
     <>
-      <Header title={t.poses.title} back="/learn" />
+      <Header title={t.poses.title} right={<SettingsButton />} />
       <div className="mb-4 flex gap-2 overflow-x-auto no-scrollbar">
         {STYLES.map((s) => (
           <Chip key={s} active={style === s} onClick={() => setStyle(s)}>{t.poses[s]}</Chip>
@@ -24,7 +25,7 @@ export default function Poses() {
           <Card key={p.id} className="!p-0">
             <div className="flex items-center gap-3 p-4">
               <PlayButton id={`${p.id}__en`} size={40} />
-              <Link to={`/learn/poses/${p.id}`} className="flex-1 min-w-0">
+              <Link to={`/poses/${p.id}`} className="flex-1 min-w-0">
                 <div className="font-serif text-lg text-ink">{p.en}</div>
                 <div className="text-sm text-muted">{p.sa}</div>
                 <div className="text-sm text-muted">{p.vi}</div>
@@ -34,7 +35,7 @@ export default function Poses() {
                   ))}
                 </div>
               </Link>
-              <Link to={`/learn/poses/${p.id}`} aria-label={p.en}><ChevronRight size={18} className="text-muted" /></Link>
+              <Link to={`/poses/${p.id}`} aria-label={p.en}><ChevronRight size={18} className="text-muted" /></Link>
             </div>
           </Card>
         ))}

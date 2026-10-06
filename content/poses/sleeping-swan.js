@@ -33,9 +33,9 @@ export const sleepingSwan = {
   ],
   muscles: {
     working: [],
-    lengthening: ['piriformis', 'glutes', 'hip-flexors'],
+    lengthening: ['piriformis', 'deep-rotators', 'gluteus-maximus', 'iliopsoas', 'it-band'],
   },
-  joints: ['hips', 'knees'],
+  joints: ['hip-joint', 'knee', 'sacrum'],
   transitionsTo: ['child-pose', 'reclined-twist'],
   figure: 'sleeping-swan',
 }

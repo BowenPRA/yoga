@@ -31,10 +31,10 @@ export const warrior2 = {
     { id: 'warrior-2__safe-2', en: 'If you have a knee injury, don’t bend as deeply, and come out sooner.', vi: 'Nếu bạn có chấn thương gối, đừng gập quá sâu và thoát thế sớm hơn.' },
   ],
   muscles: {
-    working: ['quadriceps', 'gluteus-medius', 'deltoids', 'abdominals'],
-    lengthening: ['hip-adductors', 'hip-flexors'],
+    working: ['quadriceps', 'gluteus-medius', 'deltoids', 'rectus-abdominis', 'transversus-abdominis'],
+    lengthening: ['hip-adductors', 'iliopsoas', 'pectoralis-major'],
   },
-  joints: ['knees', 'ankles', 'hips', 'shoulders'],
+  joints: ['knee', 'ankle', 'hip-joint', 'shoulder-joint'],
   transitionsTo: ['reverse-warrior', 'extended-side-angle', 'triangle'],
   figure: 'warrior-2',
 }

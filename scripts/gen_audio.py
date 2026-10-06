@@ -50,6 +50,16 @@ STYLES = {
     "cue-soften": "A yoga teacher inviting the class to soften. Very gentle, slow, almost a whisper, with pauses.",
     "cue-safety": "A kind yoga teacher giving a safety note. Clear and reassuring, unhurried.",
     "modification": "A kind yoga teacher offering an easier option. Warm, reassuring, unhurried.",
+    "cue-vinyasa": "A calm, warm yoga teacher cueing a flowing class. Unhurried teaching pace, gentle and encouraging.",
+    "cue-yin": "A yoga teacher guiding a long, still hold. Very slow, soft, with space between phrases.",
+    "cue-ashtanga": "A steady yoga teacher counting a class through a set sequence. Clear, even, unhurried.",
+    "phrase-welcome": "A warm yoga teacher welcoming a class. Friendly, relaxed, unhurried.",
+    "phrase-breath": "A calm yoga teacher cueing the breath. Slow and soft, with space between phrases.",
+    "phrase-transitions": "A calm yoga teacher guiding the class between poses. Steady and clear.",
+    "phrase-safety": "A kind yoga teacher giving safety notes and options. Clear, reassuring, unhurried.",
+    "phrase-yin": "A yoga teacher guiding a long Yin hold. Very slow, soft, almost a whisper, with pauses.",
+    "phrase-savasana": "A yoga teacher guiding final relaxation. Very slow and soft, almost a whisper, with long pauses.",
+    "phrase-closing": "A warm yoga teacher closing a class. Gentle, grateful, unhurried.",
     "safety": "A kind yoga teacher giving a safety note. Clear and reassuring, unhurried.",
 }
 
