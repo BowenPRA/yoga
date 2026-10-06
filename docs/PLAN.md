@@ -102,6 +102,14 @@ a bill. A Gemini budget alert as the backstop.
   about 760 MB). The script encodes to **mono MP3 at 48 kbps** (about 95 MB for
   the full set), which every phone plays. That needs `ffmpeg`, not yet
   installed on this machine (see open questions).
+- **Daily request cap.** Each Gemini TTS model allows only 100 requests per
+  day on this account's tier (found 6 October 2026). The slice's 161 clips
+  therefore span two days and two models. For the full content set the
+  generator will pack several lines of the same kind into one request,
+  separated by pauses, and split the result on silence with ffmpeg, checking
+  that the number of pieces matches; that gives roughly 800 clips a day. The
+  live speech endpoint uses the Flash-Lite TTS model so her daily use never
+  competes with content generation.
 - Each clip is one speakable unit: a word, a cue, a script sentence. Sequences
   for Listen & Flow are played clip by clip with configurable pauses, not as one
   long file, so the same clips serve the Pose Library, Review and Flow.

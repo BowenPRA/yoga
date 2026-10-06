@@ -1,428 +1,807 @@
 {
  "quadriceps": {
-  "hash": "2439e17dab76",
+  "hash": "616c96b1bafa",
   "text": "quadriceps",
   "kind": "term",
-  "tokens": 38
+  "tokens": 46,
+  "model": "gemini-3.8-flash-lite-tts"
  },
  "quadriceps__plain": {
-  "hash": "a4a0dae90cf3",
+  "hash": "2a429eaace0f",
   "text": "the front of your thighs",
   "kind": "plain",
-  "tokens": 64
+  "tokens": 64,
+  "model": "gemini-3.8-flash-lite-tts"
  },
  "quadriceps__example": {
-  "hash": "d729b7c19015",
+  "hash": "c24748a022a3",
   "text": "Press through your front foot and feel the front of your thigh working.",
   "kind": "example",
-  "tokens": 142
+  "tokens": 142,
+  "model": "gemini-3.8-flash-tts"
  },
  "hamstrings": {
-  "hash": "f722fb02268d",
+  "hash": "4772a0f8e2e8",
   "text": "hamstrings",
   "kind": "term",
-  "tokens": 44
+  "tokens": 44,
+  "model": "gemini-3.8-flash-tts"
  },
  "hamstrings__plain": {
-  "hash": "331aea311c25",
+  "hash": "92d8c26293e7",
   "text": "the back of your thighs",
   "kind": "plain",
-  "tokens": 59
+  "tokens": 59,
+  "model": "gemini-3.8-flash-tts"
  },
  "hamstrings__example": {
-  "hash": "6f1aaba2553c",
+  "hash": "7aff0bf08877",
   "text": "Bend your knees a little to soften the back of your thighs.",
   "kind": "example",
-  "tokens": 104
+  "tokens": 104,
+  "model": "gemini-3.8-flash-tts"
  },
  "glutes": {
-  "hash": "b4ade2edf3e2",
+  "hash": "4096d0637e6d",
   "text": "glutes",
   "kind": "term",
-  "tokens": 35
+  "tokens": 35,
+  "model": "gemini-3.8-flash-tts"
  },
  "glutes__plain": {
-  "hash": "9dc4b736bfd4",
+  "hash": "8abcc64faa8e",
   "text": "your seat",
   "kind": "plain",
-  "tokens": 35
+  "tokens": 35,
+  "model": "gemini-3.8-flash-tts"
  },
  "glutes__example": {
-  "hash": "96009f7dfa0c",
+  "hash": "ccc1fcdb4fac",
   "text": "Squeeze your seat gently to support your lower back.",
   "kind": "example",
-  "tokens": 105
+  "tokens": 105,
+  "model": "gemini-3.8-flash-tts"
  },
  "gluteus-medius": {
-  "hash": "f1f6aec5d769",
+  "hash": "912192feecc6",
   "text": "gluteus medius",
   "kind": "term",
-  "tokens": 61
+  "tokens": 61,
+  "model": "gemini-3.8-flash-tts"
  },
  "gluteus-medius__plain": {
-  "hash": "5e19549d86ed",
+  "hash": "8cb3831ae8c8",
   "text": "the side of your hip",
   "kind": "plain",
-  "tokens": 57
+  "tokens": 57,
+  "model": "gemini-3.8-flash-tts"
  },
  "gluteus-medius__example": {
-  "hash": "219d0ea36495",
+  "hash": "5c80ae22c8cc",
   "text": "Keep your front knee tracking over your toes; feel the side of your hip switch on.",
   "kind": "example",
-  "tokens": 198
+  "tokens": 198,
+  "model": "gemini-3.8-flash-tts"
  },
  "hip-adductors": {
-  "hash": "b61cbd4018d5",
+  "hash": "253d9f529f51",
   "text": "hip adductors",
   "kind": "term",
-  "tokens": 56
+  "tokens": 56,
+  "model": "gemini-3.8-flash-tts"
  },
  "hip-adductors__plain": {
-  "hash": "31767072e32e",
+  "hash": "353cd1695b64",
   "text": "your inner thighs",
   "kind": "plain",
-  "tokens": 60
+  "tokens": 60,
+  "model": "gemini-3.8-flash-tts"
  },
  "hip-adductors__example": {
-  "hash": "cf9642fa9962",
+  "hash": "23c3bca66c30",
   "text": "Let your inner thighs open as you sink into the pose.",
   "kind": "example",
-  "tokens": 122
+  "tokens": 122,
+  "model": "gemini-3.8-flash-tts"
  },
  "hip-flexors": {
-  "hash": "3606f012a10e",
+  "hash": "be34bfc87040",
   "text": "hip flexors",
   "kind": "term",
-  "tokens": 56
+  "tokens": 56,
+  "model": "gemini-3.8-flash-tts"
  },
  "hip-flexors__plain": {
-  "hash": "1cf1a1be586a",
+  "hash": "9566e10472b9",
   "text": "the front of your hips",
   "kind": "plain",
-  "tokens": 53
+  "tokens": 53,
+  "model": "gemini-3.8-flash-tts"
  },
  "hip-flexors__example": {
-  "hash": "8f3e9b458e5b",
+  "hash": "c5071c0bbc24",
   "text": "Reach your back leg long to stretch the front of your hip.",
   "kind": "example",
-  "tokens": 119
+  "tokens": 119,
+  "model": "gemini-3.8-flash-tts"
  },
  "piriformis": {
-  "hash": "51241031a314",
+  "hash": "fa876048a858",
   "text": "piriformis",
   "kind": "term",
-  "tokens": 41
+  "tokens": 41,
+  "model": "gemini-3.8-flash-tts"
  },
  "piriformis__plain": {
-  "hash": "8660cd03c462",
+  "hash": "2d7d4f5f7c95",
   "text": "deep in your outer hip",
   "kind": "plain",
-  "tokens": 60
+  "tokens": 60,
+  "model": "gemini-3.8-flash-tts"
  },
  "piriformis__example": {
-  "hash": "090466e05fd2",
+  "hash": "29ede5ae70fa",
   "text": "You should feel this deep in your outer hip, not in your knee.",
   "kind": "example",
-  "tokens": 121
+  "tokens": 121,
+  "model": "gemini-3.8-flash-tts"
  },
  "calves": {
-  "hash": "191c20933f0a",
+  "hash": "9409d20edc37",
   "text": "calves",
   "kind": "term",
-  "tokens": 40
+  "tokens": 40,
+  "model": "gemini-3.8-flash-tts"
  },
  "calves__plain": {
-  "hash": "27dc580f1850",
+  "hash": "5e06725f6500",
   "text": "the back of your lower legs",
   "kind": "plain",
-  "tokens": 78
+  "tokens": 78,
+  "model": "gemini-3.8-flash-tts"
  },
  "calves__example": {
-  "hash": "d2408b8ef13b",
+  "hash": "d61e326d19a4",
   "text": "Pedal your feet to wake up your calves.",
   "kind": "example",
-  "tokens": 93
+  "tokens": 93,
+  "model": "gemini-3.8-flash-tts"
  },
  "deltoids": {
-  "hash": "0ef4c430c24a",
+  "hash": "09e5f4c455e0",
   "text": "deltoids",
   "kind": "term",
-  "tokens": 44
+  "tokens": 44,
+  "model": "gemini-3.8-flash-tts"
  },
  "deltoids__plain": {
-  "hash": "3921d26e2787",
+  "hash": "58b34881dae7",
   "text": "your shoulders",
   "kind": "plain",
-  "tokens": 47
+  "tokens": 47,
+  "model": "gemini-3.8-flash-tts"
  },
  "deltoids__example": {
-  "hash": "70bfe462d845",
+  "hash": "8429ea1308b9",
   "text": "Reach through your fingertips and let your shoulders stay soft.",
   "kind": "example",
-  "tokens": 140
+  "tokens": 140,
+  "model": "gemini-3.8-flash-tts"
  },
  "triceps": {
-  "hash": "517727a9b6ae",
+  "hash": "4618a89c697b",
   "text": "triceps",
   "kind": "term",
-  "tokens": 41
+  "tokens": 41,
+  "model": "gemini-3.8-flash-tts"
  },
  "triceps__plain": {
-  "hash": "6d9ed1663af2",
+  "hash": "e9be720553ba",
   "text": "the back of your upper arms",
   "kind": "plain",
-  "tokens": 74
+  "tokens": 74,
+  "model": "gemini-3.8-flash-tts"
  },
  "triceps__example": {
-  "hash": "d4d166d88ec5",
+  "hash": "5b80f3da940f",
   "text": "Straighten your arms without locking your elbows.",
   "kind": "example",
-  "tokens": 102
+  "tokens": 102,
+  "model": "gemini-3.8-flash-tts"
  },
  "abdominals": {
-  "hash": "84217e76a217",
+  "hash": "efb638e60d91",
   "text": "abdominals",
   "kind": "term",
-  "tokens": 45
+  "tokens": 45,
+  "model": "gemini-3.8-flash-tts"
  },
  "abdominals__plain": {
-  "hash": "9975d6fe4211",
+  "hash": "3947949c079a",
   "text": "your belly",
   "kind": "plain",
-  "tokens": 39
+  "tokens": 39,
+  "model": "gemini-3.8-flash-tts"
  },
  "abdominals__example": {
-  "hash": "b81169aa8127",
+  "hash": "ab8ed627df6c",
   "text": "Draw your belly in gently to support your spine.",
   "kind": "example",
-  "tokens": 101
+  "tokens": 101,
+  "model": "gemini-3.8-flash-tts"
  },
  "spine": {
-  "hash": "ced216f65628",
+  "hash": "537c7ec9f2a1",
   "text": "spine",
   "kind": "term",
-  "tokens": 39
+  "tokens": 39,
+  "model": "gemini-3.8-flash-tts"
  },
  "spine__plain": {
-  "hash": "2ac983560694",
+  "hash": "ea0d30f63610",
   "text": "your back",
   "kind": "plain",
-  "tokens": 39
+  "tokens": 39,
+  "model": "gemini-3.8-flash-tts"
  },
  "spine__example": {
-  "hash": "4ef28660f347",
+  "hash": "78d579491d79",
   "text": "Lengthen through your spine from your tailbone to the crown of your head.",
   "kind": "example",
-  "tokens": 151
+  "tokens": 151,
+  "model": "gemini-3.8-flash-tts"
  },
  "sacrum": {
-  "hash": "db24ce1f958b",
+  "hash": "3618aefdbd8e",
   "text": "sacrum",
   "kind": "term",
-  "tokens": 32
+  "tokens": 32,
+  "model": "gemini-3.8-flash-tts"
  },
  "sacrum__plain": {
-  "hash": "cff15c69cbba",
+  "hash": "c89f5b59e256",
   "text": "the base of your spine",
   "kind": "plain",
-  "tokens": 64
+  "tokens": 64,
+  "model": "gemini-3.8-flash-tts"
  },
  "sacrum__example": {
-  "hash": "65f36fcd6ea4",
+  "hash": "f1e6420aa518",
   "text": "Let the base of your spine feel heavy toward the floor.",
   "kind": "example",
-  "tokens": 119
+  "tokens": 119,
+  "model": "gemini-3.8-flash-tts"
  },
  "pelvis": {
-  "hash": "6a0c73910b9d",
+  "hash": "98ebaab61265",
   "text": "pelvis",
   "kind": "term",
-  "tokens": 43
+  "tokens": 43,
+  "model": "gemini-3.8-flash-tts"
  },
  "pelvis__plain": {
-  "hash": "515cf13bccca",
+  "hash": "cdd2c45ed242",
   "text": "your hips",
   "kind": "plain",
-  "tokens": 38
+  "tokens": 38,
+  "model": "gemini-3.8-flash-tts"
  },
  "pelvis__example": {
-  "hash": "516b3fc56fcc",
+  "hash": "d2d12c32c311",
   "text": "Keep your hips level, like a bowl of water you don’t want to spill.",
   "kind": "example",
-  "tokens": 158
+  "tokens": 158,
+  "model": "gemini-3.8-flash-tts"
  },
  "sit-bones": {
-  "hash": "31d409cff9e5",
+  "hash": "d9859f19a7f4",
   "text": "sitting bones",
   "kind": "term",
-  "tokens": 46
+  "tokens": 46,
+  "model": "gemini-3.8-flash-tts"
  },
  "sit-bones__plain": {
-  "hash": "1c75c58c4fc5",
+  "hash": "70244e18b297",
   "text": "your sitting bones",
   "kind": "plain",
-  "tokens": 49
+  "tokens": 49,
+  "model": "gemini-3.8-flash-tts"
  },
  "sit-bones__example": {
-  "hash": "e90958b096a6",
+  "hash": "23c673dc2f7e",
   "text": "Lift your sitting bones up toward the ceiling.",
   "kind": "example",
-  "tokens": 88
+  "tokens": 88,
+  "model": "gemini-3.8-flash-tts"
  },
  "hips": {
-  "hash": "fbe82eedd958",
+  "hash": "8771e933f0d0",
   "text": "hips",
   "kind": "term",
-  "tokens": 34
+  "tokens": 34,
+  "model": "gemini-3.8-flash-tts"
  },
  "hips__plain": {
-  "hash": "515cf13bccca",
+  "hash": "cdd2c45ed242",
   "text": "your hips",
   "kind": "plain",
-  "tokens": 37
+  "tokens": 37,
+  "model": "gemini-3.8-flash-tts"
  },
  "hips__example": {
-  "hash": "bb4aae05d29b",
+  "hash": "b081f6a54d96",
   "text": "Open your hips to the side wall.",
   "kind": "example",
-  "tokens": 68
+  "tokens": 68,
+  "model": "gemini-3.8-flash-tts"
  },
  "knees": {
-  "hash": "541c6865edde",
+  "hash": "eb5f88c3774c",
   "text": "knees",
   "kind": "term",
-  "tokens": 39
+  "tokens": 39,
+  "model": "gemini-3.8-flash-tts"
  },
  "knees__plain": {
-  "hash": "73df81ac712b",
+  "hash": "ced7092355db",
   "text": "your knees",
   "kind": "plain",
-  "tokens": 57
+  "tokens": 57,
+  "model": "gemini-3.8-flash-tts"
  },
  "knees__example": {
-  "hash": "e5ed1864c0b6",
+  "hash": "82532a393f3b",
   "text": "Bend your front knee so it stacks over your ankle.",
   "kind": "example",
-  "tokens": 108
+  "tokens": 108,
+  "model": "gemini-3.8-flash-tts"
  },
  "ankles": {
-  "hash": "a5dfad82610a",
+  "hash": "beec472837f7",
   "text": "ankles",
   "kind": "term",
-  "tokens": 32
+  "tokens": 32,
+  "model": "gemini-3.8-flash-tts"
  },
  "ankles__plain": {
-  "hash": "1cf2b04b5a9a",
+  "hash": "0adeb136988e",
   "text": "your ankles",
   "kind": "plain",
-  "tokens": 40
+  "tokens": 40,
+  "model": "gemini-3.8-flash-tts"
  },
  "ankles__example": {
-  "hash": "515ae7ae714a",
+  "hash": "1fe3119814f3",
   "text": "Stack your knee over your ankle, not past it.",
   "kind": "example",
-  "tokens": 106
+  "tokens": 106,
+  "model": "gemini-3.8-flash-tts"
  },
  "wrists": {
-  "hash": "4aacac3033e2",
+  "hash": "d10d5ea640a5",
   "text": "wrists",
   "kind": "term",
-  "tokens": 33
+  "tokens": 33,
+  "model": "gemini-3.8-flash-tts"
  },
  "wrists__plain": {
-  "hash": "b1008e39ea30",
+  "hash": "f7b1b23c8054",
   "text": "your wrists",
   "kind": "plain",
-  "tokens": 44
+  "tokens": 44,
+  "model": "gemini-3.8-flash-tts"
  },
  "wrists__example": {
-  "hash": "ccbced38beb2",
+  "hash": "d6cf31bff813",
   "text": "If your wrists complain, come down onto your forearms.",
   "kind": "example",
-  "tokens": 108
+  "tokens": 108,
+  "model": "gemini-3.8-flash-tts"
  },
  "shoulders": {
-  "hash": "ea7a332528e9",
+  "hash": "47a94dde679b",
   "text": "shoulders",
   "kind": "term",
-  "tokens": 47
+  "tokens": 47,
+  "model": "gemini-3.8-flash-tts"
  },
  "shoulders__plain": {
-  "hash": "3921d26e2787",
+  "hash": "58b34881dae7",
   "text": "your shoulders",
   "kind": "plain",
-  "tokens": 46
+  "tokens": 46,
+  "model": "gemini-3.8-flash-tts"
  },
  "heels": {
-  "hash": "d69e4b2029f7",
+  "hash": "36c406766583",
   "text": "heels",
   "kind": "term",
-  "tokens": 39
+  "tokens": 39,
+  "model": "gemini-3.8-flash-tts"
  },
  "heels__plain": {
-  "hash": "de2fdf02e6c9",
+  "hash": "aafc683b2c63",
   "text": "your heels",
   "kind": "plain",
-  "tokens": 40
+  "tokens": 40,
+  "model": "gemini-3.8-flash-tts"
  },
  "heels__example": {
-  "hash": "318a2e388a0e",
+  "hash": "c126efc5b83e",
   "text": "Reach your heels toward the floor; they don’t have to touch.",
   "kind": "example",
-  "tokens": 103
+  "tokens": 103,
+  "model": "gemini-3.8-flash-tts"
  },
  "crown": {
-  "hash": "b67a6e7cdc50",
+  "hash": "2f240bf5ebaa",
   "text": "crown of the head",
   "kind": "term",
-  "tokens": 62
+  "tokens": 62,
+  "model": "gemini-3.8-flash-tts"
  },
  "crown__plain": {
-  "hash": "4b3fa06eddda",
+  "hash": "836a8425b1fe",
   "text": "the top of your head",
   "kind": "plain",
-  "tokens": 53
+  "tokens": 53,
+  "model": "gemini-3.8-flash-tts"
  },
  "crown__example": {
-  "hash": "6dd3d022126a",
+  "hash": "bbd39be85c19",
   "text": "Lengthen through the crown of your head.",
   "kind": "example",
-  "tokens": 74
+  "tokens": 74,
+  "model": "gemini-3.8-flash-tts"
  },
  "tailbone": {
-  "hash": "ca0766d04631",
+  "hash": "1f7449776950",
   "text": "tailbone",
   "kind": "term",
-  "tokens": 38
+  "tokens": 38,
+  "model": "gemini-3.8-flash-tts"
  },
  "root-down__example": {
-  "hash": "434ad3142ddc",
+  "hash": "92b8d166b27d",
   "text": "Root down through the outer edge of your back foot.",
   "kind": "example",
-  "tokens": 98
+  "tokens": 98,
+  "model": "gemini-3.8-flash-tts"
  },
  "lengthen": {
-  "hash": "cbaf7fcfa16a",
+  "hash": "84f01f2bfc39",
   "text": "lengthen",
   "kind": "term",
-  "tokens": 34
+  "tokens": 34,
+  "model": "gemini-3.8-flash-tts"
  },
  "draw-in": {
-  "hash": "9b135797220f",
+  "hash": "1fd329f78079",
   "text": "draw in",
   "kind": "term",
-  "tokens": 46
+  "tokens": 46,
+  "model": "gemini-3.8-flash-tts"
  },
  "draw-in__example": {
-  "hash": "54c89708c0ce",
+  "hash": "c0b9e2c62977",
   "text": "Draw your belly in gently.",
   "kind": "example",
-  "tokens": 75
+  "tokens": 75,
+  "model": "gemini-3.8-flash-tts"
  },
  "soften": {
-  "hash": "36b43b4f2a1e",
+  "hash": "9805fa4ac065",
   "text": "soften",
   "kind": "term",
-  "tokens": 35
+  "tokens": 35,
+  "model": "gemini-3.8-flash-tts"
+ },
+ "press": {
+  "hash": "70b44996bef8",
+  "text": "press",
+  "kind": "term",
+  "tokens": 32,
+  "model": "gemini-3.8-flash-tts"
+ },
+ "shoulders__example": {
+  "hash": "1a6223f303f9",
+  "text": "Relax your shoulders away from your ears.",
+  "kind": "example",
+  "tokens": 100,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "tailbone__plain": {
+  "hash": "751b688a03c7",
+  "text": "your tailbone",
+  "kind": "plain",
+  "tokens": 48,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "tailbone__example": {
+  "hash": "f21adffe6719",
+  "text": "Let your tailbone drop toward your heels.",
+  "kind": "example",
+  "tokens": 98,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "root-down": {
+  "hash": "000730788a25",
+  "text": "root down",
+  "kind": "term",
+  "tokens": 56,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "lengthen__example": {
+  "hash": "bbd39be85c19",
+  "text": "Lengthen through the crown of your head.",
+  "kind": "example",
+  "tokens": 80,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "soften__example": {
+  "hash": "af1f2a31674c",
+  "text": "Soften your jaw and the space between your eyebrows.",
+  "kind": "example",
+  "tokens": 120,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "stack": {
+  "hash": "0f834d58f372",
+  "text": "stack",
+  "kind": "term",
+  "tokens": 40,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "stack__example": {
+  "hash": "7a72bf4bc6eb",
+  "text": "Stack your knee over your ankle.",
+  "kind": "example",
+  "tokens": 73,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "press__example": {
+  "hash": "8959869a752c",
+  "text": "Press down through your knuckles.",
+  "kind": "example",
+  "tokens": 66,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "reach": {
+  "hash": "5c168462e13d",
+  "text": "reach",
+  "kind": "term",
+  "tokens": 34,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "reach__example": {
+  "hash": "c9969d1e5ea1",
+  "text": "Reach your arms out wide.",
+  "kind": "example",
+  "tokens": 75,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "fold": {
+  "hash": "b5ed5204279b",
+  "text": "fold",
+  "kind": "term",
+  "tokens": 36,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "fold__example": {
+  "hash": "ed61b90c8ba0",
+  "text": "Fold forward slowly.",
+  "kind": "example",
+  "tokens": 72,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "release": {
+  "hash": "f2855f300a93",
+  "text": "release",
+  "kind": "term",
+  "tokens": 37,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "release__example": {
+  "hash": "f044e58583a4",
+  "text": "Release your head and let it hang heavy.",
+  "kind": "example",
+  "tokens": 92,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "gaze": {
+  "hash": "156ad1de09c4",
+  "text": "gaze",
+  "kind": "term",
+  "tokens": 35,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "gaze__example": {
+  "hash": "3c0d89a291f3",
+  "text": "Gaze softly over your front fingertips.",
+  "kind": "example",
+  "tokens": 88,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "tuck": {
+  "hash": "c1a248ad8d1a",
+  "text": "tuck",
+  "kind": "term",
+  "tokens": 35,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "tuck__example": {
+  "hash": "3b46341d2860",
+  "text": "Tuck your toes and lift your hips.",
+  "kind": "example",
+  "tokens": 89,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "rotate": {
+  "hash": "8224d14d49f2",
+  "text": "rotate",
+  "kind": "term",
+  "tokens": 38,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "rotate__example": {
+  "hash": "d3fd2702193c",
+  "text": "Rotate your upper arms outward.",
+  "kind": "example",
+  "tokens": 83,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "find-your-edge": {
+  "hash": "2b33ef5f9999",
+  "text": "find your edge",
+  "kind": "term",
+  "tokens": 79,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "find-your-edge__example": {
+  "hash": "1547a8336760",
+  "text": "Find your edge: enough to feel it, not so much that you tense against it.",
+  "kind": "example",
+  "tokens": 173,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "toward": {
+  "hash": "e9767bf761dd",
+  "text": "toward",
+  "kind": "term",
+  "tokens": 35,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "toward__example": {
+  "hash": "fa186473c55b",
+  "text": "Reach your heels toward the floor.",
+  "kind": "example",
+  "tokens": 74,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "away-from": {
+  "hash": "fb4d0c2af2e3",
+  "text": "away from",
+  "kind": "term",
+  "tokens": 47,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "away-from__example": {
+  "hash": "1a6223f303f9",
+  "text": "Relax your shoulders away from your ears.",
+  "kind": "example",
+  "tokens": 93,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "in-line-with": {
+  "hash": "4f6048818c52",
+  "text": "in line with",
+  "kind": "term",
+  "tokens": 51,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "in-line-with__example": {
+  "hash": "86b757adc78f",
+  "text": "Keep your front heel in line with the arch of your back foot.",
+  "kind": "example",
+  "tokens": 121,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "over": {
+  "hash": "c62bfd7a621a",
+  "text": "over",
+  "kind": "term",
+  "tokens": 35,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "over__example": {
+  "hash": "1bd0737ed35c",
+  "text": "Bring your shoulders over your wrists.",
+  "kind": "example",
+  "tokens": 82,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "parallel-to": {
+  "hash": "dd14939871c1",
+  "text": "parallel to",
+  "kind": "term",
+  "tokens": 59,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "parallel-to__example": {
+  "hash": "fb3b85e5c6b9",
+  "text": "Arms parallel to the floor.",
+  "kind": "example",
+  "tokens": 74,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "inhale": {
+  "hash": "1a3bb5ce7ae7",
+  "text": "inhale",
+  "kind": "term",
+  "tokens": 39,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "inhale__example": {
+  "hash": "596a4651c951",
+  "text": "Inhale, reach your arms up.",
+  "kind": "example",
+  "tokens": 72,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "exhale": {
+  "hash": "616da88b9607",
+  "text": "exhale",
+  "kind": "term",
+  "tokens": 46,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "exhale__example": {
+  "hash": "c557d3aeafde",
+  "text": "Exhale, fold forward.",
+  "kind": "example",
+  "tokens": 77,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "breathe": {
+  "hash": "85e32fdf4faa",
+  "text": "breathe",
+  "kind": "term",
+  "tokens": 43,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "breathe__example": {
+  "hash": "9c9ec8cb00f7",
+  "text": "Breathe into the back of your body.",
+  "kind": "example",
+  "tokens": 75,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "breath": {
+  "hash": "ae5d412be8af",
+  "text": "breath",
+  "kind": "term",
+  "tokens": 32,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "breath__example": {
+  "hash": "4da9be0112c6",
+  "text": "Stay here for five breaths.",
+  "kind": "example",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "on-your-next-exhale": {
+  "hash": "4ce39460c100",
+  "text": "on your next exhale",
+  "kind": "term",
+  "tokens": 71,
+  "model": "gemini-3.8-flash-lite-tts"
+ },
+ "on-your-next-exhale__example": {
+  "hash": "a04bf98f48ee",
+  "text": "On your next exhale, slowly come out of the pose.",
+  "kind": "example",
+  "tokens": 120,
+  "model": "gemini-3.8-flash-lite-tts"
  }
 }
