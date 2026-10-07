@@ -35,39 +35,40 @@ export default function DictationActivity({ activity, result, onResult }) {
   }
   const giveUp = () => onResult({ done: true, correct: false, typed, score: attempt?.score || 0 })
   const diff = checked ? wordDiff(result.typed, cue.en) : attempt?.diff
+  const on = speaking === activity.clip
 
   return (
     <div>
       <Prompt>{text(activity.prompt)}</Prompt>
-      <div className="flex flex-col items-center gap-2 py-2">
-        <button onClick={() => (speaking === activity.clip ? audio.stop() : audio.play(activity.clip))}
-          className={`grid h-20 w-20 place-items-center rounded-full transition ${speaking === activity.clip ? 'bg-sage-deep text-paper speaking' : 'bg-sage-soft text-sage-deep'}`} aria-label={L.replay}>
-          <Volume2 size={34} />
+      <div className="flex flex-col items-center gap-3 py-3">
+        <button onClick={() => (on ? audio.stop() : audio.play(activity.clip))}
+          className={`press grid h-24 w-24 place-items-center rounded-full shadow-card ${on ? 'bg-tint-deep text-paper speaking' : 'bg-tint-soft text-tint-deep'}`} aria-label={L.replay}>
+          <Volume2 size={38} />
         </button>
-        <span className="text-xs text-muted">{L.dictationHint}</span>
+        <span className="max-w-[30ch] text-center text-caption text-muted">{L.dictationHint}</span>
       </div>
       {!checked && (
         <>
           <textarea value={typed} onChange={(e) => setTyped(e.target.value)} rows={3} spellCheck={false} autoCorrect="off" autoCapitalize="sentences" placeholder={L.dictationPlaceholder}
-            className={`w-full resize-none rounded-2xl border bg-paper p-3 text-[17px] leading-relaxed text-ink outline-none placeholder:text-muted/60 ${attempt ? 'border-clay/60' : 'border-line focus:border-sage'}`} />
+            className={`w-full resize-none rounded-3xl border bg-paper p-4 text-body-lg text-ink shadow-card outline-none placeholder:text-muted/60 ${attempt ? 'border-clay/60' : 'border-line/70 focus:border-tint'}`} />
           {attempt && (
-            <div className="mt-2 rounded-2xl bg-clay-soft/60 px-3 py-2 text-sm text-ink">
+            <div className="tint-clay wash mt-3 rounded-3xl border border-line/60 px-4 py-3 text-body text-ink">
               <div className="mb-1">{L.dictationClose}</div>
               <DiffLine diff={attempt.diff} hideMissed />
             </div>
           )}
-          <div className="mt-3 flex items-center justify-between gap-2">
-            {attempt ? <Button kind="quiet" onClick={giveUp}>{L.showAnswer}</Button> : <span />}
+          <div className="mt-2 flex items-center justify-between gap-2">
+            {attempt ? <Button kind="quiet" onClick={giveUp} className="mt-4">{L.showAnswer}</Button> : <span />}
             <CheckButton onClick={check} disabled={!typed.trim()} />
           </div>
         </>
       )}
       {checked && (
         <Verdict ok={result.correct}>
-          <div className="text-[11px] uppercase tracking-wider text-muted">{L.target}</div>
-          <div className="font-medium"><DiffLine diff={diff} /></div>
-          <div className="mt-1 text-sm text-muted">{cue.vi}</div>
-          {activity.notes && <div className="mt-2 text-sm">{text(activity.notes)}</div>}
+          <div className="text-eyebrow uppercase text-muted">{L.target}</div>
+          <div className="mt-1 text-body-lg font-medium"><DiffLine diff={diff} /></div>
+          <div className="mt-1 text-caption text-muted">{cue.vi}</div>
+          {activity.notes && <div className="mt-2.5 text-caption">{text(activity.notes)}</div>}
         </Verdict>
       )}
     </div>
@@ -81,7 +82,7 @@ function DiffLine({ diff, hideMissed = false }) {
     <span>
       {diff.map((d, i) => {
         if (d.state === 'ok') return <span key={i}>{d.word} </span>
-        if (d.state === 'missed') return <span key={i} className="rounded bg-clay-soft px-1 text-clay">{hideMissed ? '· · ·' : d.word} </span>
+        if (d.state === 'missed') return <span key={i} className="rounded-md bg-clay-soft px-1 text-clay-deep">{hideMissed ? '· · ·' : d.word} </span>
         return <span key={i} className="text-muted line-through">{d.word} </span>
       })}
     </span>

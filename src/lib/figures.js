@@ -32,6 +32,31 @@ export function shapesFor(kind, id) {
   return { polys: MUSCLE_REGIONS[kind]?.[id] || [], boxes: [], circles: [] }
 }
 
+/** The figure a term is drawn on ('front' | 'back' | 'skeleton'), or null. */
+export function figureOf(id) {
+  if (MUSCLE_REGIONS.front?.[id]) return 'front'
+  if (MUSCLE_REGIONS.back?.[id]) return 'back'
+  if (BONE_BOXES[id] || SKELETON_LANDMARKS[id]) return 'skeleton'
+  return null
+}
+
+/**
+ * A window [x, y, w, h] around a term's shapes on a figure, padded by a
+ * fraction of its size and squared off, so a porthole can show it.
+ */
+export function windowFor(kind, id, pad = 0.6, min = 120) {
+  const s = shapesFor(kind, id)
+  const xs = [], ys = []
+  for (const poly of s.polys) for (const [x, y] of poly) { xs.push(x); ys.push(y) }
+  for (const [x0, y0, x1, y1] of s.boxes) { xs.push(x0, x1); ys.push(y0, y1) }
+  for (const [cx, cy, r] of s.circles) { xs.push(cx - r, cx + r); ys.push(cy - r, cy + r) }
+  if (!xs.length) return null
+  const x0 = Math.min(...xs), x1 = Math.max(...xs), y0 = Math.min(...ys), y1 = Math.max(...ys)
+  const size = Math.max(min, (Math.max(x1 - x0, y1 - y0)) * (1 + pad))
+  const cx = (x0 + x1) / 2, cy = (y0 + y1) / 2
+  return [cx - size / 2, cy - size / 2, size, size]
+}
+
 /** Every term id drawn on a figure. */
 export function idsOn(kind) {
   if (kind === 'skeleton') return [...new Set([...Object.keys(BONE_BOXES), ...Object.keys(SKELETON_LANDMARKS)])]

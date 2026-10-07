@@ -4,9 +4,10 @@ import { useLang } from '../../lib/i18n.jsx'
 import { cueText, getTerm } from '../../lib/content.js'
 import { audio } from '../../lib/audio.js'
 import { regionAt } from '../../lib/figures.js'
+import { useSpeaking } from '../../lib/useSpeaking.js'
 import { Button } from '../ui.jsx'
 import FigureCrop from '../FigureCrop.jsx'
-import { Prompt, Verdict } from './shared.jsx'
+import { Prompt, Verdict, Hint } from './shared.jsx'
 import { useText } from '../../lib/lesson.js'
 
 /**
@@ -19,6 +20,7 @@ export default function HotspotActivity({ activity, result, onResult }) {
   const { t } = useLang()
   const text = useText()
   const L = t.learn
+  const speaking = useSpeaking()
   const [tries, setTries] = useState(result?.tries || 0)
   const [last, setLast] = useState(result?.last || null)
   const checked = !!result?.done
@@ -38,12 +40,13 @@ export default function HotspotActivity({ activity, result, onResult }) {
   }
 
   const r = activity.figure.window[2] / 28
+  const on = speaking === activity.clip
   return (
     <div>
       <Prompt>{text(activity.prompt)}</Prompt>
-      <div className="mb-3">
-        <Button kind="secondary" onClick={() => audio.play(activity.clip)}><Volume2 size={18} /> {L.replay}</Button>
-        {checked && line && <p className="mt-2 text-sm text-muted">“{line.en}”</p>}
+      <div className="mb-4 flex items-center gap-3">
+        <Button kind={on ? 'primary' : 'soft'} onClick={() => (on ? audio.stop() : audio.play(activity.clip))} className={`shrink-0 whitespace-nowrap ${on ? 'speaking' : ''}`}><Volume2 size={18} /> {L.replay}</Button>
+        {checked && line && <p className="min-w-0 text-caption text-muted">“{line.en}”</p>}
       </div>
       <FigureCrop kind={activity.figure.kind} window={activity.figure.window} onTap={tap}
         highlight={checked ? activity.reveal : []} tone={checked && !result.correct ? 'clay' : 'sage'} dashed={checked && !result.correct}>
@@ -51,12 +54,10 @@ export default function HotspotActivity({ activity, result, onResult }) {
           <circle cx={last.point[0]} cy={last.point[1]} r={r} fill={checked && result.correct ? '#4f6e5b' : '#b9704f'} fillOpacity={0.35} stroke={checked && result.correct ? '#4f6e5b' : '#b9704f'} strokeWidth={r / 6} pointerEvents="none" />
         )}
       </FigureCrop>
-      {!checked && (
-        <p className="mt-2 px-1 text-sm text-muted">{tries === 0 ? L.hotspotTap : L.hotspotAgain}</p>
-      )}
+      {!checked && <Hint>{tries === 0 ? L.hotspotTap : L.hotspotAgain}</Hint>}
       {checked && (
         <Verdict ok={result.correct}>
-          {line && <div className="mb-1 text-sm text-muted">{line.vi}</div>}
+          {line && <div className="mb-1.5 text-caption text-muted">{line.vi}</div>}
           {text(activity.explain)}
         </Verdict>
       )}

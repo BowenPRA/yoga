@@ -18,5 +18,5 @@ export default defineConfig({
   },
   // Generated audio and research files change while the app is being
   // developed; a new mp3 must not reload the page mid-lesson.
-  server: { port: 5178, watch: { ignored: ['**/public/audio/**', '**/research/**'] } },
+  server: { port: Number(process.env.PORT) || 5178, watch: { ignored: ['**/public/audio/**', '**/research/**'] } },
 })

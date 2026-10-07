@@ -3,6 +3,13 @@ export const STRINGS = {
   vi: {
     appName: 'Yoga English',
     nav: { poses: 'Tư thế', anatomy: 'Cơ thể', speech: 'Luyện nói', phrases: 'Câu nói' },
+    home: {
+      morning: 'Chào buổi sáng', afternoon: 'Chào buổi chiều', evening: 'Chào buổi tối',
+      lead: 'Một chút trước giờ lên lớp.',
+      nextUp: 'Việc tiếp theo', continueLesson: 'Tiếp tục', startLesson: 'Bắt đầu', againLesson: 'Học lại',
+      poseToday: 'Tư thế cho lớp hôm nay', openPose: 'Xem tư thế',
+      theBody: 'Cơ thể', theBodyLead: 'Chạm vào một vùng để nghe tên và cách nói trong lớp.',
+    },
     poses: {
       title: 'Tư thế', all: 'Tất cả', vinyasa: 'Vinyasa', ashtanga: 'Ashtanga', yin: 'Yin',
       cues: 'Câu cue', breath: 'Hơi thở', modifications: 'Biến thể và dụng cụ', safety: 'An toàn',
@@ -30,6 +37,7 @@ export const STRINGS = {
         pelvis: 'Khung chậu', leg: 'Chân',
       },
       styles: { vinyasa: 'Vinyasa', yin: 'Yin', ashtanga: 'Ashtanga' },
+      kinds: { muscle: 'Cơ', bone: 'Xương', joint: 'Khớp', landmark: 'Mốc xương', movement: 'Chuyển động' },
     },
     speech: {
       title: 'Luyện nói',
@@ -70,6 +78,8 @@ export const STRINGS = {
       facets: { labelled: 'gắn nhãn', said: 'nói', cued: 'dùng trong câu cue' },
       nextLesson: 'Bài tiếp theo', toAnatomy: 'Về Cơ thể', toPose: 'Xem tư thế', seePose: 'Xem tư thế đầy đủ',
       lengthening: 'Cơ đang được kéo giãn', working: 'Cơ đang làm việc', safety: 'An toàn', breath: 'Hơi thở',
+      kinds: { label: 'Gắn nhãn', sort: 'Phân loại', order: 'Sắp xếp', hotspot: 'Chạm vào hình', predict: 'Dự đoán', chain: 'Ghép câu', dictation: 'Nghe và gõ', sayit: 'Nói thử' },
+      pose: 'Tư thế', activity: 'Luyện tập', lessonDone: 'Đã học xong', lessonStarted: 'Đang học',
     },
     settings: {
       title: 'Cài đặt', language: 'Ngôn ngữ giao diện', support: 'Mức hỗ trợ tiếng Việt',
@@ -88,6 +98,13 @@ export const STRINGS = {
   en: {
     appName: 'Yoga English',
     nav: { poses: 'Poses', anatomy: 'Anatomy', speech: 'Speech', phrases: 'Phrases' },
+    home: {
+      morning: 'Good morning', afternoon: 'Good afternoon', evening: 'Good evening',
+      lead: 'A few minutes before class.',
+      nextUp: 'Up next', continueLesson: 'Continue', startLesson: 'Begin', againLesson: 'Learn it again',
+      poseToday: 'A pose for today’s class', openPose: 'Open the pose',
+      theBody: 'The body', theBodyLead: 'Tap a region to hear its name and how to say it in class.',
+    },
     poses: {
       title: 'Poses', all: 'All', vinyasa: 'Vinyasa', ashtanga: 'Ashtanga', yin: 'Yin',
       cues: 'Cues', breath: 'Breath', modifications: 'Modifications and props', safety: 'Safety',
@@ -115,6 +132,7 @@ export const STRINGS = {
         pelvis: 'Pelvis', leg: 'Leg',
       },
       styles: { vinyasa: 'Vinyasa', yin: 'Yin', ashtanga: 'Ashtanga' },
+      kinds: { muscle: 'Muscle', bone: 'Bone', joint: 'Joint', landmark: 'Landmark', movement: 'Movement' },
     },
     speech: {
       title: 'Speech',
@@ -155,6 +173,8 @@ export const STRINGS = {
       facets: { labelled: 'labelled', said: 'said', cued: 'used in a cue' },
       nextLesson: 'Next lesson', toAnatomy: 'Back to Anatomy', toPose: 'See the pose', seePose: 'See the full pose',
       lengthening: 'Muscles stretching', working: 'Muscles working', safety: 'Safety', breath: 'Breath',
+      kinds: { label: 'Label it', sort: 'Sort', order: 'Put in order', hotspot: 'Tap the figure', predict: 'Predict', chain: 'Build the cue', dictation: 'Listen and type', sayit: 'Say it' },
+      pose: 'Pose', activity: 'Practice', lessonDone: 'Done', lessonStarted: 'In progress',
     },
     settings: {
       title: 'Settings', language: 'Interface language', support: 'Vietnamese support',

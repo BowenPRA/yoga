@@ -35,7 +35,7 @@ export default function FigureViewer({ src, w, h, regions = {}, circles = {}, bo
 
   return (
     <div className="relative">
-      <div ref={scroller} className="overflow-auto no-scrollbar rounded-2xl bg-paper border border-line shadow-card" style={{ maxHeight: '70dvh' }}>
+      <div ref={scroller} className="overflow-auto no-scrollbar rounded-3xl bg-white shadow-card ring-1 ring-tint/25" style={{ maxHeight: '70dvh' }}>
         <div style={{ width: `${zoom * 100}%`, position: 'relative' }}>
           <img src={src} width={w} height={h} alt="" className="block w-full h-auto select-none" draggable={false} />
           <svg viewBox={`0 0 ${w} ${h}`} className="absolute inset-0 w-full h-full" onClick={() => onSelect?.(null)}>
@@ -55,9 +55,9 @@ export default function FigureViewer({ src, w, h, regions = {}, circles = {}, bo
           </svg>
         </div>
       </div>
-      <div className="absolute right-2 top-2 flex flex-col gap-1">
-        <button onClick={() => setZoom((z) => Math.min(3, z + 0.5))} className="grid h-9 w-9 place-items-center rounded-full bg-paper/90 border border-line text-ink shadow-card" aria-label="Zoom in"><Plus size={16} /></button>
-        <button onClick={() => setZoom((z) => Math.max(1, z - 0.5))} className="grid h-9 w-9 place-items-center rounded-full bg-paper/90 border border-line text-ink shadow-card" aria-label="Zoom out"><Minus size={16} /></button>
+      <div className="absolute right-3 top-3 flex flex-col gap-1.5">
+        <button onClick={() => setZoom((z) => Math.min(3, z + 0.5))} className="press grid h-10 w-10 place-items-center rounded-full bg-paper/95 text-ink shadow-card" aria-label="Zoom in"><Plus size={16} /></button>
+        <button onClick={() => setZoom((z) => Math.max(1, z - 0.5))} className="press grid h-10 w-10 place-items-center rounded-full bg-paper/95 text-ink shadow-card" aria-label="Zoom out"><Minus size={16} /></button>
       </div>
     </div>
   )

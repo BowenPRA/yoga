@@ -3,7 +3,7 @@ import { useLang } from '../../lib/i18n.jsx'
 import { getTerm } from '../../lib/content.js'
 import { audio } from '../../lib/audio.js'
 import FigureCrop from '../FigureCrop.jsx'
-import { Prompt, Verdict, CheckButton, Piece } from './shared.jsx'
+import { Prompt, Verdict, CheckButton, Piece, Bank, Hint } from './shared.jsx'
 import { useText, labelOf } from '../../lib/lesson.js'
 
 /**
@@ -135,7 +135,7 @@ export default function LabelActivity({ activity, lesson, result, onResult }) {
           return (
             <g key={b.id} className="cursor-pointer" onClick={(e) => { e.stopPropagation(); tapBox(b.id) }}>
               <rect x={b.x - font * 0.5} y={b.y - font * 0.4} width={b.w + font} height={b.h + font * 0.8} fill="transparent" />
-              <rect x={b.x} y={b.y} width={b.w} height={b.h} rx={font * 0.4} fill={fill} stroke={edge} strokeWidth={filled || checked || picked ? stroke * 1.4 : stroke} strokeDasharray={filled || checked ? undefined : `${font * 0.4} ${font * 0.3}`} />
+              <rect x={b.x} y={b.y} width={b.w} height={b.h} rx={font * 0.55} fill={fill} stroke={edge} strokeWidth={filled || checked || picked ? stroke * 1.4 : stroke} strokeDasharray={filled || checked ? undefined : `${font * 0.4} ${font * 0.3}`} />
               {lines.length > 0 && (
                 <text x={b.cx} y={b.cy - ((lines.length - 1) * lineH) / 2} textAnchor="middle" dominantBaseline="central" fontSize={font} fontWeight="600" fill={textFill} fontFamily="'Be Vietnam Pro', system-ui, sans-serif" pointerEvents="none">
                   {lines.map((ln, k) => <tspan key={k} x={b.cx} dy={k === 0 ? 0 : lineH}>{ln}</tspan>)}
@@ -148,19 +148,17 @@ export default function LabelActivity({ activity, lesson, result, onResult }) {
 
       {!checked && (
         <>
-          <div className="mt-3 flex min-h-[48px] flex-wrap items-center gap-2 rounded-2xl border border-dashed border-line bg-sand/60 p-2">
-            {bank.length === 0
-              ? <span className="px-1 text-sm text-muted">{L.labelPlaced}</span>
-              : bank.map((id) => {
-                const term = getTerm(id)
-                return (
-                  <Piece key={id} look={picked === id ? 'picked' : 'idle'} onClick={() => setPicked(picked === id ? null : id)} sub={support === 'full' && term ? term.vi : null}>
-                    {labels[id]}
-                  </Piece>
-                )
-              })}
-          </div>
-          <p className="mt-2 px-1 text-xs text-muted">{picked ? L.labelNext : L.labelTap}</p>
+          <Bank className="mt-4" empty={bank.length === 0 ? L.labelPlaced : null}>
+            {bank.map((id) => {
+              const term = getTerm(id)
+              return (
+                <Piece key={id} look={picked === id ? 'picked' : 'idle'} onClick={() => setPicked(picked === id ? null : id)} sub={support === 'full' && term ? term.vi : null}>
+                  {labels[id]}
+                </Piece>
+              )
+            })}
+          </Bank>
+          <Hint>{picked ? L.labelNext : L.labelTap}</Hint>
           <CheckButton onClick={check} disabled={!allPlaced} />
         </>
       )}
@@ -168,13 +166,13 @@ export default function LabelActivity({ activity, lesson, result, onResult }) {
       {checked && (
         <Verdict ok={result.correct}>
           {result.correct ? L.allRight : L.labelWrong}
-          <ul className="mt-2 space-y-1">
+          <ul className="mt-2.5 space-y-1.5">
             {activity.pins.map((p) => {
               const term = getTerm(p.id)
               return (
-                <li key={p.id} className="flex items-baseline gap-2 text-[15px]">
-                  <button onClick={() => audio.play(p.id)} className={`font-medium ${result.perPin[p.id] ? 'text-sage-deep' : 'text-clay'}`}>{labels[p.id] || labelOf(lesson, p.id)}</button>
-                  <span className="text-sm text-muted">{term?.vi}</span>
+                <li key={p.id} className="flex items-baseline gap-2 text-body">
+                  <button onClick={() => audio.play(p.id)} className={`font-medium ${result.perPin[p.id] ? 'text-sage-deep' : 'text-clay-deep'}`}>{labels[p.id] || labelOf(lesson, p.id)}</button>
+                  <span className="text-caption text-muted">{term?.vi}</span>
                 </li>
               )
             })}

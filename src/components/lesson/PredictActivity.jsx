@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { useLang } from '../../lib/i18n.jsx'
 import { cueText } from '../../lib/content.js'
-import { Say } from '../ui.jsx'
-import { Prompt, Verdict, CheckButton } from './shared.jsx'
+import { Eyebrow, Say } from '../ui.jsx'
+import { Prompt, Verdict, CheckButton, Board } from './shared.jsx'
 import { useText } from '../../lib/lesson.js'
 
 /**
@@ -20,21 +20,21 @@ export default function PredictActivity({ activity, result, onResult }) {
   return (
     <div>
       <Prompt>{text(activity.prompt)}</Prompt>
-      <div className="grid gap-2">
+      <div className="grid gap-2.5">
         {activity.options.map((o) => {
           const isChosen = chosen === o.id
           const isRight = o.id === activity.correct
-          let look = 'border-line bg-paper text-ink'
-          if (isChosen && !checked) look = 'border-sage-deep bg-sage-deep text-paper'
+          let look = 'border-line/70 bg-paper text-ink shadow-card'
+          if (isChosen && !checked) look = 'border-tint-deep bg-tint-deep text-paper shadow-float'
           if (checked) {
-            if (isRight) look = 'border-sage bg-sage-soft text-sage-deep'
-            else if (isChosen) look = 'border-clay/60 bg-clay-soft text-clay'
-            else look = 'border-line bg-paper text-muted opacity-60'
+            if (isRight) look = 'border-sage/50 bg-sage-soft text-sage-deep'
+            else if (isChosen) look = 'border-clay/50 bg-clay-soft text-clay-deep'
+            else look = 'border-line/70 bg-paper text-muted opacity-60'
           }
           return (
-            <button key={o.id} disabled={checked} onClick={() => setChosen(o.id)} className={`rounded-2xl border px-4 py-3 text-left transition ${look}`}>
+            <button key={o.id} disabled={checked} onClick={() => setChosen(o.id)} className={`press rounded-3xl border px-4 py-3.5 text-left ${look}`}>
               <div className="text-[16px] leading-snug">{o.en}</div>
-              {support !== 'light' && <div className={`text-xs ${isChosen && !checked ? 'text-paper/80' : 'opacity-70'}`}>{o.vi}</div>}
+              {support !== 'light' && <div className={`mt-0.5 text-[12px] ${isChosen && !checked ? 'text-paper/80' : 'opacity-70'}`}>{o.vi}</div>}
             </button>
           )
         })}
@@ -44,10 +44,10 @@ export default function PredictActivity({ activity, result, onResult }) {
         <>
           <Verdict ok={result.correct}>{text(activity.explain)}</Verdict>
           {then && (
-            <div className="mt-3 rounded-2xl bg-paper border border-line p-2">
-              <div className="px-2 pt-1 text-[12px] font-semibold uppercase tracking-wider text-muted">{t.learn.thenSay}</div>
+            <Board className="mt-4 !p-2">
+              <Eyebrow className="px-2 pt-1.5">{t.learn.thenSay}</Eyebrow>
               <Say id={activity.then.clip} en={then.en} vi={then.vi} />
-            </div>
+            </Board>
           )}
         </>
       )}

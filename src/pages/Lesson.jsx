@@ -2,10 +2,10 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { Navigate, useNavigate, useParams } from 'react-router-dom'
 import { ChevronLeft, X } from 'lucide-react'
 import { useLang } from '../lib/i18n.jsx'
-import { getLesson } from '../lib/content.js'
+import { getLesson, getPose } from '../lib/content.js'
 import { audio } from '../lib/audio.js'
 import { progress } from '../lib/store.js'
-import { Button } from '../components/ui.jsx'
+import { Button, Dots, Eyebrow } from '../components/ui.jsx'
 import { IntroSlide, TermSlide, PoseSlide, DoneSlide } from '../components/lesson/slides.jsx'
 import LabelActivity from '../components/lesson/LabelActivity.jsx'
 import SortActivity from '../components/lesson/SortActivity.jsx'
@@ -15,10 +15,20 @@ import PredictActivity from '../components/lesson/PredictActivity.jsx'
 import ChainActivity from '../components/lesson/ChainActivity.jsx'
 import DictationActivity from '../components/lesson/DictationActivity.jsx'
 import SayItActivity from '../components/lesson/SayItActivity.jsx'
+import { tintClass, lessonTint, activityTint, poseTint } from '../lib/tints.js'
 
 const ACTIVITIES = {
   label: LabelActivity, sort: SortActivity, order: OrderActivity, hotspot: HotspotActivity,
   predict: PredictActivity, chain: ChainActivity, dictation: DictationActivity, sayit: SayItActivity,
+}
+
+/** The colour a slide arrives in: the region for its terms, the task for an activity. */
+function tintOf(slide, lesson) {
+  if (!slide) return 'sage'
+  if (slide.type === 'activity') return activityTint(slide.activity.type)
+  if (slide.type === 'pose') return poseTint(getPose(slide.pose))
+  if (slide.type === 'done') return 'sage'
+  return lessonTint(lesson)
 }
 
 /**
@@ -38,6 +48,7 @@ export default function Lesson() {
   const [termRows, setTermRows] = useState({})
   const [ready, setReady] = useState(false)
   const doneRef = useRef(false)
+  const mainRef = useRef(null)
 
   // Resume where she stopped; a finished lesson starts again from the top.
   useEffect(() => {
@@ -51,7 +62,7 @@ export default function Lesson() {
     return () => { live = false }
   }, [id, lesson])
 
-  useEffect(() => { audio.stop() }, [index])
+  useEffect(() => { audio.stop(); mainRef.current?.scrollTo?.({ top: 0 }) }, [index])
   useEffect(() => () => audio.stop(), [])
 
   const slides = lesson?.slides || []
@@ -94,24 +105,24 @@ export default function Lesson() {
   }
 
   const label = slide.type === 'intro' ? L.start : last ? L.finish : L.next
+  const tint = tintOf(slide, lesson)
 
   return (
-    <div className="fixed inset-0 z-40 flex flex-col bg-sand">
-      <header className="flex items-center gap-3 px-3 pb-2 pt-3">
-        <button onClick={close} className="rounded-full p-1.5 text-muted hover:bg-paper" aria-label={L.close}><X size={22} /></button>
-        <div className="flex flex-1 gap-[3px]">
-          {slides.map((_, k) => (
-            <span key={k} className={`h-1 flex-1 rounded-full transition-colors ${k < index ? 'bg-sage' : k === index ? 'bg-sage-deep' : 'bg-line'}`} />
-          ))}
-        </div>
-        <span className="text-xs tabular-nums text-muted">{index + 1}/{slides.length}</span>
+    <div className={`screen-wash fixed inset-0 z-40 flex flex-col ${tintClass(tint)}`}>
+      <header className="flex items-center gap-3 px-4 pb-2 pt-safe">
+        <button onClick={close} className="press grid h-10 w-10 shrink-0 place-items-center rounded-full bg-paper/70 text-muted" aria-label={L.close}><X size={20} /></button>
+        <Dots count={slides.length} index={index} className="min-w-0 flex-1" />
+        <span className="w-10 shrink-0" />
       </header>
-      <main className="min-h-0 flex-1 overflow-y-auto px-4 pb-6">
-        <div key={index} className="mx-auto w-full max-w-xl slide-in">{body}</div>
+      <main ref={mainRef} className="min-h-0 flex-1 overflow-y-auto px-5 pb-8 pt-2">
+        <div key={index} className="slide-in mx-auto w-full max-w-xl">
+          {slide.type === 'activity' && <Eyebrow tone="tint" className="mb-2">{L.kinds[slide.activity.type] || L.activity}</Eyebrow>}
+          {body}
+        </div>
       </main>
-      <footer className="flex gap-2 border-t border-line bg-sand px-4 pt-2 pb-safe">
-        <Button kind="secondary" onClick={prev} disabled={index === 0} className="!px-3" aria-label={L.back}><ChevronLeft size={20} /></Button>
-        <Button onClick={next} disabled={pending} className="flex-1">{label}</Button>
+      <footer className="flex items-center gap-3 bg-sand/95 px-5 pt-3 backdrop-blur-sm pb-safe">
+        <Button kind="secondary" size="lg" onClick={prev} disabled={index === 0} className="w-[54px] !px-0" aria-label={L.back}><ChevronLeft size={22} /></Button>
+        <Button size="lg" onClick={next} disabled={pending} className="flex-1">{label}</Button>
       </footer>
     </div>
   )

@@ -25,26 +25,26 @@ export default function SuggestFix({ target }) {
 
   if (!open)
     return (
-      <button onClick={() => setOpen(true)} className="inline-flex items-center gap-1.5 text-xs text-muted hover:text-sage-deep">
-        <Pencil size={12} /> {t.common.suggestFix}
+      <button onClick={() => setOpen(true)} className="press inline-flex min-h-[36px] items-center gap-1.5 rounded-full px-2 text-caption text-muted hover:text-tint-deep">
+        <Pencil size={13} /> {t.common.suggestFix}
       </button>
     )
   return (
-    <div className="rounded-xl border border-line bg-sand p-3">
-      <p className="mb-2 text-sm text-muted">{t.common.suggestIntro}</p>
+    <div className="slide-in rounded-3xl border border-line/70 bg-paper p-4 shadow-card">
+      <p className="mb-2.5 text-caption text-muted">{t.common.suggestIntro}</p>
       {sent ? (
-        <p className="text-sm text-sage-deep">{t.common.suggestThanks}</p>
+        <p className="text-body text-tint-deep">{t.common.suggestThanks}</p>
       ) : (
         <>
           <textarea
             value={text}
             onChange={(e) => setText(e.target.value)}
             rows={3}
-            className="w-full rounded-lg border border-line bg-paper p-2 text-sm text-ink outline-none focus:border-sage"
+            className="w-full rounded-2xl border border-line/70 bg-sand p-3 text-body text-ink outline-none focus:border-tint"
           />
-          <div className="mt-2 flex justify-end gap-2">
-            <Button kind="quiet" onClick={() => setOpen(false)}>{t.common.close}</Button>
-            <Button onClick={send}>{t.common.suggestSend}</Button>
+          <div className="mt-3 flex justify-end gap-2">
+            <Button kind="quiet" size="sm" onClick={() => setOpen(false)}>{t.common.close}</Button>
+            <Button size="sm" onClick={send}>{t.common.suggestSend}</Button>
           </div>
         </>
       )}

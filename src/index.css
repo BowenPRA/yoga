@@ -2,35 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Colour tokens as RGB triples so Tailwind can add alpha. Light is the default;
+/* ── Colour ───────────────────────────────────────────────────────────────
+   Tokens are RGB triples so Tailwind can add alpha. Light is the default;
    dark is a swap of the same names. The palette is a studio, not a classroom:
-   warm off-white, ink rather than black, sage and clay as the only accents. */
+   warm off-white, ink rather than black, and five quiet tints that stand for
+   places in the app (sage, clay, gold, mist, dusk). Each tint has three
+   steps: the tint itself, a soft wash, and a deep ink for text on the wash.
+
+   A `tint-*` class on any ancestor sets --tint / --tint-soft / --tint-deep,
+   and everything below it (washes, rings, chips) takes that colour. */
 :root {
   --sand: 246 243 238;
   --paper: 255 253 249;
   --ink: 43 42 39;
   --muted: 111 106 98;
   --line: 230 224 214;
+
   --sage: 111 143 122;
-  --sage-soft: 228 236 230;
+  --sage-soft: 226 236 229;
   --sage-deep: 79 110 91;
+
   --clay: 185 112 79;
-  --clay-soft: 243 227 218;
-  --gold-soft: 244 236 216;
+  --clay-soft: 245 228 218;
+  --clay-deep: 140 80 54;
+
+  --gold: 184 148 72;
+  --gold-soft: 245 236 214;
+  --gold-deep: 128 98 40;
+
+  --mist: 122 142 158;
+  --mist-soft: 226 234 239;
+  --mist-deep: 82 102 118;
+
+  --dusk: 142 118 140;
+  --dusk-soft: 237 229 237;
+  --dusk-deep: 104 82 102;
+
+  --tint: var(--sage);
+  --tint-soft: var(--sage-soft);
+  --tint-deep: var(--sage-deep);
 }
 .dark {
   --sand: 30 29 27;
   --paper: 40 39 36;
   --ink: 236 232 225;
-  --muted: 160 154 144;
-  --line: 62 60 55;
+  --muted: 162 156 146;
+  --line: 64 62 57;
+
   --sage: 134 166 145;
-  --sage-soft: 48 58 51;
-  --sage-deep: 170 198 180;
+  --sage-soft: 47 60 52;
+  --sage-deep: 176 204 186;
+
   --clay: 206 139 106;
-  --clay-soft: 68 52 44;
-  --gold-soft: 66 60 46;
+  --clay-soft: 74 53 44;
+  --clay-deep: 230 180 152;
+
+  --gold: 206 172 98;
+  --gold-soft: 72 63 44;
+  --gold-deep: 228 202 134;
+
+  --mist: 150 172 188;
+  --mist-soft: 44 55 63;
+  --mist-deep: 186 206 220;
+
+  --dusk: 176 152 174;
+  --dusk-soft: 61 50 61;
+  --dusk-deep: 210 188 208;
 }
+
+.tint-sage { --tint: var(--sage); --tint-soft: var(--sage-soft); --tint-deep: var(--sage-deep); }
+.tint-clay { --tint: var(--clay); --tint-soft: var(--clay-soft); --tint-deep: var(--clay-deep); }
+.tint-gold { --tint: var(--gold); --tint-soft: var(--gold-soft); --tint-deep: var(--gold-deep); }
+.tint-mist { --tint: var(--mist); --tint-soft: var(--mist-soft); --tint-deep: var(--mist-deep); }
+.tint-dusk { --tint: var(--dusk); --tint-soft: var(--dusk-soft); --tint-deep: var(--dusk-deep); }
 
 html,
 body,
@@ -42,6 +86,7 @@ body {
   margin: 0;
   @apply bg-sand text-ink font-sans antialiased;
   -webkit-tap-highlight-color: transparent;
+  text-rendering: optimizeLegibility;
 }
 
 /* The shell fills the visible viewport. dvh tracks the real visible height on
@@ -52,9 +97,13 @@ body {
   overscroll-behavior-y: none;
 }
 
-/* Safe areas for the bottom tab bar on phones with a home indicator. */
+/* Safe areas: the bottom tab bar and the deck footer on phones with a home
+   indicator, the deck header under a notch. */
 .pb-safe {
-  padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+  padding-bottom: max(0.625rem, env(safe-area-inset-bottom));
+}
+.pt-safe {
+  padding-top: max(0.75rem, env(safe-area-inset-top));
 }
 
 .no-scrollbar::-webkit-scrollbar {
@@ -64,11 +113,48 @@ body {
   scrollbar-width: none;
 }
 
-/* A lesson slide arriving: a short, quiet fade and lift. */
-@keyframes slide-in {
+/* ── Surfaces ─────────────────────────────────────────────────────────────
+   A wash is a card with a breath of the current tint at the top left,
+   fading into paper. A screen wash is the same idea for a whole slide: the
+   tint sits at the top and gives way to the sand of the page. */
+.wash {
+  background-color: rgb(var(--paper));
+  background-image: linear-gradient(160deg, rgb(var(--tint-soft)) 0%, rgb(var(--paper)) 78%);
+}
+.wash-strong {
+  background-color: rgb(var(--tint-soft));
+  background-image: linear-gradient(160deg, rgb(var(--tint-soft)) 0%, rgb(var(--tint-soft) / 0.55) 100%);
+}
+.screen-wash {
+  background-color: rgb(var(--sand));
+  background-image: linear-gradient(180deg, rgb(var(--tint-soft)) 0%, rgb(var(--sand)) 46%);
+}
+/* The figures are drawn on white, so a porthole stays light in both themes
+   and the drawing is multiplied into the tint. */
+.porthole {
+  background-color: rgb(var(--tint-soft));
+}
+.dark .porthole {
+  background-color: rgb(var(--tint-deep) / 0.85);
+}
+.porthole > * {
+  mix-blend-mode: multiply;
+}
+
+/* ── Motion ───────────────────────────────────────────────────────────────
+   Everything eases out and nothing bounces. A slide arrives with a short
+   lift; a sheet rises; a playing word breathes. */
+.press {
+  transition: transform 140ms ease, box-shadow 140ms ease, background-color 160ms ease, color 160ms ease, border-color 160ms ease;
+}
+.press:active {
+  transform: scale(0.975);
+}
+
+@keyframes rise {
   from {
     opacity: 0;
-    transform: translateY(6px);
+    transform: translateY(14px);
   }
   to {
     opacity: 1;
@@ -76,19 +162,68 @@ body {
   }
 }
 .slide-in {
-  animation: slide-in 220ms ease-out;
+  animation: rise 380ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
+.rise-1 { animation: rise 420ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+.rise-2 { animation: rise 420ms cubic-bezier(0.22, 1, 0.36, 1) 70ms both; }
+.rise-3 { animation: rise 420ms cubic-bezier(0.22, 1, 0.36, 1) 140ms both; }
 
-/* A quiet pulse for the word currently being spoken. */
-@keyframes speaking {
-  0%,
-  100% {
+@keyframes sheet-up {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.sheet-up {
+  animation: sheet-up 320ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
     opacity: 1;
   }
-  50% {
-    opacity: 0.55;
+}
+.fade-in {
+  animation: fade 240ms ease-out both;
+}
+
+/* A soft ring that breathes out from the word being spoken. */
+@keyframes breathe {
+  0% {
+    box-shadow: 0 0 0 0 rgb(var(--tint) / 0.45);
+  }
+  70% {
+    box-shadow: 0 0 0 14px rgb(var(--tint) / 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgb(var(--tint) / 0);
   }
 }
 .speaking {
-  animation: speaking 1.2s ease-in-out infinite;
+  animation: breathe 1.7s ease-out infinite;
+}
+.speaking-clay {
+  --tint: var(--clay);
+  animation: breathe 1.3s ease-out infinite;
+}
+
+/* A quiet progress ring: the arc eases to its new length. */
+.ring-arc {
+  transition: stroke-dashoffset 600ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

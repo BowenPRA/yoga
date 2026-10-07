@@ -6,8 +6,8 @@ import { audio } from '../../lib/audio.js'
 import { api } from '../../lib/api.js'
 import { canRecord, startRecording } from '../../lib/recorder.js'
 import { useSpeaking } from '../../lib/useSpeaking.js'
-import { Button } from '../ui.jsx'
-import { Prompt } from './shared.jsx'
+import { Button, Dots, SayHint, Tag } from '../ui.jsx'
+import { Prompt, Board } from './shared.jsx'
 import { useText } from '../../lib/lesson.js'
 
 /**
@@ -75,62 +75,63 @@ export default function SayItActivity({ activity, result, onResult }) {
   }
   const skip = () => next()
 
-  const verdictLook = { good: 'bg-sage-soft text-sage-deep', almost: 'bg-gold-soft text-ink', again: 'bg-clay-soft text-clay' }
+  const verdictLook = { good: 'bg-sage-soft text-sage-deep', almost: 'bg-gold-soft text-gold-deep', again: 'bg-clay-soft text-clay-deep' }
   const verdictLabel = { good: L.good, almost: L.almost, again: L.tryAgain }
+  const modelOn = speaking === item.clip
 
   return (
     <div>
       <Prompt>{text(activity.prompt)}</Prompt>
-      <div className="mb-2 text-[12px] font-semibold uppercase tracking-wider text-muted">{L.wordOf} {i + 1} {L.of} {items.length}</div>
+      <Dots count={items.length} index={i} className="mb-4 !justify-start" />
 
-      <div className="rounded-2xl border border-line bg-paper p-4">
-        <div className="flex items-start gap-3">
-          <button onClick={() => (speaking === item.clip ? audio.stop() : audio.play(item.clip))} className={`grid h-12 w-12 shrink-0 place-items-center rounded-full ${speaking === item.clip ? 'bg-sage-deep text-paper speaking' : 'bg-sage-soft text-sage-deep'}`} aria-label={L.model}>
-            <Volume2 size={22} />
+      <Board className="!p-5">
+        <div className="flex items-start gap-4">
+          <button onClick={() => (modelOn ? audio.stop() : audio.play(item.clip))} className={`press grid h-13 w-13 shrink-0 place-items-center rounded-full ${modelOn ? 'bg-tint-deep text-paper speaking' : 'bg-tint-soft text-tint-deep'}`} aria-label={L.model}>
+            <Volume2 size={24} />
           </button>
-          <div className="min-w-0">
-            <div className={`text-ink ${item.kind === 'cue' ? 'font-serif text-[19px] leading-snug' : 'font-serif text-[24px] leading-tight'}`}>{item.text}</div>
-            {item.say && <div className="text-xs text-clay">{item.say}</div>}
-            {cue?.vi && <div className="mt-1 text-sm text-muted">{cue.vi}</div>}
+          <div className="min-w-0 pt-0.5">
+            <div className={`font-serif text-ink ${item.kind === 'cue' ? 'text-heading' : 'text-title'}`}>{item.text}</div>
+            {item.say && <div className="mt-0.5"><SayHint say={item.say} /></div>}
+            {cue?.vi && <div className="mt-1 text-caption text-muted">{cue.vi}</div>}
           </div>
         </div>
 
-        <div className="mt-4 flex flex-col items-center gap-2">
+        <div className="mt-6 flex flex-col items-center gap-2.5">
           <button onClick={record} disabled={state === 'checking' || done}
-            className={`grid h-20 w-20 place-items-center rounded-full transition disabled:opacity-50 ${state === 'recording' ? 'bg-clay text-paper speaking' : 'bg-ink text-paper'}`} aria-label={state === 'recording' ? L.stop : L.record}>
-            {state === 'recording' ? <Square size={28} /> : <Mic size={30} />}
+            className={`press grid h-24 w-24 place-items-center rounded-full shadow-card disabled:opacity-50 ${state === 'recording' ? 'bg-clay text-paper speaking-clay' : 'bg-ink text-sand'}`} aria-label={state === 'recording' ? L.stop : L.record}>
+            {state === 'recording' ? <Square size={30} /> : <Mic size={34} />}
           </button>
-          <span className="text-sm text-muted">{state === 'recording' ? L.recording : state === 'checking' ? L.checking : L.record}</span>
+          <span className="text-caption text-muted">{state === 'recording' ? L.recording : state === 'checking' ? L.checking : L.record}</span>
         </div>
-        {error && <p className="mt-2 text-center text-sm text-clay">{error}</p>}
-      </div>
+        {error && <p className="mt-3 text-center text-caption text-clay-deep">{error}</p>}
+      </Board>
 
       {feedback && state === 'shown' && (
-        <div className="mt-3 rounded-2xl border border-line bg-paper p-4">
+        <Board className="slide-in mt-4 !p-5">
           <div className="flex items-center gap-2">
-            <span className={`rounded-full px-3 py-1 text-sm font-medium ${verdictLook[feedback.verdict] || verdictLook.again}`}>{verdictLabel[feedback.verdict] || feedback.verdict}</span>
-            {feedback.heard && <span className="min-w-0 truncate text-xs text-muted">{L.heard}: “{feedback.heard}”</span>}
+            <span className={`rounded-full px-3 py-1 text-[14px] font-medium ${verdictLook[feedback.verdict] || verdictLook.again}`}>{verdictLabel[feedback.verdict] || feedback.verdict}</span>
+            {feedback.heard && <span className="min-w-0 truncate text-[12px] text-muted">{L.heard}: “{feedback.heard}”</span>}
           </div>
-          {feedback.praise_vi && <p className="mt-2 text-[15px] text-ink">{feedback.praise_vi}</p>}
+          {feedback.praise_vi && <p className="mt-3 text-body text-ink">{feedback.praise_vi}</p>}
           {feedback.fixes?.length > 0 && (
-            <ul className="mt-2 divide-y divide-line">
+            <ul className="mt-2 divide-y divide-line/70">
               {feedback.fixes.map((f, k) => (
-                <li key={k} className="py-2">
+                <li key={k} className="py-2.5">
                   <div className="flex flex-wrap items-baseline gap-x-2">
                     <span className="font-medium text-ink">{f.word}</span>
-                    {f.say && <span className="text-xs text-clay">{f.say}</span>}
-                    <span className="rounded-full bg-sand px-2 py-0.5 text-[10px] uppercase tracking-wider text-muted">{L.issues[f.issue] || f.issue}</span>
+                    {f.say && <SayHint say={f.say} />}
+                    <Tag className="uppercase tracking-wider">{L.issues[f.issue] || f.issue}</Tag>
                   </div>
-                  <p className="mt-0.5 text-sm text-ink/80">{f.tip_vi}</p>
+                  <p className="mt-1 text-caption text-ink/80">{f.tip_vi}</p>
                 </li>
               ))}
             </ul>
           )}
-        </div>
+        </Board>
       )}
 
       {!done && (
-        <div className="mt-3 flex items-center justify-between gap-2">
+        <div className="mt-4 flex items-center justify-between gap-2">
           <Button kind="quiet" onClick={skip} disabled={state === 'recording' || state === 'checking'}>{L.skip}</Button>
           <div className="flex gap-2">
             {state === 'shown' && <Button kind="secondary" onClick={() => { setState('idle'); setFeedback(null) }}>{L.tryAgain}</Button>}

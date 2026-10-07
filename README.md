@@ -61,7 +61,7 @@ done or not; a term is known once labelled, said and used in a cue.
 
 ```
 content/           data: anatomy (muscles, bones, movements, figure regions), poses, phrases, lessons
-src/lib/           i18n + support level, store (IndexedDB, progress), audio, content registry, figures, api, recorder
+src/lib/           i18n + support level, store (IndexedDB, progress), audio, content registry, figures, tints (a colour per place), api, recorder
 src/components/    ui primitives, bottom nav, figure viewer and crops, term sheet, suggest-a-fix, lesson/ (slides, activities)
 src/pages/         Poses, Pose, Anatomy (with the lesson row), Lesson, Speech, Phrases
 api/               Vercel functions: coach, speak, pronounce; _lib/gemini.js; dev-server.mjs

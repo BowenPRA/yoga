@@ -39,24 +39,24 @@ export default function OrderActivity({ activity, result, onResult }) {
   return (
     <div>
       <Prompt>{text(activity.prompt)}</Prompt>
-      <ol className="space-y-2">
+      <ol className="space-y-2.5">
         {order.map((id, i) => {
           const line = cueText(id)
           const ok = checked ? steps[i] === id : null
-          const look = checked ? (ok ? 'border-sage bg-sage-soft/60' : 'border-clay/50 bg-clay-soft/50') : 'border-line bg-paper'
+          const look = checked ? (ok ? 'border-sage/50 bg-sage-soft/60' : 'border-clay/50 bg-clay-soft/50') : 'border-line/70 bg-paper shadow-card'
           return (
-            <li key={id} className={`flex items-start gap-2 rounded-2xl border px-2 py-2 ${look}`}>
-              <span className="mt-1 grid h-7 w-7 shrink-0 place-items-center rounded-lg bg-sand text-xs font-semibold text-muted">{i + 1}</span>
-              <PlayButton id={id} size={32} className="mt-0.5" />
+            <li key={id} className={`flex items-start gap-2 rounded-3xl border px-2.5 py-2.5 transition-colors ${look}`}>
+              <span className="mt-1 grid h-7 w-7 shrink-0 place-items-center rounded-full bg-tint-soft text-[12px] font-semibold text-tint-deep">{i + 1}</span>
+              <PlayButton id={id} size={34} className="mt-0.5" />
               <div className="min-w-0 flex-1 pt-1">
-                <div className="text-[15px] leading-snug text-ink">{line?.en}</div>
-                {support !== 'light' && line?.vi && <div className="text-xs text-muted">{line.vi}</div>}
-                {checked && !ok && <div className="mt-0.5 text-[11px] uppercase tracking-wider text-clay">{L.orderShouldBe} {steps.indexOf(id) + 1}</div>}
+                <div className="text-body leading-snug text-ink">{line?.en}</div>
+                {support !== 'light' && line?.vi && <div className="text-[12px] text-muted">{line.vi}</div>}
+                {checked && !ok && <div className="mt-1 text-eyebrow font-semibold uppercase text-clay-deep">{L.orderShouldBe} {steps.indexOf(id) + 1}</div>}
               </div>
               {checked ? (ok && <Check size={18} className="mt-2 text-sage-deep" />) : (
-                <span className="flex flex-col gap-0.5">
-                  <button onClick={() => move(i, i - 1)} disabled={i === 0} className="rounded-lg border border-line p-1 text-muted disabled:opacity-30" aria-label={L.orderUp}><ChevronUp size={16} /></button>
-                  <button onClick={() => move(i, i + 1)} disabled={i === order.length - 1} className="rounded-lg border border-line p-1 text-muted disabled:opacity-30" aria-label={L.orderDown}><ChevronDown size={16} /></button>
+                <span className="flex flex-col gap-1">
+                  <button onClick={() => move(i, i - 1)} disabled={i === 0} className="press grid h-8 w-8 place-items-center rounded-full border border-line/70 bg-paper text-muted disabled:opacity-30" aria-label={L.orderUp}><ChevronUp size={16} /></button>
+                  <button onClick={() => move(i, i + 1)} disabled={i === order.length - 1} className="press grid h-8 w-8 place-items-center rounded-full border border-line/70 bg-paper text-muted disabled:opacity-30" aria-label={L.orderDown}><ChevronDown size={16} /></button>
                 </span>
               )}
             </li>
@@ -67,7 +67,7 @@ export default function OrderActivity({ activity, result, onResult }) {
       {checked && (
         <>
           <Verdict ok={result.correct}>{text(activity.explain)}</Verdict>
-          <div className="mt-3"><Button kind="secondary" onClick={playAll} className="w-full">{playing ? <Square size={16} /> : <Play size={16} />} {playing ? t.common.stop : L.listenAll}</Button></div>
+          <div className="mt-4"><Button kind="soft" onClick={playAll} className="w-full">{playing ? <Square size={16} /> : <Play size={16} />} {playing ? t.common.stop : L.listenAll}</Button></div>
         </>
       )}
     </div>

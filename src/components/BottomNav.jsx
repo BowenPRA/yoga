@@ -20,22 +20,23 @@ const TABS = [
   { to: '/phrases', key: 'phrases', Icon: MessageSquareText },
 ]
 
+/** The four tabs: a soft bar that floats over the page, no hard edge. */
 export default function BottomNav() {
   const { t } = useLang()
   return (
-    <nav className="fixed bottom-0 inset-x-0 z-20 bg-paper/95 backdrop-blur border-t border-line pb-safe">
-      <div className="mx-auto max-w-xl grid grid-cols-4">
+    <nav className="tint-sage fixed inset-x-0 bottom-0 z-20 bg-paper/90 shadow-up backdrop-blur-md pb-safe">
+      <div className="mx-auto grid max-w-xl grid-cols-4 pt-1.5">
         {TABS.map(({ to, key, Icon }) => (
           <NavLink
             key={key}
             to={to}
             className={({ isActive }) =>
-              `flex flex-col items-center gap-0.5 py-2 text-[11px] font-medium transition-colors ${isActive ? 'text-sage-deep' : 'text-muted'}`
+              `press flex flex-col items-center gap-1 py-1.5 text-[11px] font-medium transition-colors ${isActive ? 'text-tint-deep' : 'text-muted'}`
             }
           >
             {({ isActive }) => (
               <>
-                <span className={`rounded-full px-4 py-1 transition-colors ${isActive ? 'bg-sage-soft' : ''}`}>
+                <span className={`rounded-full px-4 py-1 transition-colors duration-200 ${isActive ? 'bg-tint-soft' : ''}`}>
                   <Icon size={20} strokeWidth={isActive ? 2.2 : 1.8} />
                 </span>
                 {t.nav[key]}

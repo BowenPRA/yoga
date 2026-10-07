@@ -3,7 +3,7 @@ import { CornerDownRight } from 'lucide-react'
 import { useLang } from '../../lib/i18n.jsx'
 import { getTerm, getPose } from '../../lib/content.js'
 import { PlayButton } from '../ui.jsx'
-import { Prompt, Verdict, CheckButton, Piece } from './shared.jsx'
+import { Prompt, Verdict, CheckButton, Piece, Bank } from './shared.jsx'
 import { seededShuffle, useText, labelOf } from '../../lib/lesson.js'
 
 /**
@@ -47,27 +47,27 @@ export default function SortActivity({ activity, lesson, result, onResult }) {
     <div>
       <Prompt>{text(activity.prompt)}</Prompt>
       {pose && (
-        <div className="mb-3 flex items-center gap-3 rounded-2xl bg-paper border border-line px-3 py-2">
-          <PlayButton id={`${pose.id}__en`} size={34} />
-          <div className="min-w-0"><div className="text-ink">{pose.en}</div><div className="text-xs text-muted">{pose.vi}{pose.sa ? ` · ${pose.sa}` : ''}</div></div>
+        <div className="mb-4 flex items-center gap-3 rounded-3xl border border-line/70 bg-paper px-3.5 py-2.5 shadow-card">
+          <PlayButton id={`${pose.id}__en`} size={38} />
+          <div className="min-w-0"><div className="font-serif text-body-lg text-ink">{pose.en}</div><div className="text-caption text-muted">{pose.vi}{pose.sa ? ` · ${pose.sa}` : ''}</div></div>
         </div>
       )}
       {!checked && (
-        <div className="mb-3 flex min-h-[48px] flex-wrap items-center gap-2 rounded-2xl border border-dashed border-line bg-sand/60 p-2">
-          {bank.length === 0 ? <span className="px-1 text-sm text-muted">{L.sortPlaced}</span> : bank.map((c) => chip(c, false))}
-        </div>
+        <Bank className="mb-4" empty={bank.length === 0 ? L.sortPlaced : null}>
+          {bank.map((c) => chip(c, false))}
+        </Bank>
       )}
-      <div className="grid grid-cols-2 gap-2">
+      <div className="grid grid-cols-2 gap-3">
         {activity.bins.map((bin) => {
           const here = cards.filter((c) => placed[c.term] === bin.id)
           const active = !!picked && !checked
           return (
             <div key={bin.id} onClick={() => picked && put(picked, bin.id)}
-              className={`min-w-0 overflow-hidden rounded-2xl border bg-paper transition ${active ? 'border-sage ring-2 ring-sage/30 cursor-pointer' : 'border-line'}`}>
-              <div className="border-b border-line bg-sand/70 px-3 py-1.5 text-center text-[13px] font-semibold uppercase tracking-wider text-muted">{text(bin)}</div>
-              <div className="flex min-h-[64px] flex-wrap items-start gap-1.5 p-2">
+              className={`min-w-0 overflow-hidden rounded-3xl border bg-paper shadow-card transition ${active ? 'cursor-pointer border-tint ring-2 ring-tint/30' : 'border-line/70'}`}>
+              <div className="border-b border-line/70 bg-tint-soft/60 px-3 py-2 text-center text-eyebrow font-semibold uppercase text-tint-deep">{text(bin)}</div>
+              <div className="flex min-h-[72px] flex-wrap items-start gap-1.5 p-2.5">
                 {here.length === 0 && (
-                  <span className={`flex items-center gap-1 text-[11px] ${active ? 'text-sage-deep' : 'text-muted/70'}`}>
+                  <span className={`flex items-center gap-1 text-[11px] ${active ? 'text-tint-deep' : 'text-muted/70'}`}>
                     <CornerDownRight size={12} /> {active ? L.sortDrop : L.sortTap}
                   </span>
                 )}
