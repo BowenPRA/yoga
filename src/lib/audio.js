@@ -36,7 +36,8 @@ export const audio = {
       const done = () => { a.removeEventListener('ended', done); a.removeEventListener('error', done); resolve() }
       a.addEventListener('ended', done)
       a.addEventListener('error', done)
-      a.play().catch(done)
+      // A blocked autoplay rejects without an error event; clear the state.
+      a.play().catch(() => { if (current === id) setCurrent(null); done() })
     })
   },
 

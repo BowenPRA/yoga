@@ -81,7 +81,7 @@ export function Chip({ children, active, onClick, to, tone = 'sage' }) {
   )
 }
 
-export function Button({ children, onClick, kind = 'primary', disabled, className = '', type = 'button' }) {
+export function Button({ children, onClick, kind = 'primary', disabled, className = '', type = 'button', ...rest }) {
   const look = {
     primary: 'bg-sage-deep text-paper hover:brightness-110',
     secondary: 'bg-paper border border-line text-ink hover:bg-sand',
@@ -93,6 +93,7 @@ export function Button({ children, onClick, kind = 'primary', disabled, classNam
       onClick={onClick}
       disabled={disabled}
       className={`inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-[15px] font-medium transition disabled:opacity-50 ${look} ${className}`}
+      {...rest}
     >
       {children}
     </button>

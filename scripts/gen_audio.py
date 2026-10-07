@@ -16,6 +16,12 @@ Delivery per clip kind goes in the style field (the 3.8 models read the text
 verbatim; see research/gen_gemini_tts.py).
 
 Usage:  python scripts/gen_audio.py [--only id-substring] [--model name] [--dry] [--single] [--max N]
+                                    [--priority scripts/priority.json]
+
+--priority: a JSON list of clip ids (the lessons' clips, from export-clips)
+that are batched among themselves and generated before everything else.
+A batch whose silences do not split cleanly is halved and retried, so a
+mismatch costs two requests rather than six.
 """
 import base64
 import glob
@@ -102,6 +108,8 @@ class QuotaExhausted(SystemExit):
 
 
 def synth(text, style, k):
+    if MODEL.startswith("gemini-2.5"):
+        return synth_legacy(text, style, k)
     body = {
         "model": MODEL,
         "input": [{"type": "user_input", "content": [{"type": "text", "text": text,
@@ -116,6 +124,47 @@ def synth(text, style, k):
             d = r.json()
             part = next(c for s in d["steps"] for c in s["content"] if c.get("type") == "audio")
             return base64.b64decode(part["data"]), d.get("usage", {}).get("total_output_tokens", 0)
+        if r.status_code == 429 and "per day" in r.text:
+            raise QuotaExhausted(f"daily quota exhausted for {MODEL}: {r.text[:160]}")
+        if r.status_code in (429, 500, 503):
+            time.sleep(3 * (attempt + 1))
+            continue
+        raise RuntimeError(f"{r.status_code} {r.text[:200]}")
+    raise RuntimeError("gave up after retries")
+
+
+def synth_legacy(text, style, k):
+    """The 2.5 TTS models: generateContent with speechConfig, style in the
+    prompt, raw 16-bit PCM at 24 kHz back. A fallback for a day when both 3.8
+    models have hit their cap; the manifest records the model, so the next
+    Flash run replaces these."""
+    import io
+    import wave
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent?key={k}"
+    body = {
+        "contents": [{"parts": [{"text": f"{style}\n\nSay exactly this and nothing else:\n{text}"}]}],
+        "generationConfig": {
+            "responseModalities": ["AUDIO"],
+            "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": VOICE}}},
+        },
+    }
+    for attempt in range(3):
+        r = requests.post(url, json=body, timeout=180)
+        if r.status_code == 200:
+            d = r.json()
+            part = d["candidates"][0]["content"]["parts"][0]["inlineData"]
+            pcm = base64.b64decode(part["data"])
+            rate = 24000
+            m = re.search(r"rate=(\d+)", part.get("mimeType", ""))
+            if m:
+                rate = int(m.group(1))
+            buf = io.BytesIO()
+            with wave.open(buf, "wb") as w:
+                w.setnchannels(1)
+                w.setsampwidth(2)
+                w.setframerate(rate)
+                w.writeframes(pcm)
+            return buf.getvalue(), d.get("usageMetadata", {}).get("candidatesTokenCount", 0)
         if r.status_code == 429 and "per day" in r.text:
             raise QuotaExhausted(f"daily quota exhausted for {MODEL}: {r.text[:160]}")
         if r.status_code in (429, 500, 503):
@@ -238,6 +287,23 @@ def make_batches(todo):
     return batches
 
 
+def run_batch(b, k, ff, manifest, counter):
+    """Generate a batch; on a split mismatch halve it and retry, down to
+    singles. Returns the audio tokens used. `counter` is a one-item list."""
+    if len(b) == 1:
+        tok = do_single(b[0], k, ff, manifest)
+        counter[0] += 1
+        print(f"    ok {b[0]['id']}", flush=True)
+        return tok
+    tok = do_batch(b, k, ff, manifest)
+    counter[0] += 1
+    if tok is not None:
+        return tok
+    half = len(b) // 2
+    print(f"    split mismatch on {len(b)}, retrying as {half} + {len(b) - half}", flush=True)
+    return run_batch(b[:half], k, ff, manifest, counter) + run_batch(b[half:], k, ff, manifest, counter)
+
+
 def main():
     global MODEL
     args = sys.argv[1:]
@@ -247,6 +313,10 @@ def main():
     max_req = int(args[args.index("--max") + 1]) if "--max" in args else 10_000
     dry = "--dry" in args
     single = "--single" in args
+    priority = []
+    if "--priority" in args:
+        with open(args[args.index("--priority") + 1], encoding="utf-8") as f:
+            priority = json.load(f)
     with open(CLIPS, encoding="utf-8") as f:
         clips = json.load(f)
     os.makedirs(OUT, exist_ok=True)
@@ -256,8 +326,13 @@ def main():
         with open(MANIFEST, encoding="utf-8") as f:
             manifest = json.load(f)
     todo = [c for c in clips if (not only or only in c["id"]) and needs(c, manifest)]
-    batches = [[c] for c in todo] if single else make_batches(todo)
-    print(f"model {MODEL}: {len(clips)} clips, {len(todo)} to generate in {len(batches)} requests")
+    first = [c for c in todo if c["id"] in set(priority)]
+    rest = [] if "--priority-only" in args else [c for c in todo if c["id"] not in set(priority)]
+    if single:
+        batches = [[c] for c in first + rest]
+    else:
+        batches = make_batches(first) + make_batches(rest)
+    print(f"model {MODEL}: {len(clips)} clips, {len(todo)} to generate in {len(batches)} requests ({len(first)} lesson clips first)")
     if dry:
         for b in batches[:40]:
             print(" ", len(b), "|", " / ".join(c["id"] for c in b)[:110])
@@ -265,29 +340,15 @@ def main():
     k = key()
     ff = ffmpeg()
     tokens = 0
-    requests_made = 0
+    counter = [0]
     try:
         for i, b in enumerate(batches, 1):
-            if requests_made >= max_req:
+            if counter[0] >= max_req:
                 print("stopping at --max requests")
                 break
             try:
-                if len(b) > 1:
-                    tok = do_batch(b, k, ff, manifest)
-                    requests_made += 1
-                    if tok is None:
-                        print(f"[{i}/{len(batches)}] split mismatch, redoing {len(b)} singly")
-                        for c in b:
-                            tokens += do_single(c, k, ff, manifest)
-                            requests_made += 1
-                            print(f"    ok {c['id']}", flush=True)
-                    else:
-                        tokens += tok
-                        print(f"[{i}/{len(batches)}] ok batch of {len(b)}: {', '.join(c['id'] for c in b)[:100]}", flush=True)
-                else:
-                    tokens += do_single(b[0], k, ff, manifest)
-                    requests_made += 1
-                    print(f"[{i}/{len(batches)}] ok {b[0]['id']}", flush=True)
+                print(f"[{i}/{len(batches)}] batch of {len(b)}: {', '.join(c['id'] for c in b)[:100]}", flush=True)
+                tokens += run_batch(b, k, ff, manifest, counter)
             except QuotaExhausted as e:
                 print(e)
                 break
@@ -297,7 +358,8 @@ def main():
     finally:
         save_manifest(manifest)
     price = PRICE_PER_M.get(MODEL, 9.0)
-    print(f"done. {requests_made} requests, {tokens} audio tokens ≈ ${tokens * price / 1e6:.3f}")
+    left = [c for c in clips if needs(c, manifest)]
+    print(f"done. {counter[0]} requests, {tokens} audio tokens ≈ ${tokens * price / 1e6:.3f}; {len(left)} clips still to do")
 
 
 if __name__ == "__main__":

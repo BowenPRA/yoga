@@ -1,10 +1,11 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import { Eye, EyeOff, Search } from 'lucide-react'
+import { Check, Eye, EyeOff, Search } from 'lucide-react'
 import { useLang } from '../lib/i18n.jsx'
-import { MUSCLES, BONES_ALL, MOVEMENTS_ALL, getTerm, searchTerms } from '../lib/content.js'
-import { FIGURES, MUSCLE_REGIONS, SKELETON_LANDMARKS, SKELETON_BOXES } from '../../content/anatomy/regions.js'
-import skeletonBoxes from '../../content/anatomy/skeleton-boxes.json'
+import { MUSCLES, BONES_ALL, MOVEMENTS_ALL, LESSONS, getTerm, searchTerms } from '../lib/content.js'
+import { FIGURES, MUSCLE_REGIONS, SKELETON_LANDMARKS } from '../../content/anatomy/regions.js'
+import { FIGURE_SRC, BONE_BOXES } from '../lib/figures.js'
+import { progress, isKnown } from '../lib/store.js'
 import { Chip, Header, PlayButton } from '../components/ui.jsx'
 import FigureViewer from '../components/FigureViewer.jsx'
 import AnatomyCard from '../components/AnatomyCard.jsx'
@@ -12,14 +13,44 @@ import { SettingsButton } from '../components/SettingsSheet.jsx'
 
 const BASE = import.meta.env.BASE_URL
 const TABS = ['muscles', 'bones', 'movements']
+const { w: SK_W, h: SK_H } = FIGURE_SRC.skeleton
+const boneBoxes = BONE_BOXES
 
-// Skeleton viewBox and the bone-group boxes measured from the SVG.
-const [, , SK_W, SK_H] = skeletonBoxes.viewBox.split(' ').map(Number)
-const boneBoxes = {}
-for (const b of BONES_ALL) {
-  const boxes = (b.skeleton || []).map((g) => skeletonBoxes.groups[g]).filter(Boolean)
-  const extra = SKELETON_BOXES[b.id] || []
-  if (boxes.length || extra.length) boneBoxes[b.id] = [...boxes, ...extra]
+/** The row of lessons by region: done, in progress, or not yet written. */
+function LessonRow() {
+  const { t, ui } = useLang()
+  const L = t.learn
+  const navigate = useNavigate()
+  const [rows, setRows] = useState({})
+  useEffect(() => { progress.lessons().then(setRows) }, [])
+  return (
+    <section className="mb-5">
+      <h2 className="px-1 text-[13px] font-semibold uppercase tracking-wider text-muted">{L.lessons}</h2>
+      <div className="no-scrollbar -mx-4 mt-2 flex gap-2 overflow-x-auto px-4 pb-1">
+        {LESSONS.map((l) => {
+          const row = rows[l.id]
+          const open = !!l.slides
+          const started = row && !row.done && row.slide > 0
+          return (
+            <button key={l.id} disabled={!open} onClick={() => navigate(`/learn/${l.id}`)}
+              className={`w-[150px] shrink-0 rounded-2xl border p-3 text-left transition ${open ? 'bg-paper border-line shadow-card active:scale-[0.98]' : 'bg-sand border-line/60 opacity-70'}`}>
+              <div className="flex items-start justify-between gap-1">
+                <div className="font-serif text-[18px] leading-tight text-ink">{ui === 'vi' ? l.title.vi : l.title.en}</div>
+                {row?.done && <span className="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-sage-soft text-sage-deep"><Check size={12} /></span>}
+              </div>
+              <div className="mt-2 text-xs text-muted">
+                {open ? `${l.terms.length} ${L.words} · ${l.minutes} ${L.minutes}` : L.soon}
+              </div>
+              {open && (
+                <div className="mt-1 text-xs text-sage-deep">{row?.done ? L.again : started ? L.resume : L.start}</div>
+              )}
+            </button>
+          )
+        })}
+      </div>
+      <p className="mt-2 px-1 text-xs text-muted">{L.lessonsIntro}</p>
+    </section>
+  )
 }
 
 export default function Anatomy() {
@@ -30,6 +61,8 @@ export default function Anatomy() {
   const [view, setView] = useState('front')
   const [showAll, setShowAll] = useState(false)
   const [q, setQ] = useState('')
+  const [known, setKnown] = useState({})
+  useEffect(() => { progress.terms().then((rows) => setKnown(Object.fromEntries(Object.entries(rows).map(([k, r]) => [k, isKnown(r)])))) }, [id])
 
   const term = id ? getTerm(id) : null
   const open = (tid) => navigate(tid ? `/anatomy/${tab}/${tid}` : `/anatomy/${tab}`)
@@ -61,6 +94,7 @@ export default function Anatomy() {
   return (
     <>
       <Header title={a.title} right={<SettingsButton />} />
+      <LessonRow />
       <div className="mb-3 flex gap-2">
         {TABS.map((tb) => <Chip key={tb} active={tab === tb} onClick={() => setTab(tb)}>{a[tb]}</Chip>)}
       </div>
@@ -117,6 +151,7 @@ export default function Anatomy() {
                   <div className="text-ink">{x.en} <span className="ml-1 text-xs text-clay">{x.say}</span></div>
                   <div className="truncate text-sm text-muted">{x.vi}{x.plain && x.plain.toLowerCase() !== x.en.toLowerCase() ? ` · ${x.plain}` : ''}</div>
                 </div>
+                {known[x.id] && <span className="rounded-full bg-sage-soft px-2 py-0.5 text-[10px] text-sage-deep">{t.learn.known}</span>}
                 {x.deep && <span className="rounded-full bg-sand px-2 py-0.5 text-[10px] text-muted">{a.deep}</span>}
               </div>
             ))}

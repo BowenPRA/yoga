@@ -1,57 +1,747 @@
 [
  {
-  "id": "quadriceps",
-  "text": "quadriceps",
+  "id": "sternocleidomastoid",
+  "text": "sternocleidomastoid",
   "lang": "en",
   "kind": "term"
  },
  {
-  "id": "quadriceps__plain",
-  "text": "the front of your thighs",
+  "id": "sternocleidomastoid__plain",
+  "text": "the long muscle at the side of your neck",
   "lang": "en",
   "kind": "plain"
  },
  {
-  "id": "quadriceps__example",
-  "text": "Press through your front foot and feel the front of your thigh working.",
+  "id": "sternocleidomastoid__cue-1",
+  "text": "Let your head be heavy; you don’t need to hold it up with your neck.",
   "lang": "en",
-  "kind": "example"
+  "kind": "cue-vinyasa"
  },
  {
-  "id": "hamstrings",
-  "text": "hamstrings",
+  "id": "sternocleidomastoid__cue-2",
+  "text": "Soften the sides of your neck and let the jaw unclench.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "sternocleidomastoid__cue-3",
+  "text": "In the twist, turn your gaze last, and keep the neck long.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "trapezius",
+  "text": "trapezius",
   "lang": "en",
   "kind": "term"
  },
  {
-  "id": "hamstrings__plain",
-  "text": "the back of your thighs",
+  "id": "trapezius__plain",
+  "text": "the top of your shoulders and upper back",
   "lang": "en",
   "kind": "plain"
  },
  {
-  "id": "hamstrings__example",
-  "text": "Bend your knees a little to soften the back of your thighs.",
+  "id": "trapezius__cue-1",
+  "text": "Relax your shoulders away from your ears.",
   "lang": "en",
-  "kind": "example"
+  "kind": "cue-vinyasa"
  },
  {
-  "id": "glutes",
-  "text": "glutes",
+  "id": "trapezius__cue-2",
+  "text": "Slide your shoulder blades down your back.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "trapezius__cue-3",
+  "text": "Let the tops of your shoulders melt away from your neck.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "trapezius__cue-4",
+  "text": "In Downward Dog, broaden across the upper back rather than shrugging.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "levator-scapulae",
+  "text": "levator scapulae",
   "lang": "en",
   "kind": "term"
  },
  {
-  "id": "glutes__plain",
+  "id": "levator-scapulae__plain",
+  "text": "the muscle that lifts your shoulder blade",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "levator-scapulae__cue-1",
+  "text": "Drop your ear toward your shoulder and let the back of the neck lengthen.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "levator-scapulae__cue-2",
+  "text": "Keep your shoulder blades heavy as you reach up.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "rhomboids",
+  "text": "rhomboids",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "rhomboids__plain",
+  "text": "the muscles between your shoulder blades",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "rhomboids__cue-1",
+  "text": "Draw your shoulder blades toward each other and lift your chest.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "rhomboids__cue-2",
+  "text": "In Locust, squeeze between the shoulder blades to lift the arms higher.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "rhomboids__cue-3",
+  "text": "Round your upper back and let the space between your shoulder blades open.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "deltoids",
+  "text": "deltoids",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "deltoids__plain",
+  "text": "the caps of your shoulders",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "deltoids__cue-1",
+  "text": "Reach out through your fingertips; let the shoulders stay soft while the arms work.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "deltoids__cue-2",
+  "text": "In Warrior II, keep the arms at shoulder height, strong to the fingertips.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "deltoids__cue-3",
+  "text": "Let the arms rest; nothing to hold here.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "rotator-cuff",
+  "text": "rotator cuff",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "rotator-cuff__plain",
+  "text": "the small muscles that hold your shoulder in its socket",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "rotator-cuff__cue-1",
+  "text": "Rotate your upper arms outward so the shoulders feel wide.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "rotator-cuff__cue-2",
+  "text": "In Chaturanga, keep the elbows close and the shoulders no lower than the elbows.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "rotator-cuff__cue-3",
+  "text": "If the shoulder pinches, come out and choose the gentler option.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "teres-major",
+  "text": "teres major",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "teres-major__plain",
+  "text": "the muscle under your armpit at the back",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "teres-major__cue-1",
+  "text": "Lift your armpits toward the ceiling in Downward Dog.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "pectoralis-major",
+  "text": "pectoralis major",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "pectoralis-major__plain",
+  "text": "your chest",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "pectoralis-major__cue-1",
+  "text": "Open your chest toward the ceiling.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "pectoralis-major__cue-2",
+  "text": "Broaden across your collarbones.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "pectoralis-major__cue-3",
+  "text": "Lower to Chaturanga with your chest, not your chin.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "pectoralis-major__cue-4",
+  "text": "Let the front of your chest soften and spread over the bolster.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "pectoralis-minor",
+  "text": "pectoralis minor",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "pectoralis-minor__plain",
+  "text": "the small muscle under your chest",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "pectoralis-minor__cue-1",
+  "text": "Let your arms open wide and feel the space under your collarbones.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "pectoralis-minor__cue-2",
+  "text": "Lift the front of your shoulders away from the floor.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "serratus-anterior",
+  "text": "serratus anterior",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "serratus-anterior__plain",
+  "text": "the muscle along the side of your ribs",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "serratus-anterior__cue-1",
+  "text": "Push the floor away and feel your upper back broaden.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "serratus-anterior__cue-2",
+  "text": "In Plank, don’t let your chest sink between your shoulders.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "serratus-anterior__cue-3",
+  "text": "Wrap your shoulder blades around your ribs.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "latissimus-dorsi",
+  "text": "latissimus dorsi",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "latissimus-dorsi__plain",
+  "text": "the big muscles of your mid back",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "latissimus-dorsi__cue-1",
+  "text": "Reach your arms up and feel the sides of your back lengthen.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "latissimus-dorsi__cue-2",
+  "text": "In Downward Dog, send your hips back and let the sides of your waist get long.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "latissimus-dorsi__cue-3",
+  "text": "In the side bend, breathe into the side ribs.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "erector-spinae",
+  "text": "erector spinae",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "erector-spinae__plain",
+  "text": "the long muscles along your spine",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "erector-spinae__cue-1",
+  "text": "Lengthen your spine from your tailbone to the crown of your head.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "erector-spinae__cue-2",
+  "text": "Lift through the back of your heart in Locust.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "erector-spinae__cue-3",
+  "text": "Let your back round; let the muscles along your spine go quiet.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "erector-spinae__cue-4",
+  "text": "Keep a long spine as you fold; hinge from your hips.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "quadratus-lumborum",
+  "text": "quadratus lumborum",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "quadratus-lumborum__plain",
+  "text": "the deep muscle of your lower back and waist",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "quadratus-lumborum__cue-1",
+  "text": "Let the waist on your top side open and breathe into it.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "quadratus-lumborum__cue-2",
+  "text": "Keep both hips level as you reach over to the side.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "biceps-brachii",
+  "text": "biceps",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "biceps-brachii__plain",
+  "text": "the front of your upper arms",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "biceps-brachii__cue-1",
+  "text": "Keep a soft bend in your elbows; don’t lock them.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "biceps-brachii__cue-2",
+  "text": "In Chaturanga, bend your elbows to ninety degrees, no lower.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "triceps-brachii",
+  "text": "triceps",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "triceps-brachii__plain",
+  "text": "the back of your upper arms",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "triceps-brachii__cue-1",
+  "text": "Press the floor away and straighten your arms without locking your elbows.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "triceps-brachii__cue-2",
+  "text": "Hug your elbows in toward your ribs as you lower.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "triceps-brachii__cue-3",
+  "text": "Let the arms be heavy; you don’t need them here.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "forearm-flexors",
+  "text": "forearm flexors",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "forearm-flexors__plain",
+  "text": "the inside of your forearms",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "forearm-flexors__cue-1",
+  "text": "Spread your fingers wide and press through your knuckles.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "forearm-flexors__cue-2",
+  "text": "Turn your palms up and stretch the inside of your wrists.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "forearm-extensors",
+  "text": "forearm extensors",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "forearm-extensors__plain",
+  "text": "the outside of your forearms",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "forearm-extensors__cue-1",
+  "text": "Grip the mat lightly with your fingertips to protect your wrists.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "rectus-abdominis",
+  "text": "rectus abdominis",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "rectus-abdominis__plain",
+  "text": "the front of your belly",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "rectus-abdominis__cue-1",
+  "text": "Draw your lower ribs in toward your hips.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "rectus-abdominis__cue-2",
+  "text": "In Boat, lift your chest and keep the belly firm, not hard.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "rectus-abdominis__cue-3",
+  "text": "In Sphinx, let the belly be soft and the front body long.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "rectus-abdominis__cue-4",
+  "text": "Knit your front ribs together as you reach up.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "external-oblique",
+  "text": "obliques",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "external-oblique__plain",
+  "text": "the sides of your waist",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "external-oblique__cue-1",
+  "text": "Twist from your belly, not from your neck.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "external-oblique__cue-2",
+  "text": "Lengthen first, then twist a little more on each exhale.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "external-oblique__cue-3",
+  "text": "In Side Plank, lift your waist away from the floor.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "external-oblique__cue-4",
+  "text": "Let the twist happen without pulling; the breath does the work.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "internal-oblique",
+  "text": "internal oblique",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "internal-oblique__plain",
+  "text": "the deeper layer of your waist",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "internal-oblique__cue-1",
+  "text": "Draw your navel gently toward your spine as you twist.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "transversus-abdominis",
+  "text": "transversus abdominis",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "transversus-abdominis__plain",
+  "text": "your deep belly, like a corset",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "transversus-abdominis__cue-1",
+  "text": "Draw your belly in gently to support your spine.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "transversus-abdominis__cue-2",
+  "text": "Engage uddiyana bandha: lift and draw in just below the navel.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "transversus-abdominis__cue-3",
+  "text": "Hug your low belly in as you lift one leg.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "diaphragm",
+  "text": "diaphragm",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "diaphragm__plain",
+  "text": "your breathing muscle, under your ribs",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "diaphragm__cue-1",
+  "text": "Breathe low into your belly; let your ribs widen on the inhale.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "diaphragm__cue-2",
+  "text": "Keep the breath steady and audible; let it lead the movement.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "diaphragm__cue-3",
+  "text": "Inhale, feel your ribs expand in every direction.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "pelvic-floor",
+  "text": "pelvic floor",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "pelvic-floor__plain",
+  "text": "the floor of your pelvis",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "pelvic-floor__cue-1",
+  "text": "Engage mula bandha: a gentle lift at the base of the pelvis.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "pelvic-floor__cue-2",
+  "text": "Let the pelvic floor soften and widen as you breathe out.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "iliopsoas",
+  "text": "iliopsoas",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "iliopsoas__plain",
+  "text": "your deep hip flexors",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "iliopsoas__cue-1",
+  "text": "Sink your hips forward and down, and feel the front of your back hip open.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "iliopsoas__cue-2",
+  "text": "In Dragon, let the weight of the hips do the work; breathe into the front of the hip.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "iliopsoas__cue-3",
+  "text": "Tuck your tailbone slightly to lengthen the front of your hips.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "iliopsoas__cue-4",
+  "text": "In Boat, lift from deep in your hips, not just your belly.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "tensor-fasciae-latae",
+  "text": "tensor fasciae latae",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "tensor-fasciae-latae__plain",
+  "text": "the muscle at the outer front of your hip",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "tensor-fasciae-latae__cue-1",
+  "text": "Soften the outer hip of your standing leg; don’t grip.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "tensor-fasciae-latae__cue-2",
+  "text": "In Shoelace, let the outer hips release toward the floor.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "gluteus-maximus",
+  "text": "gluteus maximus",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "gluteus-maximus__plain",
   "text": "your seat",
   "lang": "en",
   "kind": "plain"
  },
  {
-  "id": "glutes__example",
-  "text": "Squeeze your seat gently to support your lower back.",
+  "id": "gluteus-maximus__cue-1",
+  "text": "Press into your heels and lift your hips.",
   "lang": "en",
-  "kind": "example"
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "gluteus-maximus__cue-2",
+  "text": "In Bridge, keep the glutes working but not clenched.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "gluteus-maximus__cue-3",
+  "text": "Let your seat get heavy and soft; sink toward the floor.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "gluteus-maximus__cue-4",
+  "text": "Squeeze your seat gently to protect your lower back in the backbend.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
  },
  {
   "id": "gluteus-medius",
@@ -66,46 +756,40 @@
   "kind": "plain"
  },
  {
-  "id": "gluteus-medius__example",
-  "text": "Keep your front knee tracking over your toes; feel the side of your hip switch on.",
+  "id": "gluteus-medius__cue-1",
+  "text": "Keep your hips level; don’t let the standing hip push out.",
   "lang": "en",
-  "kind": "example"
+  "kind": "cue-vinyasa"
  },
  {
-  "id": "hip-adductors",
-  "text": "hip adductors",
+  "id": "gluteus-medius__cue-2",
+  "text": "Press the outer edge of your back foot down and feel the side of your hip wake up.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "gluteus-medius__cue-3",
+  "text": "In Shoelace, breathe into the outer hip.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "gluteus-minimus",
+  "text": "gluteus minimus",
   "lang": "en",
   "kind": "term"
  },
  {
-  "id": "hip-adductors__plain",
-  "text": "your inner thighs",
+  "id": "gluteus-minimus__plain",
+  "text": "the small deep muscle of your outer hip",
   "lang": "en",
   "kind": "plain"
  },
  {
-  "id": "hip-adductors__example",
-  "text": "Let your inner thighs open as you sink into the pose.",
+  "id": "gluteus-minimus__cue-1",
+  "text": "Steady your standing hip without gripping.",
   "lang": "en",
-  "kind": "example"
- },
- {
-  "id": "hip-flexors",
-  "text": "hip flexors",
-  "lang": "en",
-  "kind": "term"
- },
- {
-  "id": "hip-flexors__plain",
-  "text": "the front of your hips",
-  "lang": "en",
-  "kind": "plain"
- },
- {
-  "id": "hip-flexors__example",
-  "text": "Reach your back leg long to stretch the front of your hip.",
-  "lang": "en",
-  "kind": "example"
+  "kind": "cue-vinyasa"
  },
  {
   "id": "piriformis",
@@ -120,10 +804,220 @@
   "kind": "plain"
  },
  {
-  "id": "piriformis__example",
+  "id": "piriformis__cue-1",
   "text": "You should feel this deep in your outer hip, not in your knee.",
   "lang": "en",
-  "kind": "example"
+  "kind": "cue-yin"
+ },
+ {
+  "id": "piriformis__cue-2",
+  "text": "Find your edge and let the hip soften a little more with each exhale.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "piriformis__cue-3",
+  "text": "Flex your front foot to protect the knee as the hip opens.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "deep-rotators",
+  "text": "deep hip rotators",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "deep-rotators__plain",
+  "text": "the small muscles deep in your hip",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "deep-rotators__cue-1",
+  "text": "Let the thighs roll open from deep in the hip sockets.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "deep-rotators__cue-2",
+  "text": "Rotate your front thigh out as you fold.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "hip-adductors",
+  "text": "adductors",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "hip-adductors__plain",
+  "text": "your inner thighs",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "hip-adductors__cue-1",
+  "text": "Squeeze the block between your thighs.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "hip-adductors__cue-2",
+  "text": "In Frog, let your inner thighs soften toward the floor; don’t push.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "hip-adductors__cue-3",
+  "text": "In Prasarita, draw your inner thighs back as you fold.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "hip-adductors__cue-4",
+  "text": "Let your inner thighs open as you sink into Warrior II.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "sartorius",
+  "text": "sartorius",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "sartorius__plain",
+  "text": "the long strap muscle across your thigh",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "sartorius__cue-1",
+  "text": "Open your knee out to the side as you place the foot in Tree.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "quadriceps",
+  "text": "quadriceps",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "quadriceps__plain",
+  "text": "the front of your thighs",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "quadriceps__cue-1",
+  "text": "Lift your kneecaps to engage the front of your thighs.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "quadriceps__cue-2",
+  "text": "In Chair, sit back into your heels and feel your thighs working.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "quadriceps__cue-3",
+  "text": "In Saddle, let the front of your thighs lengthen; come up if the knees complain.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "quadriceps__cue-4",
+  "text": "Press through your front foot and feel the front of your thigh working.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "hamstrings",
+  "text": "hamstrings",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "hamstrings__plain",
+  "text": "the back of your thighs",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "hamstrings__cue-1",
+  "text": "Bend your knees as much as you need to keep your back long.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "hamstrings__cue-2",
+  "text": "Lift your sitting bones toward the ceiling in Downward Dog.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "hamstrings__cue-3",
+  "text": "In Caterpillar, let your back round and the backs of your legs soften.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "hamstrings__cue-4",
+  "text": "Fold from your hips, not from your waist.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "it-band",
+  "text": "IT band",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "it-band__plain",
+  "text": "the thick band down the outside of your thigh",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "it-band__cue-1",
+  "text": "Cross your knees and let the outer thighs release.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "it-band__cue-2",
+  "text": "In Eagle, hug your thighs together and feel the outer hips.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "tibialis-anterior",
+  "text": "tibialis anterior",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "tibialis-anterior__plain",
+  "text": "the front of your shin",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "tibialis-anterior__cue-1",
+  "text": "Flex your feet and pull your toes toward you.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "tibialis-anterior__cue-2",
+  "text": "In Toe Squat and Hero, let the fronts of the shins and ankles stretch slowly.",
+  "lang": "en",
+  "kind": "cue-yin"
  },
  {
   "id": "calves",
@@ -138,244 +1032,100 @@
   "kind": "plain"
  },
  {
-  "id": "calves__example",
-  "text": "Pedal your feet to wake up your calves.",
-  "lang": "en",
-  "kind": "example"
- },
- {
-  "id": "deltoids",
-  "text": "deltoids",
-  "lang": "en",
-  "kind": "term"
- },
- {
-  "id": "deltoids__plain",
-  "text": "your shoulders",
-  "lang": "en",
-  "kind": "plain"
- },
- {
-  "id": "deltoids__example",
-  "text": "Reach through your fingertips and let your shoulders stay soft.",
-  "lang": "en",
-  "kind": "example"
- },
- {
-  "id": "triceps",
-  "text": "triceps",
-  "lang": "en",
-  "kind": "term"
- },
- {
-  "id": "triceps__plain",
-  "text": "the back of your upper arms",
-  "lang": "en",
-  "kind": "plain"
- },
- {
-  "id": "triceps__example",
-  "text": "Straighten your arms without locking your elbows.",
-  "lang": "en",
-  "kind": "example"
- },
- {
-  "id": "abdominals",
-  "text": "abdominals",
-  "lang": "en",
-  "kind": "term"
- },
- {
-  "id": "abdominals__plain",
-  "text": "your belly",
-  "lang": "en",
-  "kind": "plain"
- },
- {
-  "id": "abdominals__example",
-  "text": "Draw your belly in gently to support your spine.",
-  "lang": "en",
-  "kind": "example"
- },
- {
-  "id": "spine",
-  "text": "spine",
-  "lang": "en",
-  "kind": "term"
- },
- {
-  "id": "spine__plain",
-  "text": "your back",
-  "lang": "en",
-  "kind": "plain"
- },
- {
-  "id": "spine__example",
-  "text": "Lengthen through your spine from your tailbone to the crown of your head.",
-  "lang": "en",
-  "kind": "example"
- },
- {
-  "id": "sacrum",
-  "text": "sacrum",
-  "lang": "en",
-  "kind": "term"
- },
- {
-  "id": "sacrum__plain",
-  "text": "the base of your spine",
-  "lang": "en",
-  "kind": "plain"
- },
- {
-  "id": "sacrum__example",
-  "text": "Let the base of your spine feel heavy toward the floor.",
-  "lang": "en",
-  "kind": "example"
- },
- {
-  "id": "pelvis",
-  "text": "pelvis",
-  "lang": "en",
-  "kind": "term"
- },
- {
-  "id": "pelvis__plain",
-  "text": "your hips",
-  "lang": "en",
-  "kind": "plain"
- },
- {
-  "id": "pelvis__example",
-  "text": "Keep your hips level, like a bowl of water you don’t want to spill.",
-  "lang": "en",
-  "kind": "example"
- },
- {
-  "id": "sit-bones",
-  "text": "sitting bones",
-  "lang": "en",
-  "kind": "term"
- },
- {
-  "id": "sit-bones__plain",
-  "text": "your sitting bones",
-  "lang": "en",
-  "kind": "plain"
- },
- {
-  "id": "sit-bones__example",
-  "text": "Lift your sitting bones up toward the ceiling.",
-  "lang": "en",
-  "kind": "example"
- },
- {
-  "id": "hips",
-  "text": "hips",
-  "lang": "en",
-  "kind": "term"
- },
- {
-  "id": "hips__plain",
-  "text": "your hips",
-  "lang": "en",
-  "kind": "plain"
- },
- {
-  "id": "hips__example",
-  "text": "Open your hips to the side wall.",
-  "lang": "en",
-  "kind": "example"
- },
- {
-  "id": "knees",
-  "text": "knees",
-  "lang": "en",
-  "kind": "term"
- },
- {
-  "id": "knees__plain",
-  "text": "your knees",
-  "lang": "en",
-  "kind": "plain"
- },
- {
-  "id": "knees__example",
-  "text": "Bend your front knee so it stacks over your ankle.",
-  "lang": "en",
-  "kind": "example"
- },
- {
-  "id": "ankles",
-  "text": "ankles",
-  "lang": "en",
-  "kind": "term"
- },
- {
-  "id": "ankles__plain",
-  "text": "your ankles",
-  "lang": "en",
-  "kind": "plain"
- },
- {
-  "id": "ankles__example",
-  "text": "Stack your knee over your ankle, not past it.",
-  "lang": "en",
-  "kind": "example"
- },
- {
-  "id": "wrists",
-  "text": "wrists",
-  "lang": "en",
-  "kind": "term"
- },
- {
-  "id": "wrists__plain",
-  "text": "your wrists",
-  "lang": "en",
-  "kind": "plain"
- },
- {
-  "id": "wrists__example",
-  "text": "If your wrists complain, come down onto your forearms.",
-  "lang": "en",
-  "kind": "example"
- },
- {
-  "id": "shoulders",
-  "text": "shoulders",
-  "lang": "en",
-  "kind": "term"
- },
- {
-  "id": "shoulders__plain",
-  "text": "your shoulders",
-  "lang": "en",
-  "kind": "plain"
- },
- {
-  "id": "shoulders__example",
-  "text": "Relax your shoulders away from your ears.",
-  "lang": "en",
-  "kind": "example"
- },
- {
-  "id": "heels",
-  "text": "heels",
-  "lang": "en",
-  "kind": "term"
- },
- {
-  "id": "heels__plain",
-  "text": "your heels",
-  "lang": "en",
-  "kind": "plain"
- },
- {
-  "id": "heels__example",
+  "id": "calves__cue-1",
   "text": "Reach your heels toward the floor; they don’t have to touch.",
   "lang": "en",
-  "kind": "example"
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "calves__cue-2",
+  "text": "Pedal your feet to wake up your calves.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "calves__cue-3",
+  "text": "In Squat, let your heels sink; use a blanket under them if they lift.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "tibialis-posterior",
+  "text": "tibialis posterior",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "tibialis-posterior__plain",
+  "text": "the deep muscle that holds up your arch",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "tibialis-posterior__cue-1",
+  "text": "Lift your inner arches and press the base of your big toes down.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "fibularis-longus",
+  "text": "fibularis longus",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "fibularis-longus__plain",
+  "text": "the outside of your lower leg",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "fibularis-longus__cue-1",
+  "text": "Spread your toes and feel the four corners of your foot.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "achilles-tendon",
+  "text": "Achilles tendon",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "achilles-tendon__plain",
+  "text": "the cord above your heel",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "achilles-tendon__cue-1",
+  "text": "Let your heels sink slowly; never bounce.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "plantar-fascia",
+  "text": "plantar fascia",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "plantar-fascia__plain",
+  "text": "the sole of your foot",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "plantar-fascia__cue-1",
+  "text": "Tuck your toes under and sit back on your heels. Stay with the breath.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "plantar-fascia__cue-2",
+  "text": "Spread your toes and press evenly through the sole of your foot.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
  },
  {
   "id": "crown",
@@ -390,10 +1140,160 @@
   "kind": "plain"
  },
  {
-  "id": "crown__example",
+  "id": "crown__cue-1",
   "text": "Lengthen through the crown of your head.",
   "lang": "en",
-  "kind": "example"
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "crown__cue-2",
+  "text": "Reach the crown of your head forward as you fold.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "crown__cue-3",
+  "text": "Let the crown of your head be heavy toward the floor.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "jaw",
+  "text": "jaw",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "jaw__plain",
+  "text": "your jaw",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "jaw__cue-1",
+  "text": "Unclench your jaw; let your teeth part slightly.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "jaw__cue-2",
+  "text": "Soften your jaw and the space between your eyebrows.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "cervical-spine",
+  "text": "cervical spine",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "cervical-spine__plain",
+  "text": "your neck",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "cervical-spine__cue-1",
+  "text": "Keep the back of your neck long; gaze slightly forward, not up.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "cervical-spine__cue-2",
+  "text": "In Shoulderstand, never turn your head.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "cervical-spine__cue-3",
+  "text": "Let your neck be in line with your spine; a folded blanket under the head helps.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "thoracic-spine",
+  "text": "thoracic spine",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "thoracic-spine__plain",
+  "text": "your upper back",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "thoracic-spine__cue-1",
+  "text": "Lift your chest and open across your upper back.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "thoracic-spine__cue-2",
+  "text": "Let the upper back round over the bolster.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "thoracic-spine__cue-3",
+  "text": "Twist from your upper back, not your lower back.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "lumbar-spine",
+  "text": "lumbar spine",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "lumbar-spine__plain",
+  "text": "your lower back",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "lumbar-spine__cue-1",
+  "text": "Keep your lower back long; don’t let it collapse.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "lumbar-spine__cue-2",
+  "text": "In backbends, lengthen through the lower back before you bend.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "lumbar-spine__cue-3",
+  "text": "If your lower back complains, bend your knees or come out.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "sacrum",
+  "text": "sacrum",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "sacrum__plain",
+  "text": "the flat bone at the base of your spine",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "sacrum__cue-1",
+  "text": "Let your sacrum feel heavy toward the floor.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "sacrum__cue-2",
+  "text": "In Bridge, slide a block under your sacrum, not your lower back.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
  },
  {
   "id": "tailbone",
@@ -408,298 +1308,1042 @@
   "kind": "plain"
  },
  {
-  "id": "tailbone__example",
-  "text": "Let your tailbone drop toward your heels.",
+  "id": "tailbone__cue-1",
+  "text": "Lengthen your tailbone toward your heels.",
   "lang": "en",
-  "kind": "example"
+  "kind": "cue-vinyasa"
  },
  {
-  "id": "root-down",
-  "text": "root down",
+  "id": "tailbone__cue-2",
+  "text": "Tuck your tailbone slightly in Warrior I.",
   "lang": "en",
-  "kind": "term"
+  "kind": "cue-ashtanga"
  },
  {
-  "id": "root-down__example",
-  "text": "Root down through the outer edge of your back foot.",
+  "id": "tailbone__cue-3",
+  "text": "Let your tailbone drop and the lower back widen.",
   "lang": "en",
-  "kind": "example"
+  "kind": "cue-yin"
  },
  {
-  "id": "lengthen",
-  "text": "lengthen",
-  "lang": "en",
-  "kind": "term"
- },
- {
-  "id": "lengthen__example",
-  "text": "Lengthen through the crown of your head.",
-  "lang": "en",
-  "kind": "example"
- },
- {
-  "id": "draw-in",
-  "text": "draw in",
+  "id": "pelvis",
+  "text": "pelvis",
   "lang": "en",
   "kind": "term"
  },
  {
-  "id": "draw-in__example",
-  "text": "Draw your belly in gently.",
+  "id": "pelvis__plain",
+  "text": "your hips",
   "lang": "en",
-  "kind": "example"
+  "kind": "plain"
  },
  {
-  "id": "soften",
-  "text": "soften",
+  "id": "pelvis__cue-1",
+  "text": "Keep your hips level, like a bowl of water you don’t want to spill.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "pelvis__cue-2",
+  "text": "Square your hips to the front of the mat.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "pelvis__cue-3",
+  "text": "Let the pelvis settle; there’s nothing to hold.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "hip-points",
+  "text": "hip points",
   "lang": "en",
   "kind": "term"
  },
  {
-  "id": "soften__example",
-  "text": "Soften your jaw and the space between your eyebrows.",
+  "id": "hip-points__plain",
+  "text": "the bony points at the front of your hips",
   "lang": "en",
-  "kind": "example"
+  "kind": "plain"
  },
  {
-  "id": "stack",
-  "text": "stack",
+  "id": "hip-points__cue-1",
+  "text": "Point your hip points forward, like headlights.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "hip-points__cue-2",
+  "text": "Draw your front hip point back and your back hip point forward.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "sit-bones",
+  "text": "sitting bones",
   "lang": "en",
   "kind": "term"
  },
  {
-  "id": "stack__example",
+  "id": "sit-bones__plain",
+  "text": "the bones you sit on",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "sit-bones__cue-1",
+  "text": "Root down through your sitting bones and lengthen up.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "sit-bones__cue-2",
+  "text": "Lift your sitting bones toward the ceiling in Downward Dog.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "sit-bones__cue-3",
+  "text": "Sit on the edge of a blanket so your sitting bones can tip forward.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "pubic-bone",
+  "text": "pubic bone",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "pubic-bone__plain",
+  "text": "the bone at the front of your pelvis",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "pubic-bone__cue-1",
+  "text": "Draw your pubic bone toward your navel to lengthen the lower back.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "pubic-bone__cue-2",
+  "text": "In Cobra, press your pubic bone into the mat.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "hip-joint",
+  "text": "hip joint",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "hip-joint__plain",
+  "text": "your hip socket",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "hip-joint__cue-1",
+  "text": "Hinge at your hips, not your waist.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "hip-joint__cue-2",
+  "text": "Let the thigh bone settle deeper into the hip socket.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "hip-joint__cue-3",
+  "text": "Turn your thigh out from the hip socket, not the knee.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "femur",
+  "text": "thigh bone",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "femur__plain",
+  "text": "your thigh bone",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "femur__cue-1",
+  "text": "Draw your front thigh bone back into the hip socket.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "femur__cue-2",
+  "text": "Let the weight of the thigh bones sink.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "knee",
+  "text": "knee",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "knee__plain",
+  "text": "your knee",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "knee__cue-1",
+  "text": "Keep your knee tracking over your second toe.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "knee__cue-2",
+  "text": "Stack your knee over your ankle, not past it.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "knee__cue-3",
+  "text": "If you feel anything sharp in the knee, come out of the pose.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "knee__cue-4",
+  "text": "Keep a micro-bend; don’t lock your knees.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "kneecap",
+  "text": "kneecap",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "kneecap__plain",
+  "text": "your kneecap",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "kneecap__cue-1",
+  "text": "Lift your kneecaps to engage your thighs.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "kneecap__cue-2",
+  "text": "Soften behind the kneecaps; nothing to hold here.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "shin-bone",
+  "text": "shin",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "shin-bone__plain",
+  "text": "your shin",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "shin-bone__cue-1",
+  "text": "Let your shin angle back; it doesn’t need to be parallel to the mat.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "shin-bone__cue-2",
+  "text": "Keep your front shin vertical in the lunge.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "ankle",
+  "text": "ankle",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "ankle__plain",
+  "text": "your ankle",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "ankle__cue-1",
   "text": "Stack your knee over your ankle.",
   "lang": "en",
-  "kind": "example"
+  "kind": "cue-vinyasa"
  },
  {
-  "id": "press",
-  "text": "press",
+  "id": "ankle__cue-2",
+  "text": "Flex your ankle and point your toes toward your face.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "ankle__cue-3",
+  "text": "In Toe Squat, go gently; the ankles and toes open slowly.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "heel",
+  "text": "heel",
   "lang": "en",
   "kind": "term"
  },
  {
-  "id": "press__example",
-  "text": "Press down through your knuckles.",
+  "id": "heel__plain",
+  "text": "your heel",
   "lang": "en",
-  "kind": "example"
+  "kind": "plain"
  },
  {
-  "id": "reach",
-  "text": "reach",
+  "id": "heel__cue-1",
+  "text": "Root down through your back heel.",
   "lang": "en",
-  "kind": "term"
+  "kind": "cue-vinyasa"
  },
  {
-  "id": "reach__example",
-  "text": "Reach your arms out wide.",
-  "lang": "en",
-  "kind": "example"
- },
- {
-  "id": "fold",
-  "text": "fold",
-  "lang": "en",
-  "kind": "term"
- },
- {
-  "id": "fold__example",
-  "text": "Fold forward slowly.",
-  "lang": "en",
-  "kind": "example"
- },
- {
-  "id": "release",
-  "text": "release",
-  "lang": "en",
-  "kind": "term"
- },
- {
-  "id": "release__example",
-  "text": "Release your head and let it hang heavy.",
-  "lang": "en",
-  "kind": "example"
- },
- {
-  "id": "gaze",
-  "text": "gaze",
-  "lang": "en",
-  "kind": "term"
- },
- {
-  "id": "gaze__example",
-  "text": "Gaze softly over your front fingertips.",
-  "lang": "en",
-  "kind": "example"
- },
- {
-  "id": "tuck",
-  "text": "tuck",
-  "lang": "en",
-  "kind": "term"
- },
- {
-  "id": "tuck__example",
-  "text": "Tuck your toes and lift your hips.",
-  "lang": "en",
-  "kind": "example"
- },
- {
-  "id": "rotate",
-  "text": "rotate",
-  "lang": "en",
-  "kind": "term"
- },
- {
-  "id": "rotate__example",
-  "text": "Rotate your upper arms outward.",
-  "lang": "en",
-  "kind": "example"
- },
- {
-  "id": "find-your-edge",
-  "text": "find your edge",
-  "lang": "en",
-  "kind": "term"
- },
- {
-  "id": "find-your-edge__example",
-  "text": "Find your edge: enough to feel it, not so much that you tense against it.",
-  "lang": "en",
-  "kind": "example"
- },
- {
-  "id": "toward",
-  "text": "toward",
-  "lang": "en",
-  "kind": "term"
- },
- {
-  "id": "toward__example",
+  "id": "heel__cue-2",
   "text": "Reach your heels toward the floor.",
   "lang": "en",
-  "kind": "example"
+  "kind": "cue-ashtanga"
  },
  {
-  "id": "away-from",
-  "text": "away from",
+  "id": "heel__cue-3",
+  "text": "Sit back toward your heels and let the hips rest.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "arch",
+  "text": "arch of the foot",
   "lang": "en",
   "kind": "term"
  },
  {
-  "id": "away-from__example",
+  "id": "arch__plain",
+  "text": "the arch of your foot",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "arch__cue-1",
+  "text": "Lift your inner arches and press the base of your big toes down.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "arch__cue-2",
+  "text": "Press the four corners of your feet into the mat.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "toes",
+  "text": "toes",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "toes__plain",
+  "text": "your toes",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "toes__cue-1",
+  "text": "Spread your toes wide.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "toes__cue-2",
+  "text": "Tuck your toes and lift your hips.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "toes__cue-3",
+  "text": "Turn your right toes out and your left toes in slightly.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "ribs",
+  "text": "ribs",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "ribs__plain",
+  "text": "your ribs",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "ribs__cue-1",
+  "text": "Knit your front ribs in; don’t let them flare.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "ribs__cue-2",
+  "text": "Breathe into your side ribs and the back of your ribs.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "ribs__cue-3",
+  "text": "Lift your ribs away from your hips to make space for the twist.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "sternum",
+  "text": "breastbone",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "sternum__plain",
+  "text": "the centre of your chest",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "sternum__cue-1",
+  "text": "Lift your sternum toward the ceiling.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "sternum__cue-2",
+  "text": "In Cobra, lead with your breastbone, not your chin.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "sternum__cue-3",
+  "text": "Let your sternum soften and sink in the forward fold.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "collarbones",
+  "text": "collarbones",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "collarbones__plain",
+  "text": "your collarbones",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "collarbones__cue-1",
+  "text": "Broaden across your collarbones.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "collarbones__cue-2",
+  "text": "Spread your collarbones and draw your shoulder blades down.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "shoulder-blades",
+  "text": "shoulder blades",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "shoulder-blades__plain",
+  "text": "your shoulder blades",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "shoulder-blades__cue-1",
+  "text": "Slide your shoulder blades down your back.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "shoulder-blades__cue-2",
+  "text": "Draw your shoulder blades toward each other and lift your chest.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "shoulder-blades__cue-3",
+  "text": "In Plank, spread your shoulder blades wide across your back.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "shoulder-blades__cue-4",
+  "text": "Let your shoulder blades melt down toward the floor.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "shoulder-joint",
+  "text": "shoulder",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "shoulder-joint__plain",
+  "text": "your shoulder",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "shoulder-joint__cue-1",
   "text": "Relax your shoulders away from your ears.",
   "lang": "en",
-  "kind": "example"
+  "kind": "cue-vinyasa"
  },
  {
-  "id": "in-line-with",
-  "text": "in line with",
+  "id": "shoulder-joint__cue-2",
+  "text": "Stack your shoulders over your wrists.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "shoulder-joint__cue-3",
+  "text": "If the shoulder pinches, bring the arm lower.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "upper-arm-bone",
+  "text": "upper arm bone",
   "lang": "en",
   "kind": "term"
  },
  {
-  "id": "in-line-with__example",
-  "text": "Keep your front heel in line with the arch of your back foot.",
+  "id": "upper-arm-bone__plain",
+  "text": "your upper arm",
   "lang": "en",
-  "kind": "example"
+  "kind": "plain"
  },
  {
-  "id": "over",
-  "text": "over",
+  "id": "upper-arm-bone__cue-1",
+  "text": "Rotate your upper arms outward to make space for your neck.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "upper-arm-bone__cue-2",
+  "text": "Hug your upper arms in toward your ribs.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "elbow",
+  "text": "elbow",
   "lang": "en",
   "kind": "term"
  },
  {
-  "id": "over__example",
-  "text": "Bring your shoulders over your wrists.",
+  "id": "elbow__plain",
+  "text": "your elbow",
   "lang": "en",
-  "kind": "example"
+  "kind": "plain"
  },
  {
-  "id": "parallel-to",
-  "text": "parallel to",
+  "id": "elbow__cue-1",
+  "text": "Keep a soft bend in your elbows.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "elbow__cue-2",
+  "text": "In Chaturanga, bend your elbows straight back, hugging your ribs.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "elbow__cue-3",
+  "text": "Point your elbow creases forward.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "forearm-bones",
+  "text": "forearm",
   "lang": "en",
   "kind": "term"
  },
  {
-  "id": "parallel-to__example",
-  "text": "Arms parallel to the floor.",
+  "id": "forearm-bones__plain",
+  "text": "your forearm",
   "lang": "en",
-  "kind": "example"
+  "kind": "plain"
  },
  {
-  "id": "inhale",
-  "text": "inhale",
+  "id": "forearm-bones__cue-1",
+  "text": "Come down onto your forearms, elbows under your shoulders.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "forearm-bones__cue-2",
+  "text": "Rest on your forearms or lower all the way down.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "wrist",
+  "text": "wrist",
   "lang": "en",
   "kind": "term"
  },
  {
-  "id": "inhale__example",
-  "text": "Inhale, reach your arms up.",
+  "id": "wrist__plain",
+  "text": "your wrist",
   "lang": "en",
-  "kind": "example"
+  "kind": "plain"
  },
  {
-  "id": "exhale",
-  "text": "exhale",
+  "id": "wrist__cue-1",
+  "text": "Spread your fingers and press through your knuckles to take weight off your wrists.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "wrist__cue-2",
+  "text": "If your wrists hurt, come onto your fists or your forearms.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "wrist__cue-3",
+  "text": "Stack your shoulders over your wrists.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "hands",
+  "text": "hands and fingers",
   "lang": "en",
   "kind": "term"
  },
  {
-  "id": "exhale__example",
-  "text": "Exhale, fold forward.",
+  "id": "hands__plain",
+  "text": "your hands",
   "lang": "en",
-  "kind": "example"
+  "kind": "plain"
  },
  {
-  "id": "breathe",
-  "text": "breathe",
+  "id": "hands__cue-1",
+  "text": "Spread your fingers wide, middle fingers pointing forward.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "hands__cue-2",
+  "text": "Press into the base of your index fingers.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "hands__cue-3",
+  "text": "Turn your palms up and let the fingers curl softly.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "flexion",
+  "text": "flexion",
   "lang": "en",
   "kind": "term"
  },
  {
-  "id": "breathe__example",
-  "text": "Breathe into the back of your body.",
+  "id": "flexion__plain",
+  "text": "bend, fold, curl",
   "lang": "en",
-  "kind": "example"
+  "kind": "plain"
  },
  {
-  "id": "breath",
-  "text": "breath",
+  "id": "flexion__cue-1",
+  "text": "Fold forward from your hips.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "flexion__cue-2",
+  "text": "Bend your knees deeply.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "flexion__cue-3",
+  "text": "Round your spine and let your head hang.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "extension",
+  "text": "extension",
   "lang": "en",
   "kind": "term"
  },
  {
-  "id": "breath__example",
-  "text": "Stay here for five breaths.",
+  "id": "extension__plain",
+  "text": "straighten, lengthen, arch, open",
   "lang": "en",
-  "kind": "example"
+  "kind": "plain"
  },
  {
-  "id": "on-your-next-exhale",
-  "text": "on your next exhale",
+  "id": "extension__cue-1",
+  "text": "Straighten your front leg and lift your chest.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "extension__cue-2",
+  "text": "Press into your hands and arch your upper back.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "extension__cue-3",
+  "text": "Let the front of your body open over the bolster.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "lateral-flexion",
+  "text": "lateral flexion",
   "lang": "en",
   "kind": "term"
  },
  {
-  "id": "on-your-next-exhale__example",
-  "text": "On your next exhale, slowly come out of the pose.",
+  "id": "lateral-flexion__plain",
+  "text": "side bend",
   "lang": "en",
-  "kind": "example"
+  "kind": "plain"
  },
  {
-  "id": "stay-for-five-breaths",
-  "text": "stay here for five breaths",
+  "id": "lateral-flexion__cue-1",
+  "text": "Reach up and over to the right, keeping both hips grounded.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "lateral-flexion__cue-2",
+  "text": "Let your side body lengthen; breathe into the ribs on top.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "rotation",
+  "text": "rotation",
   "lang": "en",
   "kind": "term"
  },
  {
-  "id": "stay-for-five-breaths__example",
-  "text": "Stay here for five breaths.",
+  "id": "rotation__plain",
+  "text": "twist, turn",
   "lang": "en",
-  "kind": "example"
+  "kind": "plain"
+ },
+ {
+  "id": "rotation__cue-1",
+  "text": "Twist from your belly and let your gaze follow last.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "rotation__cue-2",
+  "text": "Rotate your upper arms outward.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "rotation__cue-3",
+  "text": "Let the twist deepen on its own with each exhale.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "external-rotation",
+  "text": "external rotation",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "external-rotation__plain",
+  "text": "turn out, open",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "external-rotation__cue-1",
+  "text": "Turn your front thigh out so the knee tracks over the toes.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "external-rotation__cue-2",
+  "text": "Roll your upper arms out and your shoulder blades down.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "external-rotation__cue-3",
+  "text": "Let your knees fall open.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "internal-rotation",
+  "text": "internal rotation",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "internal-rotation__plain",
+  "text": "turn in",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "internal-rotation__cue-1",
+  "text": "Roll your back thigh in so the hips face forward.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "internal-rotation__cue-2",
+  "text": "Turn your palms to face behind you.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "abduction",
+  "text": "abduction",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "abduction__plain",
+  "text": "lift out to the side, widen",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "abduction__cue-1",
+  "text": "Reach your arms out to the sides at shoulder height.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "abduction__cue-2",
+  "text": "Step your feet wide apart.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "abduction__cue-3",
+  "text": "Let your legs open wide and heavy in Dragonfly.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "adduction",
+  "text": "adduction",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "adduction__plain",
+  "text": "draw in, squeeze together",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "adduction__cue-1",
+  "text": "Squeeze your inner thighs together.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "adduction__cue-2",
+  "text": "Hug your legs together in Headstand.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "plantar-flexion",
+  "text": "plantar flexion",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "plantar-flexion__plain",
+  "text": "point your foot",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "plantar-flexion__cue-1",
+  "text": "Point your toes and reach through the top of your foot.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "plantar-flexion__cue-2",
+  "text": "Let the tops of your feet rest on the floor.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "dorsiflexion",
+  "text": "dorsiflexion",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "dorsiflexion__plain",
+  "text": "flex your foot",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "dorsiflexion__cue-1",
+  "text": "Flex your front foot to protect the knee.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "dorsiflexion__cue-2",
+  "text": "Flex your feet and press through your heels.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "pronation-supination",
+  "text": "pronation and supination",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "pronation-supination__plain",
+  "text": "turn your palm down / turn your palm up",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "pronation-supination__cue-1",
+  "text": "Turn your palms up and open your chest.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "pronation-supination__cue-2",
+  "text": "Rest your hands palms up, fingers soft.",
+  "lang": "en",
+  "kind": "cue-yin"
+ },
+ {
+  "id": "protraction-retraction",
+  "text": "protraction and retraction",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "protraction-retraction__plain",
+  "text": "spread your shoulder blades / squeeze your shoulder blades",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "protraction-retraction__cue-1",
+  "text": "Push the floor away and spread your shoulder blades.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "protraction-retraction__cue-2",
+  "text": "Draw your shoulder blades together and lift your heart.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
+ },
+ {
+  "id": "elevation-depression",
+  "text": "elevation and depression",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "elevation-depression__plain",
+  "text": "shrug up / draw down",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "elevation-depression__cue-1",
+  "text": "Draw your shoulders down away from your ears.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "elevation-depression__cue-2",
+  "text": "Inhale, shrug your shoulders up; exhale, let them drop.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "pelvic-tilt",
+  "text": "anterior and posterior pelvic tilt",
+  "lang": "en",
+  "kind": "term"
+ },
+ {
+  "id": "pelvic-tilt__plain",
+  "text": "tip your pelvis forward / tuck your tailbone",
+  "lang": "en",
+  "kind": "plain"
+ },
+ {
+  "id": "pelvic-tilt__cue-1",
+  "text": "Tip your pelvis forward and lift your sitting bones.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "pelvic-tilt__cue-2",
+  "text": "Tuck your tailbone and round your lower back.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
+  "id": "pelvic-tilt__cue-3",
+  "text": "Find a neutral pelvis: hip points and pubic bone in one line.",
+  "lang": "en",
+  "kind": "cue-ashtanga"
  },
  {
   "id": "warrior-2__en",
@@ -967,5 +2611,341 @@
   "text": "Come out slowly. After a long hold the joint needs a moment.",
   "lang": "en",
   "kind": "safety"
+ },
+ {
+  "id": "phrase__welcome-1",
+  "text": "Welcome, everyone. Find a comfortable seat and let your eyes close.",
+  "lang": "en",
+  "kind": "phrase-welcome"
+ },
+ {
+  "id": "phrase__welcome-2",
+  "text": "Before we begin, is anyone working with an injury today, or pregnant?",
+  "lang": "en",
+  "kind": "phrase-welcome"
+ },
+ {
+  "id": "phrase__welcome-3",
+  "text": "If anything doesn’t feel right in your body today, you can always rest in Child’s Pose.",
+  "lang": "en",
+  "kind": "phrase-welcome"
+ },
+ {
+  "id": "phrase__welcome-4",
+  "text": "Let’s take three slow breaths together to arrive.",
+  "lang": "en",
+  "kind": "phrase-welcome"
+ },
+ {
+  "id": "phrase__welcome-5",
+  "text": "Set a small intention for your practice. Something simple.",
+  "lang": "en",
+  "kind": "phrase-welcome"
+ },
+ {
+  "id": "phrase__welcome-6",
+  "text": "Today we’ll move slowly and spend some time in the hips.",
+  "lang": "en",
+  "kind": "phrase-welcome"
+ },
+ {
+  "id": "phrase__breath-1",
+  "text": "Inhale, reach up. Exhale, fold forward.",
+  "lang": "en",
+  "kind": "phrase-breath"
+ },
+ {
+  "id": "phrase__breath-2",
+  "text": "On your next exhale, slowly come out of the pose.",
+  "lang": "en",
+  "kind": "phrase-breath"
+ },
+ {
+  "id": "phrase__breath-3",
+  "text": "Stay here for five breaths.",
+  "lang": "en",
+  "kind": "phrase-breath"
+ },
+ {
+  "id": "phrase__breath-4",
+  "text": "Let the breath lead the movement, not the other way around.",
+  "lang": "en",
+  "kind": "phrase-breath"
+ },
+ {
+  "id": "phrase__breath-5",
+  "text": "If you lose your breath, you’ve gone too far. Back off a little.",
+  "lang": "en",
+  "kind": "phrase-breath"
+ },
+ {
+  "id": "phrase__breath-6",
+  "text": "Breathe in through your nose, and out through your nose.",
+  "lang": "en",
+  "kind": "phrase-breath"
+ },
+ {
+  "id": "phrase__breath-7",
+  "text": "Make the exhale a little longer than the inhale.",
+  "lang": "en",
+  "kind": "phrase-breath"
+ },
+ {
+  "id": "phrase__breath-8",
+  "text": "One more breath here. And release.",
+  "lang": "en",
+  "kind": "phrase-breath"
+ },
+ {
+  "id": "phrase__trans-1",
+  "text": "From Downward Dog, step your right foot forward between your hands.",
+  "lang": "en",
+  "kind": "phrase-transitions"
+ },
+ {
+  "id": "phrase__trans-2",
+  "text": "Come onto all fours, wrists under shoulders, knees under hips.",
+  "lang": "en",
+  "kind": "phrase-transitions"
+ },
+ {
+  "id": "phrase__trans-3",
+  "text": "Take a vinyasa if you’d like, or meet me in Downward Dog.",
+  "lang": "en",
+  "kind": "phrase-transitions"
+ },
+ {
+  "id": "phrase__trans-4",
+  "text": "Let’s come into Sleeping Swan.",
+  "lang": "en",
+  "kind": "phrase-transitions"
+ },
+ {
+  "id": "phrase__trans-5",
+  "text": "Slowly make your way to the top of your mat.",
+  "lang": "en",
+  "kind": "phrase-transitions"
+ },
+ {
+  "id": "phrase__trans-6",
+  "text": "Other side. Take your time.",
+  "lang": "en",
+  "kind": "phrase-transitions"
+ },
+ {
+  "id": "phrase__trans-7",
+  "text": "Lower all the way down onto your belly.",
+  "lang": "en",
+  "kind": "phrase-transitions"
+ },
+ {
+  "id": "phrase__trans-8",
+  "text": "Roll over onto your back and hug your knees in.",
+  "lang": "en",
+  "kind": "phrase-transitions"
+ },
+ {
+  "id": "phrase__safe-1",
+  "text": "If this is too much, bend your knees as much as you need.",
+  "lang": "en",
+  "kind": "phrase-safety"
+ },
+ {
+  "id": "phrase__safe-2",
+  "text": "You can always take a block under your hand.",
+  "lang": "en",
+  "kind": "phrase-safety"
+ },
+ {
+  "id": "phrase__safe-3",
+  "text": "Sensation is fine. Sharp pain is not. If it’s sharp, come out.",
+  "lang": "en",
+  "kind": "phrase-safety"
+ },
+ {
+  "id": "phrase__safe-4",
+  "text": "Would you like a hands-on adjustment? Just nod.",
+  "lang": "en",
+  "kind": "phrase-safety"
+ },
+ {
+  "id": "phrase__safe-5",
+  "text": "I’m going to place my hand on your lower back. Is that okay?",
+  "lang": "en",
+  "kind": "phrase-safety"
+ },
+ {
+  "id": "phrase__safe-6",
+  "text": "If you’re pregnant, keep your feet wider and skip the deep twists.",
+  "lang": "en",
+  "kind": "phrase-safety"
+ },
+ {
+  "id": "phrase__safe-7",
+  "text": "Listen to your body today, not to yesterday’s body.",
+  "lang": "en",
+  "kind": "phrase-safety"
+ },
+ {
+  "id": "phrase__safe-8",
+  "text": "There’s no wrong way to rest.",
+  "lang": "en",
+  "kind": "phrase-safety"
+ },
+ {
+  "id": "phrase__yin-1",
+  "text": "Find your edge. Enough to feel it, not so much that you tense against it.",
+  "lang": "en",
+  "kind": "phrase-yin"
+ },
+ {
+  "id": "phrase__yin-2",
+  "text": "Let the muscles go soft. Let the weight of your body do the work.",
+  "lang": "en",
+  "kind": "phrase-yin"
+ },
+ {
+  "id": "phrase__yin-3",
+  "text": "We’ll be here for three minutes. There’s nowhere to get to.",
+  "lang": "en",
+  "kind": "phrase-yin"
+ },
+ {
+  "id": "phrase__yin-4",
+  "text": "If the mind wanders, come back to the feeling in the hip.",
+  "lang": "en",
+  "kind": "phrase-yin"
+ },
+ {
+  "id": "phrase__yin-5",
+  "text": "Halfway there. If you’d like to go a little deeper, you can. You don’t have to.",
+  "lang": "en",
+  "kind": "phrase-yin"
+ },
+ {
+  "id": "phrase__yin-6",
+  "text": "Slowly come out, and notice the rebound.",
+  "lang": "en",
+  "kind": "phrase-yin"
+ },
+ {
+  "id": "phrase__sav-1",
+  "text": "Let your whole body become heavy.",
+  "lang": "en",
+  "kind": "phrase-savasana"
+ },
+ {
+  "id": "phrase__sav-2",
+  "text": "Soften your jaw. Soften the space between your eyebrows.",
+  "lang": "en",
+  "kind": "phrase-savasana"
+ },
+ {
+  "id": "phrase__sav-3",
+  "text": "Let the breath return to its natural rhythm.",
+  "lang": "en",
+  "kind": "phrase-savasana"
+ },
+ {
+  "id": "phrase__sav-4",
+  "text": "There is nothing left to do.",
+  "lang": "en",
+  "kind": "phrase-savasana"
+ },
+ {
+  "id": "phrase__sav-5",
+  "text": "Begin to deepen your breath. Wiggle your fingers and toes.",
+  "lang": "en",
+  "kind": "phrase-savasana"
+ },
+ {
+  "id": "phrase__sav-6",
+  "text": "Roll onto your right side and rest there for a moment.",
+  "lang": "en",
+  "kind": "phrase-savasana"
+ },
+ {
+  "id": "phrase__sav-7",
+  "text": "Press yourself up to a comfortable seat.",
+  "lang": "en",
+  "kind": "phrase-savasana"
+ },
+ {
+  "id": "phrase__close-1",
+  "text": "Bring your hands together at your heart.",
+  "lang": "en",
+  "kind": "phrase-closing"
+ },
+ {
+  "id": "phrase__close-2",
+  "text": "Thank you for practising with me today.",
+  "lang": "en",
+  "kind": "phrase-closing"
+ },
+ {
+  "id": "phrase__close-3",
+  "text": "The light in me honours the light in you. Namaste.",
+  "lang": "en",
+  "kind": "phrase-closing"
+ },
+ {
+  "id": "phrase__close-4",
+  "text": "Take your time getting up. See you next week.",
+  "lang": "en",
+  "kind": "phrase-closing"
+ },
+ {
+  "id": "phrase__close-5",
+  "text": "How did that feel? Any questions before you go?",
+  "lang": "en",
+  "kind": "phrase-closing"
+ },
+ {
+  "id": "hip__care-pelvis",
+  "text": "If your lower back is complaining, bring your hips a little higher on a blanket.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "hip__care-hip-joint",
+  "text": "If you feel a pinch at the front of your hip, back out a little and take the knee wider.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "hip__care-sit-bones",
+  "text": "If you can’t sit tall, sit up on a block so your sitting bones can tip forward.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "hip__care-gluteus-maximus",
+  "text": "If the outer hip feels too intense, slide the front foot closer in.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "hip__care-gluteus-medius",
+  "text": "If the side of your hip cramps, come out, shake the leg out, and try again with less.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "hip__care-piriformis",
+  "text": "If you feel it in your knee instead of your hip, come out and bring the shin closer to you.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "hip__care-iliopsoas",
+  "text": "If the front of your hip pinches in the lunge, shorten your stance and lift your chest.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "hip__care-hip-adductors",
+  "text": "If your inner thighs are shaking, bring the knees closer together. Wider isn’t better.",
+  "lang": "en",
+  "kind": "cue-safety"
  }
 ]

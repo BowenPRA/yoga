@@ -1,11 +1,13 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Sheet from './Sheet.jsx'
 import { Bi, Chip, PlayButton, Say, SayHint, Section } from './ui.jsx'
 import SuggestFix from './SuggestFix.jsx'
+import { KnownMarks } from './lesson/slides.jsx'
 import { useLang } from '../lib/i18n.jsx'
 import { getTerm, getPose, poseName, posesUsing } from '../lib/content.js'
 import { audio } from '../lib/audio.js'
+import { progress } from '../lib/store.js'
 
 /**
  * The full card for a muscle, bone, joint or movement, as a bottom sheet.
@@ -14,8 +16,17 @@ import { audio } from '../lib/audio.js'
 export default function AnatomyCard({ term, onClose, onOpen }) {
   const { t } = useLang()
   const a = t.anatomy
+  // The progress row for the term on show, tagged with its id so a stale row
+  // never shows under the next term.
+  const [known, setKnown] = useState({ id: null, row: null })
   useEffect(() => { if (term) audio.play(term.id) }, [term])
+  useEffect(() => {
+    let live = true
+    if (term) progress.term(term.id).then((r) => { if (live) setKnown({ id: term.id, row: r || null }) })
+    return () => { live = false }
+  }, [term])
   if (!term) return null
+  const row = known.id === term.id ? known.row : null
 
   const plainDiffers = term.plain && term.plain.toLowerCase() !== term.en.toLowerCase()
   const related = [...new Set([...(term.works || []), ...(term.stretches || []), ...(term.poses || []), ...posesUsing(term.id).map((p) => p.id)])]
@@ -48,6 +59,7 @@ export default function AnatomyCard({ term, onClose, onOpen }) {
         {term.kind === 'muscle' && <span className="rounded-full bg-sand px-2 py-0.5 text-[11px] text-muted">{term.deep ? a.deep : a.surface}</span>}
         {term.shortEn && <span className="rounded-full bg-gold-soft px-2 py-0.5 text-[11px] text-muted">“{term.shortEn}”</span>}
       </div>
+      {row && <div className="mt-2"><KnownMarks row={row} /></div>}
 
       {plainDiffers && (
         <Section title={a.plain}>

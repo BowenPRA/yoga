@@ -2,26 +2,32 @@ import { openDB } from 'idb'
 
 /**
  * Everything she accumulates lives on the phone, in IndexedDB:
- *   cards       review scheduling state, keyed by card id
- *   met         when she first met a term / pose / cue (card creation)
+ *   cards       review scheduling state, keyed by card id (unused since the four-tab pivot)
+ *   met         when she first met a term / pose / cue
  *   phrasebook  saved cues and words, her own included
  *   classes     saved Class Builder scripts
  *   suggestions "suggest a fix" notes, until they are sent
+ *   progress    lessons (done or not, where she stopped, her answers) and
+ *               terms (when she labelled it, said it, used it in a cue)
  * localStorage holds only device preferences (see i18n.jsx).
  */
 const DB = 'yoga-english'
-const VERSION = 1
+const VERSION = 2
+const BACKED_UP = ['cards', 'met', 'phrasebook', 'classes', 'progress']
 
 let dbp
 function db() {
   if (!dbp) {
     dbp = openDB(DB, VERSION, {
-      upgrade(d) {
-        d.createObjectStore('cards', { keyPath: 'id' }).createIndex('due', 'due')
-        d.createObjectStore('met', { keyPath: 'id' })
-        d.createObjectStore('phrasebook', { keyPath: 'id' }).createIndex('at', 'at')
-        d.createObjectStore('classes', { keyPath: 'id' })
-        d.createObjectStore('suggestions', { keyPath: 'id' })
+      upgrade(d, oldVersion) {
+        if (oldVersion < 1) {
+          d.createObjectStore('cards', { keyPath: 'id' }).createIndex('due', 'due')
+          d.createObjectStore('met', { keyPath: 'id' })
+          d.createObjectStore('phrasebook', { keyPath: 'id' }).createIndex('at', 'at')
+          d.createObjectStore('classes', { keyPath: 'id' })
+          d.createObjectStore('suggestions', { keyPath: 'id' })
+        }
+        if (oldVersion < 2) d.createObjectStore('progress', { keyPath: 'id' })
       },
     })
   }
@@ -52,14 +58,52 @@ export const store = {
   async exportAll() {
     const d = await db()
     const out = { version: VERSION, exportedAt: new Date().toISOString() }
-    for (const name of ['cards', 'met', 'phrasebook', 'classes']) out[name] = await d.getAll(name)
+    for (const name of BACKED_UP) out[name] = await d.getAll(name)
     return out
   },
 
   async importAll(data) {
     const d = await db()
-    for (const name of ['cards', 'met', 'phrasebook', 'classes']) {
+    for (const name of BACKED_UP) {
       for (const row of data[name] || []) await d.put(name, row)
     }
   },
 }
+
+/**
+ * Quiet progress. A lesson is done or not; a term is known once she has
+ * labelled it, said it and used it in a cue. Timestamps, never scores.
+ */
+export const FACETS = ['labelled', 'said', 'cued']
+
+export const progress = {
+  lesson: (id) => store.get('progress', `lesson:${id}`),
+  async saveLesson(id, patch) {
+    const row = (await store.get('progress', `lesson:${id}`)) || { id: `lesson:${id}` }
+    const next = { ...row, ...patch, at: Date.now() }
+    await store.put('progress', next)
+    return next
+  },
+  async lessons() {
+    const rows = await store.all('progress')
+    return Object.fromEntries(rows.filter((r) => r.id.startsWith('lesson:')).map((r) => [r.id.slice(7), r]))
+  },
+
+  term: (id) => store.get('progress', `term:${id}`),
+  /** Record a facet for several terms at once; a facet is only ever set once. */
+  async mark(facet, termIds) {
+    for (const tid of termIds || []) {
+      const row = (await store.get('progress', `term:${tid}`)) || { id: `term:${tid}` }
+      if (!row[facet]) {
+        row[facet] = Date.now()
+        await store.put('progress', row)
+      }
+    }
+  },
+  async terms() {
+    const rows = await store.all('progress')
+    return Object.fromEntries(rows.filter((r) => r.id.startsWith('term:')).map((r) => [r.id.slice(5), r]))
+  },
+}
+
+export const isKnown = (row) => !!row && FACETS.every((f) => row[f])

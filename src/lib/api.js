@@ -21,4 +21,6 @@ async function post(path, body, as = 'json') {
 export const api = {
   coach: (cue, context) => post('/api/coach', { cue, context }),
   speak: (text) => post('/api/speak', { text }, 'blob'),
+  /** Her recording (base64 WAV) against the text she meant to say. */
+  pronounce: (audio, target, say) => post('/api/pronounce', { audio, target, say }),
 }

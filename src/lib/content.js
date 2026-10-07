@@ -5,6 +5,7 @@ import { MUSCLES_LOWER } from '../../content/anatomy/muscles-lower.js'
 import { BONES } from '../../content/anatomy/bones.js'
 import { MOVEMENTS } from '../../content/anatomy/movements.js'
 import { PHRASE_GROUPS } from '../../content/phrases.js'
+import { LESSONS } from '../../content/lessons/index.js'
 
 /**
  * The content registry. Content files are plain data; this is the only place
@@ -15,13 +16,78 @@ export const MUSCLES = [...MUSCLES_UPPER, ...MUSCLES_CORE, ...MUSCLES_LOWER].map
 export const BONES_ALL = BONES.map((b) => ({ ...b, kind: b.kind || 'bone', isBone: true }))
 export const MOVEMENTS_ALL = MOVEMENTS.map((m) => ({ ...m, kind: 'movement' }))
 export const TERMS = [...MUSCLES, ...BONES_ALL, ...MOVEMENTS_ALL]
-export { POSES, PHRASE_GROUPS }
+export { POSES, PHRASE_GROUPS, LESSONS }
 
 const termById = new Map(TERMS.map((t) => [t.id, t]))
 const poseById = new Map(POSES.map((p) => [p.id, p]))
+const lessonById = new Map(LESSONS.map((l) => [l.id, l]))
 
 export const getTerm = (id) => termById.get(id)
 export const getPose = (id) => poseById.get(id)
+export const getLesson = (id) => lessonById.get(id)
+
+/** The text of any cue clip id: a term cue (`term__cue-N`) or a pose line. */
+export function cueText(clipId) {
+  const m = clipId.match(/^(.+)__cue-(\d+)$/)
+  if (m && termById.has(m[1])) {
+    const c = termById.get(m[1]).cues?.[Number(m[2]) - 1]
+    if (c) return { en: c.en, vi: c.vi }
+  }
+  for (const p of POSES) {
+    const line = [...(p.cues || []), ...(p.modifications || []), ...(p.safety || [])].find((x) => x.id === clipId)
+    if (line) return { en: line.en, vi: line.vi }
+  }
+  for (const L of LESSONS) {
+    const line = lessonLines(L).find((x) => x.id === clipId)
+    if (line) return { en: line.en, vi: line.vi }
+  }
+  return null
+}
+
+/** The lesson's own spoken lines (the "when a student hurts" line per term). */
+export function lessonLines(lesson) {
+  const out = []
+  for (const s of lesson.slides || []) {
+    if (s.care) out.push({ ...s.care, kind: 'cue-safety' })
+    for (const l of s.lines || []) out.push(l)
+  }
+  return out
+}
+
+/** Every clip id a lesson plays, so the audio generator can do them first. */
+export function lessonClipIds(lesson) {
+  const ids = new Set()
+  const term = (id) => {
+    const t = termById.get(id)
+    if (!t) return
+    ids.add(t.id)
+    if (t.plain && t.plain.toLowerCase() !== t.en.toLowerCase()) ids.add(`${t.id}__plain`)
+    ;(t.cues || []).forEach((_, i) => ids.add(`${t.id}__cue-${i + 1}`))
+  }
+  for (const id of lesson.terms || []) term(id)
+  for (const s of lesson.slides || []) {
+    if (s.care) ids.add(s.care.id)
+    for (const l of s.lines || []) ids.add(l.id)
+    const a = s.activity
+    if (!a) continue
+    for (const id of a.bank || []) term(id)
+    for (const c of a.cards || []) term(c.term)
+    for (const id of a.steps || []) ids.add(id)
+    for (const it of a.items || []) ids.add(it.clip)
+    if (a.clip) ids.add(a.clip)
+    if (a.then?.clip) ids.add(a.then.clip)
+  }
+  const poseIds = new Set([lesson.pose, ...(lesson.slides || []).map((s) => s.pose || s.activity?.pose)].filter(Boolean))
+  for (const pid of poseIds) {
+    const p = poseById.get(pid)
+    if (!p) continue
+    ids.add(`${p.id}__en`)
+    if (p.sa) ids.add(`${p.id}__sa`)
+    for (const l of [...(p.cues || []), ...(p.modifications || []), ...(p.safety || [])]) ids.add(l.id)
+    for (const id of [...(p.muscles?.working || []), ...(p.muscles?.lengthening || []), ...(p.joints || [])]) term(id)
+  }
+  return [...ids]
+}
 
 /** A readable name for a pose slug that has no content yet. */
 export function poseName(id) {
@@ -68,6 +134,9 @@ export function allClips() {
   }
   for (const g of PHRASE_GROUPS) {
     for (const l of g.lines) clips.push({ id: `phrase__${l.id}`, text: l.en, lang: 'en', kind: `phrase-${g.id}` })
+  }
+  for (const L of LESSONS) {
+    for (const l of lessonLines(L)) clips.push({ id: l.id, text: l.en, lang: 'en', kind: l.kind || 'cue-safety' })
   }
   return clips
 }
