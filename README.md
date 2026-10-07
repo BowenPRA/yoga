@@ -22,12 +22,31 @@ Fixed audio is generated once with Gemini 3.8 Flash TTS, voice Sulafat, and
 encoded to mono MP3 with ffmpeg:
 
 ```bash
-node scripts/export-clips.mjs                  # content -> scripts/clips.json
+node scripts/export-clips.mjs                  # content -> scripts/clips.json (+ priority.json: what the lessons play)
 python scripts/gen_audio.py [--dry] [--only id]  # only missing or changed clips
+python scripts/gen_audio.py --priority scripts/priority.json   # lesson clips first
 ```
 
-`public/audio/manifest.json` records what each clip says, so a changed line is
-regenerated and an unchanged one is not.
+`public/audio/manifest.json` records what each clip says and which model made
+it, so a changed line is regenerated and an unchanged one is not, and clips
+made on a fallback model are redone the next time the Flash model runs.
+
+Each Gemini TTS model allows 100 requests a day (reset about 07:30 Vietnam
+time). On a capped day: `--model gemini-3.8-flash-lite-tts`, and failing that
+`--model gemini-2.5-flash-preview-tts --priority-only --single` (slow, one
+clip per request, but a separate cap).
+
+## Lessons
+
+`content/lessons/<region>.js` is a deck: term slides (which term, which crop
+of the figure, which cues, the "when a student hurts" line) and activity
+slides. Activity types, each a Dashboard idea on the anatomy content:
+`label` (leader lines to boxes on a figure crop), `sort` (a pose's working
+and stretching muscles), `order` (a pose's cues), `hotspot` (hear it, tap
+where you feel it), `predict`, `chain` (build a cue from pieces),
+`dictation`, `sayit` (record, Gemini answers in Vietnamese via
+`/api/pronounce`). Progress is in IndexedDB (`progress` store): a lesson is
+done or not; a term is known once labelled, said and used in a cue.
 
 ## Deploy
 
@@ -41,11 +60,11 @@ regenerated and an unchanged one is not.
 ## Layout
 
 ```
-content/           data: terms (body, movement, breath) and poses
-src/lib/           i18n + support level, store (IndexedDB), srs, audio, content registry, api
-src/components/    ui primitives, bottom nav, body figure, term sheet, suggest-a-fix
-src/pages/         Home, Learn, Poses, Pose, Body, Practice, Coach, Review, Mine
-api/               Vercel functions: coach, speak; _lib/gemini.js; dev-server.mjs
+content/           data: anatomy (muscles, bones, movements, figure regions), poses, phrases, lessons
+src/lib/           i18n + support level, store (IndexedDB, progress), audio, content registry, figures, api, recorder
+src/components/    ui primitives, bottom nav, figure viewer and crops, term sheet, suggest-a-fix, lesson/ (slides, activities)
+src/pages/         Poses, Pose, Anatomy (with the lesson row), Lesson, Speech, Phrases
+api/               Vercel functions: coach, speak, pronounce; _lib/gemini.js; dev-server.mjs
 scripts/           export-clips, gen_audio, build-pages
 public/audio/      generated mp3 clips + manifest
 ```
