@@ -2216,5 +2216,277 @@
   "tokens": 128,
   "model": "gemini-2.5-flash-preview-tts",
   "batched": false
+ },
+ "warrior-2__cue-6": {
+  "hash": "f1331e4e8c04",
+  "text": "Relax your shoulders away from your ears.",
+  "kind": "cue-soften",
+  "tokens": 154,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "warrior-2__cue-7": {
+  "hash": "3c0d89a291f3",
+  "text": "Gaze softly over your front fingertips.",
+  "kind": "cue-alignment",
+  "tokens": 124,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "warrior-2__cue-8": {
+  "hash": "4e07c085caa9",
+  "text": "Stay here for five breaths.",
+  "kind": "cue-breath",
+  "tokens": 104,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "warrior-2__mod-1": {
+  "hash": "59330751d8b7",
+  "text": "Shorten your stance if your front knee feels strained.",
+  "kind": "modification",
+  "tokens": 103,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "warrior-2__mod-2": {
+  "hash": "f3331a7d3d13",
+  "text": "Rest your hands on your hips to give your shoulders a break.",
+  "kind": "modification",
+  "tokens": 125,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "warrior-2__mod-3": {
+  "hash": "711238b132cd",
+  "text": "You can sit on the edge of a chair with your front leg bent.",
+  "kind": "modification",
+  "tokens": 107,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "warrior-2__safe-1": {
+  "hash": "4a1aadc2690d",
+  "text": "Keep your front knee tracking over your second toe. Don’t let it fall inward.",
+  "kind": "safety",
+  "tokens": 150,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "warrior-2__safe-2": {
+  "hash": "d65d2b5b5ac8",
+  "text": "If you have a knee injury, don’t bend as deeply, and come out sooner.",
+  "kind": "safety",
+  "tokens": 136,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "sleeping-swan__en": {
+  "hash": "6e650a401633",
+  "text": "Sleeping Swan",
+  "kind": "pose-name",
+  "tokens": 63,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "sleeping-swan__sa": {
+  "hash": "7242a23a051d",
+  "text": "Eka Pāda Rājakapotāsana",
+  "kind": "pose-name",
+  "tokens": 153,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "sleeping-swan__cue-1": {
+  "hash": "dd996b5be331",
+  "text": "Bring your right knee forward, behind your right wrist.",
+  "kind": "cue-transition",
+  "tokens": 121,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "sleeping-swan__cue-2": {
+  "hash": "bc24c6118b25",
+  "text": "Let your shin angle back toward your left hip. It doesn’t need to be parallel.",
+  "kind": "cue-alignment",
+  "tokens": 161,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "sleeping-swan__cue-3": {
+  "hash": "255b6fd0aca0",
+  "text": "Walk your back leg straight behind you.",
+  "kind": "cue-alignment",
+  "tokens": 90,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "sleeping-swan__cue-4": {
+  "hash": "2bb1e053f7b8",
+  "text": "Fold forward slowly, and rest on your forearms or your forehead.",
+  "kind": "cue-transition",
+  "tokens": 149,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "sleeping-swan__cue-5": {
+  "hash": "18bd72fdd353",
+  "text": "Find your edge. Enough to feel it, not so much that you tense against it.",
+  "kind": "cue-soften",
+  "tokens": 379,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "sleeping-swan__cue-7": {
+  "hash": "06d7b6b7da71",
+  "text": "If you feel any sharp pain in your knee, come out of the pose.",
+  "kind": "cue-safety",
+  "tokens": 126,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "sleeping-swan__cue-8": {
+  "hash": "947ad36a6726",
+  "text": "To come out, press your hands down and slowly lift up.",
+  "kind": "cue-transition",
+  "tokens": 164,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "sleeping-swan__mod-1": {
+  "hash": "e0510c8f372d",
+  "text": "Place a bolster or a folded blanket under your front hip so your hips stay level.",
+  "kind": "modification",
+  "tokens": 178,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "sleeping-swan__mod-2": {
+  "hash": "d4f53d13d2ff",
+  "text": "Rest your forehead on a block or on your stacked fists.",
+  "kind": "modification",
+  "tokens": 129,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "sleeping-swan__mod-3": {
+  "hash": "22ee9f83ee73",
+  "text": "If the knee complains, lie on your back and take Eye of the Needle instead.",
+  "kind": "modification",
+  "tokens": 167,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "sleeping-swan__safe-1": {
+  "hash": "03ce884e1c39",
+  "text": "The sensation belongs in the outer hip. Pain in the knee means come out.",
+  "kind": "safety",
+  "tokens": 173,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "sleeping-swan__safe-2": {
+  "hash": "961d3e5fe969",
+  "text": "Come out slowly. After a long hold the joint needs a moment.",
+  "kind": "safety",
+  "tokens": 142,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "hip__care-hip-joint": {
+  "hash": "f3d1380b0438",
+  "text": "If you feel a pinch at the front of your hip, back out a little and take the knee wider.",
+  "kind": "cue-safety",
+  "tokens": 154,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "hip__care-sit-bones": {
+  "hash": "997d33a927c3",
+  "text": "If you can’t sit tall, sit up on a block so your sitting bones can tip forward.",
+  "kind": "cue-safety",
+  "tokens": 161,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "hip__care-gluteus-maximus": {
+  "hash": "dcda530d4e56",
+  "text": "If the outer hip feels too intense, slide the front foot closer in.",
+  "kind": "cue-safety",
+  "tokens": 140,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "hip__care-gluteus-medius": {
+  "hash": "03a6b83b4ed2",
+  "text": "If the side of your hip cramps, come out, shake the leg out, and try again with less.",
+  "kind": "cue-safety",
+  "tokens": 171,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "hip__care-piriformis": {
+  "hash": "efff583e6f5b",
+  "text": "If you feel it in your knee instead of your hip, come out and bring the shin closer to you.",
+  "kind": "cue-safety",
+  "tokens": 181,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "hip__care-iliopsoas": {
+  "hash": "10672383dfbc",
+  "text": "If the front of your hip pinches in the lunge, shorten your stance and lift your chest.",
+  "kind": "cue-safety",
+  "tokens": 159,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "hip__care-hip-adductors": {
+  "hash": "9adf7b61870f",
+  "text": "If your inner thighs are shaking, bring the knees closer together. Wider isn’t better.",
+  "kind": "cue-safety",
+  "tokens": 161,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "iliopsoas__cue-2": {
+  "hash": "cb88f6797828",
+  "text": "In Dragon, let the weight of the hips do the work; breathe into the front of the hip.",
+  "kind": "cue-yin",
+  "tokens": 16339,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "hip-joint__cue-2": {
+  "hash": "c2ecd1774881",
+  "text": "Let the thigh bone settle deeper into the hip socket.",
+  "kind": "cue-yin",
+  "tokens": 182,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "shoulder-joint__cue-3": {
+  "hash": "17df560f0d18",
+  "text": "If the shoulder pinches, bring the arm lower.",
+  "kind": "cue-yin",
+  "tokens": 149,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "warrior-2__cue-3": {
+  "hash": "82532a393f3b",
+  "text": "Bend your front knee so it stacks over your ankle.",
+  "kind": "cue-alignment",
+  "tokens": 111,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
+ },
+ "sleeping-swan__cue-6": {
+  "hash": "f3f1ab29c74e",
+  "text": "Let the muscles go soft. We’re here for three minutes.",
+  "kind": "cue-soften",
+  "tokens": 698,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false
  }
 }

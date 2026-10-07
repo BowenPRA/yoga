@@ -4,7 +4,7 @@
    - Audio clips are cached the first time they play and served cache-first,
      because a clip never changes once generated (its id is its content).
    Bump VERSION to drop old caches. */
-const VERSION = 'v1'
+const VERSION = 'v2'
 const SHELL = `shell-${VERSION}`
 const AUDIO = `audio-${VERSION}`
 
@@ -32,6 +32,23 @@ self.addEventListener('fetch', (e) => {
         const res = await fetch(req)
         if (res.ok) c.put(req, res.clone())
         return res
+      }),
+    )
+    return
+  }
+
+  // The page itself is network-first, so a new deploy shows on the first
+  // open and the cached copy only serves when there is no signal.
+  if (req.mode === 'navigate') {
+    e.respondWith(
+      caches.open(SHELL).then(async (c) => {
+        try {
+          const res = await fetch(req)
+          if (res.ok) c.put(req, res.clone())
+          return res
+        } catch {
+          return (await c.match(req)) || (await c.match(`${self.registration.scope}`)) || Response.error()
+        }
       }),
     )
     return
