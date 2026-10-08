@@ -2,10 +2,10 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Check } from 'lucide-react'
 import { useLang } from '../../lib/i18n.jsx'
-import { getTerm, getPose, LESSONS } from '../../lib/content.js'
+import { getTerm, getPose, LESSONS, lessonClipIds } from '../../lib/content.js'
 import { audio } from '../../lib/audio.js'
 import { store, FACETS } from '../../lib/store.js'
-import { Bi, Chip, Eyebrow, PlayButton, Porthole, Ring, Say, SayHint, Section, Tag } from '../ui.jsx'
+import { Bi, Chip, Eyebrow, KeepOffline, PlayButton, Porthole, Ring, Say, SayHint, Section, Tag } from '../ui.jsx'
 import FigureCrop from '../FigureCrop.jsx'
 import { useText } from '../../lib/lesson.js'
 import { lessonArt, tintClass, poseTint } from '../../lib/tints.js'
@@ -23,6 +23,7 @@ export function IntroSlide({ lesson }) {
       <h1 className="mt-1.5 font-serif text-display text-ink">{text(lesson.title)}</h1>
       <div className="mt-4"><Bi en={lesson.lead.en} vi={lesson.lead.vi} size="lg" /></div>
       <div className="mt-3 text-caption text-muted">{lesson.terms.length} {L.words} · {lesson.minutes} {L.minutes}</div>
+      <KeepOffline key={lesson.id} ids={lessonClipIds(lesson)} label={t.common.offline.lesson} className="-ml-1 mt-2" />
       <Section title={L.youWillMeet}>
         <div className="flex flex-wrap gap-2">
           {lesson.terms.map((id) => {

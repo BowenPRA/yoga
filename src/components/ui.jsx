@@ -1,10 +1,12 @@
-import { useState } from 'react'
+import { useLayoutEffect, useRef, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { Check, ChevronLeft, ChevronRight, Volume2, Square } from 'lucide-react'
+import { Check, ChevronLeft, ChevronRight, CloudDownload, Volume2, Square } from 'lucide-react'
 import { useLang } from '../lib/i18n.jsx'
 import { audio } from '../lib/audio.js'
 import { useSpeaking } from '../lib/useSpeaking.js'
+import { useOffline } from '../lib/offline.js'
 import { tintClass } from '../lib/tints.js'
+import { figureOf, windowFor } from '../lib/figures.js'
 import FigureCrop from './FigureCrop.jsx'
 
 /**
@@ -252,5 +254,105 @@ export function Dots({ count, index, className = '' }) {
         />
       ))}
     </div>
+  )
+}
+
+/** A pose's picture: the first muscle it works (or stretches), on its figure, in the pose's tint. */
+export function PoseArt({ pose, size = 64, className = 'shadow-card' }) {
+  const first = pose?.muscles?.working?.[0] || pose?.muscles?.lengthening?.[0]
+  const kind = first ? figureOf(first) : null
+  const win = kind ? windowFor(kind, first) : null
+  if (!win) return <span className={`porthole block shrink-0 rounded-full ${className}`} style={{ width: size, height: size }} />
+  return <Porthole kind={kind} window={win} highlight={[first]} size={size} className={className} />
+}
+
+// ── Scrolling ───────────────────────────────────────────────────────────
+// The app scrolls inside one element (App.jsx), not the window, so these
+// find that element from where they sit.
+function scrollParent(el) {
+  for (let n = el?.parentElement; n; n = n.parentElement) {
+    const o = getComputedStyle(n).overflowY
+    if (o === 'auto' || o === 'scroll') return n
+  }
+  return null
+}
+
+/** Scrolls the page back to the top whenever `on` changes (a new pose, say). */
+export function ScrollTop({ on }) {
+  const ref = useRef(null)
+  useLayoutEffect(() => {
+    const el = scrollParent(ref.current)
+    if (el) el.scrollTop = 0
+  }, [on])
+  return <span ref={ref} hidden />
+}
+
+const scrolls = new Map()
+/**
+ * Remembers where the page was scrolled under `id` and returns there when the
+ * page comes back (back from a pose to the list, say). With nothing
+ * remembered it starts at the top.
+ *
+ * `anchor` (a selector whose elements carry a `data-anchor` key) makes it
+ * remember the first item on screen rather than a pixel offset, so a list
+ * whose rows above have not been laid out yet (content-visibility) still
+ * comes back to the same row.
+ */
+export function ScrollMemory({ id, anchor }) {
+  const ref = useRef(null)
+  useLayoutEffect(() => {
+    const el = scrollParent(ref.current)
+    if (!el) return
+    const top = () => el.getBoundingClientRect().top
+    const kept = scrolls.get(id)
+    el.scrollTop = kept?.y || 0
+    const row = kept?.key && el.querySelector(`[data-anchor="${CSS.escape(kept.key)}"]`)
+    if (row) el.scrollTop += row.getBoundingClientRect().top - top() - kept.offset
+    let frame = 0
+    const save = () => {
+      frame = 0
+      let key = null
+      let offset = 0
+      if (anchor) {
+        const t = top()
+        for (const n of el.querySelectorAll(anchor)) {
+          const r = n.getBoundingClientRect()
+          if (r.bottom > t) { key = n.dataset.anchor; offset = r.top - t; break }
+        }
+      }
+      scrolls.set(id, { y: el.scrollTop, key, offset })
+    }
+    const onScroll = () => { if (!frame) frame = requestAnimationFrame(save) }
+    el.addEventListener('scroll', onScroll, { passive: true })
+    return () => { el.removeEventListener('scroll', onScroll); if (frame) { cancelAnimationFrame(frame); save() } }
+  }, [id, anchor])
+  return <span ref={ref} hidden />
+}
+
+/**
+ * "Keep this offline": fetches every clip a page plays so it works with no
+ * signal. A quiet line, a ring while it downloads, a check when it is done.
+ * Shows nothing when there is no audio to keep yet.
+ */
+export function KeepOffline({ ids, label, className = '' }) {
+  const { t } = useLang()
+  const o = t.common.offline
+  const { state, value, keep } = useOffline(ids)
+  if (state === 'none' || state === 'checking') return null
+  const busy = state === 'saving'
+  const done = state === 'done'
+  return (
+    <button
+      onClick={keep}
+      disabled={busy || done}
+      className={`press inline-flex min-h-[40px] items-center gap-2.5 rounded-full py-1 pl-1 pr-3 text-left text-caption ${done ? 'text-tint-deep' : 'text-muted hover:text-tint-deep'} ${className}`}
+    >
+      {busy || done ? (
+        <Ring value={value} done={done} size={26} stroke={2.5} />
+      ) : (
+        <span className="grid h-[26px] w-[26px] shrink-0 place-items-center rounded-full bg-tint-soft text-tint-deep"><CloudDownload size={14} /></span>
+      )}
+      <span>{done ? o.done : busy ? o.saving : state === 'partial' ? o.retry : label}</span>
+    </button>
   )
 }
