@@ -43,8 +43,29 @@ const STYLE = { vinyasa: 'sage', ashtanga: 'gold', yin: 'dusk' }
 export const styleTint = (style) => STYLE[style] || 'sage'
 export const poseTint = (pose) => styleTint(pose?.styles?.[0])
 
-/** Moments of the class, as the Phrases tab groups them. */
-const MOMENT = { welcome: 'gold', breath: 'mist', transitions: 'sage', safety: 'clay', yin: 'dusk', savasana: 'dusk', closing: 'gold' }
+/**
+ * Moments of the class, as the Phrases tab groups them. Gold for ritual
+ * (arriving, closing, the count, the Sanskrit), clay for care, mist for the
+ * breath, sage for practical movement and talk, dusk for stillness.
+ */
+const MOMENT = {
+  welcome: 'gold',
+  'injuries-and-consent': 'clay',
+  breath: 'mist',
+  transitions: 'sage',
+  'props-and-options': 'sage',
+  safety: 'clay',
+  yin: 'dusk',
+  'ashtanga-count': 'gold',
+  pranayama: 'mist',
+  savasana: 'dusk',
+  closing: 'gold',
+  'after-class': 'sage',
+  meditation: 'dusk',
+  'philosophy-in-class': 'gold',
+  'sanskrit-terms': 'gold',
+  'pali-terms': 'dusk',
+}
 export const momentTint = (groupId) => MOMENT[groupId] || 'sage'
 
 /** Kinds of term on the anatomy tab. */

@@ -66,13 +66,29 @@ STYLES = {
     "cue-vinyasa": "A calm, warm yoga teacher cueing a flowing class. Unhurried teaching pace, gentle and encouraging.",
     "cue-yin": "A yoga teacher guiding a long, still hold. Very slow, soft, with space between phrases.",
     "cue-ashtanga": "A steady yoga teacher counting a class through a set sequence. Clear, even, unhurried.",
+    # Phrases tab. The long silences of a script (savasana, meditation) come
+    # from each line's pauseAfter in the app's "lead it" mode, not from the
+    # clip: inside a clip, pauses between sentences stay shorter than the gap
+    # the batch splitter cuts on.
     "phrase-welcome": "A warm yoga teacher welcoming a class. Friendly, relaxed, unhurried.",
+    "phrase-injuries-and-consent": "A kind, attentive yoga teacher speaking quietly to one student before or during class. Warm and respectful, unhurried, never clinical.",
     "phrase-breath": "A calm yoga teacher cueing the breath. Slow and soft, with space between phrases.",
     "phrase-transitions": "A calm yoga teacher guiding the class between poses. Steady and clear.",
+    "phrase-props-and-options": "A warm yoga teacher offering props and easier or stronger options. Encouraging and relaxed, unhurried.",
     "phrase-safety": "A kind yoga teacher giving safety notes and options. Clear, reassuring, unhurried.",
-    "phrase-yin": "A yoga teacher guiding a long Yin hold. Very slow, soft, almost a whisper, with pauses.",
-    "phrase-savasana": "A yoga teacher guiding final relaxation. Very slow and soft, almost a whisper, with long pauses.",
+    "phrase-yin": "A yoga teacher guiding a long Yin hold. Very slow and soft, almost a whisper, with a gentle pause between sentences.",
+    "phrase-ashtanga-count": "A steady Ashtanga teacher leading a counted class. Each line opens with a Sanskrit count or gaze word, said the way Mysore-trained teachers say it (Ekam EH-kum, Dve DVAY, Trini TREE-nee, Chatvari chut-VAH-ree, Pancha PUN-chuh, Shat SHUT, Sapta SUP-tuh, Ashtau USH-tow, Nava NUH-vuh, Dasha DUH-shuh; the vimshatih numbers end in a soft echo, VIM-shuh-tee-hee; drishti DRISH-tee), then the movement in plain English. Clear and even, the same unhurried rhythm for every line.",
+    "phrase-ashtanga-count-chant": "A yoga teacher chanting a traditional Sanskrit invocation at the start or end of an Ashtanga class. Slow, even and devotional on a calm, steady pitch, every syllable distinct, not sung like a song.",
+    "phrase-pranayama": "A calm yoga teacher guiding a breathing practice. Slow, soft and even, with a gentle pause between sentences.",
+    "phrase-savasana": "A yoga teacher guiding final relaxation. Very slow and soft, almost a whisper, with a gentle pause between sentences.",
     "phrase-closing": "A warm yoga teacher closing a class. Gentle, grateful, unhurried.",
+    "phrase-after-class": "A friendly yoga teacher chatting with a student after class. Natural, warm, an easy conversational pace.",
+    "phrase-meditation": "A meditation teacher guiding a silent vipassana sit. Very slow, soft and low, calm and plain, never sing-song, with a gentle pause between sentences.",
+    "phrase-philosophy-in-class": "A thoughtful yoga teacher sharing one short idea with the class. Warm, clear and unhurried; Sanskrit words said as in a yoga studio.",
+    "phrase-sanskrit-terms": "A warm yoga teacher saying a single Sanskrit word for a learner to repeat. Slow and clear, every syllable distinct, pronounced as in a yoga studio, following the respelling given.",
+    "phrase-sanskrit-terms-inclass": "A warm yoga teacher saying one short sentence to a class. Unhurried and clear; the Sanskrit word in it is said as in a yoga studio.",
+    "phrase-pali-terms": "A meditation teacher saying a single Pali word for a learner to repeat. Slow and clear, every syllable distinct, pronounced as in a vipassana meditation hall, following the respelling given.",
+    "phrase-pali-terms-inclass": "A calm meditation teacher saying one short sentence to a group. Unhurried and soft; the Pali word in it is said as in a vipassana meditation hall.",
 }
 
 
@@ -97,9 +113,15 @@ def ffmpeg():
 
 
 def style_for(clip):
+    """The delivery for a clip. A Sanskrit or Pali clip carries its own
+    respelling, so each one is its own style (and its own request: the batcher
+    groups by style). The Sanskrit sentence is unchanged so existing pose-name
+    clips keep their hash."""
     s = STYLES.get(clip["kind"], STYLES["cue-alignment"])
     if clip.get("lang") == "sa" and clip.get("say"):
         s += f" Pronounce it the way it is said in yoga studios: {clip['say']}."
+    elif clip.get("lang") == "pi" and clip.get("say"):
+        s += f" Pronounce it the way it is said in vipassana meditation halls: {clip['say']}."
     return s
 
 

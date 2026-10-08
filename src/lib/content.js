@@ -133,7 +133,14 @@ export function allClips() {
     for (const s of p.safety || []) clips.push({ id: s.id, text: s.en, lang: 'en', kind: 'safety' })
   }
   for (const g of PHRASE_GROUPS) {
-    for (const l of g.lines) clips.push({ id: `phrase__${l.id}`, text: l.en, lang: 'en', kind: `phrase-${g.id}` })
+    // A part of a group can carry its own delivery (the chanted mantras inside the Ashtanga count).
+    const voice = new Map((g.parts || []).filter((p) => p.voice).map((p) => [p.id, p.voice]))
+    for (const l of g.lines) {
+      const kind = voice.has(l.part) ? `phrase-${g.id}-${voice.get(l.part)}` : `phrase-${g.id}`
+      clips.push({ id: `phrase__${l.id}`, text: l.en, lang: l.lang || 'en', say: l.say, kind })
+      // A Sanskrit or Pali word also has a sentence she can say to the class.
+      if (l.inClass) clips.push({ id: `phrase__${l.id}__inclass`, text: l.inClass.en, lang: 'en', kind: `phrase-${g.id}-inclass` })
+    }
   }
   for (const L of LESSONS) {
     for (const l of lessonLines(L)) clips.push({ id: l.id, text: l.en, lang: 'en', kind: l.kind || 'cue-safety' })
