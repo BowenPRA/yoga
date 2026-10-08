@@ -16,3 +16,6 @@ research/tts/*.mp3
 .env*
 research/anatomy/*.svg
 research/anatomy/_tts_tmp/
+
+# Agent worktrees
+.claude/worktrees/
