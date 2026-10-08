@@ -22,9 +22,9 @@ const STYLES = new Set(['vinyasa', 'ashtanga', 'yin'])
 const FAMILIES = new Set(['sun-salutation', 'standing', 'balance', 'forward-fold', 'backbend', 'twist', 'hip-opener', 'inversion', 'arm-balance', 'seated', 'supine', 'prone', 'core', 'restorative'])
 const KINDS = new Set(['transition', 'alignment', 'soften', 'breath', 'safety'])
 const SECTIONS = new Set(['surya-a', 'surya-b', 'standing', 'seated', 'finishing'])
-// "tiếng Anh" (English) and "Em bé" (Child's Pose) are not forms of address.
+// "tiếng Anh" (English), "Em bé" (Child's Pose) and "Anh hùng" (Hero) are not forms of address.
 const REGISTER = /(^|[\s,.;:!?"“(])(em|cậu|chị|anh)([\s,.;:!?"”)]|$)/iu
-const familiar = (text) => REGISTER.test(text.replace(/tiếng Anh/giu, '').replace(/em bé/giu, ''))
+const familiar = (text) => REGISTER.test(text.replace(/tiếng Anh/giu, '').replace(/em bé/giu, '').replace(/anh hùng/giu, ''))
 
 const termIds = new Set(TERMS.map((t) => t.id))
 const poseIds = new Set()
