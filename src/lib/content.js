@@ -96,6 +96,139 @@ export function poseName(id) {
   return id.split('-').map((w) => w[0].toUpperCase() + w.slice(1)).join(' ').replace(/ Pose$/, ' Pose')
 }
 
+// ── The pose library ─────────────────────────────────────────────────────
+// The Poses tab regroups the one list several ways: by family, the Ashtanga
+// primary series in order, Yin by the area a hold targets. These orders are
+// the display orders; content/poses/README.md holds the allowed values.
+
+/** Families, in the arc of a class: warm up, stand, balance, open, fold, rest. */
+export const FAMILIES = [
+  'sun-salutation', 'standing', 'balance', 'arm-balance', 'core', 'backbend', 'prone',
+  'twist', 'forward-fold', 'hip-opener', 'seated', 'inversion', 'supine', 'restorative',
+]
+/** The sections of the primary series, in the order they are practised. */
+export const SECTIONS = ['surya-a', 'surya-b', 'standing', 'seated', 'finishing']
+/** Yin target areas, from the hips outward. */
+export const TARGETS = ['hips', 'inner-thighs', 'hamstrings', 'quads', 'spine', 'chest', 'shoulders', 'neck', 'feet']
+export const LEVELS = ['gentle', 'moderate', 'strong']
+
+/** Group a list under keys in a fixed order; unknown keys go last, under 'other'. */
+function groupBy(list, keysOf, order) {
+  const m = new Map(order.map((k) => [k, []]))
+  for (const p of list) {
+    for (const k of keysOf(p)) {
+      const key = m.has(k) ? k : 'other'
+      if (!m.has(key)) m.set(key, [])
+      m.get(key).push(p)
+    }
+  }
+  return [...m.entries()].filter(([, poses]) => poses.length).map(([key, poses]) => ({ key, poses }))
+}
+
+/** The poses of one style ('vinyasa' | 'ashtanga' | 'yin'), or every pose for 'all'. */
+export function posesByStyle(style, list = POSES) {
+  return !style || style === 'all' ? list : list.filter((p) => p.styles?.includes(style))
+}
+
+/** A list grouped by family, in FAMILIES order: [{ key: family, poses }]. */
+export function familiesOf(list = POSES) {
+  return groupBy(list, (p) => [p.family], FAMILIES)
+}
+
+const SERIES = POSES.filter((p) => p.ashtanga).sort((a, b) => a.ashtanga.position - b.ashtanga.position)
+
+/**
+ * The primary series in order, grouped by section: [{ key: section, poses }].
+ * Given a list (a search result), only those poses; an Ashtanga pose with no
+ * `ashtanga` block yet comes last, under 'other'.
+ */
+export function ashtangaSeries(list = POSES) {
+  const inList = new Set(list)
+  const ordered = [...SERIES.filter((p) => inList.has(p)), ...list.filter((p) => !p.ashtanga && p.styles?.includes('ashtanga'))]
+  return groupBy(ordered, (p) => [p.ashtanga?.section || 'other'], SECTIONS)
+}
+
+/** How many poses the series has: the last position written. */
+export const seriesLength = () => (SERIES.length ? SERIES[SERIES.length - 1].ashtanga.position : 0)
+export function nextInSeries(pose) {
+  const i = SERIES.indexOf(pose)
+  return i < 0 ? null : SERIES[i + 1] || null
+}
+export function prevInSeries(pose) {
+  const i = SERIES.indexOf(pose)
+  return i < 1 ? null : SERIES[i - 1]
+}
+
+/**
+ * Yin poses grouped by target area, in TARGETS order: [{ key: target, poses }].
+ * A pose that targets two areas is listed under both, because a teacher
+ * planning "a class for the spine" wants every pose that reaches it.
+ */
+export function yinByTarget(list = POSES) {
+  const yin = list.filter((p) => p.yin || p.styles?.includes('yin'))
+  return groupBy(yin, (p) => (p.yin?.target?.length ? p.yin.target : ['other']), TARGETS)
+}
+
+/**
+ * Fold text for searching: no diacritics (NFD, then drop the combining
+ * marks, so Śvānāsana is svanasana and Chó úp mặt is cho up mat), đ as d,
+ * punctuation as space, lower case.
+ */
+export function fold(text) {
+  return String(text || '')
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .replace(/[đĐ]/g, 'd')
+    .toLowerCase()
+    .replace(/['’]/g, '')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim()
+}
+
+const haystack = new Map(POSES.map((p) => [p, fold([p.en, ...(p.aka || []), p.sa, p.vi, p.id].filter(Boolean).join(' '))]))
+
+/**
+ * Search poses by English name, other names, Sanskrit (with or without
+ * diacritics) or Vietnamese (with or without tones). Every word of the query
+ * must appear; order is kept.
+ */
+export function searchPoses(q, list = POSES) {
+  const words = fold(q).split(' ').filter(Boolean)
+  if (!words.length) return list
+  return list.filter((p) => {
+    const h = haystack.get(p) ?? fold([p.en, ...(p.aka || []), p.sa, p.vi, p.id].filter(Boolean).join(' '))
+    return words.every((w) => h.includes(w))
+  })
+}
+
+/**
+ * Every clip a pose page plays: its names, cues, modifications and safety
+ * lines, and the names of the muscles and joints it links to. For keeping a
+ * pose offline.
+ */
+export function poseClipIds(pose) {
+  if (!pose) return []
+  const ids = [`${pose.id}__en`]
+  if (pose.sa) ids.push(`${pose.id}__sa`)
+  for (const l of [...(pose.cues || []), ...(pose.modifications || []), ...(pose.safety || [])]) ids.push(l.id)
+  for (const id of [...(pose.muscles?.working || []), ...(pose.muscles?.lengthening || []), ...(pose.joints || [])]) if (termById.has(id)) ids.push(id)
+  return [...new Set(ids)]
+}
+
+/** A readable name for whatever a "suggest a fix" note was written on. */
+export function targetLabel(target) {
+  if (!target) return ''
+  const p = poseById.get(target)
+  if (p) return p.en
+  const t = termById.get(target)
+  if (t) return t.en
+  const l = lessonById.get(target)
+  if (l) return l.title?.en || target
+  const g = target.startsWith('phrases:') && PHRASE_GROUPS.find((x) => `phrases:${x.id}` === target)
+  if (g) return `Phrases: ${g.title?.en || g.id}`
+  return target
+}
+
 /** Poses that involve a given term (muscle or joint). */
 export function posesUsing(termId) {
   return POSES.filter((p) => {

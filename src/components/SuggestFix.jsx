@@ -1,26 +1,28 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Pencil } from 'lucide-react'
 import { useLang } from '../lib/i18n.jsx'
-import { store } from '../lib/store.js'
+import { suggestions } from '../lib/store.js'
 import { Button } from './ui.jsx'
 
 /**
- * "Suggest a fix" on every card. The note is kept on the phone and sent to
- * Bowen by the backend when online (wiring in a later step); for now it is
- * stored so nothing is lost.
+ * "Suggest a fix" on every card. The note is kept on the phone, in the
+ * `suggestions` outbox, until she sends the waiting notes to Bowen from
+ * Settings (one message, through the share sheet or an email).
  */
 export default function SuggestFix({ target }) {
   const { t } = useLang()
   const [open, setOpen] = useState(false)
   const [text, setText] = useState('')
-  const [sent, setSent] = useState(false)
+  const [kept, setKept] = useState(false)
+  const timer = useRef(null)
+  useEffect(() => () => clearTimeout(timer.current), [])
 
-  const send = async () => {
+  const keep = async () => {
     if (!text.trim()) return
-    await store.put('suggestions', { id: `${target}:${Date.now()}`, target, text: text.trim(), at: Date.now() })
-    setSent(true)
+    await suggestions.add(target, text.trim())
+    setKept(true)
     setText('')
-    setTimeout(() => { setSent(false); setOpen(false) }, 1500)
+    timer.current = setTimeout(() => { setKept(false); setOpen(false) }, 3500)
   }
 
   if (!open)
@@ -31,11 +33,11 @@ export default function SuggestFix({ target }) {
     )
   return (
     <div className="slide-in rounded-3xl border border-line/70 bg-paper p-4 shadow-card">
-      <p className="mb-2.5 text-caption text-muted">{t.common.suggestIntro}</p>
-      {sent ? (
-        <p className="text-body text-tint-deep">{t.common.suggestThanks}</p>
+      {kept ? (
+        <p className="fade-in text-body text-tint-deep">{t.common.suggestThanks}</p>
       ) : (
         <>
+          <p className="mb-2.5 text-caption text-muted">{t.common.suggestIntro}</p>
           <textarea
             value={text}
             onChange={(e) => setText(e.target.value)}
@@ -44,7 +46,7 @@ export default function SuggestFix({ target }) {
           />
           <div className="mt-3 flex justify-end gap-2">
             <Button kind="quiet" size="sm" onClick={() => setOpen(false)}>{t.common.close}</Button>
-            <Button size="sm" onClick={send}>{t.common.suggestSend}</Button>
+            <Button size="sm" onClick={keep} disabled={!text.trim()}>{t.common.suggestSend}</Button>
           </div>
         </>
       )}

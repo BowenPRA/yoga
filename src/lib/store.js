@@ -6,14 +6,15 @@ import { openDB } from 'idb'
  *   met         when she first met a term / pose / cue
  *   phrasebook  saved cues and words, her own included
  *   classes     saved Class Builder scripts
- *   suggestions "suggest a fix" notes, until they are sent
+ *   suggestions "suggest a fix" notes: { id, target, text, at, sentAt? };
+ *               kept after sending, so a sent note is never sent twice
  *   progress    lessons (done or not, where she stopped, her answers) and
  *               terms (when she labelled it, said it, used it in a cue)
  * localStorage holds only device preferences (see i18n.jsx).
  */
 const DB = 'yoga-english'
 const VERSION = 2
-const BACKED_UP = ['cards', 'met', 'phrasebook', 'classes', 'progress']
+const BACKED_UP = ['cards', 'met', 'phrasebook', 'classes', 'progress', 'suggestions']
 
 let dbp
 function db() {
@@ -107,3 +108,24 @@ export const progress = {
 }
 
 export const isKnown = (row) => !!row && FACETS.every((f) => row[f])
+
+/**
+ * The "suggest a fix" outbox. A note waits on the phone until she sends it
+ * to Bowen from Settings; sending marks it `sentAt` and keeps it.
+ */
+export const suggestions = {
+  async add(target, text) {
+    const at = Date.now()
+    await store.put('suggestions', { id: `${target}:${at}`, target, text, at })
+  },
+  /** Every note, oldest first. */
+  async all() {
+    return (await store.all('suggestions')).sort((a, b) => a.at - b.at)
+  },
+  async markSent(ids, at = Date.now()) {
+    for (const id of ids) {
+      const row = await store.get('suggestions', id)
+      if (row && !row.sentAt) await store.put('suggestions', { ...row, sentAt: at })
+    }
+  },
+}
