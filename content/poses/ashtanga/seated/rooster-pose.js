@@ -1,0 +1,53 @@
+export const roosterPose = {
+  id: 'rooster-pose',
+  styles: ['ashtanga'],
+  family: 'arm-balance',
+  level: 'strong',
+  en: 'Rooster Pose',
+  sa: 'Kukkuṭāsana',
+  say: 'koo-koo-TAH-sah-nah',
+  vi: 'Gà trống',
+  ashtanga: {
+    series: 'primary',
+    section: 'seated',
+    position: 32,
+    vinyasas: 15,
+    breaths: 5,
+    drishti: 'nose',
+    note: {
+      en: 'Follows straight on from Embryo in the Womb: the last roll brings you up onto your hands, still in lotus. It is held in the ninth vinyasa.',
+      vi: 'Nối tiếp ngay sau Bào thai: lần lăn cuối đưa bạn lên chống trên hai tay, vẫn trong thế hoa sen. Tư thế được giữ ở vinyasa thứ chín.',
+    },
+  },
+  breath: {
+    en: 'Inhale as you roll up onto your hands. Stay for five breaths. Exhale to lower down.',
+    vi: 'Hít vào khi lăn lên chống trên hai tay. Giữ năm nhịp thở. Thở ra để hạ xuống.',
+  },
+  cues: [
+    { id: 'rooster-pose__cue-1', kind: 'transition', en: 'On your last roll, come forward and press your palms into the floor.', vi: 'Ở lần lăn cuối, lăn về trước và ấn hai lòng bàn tay xuống sàn.' },
+    { id: 'rooster-pose__cue-2', kind: 'alignment', en: 'Spread your fingers wide, with your hands shoulder-width apart.', vi: 'Xoè rộng các ngón tay, hai tay rộng bằng vai.' },
+    { id: 'rooster-pose__cue-3', kind: 'alignment', en: 'Straighten your arms and lift your lotus off the floor.', vi: 'Duỗi thẳng tay và nâng thế hoa sen lên khỏi sàn.' },
+    { id: 'rooster-pose__cue-4', kind: 'alignment', en: 'Let your lotus slide as high up your arms as you can, and lift your chest.', vi: 'Để thế hoa sen trượt lên cao trên cánh tay hết mức có thể, và nâng ngực lên.' },
+    { id: 'rooster-pose__cue-5', kind: 'soften', en: 'Draw your shoulders away from your ears, and stay calm.', vi: 'Hạ vai xa khỏi tai, và giữ bình tĩnh.' },
+    { id: 'rooster-pose__cue-6', kind: 'breath', en: 'Stay for five breaths, gazing toward your nose.', vi: 'Giữ năm nhịp thở, nhìn về phía chóp mũi.' },
+    { id: 'rooster-pose__cue-7', kind: 'safety', en: 'If your wrists hurt, lower down and rest.', vi: 'Nếu cổ tay đau, hãy hạ xuống và nghỉ.' },
+    { id: 'rooster-pose__cue-8', kind: 'transition', en: 'Exhale, lower down, release your arms and your lotus, and take a vinyasa.', vi: 'Thở ra, hạ xuống, rút tay và gỡ thế hoa sen, rồi làm một vinyasa.' },
+  ],
+  modifications: [
+    { id: 'rooster-pose__mod-1', en: 'Skip the threading: press your hands down beside your hips and lift your lotus, in Scale Pose.', vi: 'Bỏ bước luồn tay: ấn hai tay xuống cạnh hông và nâng thế hoa sen lên, ở tư thế Cái cân.', props: [] },
+    { id: 'rooster-pose__mod-2', en: 'Put blocks under your hands to give yourself more height.', vi: 'Kê gạch dưới hai tay để có thêm độ cao.', props: ['blocks'] },
+    { id: 'rooster-pose__mod-3', en: 'If lotus isn’t comfortable, sit cross-legged, press your hands down and lift your hips.', vi: 'Nếu thế hoa sen chưa thoải mái, ngồi xếp bằng, ấn hai tay xuống và nâng hông lên.', props: [] },
+  ],
+  safety: [
+    { id: 'rooster-pose__safe-1', en: 'Press through your fingertips and the base of your fingers to protect your wrists.', vi: 'Ấn qua đầu ngón tay và gốc các ngón tay để bảo vệ cổ tay.' },
+    { id: 'rooster-pose__safe-2', en: 'If your knees hurt in lotus, don’t take this pose; choose the cross-legged lift.', vi: 'Nếu gối đau trong thế hoa sen, đừng vào tư thế này; hãy chọn cách ngồi xếp bằng và nâng người.' },
+    { id: 'rooster-pose__safe-3', en: 'If you’re pregnant, skip this pose.', vi: 'Nếu bạn đang mang thai, hãy bỏ qua tư thế này.' },
+  ],
+  muscles: {
+    working: ['triceps-brachii', 'serratus-anterior', 'rectus-abdominis', 'iliopsoas'],
+    lengthening: [],
+  },
+  joints: ['wrist', 'elbow', 'knee', 'hip-joint'],
+  transitionsTo: ['bound-angle'],
+  figure: 'rooster-pose',
+}

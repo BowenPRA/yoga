@@ -1,0 +1,57 @@
+export const setuBandhasana = {
+  id: 'setu-bandhasana',
+  styles: ['ashtanga'],
+  family: 'backbend',
+  level: 'strong',
+  en: 'Ashtanga Bridge',
+  sa: 'Setu Bandhāsana',
+  say: 'SAY-too bahn-DAH-sah-nah',
+  vi: 'Cây cầu tựa đầu',
+  saNote: {
+    en: 'Not the Vinyasa Bridge Pose. Here your weight rests on your feet and the top of your head, with your arms crossed over your chest.',
+    vi: 'Không phải tư thế Cây cầu trong Vinyasa. Ở đây trọng lượng dồn lên bàn chân và đỉnh đầu, hai tay bắt chéo trên ngực.',
+  },
+  ashtanga: {
+    series: 'primary',
+    section: 'seated',
+    position: 39,
+    vinyasas: 15,
+    breaths: 5,
+    drishti: 'nose',
+    note: {
+      en: 'The last pose of the seated sequence, held in the ninth vinyasa. You come out with a backward roll, Chakrasana, before the finishing sequence.',
+      vi: 'Tư thế cuối cùng của chuỗi ngồi, giữ ở vinyasa thứ chín. Bạn thoát thế bằng một cú lăn ra sau, Chakrasana, trước chuỗi kết thúc.',
+    },
+  },
+  breath: {
+    en: 'Exhale as you arch back onto the top of your head. Inhale to lift your hips. Stay for five breaths, then exhale to lower.',
+    vi: 'Thở ra khi ưỡn người, đặt đỉnh đầu xuống sàn. Hít vào để nâng hông. Giữ năm nhịp thở, rồi thở ra để hạ xuống.',
+  },
+  cues: [
+    { id: 'setu-bandhasana__cue-1', kind: 'transition', en: 'Lie on your back with your heels together, toes turned out, and knees bent open.', vi: 'Nằm ngửa, hai gót chân chạm nhau, mũi chân xoay ra ngoài, hai gối co và mở ra.' },
+    { id: 'setu-bandhasana__cue-2', kind: 'alignment', en: 'Press your elbows down, lift your chest, and rest the top of your head on the floor.', vi: 'Ấn khuỷu tay xuống, nâng ngực lên, và đặt đỉnh đầu xuống sàn.' },
+    { id: 'setu-bandhasana__cue-3', kind: 'alignment', en: 'Cross your arms over your chest, with your hands on your shoulders.', vi: 'Bắt chéo hai tay trên ngực, bàn tay đặt lên vai.' },
+    { id: 'setu-bandhasana__cue-4', kind: 'alignment', en: 'Inhale, press into your feet and lift your hips, straightening your legs.', vi: 'Hít vào, ấn bàn chân xuống và nâng hông lên, duỗi thẳng chân.' },
+    { id: 'setu-bandhasana__cue-5', kind: 'alignment', en: 'Keep your heels together and press through the outer edges of your feet.', vi: 'Giữ hai gót chân chạm nhau và ấn qua cạnh ngoài bàn chân.' },
+    { id: 'setu-bandhasana__cue-6', kind: 'soften', en: 'Breathe steadily and keep your jaw soft.', vi: 'Thở đều và giữ hàm mềm.' },
+    { id: 'setu-bandhasana__cue-7', kind: 'breath', en: 'Stay for five breaths, gazing toward your nose.', vi: 'Giữ năm nhịp thở, nhìn về phía chóp mũi.' },
+    { id: 'setu-bandhasana__cue-8', kind: 'safety', en: 'Take only as much weight onto your head as feels safe. If your neck hurts, come down.', vi: 'Chỉ dồn lên đầu mức trọng lượng bạn thấy an toàn. Nếu cổ đau, hãy hạ xuống.' },
+    { id: 'setu-bandhasana__cue-9', kind: 'transition', en: 'Exhale, lower your hips slowly, then lift your head and lie down.', vi: 'Thở ra, từ từ hạ hông, rồi nhấc đầu lên và nằm xuống.' },
+  ],
+  modifications: [
+    { id: 'setu-bandhasana__mod-1', en: 'Keep your hands on the floor beside you to take weight off your head.', vi: 'Giữ hai tay trên sàn cạnh người để giảm trọng lượng lên đầu.', props: [] },
+    { id: 'setu-bandhasana__mod-2', en: 'Take Bridge Pose instead, with your shoulders on the floor and your head free.', vi: 'Thay bằng tư thế Cây cầu, vai đặt trên sàn và đầu không chịu lực.', props: [] },
+  ],
+  safety: [
+    { id: 'setu-bandhasana__safe-1', en: 'Your neck carries weight here. Skip this pose if you have a neck injury, and build up slowly.', vi: 'Cổ phải chịu lực trong tư thế này. Bỏ qua nếu cổ đang bị chấn thương, và tập tăng dần từ từ.' },
+    { id: 'setu-bandhasana__safe-2', en: 'Never turn your head while it is on the floor.', vi: 'Đừng bao giờ quay đầu khi đầu đang đặt trên sàn.' },
+    { id: 'setu-bandhasana__safe-3', en: 'If you’re pregnant, skip this pose.', vi: 'Nếu bạn đang mang thai, hãy bỏ qua tư thế này.' },
+  ],
+  muscles: {
+    working: ['gluteus-maximus', 'hamstrings', 'erector-spinae', 'quadriceps'],
+    lengthening: ['iliopsoas', 'rectus-abdominis'],
+  },
+  joints: ['cervical-spine', 'hip-joint', 'knee', 'ankle'],
+  transitionsTo: ['wheel-pose'],
+  figure: 'setu-bandhasana',
+}

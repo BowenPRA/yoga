@@ -1,0 +1,52 @@
+export const bothBigToesPose = {
+  id: 'both-big-toes-pose',
+  styles: ['ashtanga'],
+  family: 'balance',
+  level: 'moderate',
+  en: 'Both Big Toes Pose',
+  sa: 'Ubhaya Pādāṅguṣṭhāsana',
+  say: 'OO-bah-yah pah-dahn-goosh-TAH-sah-nah',
+  vi: 'Thăng bằng nắm ngón chân cái',
+  ashtanga: {
+    series: 'primary',
+    section: 'seated',
+    position: 37,
+    breaths: 5,
+    drishti: 'up',
+    note: {
+      en: 'The first of two rolling balances near the end of the seated sequence. You roll back with your feet over your head, take your big toes, and roll up to balance on your sitting bones for five breaths.',
+      vi: 'Tư thế đầu tiên trong hai tư thế lăn và giữ thăng bằng ở gần cuối chuỗi ngồi. Bạn lăn ra sau, hai bàn chân qua đầu, nắm ngón chân cái, rồi lăn lên giữ thăng bằng trên xương ngồi trong năm nhịp thở.',
+    },
+  },
+  breath: {
+    en: 'Exhale to roll back and take your toes. Inhale to roll up and balance. Stay for five breaths.',
+    vi: 'Thở ra để lăn ra sau và nắm ngón chân. Hít vào để lăn lên và giữ thăng bằng. Giữ năm nhịp thở.',
+  },
+  cues: [
+    { id: 'both-big-toes-pose__cue-1', kind: 'transition', en: 'Lie down, exhale, and roll your legs over your head, feet together.', vi: 'Nằm xuống, thở ra, và lăn hai chân qua đầu, hai bàn chân chạm nhau.' },
+    { id: 'both-big-toes-pose__cue-2', kind: 'alignment', en: 'Wrap your first two fingers around your big toes.', vi: 'Móc hai ngón tay quanh ngón chân cái.' },
+    { id: 'both-big-toes-pose__cue-3', kind: 'transition', en: 'Inhale, roll up and balance on your sitting bones, legs straight.', vi: 'Hít vào, lăn lên và giữ thăng bằng trên xương ngồi, chân duỗi thẳng.' },
+    { id: 'both-big-toes-pose__cue-4', kind: 'alignment', en: 'Lift your chest and draw your shoulders back.', vi: 'Nâng ngực và kéo vai về sau.' },
+    { id: 'both-big-toes-pose__cue-5', kind: 'alignment', en: 'Keep your legs straight and your back long.', vi: 'Giữ chân thẳng và lưng dài.' },
+    { id: 'both-big-toes-pose__cue-6', kind: 'soften', en: 'Relax your shoulders and find your balance slowly.', vi: 'Thả lỏng vai và tìm thăng bằng từ từ.' },
+    { id: 'both-big-toes-pose__cue-7', kind: 'breath', en: 'Stay for five breaths, gazing up.', vi: 'Giữ năm nhịp thở, mắt nhìn lên.' },
+    { id: 'both-big-toes-pose__cue-8', kind: 'safety', en: 'When you roll back, keep your weight on your shoulders, not your neck.', vi: 'Khi lăn ra sau, giữ trọng lượng trên vai, không dồn lên cổ.' },
+    { id: 'both-big-toes-pose__cue-9', kind: 'transition', en: 'Exhale, release your feet, and take a vinyasa.', vi: 'Thở ra, thả bàn chân ra, và làm một vinyasa.' },
+  ],
+  modifications: [
+    { id: 'both-big-toes-pose__mod-1', en: 'Roll up with your knees bent, then straighten your legs once you’re balanced.', vi: 'Lăn lên với gối co, rồi duỗi thẳng chân khi đã giữ được thăng bằng.', props: [] },
+    { id: 'both-big-toes-pose__mod-2', en: 'Hold your shins or the backs of your thighs instead of your toes.', vi: 'Giữ ống chân hoặc mặt sau đùi thay vì ngón chân.', props: [] },
+    { id: 'both-big-toes-pose__mod-3', en: 'Practise the roll on a folded blanket to cushion your spine.', vi: 'Tập lăn trên chăn gấp để đỡ cho cột sống.', props: ['blanket'] },
+  ],
+  safety: [
+    { id: 'both-big-toes-pose__safe-1', en: 'Roll onto your shoulders, never onto your neck, and don’t turn your head.', vi: 'Lăn lên vai, không bao giờ lên cổ, và đừng quay đầu.' },
+    { id: 'both-big-toes-pose__safe-2', en: 'If you have a neck injury or you’re pregnant, skip the roll and balance from sitting.', vi: 'Nếu cổ đang bị chấn thương hoặc bạn đang mang thai, bỏ qua phần lăn và giữ thăng bằng từ tư thế ngồi.' },
+  ],
+  muscles: {
+    working: ['iliopsoas', 'rectus-abdominis', 'quadriceps'],
+    lengthening: ['hamstrings'],
+  },
+  joints: ['hip-joint', 'sit-bones', 'lumbar-spine'],
+  transitionsTo: ['upward-facing-forward-fold'],
+  figure: 'both-big-toes-pose',
+}

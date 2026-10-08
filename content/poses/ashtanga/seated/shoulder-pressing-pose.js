@@ -1,0 +1,53 @@
+export const shoulderPressingPose = {
+  id: 'shoulder-pressing-pose',
+  styles: ['ashtanga'],
+  family: 'arm-balance',
+  level: 'strong',
+  en: 'Shoulder-Pressing Pose',
+  sa: 'Bhujapīḍāsana',
+  say: 'boo-jah-pee-DAH-sah-nah',
+  vi: 'Ép vai',
+  ashtanga: {
+    series: 'primary',
+    section: 'seated',
+    position: 29,
+    vinyasas: 15,
+    breaths: 5,
+    drishti: 'nose',
+    note: {
+      en: 'The first arm balance of the series: from Downward Dog you jump your feet around your arms. It is held in the eighth vinyasa, and you come out by straightening your legs and moving through Crow.',
+      vi: 'Tư thế giữ thăng bằng trên tay đầu tiên của chuỗi: từ Chó úp mặt, bạn nhảy hai chân ra ngoài hai tay. Tư thế được giữ ở vinyasa thứ tám, và bạn thoát thế bằng cách duỗi thẳng chân rồi đi qua tư thế Con quạ.',
+    },
+  },
+  breath: {
+    en: 'Inhale as your feet land around your hands. Exhale to lower your head. Stay for five breaths, then inhale to lift up.',
+    vi: 'Hít vào khi hai bàn chân đáp xuống ngoài hai tay. Thở ra để hạ đầu. Giữ năm nhịp thở, rồi hít vào để nâng người lên.',
+  },
+  cues: [
+    { id: 'shoulder-pressing-pose__cue-1', kind: 'transition', en: 'From Downward Dog, jump your feet around the outside of your hands.', vi: 'Từ Chó úp mặt, nhảy hai bàn chân ra phía ngoài hai tay.' },
+    { id: 'shoulder-pressing-pose__cue-2', kind: 'alignment', en: 'Work your shoulders behind your knees, and sit your thighs high on your upper arms.', vi: 'Đưa vai vào phía sau gối, và đặt đùi cao trên cánh tay trên.' },
+    { id: 'shoulder-pressing-pose__cue-3', kind: 'alignment', en: 'Squeeze your thighs into your arms, lift your feet, and cross your ankles.', vi: 'Kẹp đùi vào cánh tay, nhấc bàn chân lên và bắt chéo hai cổ chân.' },
+    { id: 'shoulder-pressing-pose__cue-4', kind: 'alignment', en: 'Press your hands down and spread your fingers wide.', vi: 'Ấn hai tay xuống và xoè rộng các ngón tay.' },
+    { id: 'shoulder-pressing-pose__cue-5', kind: 'alignment', en: 'Exhale, bend your elbows, and lower your chin toward the floor.', vi: 'Thở ra, gập khuỷu tay và hạ cằm về phía sàn.' },
+    { id: 'shoulder-pressing-pose__cue-6', kind: 'soften', en: 'Keep your neck soft as you lower.', vi: 'Giữ cổ mềm khi hạ xuống.' },
+    { id: 'shoulder-pressing-pose__cue-7', kind: 'breath', en: 'Stay for five breaths, gazing toward your nose.', vi: 'Giữ năm nhịp thở, nhìn về phía chóp mũi.' },
+    { id: 'shoulder-pressing-pose__cue-8', kind: 'safety', en: 'If your wrists hurt, keep your head lifted, or come down to sit.', vi: 'Nếu cổ tay đau, giữ đầu nâng lên, hoặc hạ xuống ngồi.' },
+    { id: 'shoulder-pressing-pose__cue-9', kind: 'transition', en: 'Inhale, lift up and straighten your legs, then move through Crow and jump back.', vi: 'Hít vào, nâng người lên và duỗi thẳng chân, rồi đi qua tư thế Con quạ và nhảy về sau.' },
+  ],
+  modifications: [
+    { id: 'shoulder-pressing-pose__mod-1', en: 'Step your feet around your hands instead of jumping, and keep your feet on the floor.', vi: 'Bước chân ra ngoài hai tay thay vì nhảy, và giữ bàn chân trên sàn.', props: [] },
+    { id: 'shoulder-pressing-pose__mod-2', en: 'Rest your forehead on a block instead of lowering all the way.', vi: 'Tựa trán lên gạch thay vì hạ hẳn xuống.', props: ['block'] },
+    { id: 'shoulder-pressing-pose__mod-3', en: 'Sit on a block behind your hands and practise lifting one foot at a time.', vi: 'Ngồi lên gạch phía sau hai tay và tập nhấc từng bàn chân một.', props: ['block'] },
+  ],
+  safety: [
+    { id: 'shoulder-pressing-pose__safe-1', en: 'Spread your weight across your whole hand to protect your wrists.', vi: 'Dàn đều trọng lượng ra cả bàn tay để bảo vệ cổ tay.' },
+    { id: 'shoulder-pressing-pose__safe-2', en: 'This pose presses into your belly. If you’re pregnant, skip it.', vi: 'Tư thế này ép vào bụng. Nếu bạn đang mang thai, hãy bỏ qua.' },
+  ],
+  muscles: {
+    working: ['triceps-brachii', 'serratus-anterior', 'hip-adductors', 'rectus-abdominis'],
+    lengthening: [],
+  },
+  joints: ['wrist', 'elbow', 'shoulder-joint', 'hip-joint'],
+  transitionsTo: ['tortoise-pose'],
+  figure: 'shoulder-pressing-pose',
+}

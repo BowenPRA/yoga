@@ -1,0 +1,52 @@
+export const reclinedAnglePose = {
+  id: 'reclined-angle-pose',
+  styles: ['ashtanga'],
+  family: 'inversion',
+  level: 'strong',
+  en: 'Reclined Angle Pose',
+  sa: 'Supta Koṇāsana',
+  say: 'SOOP-tah koh-NAH-sah-nah',
+  vi: 'Cái cày dang chân',
+  ashtanga: {
+    series: 'primary',
+    section: 'seated',
+    position: 35,
+    breaths: 5,
+    drishti: 'nose',
+    note: {
+      en: 'Follows Wide-Angle Seated Forward Fold: you roll back into a wide-legged Plow, held in the eighth vinyasa, then roll up and land on your calves in a wide fold.',
+      vi: 'Đứng sau Góc mở rộng ngồi: bạn lăn ra sau vào thế Cái cày với hai chân dang rộng, giữ ở vinyasa thứ tám, rồi lăn lên và đáp xuống bằng bắp chân vào thế gập người dang rộng chân.',
+    },
+  },
+  breath: {
+    en: 'Exhale to roll back. Stay for five breaths. Inhale to roll up and balance, then exhale to land.',
+    vi: 'Thở ra để lăn ra sau. Giữ năm nhịp thở. Hít vào để lăn lên và giữ thăng bằng, rồi thở ra để đáp xuống.',
+  },
+  cues: [
+    { id: 'reclined-angle-pose__cue-1', kind: 'transition', en: 'Lie on your back, then exhale and roll your legs over your head.', vi: 'Nằm ngửa, rồi thở ra và lăn hai chân qua đầu.' },
+    { id: 'reclined-angle-pose__cue-2', kind: 'alignment', en: 'Open your legs wide and take hold of your big toes.', vi: 'Dang rộng hai chân và nắm ngón chân cái.' },
+    { id: 'reclined-angle-pose__cue-3', kind: 'alignment', en: 'Lift your hips high, over your shoulders.', vi: 'Nâng hông lên cao, thẳng trên vai.' },
+    { id: 'reclined-angle-pose__cue-4', kind: 'alignment', en: 'Press your toes into the floor and keep your legs straight.', vi: 'Ấn ngón chân xuống sàn và giữ chân thẳng.' },
+    { id: 'reclined-angle-pose__cue-5', kind: 'soften', en: 'Keep your jaw soft and your neck relaxed.', vi: 'Giữ hàm mềm và cổ thả lỏng.' },
+    { id: 'reclined-angle-pose__cue-6', kind: 'breath', en: 'Stay for five breaths, gazing toward your nose.', vi: 'Giữ năm nhịp thở, nhìn về phía chóp mũi.' },
+    { id: 'reclined-angle-pose__cue-7', kind: 'safety', en: 'Keep your weight on your shoulders, never on your neck, and don’t turn your head.', vi: 'Giữ trọng lượng trên vai, không bao giờ dồn lên cổ, và đừng quay đầu.' },
+    { id: 'reclined-angle-pose__cue-8', kind: 'transition', en: 'Inhale, roll up and balance, then exhale and land softly on your calves.', vi: 'Hít vào, lăn lên và giữ thăng bằng, rồi thở ra và đáp nhẹ xuống bằng bắp chân.' },
+  ],
+  modifications: [
+    { id: 'reclined-angle-pose__mod-1', en: 'Fold a blanket under your shoulders, with your head off the edge, to protect your neck.', vi: 'Gấp chăn kê dưới vai, đầu nằm ngoài mép chăn, để bảo vệ cổ.', props: ['blanket'] },
+    { id: 'reclined-angle-pose__mod-2', en: 'If your feet don’t reach the floor, rest them on blocks.', vi: 'Nếu bàn chân chưa chạm sàn, hãy đặt chân lên gạch.', props: ['blocks'] },
+    { id: 'reclined-angle-pose__mod-3', en: 'Skip the roll, and stay in Wide-Angle Seated Forward Fold.', vi: 'Bỏ qua phần lăn, và ở lại thế Góc mở rộng ngồi.', props: [] },
+  ],
+  safety: [
+    { id: 'reclined-angle-pose__safe-1', en: 'Never turn your head while your weight is on your shoulders.', vi: 'Đừng bao giờ quay đầu khi trọng lượng đang dồn lên vai.' },
+    { id: 'reclined-angle-pose__safe-2', en: 'Skip this pose if you have a neck injury or high blood pressure.', vi: 'Bỏ qua tư thế này nếu cổ đang bị chấn thương hoặc bạn bị huyết áp cao.' },
+    { id: 'reclined-angle-pose__safe-3', en: 'If you’re pregnant, skip this pose.', vi: 'Nếu bạn đang mang thai, hãy bỏ qua tư thế này.' },
+  ],
+  muscles: {
+    working: ['quadriceps'],
+    lengthening: ['hamstrings', 'hip-adductors', 'erector-spinae'],
+  },
+  joints: ['cervical-spine', 'thoracic-spine', 'hip-joint'],
+  transitionsTo: ['reclined-hand-to-toe'],
+  figure: 'reclined-angle-pose',
+}

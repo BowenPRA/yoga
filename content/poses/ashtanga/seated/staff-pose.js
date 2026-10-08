@@ -1,0 +1,52 @@
+export const staffPose = {
+  id: 'staff-pose',
+  styles: ['vinyasa', 'ashtanga'],
+  family: 'seated',
+  level: 'gentle',
+  en: 'Staff Pose',
+  sa: 'Daṇḍāsana',
+  say: 'dun-DAH-sah-nah',
+  vi: 'Cây gậy',
+  ashtanga: {
+    series: 'primary',
+    section: 'seated',
+    position: 21,
+    breaths: 5,
+    drishti: 'nose',
+    note: {
+      en: 'The first seated pose. You jump or step through from Downward Dog, the seventh vinyasa, and hold for five breaths; every seated pose that follows starts from this shape.',
+      vi: 'Tư thế ngồi đầu tiên. Bạn nhảy hoặc bước qua từ Chó úp mặt, ở vinyasa thứ bảy, và giữ năm nhịp thở; mọi tư thế ngồi sau đó đều bắt đầu từ dáng này.',
+    },
+  },
+  breath: {
+    en: 'Inhale as you jump through and sit down. Stay for five breaths: grow a little taller as you inhale, and stay steady as you exhale.',
+    vi: 'Hít vào khi nhảy qua và ngồi xuống. Giữ năm nhịp thở: hít vào, vươn người cao thêm một chút; thở ra, giữ vững.',
+  },
+  cues: [
+    { id: 'staff-pose__cue-1', kind: 'transition', en: 'From Downward Dog, jump or step your feet through your hands and sit down.', vi: 'Từ Chó úp mặt, nhảy hoặc bước hai chân qua giữa hai tay và ngồi xuống.' },
+    { id: 'staff-pose__cue-2', kind: 'alignment', en: 'Stretch your legs out in front of you, with your feet together.', vi: 'Duỗi thẳng hai chân ra trước, hai bàn chân chạm nhau.' },
+    { id: 'staff-pose__cue-3', kind: 'alignment', en: 'Flex your feet and press the backs of your legs down.', vi: 'Gập bàn chân, kéo mũi chân về, và ấn mặt sau chân xuống sàn.' },
+    { id: 'staff-pose__cue-4', kind: 'alignment', en: 'Press your palms down beside your hips and lift your chest.', vi: 'Ấn hai lòng bàn tay xuống cạnh hông và nâng ngực lên.' },
+    { id: 'staff-pose__cue-5', kind: 'alignment', en: 'Draw your chin in slightly and gaze toward your nose.', vi: 'Hơi thu cằm vào và nhìn về phía chóp mũi.' },
+    { id: 'staff-pose__cue-6', kind: 'soften', en: 'Relax your shoulders down, away from your ears.', vi: 'Thả lỏng vai, hạ vai xa khỏi tai.' },
+    { id: 'staff-pose__cue-7', kind: 'breath', en: 'Stay for five breaths, growing taller each time you inhale.', vi: 'Giữ năm nhịp thở, mỗi lần hít vào lại vươn cao thêm.' },
+    { id: 'staff-pose__cue-8', kind: 'safety', en: 'If your lower back rounds, bend your knees a little or sit on a blanket.', vi: 'Nếu lưng dưới bị cong tròn, hơi chùng gối hoặc ngồi lên một tấm chăn.' },
+    { id: 'staff-pose__cue-9', kind: 'transition', en: 'Inhale here, and as you exhale, reach forward for your toes.', vi: 'Hít vào ở đây, và khi thở ra, vươn người về trước nắm lấy ngón chân.' },
+  ],
+  modifications: [
+    { id: 'staff-pose__mod-1', en: 'Sit on a folded blanket so your pelvis can tip forward and your back can lift.', vi: 'Ngồi lên một tấm chăn gấp để khung chậu nghiêng về trước và lưng dễ vươn lên.', props: ['blanket'] },
+    { id: 'staff-pose__mod-2', en: 'Bend your knees slightly if the backs of your legs are tight.', vi: 'Hơi chùng gối nếu mặt sau chân bị căng.', props: [] },
+    { id: 'staff-pose__mod-3', en: 'Sit with your back against a wall to feel what sitting tall means.', vi: 'Ngồi tựa lưng vào tường để cảm nhận thế nào là ngồi thẳng.', props: ['wall'] },
+  ],
+  safety: [
+    { id: 'staff-pose__safe-1', en: 'If your lower back aches, sit higher on a blanket rather than forcing your legs straight.', vi: 'Nếu lưng dưới mỏi, hãy ngồi cao hơn trên chăn thay vì cố duỗi thẳng chân.' },
+    { id: 'staff-pose__safe-2', en: 'Keep your knees straight but not locked; keep the front of your thighs working.', vi: 'Giữ gối thẳng nhưng không khoá cứng; giữ mặt trước đùi làm việc.' },
+  ],
+  muscles: {
+    working: ['quadriceps', 'iliopsoas', 'erector-spinae', 'tibialis-anterior'],
+    lengthening: ['hamstrings', 'calves'],
+  },
+  joints: ['hip-joint', 'knee', 'sit-bones', 'lumbar-spine'],
+  transitionsTo: ['seated-forward-fold'],
+  figure: 'staff-pose',
+}

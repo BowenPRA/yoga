@@ -1,0 +1,58 @@
+export const tortoisePose = {
+  id: 'tortoise-pose',
+  styles: ['ashtanga'],
+  family: 'forward-fold',
+  level: 'strong',
+  en: 'Tortoise Pose',
+  aka: ['Sleeping Tortoise'],
+  sa: 'Kūrmāsana, Supta Kūrmāsana',
+  say: 'koor-MAH-sah-nah, SOOP-tah koor-MAH-sah-nah',
+  vi: 'Con rùa',
+  saNote: {
+    en: 'Two poses in one: Tortoise, then Sleeping Tortoise, where your hands bind behind your back and your feet cross in front of your head.',
+    vi: 'Hai tư thế trong một: Con rùa, rồi Rùa ngủ, khi hai tay khoá sau lưng và hai bàn chân bắt chéo trước đầu.',
+  },
+  ashtanga: {
+    series: 'primary',
+    section: 'seated',
+    position: 30,
+    breaths: 5,
+    drishti: 'third-eye',
+    note: {
+      en: 'Follows Shoulder-Pressing Pose, and again you jump in from Downward Dog. Tortoise is held in the seventh vinyasa and Sleeping Tortoise in the eighth, five breaths each.',
+      vi: 'Đứng sau Ép vai, và bạn lại nhảy vào thế từ Chó úp mặt. Con rùa được giữ ở vinyasa thứ bảy và Rùa ngủ ở vinyasa thứ tám, mỗi tư thế năm nhịp thở.',
+    },
+  },
+  breath: {
+    en: 'Exhale as you slide your arms under your knees and lower your chest. Stay for five breaths in each pose, breathing into your back.',
+    vi: 'Thở ra khi luồn tay dưới gối và hạ ngực xuống. Giữ năm nhịp thở ở mỗi tư thế, thở vào lưng.',
+  },
+  cues: [
+    { id: 'tortoise-pose__cue-1', kind: 'transition', en: 'From Downward Dog, jump your feet around your arms and sit down, knees bent.', vi: 'Từ Chó úp mặt, nhảy hai bàn chân ra ngoài hai tay và ngồi xuống, gối co.' },
+    { id: 'tortoise-pose__cue-2', kind: 'alignment', en: 'Slide your arms under your knees and reach them out to the sides, palms down.', vi: 'Luồn hai tay dưới gối và vươn sang hai bên, lòng bàn tay úp xuống.' },
+    { id: 'tortoise-pose__cue-3', kind: 'alignment', en: 'Exhale, and lower your chest toward the floor.', vi: 'Thở ra, và hạ ngực về phía sàn.' },
+    { id: 'tortoise-pose__cue-4', kind: 'alignment', en: 'Straighten your legs, pressing your heels forward and away.', vi: 'Duỗi thẳng chân, đẩy gót chân ra xa về phía trước.' },
+    { id: 'tortoise-pose__cue-5', kind: 'alignment', en: 'Rest your chin or your forehead on the floor.', vi: 'Đặt cằm hoặc trán xuống sàn.' },
+    { id: 'tortoise-pose__cue-6', kind: 'soften', en: 'Let your back round and soften. Don’t force your chest down.', vi: 'Để lưng cong tròn và mềm ra. Đừng ép ngực xuống.' },
+    { id: 'tortoise-pose__cue-7', kind: 'breath', en: 'Stay for five breaths, breathing into your back.', vi: 'Giữ năm nhịp thở, thở vào lưng.' },
+    { id: 'tortoise-pose__cue-8', kind: 'safety', en: 'If you feel strain in your lower back or your knees, keep your knees bent.', vi: 'Nếu thấy căng ở lưng dưới hoặc ở gối, hãy giữ gối co.' },
+    { id: 'tortoise-pose__cue-9', kind: 'transition', en: 'For Sleeping Tortoise, bend your knees, bind your hands behind your back, and cross your feet.', vi: 'Vào Rùa ngủ: co gối, khoá hai tay sau lưng và bắt chéo hai bàn chân.' },
+  ],
+  modifications: [
+    { id: 'tortoise-pose__mod-1', en: 'Keep your knees bent and your heels on the floor.', vi: 'Giữ gối co và gót chân trên sàn.', props: [] },
+    { id: 'tortoise-pose__mod-2', en: 'Rest your chest on a bolster or a folded blanket.', vi: 'Tựa ngực lên gối ôm hoặc chăn gấp.', props: ['bolster', 'blanket'] },
+    { id: 'tortoise-pose__mod-3', en: 'For Sleeping Tortoise, hold a strap behind your back and keep your feet on the floor.', vi: 'Với Rùa ngủ, cầm dây tập sau lưng và giữ bàn chân trên sàn.', props: ['strap'] },
+  ],
+  safety: [
+    { id: 'tortoise-pose__safe-1', en: 'Don’t force the bind or the crossed feet; your lower back takes the strain.', vi: 'Đừng ép khoá tay hay bắt chéo chân; lưng dưới sẽ phải chịu lực.' },
+    { id: 'tortoise-pose__safe-2', en: 'If you have a lower back injury, stay in Tortoise with your knees bent, and skip Sleeping Tortoise.', vi: 'Nếu lưng dưới đang bị chấn thương, chỉ giữ Con rùa với gối co, và bỏ qua Rùa ngủ.' },
+    { id: 'tortoise-pose__safe-3', en: 'If you’re pregnant, skip this pose.', vi: 'Nếu bạn đang mang thai, hãy bỏ qua tư thế này.' },
+  ],
+  muscles: {
+    working: ['quadriceps'],
+    lengthening: ['hamstrings', 'erector-spinae', 'gluteus-maximus'],
+  },
+  joints: ['hip-joint', 'lumbar-spine', 'shoulder-joint', 'knee'],
+  transitionsTo: ['embryo-pose'],
+  figure: 'tortoise-pose',
+}
