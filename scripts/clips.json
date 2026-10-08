@@ -13840,6 +13840,18 @@
   "kind": "safety"
  },
  {
+  "id": "phrase__welcome-7",
+  "text": "Hi, welcome! Have you practised yoga before?",
+  "lang": "en",
+  "kind": "phrase-welcome"
+ },
+ {
+  "id": "phrase__welcome-8",
+  "text": "Grab a mat and a block, and find a spot wherever you like.",
+  "lang": "en",
+  "kind": "phrase-welcome"
+ },
+ {
   "id": "phrase__welcome-1",
   "text": "Welcome, everyone. Find a comfortable seat and let your eyes close.",
   "lang": "en",
@@ -13874,6 +13886,72 @@
   "text": "Today we’ll move slowly and spend some time in the hips.",
   "lang": "en",
   "kind": "phrase-welcome"
+ },
+ {
+  "id": "phrase__inj-1",
+  "text": "Is there anything I should know about your body today? Any injuries or pain?",
+  "lang": "en",
+  "kind": "phrase-injuries-and-consent"
+ },
+ {
+  "id": "phrase__inj-2",
+  "text": "If you’d rather not say it out loud, come and tell me quietly.",
+  "lang": "en",
+  "kind": "phrase-injuries-and-consent"
+ },
+ {
+  "id": "phrase__inj-3",
+  "text": "If you’re pregnant, let me know, and I’ll give you options as we go.",
+  "lang": "en",
+  "kind": "phrase-injuries-and-consent"
+ },
+ {
+  "id": "phrase__inj-4",
+  "text": "Where exactly do you feel it? Can you show me?",
+  "lang": "en",
+  "kind": "phrase-injuries-and-consent"
+ },
+ {
+  "id": "phrase__inj-5",
+  "text": "I sometimes offer gentle hands-on adjustments during class.",
+  "lang": "en",
+  "kind": "phrase-injuries-and-consent"
+ },
+ {
+  "id": "phrase__inj-6",
+  "text": "If you’d rather not be touched today, that’s completely fine. Just tell me.",
+  "lang": "en",
+  "kind": "phrase-injuries-and-consent"
+ },
+ {
+  "id": "phrase__inj-7",
+  "text": "I’m going to press gently on your sacrum. Tell me if you’d like more or less.",
+  "lang": "en",
+  "kind": "phrase-injuries-and-consent"
+ },
+ {
+  "id": "phrase__inj-8",
+  "text": "Is this pressure okay?",
+  "lang": "en",
+  "kind": "phrase-injuries-and-consent"
+ },
+ {
+  "id": "phrase__inj-9",
+  "text": "No problem at all. Thank you for telling me.",
+  "lang": "en",
+  "kind": "phrase-injuries-and-consent"
+ },
+ {
+  "id": "phrase__inj-10",
+  "text": "With that knee, I’d skip this one today. Let’s try this instead.",
+  "lang": "en",
+  "kind": "phrase-injuries-and-consent"
+ },
+ {
+  "id": "phrase__inj-11",
+  "text": "I’m not a doctor, so please check with your physio first.",
+  "lang": "en",
+  "kind": "phrase-injuries-and-consent"
  },
  {
   "id": "phrase__breath-1",
@@ -13942,6 +14020,24 @@
   "kind": "phrase-transitions"
  },
  {
+  "id": "phrase__trans-9",
+  "text": "Take a vinyasa, or skip it and rest in Child’s Pose.",
+  "lang": "en",
+  "kind": "phrase-transitions"
+ },
+ {
+  "id": "phrase__trans-10",
+  "text": "Five breaths here. Inhale, exhale, that’s one.",
+  "lang": "en",
+  "kind": "phrase-transitions"
+ },
+ {
+  "id": "phrase__trans-11",
+  "text": "Last breath here. Inhale fully, exhale completely.",
+  "lang": "en",
+  "kind": "phrase-transitions"
+ },
+ {
   "id": "phrase__trans-4",
   "text": "Let’s come into Sleeping Swan.",
   "lang": "en",
@@ -13972,6 +14068,60 @@
   "kind": "phrase-transitions"
  },
  {
+  "id": "phrase__props-1",
+  "text": "Today you’ll need two blocks, a strap and a bolster.",
+  "lang": "en",
+  "kind": "phrase-props-and-options"
+ },
+ {
+  "id": "phrase__props-2",
+  "text": "Bring the floor closer. Place a block under each hand.",
+  "lang": "en",
+  "kind": "phrase-props-and-options"
+ },
+ {
+  "id": "phrase__props-3",
+  "text": "If your hamstrings are tight, sit up on a folded blanket.",
+  "lang": "en",
+  "kind": "phrase-props-and-options"
+ },
+ {
+  "id": "phrase__props-4",
+  "text": "Loop the strap around the ball of your foot, and hold it with both hands.",
+  "lang": "en",
+  "kind": "phrase-props-and-options"
+ },
+ {
+  "id": "phrase__props-5",
+  "text": "Slide a bolster under your knees and let your legs relax.",
+  "lang": "en",
+  "kind": "phrase-props-and-options"
+ },
+ {
+  "id": "phrase__props-6",
+  "text": "Use the wall for balance. Your fingertips are enough.",
+  "lang": "en",
+  "kind": "phrase-props-and-options"
+ },
+ {
+  "id": "phrase__props-7",
+  "text": "Add a blanket under your knees if they feel sensitive.",
+  "lang": "en",
+  "kind": "phrase-props-and-options"
+ },
+ {
+  "id": "phrase__props-8",
+  "text": "You can also stay right here. This is the full pose for you today.",
+  "lang": "en",
+  "kind": "phrase-props-and-options"
+ },
+ {
+  "id": "phrase__props-9",
+  "text": "Props aren’t cheating. They bring the pose to you.",
+  "lang": "en",
+  "kind": "phrase-props-and-options"
+ },
+ {
   "id": "phrase__safe-1",
   "text": "If this is too much, bend your knees as much as you need.",
   "lang": "en",
@@ -13985,7 +14135,7 @@
  },
  {
   "id": "phrase__safe-3",
-  "text": "Sensation is fine. Sharp pain is not. If it’s sharp, come out.",
+  "text": "Sensation is fine; sharp pain is not. If it’s sharp, come out.",
   "lang": "en",
   "kind": "phrase-safety"
  },
@@ -14020,8 +14170,20 @@
   "kind": "phrase-safety"
  },
  {
+  "id": "phrase__yin-7",
+  "text": "Come into the shape slowly. Stop at the first place you feel a stretch.",
+  "lang": "en",
+  "kind": "phrase-yin"
+ },
+ {
   "id": "phrase__yin-1",
   "text": "Find your edge. Enough to feel it, not so much that you tense against it.",
+  "lang": "en",
+  "kind": "phrase-yin"
+ },
+ {
+  "id": "phrase__yin-8",
+  "text": "Now be still. Let the pose come to you.",
   "lang": "en",
   "kind": "phrase-yin"
  },
@@ -14045,7 +14207,19 @@
  },
  {
   "id": "phrase__yin-5",
-  "text": "Halfway there. If you’d like to go a little deeper, you can. You don’t have to.",
+  "text": "Halfway there. If you’d like to go a little deeper, you can, but you don’t have to.",
+  "lang": "en",
+  "kind": "phrase-yin"
+ },
+ {
+  "id": "phrase__yin-9",
+  "text": "Tingling, numbness or sharp pain are signs to come out.",
+  "lang": "en",
+  "kind": "phrase-yin"
+ },
+ {
+  "id": "phrase__yin-10",
+  "text": "Use your hands to help your legs out, slowly.",
   "lang": "en",
   "kind": "phrase-yin"
  },
@@ -14056,8 +14230,400 @@
   "kind": "phrase-yin"
  },
  {
+  "id": "phrase__count-1",
+  "text": "Ekam, inhale, reach your arms up.",
+  "lang": "en",
+  "say": "EH-kum",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__count-2",
+  "text": "Dve, exhale, fold forward.",
+  "lang": "en",
+  "say": "DVAY",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__count-3",
+  "text": "Trini, inhale, look up.",
+  "lang": "en",
+  "say": "TREE-nee",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__count-4",
+  "text": "Chatvari, exhale, jump back to Chaturanga.",
+  "lang": "en",
+  "say": "chut-VAH-ree",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__count-5",
+  "text": "Pancha, inhale, Upward Dog.",
+  "lang": "en",
+  "say": "PUN-chuh",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__count-6",
+  "text": "Shat, exhale, Downward Dog. Five breaths.",
+  "lang": "en",
+  "say": "SHUT",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__count-7",
+  "text": "Sapta, inhale, jump forward, look up.",
+  "lang": "en",
+  "say": "SUP-tuh",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__count-8",
+  "text": "Ashtau, exhale, fold.",
+  "lang": "en",
+  "say": "USH-tow",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__count-9",
+  "text": "Nava, inhale, come all the way up.",
+  "lang": "en",
+  "say": "NUH-vuh",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__count-samasthitih",
+  "text": "Exhale, samasthitih. Stand still, arms by your sides.",
+  "lang": "en",
+  "say": "suh-muh-STI-tee-hee",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__count-10",
+  "text": "Dasha, exhale, Downward Dog.",
+  "lang": "en",
+  "say": "DUH-shuh",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__count-11",
+  "text": "Ekadasha, inhale, left foot forward, Warrior One.",
+  "lang": "en",
+  "say": "eh-KAH-duh-shuh",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__count-12",
+  "text": "Dvadasha, exhale, Chaturanga.",
+  "lang": "en",
+  "say": "DVAH-duh-shuh",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__count-13",
+  "text": "Trayodasha, inhale, Upward Dog.",
+  "lang": "en",
+  "say": "truh-YOH-duh-shuh",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__count-14",
+  "text": "Chaturdasha, exhale, Downward Dog. Five breaths.",
+  "lang": "en",
+  "say": "chuh-TOOR-duh-shuh",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__count-15",
+  "text": "Panchadasha, inhale, jump forward, look up.",
+  "lang": "en",
+  "say": "PUN-chuh-duh-shuh",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__count-16",
+  "text": "Shodasha, exhale, fold.",
+  "lang": "en",
+  "say": "SHOH-duh-shuh",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__count-17",
+  "text": "Saptadasha, inhale, bend your knees, arms up.",
+  "lang": "en",
+  "say": "SUP-tuh-duh-shuh",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__count-18",
+  "text": "Ashtadasha, inhale, head down.",
+  "lang": "en",
+  "say": "ush-TAH-duh-shuh",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__count-19",
+  "text": "Ekonavimshatih, exhale, leg to the left.",
+  "lang": "en",
+  "say": "eh-koh-nuh-VIM-shuh-tee-hee",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__count-20",
+  "text": "Vimshatih, inhale, leg back to the centre.",
+  "lang": "en",
+  "say": "VIM-shuh-tee-hee",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__count-21",
+  "text": "Ekavimshatih, exhale, chin to your shin.",
+  "lang": "en",
+  "say": "eh-kuh-VIM-shuh-tee-hee",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__count-22",
+  "text": "Dvavimshatih, inhale, head down.",
+  "lang": "en",
+  "say": "dvah-VIM-shuh-tee-hee",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__count-23",
+  "text": "Trayovimshatih, exhale, lower your leg.",
+  "lang": "en",
+  "say": "truh-yoh-VIM-shuh-tee-hee",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__count-24",
+  "text": "Chaturvimshatih, inhale, Chakrasana, roll back.",
+  "lang": "en",
+  "say": "chuh-toor-VIM-shuh-tee-hee",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__count-25",
+  "text": "Panchavimshatih, inhale, Upward Dog.",
+  "lang": "en",
+  "say": "pun-chuh-VIM-shuh-tee-hee",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__count-26",
+  "text": "Shadvimshatih, exhale, Downward Dog.",
+  "lang": "en",
+  "say": "shud-VIM-shuh-tee-hee",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__drishti-nasagra",
+  "text": "Nasagra drishti. Gaze at the tip of your nose.",
+  "lang": "en",
+  "say": "nah-SAH-gruh",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__drishti-bhrumadhya",
+  "text": "Bhrumadhya drishti. Gaze between your eyebrows.",
+  "lang": "en",
+  "say": "broo-MUD-yuh",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__drishti-nabhi",
+  "text": "Nabhi drishti. Gaze toward your navel.",
+  "lang": "en",
+  "say": "NAH-bee",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__drishti-hastagra",
+  "text": "Hastagra drishti. Gaze at your hand.",
+  "lang": "en",
+  "say": "hus-TAH-gruh",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__drishti-padayoragra",
+  "text": "Padayoragra drishti. Gaze at your toes.",
+  "lang": "en",
+  "say": "PAH-duh-yoh-RUG-ruh",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__drishti-parsva",
+  "text": "Parshva drishti. Gaze far to the side.",
+  "lang": "en",
+  "say": "PARSH-vuh",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__drishti-angustha",
+  "text": "Angushtha drishti. Gaze at your thumbs.",
+  "lang": "en",
+  "say": "un-GOOSH-tuh",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__drishti-urdhva",
+  "text": "Urdhva drishti. Gaze up.",
+  "lang": "en",
+  "say": "OORD-vuh",
+  "kind": "phrase-ashtanga-count"
+ },
+ {
+  "id": "phrase__mantra-open-1",
+  "text": "Om. Vande gurunam charanaravinde, sandarshita svatma sukhavabodhe.",
+  "lang": "sa",
+  "say": "OHM. VUN-day goo-ROO-naam chuh-ruh-NAH-ruh-VIN-day, sun-DAR-shi-tuh SVAHT-muh soo-KAH-vuh-BOH-day",
+  "kind": "phrase-ashtanga-count-chant"
+ },
+ {
+  "id": "phrase__mantra-open-2",
+  "text": "Nihshreyase jangalikayamane, samsara halahala mohashantyai.",
+  "lang": "sa",
+  "say": "nih-SHRAY-yuh-say JAHN-guh-lee-KAH-yuh-MAH-nay, sum-SAH-ruh HAH-luh-huh-luh MOH-huh-SHAHN-tyai",
+  "kind": "phrase-ashtanga-count-chant"
+ },
+ {
+  "id": "phrase__mantra-open-3",
+  "text": "Abahu purushakaram, shankha chakrasi dharinam.",
+  "lang": "sa",
+  "say": "AH-bah-hoo poo-roo-SHAH-kah-rum, SHUNG-kuh-CHUK-rah-see DAH-ree-num",
+  "kind": "phrase-ashtanga-count-chant"
+ },
+ {
+  "id": "phrase__mantra-open-4",
+  "text": "Sahasra shirasam shvetam, pranamami patanjalim. Om.",
+  "lang": "sa",
+  "say": "suh-HUS-ruh shee-RUH-sum SHVAY-tum, pruh-nuh-MAH-mee puh-TUN-juh-lim. OHM.",
+  "kind": "phrase-ashtanga-count-chant"
+ },
+ {
+  "id": "phrase__mantra-close-1",
+  "text": "Om. Svasti prajabhyah paripalayantam, nyayena margena mahim mahishah.",
+  "lang": "sa",
+  "say": "OHM. SVUS-tee pruh-JAH-bhyuh-huh puh-ree-PAH-luh-yun-taam, NYAH-yay-nuh MAR-gay-nuh muh-HEEM muh-HEE-shah-hah",
+  "kind": "phrase-ashtanga-count-chant"
+ },
+ {
+  "id": "phrase__mantra-close-2",
+  "text": "Go brahmanebhyah shubham astu nityam, lokah samastah sukhino bhavantu.",
+  "lang": "sa",
+  "say": "GOH BRAH-muh-NAY-bhyuh-huh SHOO-bum US-too NIT-yum, LOH-kah-hah suh-MUS-tah-hah SOO-khee-noh BUH-vun-too",
+  "kind": "phrase-ashtanga-count-chant"
+ },
+ {
+  "id": "phrase__mantra-close-3",
+  "text": "Om, shantih, shantih, shantih.",
+  "lang": "sa",
+  "say": "OHM, SHAHN-tee-hee, SHAHN-tee-hee, SHAHN-tee-hee",
+  "kind": "phrase-ashtanga-count-chant"
+ },
+ {
+  "id": "phrase__pran-1",
+  "text": "Let’s begin with ujjayi breath. Breathe in and out through your nose.",
+  "lang": "en",
+  "say": "oo-JAH-yee",
+  "kind": "phrase-pranayama"
+ },
+ {
+  "id": "phrase__pran-2",
+  "text": "Gently narrow the back of your throat, and listen for a soft ocean sound.",
+  "lang": "en",
+  "kind": "phrase-pranayama"
+ },
+ {
+  "id": "phrase__pran-3",
+  "text": "Three-part breath. Fill the belly, then the ribs, then the chest.",
+  "lang": "en",
+  "kind": "phrase-pranayama"
+ },
+ {
+  "id": "phrase__pran-4",
+  "text": "Exhale from the top down: chest, ribs, belly.",
+  "lang": "en",
+  "kind": "phrase-pranayama"
+ },
+ {
+  "id": "phrase__pran-5",
+  "text": "For nadi shodhana, fold your index and middle fingers into your right palm.",
+  "lang": "en",
+  "say": "NAH-dee SHOH-duh-nuh",
+  "kind": "phrase-pranayama"
+ },
+ {
+  "id": "phrase__pran-6",
+  "text": "Close your right nostril with your thumb, and inhale through the left.",
+  "lang": "en",
+  "kind": "phrase-pranayama"
+ },
+ {
+  "id": "phrase__pran-7",
+  "text": "Close the left with your ring finger, open the right, and exhale.",
+  "lang": "en",
+  "kind": "phrase-pranayama"
+ },
+ {
+  "id": "phrase__pran-8",
+  "text": "Inhale right, switch, exhale left. That’s one round.",
+  "lang": "en",
+  "kind": "phrase-pranayama"
+ },
+ {
+  "id": "phrase__pran-9",
+  "text": "Box breathing: inhale for four, hold for four, exhale for four, hold for four.",
+  "lang": "en",
+  "kind": "phrase-pranayama"
+ },
+ {
+  "id": "phrase__pran-10",
+  "text": "If holding the breath is uncomfortable, simply leave out the holds.",
+  "lang": "en",
+  "kind": "phrase-pranayama"
+ },
+ {
+  "id": "phrase__pran-11",
+  "text": "Let go of the technique, and let the breath be natural again.",
+  "lang": "en",
+  "kind": "phrase-pranayama"
+ },
+ {
+  "id": "phrase__sav-8",
+  "text": "Come down onto your back, and let your feet fall open.",
+  "lang": "en",
+  "kind": "phrase-savasana"
+ },
+ {
+  "id": "phrase__sav-9",
+  "text": "Rest your arms a little away from your body, palms facing up.",
+  "lang": "en",
+  "kind": "phrase-savasana"
+ },
+ {
+  "id": "phrase__sav-10",
+  "text": "If your lower back feels tight, slide a bolster under your knees.",
+  "lang": "en",
+  "kind": "phrase-savasana"
+ },
+ {
+  "id": "phrase__sav-11",
+  "text": "Close your eyes, and let them rest.",
+  "lang": "en",
+  "kind": "phrase-savasana"
+ },
+ {
   "id": "phrase__sav-1",
   "text": "Let your whole body become heavy.",
+  "lang": "en",
+  "kind": "phrase-savasana"
+ },
+ {
+  "id": "phrase__sav-12",
+  "text": "Feel the floor under the back of your head, your shoulders, your hips, your heels.",
   "lang": "en",
   "kind": "phrase-savasana"
  },
@@ -14068,8 +14634,20 @@
   "kind": "phrase-savasana"
  },
  {
+  "id": "phrase__sav-13",
+  "text": "Let your shoulders melt away from your ears. Let your belly be soft.",
+  "lang": "en",
+  "kind": "phrase-savasana"
+ },
+ {
   "id": "phrase__sav-3",
   "text": "Let the breath return to its natural rhythm.",
+  "lang": "en",
+  "kind": "phrase-savasana"
+ },
+ {
+  "id": "phrase__sav-14",
+  "text": "If thoughts come, let them pass like clouds.",
   "lang": "en",
   "kind": "phrase-savasana"
  },
@@ -14080,8 +14658,20 @@
   "kind": "phrase-savasana"
  },
  {
+  "id": "phrase__sav-15",
+  "text": "Just rest.",
+  "lang": "en",
+  "kind": "phrase-savasana"
+ },
+ {
   "id": "phrase__sav-5",
   "text": "Begin to deepen your breath. Wiggle your fingers and toes.",
+  "lang": "en",
+  "kind": "phrase-savasana"
+ },
+ {
+  "id": "phrase__sav-16",
+  "text": "Stretch your arms overhead, and take a long stretch through your whole body.",
   "lang": "en",
   "kind": "phrase-savasana"
  },
@@ -14104,6 +14694,12 @@
   "kind": "phrase-closing"
  },
  {
+  "id": "phrase__close-6",
+  "text": "Take a moment to notice how you feel now.",
+  "lang": "en",
+  "kind": "phrase-closing"
+ },
+ {
   "id": "phrase__close-2",
   "text": "Thank you for practising with me today.",
   "lang": "en",
@@ -14112,6 +14708,12 @@
  {
   "id": "phrase__close-3",
   "text": "The light in me honours the light in you. Namaste.",
+  "lang": "en",
+  "kind": "phrase-closing"
+ },
+ {
+  "id": "phrase__close-7",
+  "text": "Take this calm with you into the rest of your day.",
   "lang": "en",
   "kind": "phrase-closing"
  },
@@ -14126,6 +14728,988 @@
   "text": "How did that feel? Any questions before you go?",
   "lang": "en",
   "kind": "phrase-closing"
+ },
+ {
+  "id": "phrase__after-1",
+  "text": "How was that for you today?",
+  "lang": "en",
+  "kind": "phrase-after-class"
+ },
+ {
+  "id": "phrase__after-2",
+  "text": "Two or three times a week is a great start. A little, often, is better than a lot, once.",
+  "lang": "en",
+  "kind": "phrase-after-class"
+ },
+ {
+  "id": "phrase__after-3",
+  "text": "Tight hamstrings are very common. Bend your knees as much as you need, and they’ll open with time.",
+  "lang": "en",
+  "kind": "phrase-after-class"
+ },
+ {
+  "id": "phrase__after-4",
+  "text": "Some muscle soreness tomorrow is normal. Sharp pain or joint pain is not, so tell me if you feel that.",
+  "lang": "en",
+  "kind": "phrase-after-class"
+ },
+ {
+  "id": "phrase__after-5",
+  "text": "Feeling a little emotional after hip openers is normal too.",
+  "lang": "en",
+  "kind": "phrase-after-class"
+ },
+ {
+  "id": "phrase__after-6",
+  "text": "Sorry, could you say that again, a little more slowly?",
+  "lang": "en",
+  "kind": "phrase-after-class"
+ },
+ {
+  "id": "phrase__after-7",
+  "text": "Good question. I’m not sure, but I’ll find out and tell you next time.",
+  "lang": "en",
+  "kind": "phrase-after-class"
+ },
+ {
+  "id": "phrase__after-8",
+  "text": "Drink some water, and take it easy tonight.",
+  "lang": "en",
+  "kind": "phrase-after-class"
+ },
+ {
+  "id": "phrase__after-9",
+  "text": "Thanks for coming. See you on Thursday!",
+  "lang": "en",
+  "kind": "phrase-after-class"
+ },
+ {
+  "id": "phrase__med-1",
+  "text": "Sit comfortably, with your back straight but not stiff, and gently close your eyes.",
+  "lang": "en",
+  "kind": "phrase-meditation"
+ },
+ {
+  "id": "phrase__med-2",
+  "text": "Let the body settle. Let it become still.",
+  "lang": "en",
+  "kind": "phrase-meditation"
+ },
+ {
+  "id": "phrase__med-3",
+  "text": "Bring your attention to the entrance of the nostrils.",
+  "lang": "en",
+  "kind": "phrase-meditation"
+ },
+ {
+  "id": "phrase__med-4",
+  "text": "Feel the breath coming in, and the breath going out. Just the natural breath.",
+  "lang": "en",
+  "kind": "phrase-meditation"
+ },
+ {
+  "id": "phrase__med-5",
+  "text": "Don’t control it. Long or short, simply know it as it is.",
+  "lang": "en",
+  "kind": "phrase-meditation"
+ },
+ {
+  "id": "phrase__med-6",
+  "text": "Notice the touch of the breath below the nostrils, above the upper lip.",
+  "lang": "en",
+  "kind": "phrase-meditation"
+ },
+ {
+  "id": "phrase__med-7",
+  "text": "If the mind wanders, that’s fine. Gently note “thinking”, and come back to the breath.",
+  "lang": "en",
+  "kind": "phrase-meditation"
+ },
+ {
+  "id": "phrase__med-8",
+  "text": "Note whatever takes you away: hearing, planning, remembering. Then return.",
+  "lang": "en",
+  "kind": "phrase-meditation"
+ },
+ {
+  "id": "phrase__med-9",
+  "text": "There’s no need to be frustrated. Every return is the practice.",
+  "lang": "en",
+  "kind": "phrase-meditation"
+ },
+ {
+  "id": "phrase__med-10",
+  "text": "Now move your attention to the top of your head. Feel any sensation there.",
+  "lang": "en",
+  "kind": "phrase-meditation"
+ },
+ {
+  "id": "phrase__med-11",
+  "text": "Slowly move down: the face, the neck, the shoulders, the arms and hands.",
+  "lang": "en",
+  "kind": "phrase-meditation"
+ },
+ {
+  "id": "phrase__med-12",
+  "text": "The chest, the back, the belly. The hips, the legs, the feet.",
+  "lang": "en",
+  "kind": "phrase-meditation"
+ },
+ {
+  "id": "phrase__med-13",
+  "text": "Warmth, tingling, pressure, or no sensation at all. Just observe.",
+  "lang": "en",
+  "kind": "phrase-meditation"
+ },
+ {
+  "id": "phrase__med-14",
+  "text": "Pleasant or unpleasant, every sensation changes. Watch it with a calm, balanced mind.",
+  "lang": "en",
+  "kind": "phrase-meditation"
+ },
+ {
+  "id": "phrase__med-15",
+  "text": "Now let go of the technique, and let a feeling of goodwill fill the body.",
+  "lang": "en",
+  "kind": "phrase-meditation"
+ },
+ {
+  "id": "phrase__med-16",
+  "text": "May I be happy and peaceful. May all beings be happy.",
+  "lang": "en",
+  "kind": "phrase-meditation"
+ },
+ {
+  "id": "phrase__med-17",
+  "text": "Take a moment before you move. Then slowly open your eyes.",
+  "lang": "en",
+  "kind": "phrase-meditation"
+ },
+ {
+  "id": "phrase__phil-2",
+  "text": "The eight limbs are yama, niyama, asana, pranayama, pratyahara, dharana, dhyana and samadhi.",
+  "lang": "en",
+  "say": "YUH-muh, nee-YUH-muh, AH-suh-nuh, PRAH-nah-YAH-muh, pruh-tyah-HAH-ruh, DAH-ruh-nah, DYAH-nuh, suh-MAH-dee",
+  "kind": "phrase-philosophy-in-class"
+ },
+ {
+  "id": "phrase__phil-3",
+  "text": "Patanjali defines yoga as the stilling of the movements of the mind.",
+  "lang": "en",
+  "say": "puh-TUN-juh-lee",
+  "kind": "phrase-philosophy-in-class"
+ },
+ {
+  "id": "phrase__phil-4",
+  "text": "Our theme today is ahimsa, non-harming. Let it begin with how you treat your own body.",
+  "lang": "en",
+  "kind": "phrase-philosophy-in-class"
+ },
+ {
+  "id": "phrase__phil-5",
+  "text": "Today’s theme is santosha, contentment. Can you be happy with the pose you have today?",
+  "lang": "en",
+  "kind": "phrase-philosophy-in-class"
+ },
+ {
+  "id": "phrase__phil-6",
+  "text": "Yoga is not about the shape. It’s about how you meet yourself in the shape.",
+  "lang": "en",
+  "kind": "phrase-philosophy-in-class"
+ },
+ {
+  "id": "phrase__phil-7",
+  "text": "Patanjali says a pose should be sthira and sukha: steady and easy.",
+  "lang": "en",
+  "say": "STEE-ruh, SOO-kuh",
+  "kind": "phrase-philosophy-in-class"
+ },
+ {
+  "id": "phrase__phil-8",
+  "text": "Where the eyes go, the mind follows. That’s why we use a drishti.",
+  "lang": "en",
+  "kind": "phrase-philosophy-in-class"
+ },
+ {
+  "id": "phrase__phil-9",
+  "text": "Mula bandha is a light lift of the pelvic floor that supports the spine from below.",
+  "lang": "en",
+  "kind": "phrase-philosophy-in-class"
+ },
+ {
+  "id": "phrase__phil-10",
+  "text": "Uddiyana bandha draws the lower belly in and up, and makes the body feel lighter.",
+  "lang": "en",
+  "say": "oo-dee-YAH-nuh",
+  "kind": "phrase-philosophy-in-class"
+ },
+ {
+  "id": "phrase__phil-11",
+  "text": "Jalandhara bandha is the chin lock, used mainly when holding the breath in pranayama.",
+  "lang": "en",
+  "say": "JAH-lun-duh-ruh",
+  "kind": "phrase-philosophy-in-class"
+ },
+ {
+  "id": "phrase__phil-12",
+  "text": "As Pattabhi Jois said: practise, and all is coming.",
+  "lang": "en",
+  "say": "puh-TAH-bee JOYCE",
+  "kind": "phrase-philosophy-in-class"
+ },
+ {
+  "id": "phrase__sa-asana",
+  "text": "asana",
+  "lang": "sa",
+  "say": "AH-suh-nuh",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-asana__inclass",
+  "text": "In every asana, look for both effort and ease.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-pranayama",
+  "text": "pranayama",
+  "lang": "sa",
+  "say": "PRAH-nah-YAH-muh",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-pranayama__inclass",
+  "text": "Now we’ll take a few minutes of pranayama, simple breathing practice.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-drishti",
+  "text": "drishti",
+  "lang": "sa",
+  "say": "DRISH-tee",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-drishti__inclass",
+  "text": "Find your drishti, a still point to rest your eyes on.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-bandha",
+  "text": "bandha",
+  "lang": "sa",
+  "say": "BUN-duh",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-bandha__inclass",
+  "text": "Engage your bandhas gently. Not a squeeze, just a lift.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-mula-bandha",
+  "text": "mula bandha",
+  "lang": "sa",
+  "say": "MOO-luh BUN-duh",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-mula-bandha__inclass",
+  "text": "Gently lift the pelvic floor. That is mula bandha.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-uddiyana-bandha",
+  "text": "uddiyana bandha",
+  "lang": "sa",
+  "say": "oo-dee-YAH-nuh BUN-duh",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-uddiyana-bandha__inclass",
+  "text": "Draw your lower belly in and up, just below the navel.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-jalandhara-bandha",
+  "text": "jalandhara bandha",
+  "lang": "sa",
+  "say": "JAH-lun-duh-ruh BUN-duh",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-jalandhara-bandha__inclass",
+  "text": "Lengthen the back of your neck, and draw your chin toward your chest.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-vinyasa",
+  "text": "vinyasa",
+  "lang": "sa",
+  "say": "vin-YAH-suh",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-vinyasa__inclass",
+  "text": "One breath, one movement. That is vinyasa.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-ujjayi",
+  "text": "ujjayi",
+  "lang": "sa",
+  "say": "oo-JAH-yee",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-ujjayi__inclass",
+  "text": "Breathe through your nose, with a soft ocean sound in your throat.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-ashtanga",
+  "text": "ashtanga",
+  "lang": "sa",
+  "say": "ush-TAHNG-guh",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-ashtanga__inclass",
+  "text": "Yoga has eight limbs, and the poses are only one of them.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-yama",
+  "text": "yama",
+  "lang": "sa",
+  "say": "YUH-muh",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-yama__inclass",
+  "text": "The first limb is yama: how we treat others, on the mat and off it.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-ahimsa",
+  "text": "ahimsa",
+  "lang": "sa",
+  "say": "uh-HIM-sah",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-ahimsa__inclass",
+  "text": "Ahimsa in this pose: stay at your edge, not past it.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-satya",
+  "text": "satya",
+  "lang": "sa",
+  "say": "SUT-yuh",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-satya__inclass",
+  "text": "Satya means being honest with yourself about how your body feels today.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-asteya",
+  "text": "asteya",
+  "lang": "sa",
+  "say": "us-TAY-yuh",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-asteya__inclass",
+  "text": "Asteya: don’t take more from your body than it can give today.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-brahmacharya",
+  "text": "brahmacharya",
+  "lang": "sa",
+  "say": "BRUH-muh-CHAR-yuh",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-brahmacharya__inclass",
+  "text": "Brahmacharya on the mat: use the energy you need, and keep the rest.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-aparigraha",
+  "text": "aparigraha",
+  "lang": "sa",
+  "say": "uh-puh-ree-GRUH-huh",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-aparigraha__inclass",
+  "text": "Aparigraha: let go of how the pose looked last week.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-niyama",
+  "text": "niyama",
+  "lang": "sa",
+  "say": "nee-YUH-muh",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-niyama__inclass",
+  "text": "The niyamas turn the practice inward, to how we treat ourselves.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-saucha",
+  "text": "saucha",
+  "lang": "sa",
+  "say": "SHOW-chuh",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-saucha__inclass",
+  "text": "Saucha: a clean mat, and a clear mind.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-santosha",
+  "text": "santosha",
+  "lang": "sa",
+  "say": "sun-TOH-shuh",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-santosha__inclass",
+  "text": "Notice what already feels good in this pose. That is santosha.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-tapas",
+  "text": "tapas",
+  "lang": "sa",
+  "say": "TUH-pus",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-tapas__inclass",
+  "text": "Tapas is the heat of steady practice. Stay one more breath.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-svadhyaya",
+  "text": "svadhyaya",
+  "lang": "sa",
+  "say": "svahd-YAH-yuh",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-svadhyaya__inclass",
+  "text": "Svadhyaya: notice your habits in this pose, without judging them.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-ishvara-pranidhana",
+  "text": "ishvara pranidhana",
+  "lang": "sa",
+  "say": "EESH-vuh-ruh pruh-nee-DAH-nuh",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-ishvara-pranidhana__inclass",
+  "text": "Ishvara pranidhana: do your best, then let go of the result.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-dhyana",
+  "text": "dhyana",
+  "lang": "sa",
+  "say": "DYAH-nuh",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-dhyana__inclass",
+  "text": "Dhyana is meditation: attention that rests without effort.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-samadhi",
+  "text": "samadhi",
+  "lang": "sa",
+  "say": "suh-MAH-dee",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-samadhi__inclass",
+  "text": "Samadhi is the last of the eight limbs. We don’t chase it; we prepare for it.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-chakra",
+  "text": "chakra",
+  "lang": "sa",
+  "say": "CHUK-ruh",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-chakra__inclass",
+  "text": "Bring your attention to the heart centre, the heart chakra.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-mudra",
+  "text": "mudra",
+  "lang": "sa",
+  "say": "MOO-drah",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-mudra__inclass",
+  "text": "Rest your hands in chin mudra, thumb and index finger touching.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-mantra",
+  "text": "mantra",
+  "lang": "sa",
+  "say": "MUN-truh",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-mantra__inclass",
+  "text": "We’ll begin with a short mantra. Listen first, then join in if you like.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-om",
+  "text": "om",
+  "lang": "sa",
+  "say": "OHM (ah-oo-mm)",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-om__inclass",
+  "text": "Let’s chant one Om together. Breathe in, and Om.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-namaste",
+  "text": "namaste",
+  "lang": "sa",
+  "say": "NUH-muh-stay",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-namaste__inclass",
+  "text": "Namaste. Thank you for your practice.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-shanti",
+  "text": "shanti",
+  "lang": "sa",
+  "say": "SHAHN-tee",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-shanti__inclass",
+  "text": "Om, shanti, shanti, shanti. Peace, peace, peace.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-sthira",
+  "text": "sthira",
+  "lang": "sa",
+  "say": "STEE-ruh",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-sthira__inclass",
+  "text": "Find sthira: steady legs, a strong foundation.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-sukha",
+  "text": "sukha",
+  "lang": "sa",
+  "say": "SOO-kuh",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-sukha__inclass",
+  "text": "And sukha: a soft face and an easy breath.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-prana",
+  "text": "prana",
+  "lang": "sa",
+  "say": "PRAH-nuh",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-prana__inclass",
+  "text": "Feel the prana, the life energy, moving with each breath.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__sa-nadi",
+  "text": "nadi",
+  "lang": "sa",
+  "say": "NAH-dee",
+  "kind": "phrase-sanskrit-terms"
+ },
+ {
+  "id": "phrase__sa-nadi__inclass",
+  "text": "Alternate nostril breathing is nadi shodhana: clearing the channels.",
+  "lang": "en",
+  "kind": "phrase-sanskrit-terms-inclass"
+ },
+ {
+  "id": "phrase__pi-anicca",
+  "text": "anicca",
+  "lang": "pi",
+  "say": "uh-NICH-chuh",
+  "kind": "phrase-pali-terms"
+ },
+ {
+  "id": "phrase__pi-anicca__inclass",
+  "text": "Every sensation arises and passes away. Anicca.",
+  "lang": "en",
+  "kind": "phrase-pali-terms-inclass"
+ },
+ {
+  "id": "phrase__pi-dukkha",
+  "text": "dukkha",
+  "lang": "pi",
+  "say": "DOOK-khuh",
+  "kind": "phrase-pali-terms"
+ },
+ {
+  "id": "phrase__pi-dukkha__inclass",
+  "text": "When we cling to what changes, dukkha follows.",
+  "lang": "en",
+  "kind": "phrase-pali-terms-inclass"
+ },
+ {
+  "id": "phrase__pi-anatta",
+  "text": "anattā",
+  "lang": "pi",
+  "say": "uh-NUT-tah",
+  "kind": "phrase-pali-terms"
+ },
+ {
+  "id": "phrase__pi-anatta__inclass",
+  "text": "This sensation is not me, not mine. It is just sensation.",
+  "lang": "en",
+  "kind": "phrase-pali-terms-inclass"
+ },
+ {
+  "id": "phrase__pi-sila",
+  "text": "sīla",
+  "lang": "pi",
+  "say": "SEE-luh",
+  "kind": "phrase-pali-terms"
+ },
+ {
+  "id": "phrase__pi-sila__inclass",
+  "text": "Sila, kind and honest action, is the ground of meditation.",
+  "lang": "en",
+  "kind": "phrase-pali-terms-inclass"
+ },
+ {
+  "id": "phrase__pi-samadhi",
+  "text": "samādhi",
+  "lang": "pi",
+  "say": "suh-MAH-dee",
+  "kind": "phrase-pali-terms"
+ },
+ {
+  "id": "phrase__pi-samadhi__inclass",
+  "text": "Each time you return to the breath, samadhi grows a little stronger.",
+  "lang": "en",
+  "kind": "phrase-pali-terms-inclass"
+ },
+ {
+  "id": "phrase__pi-panna",
+  "text": "paññā",
+  "lang": "pi",
+  "say": "PUN-nyah",
+  "kind": "phrase-pali-terms"
+ },
+ {
+  "id": "phrase__pi-panna__inclass",
+  "text": "Panna is not something we think. It is something we see for ourselves.",
+  "lang": "en",
+  "kind": "phrase-pali-terms-inclass"
+ },
+ {
+  "id": "phrase__pi-metta",
+  "text": "mettā",
+  "lang": "pi",
+  "say": "MET-tah",
+  "kind": "phrase-pali-terms"
+ },
+ {
+  "id": "phrase__pi-metta__inclass",
+  "text": "Let’s close with metta. May all beings be happy.",
+  "lang": "en",
+  "kind": "phrase-pali-terms-inclass"
+ },
+ {
+  "id": "phrase__pi-karuna",
+  "text": "karuṇā",
+  "lang": "pi",
+  "say": "kuh-ROO-nah",
+  "kind": "phrase-pali-terms"
+ },
+ {
+  "id": "phrase__pi-karuna__inclass",
+  "text": "Meet your own pain with karuna, the way you would comfort a friend.",
+  "lang": "en",
+  "kind": "phrase-pali-terms-inclass"
+ },
+ {
+  "id": "phrase__pi-mudita",
+  "text": "muditā",
+  "lang": "pi",
+  "say": "MOO-dee-tah",
+  "kind": "phrase-pali-terms"
+ },
+ {
+  "id": "phrase__pi-mudita__inclass",
+  "text": "Mudita: be glad for the person next to you when a pose comes easily.",
+  "lang": "en",
+  "kind": "phrase-pali-terms-inclass"
+ },
+ {
+  "id": "phrase__pi-upekkha",
+  "text": "upekkhā",
+  "lang": "pi",
+  "say": "oo-PEK-khah",
+  "kind": "phrase-pali-terms"
+ },
+ {
+  "id": "phrase__pi-upekkha__inclass",
+  "text": "Observe every sensation with upekkha, a calm and balanced mind.",
+  "lang": "en",
+  "kind": "phrase-pali-terms-inclass"
+ },
+ {
+  "id": "phrase__pi-vedana",
+  "text": "vedanā",
+  "lang": "pi",
+  "say": "VAY-duh-nah",
+  "kind": "phrase-pali-terms"
+ },
+ {
+  "id": "phrase__pi-vedana__inclass",
+  "text": "Notice the sensation, and whether it is pleasant, unpleasant or neutral.",
+  "lang": "en",
+  "kind": "phrase-pali-terms-inclass"
+ },
+ {
+  "id": "phrase__pi-sankhara",
+  "text": "saṅkhāra",
+  "lang": "pi",
+  "say": "sung-KHAH-ruh",
+  "kind": "phrase-pali-terms"
+ },
+ {
+  "id": "phrase__pi-sankhara__inclass",
+  "text": "Each time you observe without reacting, an old sankhara grows weaker.",
+  "lang": "en",
+  "kind": "phrase-pali-terms-inclass"
+ },
+ {
+  "id": "phrase__pi-sanna",
+  "text": "saññā",
+  "lang": "pi",
+  "say": "SUN-nyah",
+  "kind": "phrase-pali-terms"
+ },
+ {
+  "id": "phrase__pi-sanna__inclass",
+  "text": "Feel the sensation itself, before the mind gives it a name.",
+  "lang": "en",
+  "kind": "phrase-pali-terms-inclass"
+ },
+ {
+  "id": "phrase__pi-vinnana",
+  "text": "viññāṇa",
+  "lang": "pi",
+  "say": "vin-NYAH-nuh",
+  "kind": "phrase-pali-terms"
+ },
+ {
+  "id": "phrase__pi-vinnana__inclass",
+  "text": "There is a sound, and there is the knowing of the sound.",
+  "lang": "en",
+  "kind": "phrase-pali-terms-inclass"
+ },
+ {
+  "id": "phrase__pi-sati",
+  "text": "sati",
+  "lang": "pi",
+  "say": "SUH-tee",
+  "kind": "phrase-pali-terms"
+ },
+ {
+  "id": "phrase__pi-sati__inclass",
+  "text": "Sati simply means knowing: breathing in, I know I am breathing in.",
+  "lang": "en",
+  "kind": "phrase-pali-terms-inclass"
+ },
+ {
+  "id": "phrase__pi-anapanasati",
+  "text": "ānāpānasati",
+  "lang": "pi",
+  "say": "AH-nah-PAH-nuh-SUH-tee",
+  "kind": "phrase-pali-terms"
+ },
+ {
+  "id": "phrase__pi-anapanasati__inclass",
+  "text": "We begin with anapana: just the breath, coming in and going out at the nostrils.",
+  "lang": "en",
+  "kind": "phrase-pali-terms-inclass"
+ },
+ {
+  "id": "phrase__pi-vipassana",
+  "text": "vipassanā",
+  "lang": "pi",
+  "say": "vee-PUS-suh-nah",
+  "kind": "phrase-pali-terms"
+ },
+ {
+  "id": "phrase__pi-vipassana__inclass",
+  "text": "Vipassana means seeing things as they really are, not as we want them to be.",
+  "lang": "en",
+  "kind": "phrase-pali-terms-inclass"
+ },
+ {
+  "id": "phrase__pi-samatha",
+  "text": "samatha",
+  "lang": "pi",
+  "say": "SUH-muh-tuh",
+  "kind": "phrase-pali-terms"
+ },
+ {
+  "id": "phrase__pi-samatha__inclass",
+  "text": "First we calm the mind with samatha; then we observe with vipassana.",
+  "lang": "en",
+  "kind": "phrase-pali-terms-inclass"
+ },
+ {
+  "id": "phrase__pi-nibbana",
+  "text": "nibbāna",
+  "lang": "pi",
+  "say": "nib-BAH-nuh",
+  "kind": "phrase-pali-terms"
+ },
+ {
+  "id": "phrase__pi-nibbana__inclass",
+  "text": "Nibbana is the end of the path. Each sitting is one step on it.",
+  "lang": "en",
+  "kind": "phrase-pali-terms-inclass"
+ },
+ {
+  "id": "phrase__pi-kamma",
+  "text": "kamma",
+  "lang": "pi",
+  "say": "KUM-muh",
+  "kind": "phrase-pali-terms"
+ },
+ {
+  "id": "phrase__pi-kamma__inclass",
+  "text": "Kamma is intention. What we practise today shapes the mind of tomorrow.",
+  "lang": "en",
+  "kind": "phrase-pali-terms-inclass"
+ },
+ {
+  "id": "phrase__pi-dhamma",
+  "text": "dhamma",
+  "lang": "pi",
+  "say": "DHUM-muh",
+  "kind": "phrase-pali-terms"
+ },
+ {
+  "id": "phrase__pi-dhamma__inclass",
+  "text": "The Dhamma is not only in books. It is here, in your own body and mind.",
+  "lang": "en",
+  "kind": "phrase-pali-terms-inclass"
+ },
+ {
+  "id": "phrase__pi-jhana",
+  "text": "jhāna",
+  "lang": "pi",
+  "say": "JHAH-nuh",
+  "kind": "phrase-pali-terms"
+ },
+ {
+  "id": "phrase__pi-jhana__inclass",
+  "text": "Jhana comes from calm, and calm comes from patience. Just keep returning to the breath.",
+  "lang": "en",
+  "kind": "phrase-pali-terms-inclass"
+ },
+ {
+  "id": "phrase__pi-satipatthana",
+  "text": "satipaṭṭhāna",
+  "lang": "pi",
+  "say": "SUH-tee-put-TAH-nuh",
+  "kind": "phrase-pali-terms"
+ },
+ {
+  "id": "phrase__pi-satipatthana__inclass",
+  "text": "We start with the body, the first foundation of mindfulness.",
+  "lang": "en",
+  "kind": "phrase-pali-terms-inclass"
+ },
+ {
+  "id": "phrase__pi-dana",
+  "text": "dāna",
+  "lang": "pi",
+  "say": "DAH-nuh",
+  "kind": "phrase-pali-terms"
+ },
+ {
+  "id": "phrase__pi-dana__inclass",
+  "text": "This class is offered on dana. Give what you can, if you wish.",
+  "lang": "en",
+  "kind": "phrase-pali-terms-inclass"
  },
  {
   "id": "hip__care-pelvis",

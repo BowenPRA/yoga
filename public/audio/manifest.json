@@ -11,8 +11,9 @@
   "hash": "2a429eaace0f",
   "text": "the front of your thighs",
   "kind": "plain",
-  "tokens": 64,
-  "model": "gemini-3.8-flash-lite-tts"
+  "tokens": 101,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "quadriceps__example": {
   "hash": "c24748a022a3",
@@ -184,8 +185,8 @@
   "hash": "d59bc9117ea9",
   "text": "the caps of your shoulders",
   "kind": "plain",
-  "tokens": 120,
-  "model": "gemini-3.8-flash-lite-tts",
+  "tokens": 101,
+  "model": "gemini-3.8-flash-tts",
   "batched": true
  },
  "deltoids__example": {
@@ -270,8 +271,8 @@
   "hash": "0b78da45e5ef",
   "text": "the flat bone at the base of your spine",
   "kind": "plain",
-  "tokens": 82,
-  "model": "gemini-3.8-flash-lite-tts",
+  "tokens": 101,
+  "model": "gemini-3.8-flash-tts",
   "batched": true
  },
  "sacrum__example": {
@@ -315,8 +316,8 @@
   "hash": "84ed6c2e9f01",
   "text": "the bones you sit on",
   "kind": "plain",
-  "tokens": 82,
-  "model": "gemini-3.8-flash-lite-tts",
+  "tokens": 65,
+  "model": "gemini-3.8-flash-tts",
   "batched": true
  },
  "sit-bones__example": {
@@ -527,8 +528,9 @@
   "hash": "751b688a03c7",
   "text": "your tailbone",
   "kind": "plain",
-  "tokens": 48,
-  "model": "gemini-3.8-flash-lite-tts"
+  "tokens": 101,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "tailbone__example": {
   "hash": "f21adffe6719",
@@ -1085,8 +1087,8 @@
   "hash": "11a8953064c8",
   "text": "your deep hip flexors",
   "kind": "plain",
-  "tokens": 97,
-  "model": "gemini-3.8-flash-lite-tts",
+  "tokens": 101,
+  "model": "gemini-3.8-flash-tts",
   "batched": true
  },
  "tensor-fasciae-latae__plain": {
@@ -1117,8 +1119,8 @@
   "hash": "f8507cb50350",
   "text": "the small muscles deep in your hip",
   "kind": "plain",
-  "tokens": 115,
-  "model": "gemini-3.8-flash-lite-tts",
+  "tokens": 101,
+  "model": "gemini-3.8-flash-tts",
   "batched": true
  },
  "sartorius__plain": {
@@ -1229,8 +1231,8 @@
   "hash": "c95e1275169c",
   "text": "your hip socket",
   "kind": "plain",
-  "tokens": 66,
-  "model": "gemini-3.8-flash-lite-tts",
+  "tokens": 65,
+  "model": "gemini-3.8-flash-tts",
   "batched": true
  },
  "femur__plain": {
@@ -1245,8 +1247,8 @@
   "hash": "91dfe892b5ea",
   "text": "your knee",
   "kind": "plain",
-  "tokens": 66,
-  "model": "gemini-3.8-flash-lite-tts",
+  "tokens": 65,
+  "model": "gemini-3.8-flash-tts",
   "batched": true
  },
  "kneecap__plain": {
@@ -1269,8 +1271,8 @@
   "hash": "eb4cf6c9bb8e",
   "text": "your ankle",
   "kind": "plain",
-  "tokens": 67,
-  "model": "gemini-3.8-flash-lite-tts",
+  "tokens": 65,
+  "model": "gemini-3.8-flash-tts",
   "batched": true
  },
  "heel__plain": {
@@ -1333,8 +1335,8 @@
   "hash": "9a3eb98ce950",
   "text": "your shoulder",
   "kind": "plain",
-  "tokens": 69,
-  "model": "gemini-3.8-flash-lite-tts",
+  "tokens": 65,
+  "model": "gemini-3.8-flash-tts",
   "batched": true
  },
  "upper-arm-bone__plain": {
@@ -1533,8 +1535,8 @@
   "hash": "e1ba20ec4071",
   "text": "Reach out through your fingertips; let the shoulders stay soft while the arms work.",
   "kind": "cue-vinyasa",
-  "tokens": 125,
-  "model": "gemini-3.8-flash-lite-tts",
+  "tokens": 149,
+  "model": "gemini-3.8-flash-tts",
   "batched": true
  },
  "rotator-cuff__cue-1": {
@@ -1645,8 +1647,8 @@
   "hash": "64b8febf9933",
   "text": "In Warrior II, keep the arms at shoulder height, strong to the fingertips.",
   "kind": "cue-ashtanga",
-  "tokens": 146,
-  "model": "gemini-3.8-flash-lite-tts",
+  "tokens": 150,
+  "model": "gemini-3.8-flash-tts",
   "batched": true
  },
  "pectoralis-major__cue-3": {
@@ -1677,57 +1679,57 @@
   "hash": "1a9ff2be2a8d",
   "text": "Tuck your tailbone slightly to lengthen the front of your hips.",
   "kind": "cue-ashtanga",
-  "tokens": 146,
-  "model": "gemini-3.8-flash-lite-tts",
+  "tokens": 150,
+  "model": "gemini-3.8-flash-tts",
   "batched": true
  },
  "gluteus-maximus__cue-2": {
   "hash": "60597d8d6194",
   "text": "In Bridge, keep the glutes working but not clenched.",
   "kind": "cue-ashtanga",
-  "tokens": 146,
-  "model": "gemini-3.8-flash-lite-tts",
+  "tokens": 150,
+  "model": "gemini-3.8-flash-tts",
   "batched": true
  },
  "deep-rotators__cue-2": {
   "hash": "f3fea23183d7",
   "text": "Rotate your front thigh out as you fold.",
   "kind": "cue-ashtanga",
-  "tokens": 139,
-  "model": "gemini-3.8-flash-lite-tts",
+  "tokens": 150,
+  "model": "gemini-3.8-flash-tts",
   "batched": true
  },
  "hip-adductors__cue-3": {
   "hash": "f32bdd4b016c",
   "text": "In Prasarita, draw your inner thighs back as you fold.",
   "kind": "cue-ashtanga",
-  "tokens": 139,
-  "model": "gemini-3.8-flash-lite-tts",
+  "tokens": 150,
+  "model": "gemini-3.8-flash-tts",
   "batched": true
  },
  "quadriceps__cue-2": {
   "hash": "2926037421fb",
   "text": "In Chair, sit back into your heels and feel your thighs working.",
   "kind": "cue-ashtanga",
-  "tokens": 139,
-  "model": "gemini-3.8-flash-lite-tts",
+  "tokens": 150,
+  "model": "gemini-3.8-flash-tts",
   "batched": true
  },
  "hip__care-pelvis": {
   "hash": "5ea9c84e2a7a",
   "text": "If your lower back is complaining, bring your hips a little higher on a blanket.",
   "kind": "cue-safety",
-  "tokens": 145,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 189,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "deltoids__cue-3": {
   "hash": "d080c8b356bc",
   "text": "Let the arms rest; nothing to hold here.",
   "kind": "cue-yin",
-  "tokens": 208,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 200,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "pectoralis-major__cue-4": {
   "hash": "80beb7dd445d",
@@ -1781,177 +1783,177 @@
   "hash": "0a5553a729a7",
   "text": "Sink your hips forward and down, and feel the front of your back hip open.",
   "kind": "cue-vinyasa",
-  "tokens": 193,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 149,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "iliopsoas__cue-4": {
   "hash": "d033ed99470b",
   "text": "In Boat, lift from deep in your hips, not just your belly.",
   "kind": "cue-vinyasa",
-  "tokens": 146,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 149,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "gluteus-maximus__cue-1": {
   "hash": "8f819ee9ce55",
   "text": "Press into your heels and lift your hips.",
   "kind": "cue-vinyasa",
-  "tokens": 123,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 149,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "gluteus-maximus__cue-3": {
   "hash": "62fdf51641fb",
   "text": "Let your seat get heavy and soft; sink toward the floor.",
   "kind": "cue-yin",
-  "tokens": 289,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 200,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "gluteus-maximus__cue-4": {
   "hash": "4106613373c7",
   "text": "Squeeze your seat gently to protect your lower back in the backbend.",
   "kind": "cue-vinyasa",
-  "tokens": 139,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 149,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "gluteus-medius__cue-1": {
   "hash": "471688b61ac6",
   "text": "Keep your hips level; don’t let the standing hip push out.",
   "kind": "cue-vinyasa",
-  "tokens": 122,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 149,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "gluteus-medius__cue-2": {
   "hash": "a002e2ee6365",
   "text": "Press the outer edge of your back foot down and feel the side of your hip wake up.",
   "kind": "cue-vinyasa",
-  "tokens": 195,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 120,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "gluteus-medius__cue-3": {
   "hash": "570047789d65",
   "text": "In Shoelace, breathe into the outer hip.",
   "kind": "cue-yin",
-  "tokens": 147,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 200,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "piriformis__cue-1": {
   "hash": "992c6d58654c",
   "text": "You should feel this deep in your outer hip, not in your knee.",
   "kind": "cue-yin",
-  "tokens": 212,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 200,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "piriformis__cue-2": {
   "hash": "f105e725a599",
   "text": "Find your edge and let the hip soften a little more with each exhale.",
   "kind": "cue-yin",
-  "tokens": 306,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 200,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "piriformis__cue-3": {
   "hash": "c3b439bd748e",
   "text": "Flex your front foot to protect the knee as the hip opens.",
   "kind": "cue-vinyasa",
-  "tokens": 136,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 120,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "deep-rotators__cue-1": {
   "hash": "d9903fb28050",
   "text": "Let the thighs roll open from deep in the hip sockets.",
   "kind": "cue-yin",
-  "tokens": 211,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 172,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "hip-adductors__cue-1": {
   "hash": "e52009295eda",
   "text": "Squeeze the block between your thighs.",
   "kind": "cue-vinyasa",
-  "tokens": 100,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 120,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "hip-adductors__cue-2": {
   "hash": "d54a141c243a",
   "text": "In Frog, let your inner thighs soften toward the floor; don’t push.",
   "kind": "cue-yin",
-  "tokens": 220,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 172,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "hip-adductors__cue-4": {
   "hash": "c2a13c567f2a",
   "text": "Let your inner thighs open as you sink into Warrior II.",
   "kind": "cue-vinyasa",
-  "tokens": 131,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 120,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "quadriceps__cue-1": {
   "hash": "eee2800ed2f5",
   "text": "Lift your kneecaps to engage the front of your thighs.",
   "kind": "cue-vinyasa",
-  "tokens": 119,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 120,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "quadriceps__cue-3": {
   "hash": "70daebfb3d67",
   "text": "In Saddle, let the front of your thighs lengthen; come up if the knees complain.",
   "kind": "cue-yin",
-  "tokens": 236,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 172,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "quadriceps__cue-4": {
   "hash": "b8fc9002267d",
   "text": "Press through your front foot and feel the front of your thigh working.",
   "kind": "cue-vinyasa",
-  "tokens": 140,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 120,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "hamstrings__cue-1": {
   "hash": "cb5ab9ca6985",
   "text": "Bend your knees as much as you need to keep your back long.",
   "kind": "cue-vinyasa",
-  "tokens": 145,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 125,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "hamstrings__cue-2": {
   "hash": "9219000913cb",
   "text": "Lift your sitting bones toward the ceiling in Downward Dog.",
   "kind": "cue-ashtanga",
-  "tokens": 125,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 116,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "hamstrings__cue-3": {
   "hash": "a82659bd7438",
   "text": "In Caterpillar, let your back round and the backs of your legs soften.",
   "kind": "cue-yin",
-  "tokens": 250,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 172,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "hamstrings__cue-4": {
   "hash": "04cfd5ed2860",
   "text": "Fold from your hips, not from your waist.",
   "kind": "cue-vinyasa",
-  "tokens": 111,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 125,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "it-band__cue-1": {
   "hash": "1df7131dcd01",
@@ -1973,249 +1975,250 @@
   "hash": "12d7e8dcf711",
   "text": "Let your sacrum feel heavy toward the floor.",
   "kind": "cue-yin",
-  "tokens": 125,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 172,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "sacrum__cue-2": {
   "hash": "17803d56ccc1",
   "text": "In Bridge, slide a block under your sacrum, not your lower back.",
   "kind": "cue-vinyasa",
-  "tokens": 148,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 125,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "tailbone__cue-1": {
   "hash": "ed71cf5a14ad",
   "text": "Lengthen your tailbone toward your heels.",
   "kind": "cue-vinyasa",
-  "tokens": 144,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 125,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "tailbone__cue-2": {
   "hash": "f61704ac209a",
   "text": "Tuck your tailbone slightly in Warrior I.",
   "kind": "cue-ashtanga",
-  "tokens": 128,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 116,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "tailbone__cue-3": {
   "hash": "49009fbbf3a6",
   "text": "Let your tailbone drop and the lower back widen.",
   "kind": "cue-yin",
-  "tokens": 199,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 172,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "pelvis__cue-1": {
   "hash": "c4b9d66203f4",
   "text": "Keep your hips level, like a bowl of water you don’t want to spill.",
   "kind": "cue-vinyasa",
-  "tokens": 123,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 125,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "pelvis__cue-2": {
   "hash": "552a4d7ba969",
   "text": "Square your hips to the front of the mat.",
   "kind": "cue-ashtanga",
-  "tokens": 91,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 116,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "pelvis__cue-3": {
   "hash": "29e93cd782a0",
   "text": "Let the pelvis settle; there’s nothing to hold.",
   "kind": "cue-yin",
-  "tokens": 220,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 188,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "sit-bones__cue-1": {
   "hash": "41ab8a75043c",
   "text": "Root down through your sitting bones and lengthen up.",
   "kind": "cue-ashtanga",
-  "tokens": 125,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 116,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "sit-bones__cue-2": {
   "hash": "3eb8797e1eac",
   "text": "Lift your sitting bones toward the ceiling in Downward Dog.",
   "kind": "cue-vinyasa",
-  "tokens": 131,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 125,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "sit-bones__cue-3": {
   "hash": "ef75b997f1ea",
   "text": "Sit on the edge of a blanket so your sitting bones can tip forward.",
   "kind": "cue-yin",
   "tokens": 188,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "hip-joint__cue-1": {
   "hash": "14eda6bad3fe",
   "text": "Hinge at your hips, not your waist.",
   "kind": "cue-vinyasa",
-  "tokens": 101,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 106,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "hip-joint__cue-3": {
   "hash": "e9134438158a",
   "text": "Turn your thigh out from the hip socket, not the knee.",
   "kind": "cue-ashtanga",
-  "tokens": 127,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 116,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "knee": {
   "hash": "0afe6a6a5907",
   "text": "knee",
   "kind": "term",
-  "tokens": 32,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 61,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "knee__cue-1": {
   "hash": "38f6d5fbc5c3",
   "text": "Keep your knee tracking over your second toe.",
   "kind": "cue-vinyasa",
-  "tokens": 99,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 106,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "knee__cue-2": {
   "hash": "e4060a91a40b",
   "text": "Stack your knee over your ankle, not past it.",
   "kind": "cue-vinyasa",
   "tokens": 106,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "knee__cue-3": {
   "hash": "cbdcf19dbc9f",
   "text": "If you feel anything sharp in the knee, come out of the pose.",
   "kind": "cue-yin",
-  "tokens": 206,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 188,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "knee__cue-4": {
   "hash": "57cdca93de02",
   "text": "Keep a micro-bend; don’t lock your knees.",
   "kind": "cue-ashtanga",
-  "tokens": 113,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 116,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "ankle": {
   "hash": "d4a99b9a1f7a",
   "text": "ankle",
   "kind": "term",
-  "tokens": 48,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 61,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "ankle__cue-1": {
   "hash": "d8f590e80adf",
   "text": "Stack your knee over your ankle.",
   "kind": "cue-vinyasa",
-  "tokens": 82,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 106,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "ankle__cue-2": {
   "hash": "a1bb4c4bf7ae",
   "text": "Flex your ankle and point your toes toward your face.",
   "kind": "cue-ashtanga",
-  "tokens": 121,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 115,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "ankle__cue-3": {
   "hash": "a9f54c140779",
   "text": "In Toe Squat, go gently; the ankles and toes open slowly.",
   "kind": "cue-yin",
-  "tokens": 235,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 188,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "shoulder-joint": {
   "hash": "5d9cbd462506",
   "text": "shoulder",
   "kind": "term",
-  "tokens": 47,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 61,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "shoulder-joint__cue-1": {
   "hash": "13934f6e193c",
   "text": "Relax your shoulders away from your ears.",
   "kind": "cue-vinyasa",
-  "tokens": 124,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 125,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true,
+  "copyOf": "trapezius__cue-1"
  },
  "shoulder-joint__cue-2": {
   "hash": "25af02544c30",
   "text": "Stack your shoulders over your wrists.",
   "kind": "cue-ashtanga",
-  "tokens": 89,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 115,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "warrior-2__en": {
   "hash": "81a27685fe78",
   "text": "Warrior II",
   "kind": "pose-name",
-  "tokens": 84,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "warrior-2__sa": {
   "hash": "22349abb048e",
   "text": "Vīrabhadrāsana II",
   "kind": "pose-name",
-  "tokens": 139,
-  "model": "gemini-2.5-flash-preview-tts",
+  "tokens": 61,
+  "model": "gemini-3.8-flash-tts",
   "batched": false
  },
  "warrior-2__cue-1": {
   "hash": "a1c772ec3acb",
   "text": "Step your feet wide apart.",
   "kind": "cue-transition",
-  "tokens": 83,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 136,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "warrior-2__cue-2": {
   "hash": "ab02ba4903ba",
   "text": "Turn your right toes out, and your left toes in slightly.",
   "kind": "cue-alignment",
-  "tokens": 122,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 146,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "warrior-2__cue-4": {
   "hash": "144fd78c045f",
   "text": "Press into the outer edge of your back foot.",
   "kind": "cue-alignment",
-  "tokens": 104,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 146,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "warrior-2__cue-5": {
-  "hash": "cd7a64848c13",
-  "text": "Reach your arms out wide, parallel to the floor.",
+  "hash": "1d66fd125f6c",
+  "text": "Reach your arms out wide, and gaze over your front fingertips.",
   "kind": "cue-alignment",
-  "tokens": 128,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 146,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "warrior-2__cue-6": {
   "hash": "f1331e4e8c04",
@@ -2226,68 +2229,68 @@
   "batched": false
  },
  "warrior-2__cue-7": {
-  "hash": "3c0d89a291f3",
-  "text": "Gaze softly over your front fingertips.",
-  "kind": "cue-alignment",
-  "tokens": 124,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
- },
- "warrior-2__cue-8": {
   "hash": "4e07c085caa9",
   "text": "Stay here for five breaths.",
   "kind": "cue-breath",
-  "tokens": 104,
-  "model": "gemini-2.5-flash-preview-tts",
+  "tokens": 101,
+  "model": "gemini-3.8-flash-tts",
   "batched": false
+ },
+ "warrior-2__cue-8": {
+  "hash": "4a1aadc2690d",
+  "text": "Keep your front knee tracking over your second toe. Don’t let it fall inward.",
+  "kind": "cue-safety",
+  "tokens": 157,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "warrior-2__mod-1": {
   "hash": "59330751d8b7",
   "text": "Shorten your stance if your front knee feels strained.",
   "kind": "modification",
-  "tokens": 103,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 149,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "warrior-2__mod-2": {
   "hash": "f3331a7d3d13",
   "text": "Rest your hands on your hips to give your shoulders a break.",
   "kind": "modification",
-  "tokens": 125,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 149,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "warrior-2__mod-3": {
   "hash": "711238b132cd",
   "text": "You can sit on the edge of a chair with your front leg bent.",
   "kind": "modification",
-  "tokens": 107,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 149,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "warrior-2__safe-1": {
-  "hash": "4a1aadc2690d",
-  "text": "Keep your front knee tracking over your second toe. Don’t let it fall inward.",
-  "kind": "safety",
-  "tokens": 150,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
- },
- "warrior-2__safe-2": {
   "hash": "d65d2b5b5ac8",
   "text": "If you have a knee injury, don’t bend as deeply, and come out sooner.",
   "kind": "safety",
-  "tokens": 136,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 157,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "warrior-2__safe-2": {
+  "hash": "055c1ddd17f0",
+  "text": "In pregnancy, take a shorter stance and come out before your legs tire.",
+  "kind": "safety",
+  "tokens": 157,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "sleeping-swan__en": {
   "hash": "6e650a401633",
   "text": "Sleeping Swan",
   "kind": "pose-name",
-  "tokens": 63,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "sleeping-swan__sa": {
   "hash": "7242a23a051d",
@@ -2301,177 +2304,177 @@
   "hash": "dd996b5be331",
   "text": "Bring your right knee forward, behind your right wrist.",
   "kind": "cue-transition",
-  "tokens": 121,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 136,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "sleeping-swan__cue-2": {
   "hash": "bc24c6118b25",
   "text": "Let your shin angle back toward your left hip. It doesn’t need to be parallel.",
   "kind": "cue-alignment",
-  "tokens": 161,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 146,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "sleeping-swan__cue-3": {
   "hash": "255b6fd0aca0",
   "text": "Walk your back leg straight behind you.",
   "kind": "cue-alignment",
-  "tokens": 90,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 146,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "sleeping-swan__cue-4": {
   "hash": "2bb1e053f7b8",
   "text": "Fold forward slowly, and rest on your forearms or your forehead.",
   "kind": "cue-transition",
-  "tokens": 149,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 136,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "sleeping-swan__cue-5": {
   "hash": "18bd72fdd353",
   "text": "Find your edge. Enough to feel it, not so much that you tense against it.",
   "kind": "cue-soften",
-  "tokens": 379,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 176,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "sleeping-swan__cue-7": {
   "hash": "06d7b6b7da71",
   "text": "If you feel any sharp pain in your knee, come out of the pose.",
   "kind": "cue-safety",
-  "tokens": 126,
-  "model": "gemini-2.5-flash-preview-tts",
+  "tokens": 121,
+  "model": "gemini-3.8-flash-tts",
   "batched": false
  },
  "sleeping-swan__cue-8": {
   "hash": "947ad36a6726",
   "text": "To come out, press your hands down and slowly lift up.",
   "kind": "cue-transition",
-  "tokens": 164,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 136,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "sleeping-swan__mod-1": {
   "hash": "e0510c8f372d",
   "text": "Place a bolster or a folded blanket under your front hip so your hips stay level.",
   "kind": "modification",
-  "tokens": 178,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 149,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "sleeping-swan__mod-2": {
   "hash": "d4f53d13d2ff",
   "text": "Rest your forehead on a block or on your stacked fists.",
   "kind": "modification",
-  "tokens": 129,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 149,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "sleeping-swan__mod-3": {
   "hash": "22ee9f83ee73",
   "text": "If the knee complains, lie on your back and take Eye of the Needle instead.",
   "kind": "modification",
-  "tokens": 167,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 149,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "sleeping-swan__safe-1": {
   "hash": "03ce884e1c39",
   "text": "The sensation belongs in the outer hip. Pain in the knee means come out.",
   "kind": "safety",
-  "tokens": 173,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 160,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "sleeping-swan__safe-2": {
   "hash": "961d3e5fe969",
   "text": "Come out slowly. After a long hold the joint needs a moment.",
   "kind": "safety",
-  "tokens": 142,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 160,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "hip__care-hip-joint": {
   "hash": "f3d1380b0438",
   "text": "If you feel a pinch at the front of your hip, back out a little and take the knee wider.",
   "kind": "cue-safety",
-  "tokens": 154,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 189,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "hip__care-sit-bones": {
   "hash": "997d33a927c3",
   "text": "If you can’t sit tall, sit up on a block so your sitting bones can tip forward.",
   "kind": "cue-safety",
-  "tokens": 161,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 189,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "hip__care-gluteus-maximus": {
   "hash": "dcda530d4e56",
   "text": "If the outer hip feels too intense, slide the front foot closer in.",
   "kind": "cue-safety",
-  "tokens": 140,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 189,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "hip__care-gluteus-medius": {
   "hash": "03a6b83b4ed2",
   "text": "If the side of your hip cramps, come out, shake the leg out, and try again with less.",
   "kind": "cue-safety",
-  "tokens": 171,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 189,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "hip__care-piriformis": {
   "hash": "efff583e6f5b",
   "text": "If you feel it in your knee instead of your hip, come out and bring the shin closer to you.",
   "kind": "cue-safety",
-  "tokens": 181,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 183,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "hip__care-iliopsoas": {
   "hash": "10672383dfbc",
   "text": "If the front of your hip pinches in the lunge, shorten your stance and lift your chest.",
   "kind": "cue-safety",
-  "tokens": 159,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 183,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "hip__care-hip-adductors": {
   "hash": "9adf7b61870f",
   "text": "If your inner thighs are shaking, bring the knees closer together. Wider isn’t better.",
   "kind": "cue-safety",
-  "tokens": 161,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 183,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "iliopsoas__cue-2": {
   "hash": "cb88f6797828",
   "text": "In Dragon, let the weight of the hips do the work; breathe into the front of the hip.",
   "kind": "cue-yin",
-  "tokens": 16339,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 200,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "hip-joint__cue-2": {
   "hash": "c2ecd1774881",
   "text": "Let the thigh bone settle deeper into the hip socket.",
   "kind": "cue-yin",
-  "tokens": 182,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 188,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "shoulder-joint__cue-3": {
   "hash": "17df560f0d18",
   "text": "If the shoulder pinches, bring the arm lower.",
   "kind": "cue-yin",
-  "tokens": 149,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 188,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "warrior-2__cue-3": {
   "hash": "82532a393f3b",
@@ -2485,9 +2488,9 @@
   "hash": "f3f1ab29c74e",
   "text": "Let the muscles go soft. We’re here for three minutes.",
   "kind": "cue-soften",
-  "tokens": 698,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 176,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
  },
  "crescent-lunge__cue-3": {
   "hash": "82532a393f3b",
@@ -2496,5 +2499,83 @@
   "tokens": 108,
   "model": "gemini-3.8-flash-tts",
   "copyOf": "knees__example"
+ },
+ "warrior-2__cue-9": {
+  "hash": "d142862d38df",
+  "text": "Inhale, straighten your front leg, and turn to face the other side.",
+  "kind": "cue-transition",
+  "tokens": 136,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "sleeping-swan__safe-3": {
+  "hash": "a8af6e63cb7d",
+  "text": "In pregnancy, or with a tender sacroiliac joint, stay upright in Swan with a bolster under your hip.",
+  "kind": "safety",
+  "tokens": 189,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "sleeping-swan__cue-9": {
+  "hash": "216f81838abb",
+  "text": "Rest in Child’s Pose for a few breaths, and feel the rebound.",
+  "kind": "cue-soften",
+  "tokens": 176,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "collarbones__cue-1": {
+  "hash": "9df3539e2483",
+  "text": "Broaden across your collarbones.",
+  "kind": "cue-vinyasa",
+  "tokens": 105,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true,
+  "copyOf": "pectoralis-major__cue-2"
+ },
+ "shoulder-blades__cue-1": {
+  "hash": "1bf83a59b331",
+  "text": "Slide your shoulder blades down your back.",
+  "kind": "cue-vinyasa",
+  "tokens": 125,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true,
+  "copyOf": "trapezius__cue-2"
+ },
+ "wrist__cue-3": {
+  "hash": "25af02544c30",
+  "text": "Stack your shoulders over your wrists.",
+  "kind": "cue-ashtanga",
+  "tokens": 115,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true,
+  "copyOf": "shoulder-joint__cue-2"
+ },
+ "wide-angle-seated-fold__cue-6": {
+  "hash": "4e07c085caa9",
+  "text": "Stay here for five breaths.",
+  "kind": "cue-breath",
+  "tokens": 101,
+  "model": "gemini-3.8-flash-tts",
+  "batched": false,
+  "copyOf": "warrior-2__cue-7"
+ },
+ "reverse-warrior__mod-1": {
+  "hash": "59330751d8b7",
+  "text": "Shorten your stance if your front knee feels strained.",
+  "kind": "modification",
+  "tokens": 149,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true,
+  "copyOf": "warrior-2__mod-1"
+ },
+ "phrase__breath-3": {
+  "hash": "4e07c085caa9",
+  "text": "Stay here for five breaths.",
+  "kind": "phrase-breath",
+  "tokens": 101,
+  "model": "gemini-3.8-flash-tts",
+  "batched": false,
+  "copyOf": "warrior-2__cue-7"
  }
 }
