@@ -236,6 +236,46 @@ def record(manifest, clip, tok, batched):
     manifest[clip["id"]] = {"hash": digest(clip), "text": clip["text"], "kind": clip["kind"], "tokens": tok, "model": MODEL, "batched": batched}
 
 
+def copy_clip(src_id, clip, manifest):
+    """The same line said the same way is one recording: copy it under the
+    new id instead of spending a request on it."""
+    shutil.copyfile(os.path.join(OUT, src_id + ".mp3"), os.path.join(OUT, clip["id"] + ".mp3"))
+    rec = dict(manifest[src_id])
+    rec.update({"text": clip["text"], "kind": clip["kind"], "copyOf": src_id})
+    manifest[clip["id"]] = rec
+
+
+def reuse(todo, manifest, dry=False):
+    """Split the work into clips that must be synthesised and twins that can
+    be copied: from a clip already made (same hash, acceptable model), or
+    from the first clip in this run with the same hash. A dry run only counts."""
+    done = {}
+    for cid, rec in manifest.items():
+        if not os.path.exists(os.path.join(OUT, cid + ".mp3")):
+            continue
+        if MODEL == PREFERRED and rec.get("model") != PREFERRED:
+            continue
+        done.setdefault(rec.get("hash"), cid)
+    fresh, twins, seen = [], [], {}
+    for c in todo:
+        h = digest(c)
+        if h in done and done[h] != c["id"]:
+            if not dry:
+                copy_clip(done[h], c, manifest)
+        elif h in seen:
+            twins.append((seen[h], c))
+        else:
+            seen[h] = c["id"]
+            fresh.append(c)
+    return fresh, twins
+
+
+def copy_twins(twins, manifest):
+    for src_id, c in twins:
+        if src_id in manifest and os.path.exists(os.path.join(OUT, src_id + ".mp3")) and needs(c, manifest):
+            copy_clip(src_id, c, manifest)
+
+
 def do_single(clip, k, ff, manifest):
     wav, tok = synth(clip["text"], style_for(clip), k)
     tmp = os.path.join(TMP, clip["id"] + ".wav")
@@ -326,6 +366,14 @@ def main():
         with open(MANIFEST, encoding="utf-8") as f:
             manifest = json.load(f)
     todo = [c for c in clips if (not only or only in c["id"]) and needs(c, manifest)]
+    before = len(todo)
+    todo, twins = reuse(todo, manifest, dry)
+    if before - len(todo) - len(twins):
+        print(f"{before - len(todo) - len(twins)} clips copied from identical lines already recorded")
+        if not dry:
+            save_manifest(manifest)
+    if twins:
+        print(f"{len(twins)} clips will be copied from identical lines in this run")
     first = [c for c in todo if c["id"] in set(priority)]
     rest = [] if "--priority-only" in args else [c for c in todo if c["id"] not in set(priority)]
     if single:
@@ -356,6 +404,7 @@ def main():
                 print(f"[{i}/{len(batches)}] FAIL {', '.join(c['id'] for c in b)[:80]}: {str(e)[:160]}", flush=True)
             save_manifest(manifest)
     finally:
+        copy_twins(twins, manifest)
         save_manifest(manifest)
     price = PRICE_PER_M.get(MODEL, 9.0)
     left = [c for c in clips if needs(c, manifest)]

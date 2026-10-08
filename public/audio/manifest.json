@@ -1013,9 +1013,9 @@
   "hash": "e9be720553ba",
   "text": "the back of your upper arms",
   "kind": "plain",
-  "tokens": 115,
-  "model": "gemini-3.8-flash-lite-tts",
-  "batched": true
+  "tokens": 74,
+  "model": "gemini-3.8-flash-tts",
+  "copyOf": "triceps__plain"
  },
  "forearm-flexors__plain": {
   "hash": "8a586a5f4f99",
@@ -1101,9 +1101,9 @@
   "hash": "8abcc64faa8e",
   "text": "your seat",
   "kind": "plain",
-  "tokens": 115,
-  "model": "gemini-3.8-flash-lite-tts",
-  "batched": true
+  "tokens": 35,
+  "model": "gemini-3.8-flash-tts",
+  "copyOf": "glutes__plain"
  },
  "gluteus-minimus__plain": {
   "hash": "1e5c3e925483",
@@ -2477,9 +2477,9 @@
   "hash": "82532a393f3b",
   "text": "Bend your front knee so it stacks over your ankle.",
   "kind": "cue-alignment",
-  "tokens": 111,
-  "model": "gemini-2.5-flash-preview-tts",
-  "batched": false
+  "tokens": 108,
+  "model": "gemini-3.8-flash-tts",
+  "copyOf": "knees__example"
  },
  "sleeping-swan__cue-6": {
   "hash": "f3f1ab29c74e",
@@ -2488,5 +2488,13 @@
   "tokens": 698,
   "model": "gemini-2.5-flash-preview-tts",
   "batched": false
+ },
+ "crescent-lunge__cue-3": {
+  "hash": "82532a393f3b",
+  "text": "Bend your front knee so it stacks over your ankle.",
+  "kind": "cue-alignment",
+  "tokens": 108,
+  "model": "gemini-3.8-flash-tts",
+  "copyOf": "knees__example"
  }
 }
