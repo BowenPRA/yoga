@@ -57,7 +57,7 @@ export default function AnatomyCard({ term, onClose, onOpen }) {
       <div className="mt-2 text-body-lg text-ink">{term.vi}</div>
       {term.viPlain && term.viPlain !== term.vi && <div className="text-caption text-muted">{term.viPlain}</div>}
       {term.shortEn && <div className="mt-1.5"><Tag tone="gold">“{term.shortEn}”</Tag></div>}
-      {row && <div className="mt-3"><KnownMarks row={row} /></div>}
+      {row && <div className="mt-3"><KnownMarks row={row} term={term} /></div>}
 
       {plainDiffers && (
         <Section title={a.plain}>

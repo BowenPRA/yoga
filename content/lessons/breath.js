@@ -99,7 +99,7 @@ export const breathLesson = {
     {
       type: 'term', term: 'pelvic-floor',
       figure: { kind: 'front', window: [215, 510, 240, 210], highlight: ['pelvic-floor'] },
-      cues: ['pelvic-floor__cue-1'],
+      cues: ['pelvic-floor__cue-1', 'pelvic-floor__cue-2'],
       care: { id: 'breath__care-pelvic-floor', en: 'If you can’t feel your pelvic floor yet, don’t worry. Breathe out fully and notice the gentle lift.', vi: 'Nếu chưa cảm nhận được sàn chậu, đừng lo. Thở ra hết và để ý cảm giác nâng nhẹ.' },
     },
     {

@@ -252,7 +252,7 @@ export const BONES = [
   },
   {
     id: 'sternum', en: 'breastbone', latin: 'sternum', plain: 'the centre of your chest', vi: 'xương ức', viPlain: 'giữa ngực',
-    say: 'STER-num', traps: ['cluster-st', 'stress'], region: 'trunk', kind: 'bone', skeleton: ['Manubrium'],
+    say: 'BREST-bohn (STER-num)', traps: ['cluster-st', 'stress'], region: 'trunk', kind: 'bone', skeleton: ['Manubrium'],
     does: { en: 'The flat bone in the middle of the chest; “lift your sternum” opens the heart without crunching the lower back.', vi: 'Xương dẹt ở giữa ngực; “nâng xương ức” mở ngực mà không ép lưng dưới.' },
     cues: [
       { style: 'vinyasa', en: 'Lift your sternum toward the ceiling.', vi: 'Nâng xương ức lên hướng trần nhà.' },

@@ -2577,5 +2577,4233 @@
   "model": "gemini-3.8-flash-tts",
   "batched": false,
   "copyOf": "warrior-2__cue-7"
+ },
+ "sternocleidomastoid__cue-2": {
+  "hash": "00c03c319184",
+  "text": "Soften the sides of your neck and let the jaw unclench.",
+  "kind": "cue-yin",
+  "tokens": 192,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "trapezius__cue-3": {
+  "hash": "90c1013cec32",
+  "text": "Let the tops of your shoulders melt away from your neck.",
+  "kind": "cue-yin",
+  "tokens": 192,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "levator-scapulae__cue-1": {
+  "hash": "7f15c515ceff",
+  "text": "Drop your ear toward your shoulder and let the back of the neck lengthen.",
+  "kind": "cue-yin",
+  "tokens": 192,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "rhomboids__cue-3": {
+  "hash": "da27ada5d095",
+  "text": "Round your upper back and let the space between your shoulder blades open.",
+  "kind": "cue-yin",
+  "tokens": 192,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "rotator-cuff__cue-3": {
+  "hash": "c258bc49253d",
+  "text": "If the shoulder pinches, come out and choose the gentler option.",
+  "kind": "cue-yin",
+  "tokens": 192,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "pectoralis-minor__cue-1": {
+  "hash": "85636ad6f3fb",
+  "text": "Let your arms open wide and feel the space under your collarbones.",
+  "kind": "cue-yin",
+  "tokens": 192,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "latissimus-dorsi__cue-3": {
+  "hash": "78d5096ff4e3",
+  "text": "In the side bend, breathe into the side ribs.",
+  "kind": "cue-yin",
+  "tokens": 192,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "erector-spinae__cue-3": {
+  "hash": "0a984683e158",
+  "text": "Let your back round; let the muscles along your spine go quiet.",
+  "kind": "cue-yin",
+  "tokens": 192,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "quadratus-lumborum__cue-1": {
+  "hash": "00ec3c7e55b1",
+  "text": "Let the waist on your top side open and breathe into it.",
+  "kind": "cue-yin",
+  "tokens": 192,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "triceps-brachii__cue-3": {
+  "hash": "e10497c8af18",
+  "text": "Let the arms be heavy; you don’t need them here.",
+  "kind": "cue-yin",
+  "tokens": 192,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "external-oblique__cue-4": {
+  "hash": "7bebae6a12f2",
+  "text": "Let the twist happen without pulling; the breath does the work.",
+  "kind": "cue-yin",
+  "tokens": 192,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "diaphragm__cue-1": {
+  "hash": "669a1c4dc112",
+  "text": "Breathe low into your belly; let your ribs widen on the inhale.",
+  "kind": "cue-yin",
+  "tokens": 192,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "pelvic-floor__cue-2": {
+  "hash": "d8757e16e115",
+  "text": "Let the pelvic floor soften and widen as you breathe out.",
+  "kind": "cue-yin",
+  "tokens": 181,
+  "model": "gemini-3.8-flash-tts",
+  "batched": false
+ },
+ "tensor-fasciae-latae__cue-2": {
+  "hash": "6341ee54677c",
+  "text": "In Shoelace, let the outer hips release toward the floor.",
+  "kind": "cue-yin",
+  "tokens": 196,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "tibialis-anterior__cue-2": {
+  "hash": "59ebe5fc2c6b",
+  "text": "In Toe Squat and Hero, let the fronts of the shins and ankles stretch slowly.",
+  "kind": "cue-yin",
+  "tokens": 196,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "calves__cue-3": {
+  "hash": "12d2d4626c76",
+  "text": "In Squat, let your heels sink; use a blanket under them if they lift.",
+  "kind": "cue-yin",
+  "tokens": 223,
+  "model": "gemini-3.8-flash-tts",
+  "batched": false
+ },
+ "plantar-fascia__cue-1": {
+  "hash": "b0d50d5fab56",
+  "text": "Tuck your toes under and sit back on your heels. Stay with the breath.",
+  "kind": "cue-yin",
+  "tokens": 221,
+  "model": "gemini-3.8-flash-tts",
+  "batched": false
+ },
+ "crown__cue-3": {
+  "hash": "eac8d4300d29",
+  "text": "Let the crown of your head be heavy toward the floor.",
+  "kind": "cue-yin",
+  "tokens": 133,
+  "model": "gemini-3.8-flash-tts",
+  "batched": false
+ },
+ "jaw__cue-1": {
+  "hash": "7a4d3a2ae216",
+  "text": "Unclench your jaw; let your teeth part slightly.",
+  "kind": "cue-yin",
+  "tokens": 192,
+  "model": "gemini-3.8-flash-tts",
+  "batched": false
+ },
+ "cervical-spine__cue-3": {
+  "hash": "292288fe09b7",
+  "text": "Let your neck be in line with your spine; a folded blanket under the head helps.",
+  "kind": "cue-yin",
+  "tokens": 188,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "thoracic-spine__cue-2": {
+  "hash": "05a5b668dabf",
+  "text": "Let the upper back round over the bolster.",
+  "kind": "cue-yin",
+  "tokens": 188,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "lumbar-spine__cue-3": {
+  "hash": "be3eda9bae97",
+  "text": "If your lower back complains, bend your knees or come out.",
+  "kind": "cue-yin",
+  "tokens": 173,
+  "model": "gemini-3.8-flash-tts",
+  "batched": false
+ },
+ "femur__cue-2": {
+  "hash": "61aecbeab986",
+  "text": "Let the weight of the thigh bones sink.",
+  "kind": "cue-yin",
+  "tokens": 143,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "kneecap__cue-2": {
+  "hash": "8df569c3645a",
+  "text": "Soften behind the kneecaps; nothing to hold here.",
+  "kind": "cue-yin",
+  "tokens": 143,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "heel__cue-3": {
+  "hash": "dfc0a1692f24",
+  "text": "Sit back toward your heels and let the hips rest.",
+  "kind": "cue-yin",
+  "tokens": 177,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "ribs__cue-2": {
+  "hash": "7ec35771a37b",
+  "text": "Breathe into your side ribs and the back of your ribs.",
+  "kind": "cue-yin",
+  "tokens": 177,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "sternum__cue-3": {
+  "hash": "7406744aae17",
+  "text": "Let your sternum soften and sink in the forward fold.",
+  "kind": "cue-yin",
+  "tokens": 177,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "shoulder-blades__cue-4": {
+  "hash": "d6f9ba754154",
+  "text": "Let your shoulder blades melt down toward the floor.",
+  "kind": "cue-yin",
+  "tokens": 177,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "forearm-bones__cue-2": {
+  "hash": "3e68849e16dc",
+  "text": "Rest on your forearms or lower all the way down.",
+  "kind": "cue-yin",
+  "tokens": 177,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "hands__cue-3": {
+  "hash": "ec9618054c96",
+  "text": "Turn your palms up and let the fingers curl softly.",
+  "kind": "cue-yin",
+  "tokens": 177,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "flexion__cue-3": {
+  "hash": "366e25c89733",
+  "text": "Round your spine and let your head hang.",
+  "kind": "cue-yin",
+  "tokens": 154,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "extension__cue-3": {
+  "hash": "71996d6ed7b4",
+  "text": "Let the front of your body open over the bolster.",
+  "kind": "cue-yin",
+  "tokens": 154,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "lateral-flexion__cue-2": {
+  "hash": "092581128b35",
+  "text": "Let your side body lengthen; breathe into the ribs on top.",
+  "kind": "cue-yin",
+  "tokens": 154,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "rotation__cue-3": {
+  "hash": "71b4698bee1a",
+  "text": "Let the twist deepen on its own with each exhale.",
+  "kind": "cue-yin",
+  "tokens": 170,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "external-rotation__cue-3": {
+  "hash": "da4722e69e9f",
+  "text": "Let your knees fall open.",
+  "kind": "cue-yin",
+  "tokens": 170,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "abduction__cue-3": {
+  "hash": "a56e5c27e595",
+  "text": "Let your legs open wide and heavy in Dragonfly.",
+  "kind": "cue-yin",
+  "tokens": 170,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "plantar-flexion__cue-2": {
+  "hash": "cc8cb8b81d2d",
+  "text": "Let the tops of your feet rest on the floor.",
+  "kind": "cue-yin",
+  "tokens": 144,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "dorsiflexion__cue-1": {
+  "hash": "483a74b1197f",
+  "text": "Flex your front foot to protect the knee.",
+  "kind": "cue-yin",
+  "tokens": 144,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "pronation-supination__cue-2": {
+  "hash": "64228d991473",
+  "text": "Rest your hands palms up, fingers soft.",
+  "kind": "cue-yin",
+  "tokens": 144,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "sternocleidomastoid__cue-3": {
+  "hash": "40e011f63c91",
+  "text": "In the twist, turn your gaze last, and keep the neck long.",
+  "kind": "cue-ashtanga",
+  "tokens": 159,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "trapezius__cue-4": {
+  "hash": "c1ba7b2d8b60",
+  "text": "In Downward Dog, broaden across the upper back rather than shrugging.",
+  "kind": "cue-ashtanga",
+  "tokens": 159,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "rhomboids__cue-2": {
+  "hash": "1e92f4fb4164",
+  "text": "In Locust, squeeze between the shoulder blades to lift the arms higher.",
+  "kind": "cue-ashtanga",
+  "tokens": 159,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "rotator-cuff__cue-2": {
+  "hash": "f19f2cfa5cab",
+  "text": "In Chaturanga, keep the elbows close and the shoulders no lower than the elbows.",
+  "kind": "cue-ashtanga",
+  "tokens": 159,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "serratus-anterior__cue-2": {
+  "hash": "2a93b81f029a",
+  "text": "In Plank, don’t let your chest sink between your shoulders.",
+  "kind": "cue-ashtanga",
+  "tokens": 159,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "latissimus-dorsi__cue-2": {
+  "hash": "7f20ca4733ab",
+  "text": "In Downward Dog, send your hips back and let the sides of your waist get long.",
+  "kind": "cue-ashtanga",
+  "tokens": 159,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "erector-spinae__cue-2": {
+  "hash": "24e4eceb9297",
+  "text": "Lift through the back of your heart in Locust.",
+  "kind": "cue-ashtanga",
+  "tokens": 149,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "biceps-brachii__cue-2": {
+  "hash": "3c7e57ae9455",
+  "text": "In Chaturanga, bend your elbows to ninety degrees, no lower.",
+  "kind": "cue-ashtanga",
+  "tokens": 149,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "triceps-brachii__cue-2": {
+  "hash": "d8e899f6fd1e",
+  "text": "Hug your elbows in toward your ribs as you lower.",
+  "kind": "cue-ashtanga",
+  "tokens": 149,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "external-oblique__cue-2": {
+  "hash": "f133f2165f97",
+  "text": "Lengthen first, then twist a little more on each exhale.",
+  "kind": "cue-ashtanga",
+  "tokens": 149,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "diaphragm__cue-2": {
+  "hash": "b8b8ccf9fe89",
+  "text": "Keep the breath steady and audible; let it lead the movement.",
+  "kind": "cue-ashtanga",
+  "tokens": 149,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "pelvic-floor__cue-1": {
+  "hash": "4cdb8cbe56f0",
+  "text": "Engage mula bandha: a gentle lift at the base of the pelvis.",
+  "kind": "cue-ashtanga",
+  "tokens": 149,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "tibialis-anterior__cue-1": {
+  "hash": "1e2d1056c28b",
+  "text": "Flex your feet and pull your toes toward you.",
+  "kind": "cue-ashtanga",
+  "tokens": 121,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "crown__cue-2": {
+  "hash": "1caba5006f1e",
+  "text": "Reach the crown of your head forward as you fold.",
+  "kind": "cue-ashtanga",
+  "tokens": 121,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "cervical-spine__cue-2": {
+  "hash": "37f62c997f3b",
+  "text": "In Shoulderstand, never turn your head.",
+  "kind": "cue-ashtanga",
+  "tokens": 121,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "thoracic-spine__cue-3": {
+  "hash": "6fbda20030d3",
+  "text": "Twist from your upper back, not your lower back.",
+  "kind": "cue-ashtanga",
+  "tokens": 121,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "lumbar-spine__cue-2": {
+  "hash": "94a62aba6eae",
+  "text": "In backbends, lengthen through the lower back before you bend.",
+  "kind": "cue-ashtanga",
+  "tokens": 121,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "hip-points__cue-2": {
+  "hash": "ae1e7f3a0ddf",
+  "text": "Draw your front hip point back and your back hip point forward.",
+  "kind": "cue-ashtanga",
+  "tokens": 121,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "pubic-bone__cue-2": {
+  "hash": "361d16b65434",
+  "text": "In Cobra, press your pubic bone into the mat.",
+  "kind": "cue-ashtanga",
+  "tokens": 110,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "kneecap__cue-1": {
+  "hash": "c0ec943d5476",
+  "text": "Lift your kneecaps to engage your thighs.",
+  "kind": "cue-ashtanga",
+  "tokens": 110,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "shin-bone__cue-2": {
+  "hash": "cb6ee25ec4a3",
+  "text": "Keep your front shin vertical in the lunge.",
+  "kind": "cue-ashtanga",
+  "tokens": 110,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "heel__cue-2": {
+  "hash": "83b4e2dd478a",
+  "text": "Reach your heels toward the floor.",
+  "kind": "cue-ashtanga",
+  "tokens": 110,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "arch__cue-2": {
+  "hash": "abbedac24318",
+  "text": "Press the four corners of your feet into the mat.",
+  "kind": "cue-ashtanga",
+  "tokens": 110,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "toes__cue-2": {
+  "hash": "55ba847308d3",
+  "text": "Tuck your toes and lift your hips.",
+  "kind": "cue-ashtanga",
+  "tokens": 110,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "ribs__cue-3": {
+  "hash": "e38d349a717e",
+  "text": "Lift your ribs away from your hips to make space for the twist.",
+  "kind": "cue-ashtanga",
+  "tokens": 130,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "sternum__cue-2": {
+  "hash": "25255b5e65ba",
+  "text": "In Cobra, lead with your breastbone, not your chin.",
+  "kind": "cue-ashtanga",
+  "tokens": 130,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "collarbones__cue-2": {
+  "hash": "cad62363e4de",
+  "text": "Spread your collarbones and draw your shoulder blades down.",
+  "kind": "cue-ashtanga",
+  "tokens": 130,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "shoulder-blades__cue-2": {
+  "hash": "344433f4504e",
+  "text": "Draw your shoulder blades toward each other and lift your chest.",
+  "kind": "cue-ashtanga",
+  "tokens": 130,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "upper-arm-bone__cue-2": {
+  "hash": "bb24ac7bfa43",
+  "text": "Hug your upper arms in toward your ribs.",
+  "kind": "cue-ashtanga",
+  "tokens": 130,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "elbow__cue-2": {
+  "hash": "2ca65eb3e8ee",
+  "text": "In Chaturanga, bend your elbows straight back, hugging your ribs.",
+  "kind": "cue-ashtanga",
+  "tokens": 130,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "hands__cue-2": {
+  "hash": "5b26e5cd1890",
+  "text": "Press into the base of your index fingers.",
+  "kind": "cue-ashtanga",
+  "tokens": 106,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "extension__cue-2": {
+  "hash": "c9fc160be3cc",
+  "text": "Press into your hands and arch your upper back.",
+  "kind": "cue-ashtanga",
+  "tokens": 106,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "rotation__cue-2": {
+  "hash": "44194795d99c",
+  "text": "Rotate your upper arms outward.",
+  "kind": "cue-ashtanga",
+  "tokens": 106,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "external-rotation__cue-2": {
+  "hash": "b074c4f2427d",
+  "text": "Roll your upper arms out and your shoulder blades down.",
+  "kind": "cue-ashtanga",
+  "tokens": 106,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "internal-rotation__cue-1": {
+  "hash": "046e59d4ab50",
+  "text": "Roll your back thigh in so the hips face forward.",
+  "kind": "cue-ashtanga",
+  "tokens": 106,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "adduction__cue-2": {
+  "hash": "92f1c1019ce9",
+  "text": "Hug your legs together in Headstand.",
+  "kind": "cue-ashtanga",
+  "tokens": 106,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "dorsiflexion__cue-2": {
+  "hash": "77ef06ae45ed",
+  "text": "Flex your feet and press through your heels.",
+  "kind": "cue-ashtanga",
+  "tokens": 140,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "protraction-retraction__cue-2": {
+  "hash": "4c79bcc94228",
+  "text": "Draw your shoulder blades together and lift your heart.",
+  "kind": "cue-ashtanga",
+  "tokens": 140,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "pelvic-tilt__cue-3": {
+  "hash": "a6ee8c226ed4",
+  "text": "Find a neutral pelvis: hip points and pubic bone in one line.",
+  "kind": "cue-ashtanga",
+  "tokens": 140,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "serratus-anterior__cue-3": {
+  "hash": "1985ea5712b3",
+  "text": "Wrap your shoulder blades around your ribs.",
+  "kind": "cue-vinyasa",
+  "tokens": 118,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "latissimus-dorsi__cue-1": {
+  "hash": "1d9c5e3211ca",
+  "text": "Reach your arms up and feel the sides of your back lengthen.",
+  "kind": "cue-vinyasa",
+  "tokens": 118,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "erector-spinae__cue-1": {
+  "hash": "63f1eb349547",
+  "text": "Lengthen your spine from your tailbone to the crown of your head.",
+  "kind": "cue-vinyasa",
+  "tokens": 118,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "erector-spinae__cue-4": {
+  "hash": "a627a6089a66",
+  "text": "Keep a long spine as you fold; hinge from your hips.",
+  "kind": "cue-vinyasa",
+  "tokens": 118,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "quadratus-lumborum__cue-2": {
+  "hash": "124fb288ea2b",
+  "text": "Keep both hips level as you reach over to the side.",
+  "kind": "cue-vinyasa",
+  "tokens": 118,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "biceps-brachii__cue-1": {
+  "hash": "b9ff69b7bb9f",
+  "text": "Keep a soft bend in your elbows; don’t lock them.",
+  "kind": "cue-vinyasa",
+  "tokens": 118,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "triceps-brachii__cue-1": {
+  "hash": "eac6ffb48392",
+  "text": "Press the floor away and straighten your arms without locking your elbows.",
+  "kind": "cue-vinyasa",
+  "tokens": 146,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "forearm-flexors__cue-1": {
+  "hash": "4260096561bf",
+  "text": "Spread your fingers wide and press through your knuckles.",
+  "kind": "cue-vinyasa",
+  "tokens": 146,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "forearm-flexors__cue-2": {
+  "hash": "0d8552e7f5eb",
+  "text": "Turn your palms up and stretch the inside of your wrists.",
+  "kind": "cue-vinyasa",
+  "tokens": 146,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "forearm-extensors__cue-1": {
+  "hash": "b5db32998406",
+  "text": "Grip the mat lightly with your fingertips to protect your wrists.",
+  "kind": "cue-vinyasa",
+  "tokens": 146,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "external-oblique__cue-1": {
+  "hash": "fb944ec71466",
+  "text": "Twist from your belly, not from your neck.",
+  "kind": "cue-vinyasa",
+  "tokens": 146,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "external-oblique__cue-3": {
+  "hash": "0b30c263c054",
+  "text": "In Side Plank, lift your waist away from the floor.",
+  "kind": "cue-vinyasa",
+  "tokens": 146,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "internal-oblique__cue-1": {
+  "hash": "a813a64bed62",
+  "text": "Draw your navel gently toward your spine as you twist.",
+  "kind": "cue-vinyasa",
+  "tokens": 130,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "diaphragm__cue-3": {
+  "hash": "d7d5cf9e1158",
+  "text": "Inhale, feel your ribs expand in every direction.",
+  "kind": "cue-vinyasa",
+  "tokens": 130,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "tensor-fasciae-latae__cue-1": {
+  "hash": "5251e8471e7d",
+  "text": "Soften the outer hip of your standing leg; don’t grip.",
+  "kind": "cue-vinyasa",
+  "tokens": 130,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "gluteus-minimus__cue-1": {
+  "hash": "b1683492ef6f",
+  "text": "Steady your standing hip without gripping.",
+  "kind": "cue-vinyasa",
+  "tokens": 130,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "sartorius__cue-1": {
+  "hash": "c4fe34b867cd",
+  "text": "Open your knee out to the side as you place the foot in Tree.",
+  "kind": "cue-vinyasa",
+  "tokens": 130,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "calves__cue-1": {
+  "hash": "19cc1cf42293",
+  "text": "Reach your heels toward the floor; they don’t have to touch.",
+  "kind": "cue-vinyasa",
+  "tokens": 130,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "calves__cue-2": {
+  "hash": "b9498b6279de",
+  "text": "Pedal your feet to wake up your calves.",
+  "kind": "cue-vinyasa",
+  "tokens": 142,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "tibialis-posterior__cue-1": {
+  "hash": "6318c5283df8",
+  "text": "Lift your inner arches and press the base of your big toes down.",
+  "kind": "cue-vinyasa",
+  "tokens": 142,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "fibularis-longus__cue-1": {
+  "hash": "54a821104e1d",
+  "text": "Spread your toes and feel the four corners of your foot.",
+  "kind": "cue-vinyasa",
+  "tokens": 142,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "achilles-tendon__cue-1": {
+  "hash": "23e4ce697261",
+  "text": "Let your heels sink slowly; never bounce.",
+  "kind": "cue-vinyasa",
+  "tokens": 142,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "plantar-fascia__cue-2": {
+  "hash": "f35a15e487e5",
+  "text": "Spread your toes and press evenly through the sole of your foot.",
+  "kind": "cue-vinyasa",
+  "tokens": 142,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "crown__cue-1": {
+  "hash": "c1a2e6bda2c5",
+  "text": "Lengthen through the crown of your head.",
+  "kind": "cue-vinyasa",
+  "tokens": 142,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "jaw__cue-2": {
+  "hash": "12b1d5158f1b",
+  "text": "Soften your jaw and the space between your eyebrows.",
+  "kind": "cue-vinyasa",
+  "tokens": 138,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "cervical-spine__cue-1": {
+  "hash": "b8c767dc36e6",
+  "text": "Keep the back of your neck long; gaze slightly forward, not up.",
+  "kind": "cue-vinyasa",
+  "tokens": 138,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "thoracic-spine__cue-1": {
+  "hash": "46028d1455bf",
+  "text": "Lift your chest and open across your upper back.",
+  "kind": "cue-vinyasa",
+  "tokens": 138,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "lumbar-spine__cue-1": {
+  "hash": "0d453b864b32",
+  "text": "Keep your lower back long; don’t let it collapse.",
+  "kind": "cue-vinyasa",
+  "tokens": 138,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "hip-points__cue-1": {
+  "hash": "25b179eb614a",
+  "text": "Point your hip points forward, like headlights.",
+  "kind": "cue-vinyasa",
+  "tokens": 138,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "pubic-bone__cue-1": {
+  "hash": "54bd87e396aa",
+  "text": "Draw your pubic bone toward your navel to lengthen the lower back.",
+  "kind": "cue-vinyasa",
+  "tokens": 138,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "femur__cue-1": {
+  "hash": "60cf7a5a6dbe",
+  "text": "Draw your front thigh bone back into the hip socket.",
+  "kind": "cue-vinyasa",
+  "tokens": 111,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "shin-bone__cue-1": {
+  "hash": "f4d9ca56d7f4",
+  "text": "Let your shin angle back; it doesn’t need to be parallel to the mat.",
+  "kind": "cue-vinyasa",
+  "tokens": 111,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "heel__cue-1": {
+  "hash": "bc96bd573829",
+  "text": "Root down through your back heel.",
+  "kind": "cue-vinyasa",
+  "tokens": 111,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "toes__cue-1": {
+  "hash": "9a9b81c7e902",
+  "text": "Spread your toes wide.",
+  "kind": "cue-vinyasa",
+  "tokens": 111,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "toes__cue-3": {
+  "hash": "4229d2e2ea57",
+  "text": "Turn your right toes out and your left toes in slightly.",
+  "kind": "cue-vinyasa",
+  "tokens": 111,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "ribs__cue-1": {
+  "hash": "81f8eccba1bf",
+  "text": "Knit your front ribs in; don’t let them flare.",
+  "kind": "cue-vinyasa",
+  "tokens": 111,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "sternum__cue-1": {
+  "hash": "588874c8048b",
+  "text": "Lift your sternum toward the ceiling.",
+  "kind": "cue-vinyasa",
+  "tokens": 122,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "shoulder-blades__cue-3": {
+  "hash": "1fb59a39ece9",
+  "text": "In Plank, spread your shoulder blades wide across your back.",
+  "kind": "cue-vinyasa",
+  "tokens": 122,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "upper-arm-bone__cue-1": {
+  "hash": "b320cd9563f8",
+  "text": "Rotate your upper arms outward to make space for your neck.",
+  "kind": "cue-vinyasa",
+  "tokens": 122,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "elbow__cue-1": {
+  "hash": "1e02cb2b3351",
+  "text": "Keep a soft bend in your elbows.",
+  "kind": "cue-vinyasa",
+  "tokens": 122,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "elbow__cue-3": {
+  "hash": "3276f0df65ac",
+  "text": "Point your elbow creases forward.",
+  "kind": "cue-vinyasa",
+  "tokens": 122,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "forearm-bones__cue-1": {
+  "hash": "a6f11e97eedb",
+  "text": "Come down onto your forearms, elbows under your shoulders.",
+  "kind": "cue-vinyasa",
+  "tokens": 122,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "wrist__cue-1": {
+  "hash": "455203a9bbac",
+  "text": "Spread your fingers and press through your knuckles to take weight off your wrists.",
+  "kind": "cue-vinyasa",
+  "tokens": 118,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "wrist__cue-2": {
+  "hash": "25be90b9fab7",
+  "text": "If your wrists hurt, come onto your fists or your forearms.",
+  "kind": "cue-vinyasa",
+  "tokens": 118,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "hands__cue-1": {
+  "hash": "41537c6b08a3",
+  "text": "Spread your fingers wide, middle fingers pointing forward.",
+  "kind": "cue-vinyasa",
+  "tokens": 118,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "flexion__cue-1": {
+  "hash": "d1936e32d67c",
+  "text": "Fold forward from your hips.",
+  "kind": "cue-vinyasa",
+  "tokens": 118,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "flexion__cue-2": {
+  "hash": "e067f19a0f34",
+  "text": "Bend your knees deeply.",
+  "kind": "cue-vinyasa",
+  "tokens": 118,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "extension__cue-1": {
+  "hash": "089772b660ba",
+  "text": "Straighten your front leg and lift your chest.",
+  "kind": "cue-vinyasa",
+  "tokens": 118,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "lateral-flexion__cue-1": {
+  "hash": "fd5977a37782",
+  "text": "Reach up and over to the right, keeping both hips grounded.",
+  "kind": "cue-vinyasa",
+  "tokens": 126,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "rotation__cue-1": {
+  "hash": "36fe04e97726",
+  "text": "Twist from your belly and let your gaze follow last.",
+  "kind": "cue-vinyasa",
+  "tokens": 126,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "external-rotation__cue-1": {
+  "hash": "a73a657bd66b",
+  "text": "Turn your front thigh out so the knee tracks over the toes.",
+  "kind": "cue-vinyasa",
+  "tokens": 126,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "internal-rotation__cue-2": {
+  "hash": "b7d1744016e6",
+  "text": "Turn your palms to face behind you.",
+  "kind": "cue-vinyasa",
+  "tokens": 126,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "abduction__cue-1": {
+  "hash": "85c7c05465fd",
+  "text": "Reach your arms out to the sides at shoulder height.",
+  "kind": "cue-vinyasa",
+  "tokens": 126,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "abduction__cue-2": {
+  "hash": "ebb87bc83e29",
+  "text": "Step your feet wide apart.",
+  "kind": "cue-vinyasa",
+  "tokens": 126,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "adduction__cue-1": {
+  "hash": "8a5f36bf82b8",
+  "text": "Squeeze your inner thighs together.",
+  "kind": "cue-vinyasa",
+  "tokens": 120,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "plantar-flexion__cue-1": {
+  "hash": "e2f337c06235",
+  "text": "Point your toes and reach through the top of your foot.",
+  "kind": "cue-vinyasa",
+  "tokens": 120,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "pronation-supination__cue-1": {
+  "hash": "a72ee351eae4",
+  "text": "Turn your palms up and open your chest.",
+  "kind": "cue-vinyasa",
+  "tokens": 120,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "protraction-retraction__cue-1": {
+  "hash": "260cd53e0521",
+  "text": "Push the floor away and spread your shoulder blades.",
+  "kind": "cue-vinyasa",
+  "tokens": 120,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "elevation-depression__cue-1": {
+  "hash": "e7693a788214",
+  "text": "Draw your shoulders down away from your ears.",
+  "kind": "cue-vinyasa",
+  "tokens": 120,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "elevation-depression__cue-2": {
+  "hash": "6c53165745a3",
+  "text": "Inhale, shrug your shoulders up; exhale, let them drop.",
+  "kind": "cue-vinyasa",
+  "tokens": 120,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "pelvic-tilt__cue-1": {
+  "hash": "2fe1d139fb80",
+  "text": "Tip your pelvis forward and lift your sitting bones.",
+  "kind": "cue-vinyasa",
+  "tokens": 106,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "pelvic-tilt__cue-2": {
+  "hash": "d5c7dd42d97d",
+  "text": "Tuck your tailbone and round your lower back.",
+  "kind": "cue-vinyasa",
+  "tokens": 106,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "quadratus-lumborum": {
+  "hash": "a8ea2e0e51e7",
+  "text": "quadratus lumborum",
+  "kind": "term",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "biceps-brachii": {
+  "hash": "c6bce822a1af",
+  "text": "biceps",
+  "kind": "term",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "triceps-brachii": {
+  "hash": "cf5d8f11942b",
+  "text": "triceps",
+  "kind": "term",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "forearm-flexors": {
+  "hash": "c1b2a41f7b97",
+  "text": "forearm flexors",
+  "kind": "term",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "forearm-extensors": {
+  "hash": "5eb3bab7f0d8",
+  "text": "forearm extensors",
+  "kind": "term",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "external-oblique": {
+  "hash": "da81a2e00d34",
+  "text": "obliques",
+  "kind": "term",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "internal-oblique": {
+  "hash": "4a328b76e20a",
+  "text": "internal oblique",
+  "kind": "term",
+  "tokens": 80,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "diaphragm": {
+  "hash": "f5df0586d12e",
+  "text": "diaphragm",
+  "kind": "term",
+  "tokens": 80,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "pelvic-floor": {
+  "hash": "ba7ccaca1ebb",
+  "text": "pelvic floor",
+  "kind": "term",
+  "tokens": 80,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "tensor-fasciae-latae": {
+  "hash": "f0e16fb71bd0",
+  "text": "tensor fasciae latae",
+  "kind": "term",
+  "tokens": 80,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "gluteus-minimus": {
+  "hash": "a1bf3b5cbae4",
+  "text": "gluteus minimus",
+  "kind": "term",
+  "tokens": 80,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "sartorius": {
+  "hash": "301b8735d306",
+  "text": "sartorius",
+  "kind": "term",
+  "tokens": 80,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "tibialis-anterior": {
+  "hash": "b090cce92d0c",
+  "text": "tibialis anterior",
+  "kind": "term",
+  "tokens": 78,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "tibialis-posterior": {
+  "hash": "7e94b5818743",
+  "text": "tibialis posterior",
+  "kind": "term",
+  "tokens": 78,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "fibularis-longus": {
+  "hash": "68fd54f419ad",
+  "text": "fibularis longus",
+  "kind": "term",
+  "tokens": 78,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "achilles-tendon": {
+  "hash": "1058e05df560",
+  "text": "Achilles tendon",
+  "kind": "term",
+  "tokens": 78,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "plantar-fascia": {
+  "hash": "47133f88425e",
+  "text": "plantar fascia",
+  "kind": "term",
+  "tokens": 78,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "jaw": {
+  "hash": "e58c27729777",
+  "text": "jaw",
+  "kind": "term",
+  "tokens": 78,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "cervical-spine": {
+  "hash": "acb1ca1fcd62",
+  "text": "cervical spine",
+  "kind": "term",
+  "tokens": 71,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "thoracic-spine": {
+  "hash": "62dbc98c664a",
+  "text": "thoracic spine",
+  "kind": "term",
+  "tokens": 71,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "lumbar-spine": {
+  "hash": "bb195a2e0ce5",
+  "text": "lumbar spine",
+  "kind": "term",
+  "tokens": 71,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "hip-points": {
+  "hash": "cf8e071204f0",
+  "text": "hip points",
+  "kind": "term",
+  "tokens": 71,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "pubic-bone": {
+  "hash": "6e4deb729bc8",
+  "text": "pubic bone",
+  "kind": "term",
+  "tokens": 71,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "femur": {
+  "hash": "0276a77cd6eb",
+  "text": "thigh bone",
+  "kind": "term",
+  "tokens": 71,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "kneecap": {
+  "hash": "eaa049397b8e",
+  "text": "kneecap",
+  "kind": "term",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "shin-bone": {
+  "hash": "6de946adc088",
+  "text": "shin",
+  "kind": "term",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "heel": {
+  "hash": "883d640cb5e7",
+  "text": "heel",
+  "kind": "term",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "arch": {
+  "hash": "adf4cfffb8e9",
+  "text": "arch of the foot",
+  "kind": "term",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "toes": {
+  "hash": "2a483e7e443a",
+  "text": "toes",
+  "kind": "term",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "ribs": {
+  "hash": "28e466d80834",
+  "text": "ribs",
+  "kind": "term",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "sternum": {
+  "hash": "b14fd24d9017",
+  "text": "breastbone",
+  "kind": "term",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "collarbones": {
+  "hash": "22060f27bc3d",
+  "text": "collarbones",
+  "kind": "term",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "shoulder-blades": {
+  "hash": "de3eed1f83b6",
+  "text": "shoulder blades",
+  "kind": "term",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "upper-arm-bone": {
+  "hash": "9eaa98f1bbfe",
+  "text": "upper arm bone",
+  "kind": "term",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "elbow": {
+  "hash": "e8b33e4d111f",
+  "text": "elbow",
+  "kind": "term",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "forearm-bones": {
+  "hash": "737c2dff732a",
+  "text": "forearm",
+  "kind": "term",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "wrist": {
+  "hash": "5aba62fa3bd3",
+  "text": "wrist",
+  "kind": "term",
+  "tokens": 71,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "hands": {
+  "hash": "9a2933bb40fc",
+  "text": "hands and fingers",
+  "kind": "term",
+  "tokens": 71,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "flexion": {
+  "hash": "ab1df4a58810",
+  "text": "flexion",
+  "kind": "term",
+  "tokens": 71,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "extension": {
+  "hash": "169a1365b7e7",
+  "text": "extension",
+  "kind": "term",
+  "tokens": 71,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "lateral-flexion": {
+  "hash": "e48e0fec9ce7",
+  "text": "lateral flexion",
+  "kind": "term",
+  "tokens": 71,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "rotation": {
+  "hash": "c2a24605292a",
+  "text": "rotation",
+  "kind": "term",
+  "tokens": 71,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "external-rotation": {
+  "hash": "edfda7113980",
+  "text": "external rotation",
+  "kind": "term",
+  "tokens": 74,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "internal-rotation": {
+  "hash": "a1ac49f557f4",
+  "text": "internal rotation",
+  "kind": "term",
+  "tokens": 74,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "abduction": {
+  "hash": "d9791b971a70",
+  "text": "abduction",
+  "kind": "term",
+  "tokens": 74,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "adduction": {
+  "hash": "b4b5cb1cf73f",
+  "text": "adduction",
+  "kind": "term",
+  "tokens": 74,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "plantar-flexion": {
+  "hash": "5f58f87a0ae4",
+  "text": "plantar flexion",
+  "kind": "term",
+  "tokens": 74,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "dorsiflexion": {
+  "hash": "7ec338873924",
+  "text": "dorsiflexion",
+  "kind": "term",
+  "tokens": 74,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "pronation-supination": {
+  "hash": "14b53c1ef377",
+  "text": "pronation and supination",
+  "kind": "term",
+  "tokens": 126,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "protraction-retraction": {
+  "hash": "0ab83dc2d217",
+  "text": "protraction and retraction",
+  "kind": "term",
+  "tokens": 126,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "elevation-depression": {
+  "hash": "453bc40ca01b",
+  "text": "elevation and depression",
+  "kind": "term",
+  "tokens": 126,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "pelvic-tilt": {
+  "hash": "6dccd664fcb2",
+  "text": "anterior and posterior pelvic tilt",
+  "kind": "term",
+  "tokens": 126,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "mountain-pose__en": {
+  "hash": "35019865247f",
+  "text": "Mountain Pose",
+  "kind": "pose-name",
+  "tokens": 79,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "upward-salute__en": {
+  "hash": "a5651e227ee1",
+  "text": "Upward Salute",
+  "kind": "pose-name",
+  "tokens": 79,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "standing-forward-fold__en": {
+  "hash": "d1c484af6089",
+  "text": "Standing Forward Fold",
+  "kind": "pose-name",
+  "tokens": 79,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "half-lift__en": {
+  "hash": "da6487583219",
+  "text": "Half Lift",
+  "kind": "pose-name",
+  "tokens": 79,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "chaturanga__en": {
+  "hash": "f37e0c11b201",
+  "text": "Chaturanga",
+  "kind": "pose-name",
+  "tokens": 79,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "upward-dog__en": {
+  "hash": "9a4b419a0c52",
+  "text": "Upward-Facing Dog",
+  "kind": "pose-name",
+  "tokens": 79,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "downward-dog__en": {
+  "hash": "51fd6fb2c78f",
+  "text": "Downward-Facing Dog",
+  "kind": "pose-name",
+  "tokens": 72,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "chair-pose__en": {
+  "hash": "c1f90c565984",
+  "text": "Chair Pose",
+  "kind": "pose-name",
+  "tokens": 72,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "warrior-1__en": {
+  "hash": "3f6072bed1f9",
+  "text": "Warrior I",
+  "kind": "pose-name",
+  "tokens": 72,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "big-toe-pose__en": {
+  "hash": "28af31e4baff",
+  "text": "Big Toe Pose",
+  "kind": "pose-name",
+  "tokens": 72,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "hand-under-foot-pose__en": {
+  "hash": "eb592062e7e8",
+  "text": "Hand Under Foot Pose",
+  "kind": "pose-name",
+  "tokens": 72,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "triangle__en": {
+  "hash": "b9983d4b96e2",
+  "text": "Triangle Pose",
+  "kind": "pose-name",
+  "tokens": 72,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "revolved-triangle__en": {
+  "hash": "e7ab68441546",
+  "text": "Revolved Triangle",
+  "kind": "pose-name",
+  "tokens": 90,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "extended-side-angle__en": {
+  "hash": "e4dcc536f34b",
+  "text": "Extended Side Angle",
+  "kind": "pose-name",
+  "tokens": 90,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "revolved-side-angle__en": {
+  "hash": "00eb4c61c59b",
+  "text": "Revolved Side Angle",
+  "kind": "pose-name",
+  "tokens": 90,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "wide-legged-fold__en": {
+  "hash": "8cb00bf42de2",
+  "text": "Wide-Legged Forward Fold",
+  "kind": "pose-name",
+  "tokens": 90,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "pyramid-pose__en": {
+  "hash": "da25b533a3a9",
+  "text": "Pyramid Pose",
+  "kind": "pose-name",
+  "tokens": 90,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "standing-hand-to-toe__en": {
+  "hash": "3c3f3ee623c3",
+  "text": "Extended Hand-to-Big-Toe Pose",
+  "kind": "pose-name",
+  "tokens": 90,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "half-bound-lotus-standing__en": {
+  "hash": "54eb877713be",
+  "text": "Half Bound Lotus Forward Fold",
+  "kind": "pose-name",
+  "tokens": 84,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "staff-pose__en": {
+  "hash": "061125d29f7a",
+  "text": "Staff Pose",
+  "kind": "pose-name",
+  "tokens": 84,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "seated-forward-fold__en": {
+  "hash": "678094013ffb",
+  "text": "Seated Forward Fold",
+  "kind": "pose-name",
+  "tokens": 84,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "upward-plank__en": {
+  "hash": "c98377652878",
+  "text": "Upward Plank",
+  "kind": "pose-name",
+  "tokens": 84,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "three-limb-forward-fold__en": {
+  "hash": "f792549a19ad",
+  "text": "Three-Limb Forward Fold",
+  "kind": "pose-name",
+  "tokens": 84,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "janu-sirsasana__en": {
+  "hash": "036fdab6bde1",
+  "text": "Head-to-Knee Pose",
+  "kind": "pose-name",
+  "tokens": 84,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "marichyasana__en": {
+  "hash": "582a6488b29b",
+  "text": "Marichi’s Pose",
+  "kind": "pose-name",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "boat-pose__en": {
+  "hash": "021685d1a854",
+  "text": "Boat Pose",
+  "kind": "pose-name",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "shoulder-pressing-pose__en": {
+  "hash": "b339b5e0bb83",
+  "text": "Shoulder-Pressing Pose",
+  "kind": "pose-name",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "tortoise-pose__en": {
+  "hash": "d8834a8c8e2f",
+  "text": "Tortoise Pose",
+  "kind": "pose-name",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "embryo-pose__en": {
+  "hash": "08faea929564",
+  "text": "Embryo in the Womb",
+  "kind": "pose-name",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "rooster-pose__en": {
+  "hash": "8c92c25ce10f",
+  "text": "Rooster Pose",
+  "kind": "pose-name",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "bound-angle__en": {
+  "hash": "6310ac819bc7",
+  "text": "Bound Angle Pose",
+  "kind": "pose-name",
+  "tokens": 108,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "wide-angle-seated-fold__en": {
+  "hash": "b1884666fc40",
+  "text": "Wide-Angle Seated Forward Fold",
+  "kind": "pose-name",
+  "tokens": 108,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "reclined-angle-pose__en": {
+  "hash": "9f6cf8a1c027",
+  "text": "Reclined Angle Pose",
+  "kind": "pose-name",
+  "tokens": 108,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "reclined-hand-to-toe__en": {
+  "hash": "da41bddfe9a0",
+  "text": "Reclined Hand-to-Big-Toe Pose",
+  "kind": "pose-name",
+  "tokens": 108,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "both-big-toes-pose__en": {
+  "hash": "3de68f8aa9b3",
+  "text": "Both Big Toes Pose",
+  "kind": "pose-name",
+  "tokens": 108,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "upward-facing-forward-fold__en": {
+  "hash": "cbf5a0f2ec63",
+  "text": "Upward-Facing Forward Fold",
+  "kind": "pose-name",
+  "tokens": 108,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "setu-bandhasana__en": {
+  "hash": "39c9c9c2f937",
+  "text": "Ashtanga Bridge",
+  "kind": "pose-name",
+  "tokens": 79,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "wheel-pose__en": {
+  "hash": "4f2ba3507c60",
+  "text": "Wheel Pose",
+  "kind": "pose-name",
+  "tokens": 79,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "shoulderstand__en": {
+  "hash": "95bfe2eaf149",
+  "text": "Shoulderstand",
+  "kind": "pose-name",
+  "tokens": 79,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "plow-pose__en": {
+  "hash": "4767c940e335",
+  "text": "Plow Pose",
+  "kind": "pose-name",
+  "tokens": 79,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "ear-pressure-pose__en": {
+  "hash": "bce177f5fe4d",
+  "text": "Ear Pressure Pose",
+  "kind": "pose-name",
+  "tokens": 79,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "lotus-in-shoulderstand__en": {
+  "hash": "f91a2eed77bd",
+  "text": "Lotus in Shoulderstand",
+  "kind": "pose-name",
+  "tokens": 79,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "fish-pose__en": {
+  "hash": "fa1b1b6f2628",
+  "text": "Fish Pose",
+  "kind": "pose-name",
+  "tokens": 74,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "extended-leg-pose__en": {
+  "hash": "bfad36a47269",
+  "text": "Extended Leg Pose",
+  "kind": "pose-name",
+  "tokens": 74,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "headstand__en": {
+  "hash": "884970142590",
+  "text": "Headstand",
+  "kind": "pose-name",
+  "tokens": 74,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "bound-lotus__en": {
+  "hash": "a5b0dee662d4",
+  "text": "Bound Lotus",
+  "kind": "pose-name",
+  "tokens": 74,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "lotus__en": {
+  "hash": "033945855f4b",
+  "text": "Lotus Pose",
+  "kind": "pose-name",
+  "tokens": 74,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "uplifting-pose__en": {
+  "hash": "ea6581c9e32e",
+  "text": "Uplifting Pose",
+  "kind": "pose-name",
+  "tokens": 74,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "savasana__en": {
+  "hash": "7cc6763dd457",
+  "text": "Savasana",
+  "kind": "pose-name",
+  "tokens": 71,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "child-pose__en": {
+  "hash": "75b597747716",
+  "text": "Child’s Pose",
+  "kind": "pose-name",
+  "tokens": 71,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "cat-pose__en": {
+  "hash": "ec9745efacb1",
+  "text": "Cat Pose",
+  "kind": "pose-name",
+  "tokens": 71,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "cow-pose__en": {
+  "hash": "214692ddec77",
+  "text": "Cow Pose",
+  "kind": "pose-name",
+  "tokens": 71,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "puppy-pose__en": {
+  "hash": "20fe6125a8cd",
+  "text": "Puppy Pose",
+  "kind": "pose-name",
+  "tokens": 71,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "plank__en": {
+  "hash": "fe44dc4a5c09",
+  "text": "Plank Pose",
+  "kind": "pose-name",
+  "tokens": 71,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "forearm-plank__en": {
+  "hash": "f378b0b23644",
+  "text": "Forearm Plank",
+  "kind": "pose-name",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "side-plank__en": {
+  "hash": "b2d8560893a0",
+  "text": "Side Plank",
+  "kind": "pose-name",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "low-lunge__en": {
+  "hash": "c5eba6ac337e",
+  "text": "Low Lunge",
+  "kind": "pose-name",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "crescent-lunge__en": {
+  "hash": "e25288f0a915",
+  "text": "Crescent Lunge",
+  "kind": "pose-name",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "reverse-warrior__en": {
+  "hash": "15f77f46273b",
+  "text": "Reverse Warrior",
+  "kind": "pose-name",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "humble-warrior__en": {
+  "hash": "991b14f6315e",
+  "text": "Humble Warrior",
+  "kind": "pose-name",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "goddess-pose__en": {
+  "hash": "e44920138358",
+  "text": "Goddess Pose",
+  "kind": "pose-name",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "side-bend__en": {
+  "hash": "ad192773f523",
+  "text": "Standing Side Bend",
+  "kind": "pose-name",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "tree-pose__en": {
+  "hash": "2f7476c89d19",
+  "text": "Tree Pose",
+  "kind": "pose-name",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "eagle-pose__en": {
+  "hash": "c4abd0b21623",
+  "text": "Eagle Pose",
+  "kind": "pose-name",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "warrior-3__en": {
+  "hash": "3e78cdcc7155",
+  "text": "Warrior III",
+  "kind": "pose-name",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "half-moon__en": {
+  "hash": "e763fafc342f",
+  "text": "Half Moon",
+  "kind": "pose-name",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "dancer-pose__en": {
+  "hash": "6be52ed075b6",
+  "text": "Dancer’s Pose",
+  "kind": "pose-name",
+  "tokens": 69,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "crow-pose__en": {
+  "hash": "8808d083c3ec",
+  "text": "Crow Pose",
+  "kind": "pose-name",
+  "tokens": 69,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "dolphin-pose__en": {
+  "hash": "63b3291dd4a7",
+  "text": "Dolphin Pose",
+  "kind": "pose-name",
+  "tokens": 69,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "handstand__en": {
+  "hash": "a9853eda6490",
+  "text": "Handstand",
+  "kind": "pose-name",
+  "tokens": 69,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "cobra__en": {
+  "hash": "ce04c8d9af2b",
+  "text": "Cobra Pose",
+  "kind": "pose-name",
+  "tokens": 69,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "locust-pose__en": {
+  "hash": "3c66f7759c11",
+  "text": "Locust Pose",
+  "kind": "pose-name",
+  "tokens": 69,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "bow-pose__en": {
+  "hash": "8ec5497ddcb2",
+  "text": "Bow Pose",
+  "kind": "pose-name",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "camel-pose__en": {
+  "hash": "4e75490c92c5",
+  "text": "Camel Pose",
+  "kind": "pose-name",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "bridge-pose__en": {
+  "hash": "84b2bceed20b",
+  "text": "Bridge Pose",
+  "kind": "pose-name",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "wild-thing__en": {
+  "hash": "096b36fbe65d",
+  "text": "Wild Thing",
+  "kind": "pose-name",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "lizard-pose__en": {
+  "hash": "31c271fab0f6",
+  "text": "Lizard Pose",
+  "kind": "pose-name",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "half-splits__en": {
+  "hash": "4b7c36b4de3b",
+  "text": "Half Splits",
+  "kind": "pose-name",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "pigeon__en": {
+  "hash": "d470d48a5db0",
+  "text": "Pigeon Pose",
+  "kind": "pose-name",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "malasana__en": {
+  "hash": "a2e99cb4bfee",
+  "text": "Malasana",
+  "kind": "pose-name",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "figure-four__en": {
+  "hash": "947eb8c74f26",
+  "text": "Figure Four",
+  "kind": "pose-name",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "happy-baby__en": {
+  "hash": "cca246dfa14c",
+  "text": "Happy Baby",
+  "kind": "pose-name",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "reclined-bound-angle__en": {
+  "hash": "4ec819c7cff1",
+  "text": "Reclined Bound Angle",
+  "kind": "pose-name",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "hero-pose__en": {
+  "hash": "89bf2b0ab0ee",
+  "text": "Hero Pose",
+  "kind": "pose-name",
+  "tokens": 76,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "reclined-hero__en": {
+  "hash": "b7688e980fbe",
+  "text": "Reclined Hero",
+  "kind": "pose-name",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "gate-pose__en": {
+  "hash": "960772f0dcbf",
+  "text": "Gate Pose",
+  "kind": "pose-name",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "cow-face-pose__en": {
+  "hash": "7c781ee772ae",
+  "text": "Cow Face Pose",
+  "kind": "pose-name",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "thread-the-needle__en": {
+  "hash": "2bb7ffae0f1e",
+  "text": "Thread the Needle",
+  "kind": "pose-name",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "seated-twist__en": {
+  "hash": "f2bbe9f12e53",
+  "text": "Seated Twist",
+  "kind": "pose-name",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "supine-twist__en": {
+  "hash": "1ecc3a54dfbe",
+  "text": "Supine Twist",
+  "kind": "pose-name",
+  "tokens": 67,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "swan__en": {
+  "hash": "68b30692a9df",
+  "text": "Swan",
+  "kind": "pose-name",
+  "tokens": 61,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "shoelace__en": {
+  "hash": "4f70cad100f3",
+  "text": "Shoelace",
+  "kind": "pose-name",
+  "tokens": 61,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "square__en": {
+  "hash": "cc24423dc19c",
+  "text": "Square",
+  "kind": "pose-name",
+  "tokens": 61,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "dragon__en": {
+  "hash": "12c1e412c6f8",
+  "text": "Dragon",
+  "kind": "pose-name",
+  "tokens": 61,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "frog__en": {
+  "hash": "63847dc00768",
+  "text": "Frog",
+  "kind": "pose-name",
+  "tokens": 61,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "butterfly__en": {
+  "hash": "52ffb73a378a",
+  "text": "Butterfly",
+  "kind": "pose-name",
+  "tokens": 61,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "half-butterfly__en": {
+  "hash": "5cc6e183f8e6",
+  "text": "Half Butterfly",
+  "kind": "pose-name",
+  "tokens": 84,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "dragonfly__en": {
+  "hash": "a41d30b5073e",
+  "text": "Dragonfly",
+  "kind": "pose-name",
+  "tokens": 84,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "deer__en": {
+  "hash": "bd0ea89a813b",
+  "text": "Deer",
+  "kind": "pose-name",
+  "tokens": 84,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "cat-pulling-its-tail__en": {
+  "hash": "f0f9445f39e2",
+  "text": "Cat Pulling Its Tail",
+  "kind": "pose-name",
+  "tokens": 74,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "caterpillar__en": {
+  "hash": "87912e078d57",
+  "text": "Caterpillar",
+  "kind": "pose-name",
+  "tokens": 74,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "snail__en": {
+  "hash": "774d20e4fb47",
+  "text": "Snail",
+  "kind": "pose-name",
+  "tokens": 74,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "sphinx__en": {
+  "hash": "e5ad313d20d1",
+  "text": "Sphinx",
+  "kind": "pose-name",
+  "tokens": 73,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "seal__en": {
+  "hash": "14ea62339f98",
+  "text": "Seal",
+  "kind": "pose-name",
+  "tokens": 73,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "melting-heart__en": {
+  "hash": "a92352272c4c",
+  "text": "Melting Heart",
+  "kind": "pose-name",
+  "tokens": 73,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "bananasana__en": {
+  "hash": "8080abad04d3",
+  "text": "Bananasana",
+  "kind": "pose-name",
+  "tokens": 73,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "reclined-twist__en": {
+  "hash": "7c83fa1df624",
+  "text": "Reclined Twist",
+  "kind": "pose-name",
+  "tokens": 73,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "saddle__en": {
+  "hash": "f5a5c9498c17",
+  "text": "Saddle",
+  "kind": "pose-name",
+  "tokens": 73,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "half-saddle__en": {
+  "hash": "bc36e7ece89b",
+  "text": "Half Saddle",
+  "kind": "pose-name",
+  "tokens": 90,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "toe-squat__en": {
+  "hash": "e9e5103831f4",
+  "text": "Toe Squat",
+  "kind": "pose-name",
+  "tokens": 90,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "ankle-stretch__en": {
+  "hash": "9d2a67070f62",
+  "text": "Ankle Stretch",
+  "kind": "pose-name",
+  "tokens": 90,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "squat__en": {
+  "hash": "cbde0ea95c55",
+  "text": "Squat",
+  "kind": "pose-name",
+  "tokens": 90,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "dangling__en": {
+  "hash": "db52ac5f3692",
+  "text": "Dangling",
+  "kind": "pose-name",
+  "tokens": 90,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "supported-fish__en": {
+  "hash": "85db70a77d2e",
+  "text": "Supported Fish",
+  "kind": "pose-name",
+  "tokens": 90,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true
+ },
+ "legs-up-the-wall__en": {
+  "hash": "4961f83360b8",
+  "text": "Legs Up the Wall",
+  "kind": "pose-name",
+  "tokens": 62,
+  "model": "gemini-3.8-flash-tts",
+  "batched": false
+ },
+ "arch__cue-1": {
+  "hash": "6318c5283df8",
+  "text": "Lift your inner arches and press the base of your big toes down.",
+  "kind": "cue-vinyasa",
+  "tokens": 142,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true,
+  "copyOf": "tibialis-posterior__cue-1"
+ },
+ "half-bound-lotus-forward-fold__en": {
+  "hash": "54eb877713be",
+  "text": "Half Bound Lotus Forward Fold",
+  "kind": "pose-name",
+  "tokens": 84,
+  "model": "gemini-3.8-flash-tts",
+  "batched": true,
+  "copyOf": "half-bound-lotus-standing__en"
+ },
+ "chair-pose__cue-6": {
+  "hash": "f1331e4e8c04",
+  "text": "Relax your shoulders away from your ears.",
+  "kind": "cue-soften",
+  "tokens": 154,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false,
+  "copyOf": "warrior-2__cue-6"
+ },
+ "pigeon__sa": {
+  "hash": "7242a23a051d",
+  "text": "Eka Pāda Rājakapotāsana",
+  "kind": "pose-name",
+  "tokens": 153,
+  "model": "gemini-2.5-flash-preview-tts",
+  "batched": false,
+  "copyOf": "sleeping-swan__sa"
+ },
+ "mountain-pose__sa": {
+  "hash": "57cc5eb71cff",
+  "text": "Samasthitiḥ",
+  "kind": "pose-name",
+  "tokens": 54,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "mountain-pose__cue-1": {
+  "hash": "50b9d5a12758",
+  "text": "Come to the front of your mat and stand with your feet together.",
+  "kind": "cue-transition",
+  "tokens": 117,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "mountain-pose__cue-9": {
+  "hash": "f43f78b7f2f2",
+  "text": "From here, inhale and reach your arms up.",
+  "kind": "cue-transition",
+  "tokens": 117,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "upward-salute__cue-1": {
+  "hash": "93358045582d",
+  "text": "Inhale, sweep your arms out and up over your head.",
+  "kind": "cue-transition",
+  "tokens": 117,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "upward-salute__cue-8": {
+  "hash": "547f80d87469",
+  "text": "Exhale, fold forward.",
+  "kind": "cue-transition",
+  "tokens": 117,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "standing-forward-fold__cue-1": {
+  "hash": "a93827d5032f",
+  "text": "Exhale, hinge at your hips and fold forward.",
+  "kind": "cue-transition",
+  "tokens": 117,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "standing-forward-fold__cue-9": {
+  "hash": "36b88642edcb",
+  "text": "Inhale, lift your chest halfway and look forward.",
+  "kind": "cue-transition",
+  "tokens": 117,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "half-lift__cue-1": {
+  "hash": "b8c695bdcb69",
+  "text": "Inhale, come halfway up with your fingertips on the floor.",
+  "kind": "cue-transition",
+  "tokens": 134,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "half-lift__cue-9": {
+  "hash": "5dc61d9d5a4e",
+  "text": "Exhale, plant your hands and step or jump back.",
+  "kind": "cue-transition",
+  "tokens": 134,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "chaturanga__cue-1": {
+  "hash": "d25571e58f47",
+  "text": "Exhale, step or jump back, and lower halfway down.",
+  "kind": "cue-transition",
+  "tokens": 134,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "chaturanga__cue-9": {
+  "hash": "a67d3fb46315",
+  "text": "Inhale, roll over your toes into Upward Dog.",
+  "kind": "cue-transition",
+  "tokens": 134,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "upward-dog__cue-1": {
+  "hash": "5e5c9b31797a",
+  "text": "Inhale, roll over your toes and lift your chest forward and up.",
+  "kind": "cue-transition",
+  "tokens": 134,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "upward-dog__cue-9": {
+  "hash": "0b597fd2962c",
+  "text": "Exhale, roll back over your toes into Downward Dog.",
+  "kind": "cue-transition",
+  "tokens": 134,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "downward-dog__cue-1": {
+  "hash": "96a532ca3da1",
+  "text": "Exhale, roll over your toes and lift your hips up and back.",
+  "kind": "cue-transition",
+  "tokens": 138,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "downward-dog__cue-9": {
+  "hash": "12b852d3a50e",
+  "text": "At the end of your exhale, bend your knees and look between your hands.",
+  "kind": "cue-transition",
+  "tokens": 138,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "chair-pose__cue-1": {
+  "hash": "2f29e15291f4",
+  "text": "Inhale, bend your knees and reach your arms up.",
+  "kind": "cue-transition",
+  "tokens": 138,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "chair-pose__cue-9": {
+  "hash": "0df79c075cc0",
+  "text": "Exhale, fold forward and place your hands beside your feet.",
+  "kind": "cue-transition",
+  "tokens": 138,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "warrior-1__cue-1": {
+  "hash": "a19133f33dcf",
+  "text": "Turn your back heel down and step your right foot forward between your hands.",
+  "kind": "cue-transition",
+  "tokens": 138,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "warrior-1__cue-9": {
+  "hash": "7312dceaf438",
+  "text": "Inhale, straighten your front leg and turn to the other side.",
+  "kind": "cue-transition",
+  "tokens": 138,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "big-toe-pose__cue-1": {
+  "hash": "0c5d4fbc7e32",
+  "text": "Step or jump your feet hip-width apart, parallel.",
+  "kind": "cue-transition",
+  "tokens": 130,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "big-toe-pose__cue-2": {
+  "hash": "ece2405b4d4b",
+  "text": "Fold and hook your big toes with your first two fingers.",
+  "kind": "cue-transition",
+  "tokens": 130,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "big-toe-pose__cue-9": {
+  "hash": "4bd68e68c585",
+  "text": "Inhale, lift your head and straighten your arms.",
+  "kind": "cue-transition",
+  "tokens": 130,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "hand-under-foot-pose__cue-1": {
+  "hash": "34ce453a6b1d",
+  "text": "Lift the front of your feet and slide your hands underneath, palms up.",
+  "kind": "cue-transition",
+  "tokens": 130,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "hand-under-foot-pose__cue-9": {
+  "hash": "c6d45c70c29b",
+  "text": "Inhale, look up. Exhale, hands to your hips. Inhale, come all the way up.",
+  "kind": "cue-transition",
+  "tokens": 130,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "triangle__cue-1": {
+  "hash": "d55ed93876f4",
+  "text": "Step your feet about a leg’s length apart and turn your right toes out.",
+  "kind": "cue-transition",
+  "tokens": 130,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "triangle__cue-9": {
+  "hash": "aaa9d4c5d375",
+  "text": "Inhale, come up, and turn to the left.",
+  "kind": "cue-transition",
+  "tokens": 139,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "revolved-triangle__cue-1": {
+  "hash": "a784493f4f5d",
+  "text": "Turn your right toes out and your back foot in, and square your hips forward.",
+  "kind": "cue-transition",
+  "tokens": 139,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "revolved-triangle__cue-2": {
+  "hash": "57f3cd997cfa",
+  "text": "Exhale, fold over your front leg and bring your left hand outside your right foot.",
+  "kind": "cue-transition",
+  "tokens": 139,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "extended-side-angle__cue-1": {
+  "hash": "db0856b59665",
+  "text": "Step your feet wide and turn your right toes out.",
+  "kind": "cue-transition",
+  "tokens": 140,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "revolved-side-angle__cue-1": {
+  "hash": "51faba0b2943",
+  "text": "Turn to the right, turn your back foot in, and bend your front knee.",
+  "kind": "cue-transition",
+  "tokens": 140,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "revolved-side-angle__cue-2": {
+  "hash": "46ec591b101b",
+  "text": "Exhale, twist and bring your left shoulder outside your right knee.",
+  "kind": "cue-transition",
+  "tokens": 140,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "wide-legged-fold__cue-1": {
+  "hash": "434e938a914f",
+  "text": "Step your feet wide apart, toes turned slightly in.",
+  "kind": "cue-transition",
+  "tokens": 146,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "wide-legged-fold__cue-2": {
+  "hash": "f64c23e8dc7f",
+  "text": "Exhale, place your hands on the floor between your feet, shoulder-width apart.",
+  "kind": "cue-transition",
+  "tokens": 178,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "wide-legged-fold__cue-9": {
+  "hash": "7702ebfc7426",
+  "text": "Inhale, look up. Exhale, hands to your waist. Inhale, come all the way up.",
+  "kind": "cue-transition",
+  "tokens": 234,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "pyramid-pose__cue-1": {
+  "hash": "815b980b43a2",
+  "text": "Bring your palms together behind your back, fingers pointing up.",
+  "kind": "cue-transition",
+  "tokens": 155,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "pyramid-pose__cue-2": {
+  "hash": "419dc76b665e",
+  "text": "Turn to the right: front toes forward, back foot turned in.",
+  "kind": "cue-transition",
+  "tokens": 155,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "standing-hand-to-toe__cue-1": {
+  "hash": "95f317b45c7f",
+  "text": "Shift your weight onto your left foot, and catch your right big toe with your first two fingers.",
+  "kind": "cue-transition",
+  "tokens": 155,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "standing-hand-to-toe__cue-9": {
+  "hash": "e4315e63e00c",
+  "text": "Exhale, lower your leg, and come back to Samasthiti.",
+  "kind": "cue-transition",
+  "tokens": 154,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "half-bound-lotus-standing__cue-1": {
+  "hash": "28117b144cf6",
+  "text": "Lift your right foot into half lotus, high on your left thigh.",
+  "kind": "cue-transition",
+  "tokens": 154,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "half-bound-lotus-standing__cue-3": {
+  "hash": "0bf2a4c7c2c1",
+  "text": "Exhale, fold forward and place your left hand beside your left foot.",
+  "kind": "cue-transition",
+  "tokens": 154,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "half-bound-lotus-standing__cue-9": {
+  "hash": "10e301a2c0b3",
+  "text": "Inhale, look up. Then come up slowly and release your foot.",
+  "kind": "cue-transition",
+  "tokens": 167,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "staff-pose__cue-1": {
+  "hash": "d3e308e64d39",
+  "text": "From Downward Dog, jump or step your feet through your hands and sit down.",
+  "kind": "cue-transition",
+  "tokens": 168,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "staff-pose__cue-9": {
+  "hash": "f9a73825afad",
+  "text": "Inhale here, and as you exhale, reach forward for your toes.",
+  "kind": "cue-transition",
+  "tokens": 168,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "seated-forward-fold__cue-1": {
+  "hash": "faf7b857218c",
+  "text": "Wrap your first two fingers around your big toes. Inhale, and lift your chest.",
+  "kind": "cue-transition",
+  "tokens": 177,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "seated-forward-fold__cue-9": {
+  "hash": "a5c4a58b072c",
+  "text": "After the last round, inhale and look up, then lift up and jump back.",
+  "kind": "cue-transition",
+  "tokens": 177,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "upward-plank__cue-1": {
+  "hash": "15f7dde5b61b",
+  "text": "Place your hands a little behind your hips, fingers pointing toward your feet.",
+  "kind": "cue-transition",
+  "tokens": 177,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "upward-plank__cue-2": {
+  "hash": "3044837d1e6e",
+  "text": "Inhale, press into your hands and feet, and lift your hips high.",
+  "kind": "cue-transition",
+  "tokens": 157,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "upward-plank__cue-9": {
+  "hash": "96eaa16caadc",
+  "text": "Exhale, and lower your hips slowly to the floor.",
+  "kind": "cue-transition",
+  "tokens": 157,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "half-bound-lotus-forward-fold__cue-1": {
+  "hash": "5645d7d5fdf0",
+  "text": "Bend your right knee and place your right foot high on your left thigh, in half lotus.",
+  "kind": "cue-transition",
+  "tokens": 157,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "half-bound-lotus-forward-fold__cue-3": {
+  "hash": "88f191a1d2e6",
+  "text": "Wrap your right arm behind your back and catch your right big toe.",
+  "kind": "cue-transition",
+  "tokens": 163,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "half-bound-lotus-forward-fold__cue-9": {
+  "hash": "be0986a5573c",
+  "text": "Inhale, look up, then release your leg and take a vinyasa before the other side.",
+  "kind": "cue-transition",
+  "tokens": 163,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "three-limb-forward-fold__cue-1": {
+  "hash": "4552fbe475de",
+  "text": "Fold your right leg back, with your right foot beside your right hip.",
+  "kind": "cue-transition",
+  "tokens": 163,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "three-limb-forward-fold__cue-9": {
+  "hash": "f58b88dc780e",
+  "text": "Inhale, lift your head, then release your leg and jump back.",
+  "kind": "cue-transition",
+  "tokens": 157,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "janu-sirsasana__cue-1": {
+  "hash": "cd547e29a123",
+  "text": "Bend your right knee out to the side and place your right foot against your inner left thigh.",
+  "kind": "cue-transition",
+  "tokens": 157,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "janu-sirsasana__cue-9": {
+  "hash": "52c8cbd608f9",
+  "text": "Inhale, look up, then release your leg and change sides.",
+  "kind": "cue-transition",
+  "tokens": 157,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "marichyasana__cue-1": {
+  "hash": "acf87b3dc955",
+  "text": "Bend your right knee and place your right foot close to your right sitting bone.",
+  "kind": "cue-transition",
+  "tokens": 170,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "marichyasana__cue-3": {
+  "hash": "06a254a15937",
+  "text": "Reach your right arm forward, inside your right knee, then wrap it around your shin.",
+  "kind": "cue-transition",
+  "tokens": 170,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "marichyasana__cue-9": {
+  "hash": "51b933f6cf34",
+  "text": "Inhale, look up, release your hands, and take a vinyasa before the other side.",
+  "kind": "cue-transition",
+  "tokens": 170,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "boat-pose__cue-1": {
+  "hash": "0ae7184693ea",
+  "text": "Sit with your knees bent, and lean back a little behind your sitting bones.",
+  "kind": "cue-transition",
+  "tokens": 157,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "boat-pose__cue-2": {
+  "hash": "609c19373a42",
+  "text": "Inhale, lift your feet and straighten your legs.",
+  "kind": "cue-transition",
+  "tokens": 118,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "boat-pose__cue-9": {
+  "hash": "97ee61b890a3",
+  "text": "Cross your legs, press your hands down, and lift up. Then sit down for the next round.",
+  "kind": "cue-transition",
+  "tokens": 196,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "shoulder-pressing-pose__cue-1": {
+  "hash": "aa62cd574d5f",
+  "text": "From Downward Dog, jump your feet around the outside of your hands.",
+  "kind": "cue-transition",
+  "tokens": 162,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "shoulder-pressing-pose__cue-9": {
+  "hash": "c5672fab94ec",
+  "text": "Inhale, lift up and straighten your legs, then move through Crow and jump back.",
+  "kind": "cue-transition",
+  "tokens": 162,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "tortoise-pose__cue-1": {
+  "hash": "043cf3b63287",
+  "text": "From Downward Dog, jump your feet around your arms and sit down, knees bent.",
+  "kind": "cue-transition",
+  "tokens": 162,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "tortoise-pose__cue-9": {
+  "hash": "ad72d7b7039d",
+  "text": "For Sleeping Tortoise, bend your knees, bind your hands behind your back, and cross your feet.",
+  "kind": "cue-transition",
+  "tokens": 196,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "embryo-pose__cue-1": {
+  "hash": "ab45b0cd860c",
+  "text": "Come into full lotus, right foot first.",
+  "kind": "cue-transition",
+  "tokens": 114,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "embryo-pose__cue-9": {
+  "hash": "f171b44f89f8",
+  "text": "Round your back and roll nine times, turning in a circle, then come up into Rooster.",
+  "kind": "cue-transition",
+  "tokens": 207,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "rooster-pose__cue-1": {
+  "hash": "a241e5d963f9",
+  "text": "On your last roll, come forward and press your palms into the floor.",
+  "kind": "cue-transition",
+  "tokens": 143,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "rooster-pose__cue-8": {
+  "hash": "4c92c25c9431",
+  "text": "Exhale, lower down, release your arms and your lotus, and take a vinyasa.",
+  "kind": "cue-transition",
+  "tokens": 143,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "bound-angle__cue-1": {
+  "hash": "9d8d6297fb61",
+  "text": "Bring the soles of your feet together and draw your heels in toward you.",
+  "kind": "cue-transition",
+  "tokens": 143,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "bound-angle__cue-9": {
+  "hash": "8953aa8dae92",
+  "text": "Inhale, come up to sit, and take a vinyasa.",
+  "kind": "cue-transition",
+  "tokens": 143,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "wide-angle-seated-fold__cue-1": {
+  "hash": "e200200e8968",
+  "text": "Open your legs wide and take hold of the outer edges of your feet.",
+  "kind": "cue-transition",
+  "tokens": 143,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "wide-angle-seated-fold__cue-9": {
+  "hash": "8fc8dd03cebc",
+  "text": "Exhale, lower your legs, and take a vinyasa.",
+  "kind": "cue-transition",
+  "tokens": 143,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "reclined-angle-pose__cue-1": {
+  "hash": "f48088c43ee7",
+  "text": "Lie on your back, then exhale and roll your legs over your head.",
+  "kind": "cue-transition",
+  "tokens": 155,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "reclined-angle-pose__cue-8": {
+  "hash": "8df8fc3202a0",
+  "text": "Inhale, roll up and balance, then exhale and land softly on your calves.",
+  "kind": "cue-transition",
+  "tokens": 196,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "reclined-hand-to-toe__cue-1": {
+  "hash": "f7d6fbfb89e2",
+  "text": "Lie on your back with your legs straight and your feet together.",
+  "kind": "cue-transition",
+  "tokens": 196,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "reclined-hand-to-toe__cue-2": {
+  "hash": "0960d76f0be2",
+  "text": "Inhale, lift your right leg and wrap your first two fingers around your big toe.",
+  "kind": "cue-transition",
+  "tokens": 201,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "reclined-hand-to-toe__cue-9": {
+  "hash": "cd19fc0cf657",
+  "text": "Inhale, lower your head; exhale, open your right leg out to the right and gaze over your left shoulder.",
+  "kind": "cue-transition",
+  "tokens": 201,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "both-big-toes-pose__cue-1": {
+  "hash": "ca6ed3a63c1c",
+  "text": "Lie down, exhale, and roll your legs over your head, feet together.",
+  "kind": "cue-transition",
+  "tokens": 201,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "both-big-toes-pose__cue-3": {
+  "hash": "d346f30b3e8b",
+  "text": "Inhale, roll up and balance on your sitting bones, legs straight.",
+  "kind": "cue-transition",
+  "tokens": 141,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "both-big-toes-pose__cue-9": {
+  "hash": "efc8afa42117",
+  "text": "Exhale, release your feet, and take a vinyasa.",
+  "kind": "cue-transition",
+  "tokens": 141,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "upward-facing-forward-fold__cue-1": {
+  "hash": "d0b32441e6b3",
+  "text": "Lie down, exhale, and roll your legs over your head.",
+  "kind": "cue-transition",
+  "tokens": 141,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "upward-facing-forward-fold__cue-3": {
+  "hash": "6f64c44f8ece",
+  "text": "Inhale, roll up and balance on your sitting bones.",
+  "kind": "cue-transition",
+  "tokens": 145,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "upward-facing-forward-fold__cue-9": {
+  "hash": "dea92049ebf1",
+  "text": "Exhale, release your feet and lower down, then take a vinyasa.",
+  "kind": "cue-transition",
+  "tokens": 145,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "setu-bandhasana__cue-1": {
+  "hash": "57d16e7e66cf",
+  "text": "Lie on your back with your heels together, toes turned out, and knees bent open.",
+  "kind": "cue-transition",
+  "tokens": 145,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "setu-bandhasana__cue-9": {
+  "hash": "f46a81323899",
+  "text": "Exhale, lower your hips slowly, then lift your head and lie down.",
+  "kind": "cue-transition",
+  "tokens": 192,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "wheel-pose__cue-1": {
+  "hash": "08d2504d7beb",
+  "text": "Lie on your back, bend your knees, and bring your feet hip-width apart, close to your hips.",
+  "kind": "cue-transition",
+  "tokens": 192,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "wheel-pose__cue-2": {
+  "hash": "239f6294776c",
+  "text": "Place your hands beside your ears, fingers pointing toward your shoulders.",
+  "kind": "cue-transition",
+  "tokens": 192,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "wheel-pose__cue-3": {
+  "hash": "7560e4801223",
+  "text": "Inhale, press into your hands and feet, and lift all the way up.",
+  "kind": "cue-transition",
+  "tokens": 202,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "wheel-pose__cue-9": {
+  "hash": "4c18fd8710c3",
+  "text": "Exhale, tuck your chin, and lower slowly: shoulders first, then your hips.",
+  "kind": "cue-transition",
+  "tokens": 202,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "shoulderstand__cue-1": {
+  "hash": "790359b5ac1f",
+  "text": "Lie on your back, and on an inhale, lift your legs and hips up over your head.",
+  "kind": "cue-transition",
+  "tokens": 202,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "shoulderstand__cue-9": {
+  "hash": "aa000080503d",
+  "text": "Exhale, lower your feet over your head to the floor behind you.",
+  "kind": "cue-transition",
+  "tokens": 142,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "plow-pose__cue-1": {
+  "hash": "eb7a4e9090c0",
+  "text": "Exhale, lower your feet to the floor behind your head.",
+  "kind": "cue-transition",
+  "tokens": 142,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "plow-pose__cue-8": {
+  "hash": "9c104e67d281",
+  "text": "Exhale, bend your knees down beside your ears.",
+  "kind": "cue-transition",
+  "tokens": 142,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "ear-pressure-pose__cue-1": {
+  "hash": "8d9d20d4e073",
+  "text": "From Plow, exhale and bend your knees down beside your ears.",
+  "kind": "cue-transition",
+  "tokens": 142,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "ear-pressure-pose__cue-8": {
+  "hash": "ba79060b9aca",
+  "text": "Inhale, bring your hands to your back and lift your legs back up.",
+  "kind": "cue-transition",
+  "tokens": 142,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "lotus-in-shoulderstand__cue-1": {
+  "hash": "9264bfbf9207",
+  "text": "From Shoulderstand, fold your right leg, then your left, into lotus.",
+  "kind": "cue-transition",
+  "tokens": 142,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "lotus-in-shoulderstand__cue-4": {
+  "hash": "db1fc2e3f9b2",
+  "text": "Exhale, lower your knees toward your head, and wrap your arms around your legs.",
+  "kind": "cue-transition",
+  "tokens": 132,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "lotus-in-shoulderstand__cue-9": {
+  "hash": "70c566181887",
+  "text": "Bring your hands to the floor and roll down slowly, keeping your lotus.",
+  "kind": "cue-transition",
+  "tokens": 132,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "fish-pose__cue-1": {
+  "hash": "05227f52da24",
+  "text": "Roll down onto your back, keeping your legs in lotus.",
+  "kind": "cue-transition",
+  "tokens": 132,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "fish-pose__cue-9": {
+  "hash": "d187053a107b",
+  "text": "Inhale, release your lotus, and lift your legs up straight.",
+  "kind": "cue-transition",
+  "tokens": 132,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "extended-leg-pose__cue-1": {
+  "hash": "61acd3192c81",
+  "text": "Keep the arch in your back, and release your legs from lotus.",
+  "kind": "cue-transition",
+  "tokens": 132,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "extended-leg-pose__cue-8": {
+  "hash": "a67b87109d60",
+  "text": "Exhale, lower your legs, then roll back over into Chaturanga.",
+  "kind": "cue-transition",
+  "tokens": 132,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "headstand__cue-1": {
+  "hash": "92dfa8e9eea1",
+  "text": "Kneel, interlace your fingers, and place your forearms on the floor, elbows shoulder-width apart.",
+  "kind": "cue-transition",
+  "tokens": 183,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "headstand__cue-4": {
+  "hash": "071647a68292",
+  "text": "Walk your feet in, and on an inhale, lift both legs slowly.",
+  "kind": "cue-transition",
+  "tokens": 183,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "headstand__cue-9": {
+  "hash": "3cdfe5f2a14b",
+  "text": "Exhale, lower your legs slowly, and rest in Child’s Pose.",
+  "kind": "cue-transition",
+  "tokens": 183,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "bound-lotus__cue-1": {
+  "hash": "52cafe1eff02",
+  "text": "Sit in full lotus, right foot first, then left.",
+  "kind": "cue-transition",
+  "tokens": 153,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "bound-lotus__cue-5": {
+  "hash": "fa16b8bdbe46",
+  "text": "Exhale, fold forward and bring your forehead or chin toward the floor.",
+  "kind": "cue-transition",
+  "tokens": 155,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "bound-lotus__cue-9": {
+  "hash": "1c07127e3cdb",
+  "text": "Inhale, come up, and release your hands to your knees.",
+  "kind": "cue-transition",
+  "tokens": 155,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "lotus__cue-1": {
+  "hash": "3b0764d78bf5",
+  "text": "Bring your right foot onto your left thigh, then your left foot onto your right thigh.",
+  "kind": "cue-transition",
+  "tokens": 196,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "lotus__cue-9": {
+  "hash": "0fffdf35b0cc",
+  "text": "Place your hands beside your hips, ready to lift up.",
+  "kind": "cue-transition",
+  "tokens": 124,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "uplifting-pose__cue-1": {
+  "hash": "859b27a21efc",
+  "text": "Keep your lotus, and place your palms flat beside your hips.",
+  "kind": "cue-transition",
+  "tokens": 124,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "uplifting-pose__cue-2": {
+  "hash": "e8a8a8c88f26",
+  "text": "Inhale, press your hands down and lift your hips and knees off the floor.",
+  "kind": "cue-transition",
+  "tokens": 162,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "uplifting-pose__cue-8": {
+  "hash": "ab50a7246923",
+  "text": "Exhale, swing back through your arms, and land in Chaturanga.",
+  "kind": "cue-transition",
+  "tokens": 162,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "savasana__cue-1": {
+  "hash": "76a103299e6e",
+  "text": "Lie down on your back, and let your legs fall open.",
+  "kind": "cue-transition",
+  "tokens": 162,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "savasana__cue-8": {
+  "hash": "79ea1bb7c6f2",
+  "text": "When you’re ready, deepen your breath, roll onto your right side, and slowly come up to sit.",
+  "kind": "cue-transition",
+  "tokens": 161,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "child-pose__cue-1": {
+  "hash": "e921901a72ad",
+  "text": "Bring your big toes together, and sit back toward your heels.",
+  "kind": "cue-transition",
+  "tokens": 161,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "child-pose__cue-9": {
+  "hash": "d33d7b5648e9",
+  "text": "When you’re ready, walk your hands back and slowly sit up.",
+  "kind": "cue-transition",
+  "tokens": 161,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "cat-pose__cue-1": {
+  "hash": "ca6f6ab3ab34",
+  "text": "Come onto all fours, wrists under your shoulders, knees under your hips.",
+  "kind": "cue-transition",
+  "tokens": 128,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "cat-pose__cue-8": {
+  "hash": "7b8b6386a516",
+  "text": "Inhale, and come back to a flat back.",
+  "kind": "cue-transition",
+  "tokens": 128,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "cow-pose__cue-1": {
+  "hash": "2abb16bb49f0",
+  "text": "Start on all fours, with your spine long and neutral.",
+  "kind": "cue-transition",
+  "tokens": 128,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "cow-pose__cue-8": {
+  "hash": "7048c8087267",
+  "text": "Exhale, and return to a neutral spine.",
+  "kind": "cue-transition",
+  "tokens": 155,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "puppy-pose__cue-1": {
+  "hash": "6d8ae641bbbe",
+  "text": "From all fours, keep your hips over your knees, and walk your hands forward.",
+  "kind": "cue-transition",
+  "tokens": 155,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "puppy-pose__cue-9": {
+  "hash": "8fe902b1d649",
+  "text": "Walk your hands back, and rest in Child’s Pose.",
+  "kind": "cue-transition",
+  "tokens": 155,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "plank__cue-1": {
+  "hash": "811f5f518d60",
+  "text": "From Downward Dog, inhale and shift forward, shoulders over your wrists.",
+  "kind": "cue-transition",
+  "tokens": 155,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "plank__cue-9": {
+  "hash": "76102eab47e5",
+  "text": "Exhale, lower halfway down to Chaturanga, or lift your hips back to Downward Dog.",
+  "kind": "cue-transition",
+  "tokens": 155,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "forearm-plank__cue-1": {
+  "hash": "0ed555509c98",
+  "text": "From all fours, lower onto your forearms, elbows under your shoulders.",
+  "kind": "cue-transition",
+  "tokens": 155,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "forearm-plank__cue-2": {
+  "hash": "b8c957ea4d11",
+  "text": "Step your feet back one at a time and lift your knees.",
+  "kind": "cue-transition",
+  "tokens": 122,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "forearm-plank__cue-9": {
+  "hash": "6cfa6d9d03f0",
+  "text": "Lower your knees, and rest back in Child’s Pose.",
+  "kind": "cue-transition",
+  "tokens": 122,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "side-plank__cue-1": {
+  "hash": "14e825183856",
+  "text": "From Plank, roll onto the outer edge of your right foot.",
+  "kind": "cue-transition",
+  "tokens": 122,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "side-plank__cue-9": {
+  "hash": "2301dd1d7e6c",
+  "text": "Exhale, come back to Plank, and take the other side.",
+  "kind": "cue-transition",
+  "tokens": 122,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "low-lunge__cue-1": {
+  "hash": "0f2df108b2c0",
+  "text": "From Downward Dog, step your right foot forward between your hands.",
+  "kind": "cue-transition",
+  "tokens": 122,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "low-lunge__cue-2": {
+  "hash": "bff685e44629",
+  "text": "Lower your left knee, and rest the top of your back foot on the mat.",
+  "kind": "cue-transition",
+  "tokens": 122,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "low-lunge__cue-9": {
+  "hash": "babae2e70f2b",
+  "text": "Bring your hands down, tuck your back toes, and step back to Downward Dog.",
+  "kind": "cue-transition",
+  "tokens": 133,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "crescent-lunge__cue-2": {
+  "hash": "14e5f6d93c43",
+  "text": "Inhale, rise up, and reach your arms overhead.",
+  "kind": "cue-transition",
+  "tokens": 133,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "crescent-lunge__cue-9": {
+  "hash": "e283ad26d97f",
+  "text": "Exhale, hands down to the mat, and step back to Downward Dog.",
+  "kind": "cue-transition",
+  "tokens": 133,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "reverse-warrior__cue-1": {
+  "hash": "6c9f50054b89",
+  "text": "From Warrior Two, turn your front palm up.",
+  "kind": "cue-transition",
+  "tokens": 133,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "reverse-warrior__cue-9": {
+  "hash": "8600e06e912c",
+  "text": "Exhale, and cartwheel your hands down to frame your front foot.",
+  "kind": "cue-transition",
+  "tokens": 133,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "humble-warrior__cue-1": {
+  "hash": "b9257a7e17b0",
+  "text": "From Warrior One, interlace your hands behind your back.",
+  "kind": "cue-transition",
+  "tokens": 133,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "humble-warrior__cue-9": {
+  "hash": "2b2d31652ad3",
+  "text": "Inhale, rise back up slowly, and release your hands.",
+  "kind": "cue-transition",
+  "tokens": 134,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "goddess-pose__cue-1": {
+  "hash": "cd2d7b649157",
+  "text": "Step your feet wide, and turn your toes out.",
+  "kind": "cue-transition",
+  "tokens": 134,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "goddess-pose__cue-9": {
+  "hash": "b039f09cf7ba",
+  "text": "Inhale, straighten your legs, and slowly walk your feet back together.",
+  "kind": "cue-transition",
+  "tokens": 134,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "side-bend__cue-1": {
+  "hash": "834e5ba8e361",
+  "text": "Stand with your feet together, or hip-width apart.",
+  "kind": "cue-transition",
+  "tokens": 134,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "side-bend__cue-9": {
+  "hash": "be21d6acf56e",
+  "text": "Inhale back to centre, and change sides.",
+  "kind": "cue-transition",
+  "tokens": 134,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "tree-pose__cue-1": {
+  "hash": "49a2ac123c54",
+  "text": "Stand tall, and shift your weight into your left foot.",
+  "kind": "cue-transition",
+  "tokens": 134,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "tree-pose__cue-9": {
+  "hash": "13507c79b350",
+  "text": "Exhale, lower your foot, and change sides.",
+  "kind": "cue-transition",
+  "tokens": 146,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "eagle-pose__cue-1": {
+  "hash": "5d5a86c80e73",
+  "text": "Bend your knees and sink your hips, as if you’re sitting into a chair.",
+  "kind": "cue-transition",
+  "tokens": 146,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "eagle-pose__cue-9": {
+  "hash": "7294514fd1f1",
+  "text": "Inhale, unwind your arms and legs, and change sides.",
+  "kind": "cue-transition",
+  "tokens": 146,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "warrior-3__cue-1": {
+  "hash": "9c2911a19463",
+  "text": "From Crescent Lunge, shift your weight into your front foot.",
+  "kind": "cue-transition",
+  "tokens": 146,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "warrior-3__cue-9": {
+  "hash": "d984c3ef1895",
+  "text": "Exhale, bend your standing knee, and step back into your lunge.",
+  "kind": "cue-transition",
+  "tokens": 146,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "half-moon__cue-1": {
+  "hash": "bbcb4a4dd822",
+  "text": "From Warrior Two, reach your front hand to a block, a little ahead of your front foot.",
+  "kind": "cue-transition",
+  "tokens": 146,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "half-moon__cue-9": {
+  "hash": "8fe23639093e",
+  "text": "Exhale, bend your standing knee, and step back into Warrior Two.",
+  "kind": "cue-transition",
+  "tokens": 144,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "dancer-pose__cue-9": {
+  "hash": "e55165d781af",
+  "text": "Exhale, slowly lower your foot, and change sides.",
+  "kind": "cue-transition",
+  "tokens": 144,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "crow-pose__cue-1": {
+  "hash": "a4162a1ed347",
+  "text": "From a squat, plant your hands shoulder-width apart, fingers spread wide.",
+  "kind": "cue-transition",
+  "tokens": 144,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "crow-pose__cue-9": {
+  "hash": "d309b1b936b8",
+  "text": "Exhale, lower your feet, and come back to your squat.",
+  "kind": "cue-transition",
+  "tokens": 144,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "dolphin-pose__cue-3": {
+  "hash": "0cafc1c6d29c",
+  "text": "Tuck your toes, and lift your hips up and back.",
+  "kind": "cue-transition",
+  "tokens": 144,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "dolphin-pose__cue-9": {
+  "hash": "d3ab8e4496cc",
+  "text": "Exhale, lower your knees, and rest in Child’s Pose.",
+  "kind": "cue-transition",
+  "tokens": 144,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "handstand__cue-1": {
+  "hash": "3e71aebe2576",
+  "text": "Place your hands shoulder-width apart, about a hand’s length from the wall.",
+  "kind": "cue-transition",
+  "tokens": 129,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "handstand__cue-3": {
+  "hash": "d8b36610dc68",
+  "text": "Step one foot in, and kick up gently with the other leg.",
+  "kind": "cue-transition",
+  "tokens": 129,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "handstand__cue-9": {
+  "hash": "30b8ea47297f",
+  "text": "Exhale, come down one leg at a time, and rest in Child’s Pose.",
+  "kind": "cue-transition",
+  "tokens": 129,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "cobra__cue-1": {
+  "hash": "d1f81c15ecb4",
+  "text": "Lie on your belly, and place your hands under your shoulders.",
+  "kind": "cue-transition",
+  "tokens": 129,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "cobra__cue-9": {
+  "hash": "cddda27965c7",
+  "text": "Exhale, and lower your chest down to the mat.",
+  "kind": "cue-transition",
+  "tokens": 129,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "locust-pose__cue-1": {
+  "hash": "65af5c3c2ec3",
+  "text": "Lie on your belly, arms by your sides, palms facing down.",
+  "kind": "cue-transition",
+  "tokens": 129,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "locust-pose__cue-9": {
+  "hash": "1ec4fff2def8",
+  "text": "Exhale, lower down, and rest with your head turned to one side.",
+  "kind": "cue-transition",
+  "tokens": 152,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "bow-pose__cue-1": {
+  "hash": "867658688dfe",
+  "text": "Lying on your belly, bend your knees and reach back for your ankles.",
+  "kind": "cue-transition",
+  "tokens": 152,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "bow-pose__cue-9": {
+  "hash": "3a4868c5e014",
+  "text": "Exhale, slowly let go of your ankles, and rest on your belly.",
+  "kind": "cue-transition",
+  "tokens": 152,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "camel-pose__cue-1": {
+  "hash": "90b43c62f043",
+  "text": "Kneel with your knees hip-width apart, hips stacked over your knees.",
+  "kind": "cue-transition",
+  "tokens": 152,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "camel-pose__cue-9": {
+  "hash": "fed9d7bb0382",
+  "text": "Bring your hands to your lower back, and inhale up, chest first.",
+  "kind": "cue-transition",
+  "tokens": 152,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "bridge-pose__cue-1": {
+  "hash": "e94bc78062f7",
+  "text": "Lie on your back, bend your knees, and place your feet hip-width apart.",
+  "kind": "cue-transition",
+  "tokens": 152,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "bridge-pose__cue-9": {
+  "hash": "ef0bb3e763fd",
+  "text": "Exhale, release your hands, and roll down one bone at a time.",
+  "kind": "cue-transition",
+  "tokens": 143,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "wild-thing__cue-1": {
+  "hash": "a4a0b6276ac1",
+  "text": "Come into Side Plank on your right hand.",
+  "kind": "cue-transition",
+  "tokens": 143,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "wild-thing__cue-9": {
+  "hash": "c6e60802a531",
+  "text": "Exhale, flip back over to Downward Dog, and take the other side.",
+  "kind": "cue-transition",
+  "tokens": 143,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "lizard-pose__cue-1": {
+  "hash": "54d74baccf1b",
+  "text": "From Downward Dog, step your right foot to the outside of your right hand.",
+  "kind": "cue-transition",
+  "tokens": 143,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "lizard-pose__cue-9": {
+  "hash": "9f050b129525",
+  "text": "Press back up, step back to Downward Dog, and change sides.",
+  "kind": "cue-transition",
+  "tokens": 143,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "half-splits__cue-1": {
+  "hash": "398e01619559",
+  "text": "From Low Lunge, shift your hips back over your back knee.",
+  "kind": "cue-transition",
+  "tokens": 143,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "half-splits__cue-9": {
+  "hash": "2799d50441e3",
+  "text": "Inhale, bend your front knee, and come back into Low Lunge.",
+  "kind": "cue-transition",
+  "tokens": 138,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "pigeon__cue-1": {
+  "hash": "9ab157c45c9c",
+  "text": "From Downward Dog, bring your right knee forward, behind your right wrist.",
+  "kind": "cue-transition",
+  "tokens": 138,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "pigeon__cue-9": {
+  "hash": "e5bf6bc515c3",
+  "text": "Press into your hands, tuck your back toes, and step back to Downward Dog.",
+  "kind": "cue-transition",
+  "tokens": 138,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "malasana__cue-1": {
+  "hash": "4db43c9401f0",
+  "text": "Step your feet a little wider than your hips, toes turned out.",
+  "kind": "cue-transition",
+  "tokens": 138,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "malasana__cue-9": {
+  "hash": "9641000309b0",
+  "text": "Bring your hands down, lift your hips, and fold forward.",
+  "kind": "cue-transition",
+  "tokens": 138,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "figure-four__cue-1": {
+  "hash": "7498d99d0f5c",
+  "text": "Lie on your back, with your knees bent and your feet on the mat.",
+  "kind": "cue-transition",
+  "tokens": 138,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "figure-four__cue-9": {
+  "hash": "dc434d806b3d",
+  "text": "Release your hands, uncross your legs, and change sides.",
+  "kind": "cue-transition",
+  "tokens": 141,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "happy-baby__cue-1": {
+  "hash": "3f21a2eec69d",
+  "text": "Lie on your back, and hug your knees toward your chest.",
+  "kind": "cue-transition",
+  "tokens": 141,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "happy-baby__cue-9": {
+  "hash": "0ce9b5274e6f",
+  "text": "Release your feet, and rest them back on the mat.",
+  "kind": "cue-transition",
+  "tokens": 141,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "reclined-bound-angle__cue-1": {
+  "hash": "6fe6ae8db251",
+  "text": "Lie on your back, and bring the soles of your feet together.",
+  "kind": "cue-transition",
+  "tokens": 141,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "reclined-bound-angle__cue-8": {
+  "hash": "d9a7e0d8d3ee",
+  "text": "Use your hands to bring your knees together, and roll onto your side.",
+  "kind": "cue-transition",
+  "tokens": 141,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "hero-pose__cue-1": {
+  "hash": "e44e74361f90",
+  "text": "Kneel with your knees together, and your feet a little wider than your hips.",
+  "kind": "cue-transition",
+  "tokens": 141,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "hero-pose__cue-2": {
+  "hash": "287f756a1575",
+  "text": "Roll your calves out with your hands, and sit down between your heels.",
+  "kind": "cue-transition",
+  "tokens": 152,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "hero-pose__cue-9": {
+  "hash": "43deb033db35",
+  "text": "Lean forward onto your hands, and lift up off your heels.",
+  "kind": "cue-transition",
+  "tokens": 152,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "reclined-hero__cue-1": {
+  "hash": "96554e48338c",
+  "text": "Start sitting between your heels, with your knees together.",
+  "kind": "cue-transition",
+  "tokens": 152,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "reclined-hero__cue-2": {
+  "hash": "23ecebbe208e",
+  "text": "Lean back onto your hands, then slowly down onto your forearms.",
+  "kind": "cue-transition",
+  "tokens": 151,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "reclined-hero__cue-9": {
+  "hash": "e958f518bed2",
+  "text": "Press into your forearms, then your hands, and come up slowly.",
+  "kind": "cue-transition",
+  "tokens": 151,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "gate-pose__cue-1": {
+  "hash": "16c621811fbf",
+  "text": "Kneel, and stretch your right leg out to the side.",
+  "kind": "cue-transition",
+  "tokens": 151,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "gate-pose__cue-9": {
+  "hash": "871bf78fafdc",
+  "text": "Inhale, come back up, and change sides.",
+  "kind": "cue-transition",
+  "tokens": 136,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "cow-face-pose__cue-1": {
+  "hash": "3539aa6702d9",
+  "text": "Sit, and cross your right knee over your left, stacking your knees.",
+  "kind": "cue-transition",
+  "tokens": 136,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "cow-face-pose__cue-9": {
+  "hash": "109b6c728b52",
+  "text": "Release your arms, uncross your legs, and change sides.",
+  "kind": "cue-transition",
+  "tokens": 136,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "thread-the-needle__cue-1": {
+  "hash": "d22177367557",
+  "text": "Start on all fours, wrists under your shoulders.",
+  "kind": "cue-transition",
+  "tokens": 136,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "thread-the-needle__cue-9": {
+  "hash": "50c0ec278f94",
+  "text": "Press into your left hand, unwind, and change sides.",
+  "kind": "cue-transition",
+  "tokens": 136,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "seated-twist__cue-1": {
+  "hash": "562442b24241",
+  "text": "Sit with your legs straight, then step your right foot outside your left thigh.",
+  "kind": "cue-transition",
+  "tokens": 136,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "seated-twist__cue-9": {
+  "hash": "f02315da96d1",
+  "text": "Inhale, unwind back to centre, and change sides.",
+  "kind": "cue-transition",
+  "tokens": 150,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "supine-twist__cue-1": {
+  "hash": "d0ab249ddb98",
+  "text": "Lie on your back, and hug your right knee into your chest.",
+  "kind": "cue-transition",
+  "tokens": 150,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "supine-twist__cue-9": {
+  "hash": "15553be739e8",
+  "text": "Inhale, roll back to centre, and change sides.",
+  "kind": "cue-transition",
+  "tokens": 150,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "swan__cue-1": {
+  "hash": "3887b89a7bee",
+  "text": "From all fours, bring your right knee forward, behind your right wrist.",
+  "kind": "cue-transition",
+  "tokens": 150,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "swan__cue-8": {
+  "hash": "600be90241c2",
+  "text": "To come out, tuck your back toes and slowly press back to all fours.",
+  "kind": "cue-transition",
+  "tokens": 150,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "shoelace__cue-1": {
+  "hash": "0ec9366933ec",
+  "text": "Sit on the edge of a folded blanket, and bring your left heel beside your right hip.",
+  "kind": "cue-transition",
+  "tokens": 150,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "shoelace__cue-3": {
+  "hash": "c5d542f75305",
+  "text": "Slowly fold forward, and let your back round.",
+  "kind": "cue-transition",
+  "tokens": 162,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "shoelace__cue-8": {
+  "hash": "2eede5f05311",
+  "text": "Use your hands to roll up slowly, and gently uncross your legs.",
+  "kind": "cue-transition",
+  "tokens": 162,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "square__cue-1": {
+  "hash": "386f8d91a354",
+  "text": "Sit on a folded blanket, with your left shin parallel to the front of your mat.",
+  "kind": "cue-transition",
+  "tokens": 162,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "square__cue-8": {
+  "hash": "c316a797abc1",
+  "text": "Use your hands to roll up slowly, then unstack your legs.",
+  "kind": "cue-transition",
+  "tokens": 162,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "dragon__cue-1": {
+  "hash": "2dee4dcf9c5d",
+  "text": "From all fours, step your right foot forward between your hands.",
+  "kind": "cue-transition",
+  "tokens": 162,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "dragon__cue-8": {
+  "hash": "53ad2e010551",
+  "text": "To come out, walk your hands back under your shoulders, and step back to all fours.",
+  "kind": "cue-transition",
+  "tokens": 162,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "frog__cue-1": {
+  "hash": "e930669918c3",
+  "text": "Come onto all fours, with a blanket under your knees.",
+  "kind": "cue-transition",
+  "tokens": 146,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "frog__cue-3": {
+  "hash": "dbbb53468ca7",
+  "text": "Lower onto your forearms, or rest your chest on a bolster.",
+  "kind": "cue-transition",
+  "tokens": 146,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "frog__cue-8": {
+  "hash": "5289585d195d",
+  "text": "To come out, slide forward onto your belly, then slowly draw your knees in.",
+  "kind": "cue-transition",
+  "tokens": 146,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "butterfly__cue-1": {
+  "hash": "057f9b505a05",
+  "text": "Sit on a folded blanket, and bring the soles of your feet together.",
+  "kind": "cue-transition",
+  "tokens": 146,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "butterfly__cue-4": {
+  "hash": "360981919751",
+  "text": "Fold forward slowly, and let your back round. Your head can hang.",
+  "kind": "cue-transition",
+  "tokens": 146,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "butterfly__cue-8": {
+  "hash": "0a4c509a2e9b",
+  "text": "To come out, roll up slowly, with your head coming up last.",
+  "kind": "cue-transition",
+  "tokens": 146,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
  }
 }

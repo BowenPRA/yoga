@@ -107,7 +107,10 @@ export const progress = {
   },
 }
 
-export const isKnown = (row) => !!row && FACETS.every((f) => row[f])
+/** The facets that apply to a term: a movement has no region to label. */
+export const facetsFor = (term) => (term?.kind === 'movement' ? ['said', 'cued'] : FACETS)
+
+export const isKnown = (row, term) => !!row && facetsFor(term).every((f) => row[f])
 
 /**
  * The "suggest a fix" outbox. A note waits on the phone until she sends it

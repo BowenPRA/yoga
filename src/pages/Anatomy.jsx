@@ -158,7 +158,7 @@ export default function Anatomy() {
   const [q, setQ] = useState('')
   const [known, setKnown] = useState({})
   const [rows, setRows] = useState({})
-  useEffect(() => { progress.terms().then((r) => setKnown(Object.fromEntries(Object.entries(r).map(([k, row]) => [k, isKnown(row)])))) }, [id])
+  useEffect(() => { progress.terms().then((r) => setKnown(Object.fromEntries(Object.entries(r).map(([k, row]) => [k, isKnown(row, getTerm(k))])))) }, [id])
   useEffect(() => { progress.lessons().then(setRows) }, [])
 
   const term = id ? getTerm(id) : null

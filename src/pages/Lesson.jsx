@@ -53,6 +53,7 @@ export default function Lesson() {
   // Resume where she stopped; a finished lesson starts again from the top.
   useEffect(() => {
     let live = true
+    setIndex(0); setResults({}); setReady(false)
     progress.lesson(id).then((row) => {
       if (!live) return
       if (row && !row.done && row.slide) { setIndex(Math.min(row.slide, (lesson?.slides?.length || 1) - 1)); setResults(row.results || {}) }
@@ -79,12 +80,15 @@ export default function Lesson() {
     }
   }, [index, results, ready, last, id, lesson])
 
+  // An activity credits the facets it names: the ones its component worked
+  // out, else the lesson's own `credits` on that activity, once it is right.
   const onResult = useCallback(async (i, result) => {
     setResults((r) => ({ ...r, [i]: result }))
-    for (const [facet, ids] of Object.entries(result?.credits || {})) {
+    const credits = result?.credits || (result?.correct ? slides[i]?.activity?.credits : null)
+    for (const [facet, ids] of Object.entries(credits || {})) {
       if (ids?.length) await progress.mark(facet, ids)
     }
-  }, [])
+  }, [slides])
 
   if (!lesson?.slides) return <Navigate to="/anatomy" replace />
   if (!ready) return <div className="fixed inset-0 z-40 bg-sand" />

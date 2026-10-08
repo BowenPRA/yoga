@@ -97,7 +97,7 @@ export const MUSCLES_LOWER = [
       { style: 'yin', en: 'Let the thighs roll open from deep in the hip sockets.', vi: 'Để hai đùi mở ra từ sâu trong ổ khớp háng.' },
       { style: 'ashtanga', en: 'Rotate your front thigh out as you fold.', vi: 'Xoay đùi trước ra ngoài khi bạn gập người.' },
     ],
-    works: ['warrior-2', 'lotus', 'bound-angle'], stretches: ['sleeping-swan', 'figure-four'],
+    works: ['warrior-2'], stretches: ['sleeping-swan', 'figure-four'],
     wordTrap: 'Gộp vào “deep in your hip”; không cần tên riêng.',
     near: ['piriformis', 'gluteus-maximus'], under: [],
   },

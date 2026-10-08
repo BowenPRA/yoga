@@ -4,7 +4,7 @@ import { ArrowRight, Check } from 'lucide-react'
 import { useLang } from '../../lib/i18n.jsx'
 import { getTerm, getPose, LESSONS, lessonClipIds } from '../../lib/content.js'
 import { audio } from '../../lib/audio.js'
-import { store, FACETS } from '../../lib/store.js'
+import { store, facetsFor } from '../../lib/store.js'
 import { Bi, Chip, Eyebrow, KeepOffline, PlayButton, Porthole, Ring, Say, SayHint, Section, Tag } from '../ui.jsx'
 import FigureCrop from '../FigureCrop.jsx'
 import { useText } from '../../lib/lesson.js'
@@ -28,7 +28,7 @@ export function IntroSlide({ lesson }) {
         <div className="flex flex-wrap gap-2">
           {lesson.terms.map((id) => {
             const term = getTerm(id)
-            return term ? <Chip key={id} onClick={() => audio.play(id)}>{term.en} <span className="ml-1 font-normal opacity-70">· {term.vi}</span></Chip> : null
+            return term ? <Chip key={id} onClick={() => audio.play(id)}>{lesson.labels?.[id] || term.en} <span className="ml-1 font-normal opacity-70">· {term.vi}</span></Chip> : null
           })}
         </div>
       </Section>
@@ -164,11 +164,11 @@ export function PoseSlide({ slide }) {
 }
 
 /** The three quiet marks of a known term: labelled, said, used in a cue. */
-export function KnownMarks({ row, compact = false }) {
+export function KnownMarks({ row, term, compact = false }) {
   const { t } = useLang()
   return (
     <span className={`inline-flex flex-wrap items-center ${compact ? 'gap-x-2.5' : 'gap-x-3.5'} gap-y-1 text-[11px] text-muted`}>
-      {FACETS.map((f) => {
+      {facetsFor(term).map((f) => {
         const on = !!row?.[f]
         return (
           <span key={f} className={`inline-flex items-center gap-1.5 ${on ? 'text-tint-deep' : ''}`}>
@@ -207,7 +207,7 @@ export function DoneSlide({ lesson, termRows }) {
               <PlayButton id={id} size={38} />
               <div className="min-w-0 flex-1">
                 <div className="text-body text-ink">{lesson.labels?.[id] || term.en} <span className="text-caption text-muted">· {term.vi}</span></div>
-                <KnownMarks row={termRows?.[id]} compact />
+                <KnownMarks row={termRows?.[id]} term={term} compact />
               </div>
             </div>
           )

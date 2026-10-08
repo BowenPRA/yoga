@@ -77,9 +77,9 @@ export const SKELETON_LANDMARKS = {
   'pubic-bone': [[203, 398, 8]],
   'hip-joint': [[152, 392, 11], [254, 392, 11]],
   'elbow': [[90, 308, 12], [316, 308, 12]],
-  'ribs': [[203, 215, 0]],
 }
 /** Bones whose region is a box over the ribs (no group in the SVG). */
 export const SKELETON_BOXES = {
   'ribs': [[150, 160, 256, 290]],
+  'sternum': [[190, 150, 216, 245]],
 }

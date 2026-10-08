@@ -72,15 +72,30 @@ function inPoly([px, py], poly) {
   return inside
 }
 
-/** The term under a point on a figure, or null. Landmarks win over bones. */
+function polyArea(poly) {
+  let a = 0
+  for (let i = 0, j = poly.length - 1; i < poly.length; j = i++) a += (poly[j][0] + poly[i][0]) * (poly[j][1] - poly[i][1])
+  return Math.abs(a / 2)
+}
+
+/**
+ * The term under a point on a figure, or null. Landmarks win over bones;
+ * otherwise the smallest shape containing the point wins, so a muscle traced
+ * inside another (the transversus inside the internal oblique) can be tapped.
+ */
 export function regionAt(kind, point, ids = idsOn(kind)) {
   const [px, py] = point
   let hit = null
+  let best = Infinity
   for (const id of ids) {
     const s = shapesFor(kind, id)
     if (s.circles.some(([cx, cy, r]) => Math.hypot(px - cx, py - cy) <= Math.max(r, 10) + 6)) return id
-    if (s.polys.some((p) => inPoly(point, p))) hit = hit || id
-    if (s.boxes.some(([x0, y0, x1, y1]) => px >= x0 && px <= x1 && py >= y0 && py <= y1)) hit = hit || id
+    for (const p of s.polys) {
+      if (inPoly(point, p)) { const a = polyArea(p); if (a < best) { best = a; hit = id } }
+    }
+    for (const [x0, y0, x1, y1] of s.boxes) {
+      if (px >= x0 && px <= x1 && py >= y0 && py <= y1) { const a = (x1 - x0) * (y1 - y0); if (a < best) { best = a; hit = id } }
+    }
   }
   return hit
 }

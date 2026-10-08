@@ -83,7 +83,7 @@ export const MUSCLES_CORE = [
     feel: { en: 'The gentle lift between the sitting bones at the end of an exhale.', vi: 'Cảm giác nâng nhẹ giữa hai xương ngồi ở cuối hơi thở ra.' },
     cues: [
       { style: 'ashtanga', en: 'Engage mula bandha: a gentle lift at the base of the pelvis.', vi: 'Kích hoạt mula bandha: nâng nhẹ ở đáy khung chậu.' },
-      { style: 'yin', en: 'Let the pelvic floor soften and widen as you breathe out.', vi: 'Để sàn chậu mềm và mở rộng khi bạn thở ra.' },
+      { style: 'yin', en: 'Let the pelvic floor soften and widen as you breathe in.', vi: 'Để sàn chậu mềm và mở rộng khi bạn hít vào.' },
     ],
     works: ['mula-bandha', 'all-balances'], stretches: ['malasana', 'happy-baby'],
     wordTrap: '“Pelvic” có cụm “lv” giữa từ: PEL-vik. Chủ đề nhạy cảm với một số học viên; nói nhẹ nhàng, rõ ràng.',
