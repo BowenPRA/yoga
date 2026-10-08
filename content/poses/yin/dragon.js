@@ -1,0 +1,51 @@
+export const dragon = {
+  id: 'dragon',
+  styles: ['yin'],
+  family: 'hip-opener',
+  level: 'moderate',
+  en: 'Dragon',
+  sa: null,
+  saNote: { en: 'Dragon is the Yin name for a family of low lunges. The nearest yang pose is Low Lunge, Añjaneyāsana.', vi: 'Con rồng là tên Yin cho một họ tư thế chùng chân thấp. Tư thế yang gần nhất là Chùng chân thấp, Añjaneyāsana.' },
+  vi: 'Con rồng',
+  yin: {
+    holdMinutes: 3,
+    target: ['hips', 'inner-thighs'],
+    counter: 'child-pose',
+    note: {
+      en: 'One to five minutes each side, often through the variations: Baby Dragon, hands by the front foot; Dragon Flying Low, on the forearms; Dragon Flying High, hands on the front knee; Winged Dragon, front knee rolling out; Twisted Dragon, turning toward the front knee. It targets the front of the back hip. Pad the back knee: it should never feel sharp.',
+      vi: 'Một đến năm phút mỗi bên, thường qua các biến thể: Rồng con, tay đặt cạnh bàn chân trước; Rồng bay thấp, chống cẳng tay; Rồng bay cao, tay đặt trên gối trước; Rồng có cánh, gối trước ngả ra ngoài; Rồng vặn, xoay người về phía gối trước. Tư thế tác động lên phía trước hông chân sau. Kê đệm cho gối sau: gối không bao giờ được đau nhói.',
+    },
+  },
+  breath: {
+    en: 'Breathe into the front of your back hip. On each exhale, let your hips sink a little lower.',
+    vi: 'Thở vào phía trước hông chân sau. Mỗi hơi thở ra, để hông hạ thấp thêm một chút.',
+  },
+  cues: [
+    { id: 'dragon__cue-1', kind: 'transition', en: 'From all fours, step your right foot forward between your hands.', vi: 'Từ tư thế bốn điểm, bước chân phải lên giữa hai tay.' },
+    { id: 'dragon__cue-2', kind: 'alignment', en: 'Pad your back knee with a blanket, and slide it back until the front of your left hip opens.', vi: 'Kê chăn dưới gối sau, rồi trượt gối lùi ra sau đến khi phía trước hông trái mở ra.' },
+    { id: 'dragon__cue-3', kind: 'alignment', en: 'Rest your hands on blocks on either side of your front foot. This is Baby Dragon.', vi: 'Đặt hai tay lên gạch hai bên bàn chân trước. Đây là Rồng con.' },
+    { id: 'dragon__cue-4', kind: 'soften', en: 'Let your hips sink to your edge, and let the weight do the work.', vi: 'Để hông chìm xuống đến ngưỡng của bạn, và để trọng lượng cơ thể làm việc.' },
+    { id: 'dragon__cue-5', kind: 'breath', en: 'Halfway. Stay here, or come down onto your forearms for Dragon Flying Low.', vi: 'Được một nửa rồi. Ở yên đây, hoặc hạ xuống chống cẳng tay để vào Rồng bay thấp.' },
+    { id: 'dragon__cue-6', kind: 'alignment', en: 'For Winged Dragon, let your front knee roll out onto the outer edge of your foot.', vi: 'Với Rồng có cánh, để gối trước ngả ra ngoài, tựa lên cạnh ngoài bàn chân.' },
+    { id: 'dragon__cue-7', kind: 'safety', en: 'If your back knee complains, fold the blanket thicker.', vi: 'Nếu gối sau khó chịu, gấp chăn dày thêm.' },
+    { id: 'dragon__cue-8', kind: 'transition', en: 'To come out, walk your hands back under your shoulders, and step back to all fours.', vi: 'Để thoát thế, đưa hai tay lùi về dưới vai, và lùi chân về tư thế bốn điểm.' },
+    { id: 'dragon__cue-9', kind: 'soften', en: 'Rest in Child’s Pose, and notice the rebound in the front of your hip.', vi: 'Nghỉ ở tư thế Em bé, và cảm nhận dư âm ở phía trước hông.' },
+  ],
+  modifications: [
+    { id: 'dragon__mod-1', en: 'Rest your hands on blocks, or on your front knee, to stay higher.', vi: 'Đặt tay lên gạch, hoặc lên gối trước, để giữ người cao hơn.', props: ['blocks'] },
+    { id: 'dragon__mod-2', en: 'Pad your back knee with a folded blanket, or fold the mat over.', vi: 'Kê chăn gấp dưới gối sau, hoặc gấp đôi thảm lại.', props: ['blanket'] },
+    { id: 'dragon__mod-3', en: 'For Dragon Flying Low, rest your forearms on a bolster instead of the floor.', vi: 'Với Rồng bay thấp, tựa cẳng tay lên gối ôm thay vì xuống sàn.', props: ['bolster'] },
+  ],
+  safety: [
+    { id: 'dragon__safe-1', en: 'Feel it in the front of your back hip. Pain in either knee means come out.', vi: 'Cảm giác nên ở phía trước hông chân sau. Đau ở bất kỳ gối nào nghĩa là cần thoát thế.' },
+    { id: 'dragon__safe-2', en: 'If your lower back pinches in Dragon Flying High, bring your hands down to blocks.', vi: 'Nếu lưng dưới bị nhói trong Rồng bay cao, hạ tay xuống gạch.' },
+    { id: 'dragon__safe-3', en: 'In pregnancy, take a wider stance, use blocks, keep the hold shorter and skip Twisted Dragon.', vi: 'Khi mang thai, đặt hai chân rộng hơn, dùng gạch, giữ ngắn hơn và bỏ qua Rồng vặn.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['iliopsoas', 'quadriceps', 'hip-adductors'],
+  },
+  joints: ['hip-joint', 'knee', 'ankle'],
+  transitionsTo: ['child-pose', 'downward-dog'],
+  figure: 'dragon',
+}

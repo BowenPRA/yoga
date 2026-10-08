@@ -1,0 +1,51 @@
+export const squat = {
+  id: 'squat',
+  styles: ['yin'],
+  family: 'hip-opener',
+  level: 'moderate',
+  en: 'Squat',
+  aka: ['Yin Squat'],
+  sa: null,
+  saNote: { en: 'In yang classes this squat is Garland Pose, Mālāsana, held with an upright spine.', vi: 'Trong các lớp yang, tư thế ngồi xổm này là Vòng hoa, Mālāsana, giữ với lưng thẳng.' },
+  vi: 'Ngồi xổm',
+  yin: {
+    holdMinutes: 2,
+    target: ['feet', 'hips', 'spine'],
+    counter: 'savasana',
+    note: {
+      en: 'One to five minutes. Heels down, hips low, back rounded: the ankles, the Achilles tendons and the lower back take the stress. Feel it in the ankles and calves, never as pain in the knees.',
+      vi: 'Một đến năm phút. Gót chân hạ xuống, hông thấp, lưng cong tròn: cổ chân, gân sau gót chân và lưng dưới chịu lực. Cảm giác nên ở cổ chân và bắp chân, không bao giờ là cơn đau ở gối.',
+    },
+  },
+  breath: {
+    en: 'Breathe into your lower back. Let each exhale settle your hips a little lower.',
+    vi: 'Thở vào lưng dưới. Để mỗi hơi thở ra giúp hông lắng thấp hơn một chút.',
+  },
+  cues: [
+    { id: 'squat__cue-1', kind: 'transition', en: 'Stand with your feet a little wider than your hips, toes turned out.', vi: 'Đứng hai chân rộng hơn hông một chút, mũi chân hướng ra ngoài.' },
+    { id: 'squat__cue-2', kind: 'transition', en: 'Slowly lower your hips toward the floor.', vi: 'Từ từ hạ hông xuống về phía sàn.' },
+    { id: 'squat__cue-3', kind: 'alignment', en: 'If your heels lift, roll a blanket under them.', vi: 'Nếu gót chân nhấc lên, cuộn chăn kê dưới gót.' },
+    { id: 'squat__cue-4', kind: 'alignment', en: 'Let your back round, and rest your elbows inside your knees.', vi: 'Để lưng cong tròn, và đặt khuỷu tay vào phía trong gối.' },
+    { id: 'squat__cue-5', kind: 'soften', en: 'Find your edge, and let your hips hang heavy.', vi: 'Tìm ngưỡng của bạn, và để hông buông nặng xuống.' },
+    { id: 'squat__cue-6', kind: 'breath', en: 'We’re halfway. If your knees and ankles are happy, stay. If not, sit down.', vi: 'Đã được một nửa thời gian. Nếu gối và cổ chân vẫn dễ chịu, cứ ở lại. Nếu không, ngồi xuống.' },
+    { id: 'squat__cue-7', kind: 'safety', en: 'If your knees hurt, sit on a block instead of hanging low.', vi: 'Nếu gối đau, ngồi lên viên gạch thay vì hạ thấp.' },
+    { id: 'squat__cue-8', kind: 'transition', en: 'To come out, sit down behind you, and stretch your legs out.', vi: 'Để thoát thế, ngồi xuống phía sau, và duỗi hai chân ra.' },
+    { id: 'squat__cue-9', kind: 'soften', en: 'Lie back, and notice the rebound in your feet and your lower back.', vi: 'Nằm ngửa, và cảm nhận dư âm ở bàn chân và lưng dưới.' },
+  ],
+  modifications: [
+    { id: 'squat__mod-1', en: 'Sit on a block or a bolster to take weight off your knees.', vi: 'Ngồi trên viên gạch hoặc gối ôm để giảm trọng lượng dồn lên gối.', props: ['block', 'bolster'] },
+    { id: 'squat__mod-2', en: 'Lean your back against a wall.', vi: 'Tựa lưng vào tường.', props: ['wall'] },
+    { id: 'squat__mod-3', en: 'Hold the seat of a chair in front of you for balance.', vi: 'Nắm vào mặt ghế phía trước để giữ thăng bằng.', props: ['chair'] },
+  ],
+  safety: [
+    { id: 'squat__safe-1', en: 'Feel it in your ankles, calves and lower back. Knee pain means sit higher, on a block.', vi: 'Cảm giác nên ở cổ chân, bắp chân và lưng dưới. Đau gối nghĩa là cần ngồi cao hơn, trên viên gạch.' },
+    { id: 'squat__safe-2', en: 'In pregnancy, sit on a block with your knees wide, and come up slowly.', vi: 'Khi mang thai, ngồi trên viên gạch với hai gối mở rộng, và đứng dậy từ từ.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['calves', 'achilles-tendon', 'erector-spinae'],
+  },
+  joints: ['ankle', 'knee', 'hip-joint', 'lumbar-spine'],
+  transitionsTo: ['dangling', 'savasana'],
+  figure: 'squat',
+}

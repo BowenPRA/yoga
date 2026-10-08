@@ -1,0 +1,51 @@
+export const shoelace = {
+  id: 'shoelace',
+  styles: ['yin'],
+  family: 'hip-opener',
+  level: 'moderate',
+  en: 'Shoelace',
+  sa: null,
+  saNote: { en: 'Shoelace is the Yin name. The yang shape is the legs of Cow Face Pose, Gomukhāsana.', vi: 'Dây giày là tên Yin. Dáng yang tương ứng là phần chân của tư thế Mặt bò, Gomukhāsana.' },
+  vi: 'Dây giày',
+  yin: {
+    holdMinutes: 3,
+    target: ['hips'],
+    counter: 'reclined-twist',
+    note: {
+      en: 'Three to five minutes each side. The outer hips take the stress: the glutes, the piriformis and the IT band; folding forward adds the lower back. The knees should feel nothing. If one does, straighten the bottom leg: that is Half Shoelace.',
+      vi: 'Ba đến năm phút mỗi bên. Hông ngoài chịu lực kéo: cơ mông, cơ hình lê và dải gân ngoài đùi; gập người về trước thêm tác động lên lưng dưới. Gối không nên có cảm giác gì. Nếu có, duỗi thẳng chân dưới: đó là Nửa dây giày.',
+    },
+  },
+  breath: {
+    en: 'Let the breath be slow and quiet. With each exhale, soften your outer hips.',
+    vi: 'Để hơi thở chậm và nhẹ. Mỗi hơi thở ra, thả mềm hông ngoài.',
+  },
+  cues: [
+    { id: 'shoelace__cue-1', kind: 'transition', en: 'Sit on the edge of a folded blanket, and bring your left heel beside your right hip.', vi: 'Ngồi trên mép chăn gấp, đưa gót chân trái về sát bên hông phải.' },
+    { id: 'shoelace__cue-2', kind: 'alignment', en: 'Cross your right knee over your left, and let your feet slide out to the sides.', vi: 'Bắt chéo gối phải lên trên gối trái, để hai bàn chân trượt sang hai bên.' },
+    { id: 'shoelace__cue-3', kind: 'transition', en: 'Slowly fold forward, and let your back round.', vi: 'Từ từ gập người về trước, để lưng cong tròn.' },
+    { id: 'shoelace__cue-4', kind: 'soften', en: 'Find your edge. Rest your arms or your forehead on a bolster if you’d like.', vi: 'Tìm ngưỡng của bạn. Tựa tay hoặc trán lên gối ôm nếu bạn muốn.' },
+    { id: 'shoelace__cue-5', kind: 'soften', en: 'Let your outer hips get heavy. There’s nothing to hold.', vi: 'Để hông ngoài nặng xuống. Không cần giữ gì cả.' },
+    { id: 'shoelace__cue-6', kind: 'breath', en: 'Halfway there. Notice how the sensation has changed.', vi: 'Được một nửa rồi. Cảm nhận xem cảm giác đã thay đổi thế nào.' },
+    { id: 'shoelace__cue-7', kind: 'safety', en: 'If your knees complain, straighten your bottom leg into Half Shoelace.', vi: 'Nếu gối khó chịu, duỗi thẳng chân dưới, chuyển sang Nửa dây giày.' },
+    { id: 'shoelace__cue-8', kind: 'transition', en: 'Use your hands to roll up slowly, and gently uncross your legs.', vi: 'Chống tay, từ từ cuộn người lên, và nhẹ nhàng gỡ chéo chân.' },
+    { id: 'shoelace__cue-9', kind: 'soften', en: 'Lie on your back with your knees bent, and feel the rebound in your hips.', vi: 'Nằm ngửa, co gối, và cảm nhận dư âm ở hông.' },
+  ],
+  modifications: [
+    { id: 'shoelace__mod-1', en: 'Keep your bottom leg straight. This is Half Shoelace, kinder to the knees.', vi: 'Giữ chân dưới duỗi thẳng. Đây là Nửa dây giày, nhẹ nhàng hơn với gối.', props: [] },
+    { id: 'shoelace__mod-2', en: 'Sit higher, on a bolster or a thicker blanket, so your knees can rest.', vi: 'Ngồi cao hơn, trên gối ôm hoặc chăn gấp dày hơn, để gối được nghỉ.', props: ['bolster', 'blanket'] },
+    { id: 'shoelace__mod-3', en: 'If your top knee floats, rest it on a block.', vi: 'Nếu gối trên lơ lửng, đặt một viên gạch bên dưới để đỡ.', props: ['block'] },
+  ],
+  safety: [
+    { id: 'shoelace__safe-1', en: 'You should feel this in your outer hips. Any pain in the knees means come out, or take Half Shoelace.', vi: 'Bạn nên cảm thấy ở hông ngoài. Đau ở gối nghĩa là cần thoát thế, hoặc chuyển sang Nửa dây giày.' },
+    { id: 'shoelace__safe-2', en: 'If you have sciatica, stay upright and skip the fold.', vi: 'Nếu bị đau thần kinh toạ, ngồi thẳng và bỏ qua phần gập người.' },
+    { id: 'shoelace__safe-3', en: 'In pregnancy, sit tall and don’t fold over your belly.', vi: 'Khi mang thai, ngồi thẳng lưng và đừng gập người ép bụng.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['gluteus-medius', 'piriformis', 'it-band'],
+  },
+  joints: ['hip-joint', 'knee', 'lumbar-spine'],
+  transitionsTo: ['reclined-twist', 'caterpillar'],
+  figure: 'shoelace',
+}

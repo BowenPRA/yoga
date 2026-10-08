@@ -1,0 +1,51 @@
+export const legsUpTheWall = {
+  id: 'legs-up-the-wall',
+  styles: ['yin'],
+  family: 'restorative',
+  level: 'gentle',
+  en: 'Legs Up the Wall',
+  sa: 'Viparīta Karaṇī',
+  say: 'vih-pah-REE-tah kah-RAH-nee',
+  saNote: { en: 'Viparīta Karaṇī means “inverted action”. Many studios use the Sanskrit name for this pose.', vi: 'Viparīta Karaṇī nghĩa là “hành động đảo ngược”. Nhiều phòng tập dùng tên Sanskrit cho tư thế này.' },
+  vi: 'Gác chân lên tường',
+  yin: {
+    holdMinutes: 5,
+    target: ['hamstrings'],
+    counter: 'savasana',
+    note: {
+      en: 'Five minutes or more, often near the end of class. The legs rest on the wall, the backs of the legs lengthen gently, and the whole body settles. If the feet tingle, bend the knees or bring the soles together; the lower back should feel supported, not arched.',
+      vi: 'Năm phút hoặc lâu hơn, thường gần cuối buổi tập. Hai chân tựa lên tường, mặt sau chân được kéo dài nhẹ nhàng, và toàn bộ cơ thể lắng xuống. Nếu bàn chân bị tê, co gối hoặc áp hai lòng bàn chân vào nhau; lưng dưới nên thấy được đỡ, không bị ưỡn.',
+    },
+  },
+  breath: {
+    en: 'Let the breath slow down by itself. Feel the back of your body heavy on the floor.',
+    vi: 'Để hơi thở tự chậm lại. Cảm nhận phía sau cơ thể nặng trên sàn.',
+  },
+  cues: [
+    { id: 'legs-up-the-wall__cue-1', kind: 'transition', en: 'Sit sideways next to the wall, with one hip touching it.', vi: 'Ngồi nghiêng sát tường, một bên hông chạm tường.' },
+    { id: 'legs-up-the-wall__cue-2', kind: 'transition', en: 'Lie back, and swing your legs up the wall.', vi: 'Nằm ngả ra sau, và đưa hai chân lên tường.' },
+    { id: 'legs-up-the-wall__cue-3', kind: 'alignment', en: 'Shuffle your seat close to the wall, or a little away if the backs of your legs pull.', vi: 'Nhích mông lại sát tường, hoặc lùi ra một chút nếu mặt sau chân bị kéo căng.' },
+    { id: 'legs-up-the-wall__cue-4', kind: 'alignment', en: 'Slide a folded blanket under your hips, if you’d like.', vi: 'Kê chăn gấp dưới hông, nếu bạn muốn.' },
+    { id: 'legs-up-the-wall__cue-5', kind: 'soften', en: 'Let your arms rest, palms up. Let the wall hold your legs.', vi: 'Để hai tay nghỉ, lòng bàn tay ngửa lên. Để bức tường giữ hai chân.' },
+    { id: 'legs-up-the-wall__cue-6', kind: 'breath', en: 'Halfway. Notice your breath. Has it slowed down on its own?', vi: 'Được một nửa rồi. Để ý hơi thở. Hơi thở đã tự chậm lại chưa?' },
+    { id: 'legs-up-the-wall__cue-7', kind: 'safety', en: 'If your feet tingle, bend your knees, or let them fall open into a butterfly on the wall.', vi: 'Nếu bàn chân bị tê, co gối, hoặc để hai gối mở ra thành hình con bướm trên tường.' },
+    { id: 'legs-up-the-wall__cue-8', kind: 'transition', en: 'To come out, bend your knees, and roll onto your right side.', vi: 'Để thoát thế, co gối, và lăn người sang bên phải.' },
+    { id: 'legs-up-the-wall__cue-9', kind: 'soften', en: 'Rest on your side for a few breaths, and notice how you feel.', vi: 'Nằm nghiêng nghỉ vài hơi thở, và cảm nhận cơ thể bạn lúc này.' },
+  ],
+  modifications: [
+    { id: 'legs-up-the-wall__mod-1', en: 'Rest your hips on a bolster for a gentle inversion.', vi: 'Kê gối ôm dưới hông để đảo ngược nhẹ nhàng.', props: ['bolster'] },
+    { id: 'legs-up-the-wall__mod-2', en: 'Loop a strap around your thighs, so your legs can fully relax.', vi: 'Quàng dây quanh đùi, để hai chân được thả lỏng hoàn toàn.', props: ['strap'] },
+    { id: 'legs-up-the-wall__mod-3', en: 'No wall? Rest your calves on the seat of a chair.', vi: 'Không có tường? Gác bắp chân lên mặt ghế.', props: ['chair'] },
+  ],
+  safety: [
+    { id: 'legs-up-the-wall__safe-1', en: 'With glaucoma or high blood pressure, skip the bolster, and keep your hips on the floor.', vi: 'Nếu bị tăng nhãn áp hoặc huyết áp cao, bỏ gối ôm, và giữ hông trên sàn.' },
+    { id: 'legs-up-the-wall__safe-2', en: 'In later pregnancy, lying flat may make you dizzy. Rest on your left side instead.', vi: 'Ở giai đoạn cuối thai kỳ, nằm ngửa phẳng có thể gây chóng mặt. Thay vào đó, hãy nằm nghiêng bên trái.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['hamstrings', 'calves'],
+  },
+  joints: ['hip-joint', 'sacrum'],
+  transitionsTo: ['savasana'],
+  figure: 'legs-up-the-wall',
+}

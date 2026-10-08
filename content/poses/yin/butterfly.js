@@ -1,0 +1,51 @@
+export const butterfly = {
+  id: 'butterfly',
+  styles: ['yin'],
+  family: 'hip-opener',
+  level: 'gentle',
+  en: 'Butterfly',
+  sa: null,
+  saNote: { en: 'Butterfly is the Yin name. The yang pose with the same legs is Bound Angle, Baddha Koṇāsana, done with a long, upright spine.', vi: 'Con bướm là tên Yin. Tư thế yang có cùng dáng chân là Góc cố định, Baddha Koṇāsana, thực hiện với lưng thẳng và dài.' },
+  vi: 'Con bướm',
+  yin: {
+    holdMinutes: 3,
+    target: ['spine', 'inner-thighs'],
+    counter: 'savasana',
+    note: {
+      en: 'Three to five minutes. With the feet far from the hips, the fold works the lower back; with the feet closer, more of the inner thighs. The head can hang. Nothing sharp in the knees or the lower back.',
+      vi: 'Ba đến năm phút. Khi bàn chân đặt xa hông, tư thế gập tác động lên lưng dưới; khi bàn chân gần hơn, tác động nhiều hơn lên mặt trong đùi. Đầu có thể buông xuống. Không đau nhói ở gối hay lưng dưới.',
+    },
+  },
+  breath: {
+    en: 'Let the breath move slowly in the back of your body. With each exhale, let your spine round a little more.',
+    vi: 'Để hơi thở di chuyển chậm ở phía sau cơ thể. Mỗi hơi thở ra, để cột sống cong tròn thêm một chút.',
+  },
+  cues: [
+    { id: 'butterfly__cue-1', kind: 'transition', en: 'Sit on a folded blanket, and bring the soles of your feet together.', vi: 'Ngồi trên chăn gấp, và áp hai lòng bàn chân vào nhau.' },
+    { id: 'butterfly__cue-2', kind: 'alignment', en: 'Slide your feet away from you, into a long diamond shape.', vi: 'Trượt hai bàn chân ra xa, tạo thành hình thoi dài.' },
+    { id: 'butterfly__cue-3', kind: 'alignment', en: 'If your knees float, rest them on blocks.', vi: 'Nếu gối lơ lửng, đặt gạch bên dưới để đỡ.' },
+    { id: 'butterfly__cue-4', kind: 'transition', en: 'Fold forward slowly, and let your back round. Your head can hang.', vi: 'Từ từ gập người về trước, để lưng cong tròn. Đầu có thể buông xuống.' },
+    { id: 'butterfly__cue-5', kind: 'soften', en: 'Find your edge, then let the weight of your upper body do the work.', vi: 'Tìm ngưỡng của bạn, rồi để trọng lượng của thân trên làm việc.' },
+    { id: 'butterfly__cue-6', kind: 'breath', en: 'We’re halfway. Check in: is this still your edge?', vi: 'Chúng ta đã đi được nửa chặng. Kiểm tra lại: đây có còn là ngưỡng của bạn?' },
+    { id: 'butterfly__cue-7', kind: 'safety', en: 'If your lower back complains, fold less, and rest your chest on a bolster.', vi: 'Nếu lưng dưới khó chịu, gập ít lại, và tựa ngực lên gối ôm.' },
+    { id: 'butterfly__cue-8', kind: 'transition', en: 'To come out, roll up slowly, with your head coming up last.', vi: 'Để thoát thế, từ từ cuộn người lên, đầu lên sau cùng.' },
+    { id: 'butterfly__cue-9', kind: 'soften', en: 'Lean back on your hands, and feel the rebound in your spine.', vi: 'Ngả người ra sau chống hai tay, và cảm nhận dư âm ở cột sống.' },
+  ],
+  modifications: [
+    { id: 'butterfly__mod-1', en: 'Rest your forehead or your chest on a bolster placed over your feet.', vi: 'Tựa trán hoặc ngực lên gối ôm đặt trên bàn chân.', props: ['bolster'] },
+    { id: 'butterfly__mod-2', en: 'Support each knee with a block if your hips or knees feel strained.', vi: 'Đỡ mỗi gối bằng một viên gạch nếu hông hoặc gối thấy căng.', props: ['blocks'] },
+    { id: 'butterfly__mod-3', en: 'Sit with your back against a wall, and stay upright if folding hurts your back.', vi: 'Ngồi tựa lưng vào tường, và giữ lưng thẳng nếu gập người làm lưng đau.', props: ['wall'] },
+  ],
+  safety: [
+    { id: 'butterfly__safe-1', en: 'The sensation belongs in the lower back and the inner thighs. Nothing sharp in the knees.', vi: 'Cảm giác nên ở lưng dưới và mặt trong đùi. Không đau nhói ở gối.' },
+    { id: 'butterfly__safe-2', en: 'With sciatica or a disc injury, keep your spine long and fold only a little.', vi: 'Nếu bị đau thần kinh toạ hoặc thoát vị đĩa đệm, giữ lưng dài và chỉ gập nhẹ.' },
+    { id: 'butterfly__safe-3', en: 'In pregnancy, fold only a little, and leave room for your belly.', vi: 'Khi mang thai, chỉ gập nhẹ, và chừa khoảng trống cho bụng.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['erector-spinae', 'hip-adductors'],
+  },
+  joints: ['lumbar-spine', 'hip-joint'],
+  transitionsTo: ['half-butterfly', 'savasana'],
+  figure: 'butterfly',
+}

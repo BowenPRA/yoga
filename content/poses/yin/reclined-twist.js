@@ -1,0 +1,50 @@
+export const reclinedTwist = {
+  id: 'reclined-twist',
+  styles: ['yin'],
+  family: 'twist',
+  level: 'gentle',
+  en: 'Reclined Twist',
+  aka: ['Reclining Twist'],
+  sa: null,
+  saNote: { en: 'Yang classes call a similar twist Supta Matsyendrāsana.', vi: 'Các lớp yang gọi một tư thế vặn tương tự là Supta Matsyendrāsana.' },
+  vi: 'Vặn mình nằm ngửa',
+  yin: {
+    holdMinutes: 3,
+    target: ['spine'],
+    counter: 'savasana',
+    note: {
+      en: 'Three to five minutes each side. The spine rotates while the body rests, so the twist comes from gravity, not effort. Twisted Roots is a variation: cross your right thigh over your left, as in Eagle legs, then let your knees fall to the left. Feel it in the waist and the back, never as a sharp pain in the lower back or the sacroiliac joint.',
+      vi: 'Ba đến năm phút mỗi bên. Cột sống xoay trong khi cơ thể nghỉ, nên thế vặn đến từ trọng lực, không phải từ sức gắng. Rễ xoắn là một biến thể: bắt chéo đùi phải lên đùi trái như chân của tư thế Đại bàng, rồi để hai gối ngả sang trái. Cảm giác nên ở eo và lưng, không bao giờ là đau nhói ở lưng dưới hay khớp cùng chậu.',
+    },
+  },
+  breath: {
+    en: 'Breathe into your belly and the sides of your waist. With each exhale, let the twist settle without pushing.',
+    vi: 'Thở vào bụng và hai bên eo. Mỗi hơi thở ra, để thế vặn tự lắng xuống mà không ép.',
+  },
+  cues: [
+    { id: 'reclined-twist__cue-1', kind: 'transition', en: 'Lie on your back, bend your knees, and shift your hips a little to the right.', vi: 'Nằm ngửa, co gối, và dịch hông sang phải một chút.' },
+    { id: 'reclined-twist__cue-2', kind: 'transition', en: 'Let both knees fall to the left. If they don’t reach the floor, rest them on a bolster.', vi: 'Để hai gối ngả sang trái. Nếu gối chưa chạm sàn, kê gối ôm bên dưới.' },
+    { id: 'reclined-twist__cue-3', kind: 'alignment', en: 'Open your arms wide, palms facing up.', vi: 'Dang rộng hai tay, lòng bàn tay ngửa lên.' },
+    { id: 'reclined-twist__cue-4', kind: 'alignment', en: 'Turn your head to the right, only if your neck enjoys it.', vi: 'Quay đầu sang phải, chỉ khi cổ thấy dễ chịu.' },
+    { id: 'reclined-twist__cue-5', kind: 'soften', en: 'Find your edge, and let gravity do the twisting.', vi: 'Tìm ngưỡng của bạn, và để trọng lực vặn giúp bạn.' },
+    { id: 'reclined-twist__cue-6', kind: 'breath', en: 'Halfway. Breathe into your belly, and let the twist settle.', vi: 'Được một nửa rồi. Thở vào bụng, và để thế vặn lắng xuống.' },
+    { id: 'reclined-twist__cue-7', kind: 'safety', en: 'If your lower back complains, draw your knees a little higher toward your chest.', vi: 'Nếu lưng dưới khó chịu, kéo hai gối cao hơn một chút về phía ngực.' },
+    { id: 'reclined-twist__cue-8', kind: 'transition', en: 'On an inhale, slowly bring your knees back to the middle.', vi: 'Khi hít vào, từ từ đưa hai gối về giữa.' },
+    { id: 'reclined-twist__cue-9', kind: 'soften', en: 'Rest here with your knees up, and notice the rebound.', vi: 'Nghỉ ở đây với hai gối dựng lên, và cảm nhận dư âm.' },
+  ],
+  modifications: [
+    { id: 'reclined-twist__mod-1', en: 'Rest a block between your knees to keep your hips even.', vi: 'Đặt một viên gạch giữa hai gối để hai bên hông cân bằng.', props: ['block'] },
+    { id: 'reclined-twist__mod-2', en: 'If your top shoulder lifts, rest it on a folded blanket.', vi: 'Nếu vai trên nhấc lên, kê chăn gấp bên dưới.', props: ['blanket'] },
+  ],
+  safety: [
+    { id: 'reclined-twist__safe-1', en: 'Feel it in your waist and your back. A sharp pain in the lower back or the sacroiliac joint means twist less.', vi: 'Cảm giác nên ở eo và lưng. Đau nhói ở lưng dưới hoặc khớp cùng chậu nghĩa là cần vặn ít lại.' },
+    { id: 'reclined-twist__safe-2', en: 'In pregnancy, keep the twist small, with a bolster under your knees.', vi: 'Khi mang thai, chỉ vặn nhẹ, kê gối ôm dưới đầu gối.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['external-oblique', 'internal-oblique', 'gluteus-medius'],
+  },
+  joints: ['thoracic-spine', 'lumbar-spine', 'sacrum'],
+  transitionsTo: ['cat-pulling-its-tail', 'savasana'],
+  figure: 'reclined-twist',
+}

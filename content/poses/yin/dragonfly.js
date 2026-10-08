@@ -1,0 +1,52 @@
+export const dragonfly = {
+  id: 'dragonfly',
+  styles: ['yin'],
+  family: 'hip-opener',
+  level: 'moderate',
+  en: 'Dragonfly',
+  aka: ['Straddle'],
+  sa: null,
+  saNote: { en: 'Dragonfly is the Yin name. The yang pose is Wide-Angle Seated Forward Bend, Upaviṣṭha Koṇāsana.', vi: 'Chuồn chuồn là tên Yin. Tư thế yang là Gập người ngồi dang rộng chân, Upaviṣṭha Koṇāsana.' },
+  vi: 'Chuồn chuồn',
+  yin: {
+    holdMinutes: 3,
+    target: ['inner-thighs', 'hamstrings', 'spine'],
+    counter: 'savasana',
+    note: {
+      en: 'Three to five minutes. The inner thighs and the backs of the legs open while the lower back rounds. You can fold to the middle, fold over one leg, or side-bend toward one leg. Nothing should be felt inside the knees.',
+      vi: 'Ba đến năm phút. Mặt trong đùi và mặt sau chân mở ra trong khi lưng dưới cong tròn. Bạn có thể gập về giữa, gập trên một chân, hoặc nghiêng người về phía một chân. Mặt trong gối không được có cảm giác gì.',
+    },
+  },
+  breath: {
+    en: 'Breathe slowly. With each exhale, let your body grow a little heavier toward the floor.',
+    vi: 'Thở chậm. Mỗi hơi thở ra, để cơ thể nặng thêm một chút về phía sàn.',
+  },
+  cues: [
+    { id: 'dragonfly__cue-1', kind: 'transition', en: 'Sit on the edge of a folded blanket, and open your legs wide.', vi: 'Ngồi trên mép chăn gấp, và dang rộng hai chân.' },
+    { id: 'dragonfly__cue-2', kind: 'alignment', en: 'Let your kneecaps point up toward the ceiling.', vi: 'Để xương bánh chè hướng lên trần nhà.' },
+    { id: 'dragonfly__cue-3', kind: 'transition', en: 'Fold forward slowly. Rest on your hands, your forearms or a bolster.', vi: 'Từ từ gập người về trước. Tựa lên hai tay, cẳng tay, hoặc lên gối ôm.' },
+    { id: 'dragonfly__cue-4', kind: 'soften', en: 'Find your edge, and let your back round.', vi: 'Tìm ngưỡng của bạn, và để lưng cong tròn.' },
+    { id: 'dragonfly__cue-5', kind: 'soften', en: 'Let your legs be heavy. Let the floor hold you.', vi: 'Để hai chân nặng xuống. Để sàn nhà nâng đỡ bạn.' },
+    { id: 'dragonfly__cue-6', kind: 'breath', en: 'Halfway. If it feels right, walk your hands a little further. Or stay.', vi: 'Được một nửa rồi. Nếu thấy phù hợp, đưa tay ra xa thêm một chút. Hoặc cứ ở yên.' },
+    { id: 'dragonfly__cue-7', kind: 'safety', en: 'If your knees ache, bend them a little and roll blankets under them.', vi: 'Nếu gối nhức, chùng gối một chút và cuộn chăn đặt bên dưới.' },
+    { id: 'dragonfly__cue-8', kind: 'transition', en: 'Use your hands to roll up slowly, then bring your legs together.', vi: 'Chống tay, từ từ cuộn người lên, rồi khép hai chân lại.' },
+    { id: 'dragonfly__cue-9', kind: 'soften', en: 'Lie on your back for a moment, and feel the rebound in your hips.', vi: 'Nằm ngửa một lát, và cảm nhận dư âm ở hông.' },
+  ],
+  modifications: [
+    { id: 'dragonfly__mod-1', en: 'Rest your chest on a bolster, or on blocks stacked in front of you.', vi: 'Tựa ngực lên gối ôm, hoặc lên gạch xếp chồng phía trước.', props: ['bolster', 'blocks'] },
+    { id: 'dragonfly__mod-2', en: 'Bend your knees a little, with rolled blankets under them.', vi: 'Chùng gối một chút, kê chăn cuộn bên dưới.', props: ['blanket'] },
+    { id: 'dragonfly__mod-3', en: 'Lie on your back with your legs up the wall in a wide V.', vi: 'Nằm ngửa, gác chân lên tường và dang thành hình chữ V.', props: ['wall'] },
+  ],
+  safety: [
+    { id: 'dragonfly__safe-1', en: 'Feel it in your inner thighs and the backs of your legs. Pain inside the knee means bend your knees or come out.', vi: 'Cảm giác nên ở mặt trong đùi và mặt sau chân. Đau ở mặt trong gối nghĩa là cần chùng gối hoặc thoát thế.' },
+    { id: 'dragonfly__safe-2', en: 'With sciatica or a lower back injury, keep your spine longer and fold less.', vi: 'Nếu bị đau thần kinh toạ hoặc chấn thương lưng dưới, giữ lưng dài hơn và gập ít lại.' },
+    { id: 'dragonfly__safe-3', en: 'In pregnancy, keep your legs less wide, and fold only a little.', vi: 'Khi mang thai, dang chân ít rộng hơn, và chỉ gập nhẹ.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['hip-adductors', 'hamstrings', 'erector-spinae'],
+  },
+  joints: ['hip-joint', 'knee', 'lumbar-spine'],
+  transitionsTo: ['butterfly', 'savasana'],
+  figure: 'dragonfly',
+}

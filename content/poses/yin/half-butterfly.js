@@ -1,0 +1,51 @@
+export const halfButterfly = {
+  id: 'half-butterfly',
+  styles: ['yin'],
+  family: 'forward-fold',
+  level: 'gentle',
+  en: 'Half Butterfly',
+  sa: null,
+  saNote: { en: 'Half Butterfly is the Yin name. The yang pose is Head-to-Knee Pose, Jānu Śīrṣāsana, folded with a long spine.', vi: 'Nửa con bướm là tên Yin. Tư thế yang là Đầu chạm gối, Jānu Śīrṣāsana, gập người với lưng dài.' },
+  vi: 'Nửa con bướm',
+  yin: {
+    holdMinutes: 3,
+    target: ['hamstrings', 'spine'],
+    counter: 'savasana',
+    note: {
+      en: 'Three to five minutes each side. The back of the straight leg and the lower back take the stress; you can fold over the leg, toward the middle, or side-bend toward the leg. Nothing should pull behind the knee: bend it if it does.',
+      vi: 'Ba đến năm phút mỗi bên. Mặt sau của chân duỗi và lưng dưới chịu lực kéo; bạn có thể gập trên chân, về giữa, hoặc nghiêng người về phía chân duỗi. Phía sau gối không được bị kéo căng: nếu có, hãy chùng gối.',
+    },
+  },
+  breath: {
+    en: 'Breathe into the back of your body. Let each exhale soften you over your leg.',
+    vi: 'Thở vào phía sau cơ thể. Để mỗi hơi thở ra giúp bạn mềm xuống trên chân.',
+  },
+  cues: [
+    { id: 'half-butterfly__cue-1', kind: 'transition', en: 'Sit on a blanket with your right leg straight, and your left foot against your inner right thigh.', vi: 'Ngồi trên chăn, chân phải duỗi thẳng, lòng bàn chân trái áp vào mặt trong đùi phải.' },
+    { id: 'half-butterfly__cue-2', kind: 'alignment', en: 'Lay a bolster across your right leg, if you’d like something to rest on.', vi: 'Đặt một gối ôm ngang trên chân phải, nếu bạn muốn có chỗ để tựa.' },
+    { id: 'half-butterfly__cue-3', kind: 'transition', en: 'Fold forward over your straight leg, or toward the middle. Let your back round.', vi: 'Gập người về trước trên chân duỗi, hoặc về giữa. Để lưng cong tròn.' },
+    { id: 'half-butterfly__cue-4', kind: 'soften', en: 'Find your edge, and let your head and arms be heavy.', vi: 'Tìm ngưỡng của bạn, và để đầu và hai tay nặng xuống.' },
+    { id: 'half-butterfly__cue-5', kind: 'soften', en: 'Soften the back of your leg. Your knee can bend.', vi: 'Thả mềm mặt sau chân. Gối có thể chùng.' },
+    { id: 'half-butterfly__cue-6', kind: 'breath', en: 'Halfway there. Notice your breath, and how the sensation has changed.', vi: 'Được một nửa rồi. Để ý hơi thở, và cảm giác đã thay đổi thế nào.' },
+    { id: 'half-butterfly__cue-7', kind: 'safety', en: 'If you feel a pull behind your knee, bend it and slide a blanket underneath.', vi: 'Nếu thấy kéo căng phía sau gối, chùng gối và kê chăn bên dưới.' },
+    { id: 'half-butterfly__cue-8', kind: 'transition', en: 'Slowly roll up, with your head coming up last.', vi: 'Từ từ cuộn người lên, đầu lên sau cùng.' },
+    { id: 'half-butterfly__cue-9', kind: 'soften', en: 'Straighten both legs, lean back on your hands, and feel the rebound.', vi: 'Duỗi thẳng cả hai chân, ngả người ra sau chống tay, và cảm nhận dư âm.' },
+  ],
+  modifications: [
+    { id: 'half-butterfly__mod-1', en: 'Rest your chest or your forehead on a bolster across your straight leg.', vi: 'Tựa ngực hoặc trán lên gối ôm đặt ngang trên chân duỗi.', props: ['bolster'] },
+    { id: 'half-butterfly__mod-2', en: 'Roll a blanket under the knee of your straight leg.', vi: 'Cuộn chăn đặt dưới gối của chân duỗi.', props: ['blanket'] },
+    { id: 'half-butterfly__mod-3', en: 'If your bent knee floats, support it with a block.', vi: 'Nếu gối co lơ lửng, đỡ bằng một viên gạch.', props: ['block'] },
+  ],
+  safety: [
+    { id: 'half-butterfly__safe-1', en: 'Feel it in the back of your leg and your lower back, never behind the knee.', vi: 'Cảm giác nên ở mặt sau chân và lưng dưới, không bao giờ ở phía sau gối.' },
+    { id: 'half-butterfly__safe-2', en: 'With sciatica, keep your straight knee bent, and fold less.', vi: 'Nếu bị đau thần kinh toạ, giữ gối chân duỗi hơi chùng, và gập ít lại.' },
+    { id: 'half-butterfly__safe-3', en: 'In pregnancy, fold toward the middle, leaving room for your belly.', vi: 'Khi mang thai, gập về giữa, chừa khoảng trống cho bụng.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['hamstrings', 'erector-spinae'],
+  },
+  joints: ['lumbar-spine', 'hip-joint', 'knee'],
+  transitionsTo: ['butterfly', 'caterpillar'],
+  figure: 'half-butterfly',
+}

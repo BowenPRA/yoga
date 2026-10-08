@@ -1,0 +1,51 @@
+export const saddle = {
+  id: 'saddle',
+  styles: ['yin'],
+  family: 'backbend',
+  level: 'strong',
+  en: 'Saddle',
+  sa: null,
+  saNote: { en: 'Saddle is the Yin name. The yang pose is Reclined Hero, Supta Vīrāsana, where the spine stays long and the lower back does not arch.', vi: 'Yên ngựa là tên Yin. Tư thế yang tương ứng là Supta Vīrāsana, trong đó cột sống giữ dài và lưng dưới không ưỡn.' },
+  vi: 'Yên ngựa',
+  yin: {
+    holdMinutes: 3,
+    target: ['quads', 'spine'],
+    counter: 'savasana',
+    note: {
+      en: 'Three to five minutes. A deep stretch for the front of the thighs and the hip flexors, with a gentle arch in the lower back. The knees should feel nothing, and the lower back should not pinch: lean back on more height, or take Half Saddle.',
+      vi: 'Ba đến năm phút. Kéo giãn sâu mặt trước đùi và cơ gấp hông sâu, lưng dưới ưỡn nhẹ. Gối không được có cảm giác gì, và lưng dưới không được nhói: hãy ngả lên chỗ tựa cao hơn, hoặc chuyển sang Nửa yên ngựa.',
+    },
+  },
+  breath: {
+    en: 'Breathe into the front of your thighs and your belly. Let each exhale ease you back a little.',
+    vi: 'Thở vào mặt trước đùi và bụng. Để mỗi hơi thở ra giúp bạn ngả về sau thêm một chút.',
+  },
+  cues: [
+    { id: 'saddle__cue-1', kind: 'transition', en: 'Kneel with a bolster lengthways behind you, and sit between your heels or on them.', vi: 'Quỳ với gối ôm đặt dọc phía sau, ngồi giữa hai gót chân hoặc ngồi lên gót.' },
+    { id: 'saddle__cue-2', kind: 'alignment', en: 'Let your knees be hip-width apart, or wider if they prefer.', vi: 'Để hai gối rộng bằng hông, hoặc rộng hơn nếu gối thấy dễ chịu hơn.' },
+    { id: 'saddle__cue-3', kind: 'transition', en: 'Lean back slowly, onto your hands, then your elbows, then the bolster.', vi: 'Từ từ ngả người ra sau, chống tay, rồi chống khuỷu, rồi nằm lên gối ôm.' },
+    { id: 'saddle__cue-4', kind: 'soften', en: 'Stop at your edge. Your hands or your elbows are a good place to stay.', vi: 'Dừng lại ở ngưỡng của bạn. Chống tay hay chống khuỷu đều là chỗ tốt để ở lại.' },
+    { id: 'saddle__cue-5', kind: 'soften', en: 'Let your arms rest, and let your belly soften.', vi: 'Để hai tay nghỉ, và để bụng mềm ra.' },
+    { id: 'saddle__cue-6', kind: 'breath', en: 'We’re halfway. If your knees and lower back are quiet, stay. If not, come up a little.', vi: 'Đã được một nửa thời gian. Nếu gối và lưng dưới vẫn yên ổn, cứ ở lại. Nếu không, nâng người lên một chút.' },
+    { id: 'saddle__cue-7', kind: 'safety', en: 'If you feel any pain in your knees, come out now.', vi: 'Nếu thấy đau ở gối, hãy thoát thế ngay.' },
+    { id: 'saddle__cue-8', kind: 'transition', en: 'To come out, press up onto your elbows, then your hands, and lean to one side to free your legs.', vi: 'Để thoát thế, chống khuỷu tay rồi chống tay để nâng người lên, nghiêng sang một bên để gỡ hai chân ra.' },
+    { id: 'saddle__cue-9', kind: 'soften', en: 'Stretch your legs out slowly, and feel the rebound in your knees and thighs.', vi: 'Từ từ duỗi thẳng hai chân, và cảm nhận dư âm ở gối và đùi.' },
+  ],
+  modifications: [
+    { id: 'saddle__mod-1', en: 'Sit on a block between your feet to ease your knees.', vi: 'Ngồi trên viên gạch đặt giữa hai bàn chân để gối nhẹ nhàng hơn.', props: ['block'] },
+    { id: 'saddle__mod-2', en: 'Stack a second bolster or blocks behind you, so you lean back less.', vi: 'Chồng thêm gối ôm hoặc gạch phía sau, để bạn ngả ra sau ít hơn.', props: ['bolster', 'blocks'] },
+    { id: 'saddle__mod-3', en: 'Take Half Saddle, with one leg straight.', vi: 'Chuyển sang Nửa yên ngựa, một chân duỗi thẳng.', props: [] },
+  ],
+  safety: [
+    { id: 'saddle__safe-1', en: 'Saddle asks a lot of the knees. With a knee injury, skip it or take Half Saddle.', vi: 'Yên ngựa đòi hỏi gối rất nhiều. Nếu gối bị chấn thương, bỏ qua hoặc chuyển sang Nửa yên ngựa.' },
+    { id: 'saddle__safe-2', en: 'Feel it in the thighs and the front of the hips. A pinch in the lower back means more height behind you.', vi: 'Cảm giác nên ở đùi và phía trước hông. Lưng dưới bị nhói nghĩa là cần kê cao hơn phía sau.' },
+    { id: 'saddle__safe-3', en: 'In pregnancy, stay up on your hands, or on a high stack of props.', vi: 'Khi mang thai, giữ người cao, chống tay hoặc tựa lên chồng dụng cụ cao.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['quadriceps', 'iliopsoas', 'tibialis-anterior'],
+  },
+  joints: ['knee', 'ankle', 'lumbar-spine', 'sacrum'],
+  transitionsTo: ['caterpillar', 'savasana'],
+  figure: 'saddle',
+}

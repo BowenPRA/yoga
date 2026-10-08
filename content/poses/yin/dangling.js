@@ -1,0 +1,51 @@
+export const dangling = {
+  id: 'dangling',
+  styles: ['yin'],
+  family: 'forward-fold',
+  level: 'gentle',
+  en: 'Dangling',
+  sa: null,
+  saNote: { en: 'Dangling is the Yin name. The yang pose is Standing Forward Fold, Uttānāsana, done with straighter legs and a longer spine.', vi: 'Treo người là tên Yin. Tư thế yang là Gập người đứng, Uttānāsana, thực hiện với chân thẳng hơn và lưng dài hơn.' },
+  vi: 'Treo người',
+  yin: {
+    holdMinutes: 2,
+    target: ['spine', 'hamstrings'],
+    counter: 'savasana',
+    note: {
+      en: 'One to three minutes. The upper body hangs from the hips, so the lower back and the backs of the legs lengthen under their own weight. The knees stay bent. Come up slowly; if you feel dizzy, rest before you stand.',
+      vi: 'Một đến ba phút. Thân trên treo từ hông, nên lưng dưới và mặt sau chân được kéo dài bởi chính trọng lượng cơ thể. Gối luôn chùng. Đứng dậy từ từ; nếu thấy chóng mặt, nghỉ một chút trước khi đứng thẳng.',
+    },
+  },
+  breath: {
+    en: 'Let the breath move into your back. With each exhale, let your head and arms hang a little heavier.',
+    vi: 'Để hơi thở đi vào lưng. Mỗi hơi thở ra, để đầu và hai tay buông nặng hơn một chút.',
+  },
+  cues: [
+    { id: 'dangling__cue-1', kind: 'transition', en: 'Stand with your feet hip-width apart, and bend your knees generously.', vi: 'Đứng hai chân rộng bằng hông, và chùng gối thoải mái.' },
+    { id: 'dangling__cue-2', kind: 'transition', en: 'Fold forward, and let your upper body hang over your legs.', vi: 'Gập người về trước, và để thân trên treo trên hai chân.' },
+    { id: 'dangling__cue-3', kind: 'alignment', en: 'Hold your elbows, or rest your hands on blocks.', vi: 'Nắm hai khuỷu tay, hoặc đặt tay lên gạch.' },
+    { id: 'dangling__cue-4', kind: 'soften', en: 'Find your edge, then let your head and neck hang heavy.', vi: 'Tìm ngưỡng của bạn, rồi để đầu và cổ buông nặng xuống.' },
+    { id: 'dangling__cue-5', kind: 'soften', en: 'Nothing to hold up here. Let gravity do the work.', vi: 'Không cần giữ gì ở đây. Để trọng lực làm việc.' },
+    { id: 'dangling__cue-6', kind: 'breath', en: 'Halfway. Notice where you feel it now.', vi: 'Được một nửa rồi. Để ý xem bây giờ bạn cảm thấy ở đâu.' },
+    { id: 'dangling__cue-7', kind: 'safety', en: 'If you feel dizzy, or pressure in your head, come up slowly and rest.', vi: 'Nếu thấy chóng mặt, hoặc nặng đầu, từ từ đứng lên và nghỉ.' },
+    { id: 'dangling__cue-8', kind: 'transition', en: 'To come out, bend your knees more, and roll up very slowly, head last.', vi: 'Để thoát thế, chùng gối nhiều hơn, và cuộn người lên thật chậm, đầu lên sau cùng.' },
+    { id: 'dangling__cue-9', kind: 'soften', en: 'Stand still for a few breaths, and feel the rebound.', vi: 'Đứng yên vài hơi thở, và cảm nhận dư âm.' },
+  ],
+  modifications: [
+    { id: 'dangling__mod-1', en: 'Rest your forearms on your thighs for a half dangle.', vi: 'Tựa cẳng tay lên đùi để treo người một nửa.', props: [] },
+    { id: 'dangling__mod-2', en: 'Rest your hands or your head on blocks, or on the seat of a chair.', vi: 'Đặt tay hoặc đầu lên gạch, hoặc lên mặt ghế.', props: ['blocks', 'chair'] },
+    { id: 'dangling__mod-3', en: 'Lean your seat against a wall.', vi: 'Tựa mông vào tường.', props: ['wall'] },
+  ],
+  safety: [
+    { id: 'dangling__safe-1', en: 'With high blood pressure, glaucoma or dizziness, keep your head above your heart. Rest your forearms on your thighs.', vi: 'Nếu bị huyết áp cao, tăng nhãn áp hoặc hay chóng mặt, giữ đầu cao hơn tim. Tựa cẳng tay lên đùi.' },
+    { id: 'dangling__safe-2', en: 'With a disc injury in the lower back, keep your knees deeply bent, or skip the pose.', vi: 'Nếu bị thoát vị đĩa đệm ở lưng dưới, chùng gối thật sâu, hoặc bỏ qua tư thế này.' },
+    { id: 'dangling__safe-3', en: 'In pregnancy, step your feet wider, and come up slowly.', vi: 'Khi mang thai, đặt hai chân rộng hơn, và đứng dậy từ từ.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['hamstrings', 'erector-spinae'],
+  },
+  joints: ['lumbar-spine', 'hip-joint'],
+  transitionsTo: ['squat', 'savasana'],
+  figure: 'dangling',
+}
