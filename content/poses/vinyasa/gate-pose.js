@@ -1,0 +1,41 @@
+export const gatePose = {
+  id: 'gate-pose',
+  styles: ['vinyasa'],
+  family: 'seated',
+  level: 'gentle',
+  en: 'Gate Pose',
+  sa: 'Parighāsana',
+  say: 'pah-ree-GAH-sah-nah',
+  vi: 'Cánh cổng',
+  breath: {
+    en: 'Inhale to reach your arm up. Exhale to bend over your straight leg. Breathe into the long side of your ribs.',
+    vi: 'Hít vào, vươn tay lên. Thở ra, nghiêng người về phía chân duỗi thẳng. Thở vào bên sườn đang được kéo dài.',
+  },
+  cues: [
+    { id: 'gate-pose__cue-1', kind: 'transition', en: 'Kneel, and stretch your right leg out to the side.', vi: 'Quỳ, và duỗi chân phải sang một bên.' },
+    { id: 'gate-pose__cue-2', kind: 'alignment', en: 'Line your right heel up with your left knee, toes pointing forward.', vi: 'Đặt gót chân phải thẳng hàng với gối trái, mũi chân hướng về trước.' },
+    { id: 'gate-pose__cue-3', kind: 'alignment', en: 'Stack your hips over your left knee.', vi: 'Đặt hông thẳng trên gối trái.' },
+    { id: 'gate-pose__cue-4', kind: 'alignment', en: 'Inhale, reach your left arm up.', vi: 'Hít vào, vươn tay trái lên.' },
+    { id: 'gate-pose__cue-5', kind: 'alignment', en: 'Exhale, bend over your right leg, and rest your right hand on your shin.', vi: 'Thở ra, nghiêng người về phía chân phải, và đặt tay phải lên ống chân.' },
+    { id: 'gate-pose__cue-6', kind: 'soften', en: 'Keep your chest open, and soften your neck.', vi: 'Giữ ngực mở, và thả lỏng cổ.' },
+    { id: 'gate-pose__cue-7', kind: 'breath', en: 'Stay for three breaths, breathing into your left ribs.', vi: 'Giữ ba nhịp thở, thở vào xương sườn bên trái.' },
+    { id: 'gate-pose__cue-8', kind: 'safety', en: 'If your kneeling knee is sensitive, fold a blanket under it.', vi: 'Nếu gối đang quỳ nhạy cảm, gấp chăn kê dưới gối.' },
+    { id: 'gate-pose__cue-9', kind: 'transition', en: 'Inhale, come back up, and change sides.', vi: 'Hít vào, trở lên, và đổi bên.' },
+  ],
+  modifications: [
+    { id: 'gate-pose__mod-1', en: 'Fold a blanket under your kneeling knee.', vi: 'Gấp chăn kê dưới gối đang quỳ.', props: ['blanket'] },
+    { id: 'gate-pose__mod-2', en: 'Rest your lower hand on a block.', vi: 'Đặt tay dưới lên một viên gạch.', props: ['block'] },
+    { id: 'gate-pose__mod-3', en: 'Sit on a chair with one leg out to the side, and bend from there.', vi: 'Ngồi trên ghế, duỗi một chân sang bên, và nghiêng người từ tư thế đó.', props: ['chair'] },
+  ],
+  safety: [
+    { id: 'gate-pose__safe-1', en: 'If kneeling hurts, pad your knee well, or practise on a chair.', vi: 'Nếu quỳ thấy đau, kê đệm dưới gối thật êm, hoặc tập trên ghế.' },
+    { id: 'gate-pose__safe-2', en: 'If your shoulder is tight, keep your top hand on your hip.', vi: 'Nếu vai căng, giữ tay trên đặt ở hông.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['external-oblique', 'latissimus-dorsi', 'hip-adductors'],
+  },
+  joints: ['knee', 'ribs', 'lumbar-spine'],
+  transitionsTo: ['child-pose', 'seated-twist'],
+  figure: 'gate-pose',
+}

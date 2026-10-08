@@ -1,0 +1,42 @@
+export const cobra = {
+  id: 'cobra',
+  styles: ['vinyasa'],
+  family: 'backbend',
+  level: 'gentle',
+  en: 'Cobra Pose',
+  sa: 'Bhujaṅgāsana',
+  say: 'boo-jang-GAH-sah-nah',
+  vi: 'Rắn hổ mang',
+  breath: {
+    en: 'Inhale to lift your chest. Exhale to lower down. Stay for one to three breaths, or move up and down with the breath.',
+    vi: 'Hít vào, nâng ngực. Thở ra, hạ xuống. Giữ một đến ba nhịp thở, hoặc lên xuống theo hơi thở.',
+  },
+  cues: [
+    { id: 'cobra__cue-1', kind: 'transition', en: 'Lie on your belly, and place your hands under your shoulders.', vi: 'Nằm sấp, và đặt hai bàn tay dưới vai.' },
+    { id: 'cobra__cue-2', kind: 'alignment', en: 'Press the tops of your feet and your pubic bone into the mat.', vi: 'Ấn mu bàn chân và xương mu xuống thảm.' },
+    { id: 'cobra__cue-3', kind: 'alignment', en: 'Hug your elbows in toward your ribs.', vi: 'Ép khuỷu tay vào sát xương sườn.' },
+    { id: 'cobra__cue-4', kind: 'alignment', en: 'Inhale, lift your chest, using your back more than your hands.', vi: 'Hít vào, nâng ngực lên, dùng lưng nhiều hơn dùng tay.' },
+    { id: 'cobra__cue-5', kind: 'alignment', en: 'Draw your shoulders back and down, and keep your neck long.', vi: 'Kéo vai ra sau và xuống, và giữ cổ dài.' },
+    { id: 'cobra__cue-6', kind: 'soften', en: 'Keep a little bend in your elbows, and let your shoulders stay soft.', vi: 'Giữ khuỷu tay hơi chùng, và để vai mềm.' },
+    { id: 'cobra__cue-7', kind: 'breath', en: 'Stay for one to three breaths.', vi: 'Giữ một đến ba nhịp thở.' },
+    { id: 'cobra__cue-8', kind: 'safety', en: 'If your lower back pinches, come down lower. A small lift is plenty.', vi: 'Nếu lưng dưới bị chèn, hạ thấp xuống. Nâng một chút là đủ rồi.' },
+    { id: 'cobra__cue-9', kind: 'transition', en: 'Exhale, and lower your chest down to the mat.', vi: 'Thở ra, và hạ ngực xuống thảm.' },
+  ],
+  modifications: [
+    { id: 'cobra__mod-1', en: 'Baby Cobra: lift only a little, with almost no weight in your hands.', vi: 'Rắn hổ mang thấp: chỉ nâng một chút, gần như không dồn trọng lượng vào tay.', props: [] },
+    { id: 'cobra__mod-2', en: 'Come onto your forearms in Sphinx for a gentler backbend.', vi: 'Hạ xuống chống cẳng tay ở tư thế Nhân sư để ngả sau nhẹ nhàng hơn.', props: [] },
+    { id: 'cobra__mod-3', en: 'Place a folded blanket under your hips if your hip points press into the floor.', vi: 'Kê chăn gấp dưới hông nếu hai mỏm xương phía trước hông bị cấn xuống sàn.', props: ['blanket'] },
+  ],
+  safety: [
+    { id: 'cobra__safe-1', en: 'If you have a lower back injury, keep the lift low, and stop at any pinching.', vi: 'Nếu bạn có chấn thương lưng dưới, nâng thấp thôi, và dừng lại khi thấy bị chèn.' },
+    { id: 'cobra__safe-2', en: 'In pregnancy, skip lying on your belly. Try Cat and Cow instead.', vi: 'Khi mang thai, tránh nằm sấp. Thay bằng Con mèo và Con bò.' },
+  ],
+  muscles: {
+    working: ['erector-spinae', 'triceps-brachii'],
+    lengthening: ['rectus-abdominis', 'pectoralis-major', 'iliopsoas'],
+  },
+  joints: ['lumbar-spine', 'thoracic-spine', 'wrist'],
+  transitionsTo: ['downward-dog', 'child-pose', 'locust-pose'],
+  counterPoses: ['child-pose'],
+  figure: 'cobra',
+}

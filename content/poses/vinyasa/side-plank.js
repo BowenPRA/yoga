@@ -1,0 +1,42 @@
+export const sidePlank = {
+  id: 'side-plank',
+  styles: ['vinyasa'],
+  family: 'core',
+  level: 'moderate',
+  en: 'Side Plank',
+  sa: 'Vasiṣṭhāsana',
+  say: 'vah-sish-TAH-sah-nah',
+  vi: 'Tấm ván nghiêng',
+  breath: {
+    en: 'Inhale as you roll onto one side and lift your hips. Breathe steadily for three breaths. Exhale back to Plank.',
+    vi: 'Hít vào khi lăn sang một bên và nâng hông. Thở đều ba nhịp. Thở ra trở về Tấm ván.',
+  },
+  cues: [
+    { id: 'side-plank__cue-1', kind: 'transition', en: 'From Plank, roll onto the outer edge of your right foot.', vi: 'Từ Tấm ván, lăn sang cạnh ngoài bàn chân phải.' },
+    { id: 'side-plank__cue-2', kind: 'alignment', en: 'Stack your left foot on top of your right.', vi: 'Đặt bàn chân trái chồng lên bàn chân phải.' },
+    { id: 'side-plank__cue-3', kind: 'alignment', en: 'Press the floor away with your bottom hand.', vi: 'Đẩy sàn ra xa bằng bàn tay dưới.' },
+    { id: 'side-plank__cue-4', kind: 'alignment', en: 'Lift your hips high, and reach your left arm up to the sky.', vi: 'Nâng hông lên cao, và vươn tay trái lên trời.' },
+    { id: 'side-plank__cue-5', kind: 'alignment', en: 'Make one long line from your head to your heels.', vi: 'Tạo một đường thẳng dài từ đầu đến gót chân.' },
+    { id: 'side-plank__cue-6', kind: 'soften', en: 'Soften your neck, and look up only if it feels good.', vi: 'Thả lỏng cổ, và chỉ nhìn lên nếu thấy dễ chịu.' },
+    { id: 'side-plank__cue-7', kind: 'breath', en: 'Stay here for three breaths.', vi: 'Giữ ở đây ba nhịp thở.' },
+    { id: 'side-plank__cue-8', kind: 'safety', en: 'If your wrist or shoulder complains, lower your bottom knee to the floor.', vi: 'Nếu cổ tay hoặc vai khó chịu, hạ gối dưới xuống sàn.' },
+    { id: 'side-plank__cue-9', kind: 'transition', en: 'Exhale, come back to Plank, and take the other side.', vi: 'Thở ra, trở về Tấm ván, và đổi bên.' },
+  ],
+  modifications: [
+    { id: 'side-plank__mod-1', en: 'Lower your bottom knee and shin to the floor for support.', vi: 'Hạ gối và ống chân dưới xuống sàn để làm điểm tựa.', props: [] },
+    { id: 'side-plank__mod-2', en: 'Stagger your feet, top foot in front, for a wider base.', vi: 'Đặt hai bàn chân lệch nhau, bàn chân trên ở phía trước, để có chân đế rộng hơn.', props: [] },
+    { id: 'side-plank__mod-3', en: 'Come down onto your forearm instead of your hand.', vi: 'Hạ xuống chống cẳng tay thay vì bàn tay.', props: [] },
+  ],
+  safety: [
+    { id: 'side-plank__safe-1', en: 'If you have a wrist or shoulder injury, take the forearm version, or skip it today.', vi: 'Nếu bạn có chấn thương cổ tay hoặc vai, làm phiên bản chống cẳng tay, hoặc bỏ qua hôm nay.' },
+    { id: 'side-plank__safe-2', en: 'In pregnancy, keep your bottom knee down, and skip this pose later on.', vi: 'Khi mang thai, giữ gối dưới trên sàn, và bỏ qua tư thế này ở giai đoạn sau.' },
+  ],
+  muscles: {
+    working: ['external-oblique', 'quadratus-lumborum', 'gluteus-medius', 'serratus-anterior', 'deltoids'],
+    lengthening: [],
+  },
+  joints: ['wrist', 'shoulder-joint', 'hip-joint'],
+  transitionsTo: ['plank', 'downward-dog', 'wild-thing'],
+  counterPoses: ['child-pose'],
+  figure: 'side-plank',
+}

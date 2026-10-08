@@ -1,0 +1,42 @@
+export const handstand = {
+  id: 'handstand',
+  styles: ['vinyasa'],
+  family: 'inversion',
+  level: 'strong',
+  en: 'Handstand',
+  sa: 'Adho Mukha Vṛkṣāsana',
+  say: 'AH-doh MOO-kah vrik-SHAH-sah-nah',
+  vi: 'Trồng chuối bằng tay',
+  breath: {
+    en: 'Inhale as you kick or float up. Keep breathing steadily while you’re upside down. Exhale to come down softly.',
+    vi: 'Hít vào khi đá chân hoặc nhẹ nhàng đưa chân lên. Tiếp tục thở đều khi lộn ngược. Thở ra để hạ xuống nhẹ nhàng.',
+  },
+  cues: [
+    { id: 'handstand__cue-1', kind: 'transition', en: 'Place your hands shoulder-width apart, about a hand’s length from the wall.', vi: 'Đặt hai bàn tay rộng bằng vai, cách tường khoảng một bàn tay.' },
+    { id: 'handstand__cue-2', kind: 'alignment', en: 'Spread your fingers, and grip the mat with your fingertips.', vi: 'Xoè các ngón tay, và bám thảm bằng đầu ngón tay.' },
+    { id: 'handstand__cue-3', kind: 'transition', en: 'Step one foot in, and kick up gently with the other leg.', vi: 'Bước một chân vào gần, và nhẹ nhàng đá chân kia lên.' },
+    { id: 'handstand__cue-4', kind: 'alignment', en: 'Press the floor away, and stack your shoulders over your wrists.', vi: 'Đẩy sàn ra xa, và đặt vai thẳng trên cổ tay.' },
+    { id: 'handstand__cue-5', kind: 'alignment', en: 'Draw your belly in, and reach up through your heels.', vi: 'Thu bụng vào, và vươn lên qua gót chân.' },
+    { id: 'handstand__cue-6', kind: 'soften', en: 'Keep your neck relaxed, and look at the floor between your hands.', vi: 'Giữ cổ thả lỏng, và nhìn xuống sàn giữa hai bàn tay.' },
+    { id: 'handstand__cue-7', kind: 'breath', en: 'Keep breathing. Stay for three to five breaths.', vi: 'Tiếp tục thở. Giữ ba đến năm nhịp thở.' },
+    { id: 'handstand__cue-8', kind: 'safety', en: 'If you lose your balance, turn to one side and step down, like a cartwheel.', vi: 'Nếu mất thăng bằng, xoay người sang một bên và hạ chân xuống, như khi nhào lộn ngang.' },
+    { id: 'handstand__cue-9', kind: 'transition', en: 'Exhale, come down one leg at a time, and rest in Child’s Pose.', vi: 'Thở ra, hạ từng chân một, và nghỉ ở tư thế Em bé.' },
+  ],
+  modifications: [
+    { id: 'handstand__mod-1', en: 'Practise with your heels resting on the wall.', vi: 'Tập với gót chân tựa vào tường.', props: ['wall'] },
+    { id: 'handstand__mod-2', en: 'Face away from the wall, and walk your feet up it until your body makes an L shape.', vi: 'Quay lưng về phía tường, và bước chân lên tường cho đến khi cơ thể thành hình chữ L.', props: ['wall'] },
+    { id: 'handstand__mod-3', en: 'Build strength first in Dolphin Pose and Downward Dog.', vi: 'Xây dựng sức mạnh trước với tư thế Cá heo và Chó úp mặt.', props: [] },
+  ],
+  safety: [
+    { id: 'handstand__safe-1', en: 'If you have high blood pressure, or a wrist, shoulder or neck injury, skip this pose.', vi: 'Nếu bạn bị huyết áp cao, hoặc có chấn thương cổ tay, vai hay cổ, hãy bỏ qua tư thế này.' },
+    { id: 'handstand__safe-2', en: 'In pregnancy, don’t start learning handstand. Stay with Downward Dog instead.', vi: 'Khi mang thai, đừng bắt đầu học trồng chuối. Hãy ở lại với Chó úp mặt.' },
+  ],
+  muscles: {
+    working: ['deltoids', 'triceps-brachii', 'serratus-anterior', 'trapezius'],
+    lengthening: ['latissimus-dorsi'],
+  },
+  joints: ['wrist', 'elbow', 'shoulder-joint'],
+  transitionsTo: ['child-pose', 'standing-forward-fold', 'downward-dog'],
+  counterPoses: ['child-pose'],
+  figure: 'handstand',
+}

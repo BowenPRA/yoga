@@ -1,0 +1,42 @@
+export const reclinedHero = {
+  id: 'reclined-hero',
+  styles: ['vinyasa'],
+  family: 'seated',
+  level: 'moderate',
+  en: 'Reclined Hero',
+  sa: 'Supta Vīrāsana',
+  say: 'SOOP-tah vee-RAH-sah-nah',
+  vi: 'Anh hùng nằm',
+  breath: {
+    en: 'Exhale as you lower back. Breathe slowly into your belly and the front of your thighs. Inhale to come up, pressing through your hands.',
+    vi: 'Thở ra khi ngả người ra sau. Thở chậm vào bụng và mặt trước đùi. Hít vào để lên, chống tay đẩy người dậy.',
+  },
+  cues: [
+    { id: 'reclined-hero__cue-1', kind: 'transition', en: 'Start sitting between your heels, with your knees together.', vi: 'Bắt đầu ngồi giữa hai gót chân, hai gối khép lại.' },
+    { id: 'reclined-hero__cue-2', kind: 'transition', en: 'Lean back onto your hands, then slowly down onto your forearms.', vi: 'Ngả ra sau chống tay, rồi từ từ hạ xuống cẳng tay.' },
+    { id: 'reclined-hero__cue-3', kind: 'alignment', en: 'If your knees are happy, lie all the way back.', vi: 'Nếu gối thoải mái, nằm hẳn xuống.' },
+    { id: 'reclined-hero__cue-4', kind: 'alignment', en: 'Keep your knees close together, and on the floor.', vi: 'Giữ hai gối gần nhau, và chạm sàn.' },
+    { id: 'reclined-hero__cue-5', kind: 'alignment', en: 'Lengthen your tailbone toward your knees, so your lower back doesn’t arch too much.', vi: 'Kéo dài xương cụt về phía gối, để lưng dưới không ưỡn quá nhiều.' },
+    { id: 'reclined-hero__cue-6', kind: 'soften', en: 'Let your arms rest, and let the front of your thighs lengthen.', vi: 'Để hai tay nghỉ, và để mặt trước đùi dài ra.' },
+    { id: 'reclined-hero__cue-7', kind: 'breath', en: 'Stay for five breaths, or longer with support.', vi: 'Giữ năm nhịp thở, hoặc lâu hơn nếu có dụng cụ đỡ.' },
+    { id: 'reclined-hero__cue-8', kind: 'safety', en: 'If your knees complain, come up right away.', vi: 'Nếu gối khó chịu, ngồi dậy ngay.' },
+    { id: 'reclined-hero__cue-9', kind: 'transition', en: 'Press into your forearms, then your hands, and come up slowly.', vi: 'Ấn cẳng tay xuống, rồi đến bàn tay, và từ từ ngồi dậy.' },
+  ],
+  modifications: [
+    { id: 'reclined-hero__mod-1', en: 'Lie back on a bolster placed along your spine.', vi: 'Nằm tựa lên gối ôm đặt dọc cột sống.', props: ['bolster'] },
+    { id: 'reclined-hero__mod-2', en: 'Stay up on your forearms or your hands.', vi: 'Dừng lại ở tư thế chống cẳng tay hoặc chống bàn tay.', props: [] },
+    { id: 'reclined-hero__mod-3', en: 'Take one leg at a time, with the other knee bent and that foot on the floor.', vi: 'Làm từng chân một, chân kia gập gối và bàn chân đặt trên sàn.', props: [] },
+  ],
+  safety: [
+    { id: 'reclined-hero__safe-1', en: 'If you have a knee or ankle injury, stretch your thighs in a low lunge instead.', vi: 'Nếu bạn có chấn thương gối hoặc cổ chân, thay bằng giãn đùi trong tư thế Chùng chân thấp.' },
+    { id: 'reclined-hero__safe-2', en: 'If your lower back pinches, use a higher bolster.', vi: 'Nếu lưng dưới bị chèn, dùng gối ôm cao hơn.' },
+    { id: 'reclined-hero__safe-3', en: 'In Yin, this shape is Saddle, held for minutes. Come out slowly, one leg at a time.', vi: 'Trong Yin, dáng này là tư thế Yên ngựa, giữ vài phút. Hãy thoát thế từ từ, từng chân một.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['quadriceps', 'iliopsoas', 'tibialis-anterior'],
+  },
+  joints: ['knee', 'ankle', 'lumbar-spine'],
+  transitionsTo: ['child-pose', 'hero-pose', 'bridge-pose'],
+  figure: 'reclined-hero',
+}

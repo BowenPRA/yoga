@@ -1,0 +1,46 @@
+export const pigeon = {
+  id: 'pigeon',
+  styles: ['vinyasa'],
+  family: 'hip-opener',
+  level: 'moderate',
+  en: 'Pigeon Pose',
+  sa: 'Eka Pāda Rājakapotāsana',
+  say: 'EH-kah PAH-dah rah-jah-kah-poh-TAH-sah-nah',
+  vi: 'Bồ câu',
+  saNote: {
+    en: 'In the full pose you reach back for your foot. The low version most classes call Pigeon is its preparation.',
+    vi: 'Ở tư thế đầy đủ, bạn vươn tay ra sau nắm bàn chân. Phiên bản thấp mà hầu hết các lớp gọi là Bồ câu là bước chuẩn bị của nó.',
+  },
+  breath: {
+    en: 'Inhale to lengthen up through your spine. Exhale to fold forward. Let each exhale soften your outer hip.',
+    vi: 'Hít vào, kéo dài cột sống lên. Thở ra, gập người về trước. Để mỗi hơi thở ra làm mềm hông ngoài.',
+  },
+  cues: [
+    { id: 'pigeon__cue-1', kind: 'transition', en: 'From Downward Dog, bring your right knee forward, behind your right wrist.', vi: 'Từ Chó úp mặt, đưa gối phải lên trước, đặt phía sau cổ tay phải.' },
+    { id: 'pigeon__cue-2', kind: 'alignment', en: 'Let your right foot rest toward your left hip, or move it forward if your knee allows.', vi: 'Để bàn chân phải hướng về phía hông trái, hoặc đưa bàn chân lên trước nếu gối cho phép.' },
+    { id: 'pigeon__cue-3', kind: 'alignment', en: 'Flex your front foot to protect your knee.', vi: 'Gập bàn chân trước để bảo vệ gối.' },
+    { id: 'pigeon__cue-4', kind: 'alignment', en: 'Slide your back leg straight behind you, top of the foot down.', vi: 'Duỗi thẳng chân sau ra phía sau, mu bàn chân úp xuống.' },
+    { id: 'pigeon__cue-5', kind: 'alignment', en: 'Square your hips toward the front of your mat.', vi: 'Đưa hai hông hướng thẳng về phía đầu thảm.' },
+    { id: 'pigeon__cue-6', kind: 'soften', en: 'Fold forward, and let your outer hip soften a little more with each exhale.', vi: 'Gập người về trước, và để hông ngoài mềm thêm một chút sau mỗi hơi thở ra.' },
+    { id: 'pigeon__cue-7', kind: 'breath', en: 'Stay for five breaths, or longer if it feels good.', vi: 'Giữ năm nhịp thở, hoặc lâu hơn nếu thấy dễ chịu.' },
+    { id: 'pigeon__cue-8', kind: 'safety', en: 'Feel this deep in your outer hip, not in your knee. Knee pain means come out.', vi: 'Bạn nên cảm thấy căng sâu ở hông ngoài, không phải ở gối. Đau gối nghĩa là cần thoát thế.' },
+    { id: 'pigeon__cue-9', kind: 'transition', en: 'Press into your hands, tuck your back toes, and step back to Downward Dog.', vi: 'Ấn hai tay xuống, bấm ngón chân sau, và lùi về Chó úp mặt.' },
+  ],
+  modifications: [
+    { id: 'pigeon__mod-1', en: 'Place a block or a folded blanket under your front hip, so your hips stay level.', vi: 'Kê gạch hoặc chăn gấp dưới hông trước, để hai bên hông cân bằng.', props: ['block', 'blanket'] },
+    { id: 'pigeon__mod-2', en: 'Rest your head on a block, or on your stacked fists.', vi: 'Tựa đầu lên gạch, hoặc lên hai nắm tay chồng lên nhau.', props: ['block'] },
+    { id: 'pigeon__mod-3', en: 'Stay upright on your hands instead of folding forward.', vi: 'Giữ người thẳng, chống trên bàn tay thay vì gập người về trước.', props: [] },
+  ],
+  safety: [
+    { id: 'pigeon__safe-1', en: 'If your knee is injured or sensitive, choose Figure Four on your back instead.', vi: 'Nếu gối bị chấn thương hoặc nhạy cảm, hãy chọn tư thế Số 4 nằm thay thế.' },
+    { id: 'pigeon__safe-2', en: 'In Yin, this shape is Sleeping Swan, held for minutes. After a long hold, come out slowly.', vi: 'Trong Yin, dáng này là Thiên nga ngủ, giữ vài phút. Sau khi giữ lâu, hãy thoát thế từ từ.' },
+    { id: 'pigeon__safe-3', en: 'In pregnancy, stay upright on your hands, or prop your front hip high with a bolster.', vi: 'Khi mang thai, giữ người thẳng chống trên bàn tay, hoặc kê gối ôm cao dưới hông trước.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['piriformis', 'deep-rotators', 'gluteus-maximus', 'iliopsoas'],
+  },
+  joints: ['hip-joint', 'knee', 'sacrum'],
+  transitionsTo: ['downward-dog', 'figure-four', 'child-pose'],
+  figure: 'pigeon',
+}

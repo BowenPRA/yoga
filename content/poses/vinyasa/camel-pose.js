@@ -1,0 +1,43 @@
+export const camelPose = {
+  id: 'camel-pose',
+  styles: ['vinyasa'],
+  family: 'backbend',
+  level: 'moderate',
+  en: 'Camel Pose',
+  sa: 'Uṣṭrāsana',
+  say: 'oosh-TRAH-sah-nah',
+  vi: 'Lạc đà',
+  breath: {
+    en: 'Inhale to lift your chest before you bend back. Keep the breath steady while you stay. Inhale to come up, chest first.',
+    vi: 'Hít vào, nâng ngực trước khi ngả ra sau. Giữ hơi thở đều khi ở lại. Hít vào để lên, ngực dẫn trước.',
+  },
+  cues: [
+    { id: 'camel-pose__cue-1', kind: 'transition', en: 'Kneel with your knees hip-width apart, hips stacked over your knees.', vi: 'Quỳ với hai gối rộng bằng hông, hông thẳng trên gối.' },
+    { id: 'camel-pose__cue-2', kind: 'alignment', en: 'Place your hands on your lower back, fingers pointing down.', vi: 'Đặt hai tay lên lưng dưới, ngón tay chỉ xuống.' },
+    { id: 'camel-pose__cue-3', kind: 'alignment', en: 'Inhale, lift your chest up toward the ceiling.', vi: 'Hít vào, nâng ngực lên hướng trần nhà.' },
+    { id: 'camel-pose__cue-4', kind: 'alignment', en: 'Keep your hips moving forward as you lean back.', vi: 'Tiếp tục đưa hông về trước khi ngả ra sau.' },
+    { id: 'camel-pose__cue-5', kind: 'alignment', en: 'If it feels good, reach back for your heels, one hand at a time.', vi: 'Nếu thấy thoải mái, vươn tay ra sau chạm gót chân, từng tay một.' },
+    { id: 'camel-pose__cue-6', kind: 'soften', en: 'Keep your neck long. Let your head follow your spine only if that feels good.', vi: 'Giữ cổ dài. Chỉ để đầu ngả theo cột sống nếu thấy dễ chịu.' },
+    { id: 'camel-pose__cue-7', kind: 'breath', en: 'Stay for three breaths, breathing into your chest.', vi: 'Giữ ba nhịp thở, thở vào ngực.' },
+    { id: 'camel-pose__cue-8', kind: 'safety', en: 'If you feel dizzy, come up slowly and sit back on your heels.', vi: 'Nếu thấy chóng mặt, từ từ lên và ngồi xuống gót chân.' },
+    { id: 'camel-pose__cue-9', kind: 'transition', en: 'Bring your hands to your lower back, and inhale up, chest first.', vi: 'Đưa hai tay về lưng dưới, và hít vào để lên, ngực dẫn trước.' },
+  ],
+  modifications: [
+    { id: 'camel-pose__mod-1', en: 'Tuck your toes under to bring your heels higher.', vi: 'Bấm các ngón chân xuống để gót chân cao hơn.', props: [] },
+    { id: 'camel-pose__mod-2', en: 'Rest your hands on blocks beside your ankles.', vi: 'Đặt hai tay lên gạch cạnh cổ chân.', props: ['blocks'] },
+    { id: 'camel-pose__mod-3', en: 'Pad your knees with a folded blanket.', vi: 'Kê chăn gấp dưới gối cho êm.', props: ['blanket'] },
+  ],
+  safety: [
+    { id: 'camel-pose__safe-1', en: 'If your lower back pinches, keep your hands on your back, and lift your chest more than you bend.', vi: 'Nếu lưng dưới bị chèn, giữ tay trên lưng, và nâng ngực nhiều hơn là ngả ra sau.' },
+    { id: 'camel-pose__safe-2', en: 'If you have a neck injury, keep your head in line with your spine. Don’t let it drop back.', vi: 'Nếu bạn có chấn thương cổ, giữ đầu thẳng hàng với cột sống. Đừng để đầu ngả ra sau.' },
+    { id: 'camel-pose__safe-3', en: 'In pregnancy, keep the backbend small, or skip it.', vi: 'Khi mang thai, chỉ ngả sau nhẹ, hoặc bỏ qua tư thế này.' },
+  ],
+  muscles: {
+    working: ['erector-spinae', 'gluteus-maximus'],
+    lengthening: ['quadriceps', 'iliopsoas', 'rectus-abdominis', 'pectoralis-major'],
+  },
+  joints: ['lumbar-spine', 'thoracic-spine', 'cervical-spine', 'knee'],
+  transitionsTo: ['child-pose', 'hero-pose'],
+  counterPoses: ['child-pose'],
+  figure: 'camel-pose',
+}

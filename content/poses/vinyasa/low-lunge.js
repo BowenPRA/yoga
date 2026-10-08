@@ -1,0 +1,43 @@
+export const lowLunge = {
+  id: 'low-lunge',
+  styles: ['vinyasa'],
+  family: 'standing',
+  level: 'gentle',
+  en: 'Low Lunge',
+  aka: ['Crescent Moon'],
+  sa: 'Añjaneyāsana',
+  say: 'ahn-jah-nay-AH-sah-nah',
+  vi: 'Chùng chân thấp',
+  breath: {
+    en: 'Exhale to lower your back knee. Inhale to lift your chest and arms. Exhale to sink your hips. Stay for three to five breaths.',
+    vi: 'Thở ra, hạ gối sau xuống. Hít vào, nâng ngực và hai tay lên. Thở ra, hạ hông xuống. Giữ ba đến năm nhịp thở.',
+  },
+  cues: [
+    { id: 'low-lunge__cue-1', kind: 'transition', en: 'From Downward Dog, step your right foot forward between your hands.', vi: 'Từ Chó úp mặt, bước chân phải lên trước giữa hai tay.' },
+    { id: 'low-lunge__cue-2', kind: 'transition', en: 'Lower your left knee, and rest the top of your back foot on the mat.', vi: 'Hạ gối trái xuống, và đặt mu bàn chân sau nằm trên thảm.' },
+    { id: 'low-lunge__cue-3', kind: 'alignment', en: 'Stack your front knee over your ankle.', vi: 'Đặt gối trước thẳng trên cổ chân.' },
+    { id: 'low-lunge__cue-4', kind: 'alignment', en: 'Inhale, lift your chest, and reach your arms up.', vi: 'Hít vào, nâng ngực, và vươn hai tay lên.' },
+    { id: 'low-lunge__cue-5', kind: 'alignment', en: 'Draw your belly in, and lengthen your tailbone down.', vi: 'Thu bụng vào, và kéo dài xương cụt xuống.' },
+    { id: 'low-lunge__cue-6', kind: 'soften', en: 'Exhale, sink your hips forward and down, and feel the front of your back hip open.', vi: 'Thở ra, hạ hông về trước và xuống, và cảm nhận phía trước hông chân sau mở ra.' },
+    { id: 'low-lunge__cue-7', kind: 'breath', en: 'Stay here for three to five breaths.', vi: 'Giữ ở đây ba đến năm nhịp thở.' },
+    { id: 'low-lunge__cue-8', kind: 'safety', en: 'If your back knee is sensitive, fold a blanket under it.', vi: 'Nếu gối sau nhạy cảm, gấp chăn kê dưới gối.' },
+    { id: 'low-lunge__cue-9', kind: 'transition', en: 'Bring your hands down, tuck your back toes, and step back to Downward Dog.', vi: 'Đưa hai tay xuống, bấm ngón chân sau, và bước về Chó úp mặt.' },
+  ],
+  modifications: [
+    { id: 'low-lunge__mod-1', en: 'Pad your back knee with a folded blanket.', vi: 'Kê chăn gấp dưới gối sau cho êm.', props: ['blanket'] },
+    { id: 'low-lunge__mod-2', en: 'Keep your hands on blocks on either side of your front foot.', vi: 'Đặt hai tay lên gạch ở hai bên bàn chân trước.', props: ['blocks'] },
+    { id: 'low-lunge__mod-3', en: 'Rest your hands on your front thigh instead of reaching up.', vi: 'Đặt hai tay lên đùi trước thay vì vươn lên.', props: [] },
+  ],
+  safety: [
+    { id: 'low-lunge__safe-1', en: 'If your front knee is sensitive, keep it over your ankle, not past your toes.', vi: 'Nếu gối trước nhạy cảm, giữ gối thẳng trên cổ chân, không vượt quá mũi chân.' },
+    { id: 'low-lunge__safe-2', en: 'If your lower back pinches, lift your chest and lengthen your tailbone, rather than sinking deeper.', vi: 'Nếu lưng dưới bị chèn, nâng ngực và kéo dài xương cụt, thay vì hạ sâu hơn.' },
+    { id: 'low-lunge__safe-3', en: 'In Yin, this shape is Dragon, held for a few minutes. After a long hold, come out slowly.', vi: 'Trong Yin, dáng này là tư thế Rồng, giữ vài phút. Sau khi giữ lâu, hãy thoát thế từ từ.' },
+  ],
+  muscles: {
+    working: ['gluteus-maximus'],
+    lengthening: ['iliopsoas', 'quadriceps'],
+  },
+  joints: ['hip-joint', 'knee'],
+  transitionsTo: ['crescent-lunge', 'lizard-pose', 'half-splits'],
+  figure: 'low-lunge',
+}

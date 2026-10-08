@@ -1,0 +1,43 @@
+export const supineTwist = {
+  id: 'supine-twist',
+  styles: ['vinyasa'],
+  family: 'twist',
+  level: 'gentle',
+  en: 'Supine Twist',
+  aka: ['Supine Spinal Twist'],
+  sa: 'Supta Matsyendrāsana',
+  say: 'SOOP-tah maht-see-en-DRAH-sah-nah',
+  vi: 'Vặn người nằm',
+  breath: {
+    en: 'Breathe slowly, and let each exhale soften you a little deeper into the twist.',
+    vi: 'Thở chậm, và để mỗi hơi thở ra giúp bạn mềm sâu hơn vào tư thế vặn.',
+  },
+  cues: [
+    { id: 'supine-twist__cue-1', kind: 'transition', en: 'Lie on your back, and hug your right knee into your chest.', vi: 'Nằm ngửa, và ôm gối phải vào ngực.' },
+    { id: 'supine-twist__cue-2', kind: 'alignment', en: 'Exhale, guide your right knee across your body to the left.', vi: 'Thở ra, đưa gối phải bắt chéo qua người sang trái.' },
+    { id: 'supine-twist__cue-3', kind: 'alignment', en: 'Open your right arm out to the side, palm facing up.', vi: 'Mở tay phải sang bên, lòng bàn tay ngửa lên.' },
+    { id: 'supine-twist__cue-4', kind: 'alignment', en: 'Rest your left hand on your right knee, without pressing.', vi: 'Đặt tay trái lên gối phải, không ấn.' },
+    { id: 'supine-twist__cue-5', kind: 'alignment', en: 'Turn your head to the right, if that feels good for your neck.', vi: 'Quay đầu sang phải, nếu cổ thấy dễ chịu.' },
+    { id: 'supine-twist__cue-6', kind: 'soften', en: 'Let your right shoulder sink toward the floor.', vi: 'Để vai phải chìm dần xuống sàn.' },
+    { id: 'supine-twist__cue-7', kind: 'breath', en: 'Stay for five breaths, or longer.', vi: 'Giữ năm nhịp thở, hoặc lâu hơn.' },
+    { id: 'supine-twist__cue-8', kind: 'safety', en: 'If your knee doesn’t reach the floor, rest it on a block.', vi: 'Nếu đầu gối chưa chạm sàn, đặt đầu gối lên một viên gạch.' },
+    { id: 'supine-twist__cue-9', kind: 'transition', en: 'Inhale, roll back to centre, and change sides.', vi: 'Hít vào, lăn người về giữa, và đổi bên.' },
+  ],
+  modifications: [
+    { id: 'supine-twist__mod-1', en: 'Place a block or a bolster under your top knee.', vi: 'Kê gạch hoặc gối ôm dưới gối trên.', props: ['block', 'bolster'] },
+    { id: 'supine-twist__mod-2', en: 'Bend both knees, and let them fall to the side together.', vi: 'Gập cả hai gối, và để hai gối cùng đổ sang một bên.', props: [] },
+    { id: 'supine-twist__mod-3', en: 'Keep your head facing up.', vi: 'Giữ đầu hướng lên trên.', props: [] },
+  ],
+  safety: [
+    { id: 'supine-twist__safe-1', en: 'If you have a back or disc injury, keep the twist small, and support your knee.', vi: 'Nếu bạn có chấn thương lưng hoặc đĩa đệm, chỉ vặn nhẹ, và kê đỡ đầu gối.' },
+    { id: 'supine-twist__safe-2', en: 'In later pregnancy, lie on your side instead, or twist gently while seated.', vi: 'Ở giai đoạn sau của thai kỳ, thay bằng nằm nghiêng, hoặc vặn nhẹ khi ngồi.' },
+    { id: 'supine-twist__safe-3', en: 'In Yin, this is Reclined Twist, held for a few minutes. After a long hold, come back to centre slowly.', vi: 'Trong Yin, tư thế này có tên Reclined Twist và được giữ vài phút. Sau khi giữ lâu, hãy về giữa từ từ.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['external-oblique', 'gluteus-maximus', 'it-band', 'pectoralis-major'],
+  },
+  joints: ['thoracic-spine', 'lumbar-spine', 'shoulder-joint'],
+  transitionsTo: ['savasana', 'happy-baby'],
+  figure: 'supine-twist',
+}

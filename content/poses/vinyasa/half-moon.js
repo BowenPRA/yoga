@@ -1,0 +1,41 @@
+export const halfMoon = {
+  id: 'half-moon',
+  styles: ['vinyasa'],
+  family: 'balance',
+  level: 'moderate',
+  en: 'Half Moon',
+  sa: 'Ardha Candrāsana',
+  say: 'AR-dah chahn-DRAH-sah-nah',
+  vi: 'Bán nguyệt',
+  breath: {
+    en: 'Inhale to lift your back leg and open your hips. Breathe steadily for three to five breaths. Exhale to bend your standing knee and come down.',
+    vi: 'Hít vào, nâng chân sau và mở hông. Thở đều ba đến năm nhịp. Thở ra, chùng gối chân trụ và hạ xuống.',
+  },
+  cues: [
+    { id: 'half-moon__cue-1', kind: 'transition', en: 'From Warrior Two, reach your front hand to a block, a little ahead of your front foot.', vi: 'Từ Chiến binh II, đặt tay trước lên gạch, phía trước bàn chân trước một chút.' },
+    { id: 'half-moon__cue-2', kind: 'alignment', en: 'Shift your weight forward, and lift your back leg.', vi: 'Dồn trọng lượng về trước, và nâng chân sau lên.' },
+    { id: 'half-moon__cue-3', kind: 'alignment', en: 'Stack your top hip over your bottom hip.', vi: 'Đặt hông trên chồng thẳng lên hông dưới.' },
+    { id: 'half-moon__cue-4', kind: 'alignment', en: 'Flex your lifted foot, toes pointing to the side wall.', vi: 'Gập bàn chân đang nâng, mũi chân hướng về bức tường bên cạnh.' },
+    { id: 'half-moon__cue-5', kind: 'alignment', en: 'Reach your top arm up, and open your chest.', vi: 'Vươn tay trên lên, và mở ngực.' },
+    { id: 'half-moon__cue-6', kind: 'soften', en: 'Keep your gaze down until you feel steady.', vi: 'Nhìn xuống cho đến khi bạn thấy vững.' },
+    { id: 'half-moon__cue-7', kind: 'breath', en: 'Stay for three breaths.', vi: 'Giữ ba nhịp thở.' },
+    { id: 'half-moon__cue-8', kind: 'safety', en: 'Keep your standing knee soft, never locked.', vi: 'Giữ gối chân trụ mềm, đừng bao giờ khoá gối.' },
+    { id: 'half-moon__cue-9', kind: 'transition', en: 'Exhale, bend your standing knee, and step back into Warrior Two.', vi: 'Thở ra, chùng gối chân trụ, và bước chân sau về Chiến binh II.' },
+  ],
+  modifications: [
+    { id: 'half-moon__mod-1', en: 'Use a block under your bottom hand, at its tallest height.', vi: 'Dùng gạch dưới bàn tay dưới, dựng ở độ cao cao nhất.', props: ['block'] },
+    { id: 'half-moon__mod-2', en: 'Practise with your back against a wall.', vi: 'Tập với lưng tựa vào tường.', props: ['wall'] },
+    { id: 'half-moon__mod-3', en: 'Keep your top hand on your hip.', vi: 'Giữ tay trên đặt ở hông.', props: [] },
+  ],
+  safety: [
+    { id: 'half-moon__safe-1', en: 'If you have a neck injury, look down at the floor instead of up.', vi: 'Nếu bạn có chấn thương cổ, nhìn xuống sàn thay vì nhìn lên.' },
+    { id: 'half-moon__safe-2', en: 'In pregnancy, practise against a wall for support.', vi: 'Khi mang thai, tập tựa vào tường để có điểm đỡ.' },
+  ],
+  muscles: {
+    working: ['gluteus-medius', 'quadriceps', 'external-oblique'],
+    lengthening: ['hamstrings', 'hip-adductors'],
+  },
+  joints: ['hip-joint', 'ankle', 'knee'],
+  transitionsTo: ['warrior-2', 'triangle', 'warrior-3'],
+  figure: 'half-moon',
+}

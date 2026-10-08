@@ -1,0 +1,41 @@
+export const heroPose = {
+  id: 'hero-pose',
+  styles: ['vinyasa'],
+  family: 'seated',
+  level: 'gentle',
+  en: 'Hero Pose',
+  sa: 'Vīrāsana',
+  say: 'vee-RAH-sah-nah',
+  vi: 'Anh hùng',
+  breath: {
+    en: 'Sit tall and breathe slowly. This is a good seat for pranayama or meditation.',
+    vi: 'Ngồi thẳng và thở chậm. Đây là tư thế ngồi tốt cho pranayama hoặc thiền.',
+  },
+  cues: [
+    { id: 'hero-pose__cue-1', kind: 'transition', en: 'Kneel with your knees together, and your feet a little wider than your hips.', vi: 'Quỳ với hai gối khép, và hai bàn chân rộng hơn hông một chút.' },
+    { id: 'hero-pose__cue-2', kind: 'transition', en: 'Roll your calves out with your hands, and sit down between your heels.', vi: 'Dùng tay đẩy bắp chân ra ngoài, và ngồi xuống giữa hai gót chân.' },
+    { id: 'hero-pose__cue-3', kind: 'alignment', en: 'Point your toes straight back, with the tops of your feet on the mat.', vi: 'Hướng ngón chân thẳng ra sau, mu bàn chân đặt trên thảm.' },
+    { id: 'hero-pose__cue-4', kind: 'alignment', en: 'Rest your hands on your thighs.', vi: 'Đặt hai tay lên đùi.' },
+    { id: 'hero-pose__cue-5', kind: 'alignment', en: 'Lift your chest, and lengthen up through the crown of your head.', vi: 'Nâng ngực, và kéo dài lên qua đỉnh đầu.' },
+    { id: 'hero-pose__cue-6', kind: 'soften', en: 'Soften your shoulders, and let your hands rest.', vi: 'Thả lỏng vai, và để hai tay nghỉ.' },
+    { id: 'hero-pose__cue-7', kind: 'breath', en: 'Stay for five breaths, or longer.', vi: 'Giữ năm nhịp thở, hoặc lâu hơn.' },
+    { id: 'hero-pose__cue-8', kind: 'safety', en: 'If your knees hurt, sit up higher on a block.', vi: 'Nếu gối đau, ngồi cao hơn trên một viên gạch.' },
+    { id: 'hero-pose__cue-9', kind: 'transition', en: 'Lean forward onto your hands, and lift up off your heels.', vi: 'Nghiêng người về trước chống tay, và nhấc hông khỏi gót chân.' },
+  ],
+  modifications: [
+    { id: 'hero-pose__mod-1', en: 'Sit on a block between your feet.', vi: 'Ngồi lên một viên gạch đặt giữa hai bàn chân.', props: ['block'] },
+    { id: 'hero-pose__mod-2', en: 'Roll a blanket under the fronts of your ankles.', vi: 'Cuộn chăn kê dưới mặt trước cổ chân.', props: ['blanket'] },
+    { id: 'hero-pose__mod-3', en: 'Place a folded blanket behind your knees.', vi: 'Đặt chăn gấp phía sau gối.', props: ['blanket'] },
+  ],
+  safety: [
+    { id: 'hero-pose__safe-1', en: 'Never force your hips down. If your knees hurt, sit higher.', vi: 'Đừng bao giờ ép hông xuống. Nếu gối đau, hãy ngồi cao hơn.' },
+    { id: 'hero-pose__safe-2', en: 'If you have a knee or ankle injury, sit cross-legged instead.', vi: 'Nếu bạn có chấn thương gối hoặc cổ chân, thay bằng ngồi xếp bằng.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['quadriceps', 'tibialis-anterior'],
+  },
+  joints: ['knee', 'ankle'],
+  transitionsTo: ['reclined-hero', 'camel-pose', 'child-pose'],
+  figure: 'hero-pose',
+}

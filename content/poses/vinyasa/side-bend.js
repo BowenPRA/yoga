@@ -1,0 +1,42 @@
+export const sideBend = {
+  id: 'side-bend',
+  styles: ['vinyasa'],
+  family: 'standing',
+  level: 'gentle',
+  en: 'Standing Side Bend',
+  aka: ['Standing Crescent'],
+  sa: 'Pārśva Ūrdhva Hastāsana',
+  say: 'PARSH-vah OORD-vah hah-STAH-sah-nah',
+  vi: 'Đứng nghiêng người',
+  breath: {
+    en: 'Inhale to reach up. Exhale to bend to one side. Inhale to come back to centre.',
+    vi: 'Hít vào, vươn lên. Thở ra, nghiêng sang một bên. Hít vào, trở về giữa.',
+  },
+  cues: [
+    { id: 'side-bend__cue-1', kind: 'transition', en: 'Stand with your feet together, or hip-width apart.', vi: 'Đứng với hai chân khép, hoặc rộng bằng hông.' },
+    { id: 'side-bend__cue-2', kind: 'alignment', en: 'Inhale, reach your arms up, and hold your left wrist with your right hand.', vi: 'Hít vào, vươn hai tay lên, và dùng tay phải nắm cổ tay trái.' },
+    { id: 'side-bend__cue-3', kind: 'alignment', en: 'Exhale, and lean over to the right.', vi: 'Thở ra, và nghiêng người sang phải.' },
+    { id: 'side-bend__cue-4', kind: 'alignment', en: 'Press your left foot down, and lengthen the whole left side of your body.', vi: 'Ấn bàn chân trái xuống, và kéo dài cả bên trái cơ thể.' },
+    { id: 'side-bend__cue-5', kind: 'alignment', en: 'Keep both hips level, and your chest facing forward.', vi: 'Giữ hai hông ngang bằng, và ngực hướng về trước.' },
+    { id: 'side-bend__cue-6', kind: 'soften', en: 'Soften your shoulders, and let your neck relax.', vi: 'Thả lỏng vai, và để cổ thư giãn.' },
+    { id: 'side-bend__cue-7', kind: 'breath', en: 'Breathe into your left ribs for three breaths.', vi: 'Thở vào xương sườn bên trái trong ba nhịp thở.' },
+    { id: 'side-bend__cue-8', kind: 'safety', en: 'If your shoulders feel tight, rest your lower hand on your hip.', vi: 'Nếu vai thấy căng, đặt tay dưới lên hông.' },
+    { id: 'side-bend__cue-9', kind: 'transition', en: 'Inhale back to centre, and change sides.', vi: 'Hít vào trở về giữa, và đổi bên.' },
+  ],
+  modifications: [
+    { id: 'side-bend__mod-1', en: 'Keep your lower hand on your hip, and reach only your top arm.', vi: 'Giữ tay dưới trên hông, và chỉ vươn tay trên.', props: [] },
+    { id: 'side-bend__mod-2', en: 'Stand with your back close to a wall to keep your chest open.', vi: 'Đứng với lưng sát tường để giữ ngực mở.', props: ['wall'] },
+    { id: 'side-bend__mod-3', en: 'Do it seated on a chair.', vi: 'Thực hiện khi ngồi trên ghế.', props: ['chair'] },
+  ],
+  safety: [
+    { id: 'side-bend__safe-1', en: 'If you have a shoulder injury, reach only one arm up, and keep the other on your hip.', vi: 'Nếu bạn có chấn thương vai, chỉ vươn một tay lên, và giữ tay kia trên hông.' },
+    { id: 'side-bend__safe-2', en: 'If you have a lower back injury, keep the bend small and your belly gently engaged.', vi: 'Nếu bạn có chấn thương lưng dưới, chỉ nghiêng nhẹ và giữ bụng hơi siết.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['external-oblique', 'latissimus-dorsi', 'quadratus-lumborum'],
+  },
+  joints: ['ribs', 'lumbar-spine', 'shoulder-joint'],
+  transitionsTo: ['standing-forward-fold', 'mountain-pose', 'chair-pose'],
+  figure: 'side-bend',
+}

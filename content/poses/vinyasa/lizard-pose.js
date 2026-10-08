@@ -1,0 +1,42 @@
+export const lizardPose = {
+  id: 'lizard-pose',
+  styles: ['vinyasa'],
+  family: 'hip-opener',
+  level: 'moderate',
+  en: 'Lizard Pose',
+  sa: 'Uttāna Pṛṣṭhāsana',
+  say: 'oo-TAHN prish-TAH-sah-nah',
+  vi: 'Thằn lằn',
+  breath: {
+    en: 'Exhale to lower onto your hands or forearms. Breathe slowly into your hips for five breaths. Inhale to come up.',
+    vi: 'Thở ra, hạ xuống chống bàn tay hoặc cẳng tay. Thở chậm vào vùng hông trong năm nhịp. Hít vào để lên.',
+  },
+  cues: [
+    { id: 'lizard-pose__cue-1', kind: 'transition', en: 'From Downward Dog, step your right foot to the outside of your right hand.', vi: 'Từ Chó úp mặt, bước chân phải ra phía ngoài bàn tay phải.' },
+    { id: 'lizard-pose__cue-2', kind: 'alignment', en: 'Turn your front toes out a little, and keep your knee over your ankle.', vi: 'Xoay mũi chân trước hơi ra ngoài, và giữ gối thẳng trên cổ chân.' },
+    { id: 'lizard-pose__cue-3', kind: 'alignment', en: 'Keep your back leg long, or lower your back knee down.', vi: 'Giữ chân sau duỗi dài, hoặc hạ gối sau xuống.' },
+    { id: 'lizard-pose__cue-4', kind: 'alignment', en: 'Stay on your hands, or come down to your forearms if your hips allow.', vi: 'Giữ trên bàn tay, hoặc hạ xuống cẳng tay nếu hông cho phép.' },
+    { id: 'lizard-pose__cue-5', kind: 'alignment', en: 'Reach your chest forward, and keep your back long.', vi: 'Đưa ngực về trước, và giữ lưng dài.' },
+    { id: 'lizard-pose__cue-6', kind: 'soften', en: 'Let your hips sink low, and breathe into your inner thigh.', vi: 'Để hông chìm thấp, và thở vào mặt trong đùi.' },
+    { id: 'lizard-pose__cue-7', kind: 'breath', en: 'Stay for five breaths.', vi: 'Giữ năm nhịp thở.' },
+    { id: 'lizard-pose__cue-8', kind: 'safety', en: 'If the front of your hip pinches, come back up onto your hands, or onto a block.', vi: 'Nếu phía trước hông bị chèn, nâng lên chống bàn tay, hoặc chống lên gạch.' },
+    { id: 'lizard-pose__cue-9', kind: 'transition', en: 'Press back up, step back to Downward Dog, and change sides.', vi: 'Đẩy người lên, bước về Chó úp mặt, và đổi bên.' },
+  ],
+  modifications: [
+    { id: 'lizard-pose__mod-1', en: 'Lower your back knee onto a folded blanket.', vi: 'Hạ gối sau xuống một tấm chăn gấp.', props: ['blanket'] },
+    { id: 'lizard-pose__mod-2', en: 'Rest your forearms on a block instead of the floor.', vi: 'Đặt cẳng tay lên gạch thay vì xuống sàn.', props: ['block'] },
+    { id: 'lizard-pose__mod-3', en: 'Keep your hands on the floor, and your chest higher.', vi: 'Giữ hai tay trên sàn, và ngực cao hơn.', props: [] },
+  ],
+  safety: [
+    { id: 'lizard-pose__safe-1', en: 'Keep your front knee pointing toward your toes, not falling inward.', vi: 'Giữ gối trước hướng về mũi chân, không đổ vào trong.' },
+    { id: 'lizard-pose__safe-2', en: 'In Yin, a version of this shape is held for minutes as Dragon. After a long hold, come out slowly.', vi: 'Trong Yin, một biến thể của dáng này được giữ vài phút trong tư thế Rồng. Sau khi giữ lâu, hãy thoát thế từ từ.' },
+    { id: 'lizard-pose__safe-3', en: 'In pregnancy, stay on your hands and keep your back knee down.', vi: 'Khi mang thai, giữ trên bàn tay và để gối sau trên sàn.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['iliopsoas', 'hip-adductors', 'gluteus-maximus'],
+  },
+  joints: ['hip-joint', 'knee', 'pelvis'],
+  transitionsTo: ['half-splits', 'pigeon', 'downward-dog'],
+  figure: 'lizard-pose',
+}

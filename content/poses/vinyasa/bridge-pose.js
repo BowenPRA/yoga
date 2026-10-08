@@ -1,0 +1,47 @@
+export const bridgePose = {
+  id: 'bridge-pose',
+  styles: ['vinyasa'],
+  family: 'backbend',
+  level: 'gentle',
+  en: 'Bridge Pose',
+  sa: 'Setu Bandha Sarvāṅgāsana',
+  say: 'SAY-too BAHN-dah sar-vahn-GAH-sah-nah',
+  vi: 'Cây cầu',
+  saNote: {
+    en: 'Not the same as Setu Bandhāsana at the end of the Ashtanga seated sequence, which balances on the crown of the head.',
+    vi: 'Khác với Setu Bandhāsana ở cuối chuỗi ngồi của Ashtanga, tư thế đó giữ thăng bằng trên đỉnh đầu.',
+  },
+  breath: {
+    en: 'Inhale to lift your hips. Breathe steadily for five breaths. Exhale to roll down slowly.',
+    vi: 'Hít vào, nâng hông. Thở đều năm nhịp. Thở ra, từ từ cuộn xuống.',
+  },
+  cues: [
+    { id: 'bridge-pose__cue-1', kind: 'transition', en: 'Lie on your back, bend your knees, and place your feet hip-width apart.', vi: 'Nằm ngửa, gập gối, và đặt hai bàn chân rộng bằng hông.' },
+    { id: 'bridge-pose__cue-2', kind: 'alignment', en: 'Walk your heels in, close enough to brush your fingertips.', vi: 'Đưa gót chân lại gần, đến mức đầu ngón tay chạm được.' },
+    { id: 'bridge-pose__cue-3', kind: 'alignment', en: 'Inhale, press into your feet, and lift your hips.', vi: 'Hít vào, ấn bàn chân xuống, và nâng hông lên.' },
+    { id: 'bridge-pose__cue-4', kind: 'alignment', en: 'Keep your knees in line with your hips. Don’t let them fall out.', vi: 'Giữ gối thẳng hàng với hông. Đừng để gối đổ ra ngoài.' },
+    { id: 'bridge-pose__cue-5', kind: 'alignment', en: 'Roll your shoulders under, and interlace your hands beneath you.', vi: 'Lần lượt đưa hai vai vào bên dưới người, và đan hai bàn tay dưới lưng.' },
+    { id: 'bridge-pose__cue-6', kind: 'soften', en: 'Keep your glutes working, but not clenched.', vi: 'Giữ cơ mông làm việc, nhưng không siết chặt.' },
+    { id: 'bridge-pose__cue-7', kind: 'breath', en: 'Stay for five breaths.', vi: 'Giữ năm nhịp thở.' },
+    { id: 'bridge-pose__cue-8', kind: 'safety', en: 'Keep your head still and look straight up, to protect your neck.', vi: 'Giữ đầu yên và nhìn thẳng lên, để bảo vệ cổ.' },
+    { id: 'bridge-pose__cue-9', kind: 'transition', en: 'Exhale, release your hands, and roll down one bone at a time.', vi: 'Thở ra, thả hai tay, và cuộn xuống từng đốt sống một.' },
+  ],
+  modifications: [
+    { id: 'bridge-pose__mod-1', en: 'Rest your sacrum on a block for a supported Bridge.', vi: 'Đặt xương cùng lên gạch để làm Cây cầu có hỗ trợ.', props: ['block'] },
+    { id: 'bridge-pose__mod-2', en: 'Squeeze a block between your thighs to keep your knees in line.', vi: 'Kẹp một viên gạch giữa hai đùi để giữ gối thẳng hàng.', props: ['block'] },
+    { id: 'bridge-pose__mod-3', en: 'Keep your arms by your sides, palms pressing down.', vi: 'Giữ hai tay dọc theo người, lòng bàn tay ấn xuống.', props: [] },
+  ],
+  safety: [
+    { id: 'bridge-pose__safe-1', en: 'If you have a neck injury, keep the lift low, and never turn your head.', vi: 'Nếu bạn có chấn thương cổ, nâng thấp thôi, và không bao giờ quay đầu.' },
+    { id: 'bridge-pose__safe-2', en: 'In later pregnancy, keep the hold short, or rest your sacrum on a block.', vi: 'Ở giai đoạn sau của thai kỳ, giữ ngắn thôi, hoặc đặt xương cùng lên gạch.' },
+    { id: 'bridge-pose__safe-3', en: 'In Yin, Bridge is held for a few minutes with a block under your sacrum. After a long hold, come down slowly.', vi: 'Trong Yin, Cây cầu được giữ vài phút với gạch đặt dưới xương cùng. Sau khi giữ lâu, hãy hạ xuống từ từ.' },
+  ],
+  muscles: {
+    working: ['gluteus-maximus', 'hamstrings', 'erector-spinae', 'hip-adductors'],
+    lengthening: ['iliopsoas', 'quadriceps', 'pectoralis-major'],
+  },
+  joints: ['cervical-spine', 'knee', 'hip-joint'],
+  transitionsTo: ['wheel-pose', 'supine-twist', 'happy-baby'],
+  counterPoses: ['supine-twist'],
+  figure: 'bridge-pose',
+}

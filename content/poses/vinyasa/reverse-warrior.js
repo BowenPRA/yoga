@@ -1,0 +1,42 @@
+export const reverseWarrior = {
+  id: 'reverse-warrior',
+  styles: ['vinyasa'],
+  family: 'standing',
+  level: 'moderate',
+  en: 'Reverse Warrior',
+  aka: ['Peaceful Warrior'],
+  sa: 'Viparīta Vīrabhadrāsana',
+  say: 'vih-pah-REE-tah vee-rah-bah-DRAH-sah-nah',
+  vi: 'Chiến binh đảo ngược',
+  breath: {
+    en: 'Inhale as you reach your front arm up and back. Breathe into the long side of your waist. Exhale to flow on.',
+    vi: 'Hít vào khi vươn tay trước lên và ra sau. Thở vào bên eo đang được kéo dài. Thở ra để chuyển tiếp.',
+  },
+  cues: [
+    { id: 'reverse-warrior__cue-1', kind: 'transition', en: 'From Warrior Two, turn your front palm up.', vi: 'Từ Chiến binh II, ngửa lòng bàn tay trước lên.' },
+    { id: 'reverse-warrior__cue-2', kind: 'alignment', en: 'Inhale, reach your front arm up and back.', vi: 'Hít vào, vươn tay trước lên và ra sau.' },
+    { id: 'reverse-warrior__cue-3', kind: 'alignment', en: 'Slide your back hand down your back leg, and rest it lightly.', vi: 'Trượt bàn tay sau xuống dọc chân sau, và đặt tay thật nhẹ.' },
+    { id: 'reverse-warrior__cue-4', kind: 'alignment', en: 'Keep your front knee bent, right over your ankle.', vi: 'Giữ gối trước gập, thẳng trên cổ chân.' },
+    { id: 'reverse-warrior__cue-5', kind: 'alignment', en: 'Lengthen through both sides of your waist.', vi: 'Kéo dài cả hai bên eo.' },
+    { id: 'reverse-warrior__cue-6', kind: 'soften', en: 'Let your gaze float up, or keep it forward if your neck prefers.', vi: 'Để ánh nhìn hướng lên, hoặc nhìn về trước nếu cổ thấy dễ chịu hơn.' },
+    { id: 'reverse-warrior__cue-7', kind: 'breath', en: 'Stay for three breaths, breathing into your side body.', vi: 'Giữ ba nhịp thở, thở vào bên eo đang được kéo dài.' },
+    { id: 'reverse-warrior__cue-8', kind: 'safety', en: 'Don’t lean on your back hand. Let your legs do the work.', vi: 'Đừng dồn trọng lượng lên tay sau. Để chân làm việc.' },
+    { id: 'reverse-warrior__cue-9', kind: 'transition', en: 'Exhale, and cartwheel your hands down to frame your front foot.', vi: 'Thở ra, và xoay hai tay xuống đặt hai bên bàn chân trước.' },
+  ],
+  modifications: [
+    { id: 'reverse-warrior__mod-1', en: 'Shorten your stance if your front knee feels strained.', vi: 'Thu ngắn khoảng cách hai chân nếu gối trước thấy căng.', props: [] },
+    { id: 'reverse-warrior__mod-2', en: 'Keep your top hand on your hip if your shoulder is tired.', vi: 'Đặt tay trên lên hông nếu vai mỏi.', props: [] },
+    { id: 'reverse-warrior__mod-3', en: 'Sit on the edge of a chair with your front leg bent, and reach up and back from there.', vi: 'Ngồi ở mép ghế với chân trước gập, và vươn tay lên, ra sau từ tư thế đó.', props: ['chair'] },
+  ],
+  safety: [
+    { id: 'reverse-warrior__safe-1', en: 'Keep your front knee over your ankle as you lean back. Don’t let it drift inward.', vi: 'Giữ gối trước thẳng trên cổ chân khi ngả ra sau. Đừng để gối đổ vào trong.' },
+    { id: 'reverse-warrior__safe-2', en: 'If you have a neck injury, look forward or down instead of up.', vi: 'Nếu bạn có chấn thương cổ, nhìn về trước hoặc nhìn xuống thay vì nhìn lên.' },
+  ],
+  muscles: {
+    working: ['quadriceps', 'gluteus-medius'],
+    lengthening: ['external-oblique', 'latissimus-dorsi', 'hip-adductors'],
+  },
+  joints: ['knee', 'hip-joint', 'shoulder-joint'],
+  transitionsTo: ['extended-side-angle', 'warrior-2', 'chaturanga'],
+  figure: 'reverse-warrior',
+}

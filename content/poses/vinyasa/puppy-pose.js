@@ -1,0 +1,43 @@
+export const puppyPose = {
+  id: 'puppy-pose',
+  styles: ['vinyasa'],
+  family: 'restorative',
+  level: 'gentle',
+  en: 'Puppy Pose',
+  aka: ['Extended Puppy Pose'],
+  sa: 'Uttāna Śiśosana',
+  say: 'oo-TAH-nah shee-SHOH-sah-nah',
+  vi: 'Chó con',
+  breath: {
+    en: 'Exhale as your chest melts down. Breathe slowly into your upper back and the sides of your ribs.',
+    vi: 'Thở ra khi ngực chìm xuống. Thở chậm vào lưng trên và hai bên xương sườn.',
+  },
+  cues: [
+    { id: 'puppy-pose__cue-1', kind: 'transition', en: 'From all fours, keep your hips over your knees, and walk your hands forward.', vi: 'Từ tư thế bốn điểm, giữ hông thẳng trên gối, và đưa hai tay về trước.' },
+    { id: 'puppy-pose__cue-2', kind: 'alignment', en: 'Let your chest melt toward the floor.', vi: 'Để ngực chìm dần xuống sàn.' },
+    { id: 'puppy-pose__cue-3', kind: 'alignment', en: 'Rest your forehead on the mat.', vi: 'Tựa đầu xuống thảm.' },
+    { id: 'puppy-pose__cue-4', kind: 'alignment', en: 'Keep your arms active, and lift your elbows off the floor.', vi: 'Giữ hai tay hoạt động, và nâng khuỷu tay khỏi sàn.' },
+    { id: 'puppy-pose__cue-5', kind: 'alignment', en: 'Gently draw your hips back to lengthen your spine.', vi: 'Nhẹ nhàng kéo hông ra sau để kéo dài cột sống.' },
+    { id: 'puppy-pose__cue-6', kind: 'soften', en: 'Soften your shoulders, and let gravity do the work.', vi: 'Thả lỏng vai, và để trọng lực làm việc.' },
+    { id: 'puppy-pose__cue-7', kind: 'breath', en: 'Stay for five breaths, breathing into your upper back.', vi: 'Giữ năm nhịp thở, thở vào lưng trên.' },
+    { id: 'puppy-pose__cue-8', kind: 'safety', en: 'If your shoulders pinch, move your hands wider apart.', vi: 'Nếu vai bị chèn, đặt hai tay rộng ra hơn.' },
+    { id: 'puppy-pose__cue-9', kind: 'transition', en: 'Walk your hands back, and rest in Child’s Pose.', vi: 'Đưa hai tay về, và nghỉ ở tư thế Em bé.' },
+  ],
+  modifications: [
+    { id: 'puppy-pose__mod-1', en: 'Rest your forehead on a block.', vi: 'Tựa đầu lên một viên gạch.', props: ['block'] },
+    { id: 'puppy-pose__mod-2', en: 'Place your hands on blocks if your shoulders are tight.', vi: 'Đặt hai tay lên gạch nếu vai bị căng.', props: ['blocks'] },
+    { id: 'puppy-pose__mod-3', en: 'Rest your chest on a bolster for a longer, quieter hold.', vi: 'Tựa ngực lên gối ôm để giữ lâu hơn và tĩnh hơn.', props: ['bolster'] },
+  ],
+  safety: [
+    { id: 'puppy-pose__safe-1', en: 'If you have a shoulder injury, keep your hands wider, or rest in Child’s Pose instead.', vi: 'Nếu bạn có chấn thương vai, đặt tay rộng hơn, hoặc nghỉ ở tư thế Em bé thay thế.' },
+    { id: 'puppy-pose__safe-2', en: 'In Yin, this shape is Melting Heart, held for a few minutes. After a long hold, come out slowly.', vi: 'Trong Yin, dáng này là Melting Heart, giữ vài phút. Sau khi giữ lâu, hãy thoát thế từ từ.' },
+    { id: 'puppy-pose__safe-3', en: 'In pregnancy, open your knees wide, and come out sooner.', vi: 'Khi mang thai, mở rộng hai gối, và thoát thế sớm hơn.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['latissimus-dorsi', 'teres-major', 'pectoralis-major'],
+  },
+  joints: ['shoulder-joint', 'thoracic-spine'],
+  transitionsTo: ['child-pose', 'downward-dog', 'cat-pose'],
+  figure: 'puppy-pose',
+}

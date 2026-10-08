@@ -1,0 +1,42 @@
+export const dancerPose = {
+  id: 'dancer-pose',
+  styles: ['vinyasa'],
+  family: 'balance',
+  level: 'moderate',
+  en: 'Dancer’s Pose',
+  aka: ['Lord of the Dance'],
+  sa: 'Naṭarājāsana',
+  say: 'nah-tah-rah-JAH-sah-nah',
+  vi: 'Vũ công',
+  breath: {
+    en: 'Inhale to lift your chest and reach forward. Exhale to kick back into your hand. Breathe steadily for three to five breaths.',
+    vi: 'Hít vào, nâng ngực và vươn tay về trước. Thở ra, đạp chân ra sau vào lòng bàn tay. Thở đều ba đến năm nhịp.',
+  },
+  cues: [
+    { id: 'dancer-pose__cue-1', kind: 'transition', en: 'Stand tall, and shift your weight into your left foot.', vi: 'Đứng thẳng, và dồn trọng lượng sang bàn chân trái.' },
+    { id: 'dancer-pose__cue-2', kind: 'alignment', en: 'Bend your right knee, and hold the inside of your right foot with your right hand.', vi: 'Gập gối phải, và dùng tay phải nắm mặt trong bàn chân phải.' },
+    { id: 'dancer-pose__cue-3', kind: 'alignment', en: 'Keep your knees close together to start.', vi: 'Lúc đầu, giữ hai gối gần nhau.' },
+    { id: 'dancer-pose__cue-4', kind: 'alignment', en: 'Reach your left arm forward and up.', vi: 'Vươn tay trái về trước và lên cao.' },
+    { id: 'dancer-pose__cue-5', kind: 'alignment', en: 'Kick your foot back into your hand as you tip your chest forward.', vi: 'Đạp bàn chân vào lòng bàn tay khi nghiêng ngực về trước.' },
+    { id: 'dancer-pose__cue-6', kind: 'soften', en: 'Keep your standing knee soft and your gaze steady.', vi: 'Giữ gối chân trụ mềm và ánh nhìn vững.' },
+    { id: 'dancer-pose__cue-7', kind: 'breath', en: 'Stay for three breaths.', vi: 'Giữ ba nhịp thở.' },
+    { id: 'dancer-pose__cue-8', kind: 'safety', en: 'If your lower back pinches, kick less, and lengthen your tailbone down.', vi: 'Nếu lưng dưới bị chèn, đạp nhẹ hơn, và kéo dài xương cụt xuống.' },
+    { id: 'dancer-pose__cue-9', kind: 'transition', en: 'Exhale, slowly lower your foot, and change sides.', vi: 'Thở ra, từ từ hạ bàn chân xuống, và đổi bên.' },
+  ],
+  modifications: [
+    { id: 'dancer-pose__mod-1', en: 'Loop a strap around your lifted foot.', vi: 'Vòng dây tập quanh bàn chân đang nâng.', props: ['strap'] },
+    { id: 'dancer-pose__mod-2', en: 'Rest your front hand on a wall.', vi: 'Đặt tay trước lên tường.', props: ['wall'] },
+    { id: 'dancer-pose__mod-3', en: 'Stay upright and just hold your foot behind you, as a standing thigh stretch.', vi: 'Giữ người thẳng và chỉ nắm bàn chân phía sau, như một bài giãn đùi khi đứng.', props: [] },
+  ],
+  safety: [
+    { id: 'dancer-pose__safe-1', en: 'If your lower back or knee complains, stay upright and just hold your foot.', vi: 'Nếu lưng dưới hoặc gối khó chịu, giữ người thẳng và chỉ nắm bàn chân.' },
+    { id: 'dancer-pose__safe-2', en: 'In pregnancy, hold on to a wall, and keep the backbend small.', vi: 'Khi mang thai, vịn vào tường, và chỉ ngả sau nhẹ.' },
+  ],
+  muscles: {
+    working: ['gluteus-maximus', 'gluteus-medius', 'erector-spinae'],
+    lengthening: ['quadriceps', 'iliopsoas', 'pectoralis-major'],
+  },
+  joints: ['shoulder-joint', 'hip-joint', 'ankle', 'lumbar-spine'],
+  transitionsTo: ['warrior-3', 'tree-pose', 'mountain-pose'],
+  figure: 'dancer-pose',
+}

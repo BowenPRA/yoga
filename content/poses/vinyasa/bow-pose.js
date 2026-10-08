@@ -1,0 +1,42 @@
+export const bowPose = {
+  id: 'bow-pose',
+  styles: ['vinyasa'],
+  family: 'backbend',
+  level: 'moderate',
+  en: 'Bow Pose',
+  sa: 'Dhanurāsana',
+  say: 'dah-noo-RAH-sah-nah',
+  vi: 'Cánh cung',
+  breath: {
+    en: 'Inhale to kick back and lift. Keep breathing: the breath feels shorter while your belly presses down. Exhale to release.',
+    vi: 'Hít vào, đạp chân ra sau và nâng lên. Tiếp tục thở: hơi thở sẽ ngắn hơn khi bụng ép xuống sàn. Thở ra để thả.',
+  },
+  cues: [
+    { id: 'bow-pose__cue-1', kind: 'transition', en: 'Lying on your belly, bend your knees and reach back for your ankles.', vi: 'Nằm sấp, gập gối và vươn tay ra sau nắm cổ chân.' },
+    { id: 'bow-pose__cue-2', kind: 'alignment', en: 'Keep your knees hip-width apart.', vi: 'Giữ hai gối rộng bằng hông.' },
+    { id: 'bow-pose__cue-3', kind: 'alignment', en: 'Inhale, kick your feet back into your hands to lift your chest.', vi: 'Hít vào, đạp bàn chân vào tay để nâng ngực lên.' },
+    { id: 'bow-pose__cue-4', kind: 'alignment', en: 'Let your legs do the work, and keep your arms long.', vi: 'Để chân làm việc, và giữ hai tay duỗi dài.' },
+    { id: 'bow-pose__cue-5', kind: 'alignment', en: 'Roll your shoulders back, and open across your collarbones.', vi: 'Xoay vai ra sau, và mở rộng ngang xương quai xanh.' },
+    { id: 'bow-pose__cue-6', kind: 'soften', en: 'Keep your neck long and your jaw soft.', vi: 'Giữ cổ dài và hàm thả lỏng.' },
+    { id: 'bow-pose__cue-7', kind: 'breath', en: 'Stay for three breaths, and let your body rock gently with the breath.', vi: 'Giữ ba nhịp thở, và để cơ thể đung đưa nhẹ theo hơi thở.' },
+    { id: 'bow-pose__cue-8', kind: 'safety', en: 'If you feel pinching in your lower back, ease off and lift less.', vi: 'Nếu thấy bị chèn ở lưng dưới, nhẹ lại và nâng thấp hơn.' },
+    { id: 'bow-pose__cue-9', kind: 'transition', en: 'Exhale, slowly let go of your ankles, and rest on your belly.', vi: 'Thở ra, từ từ thả cổ chân, và nằm sấp nghỉ.' },
+  ],
+  modifications: [
+    { id: 'bow-pose__mod-1', en: 'Loop a strap around your ankles if you can’t reach them.', vi: 'Vòng dây tập quanh cổ chân nếu tay chưa với tới.', props: ['strap'] },
+    { id: 'bow-pose__mod-2', en: 'Half Bow: hold one ankle at a time, with your other arm forward on the mat.', vi: 'Nửa cánh cung: nắm từng cổ chân một, tay còn lại duỗi về trước trên thảm.', props: [] },
+    { id: 'bow-pose__mod-3', en: 'Place a folded blanket under your hips.', vi: 'Kê chăn gấp dưới hông.', props: ['blanket'] },
+  ],
+  safety: [
+    { id: 'bow-pose__safe-1', en: 'If your knees or lower back hurt, take Half Bow, or stay in Locust.', vi: 'Nếu gối hoặc lưng dưới đau, làm Nửa cánh cung, hoặc ở lại tư thế Châu chấu.' },
+    { id: 'bow-pose__safe-2', en: 'In pregnancy, skip Bow and the other poses on your belly.', vi: 'Khi mang thai, bỏ qua Cánh cung và các tư thế nằm sấp khác.' },
+  ],
+  muscles: {
+    working: ['hamstrings', 'gluteus-maximus', 'erector-spinae'],
+    lengthening: ['quadriceps', 'iliopsoas', 'pectoralis-major', 'rectus-abdominis'],
+  },
+  joints: ['shoulder-joint', 'lumbar-spine', 'knee'],
+  transitionsTo: ['child-pose', 'downward-dog', 'locust-pose'],
+  counterPoses: ['child-pose'],
+  figure: 'bow-pose',
+}

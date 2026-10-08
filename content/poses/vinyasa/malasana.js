@@ -1,0 +1,43 @@
+export const malasana = {
+  id: 'malasana',
+  styles: ['vinyasa'],
+  family: 'hip-opener',
+  level: 'moderate',
+  en: 'Malasana',
+  aka: ['Garland Pose', 'Yogi Squat'],
+  sa: 'Mālāsana',
+  say: 'mah-LAH-sah-nah',
+  vi: 'Vòng hoa',
+  breath: {
+    en: 'Exhale to sink into the squat. Inhale to lift your chest. Stay for five breaths, breathing into your lower back and hips.',
+    vi: 'Thở ra, hạ người xuống ngồi xổm. Hít vào, nâng ngực. Giữ năm nhịp thở, thở vào lưng dưới và hông.',
+  },
+  cues: [
+    { id: 'malasana__cue-1', kind: 'transition', en: 'Step your feet a little wider than your hips, toes turned out.', vi: 'Đặt hai bàn chân rộng hơn hông một chút, mũi chân xoay ra ngoài.' },
+    { id: 'malasana__cue-2', kind: 'alignment', en: 'Exhale, bend your knees, and sink your hips down toward the floor.', vi: 'Thở ra, gập gối, và hạ hông xuống về phía sàn.' },
+    { id: 'malasana__cue-3', kind: 'alignment', en: 'Bring your palms together, and press your elbows into your inner knees.', vi: 'Chắp hai lòng bàn tay, và ấn khuỷu tay vào mặt trong gối.' },
+    { id: 'malasana__cue-4', kind: 'alignment', en: 'Inhale, lift your chest, and lengthen your spine.', vi: 'Hít vào, nâng ngực, và kéo dài cột sống.' },
+    { id: 'malasana__cue-5', kind: 'alignment', en: 'Keep your weight even across both feet.', vi: 'Giữ trọng lượng đều trên hai bàn chân.' },
+    { id: 'malasana__cue-6', kind: 'soften', en: 'Let your heels sink. They don’t have to touch.', vi: 'Để gót chân chìm xuống. Không nhất thiết phải chạm sàn.' },
+    { id: 'malasana__cue-7', kind: 'breath', en: 'Stay for five breaths.', vi: 'Giữ năm nhịp thở.' },
+    { id: 'malasana__cue-8', kind: 'safety', en: 'If your knees ache, sit on a block.', vi: 'Nếu gối mỏi, ngồi lên một viên gạch.' },
+    { id: 'malasana__cue-9', kind: 'transition', en: 'Bring your hands down, lift your hips, and fold forward.', vi: 'Đặt hai tay xuống, nâng hông lên, và gập người về trước.' },
+  ],
+  modifications: [
+    { id: 'malasana__mod-1', en: 'Sit on a block or a bolster.', vi: 'Ngồi lên gạch hoặc gối ôm.', props: ['block', 'bolster'] },
+    { id: 'malasana__mod-2', en: 'Roll a blanket under your heels if they lift.', vi: 'Cuộn chăn kê dưới gót chân nếu gót nhấc lên.', props: ['blanket'] },
+    { id: 'malasana__mod-3', en: 'Hold on to a wall or a chair in front of you.', vi: 'Vịn vào tường hoặc ghế phía trước.', props: ['wall', 'chair'] },
+  ],
+  safety: [
+    { id: 'malasana__safe-1', en: 'If you have a knee injury, sit on a block high enough that your knees feel easy.', vi: 'Nếu bạn có chấn thương gối, ngồi lên gạch đủ cao để gối thấy thoải mái.' },
+    { id: 'malasana__safe-2', en: 'In later pregnancy, sit on a block, and keep your feet wide.', vi: 'Ở giai đoạn sau của thai kỳ, ngồi lên gạch, và đặt hai chân rộng.' },
+    { id: 'malasana__safe-3', en: 'In Yin, this is Squat, held for a few minutes. Come up slowly afterwards.', vi: 'Trong Yin, đây là tư thế Ngồi xổm, giữ vài phút. Sau đó hãy đứng lên từ từ.' },
+  ],
+  muscles: {
+    working: ['erector-spinae'],
+    lengthening: ['hip-adductors', 'calves', 'achilles-tendon'],
+  },
+  joints: ['hip-joint', 'knee', 'ankle'],
+  transitionsTo: ['crow-pose', 'standing-forward-fold', 'goddess-pose'],
+  figure: 'malasana',
+}

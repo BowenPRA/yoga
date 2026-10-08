@@ -1,0 +1,42 @@
+export const childPose = {
+  id: 'child-pose',
+  styles: ['vinyasa'],
+  family: 'restorative',
+  level: 'gentle',
+  en: 'Child’s Pose',
+  sa: 'Bālāsana',
+  say: 'bah-LAH-sah-nah',
+  vi: 'Em bé',
+  breath: {
+    en: 'Breathe slowly into your back. As you inhale, feel your ribs widen against your thighs.',
+    vi: 'Thở chậm vào lưng. Khi hít vào, cảm nhận xương sườn nở ra chạm vào đùi.',
+  },
+  cues: [
+    { id: 'child-pose__cue-1', kind: 'transition', en: 'Bring your big toes together, and sit back toward your heels.', vi: 'Chạm hai ngón chân cái vào nhau, và ngồi lùi về phía gót chân.' },
+    { id: 'child-pose__cue-2', kind: 'alignment', en: 'Open your knees as wide as your mat, or keep them together.', vi: 'Mở hai gối rộng bằng thảm, hoặc giữ hai gối khép lại.' },
+    { id: 'child-pose__cue-3', kind: 'alignment', en: 'Walk your hands forward, and rest your forehead on the mat.', vi: 'Đưa hai tay về trước, và tựa đầu xuống thảm.' },
+    { id: 'child-pose__cue-4', kind: 'alignment', en: 'Let your hips sink back toward your heels.', vi: 'Để hông chìm dần về phía gót chân.' },
+    { id: 'child-pose__cue-5', kind: 'soften', en: 'Let your shoulders and your whole back soften.', vi: 'Để vai và cả lưng mềm xuống.' },
+    { id: 'child-pose__cue-6', kind: 'breath', en: 'Take five slow breaths here. Breathe into your back.', vi: 'Thở chậm năm nhịp ở đây. Thở vào lưng.' },
+    { id: 'child-pose__cue-7', kind: 'soften', en: 'This is your resting place. You can come back here any time.', vi: 'Đây là chỗ nghỉ của bạn. Bạn có thể trở về đây bất cứ lúc nào.' },
+    { id: 'child-pose__cue-8', kind: 'safety', en: 'If your knees don’t like this, put a folded blanket behind them.', vi: 'Nếu gối không thoải mái, kê một tấm chăn gấp phía sau gối.' },
+    { id: 'child-pose__cue-9', kind: 'transition', en: 'When you’re ready, walk your hands back and slowly sit up.', vi: 'Khi sẵn sàng, đưa hai tay về và từ từ ngồi dậy.' },
+  ],
+  modifications: [
+    { id: 'child-pose__mod-1', en: 'Rest your chest on a bolster, placed lengthwise between your knees.', vi: 'Tựa ngực lên gối ôm, đặt dọc giữa hai gối.', props: ['bolster'] },
+    { id: 'child-pose__mod-2', en: 'Place a block under your forehead if it doesn’t reach the mat.', vi: 'Kê gạch dưới đầu nếu đầu chưa chạm thảm.', props: ['block'] },
+    { id: 'child-pose__mod-3', en: 'Put a rolled blanket between your hips and your heels.', vi: 'Đặt chăn cuộn giữa hông và gót chân.', props: ['blanket'] },
+  ],
+  safety: [
+    { id: 'child-pose__safe-1', en: 'If your knees hurt, lie on your back and hug your knees in instead.', vi: 'Nếu gối đau, thay bằng cách nằm ngửa và ôm gối vào ngực.' },
+    { id: 'child-pose__safe-2', en: 'In pregnancy, open your knees wide to make room for your belly.', vi: 'Khi mang thai, mở rộng hai gối để bụng có chỗ.' },
+    { id: 'child-pose__safe-3', en: 'If your ankles are stiff, roll a blanket under the fronts of your ankles.', vi: 'Nếu cổ chân cứng, cuộn chăn kê dưới mặt trước cổ chân.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['erector-spinae', 'gluteus-maximus', 'latissimus-dorsi'],
+  },
+  joints: ['knee', 'ankle', 'hip-joint', 'lumbar-spine'],
+  transitionsTo: ['cat-pose', 'downward-dog', 'puppy-pose'],
+  figure: 'child-pose',
+}
