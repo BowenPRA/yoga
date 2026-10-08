@@ -1,0 +1,53 @@
+export const halfBoundLotusForwardFold = {
+  id: 'half-bound-lotus-forward-fold',
+  styles: ['ashtanga'],
+  family: 'forward-fold',
+  level: 'strong',
+  en: 'Half Bound Lotus Forward Fold',
+  sa: 'Ardha Baddha Padma Paścimottānāsana',
+  say: 'AR-dah BAH-dah PAHD-mah pash-chee-moh-tah-NAH-sah-nah',
+  vi: 'Gập người nửa hoa sen',
+  ashtanga: {
+    series: 'primary',
+    section: 'seated',
+    position: 24,
+    vinyasas: 22,
+    breaths: 5,
+    drishti: 'toes',
+    note: {
+      en: 'The first pose taken one side at a time, and the first half lotus of the series. It is held in the eighth vinyasa on the right and the fifteenth on the left, five breaths each side.',
+      vi: 'Tư thế đầu tiên tập từng bên, và là nửa hoa sen đầu tiên của chuỗi. Tư thế được giữ ở vinyasa thứ tám bên phải và thứ mười lăm bên trái, năm nhịp thở mỗi bên.',
+    },
+  },
+  breath: {
+    en: 'Inhale as you bind and lift your chest. Exhale to fold. Stay for five breaths, then inhale to look up.',
+    vi: 'Hít vào khi khoá tay và nâng ngực. Thở ra để gập người. Giữ năm nhịp thở, rồi hít vào và nhìn lên.',
+  },
+  cues: [
+    { id: 'half-bound-lotus-forward-fold__cue-1', kind: 'transition', en: 'Bend your right knee and place your right foot high on your left thigh, in half lotus.', vi: 'Co gối phải và đặt bàn chân phải cao trên đùi trái, vào thế nửa hoa sen.' },
+    { id: 'half-bound-lotus-forward-fold__cue-2', kind: 'alignment', en: 'Draw your heel in close to your belly, and let your right knee drop toward the floor.', vi: 'Kéo gót chân sát vào bụng, và để gối phải hạ dần xuống sàn.' },
+    { id: 'half-bound-lotus-forward-fold__cue-3', kind: 'transition', en: 'Wrap your right arm behind your back and catch your right big toe.', vi: 'Vòng tay phải ra sau lưng và nắm lấy ngón chân cái phải.' },
+    { id: 'half-bound-lotus-forward-fold__cue-4', kind: 'alignment', en: 'Hold your left foot with your left hand, inhale, and lift your chest.', vi: 'Tay trái nắm bàn chân trái, hít vào và nâng ngực lên.' },
+    { id: 'half-bound-lotus-forward-fold__cue-5', kind: 'alignment', en: 'Exhale, fold forward over your straight leg, keeping both sitting bones down.', vi: 'Thở ra, gập người về trước trên chân duỗi thẳng, giữ hai xương ngồi bám sàn.' },
+    { id: 'half-bound-lotus-forward-fold__cue-6', kind: 'soften', en: 'Relax your shoulders and gaze toward your toes.', vi: 'Thả lỏng vai và nhìn về phía ngón chân.' },
+    { id: 'half-bound-lotus-forward-fold__cue-7', kind: 'breath', en: 'Stay here for five slow breaths.', vi: 'Giữ ở đây năm nhịp thở chậm.' },
+    { id: 'half-bound-lotus-forward-fold__cue-8', kind: 'safety', en: 'If you feel any pain in your knee, come out of the lotus and place your foot on your inner thigh.', vi: 'Nếu thấy đau ở gối, hãy thoát khỏi thế hoa sen và đặt bàn chân vào mặt trong đùi.' },
+    { id: 'half-bound-lotus-forward-fold__cue-9', kind: 'transition', en: 'Inhale, look up, then release your leg and take a vinyasa before the other side.', vi: 'Hít vào, nhìn lên, rồi thả chân ra và làm một vinyasa trước khi đổi bên.' },
+  ],
+  modifications: [
+    { id: 'half-bound-lotus-forward-fold__mod-1', en: 'Skip the bind: hold your straight-leg foot with both hands, or use a strap.', vi: 'Bỏ khoá tay: hai tay nắm bàn chân duỗi thẳng, hoặc dùng dây tập.', props: ['strap'] },
+    { id: 'half-bound-lotus-forward-fold__mod-2', en: 'Instead of half lotus, place your foot against your inner thigh, as in Head-to-Knee Pose.', vi: 'Thay cho nửa hoa sen, đặt bàn chân áp vào mặt trong đùi, như trong tư thế Đầu chạm gối.', props: [] },
+    { id: 'half-bound-lotus-forward-fold__mod-3', en: 'Sit on a folded blanket so your bent knee can drop lower.', vi: 'Ngồi lên một tấm chăn gấp để gối co hạ thấp hơn.', props: ['blanket'] },
+  ],
+  safety: [
+    { id: 'half-bound-lotus-forward-fold__safe-1', en: 'Half lotus comes from your hip, not your knee. Never force your foot up; if your knee hurts, come out.', vi: 'Thế nửa hoa sen đến từ khớp háng, không phải từ gối. Đừng bao giờ ép bàn chân lên; nếu gối đau, hãy thoát thế.' },
+    { id: 'half-bound-lotus-forward-fold__safe-2', en: 'Keep your lotus foot active, so your ankle stays in line.', vi: 'Giữ bàn chân trên đùi chủ động để cổ chân thẳng hàng.' },
+  ],
+  muscles: {
+    working: ['quadriceps', 'iliopsoas'],
+    lengthening: ['hamstrings', 'calves', 'erector-spinae'],
+  },
+  joints: ['knee', 'hip-joint', 'ankle', 'shoulder-joint'],
+  transitionsTo: ['three-limb-forward-fold'],
+  figure: 'half-bound-lotus-forward-fold',
+}

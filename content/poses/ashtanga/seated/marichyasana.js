@@ -1,0 +1,58 @@
+export const marichyasana = {
+  id: 'marichyasana',
+  styles: ['ashtanga'],
+  family: 'forward-fold',
+  level: 'strong',
+  en: 'Marichi’s Pose',
+  aka: ['Sage Pose'],
+  sa: 'Marīcyāsana',
+  say: 'mah-ree-chee-AH-sah-nah',
+  vi: 'Hiền triết Marichi',
+  saNote: {
+    en: 'Named after the sage Marichi. In class, teachers simply say “Marichyasana A, B, C, D”.',
+    vi: 'Đặt theo tên nhà hiền triết Marichi. Trong lớp, giáo viên thường chỉ gọi “Marichyasana A, B, C, D”.',
+  },
+  ashtanga: {
+    series: 'primary',
+    section: 'seated',
+    position: 27,
+    breaths: 5,
+    drishti: 'toes',
+    note: {
+      en: 'Four versions, each side with its own vinyasa. A and B are bound forward folds, held in the eighth vinyasa on the right and the fifteenth on the left; C and D are bound twists toward your bent knee, gazing over your back shoulder. B and D add a half lotus.',
+      vi: 'Bốn phiên bản, mỗi bên có vinyasa riêng. A và B là gập người có khoá tay, giữ ở vinyasa thứ tám bên phải và thứ mười lăm bên trái; C và D là vặn người có khoá tay về phía gối co, nhìn qua vai phía sau. B và D có thêm nửa hoa sen.',
+    },
+  },
+  breath: {
+    en: 'Inhale to lengthen your spine. Exhale to wrap your arm and bind. Fold or twist on an exhale, and stay for five breaths.',
+    vi: 'Hít vào để kéo dài cột sống. Thở ra để vòng tay và khoá tay. Gập hoặc vặn người khi thở ra, và giữ năm nhịp thở.',
+  },
+  cues: [
+    { id: 'marichyasana__cue-1', kind: 'transition', en: 'Bend your right knee and place your right foot close to your right sitting bone.', vi: 'Co gối phải, đặt bàn chân phải sát xương ngồi phải.' },
+    { id: 'marichyasana__cue-2', kind: 'alignment', en: 'Leave a hand’s width between your right foot and your left thigh.', vi: 'Để khoảng cách một bàn tay giữa bàn chân phải và đùi trái.' },
+    { id: 'marichyasana__cue-3', kind: 'transition', en: 'Reach your right arm forward, inside your right knee, then wrap it around your shin.', vi: 'Vươn tay phải về trước, phía trong gối phải, rồi vòng tay quanh ống chân.' },
+    { id: 'marichyasana__cue-4', kind: 'alignment', en: 'Bring your left arm behind your back and clasp your hands or your wrist.', vi: 'Đưa tay trái ra sau lưng, nắm hai bàn tay hoặc cổ tay vào nhau.' },
+    { id: 'marichyasana__cue-5', kind: 'alignment', en: 'Inhale, lift your chest; exhale, fold forward over your straight leg.', vi: 'Hít vào, nâng ngực; thở ra, gập người về trước trên chân duỗi thẳng.' },
+    { id: 'marichyasana__cue-6', kind: 'soften', en: 'Let your shoulders roll back and your neck relax.', vi: 'Để vai xoay về sau và cổ thả lỏng.' },
+    { id: 'marichyasana__cue-7', kind: 'breath', en: 'Stay for five breaths, gazing toward your toes.', vi: 'Giữ năm nhịp thở, nhìn về phía ngón chân.' },
+    { id: 'marichyasana__cue-8', kind: 'safety', en: 'In B and D, if your half-lotus knee hurts, sit cross-legged on that side instead.', vi: 'Ở B và D, nếu gối bên nửa hoa sen bị đau, hãy ngồi xếp bằng ở bên đó.' },
+    { id: 'marichyasana__cue-9', kind: 'transition', en: 'Inhale, look up, release your hands, and take a vinyasa before the other side.', vi: 'Hít vào, nhìn lên, thả tay ra, và làm một vinyasa trước khi đổi bên.' },
+  ],
+  modifications: [
+    { id: 'marichyasana__mod-1', en: 'If your hands don’t meet behind your back, hold a strap between them.', vi: 'Nếu hai tay chưa chạm nhau sau lưng, cầm một sợi dây tập giữa hai tay.', props: ['strap'] },
+    { id: 'marichyasana__mod-2', en: 'For B and D, fold your other leg into a simple cross-legged position instead of half lotus.', vi: 'Ở B và D, co chân kia vào thế ngồi xếp bằng đơn giản thay vì nửa hoa sen.', props: [] },
+    { id: 'marichyasana__mod-3', en: 'Sit on a folded blanket so your spine can lengthen before you fold or twist.', vi: 'Ngồi lên một tấm chăn gấp để cột sống kéo dài được trước khi gập hoặc vặn.', props: ['blanket'] },
+  ],
+  safety: [
+    { id: 'marichyasana__safe-1', en: 'In B and D, half lotus must come from your hip. If your knee hurts, take the cross-legged option.', vi: 'Ở B và D, thế nửa hoa sen phải đến từ khớp háng. Nếu gối đau, hãy chọn cách ngồi xếp bằng.' },
+    { id: 'marichyasana__safe-2', en: 'In the twists, C and D, lengthen first and then turn; don’t crank yourself around with your arm.', vi: 'Trong các tư thế vặn C và D, kéo dài cột sống trước rồi mới xoay; đừng dùng tay để cố vặn người.' },
+    { id: 'marichyasana__safe-3', en: 'If you’re pregnant, skip the deep twists and binds, and twist gently without pressing on your belly.', vi: 'Nếu bạn đang mang thai, bỏ qua các tư thế vặn sâu và khoá tay; chỉ vặn nhẹ, không ép vào bụng.' },
+  ],
+  muscles: {
+    working: ['external-oblique', 'internal-oblique'],
+    lengthening: ['hamstrings', 'gluteus-maximus', 'erector-spinae'],
+  },
+  joints: ['knee', 'hip-joint', 'shoulder-joint', 'thoracic-spine'],
+  transitionsTo: ['boat-pose'],
+  figure: 'marichyasana',
+}

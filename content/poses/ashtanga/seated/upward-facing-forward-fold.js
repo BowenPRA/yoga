@@ -1,0 +1,53 @@
+export const upwardFacingForwardFold = {
+  id: 'upward-facing-forward-fold',
+  styles: ['ashtanga'],
+  family: 'forward-fold',
+  level: 'moderate',
+  en: 'Upward-Facing Forward Fold',
+  aka: ['Upward-Facing Seated Forward Bend'],
+  sa: 'Ūrdhva Mukha Paścimottānāsana',
+  say: 'OORD-vah MOO-kah pash-chee-moh-tah-NAH-sah-nah',
+  vi: 'Gập người thăng bằng',
+  ashtanga: {
+    series: 'primary',
+    section: 'seated',
+    position: 38,
+    breaths: 5,
+    drishti: 'toes',
+    note: {
+      en: 'The second rolling balance, after Both Big Toes Pose. You roll up holding the outer edges of your feet, then draw your legs in toward you: a forward fold in the air.',
+      vi: 'Tư thế lăn và giữ thăng bằng thứ hai, sau Thăng bằng nắm ngón chân cái. Bạn lăn lên, tay nắm cạnh ngoài bàn chân, rồi kéo hai chân sát vào người: một tư thế gập người giữa không trung.',
+    },
+  },
+  breath: {
+    en: 'Exhale to roll back. Inhale to roll up and balance. Exhale to draw your legs in, and stay for five breaths.',
+    vi: 'Thở ra để lăn ra sau. Hít vào để lăn lên và giữ thăng bằng. Thở ra để kéo chân vào, và giữ năm nhịp thở.',
+  },
+  cues: [
+    { id: 'upward-facing-forward-fold__cue-1', kind: 'transition', en: 'Lie down, exhale, and roll your legs over your head.', vi: 'Nằm xuống, thở ra, và lăn hai chân qua đầu.' },
+    { id: 'upward-facing-forward-fold__cue-2', kind: 'alignment', en: 'Take hold of the outer edges of your feet.', vi: 'Nắm cạnh ngoài bàn chân.' },
+    { id: 'upward-facing-forward-fold__cue-3', kind: 'transition', en: 'Inhale, roll up and balance on your sitting bones.', vi: 'Hít vào, lăn lên và giữ thăng bằng trên xương ngồi.' },
+    { id: 'upward-facing-forward-fold__cue-4', kind: 'alignment', en: 'Exhale, bend your elbows and draw your legs toward you.', vi: 'Thở ra, gập khuỷu tay và kéo hai chân về phía người.' },
+    { id: 'upward-facing-forward-fold__cue-5', kind: 'alignment', en: 'Lift your chest toward your thighs and reach your chin toward your shins.', vi: 'Nâng ngực về phía đùi, đưa cằm về phía ống chân.' },
+    { id: 'upward-facing-forward-fold__cue-6', kind: 'soften', en: 'Keep your feet together and let your shoulders relax.', vi: 'Giữ hai bàn chân chạm nhau và để vai thả lỏng.' },
+    { id: 'upward-facing-forward-fold__cue-7', kind: 'breath', en: 'Stay for five breaths, gazing toward your toes.', vi: 'Giữ năm nhịp thở, nhìn về phía ngón chân.' },
+    { id: 'upward-facing-forward-fold__cue-8', kind: 'safety', en: 'If your lower back aches, bend your knees and hold the backs of your thighs.', vi: 'Nếu lưng dưới mỏi, hãy co gối và giữ mặt sau đùi.' },
+    { id: 'upward-facing-forward-fold__cue-9', kind: 'transition', en: 'Exhale, release your feet and lower down, then take a vinyasa.', vi: 'Thở ra, thả bàn chân ra và hạ xuống, rồi làm một vinyasa.' },
+  ],
+  modifications: [
+    { id: 'upward-facing-forward-fold__mod-1', en: 'Keep your knees bent and hold the backs of your thighs.', vi: 'Giữ gối co và hai tay giữ mặt sau đùi.', props: [] },
+    { id: 'upward-facing-forward-fold__mod-2', en: 'Loop a strap around your feet and hold it with both hands.', vi: 'Vòng dây tập quanh bàn chân và giữ dây bằng hai tay.', props: ['strap'] },
+    { id: 'upward-facing-forward-fold__mod-3', en: 'Skip the roll: sit, hold your feet, and lift them from the floor.', vi: 'Bỏ qua phần lăn: ngồi, nắm bàn chân, và nâng chân lên khỏi sàn.', props: [] },
+  ],
+  safety: [
+    { id: 'upward-facing-forward-fold__safe-1', en: 'When you roll back, keep your weight on your shoulders and your head still.', vi: 'Khi lăn ra sau, giữ trọng lượng trên vai và giữ đầu yên.' },
+    { id: 'upward-facing-forward-fold__safe-2', en: 'Skip the roll if you have a neck or lower back injury, or if you’re pregnant.', vi: 'Bỏ qua phần lăn nếu cổ hoặc lưng dưới đang bị chấn thương, hoặc nếu bạn đang mang thai.' },
+  ],
+  muscles: {
+    working: ['iliopsoas', 'rectus-abdominis', 'quadriceps'],
+    lengthening: ['hamstrings', 'calves'],
+  },
+  joints: ['hip-joint', 'sit-bones'],
+  transitionsTo: ['setu-bandhasana'],
+  figure: 'upward-facing-forward-fold',
+}

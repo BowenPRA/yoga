@@ -1,0 +1,53 @@
+export const boatPose = {
+  id: 'boat-pose',
+  styles: ['vinyasa', 'ashtanga'],
+  family: 'core',
+  level: 'moderate',
+  en: 'Boat Pose',
+  sa: 'Nāvāsana',
+  say: 'nah-VAH-sah-nah',
+  vi: 'Con thuyền',
+  ashtanga: {
+    series: 'primary',
+    section: 'seated',
+    position: 28,
+    vinyasas: 13,
+    breaths: 5,
+    drishti: 'toes',
+    note: {
+      en: 'Held in the seventh vinyasa, five times for five breaths each. Between rounds, cross your legs, press your hands down and lift up, then sit back into the boat.',
+      vi: 'Giữ ở vinyasa thứ bảy, năm lần, mỗi lần năm nhịp thở. Giữa các lần, bắt chéo chân, ấn hai tay xuống và nâng người lên, rồi ngồi lại vào thế thuyền.',
+    },
+  },
+  breath: {
+    en: 'Inhale to lift your legs. Stay for five breaths. Exhale to lower, then inhale to lift up off the floor between rounds.',
+    vi: 'Hít vào để nâng chân. Giữ năm nhịp thở. Thở ra để hạ xuống, rồi hít vào để nâng người lên khỏi sàn giữa các lần.',
+  },
+  cues: [
+    { id: 'boat-pose__cue-1', kind: 'transition', en: 'Sit with your knees bent, and lean back a little behind your sitting bones.', vi: 'Ngồi co gối, hơi ngả người ra sau xương ngồi.' },
+    { id: 'boat-pose__cue-2', kind: 'transition', en: 'Inhale, lift your feet and straighten your legs.', vi: 'Hít vào, nhấc bàn chân lên và duỗi thẳng chân.' },
+    { id: 'boat-pose__cue-3', kind: 'alignment', en: 'Reach your arms forward, parallel to the floor, palms facing in.', vi: 'Vươn hai tay về trước, song song với sàn, lòng bàn tay hướng vào nhau.' },
+    { id: 'boat-pose__cue-4', kind: 'alignment', en: 'Lift your chest and keep your back long.', vi: 'Nâng ngực và giữ lưng dài.' },
+    { id: 'boat-pose__cue-5', kind: 'alignment', en: 'Point your toes and bring your feet level with your eyes.', vi: 'Duỗi mũi chân và đưa bàn chân lên ngang tầm mắt.' },
+    { id: 'boat-pose__cue-6', kind: 'soften', en: 'Relax your shoulders and your jaw.', vi: 'Thả lỏng vai và hàm.' },
+    { id: 'boat-pose__cue-7', kind: 'breath', en: 'Stay for five breaths, and gaze toward your toes.', vi: 'Giữ năm nhịp thở, nhìn về phía ngón chân.' },
+    { id: 'boat-pose__cue-8', kind: 'safety', en: 'If your lower back rounds or strains, bend your knees.', vi: 'Nếu lưng dưới cong tròn hoặc bị căng, hãy co gối.' },
+    { id: 'boat-pose__cue-9', kind: 'transition', en: 'Cross your legs, press your hands down, and lift up. Then sit down for the next round.', vi: 'Bắt chéo chân, ấn hai tay xuống và nâng người lên. Rồi ngồi xuống cho lần tiếp theo.' },
+  ],
+  modifications: [
+    { id: 'boat-pose__mod-1', en: 'Keep your knees bent and your shins parallel to the floor.', vi: 'Giữ gối co, ống chân song song với sàn.', props: [] },
+    { id: 'boat-pose__mod-2', en: 'Hold the backs of your thighs with your hands.', vi: 'Hai tay giữ mặt sau đùi.', props: [] },
+    { id: 'boat-pose__mod-3', en: 'Keep your toes on the floor, and just lean back and lift your chest.', vi: 'Giữ ngón chân chạm sàn, chỉ ngả người ra sau và nâng ngực.', props: [] },
+  ],
+  safety: [
+    { id: 'boat-pose__safe-1', en: 'Keep your spine long. If you feel it in your lower back rather than your belly, bend your knees.', vi: 'Giữ cột sống dài. Nếu bạn cảm thấy ở lưng dưới thay vì ở bụng, hãy co gối.' },
+    { id: 'boat-pose__safe-2', en: 'If you’re pregnant, skip this pose or keep your feet on the floor.', vi: 'Nếu bạn đang mang thai, bỏ qua tư thế này hoặc giữ bàn chân trên sàn.' },
+  ],
+  muscles: {
+    working: ['iliopsoas', 'quadriceps', 'rectus-abdominis', 'transversus-abdominis'],
+    lengthening: ['hamstrings'],
+  },
+  joints: ['hip-joint', 'sit-bones', 'lumbar-spine'],
+  transitionsTo: ['shoulder-pressing-pose'],
+  figure: 'boat-pose',
+}
