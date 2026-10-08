@@ -1,0 +1,45 @@
+export const crowPose = {
+  id: 'crow-pose',
+  styles: ['vinyasa'],
+  family: 'arm-balance',
+  level: 'strong',
+  en: 'Crow Pose',
+  sa: 'Bakāsana',
+  say: 'bah-KAH-sah-nah',
+  vi: 'Con quạ',
+  saNote: {
+    en: 'Strictly, Bakāsana is Crane, with straighter arms, and Kākāsana is Crow, with bent arms. Most classes call both Crow.',
+    vi: 'Nói chính xác, Bakāsana là Con hạc, tay thẳng hơn, còn Kākāsana là Con quạ, tay gập. Hầu hết các lớp gọi cả hai là Con quạ.',
+  },
+  breath: {
+    en: 'Exhale as you lean forward and lift your feet. Keep breathing: holding your breath makes balancing harder.',
+    vi: 'Thở ra khi nghiêng người về trước và nhấc bàn chân. Tiếp tục thở: nín thở làm việc giữ thăng bằng khó hơn.',
+  },
+  cues: [
+    { id: 'crow-pose__cue-1', kind: 'transition', en: 'From a squat, plant your hands shoulder-width apart, fingers spread wide.', vi: 'Từ tư thế ngồi xổm, đặt hai bàn tay rộng bằng vai, xoè rộng các ngón tay.' },
+    { id: 'crow-pose__cue-2', kind: 'alignment', en: 'Bend your elbows back, and place your knees high on the backs of your upper arms.', vi: 'Gập khuỷu tay ra sau, và đặt gối cao trên mặt sau cánh tay trên.' },
+    { id: 'crow-pose__cue-3', kind: 'alignment', en: 'Squeeze your knees into your arms, and draw your belly in.', vi: 'Ép gối vào cánh tay, và thu bụng vào.' },
+    { id: 'crow-pose__cue-4', kind: 'alignment', en: 'Look forward, not down.', vi: 'Nhìn về trước, không nhìn xuống.' },
+    { id: 'crow-pose__cue-5', kind: 'alignment', en: 'Lean forward until your feet feel light, then lift one foot, then the other.', vi: 'Nghiêng người về trước đến khi bàn chân nhẹ đi, rồi nhấc từng chân một.' },
+    { id: 'crow-pose__cue-6', kind: 'soften', en: 'Stay playful. Falling is part of learning this pose.', vi: 'Hãy tập thật thoải mái. Ngã cũng là một phần của việc học tư thế này.' },
+    { id: 'crow-pose__cue-7', kind: 'breath', en: 'Hold for a few breaths, and keep breathing.', vi: 'Giữ vài nhịp thở, và tiếp tục thở.' },
+    { id: 'crow-pose__cue-8', kind: 'safety', en: 'If your wrists hurt, come down and shake them out.', vi: 'Nếu cổ tay đau, hạ xuống và lắc nhẹ cổ tay.' },
+    { id: 'crow-pose__cue-9', kind: 'transition', en: 'Exhale, lower your feet, and come back to your squat.', vi: 'Thở ra, hạ bàn chân xuống, và trở về tư thế ngồi xổm.' },
+  ],
+  modifications: [
+    { id: 'crow-pose__mod-1', en: 'Start with your feet on a block, so your hips are higher.', vi: 'Bắt đầu với hai bàn chân đặt trên một viên gạch, để hông cao hơn.', props: ['block'] },
+    { id: 'crow-pose__mod-2', en: 'Practise lifting one foot at a time.', vi: 'Tập nhấc từng chân một.', props: [] },
+    { id: 'crow-pose__mod-3', en: 'Put a blanket or a bolster in front of you, as a cushion in case you tip forward.', vi: 'Đặt chăn hoặc gối ôm phía trước, làm đệm phòng khi bạn đổ về trước.', props: ['blanket', 'bolster'] },
+  ],
+  safety: [
+    { id: 'crow-pose__safe-1', en: 'If you have a wrist injury, skip this pose, or keep your toes on the floor.', vi: 'Nếu bạn có chấn thương cổ tay, bỏ qua tư thế này, hoặc giữ ngón chân trên sàn.' },
+    { id: 'crow-pose__safe-2', en: 'In pregnancy, skip arm balances like this one.', vi: 'Khi mang thai, bỏ qua những tư thế thăng bằng trên tay như thế này.' },
+  ],
+  muscles: {
+    working: ['serratus-anterior', 'triceps-brachii', 'rectus-abdominis', 'hip-adductors'],
+    lengthening: [],
+  },
+  joints: ['wrist', 'elbow', 'shoulder-joint'],
+  transitionsTo: ['malasana', 'chaturanga', 'downward-dog'],
+  figure: 'crow-pose',
+}

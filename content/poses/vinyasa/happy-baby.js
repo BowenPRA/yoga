@@ -1,0 +1,42 @@
+export const happyBaby = {
+  id: 'happy-baby',
+  styles: ['vinyasa'],
+  family: 'hip-opener',
+  level: 'gentle',
+  en: 'Happy Baby',
+  sa: 'Ānanda Bālāsana',
+  say: 'ah-NAHN-dah bah-LAH-sah-nah',
+  vi: 'Em bé vui vẻ',
+  breath: {
+    en: 'Breathe slowly into your lower back. Let each exhale settle your sacrum a little closer to the mat.',
+    vi: 'Thở chậm vào lưng dưới. Để mỗi hơi thở ra giúp xương cùng chạm thảm thêm một chút.',
+  },
+  cues: [
+    { id: 'happy-baby__cue-1', kind: 'transition', en: 'Lie on your back, and hug your knees toward your chest.', vi: 'Nằm ngửa, và ôm gối về phía ngực.' },
+    { id: 'happy-baby__cue-2', kind: 'alignment', en: 'Open your knees wide, toward your armpits.', vi: 'Mở hai gối rộng ra, hướng về phía nách.' },
+    { id: 'happy-baby__cue-3', kind: 'alignment', en: 'Stack your ankles over your knees, soles of your feet facing the ceiling.', vi: 'Đặt cổ chân thẳng trên gối, gan bàn chân hướng lên trần nhà.' },
+    { id: 'happy-baby__cue-4', kind: 'alignment', en: 'Hold the outer edges of your feet, or your ankles.', vi: 'Nắm cạnh ngoài bàn chân, hoặc nắm cổ chân.' },
+    { id: 'happy-baby__cue-5', kind: 'alignment', en: 'Gently draw your knees down toward the floor.', vi: 'Nhẹ nhàng kéo gối xuống về phía sàn.' },
+    { id: 'happy-baby__cue-6', kind: 'soften', en: 'Let your sacrum and your lower back rest heavy on the mat.', vi: 'Để xương cùng và lưng dưới nằm nặng trên thảm.' },
+    { id: 'happy-baby__cue-7', kind: 'breath', en: 'Stay for five breaths. You can rock gently from side to side.', vi: 'Giữ năm nhịp thở. Bạn có thể đung đưa nhẹ sang hai bên.' },
+    { id: 'happy-baby__cue-8', kind: 'safety', en: 'If your tailbone lifts off the mat, hold your shins or your thighs instead.', vi: 'Nếu xương cụt nhấc khỏi thảm, hãy nắm ống chân hoặc đùi.' },
+    { id: 'happy-baby__cue-9', kind: 'transition', en: 'Release your feet, and rest them back on the mat.', vi: 'Thả bàn chân ra, và đặt lại xuống thảm.' },
+  ],
+  modifications: [
+    { id: 'happy-baby__mod-1', en: 'Hold behind your thighs or your shins instead of your feet.', vi: 'Ôm phía sau đùi hoặc ống chân thay vì nắm bàn chân.', props: [] },
+    { id: 'happy-baby__mod-2', en: 'Loop a strap around each foot.', vi: 'Vòng dây tập quanh mỗi bàn chân.', props: ['strap'] },
+    { id: 'happy-baby__mod-3', en: 'Take one leg at a time, with the other foot on the floor.', vi: 'Làm từng chân một, bàn chân kia đặt trên sàn.', props: [] },
+  ],
+  safety: [
+    { id: 'happy-baby__safe-1', en: 'If your neck strains, rest your head on a folded blanket.', vi: 'Nếu cổ bị căng, tựa đầu lên chăn gấp.' },
+    { id: 'happy-baby__safe-2', en: 'In later pregnancy, keep this short, or sit in a supported squat on a block instead.', vi: 'Ở giai đoạn sau của thai kỳ, giữ ngắn thôi, hoặc thay bằng ngồi xổm có gạch đỡ.' },
+    { id: 'happy-baby__safe-3', en: 'In Yin, Happy Baby is held for a few minutes. Let your arms rest, and come out slowly.', vi: 'Trong Yin, Em bé vui vẻ được giữ vài phút. Để hai tay nghỉ, và thoát thế từ từ.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['hip-adductors', 'hamstrings', 'gluteus-maximus'],
+  },
+  joints: ['hip-joint', 'sacrum', 'lumbar-spine'],
+  transitionsTo: ['supine-twist', 'savasana', 'reclined-bound-angle'],
+  figure: 'happy-baby',
+}

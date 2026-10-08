@@ -1,0 +1,43 @@
+export const wildThing = {
+  id: 'wild-thing',
+  styles: ['vinyasa'],
+  family: 'backbend',
+  level: 'strong',
+  en: 'Wild Thing',
+  aka: ['Flip Your Dog'],
+  sa: 'Camatkārāsana',
+  say: 'chah-maht-kar-AH-sah-nah',
+  vi: 'Lật người ngả sau',
+  breath: {
+    en: 'Inhale as you flip and lift your hips. Breathe freely for a few breaths. Exhale to flip back to Downward Dog.',
+    vi: 'Hít vào khi lật người và nâng hông. Thở thoải mái vài nhịp. Thở ra để lật về Chó úp mặt.',
+  },
+  cues: [
+    { id: 'wild-thing__cue-1', kind: 'transition', en: 'Come into Side Plank on your right hand.', vi: 'Vào tư thế Tấm ván nghiêng trên bàn tay phải.' },
+    { id: 'wild-thing__cue-2', kind: 'alignment', en: 'Step your left foot back behind you, and plant it with your knee bent.', vi: 'Bước chân trái ra phía sau, và đặt bàn chân xuống sàn, gối gập.' },
+    { id: 'wild-thing__cue-3', kind: 'alignment', en: 'Press firmly into your right hand, and lift your hips high.', vi: 'Ấn chắc bàn tay phải xuống, và nâng hông lên cao.' },
+    { id: 'wild-thing__cue-4', kind: 'alignment', en: 'Reach your left arm overhead, and let your chest open to the ceiling.', vi: 'Vươn tay trái qua đầu, và để ngực mở lên trần nhà.' },
+    { id: 'wild-thing__cue-5', kind: 'alignment', en: 'Keep your right shoulder steady, pressing the floor away.', vi: 'Giữ vai phải vững, đẩy sàn ra xa.' },
+    { id: 'wild-thing__cue-6', kind: 'soften', en: 'Let your head relax back only as far as feels good.', vi: 'Chỉ để đầu ngả ra sau đến mức thấy dễ chịu.' },
+    { id: 'wild-thing__cue-7', kind: 'breath', en: 'Stay for three breaths, and enjoy it.', vi: 'Giữ ba nhịp thở, và tận hưởng.' },
+    { id: 'wild-thing__cue-8', kind: 'safety', en: 'If your wrist or shoulder complains, come back to Side Plank or Downward Dog.', vi: 'Nếu cổ tay hoặc vai khó chịu, trở về Tấm ván nghiêng hoặc Chó úp mặt.' },
+    { id: 'wild-thing__cue-9', kind: 'transition', en: 'Exhale, flip back over to Downward Dog, and take the other side.', vi: 'Thở ra, lật người về Chó úp mặt, và đổi bên.' },
+  ],
+  modifications: [
+    { id: 'wild-thing__mod-1', en: 'Keep your bottom knee on the floor as you lift your hips.', vi: 'Giữ gối dưới trên sàn khi nâng hông.', props: [] },
+    { id: 'wild-thing__mod-2', en: 'Keep your top hand on your hip, and open your chest without reaching.', vi: 'Giữ tay trên đặt ở hông, và mở ngực mà không vươn tay.', props: [] },
+    { id: 'wild-thing__mod-3', en: 'Stay in Side Plank, and just lift your top arm.', vi: 'Ở lại Tấm ván nghiêng, và chỉ nâng tay trên lên.', props: [] },
+  ],
+  safety: [
+    { id: 'wild-thing__safe-1', en: 'If you have a wrist or shoulder injury, skip this one and stay in Side Plank.', vi: 'Nếu bạn có chấn thương cổ tay hoặc vai, bỏ qua tư thế này và ở lại Tấm ván nghiêng.' },
+    { id: 'wild-thing__safe-2', en: 'In pregnancy, skip deep backbends like this one.', vi: 'Khi mang thai, bỏ qua những tư thế ngả sau sâu như thế này.' },
+  ],
+  muscles: {
+    working: ['gluteus-maximus', 'erector-spinae', 'serratus-anterior', 'deltoids'],
+    lengthening: ['iliopsoas', 'pectoralis-major', 'rectus-abdominis'],
+  },
+  joints: ['wrist', 'shoulder-joint', 'lumbar-spine'],
+  transitionsTo: ['downward-dog', 'side-plank', 'wheel-pose'],
+  counterPoses: ['child-pose'],
+  figure: 'wild-thing',
+}

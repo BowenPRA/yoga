@@ -1,0 +1,42 @@
+export const halfSplits = {
+  id: 'half-splits',
+  styles: ['vinyasa'],
+  family: 'forward-fold',
+  level: 'moderate',
+  en: 'Half Splits',
+  aka: ['Runner’s Stretch'],
+  sa: 'Ardha Hanumānāsana',
+  say: 'AR-dah hah-noo-mahn-AH-sah-nah',
+  vi: 'Nửa xoạc dọc',
+  breath: {
+    en: 'Inhale to lengthen your spine. Exhale to fold over your front leg. Breathe slowly into the back of your thigh.',
+    vi: 'Hít vào, kéo dài cột sống. Thở ra, gập người về phía chân trước. Thở chậm vào mặt sau đùi.',
+  },
+  cues: [
+    { id: 'half-splits__cue-1', kind: 'transition', en: 'From Low Lunge, shift your hips back over your back knee.', vi: 'Từ Chùng chân thấp, đẩy hông ra sau, thẳng trên gối sau.' },
+    { id: 'half-splits__cue-2', kind: 'alignment', en: 'Straighten your front leg, and flex your front foot.', vi: 'Duỗi thẳng chân trước, và gập bàn chân trước.' },
+    { id: 'half-splits__cue-3', kind: 'alignment', en: 'Place your hands on blocks on either side of your front leg.', vi: 'Đặt hai tay lên gạch ở hai bên chân trước.' },
+    { id: 'half-splits__cue-4', kind: 'alignment', en: 'Inhale, lengthen your spine forward.', vi: 'Hít vào, kéo dài cột sống về trước.' },
+    { id: 'half-splits__cue-5', kind: 'alignment', en: 'Exhale, fold from your hips, not from your waist.', vi: 'Thở ra, gập từ hông, không phải từ eo.' },
+    { id: 'half-splits__cue-6', kind: 'soften', en: 'Keep a small bend in your front knee if the back of your leg is tight.', vi: 'Giữ gối trước hơi chùng nếu mặt sau chân bị căng.' },
+    { id: 'half-splits__cue-7', kind: 'breath', en: 'Stay for five breaths.', vi: 'Giữ năm nhịp thở.' },
+    { id: 'half-splits__cue-8', kind: 'safety', en: 'If you feel pulling behind your knee, bend it a little more.', vi: 'Nếu thấy kéo căng phía sau gối, chùng gối thêm một chút.' },
+    { id: 'half-splits__cue-9', kind: 'transition', en: 'Inhale, bend your front knee, and come back into Low Lunge.', vi: 'Hít vào, gập gối trước, và trở về Chùng chân thấp.' },
+  ],
+  modifications: [
+    { id: 'half-splits__mod-1', en: 'Use blocks under your hands, at whatever height you need.', vi: 'Dùng gạch dưới hai tay, ở độ cao bạn cần.', props: ['blocks'] },
+    { id: 'half-splits__mod-2', en: 'Pad your back knee with a folded blanket.', vi: 'Kê chăn gấp dưới gối sau cho êm.', props: ['blanket'] },
+    { id: 'half-splits__mod-3', en: 'Keep your front knee bent.', vi: 'Giữ gối trước chùng.', props: [] },
+  ],
+  safety: [
+    { id: 'half-splits__safe-1', en: 'If you have a hamstring injury, keep your front knee bent, and stay well out of the strong stretch.', vi: 'Nếu bạn có chấn thương mặt sau đùi, giữ gối trước chùng, và tránh xa cảm giác giãn mạnh.' },
+    { id: 'half-splits__safe-2', en: 'Fold from your hips and keep your back long, to protect your lower back.', vi: 'Gập từ hông và giữ lưng dài, để bảo vệ lưng dưới.' },
+  ],
+  muscles: {
+    working: ['quadriceps'],
+    lengthening: ['hamstrings', 'calves'],
+  },
+  joints: ['hip-joint', 'knee', 'sit-bones'],
+  transitionsTo: ['low-lunge', 'lizard-pose', 'pigeon'],
+  figure: 'half-splits',
+}

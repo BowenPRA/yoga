@@ -1,0 +1,41 @@
+export const goddessPose = {
+  id: 'goddess-pose',
+  styles: ['vinyasa'],
+  family: 'standing',
+  level: 'moderate',
+  en: 'Goddess Pose',
+  sa: 'Utkaṭa Koṇāsana',
+  say: 'OOT-kah-tah koh-NAH-sah-nah',
+  vi: 'Nữ thần',
+  breath: {
+    en: 'Exhale to bend your knees and sink. Breathe steadily for five breaths. Inhale to straighten your legs.',
+    vi: 'Thở ra, gập gối và hạ người xuống. Thở đều năm nhịp. Hít vào, duỗi thẳng hai chân.',
+  },
+  cues: [
+    { id: 'goddess-pose__cue-1', kind: 'transition', en: 'Step your feet wide, and turn your toes out.', vi: 'Bước hai chân rộng ra, và xoay mũi chân ra ngoài.' },
+    { id: 'goddess-pose__cue-2', kind: 'alignment', en: 'Exhale, bend your knees, and sink your hips down.', vi: 'Thở ra, gập gối, và hạ hông xuống.' },
+    { id: 'goddess-pose__cue-3', kind: 'alignment', en: 'Point your knees the same way as your toes.', vi: 'Hướng gối cùng chiều với mũi chân.' },
+    { id: 'goddess-pose__cue-4', kind: 'alignment', en: 'Stack your shoulders over your hips, and keep your spine tall.', vi: 'Đặt vai thẳng trên hông, và giữ cột sống thẳng.' },
+    { id: 'goddess-pose__cue-5', kind: 'alignment', en: 'Bend your elbows to ninety degrees, palms facing forward.', vi: 'Gập khuỷu tay vuông góc, lòng bàn tay hướng về trước.' },
+    { id: 'goddess-pose__cue-6', kind: 'soften', en: 'Soften your shoulders, and let your jaw relax.', vi: 'Thả lỏng vai, và để hàm thư giãn.' },
+    { id: 'goddess-pose__cue-7', kind: 'breath', en: 'Stay for five breaths.', vi: 'Giữ năm nhịp thở.' },
+    { id: 'goddess-pose__cue-8', kind: 'safety', en: 'If your knees ache, come up a little higher.', vi: 'Nếu gối mỏi, nâng người lên cao hơn một chút.' },
+    { id: 'goddess-pose__cue-9', kind: 'transition', en: 'Inhale, straighten your legs, and slowly walk your feet back together.', vi: 'Hít vào, duỗi thẳng chân, và từ từ khép hai bàn chân lại.' },
+  ],
+  modifications: [
+    { id: 'goddess-pose__mod-1', en: 'Rest your hands on your thighs.', vi: 'Đặt hai tay lên đùi.', props: [] },
+    { id: 'goddess-pose__mod-2', en: 'Sit on the front edge of a chair with your knees wide.', vi: 'Ngồi ở mép trước của ghế, hai gối mở rộng.', props: ['chair'] },
+    { id: 'goddess-pose__mod-3', en: 'Rest your back against a wall to help you stay upright.', vi: 'Tựa lưng vào tường để giữ người thẳng.', props: ['wall'] },
+  ],
+  safety: [
+    { id: 'goddess-pose__safe-1', en: 'Keep your knees over your ankles, tracking with your toes. Never let them fall in.', vi: 'Giữ gối thẳng trên cổ chân, cùng hướng với mũi chân. Đừng bao giờ để gối đổ vào trong.' },
+    { id: 'goddess-pose__safe-2', en: 'In pregnancy, stay a little higher, and come up whenever you need to.', vi: 'Khi mang thai, giữ người cao hơn một chút, và đứng lên bất cứ khi nào bạn cần.' },
+  ],
+  muscles: {
+    working: ['quadriceps', 'gluteus-maximus'],
+    lengthening: ['hip-adductors'],
+  },
+  joints: ['knee', 'hip-joint', 'ankle'],
+  transitionsTo: ['wide-legged-fold', 'warrior-2', 'malasana'],
+  figure: 'goddess-pose',
+}

@@ -1,0 +1,43 @@
+export const figureFour = {
+  id: 'figure-four',
+  styles: ['vinyasa'],
+  family: 'hip-opener',
+  level: 'gentle',
+  en: 'Figure Four',
+  aka: ['Eye of the Needle', 'Reclined Figure Four'],
+  sa: 'Sūcirandhrāsana',
+  say: 'soo-chee-rahn-DRAH-sah-nah',
+  vi: 'Số 4 nằm',
+  breath: {
+    en: 'Breathe slowly. On each exhale, let your top knee open a little more, without forcing.',
+    vi: 'Thở chậm. Mỗi hơi thở ra, để gối trên mở thêm một chút, không ép.',
+  },
+  cues: [
+    { id: 'figure-four__cue-1', kind: 'transition', en: 'Lie on your back, with your knees bent and your feet on the mat.', vi: 'Nằm ngửa, gập gối, bàn chân đặt trên thảm.' },
+    { id: 'figure-four__cue-2', kind: 'alignment', en: 'Cross your right ankle over your left thigh, just above the knee.', vi: 'Đặt cổ chân phải lên đùi trái, ngay trên gối.' },
+    { id: 'figure-four__cue-3', kind: 'alignment', en: 'Flex your right foot.', vi: 'Gập bàn chân phải.' },
+    { id: 'figure-four__cue-4', kind: 'alignment', en: 'Thread your right hand through the gap, and hold behind your left thigh.', vi: 'Luồn tay phải qua khoảng trống, và ôm phía sau đùi trái.' },
+    { id: 'figure-four__cue-5', kind: 'alignment', en: 'Draw your left thigh in toward your chest.', vi: 'Kéo đùi trái về phía ngực.' },
+    { id: 'figure-four__cue-6', kind: 'soften', en: 'Keep your head and shoulders heavy on the mat.', vi: 'Để đầu và vai nằm nặng trên thảm.' },
+    { id: 'figure-four__cue-7', kind: 'breath', en: 'Stay for five slow breaths.', vi: 'Giữ năm nhịp thở chậm.' },
+    { id: 'figure-four__cue-8', kind: 'safety', en: 'You should feel this in your outer hip, not in your knee.', vi: 'Bạn nên cảm thấy ở hông ngoài, không phải ở gối.' },
+    { id: 'figure-four__cue-9', kind: 'transition', en: 'Release your hands, uncross your legs, and change sides.', vi: 'Thả tay, gỡ chân ra, và đổi bên.' },
+  ],
+  modifications: [
+    { id: 'figure-four__mod-1', en: 'Keep your left foot on the floor, and just cross your ankle over.', vi: 'Giữ bàn chân trái trên sàn, và chỉ đặt cổ chân bắt chéo lên.', props: [] },
+    { id: 'figure-four__mod-2', en: 'Loop a strap behind your thigh if your hands don’t reach.', vi: 'Vòng dây tập sau đùi nếu tay chưa với tới.', props: ['strap'] },
+    { id: 'figure-four__mod-3', en: 'Sit on a chair, cross your ankle over your knee, and lean forward a little.', vi: 'Ngồi trên ghế, đặt cổ chân lên gối, và hơi nghiêng người về trước.', props: ['chair'] },
+  ],
+  safety: [
+    { id: 'figure-four__safe-1', en: 'If your knee complains, keep your bottom foot on the floor.', vi: 'Nếu gối khó chịu, giữ bàn chân dưới trên sàn.' },
+    { id: 'figure-four__safe-2', en: 'In Yin, this is Eye of the Needle, held for a few minutes. After a long hold, come out slowly.', vi: 'Trong Yin, đây là tư thế Lỗ kim, giữ vài phút. Sau khi giữ lâu, hãy thoát thế từ từ.' },
+    { id: 'figure-four__safe-3', en: 'In later pregnancy, do this seated on a chair instead of lying on your back.', vi: 'Ở giai đoạn sau của thai kỳ, thực hiện khi ngồi trên ghế thay vì nằm ngửa.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['piriformis', 'deep-rotators', 'gluteus-maximus'],
+  },
+  joints: ['hip-joint', 'knee', 'sacrum'],
+  transitionsTo: ['happy-baby', 'supine-twist', 'savasana'],
+  figure: 'figure-four',
+}

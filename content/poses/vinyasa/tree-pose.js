@@ -1,0 +1,40 @@
+export const treePose = {
+  id: 'tree-pose',
+  styles: ['vinyasa'],
+  family: 'balance',
+  level: 'gentle',
+  en: 'Tree Pose',
+  sa: 'Vṛkṣāsana',
+  say: 'vrik-SHAH-sah-nah',
+  vi: 'Cái cây',
+  breath: {
+    en: 'Breathe slowly and evenly for five breaths. If you lose the breath, you lose the balance, so come back to the breath first.',
+    vi: 'Thở chậm và đều năm nhịp. Nếu mất hơi thở, bạn sẽ mất thăng bằng, nên hãy quay về với hơi thở trước.',
+  },
+  cues: [
+    { id: 'tree-pose__cue-1', kind: 'transition', en: 'Stand tall, and shift your weight into your left foot.', vi: 'Đứng thẳng, và dồn trọng lượng sang bàn chân trái.' },
+    { id: 'tree-pose__cue-2', kind: 'alignment', en: 'Place your right foot on your ankle, calf or inner thigh, never on your knee.', vi: 'Đặt bàn chân phải lên cổ chân, bắp chân hoặc mặt trong đùi, không bao giờ đặt lên gối.' },
+    { id: 'tree-pose__cue-3', kind: 'alignment', en: 'Press your foot and your standing leg into each other.', vi: 'Ép bàn chân và chân trụ vào nhau.' },
+    { id: 'tree-pose__cue-4', kind: 'alignment', en: 'Open your right knee out to the side, and keep your hips level.', vi: 'Mở gối phải sang một bên, và giữ hai hông ngang bằng.' },
+    { id: 'tree-pose__cue-5', kind: 'alignment', en: 'Bring your palms together at your chest, or reach your arms up like branches.', vi: 'Chắp hai lòng bàn tay trước ngực, hoặc vươn hai tay lên như cành cây.' },
+    { id: 'tree-pose__cue-6', kind: 'soften', en: 'Fix your gaze on one still point, and let your shoulders soften.', vi: 'Nhìn vào một điểm cố định, và để vai mềm xuống.' },
+    { id: 'tree-pose__cue-7', kind: 'breath', en: 'Stay for five breaths.', vi: 'Giữ năm nhịp thở.' },
+    { id: 'tree-pose__cue-8', kind: 'safety', en: 'If you wobble, rest your toes on the floor, like a kickstand.', vi: 'Nếu bị chao đảo, đặt ngón chân xuống sàn, như chân chống xe.' },
+    { id: 'tree-pose__cue-9', kind: 'transition', en: 'Exhale, lower your foot, and change sides.', vi: 'Thở ra, hạ bàn chân xuống, và đổi bên.' },
+  ],
+  modifications: [
+    { id: 'tree-pose__mod-1', en: 'Keep your toes on the floor, with your heel resting against your ankle.', vi: 'Giữ ngón chân trên sàn, gót chân tựa vào cổ chân trụ.', props: [] },
+    { id: 'tree-pose__mod-2', en: 'Rest one hand on a wall or the back of a chair.', vi: 'Đặt một tay lên tường hoặc lưng ghế.', props: ['wall', 'chair'] },
+  ],
+  safety: [
+    { id: 'tree-pose__safe-1', en: 'Never press your foot into the side of your knee. Go above it, or below it.', vi: 'Đừng bao giờ ép bàn chân vào bên cạnh gối. Đặt cao hơn, hoặc thấp hơn gối.' },
+    { id: 'tree-pose__safe-2', en: 'In pregnancy, stand near a wall, because your balance changes.', vi: 'Khi mang thai, đứng gần tường, vì khả năng giữ thăng bằng của bạn thay đổi.' },
+  ],
+  muscles: {
+    working: ['gluteus-medius', 'fibularis-longus', 'tibialis-posterior'],
+    lengthening: ['hip-adductors'],
+  },
+  joints: ['ankle', 'knee', 'hip-joint'],
+  transitionsTo: ['eagle-pose', 'mountain-pose', 'warrior-3'],
+  figure: 'tree-pose',
+}

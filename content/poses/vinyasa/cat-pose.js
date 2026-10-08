@@ -1,0 +1,40 @@
+export const catPose = {
+  id: 'cat-pose',
+  styles: ['vinyasa'],
+  family: 'restorative',
+  level: 'gentle',
+  en: 'Cat Pose',
+  sa: 'Mārjāryāsana',
+  say: 'mar-jar-ee-AH-sah-nah',
+  vi: 'Con mèo',
+  breath: {
+    en: 'Cat moves with the exhale: round your back as you breathe out. Pair it with Cow on the inhale.',
+    vi: 'Con mèo đi cùng hơi thở ra: cong tròn lưng khi thở ra. Kết hợp với Con bò khi hít vào.',
+  },
+  cues: [
+    { id: 'cat-pose__cue-1', kind: 'transition', en: 'Come onto all fours, wrists under your shoulders, knees under your hips.', vi: 'Về tư thế bốn điểm, cổ tay dưới vai, gối dưới hông.' },
+    { id: 'cat-pose__cue-2', kind: 'alignment', en: 'Exhale, round your back up toward the ceiling.', vi: 'Thở ra, cong tròn lưng lên hướng trần nhà.' },
+    { id: 'cat-pose__cue-3', kind: 'alignment', en: 'Tuck your tailbone and draw your belly in.', vi: 'Cuộn xương cụt xuống và thu bụng vào.' },
+    { id: 'cat-pose__cue-4', kind: 'alignment', en: 'Press the floor away, and spread your shoulder blades wide.', vi: 'Đẩy sàn ra xa, và mở rộng hai bả vai.' },
+    { id: 'cat-pose__cue-5', kind: 'soften', en: 'Let your head hang heavy, and soften the back of your neck.', vi: 'Để đầu buông nặng, và thả lỏng phía sau cổ.' },
+    { id: 'cat-pose__cue-6', kind: 'breath', en: 'Move slowly with your breath. Exhale into Cat, inhale into Cow.', vi: 'Chuyển động chậm theo hơi thở. Thở ra vào Con mèo, hít vào sang Con bò.' },
+    { id: 'cat-pose__cue-7', kind: 'safety', en: 'If your knees are sensitive, fold a blanket under them.', vi: 'Nếu gối nhạy cảm, gấp một tấm chăn kê dưới gối.' },
+    { id: 'cat-pose__cue-8', kind: 'transition', en: 'Inhale, and come back to a flat back.', vi: 'Hít vào, và trở về lưng phẳng.' },
+  ],
+  modifications: [
+    { id: 'cat-pose__mod-1', en: 'Fold a blanket under your knees for padding.', vi: 'Gấp chăn kê dưới gối cho êm.', props: ['blanket'] },
+    { id: 'cat-pose__mod-2', en: 'Make fists, or come onto your forearms, if your wrists are sore.', vi: 'Nắm tay lại, hoặc hạ xuống chống cẳng tay, nếu cổ tay đau.', props: [] },
+    { id: 'cat-pose__mod-3', en: 'Sit on a chair with your hands on your knees, and round your back from there.', vi: 'Ngồi trên ghế, hai tay đặt lên gối, và cong tròn lưng ở tư thế đó.', props: ['chair'] },
+  ],
+  safety: [
+    { id: 'cat-pose__safe-1', en: 'If you have a back injury, keep the movement small and comfortable.', vi: 'Nếu bạn có chấn thương lưng, giữ chuyển động nhỏ và thoải mái.' },
+    { id: 'cat-pose__safe-2', en: 'In pregnancy, keep the movement gentle, and don’t grip your belly.', vi: 'Khi mang thai, chuyển động nhẹ nhàng, và đừng siết bụng.' },
+  ],
+  muscles: {
+    working: ['rectus-abdominis', 'serratus-anterior'],
+    lengthening: ['erector-spinae', 'rhomboids'],
+  },
+  joints: ['lumbar-spine', 'thoracic-spine', 'pelvis', 'wrist'],
+  transitionsTo: ['cow-pose', 'child-pose', 'downward-dog'],
+  figure: 'cat-pose',
+}

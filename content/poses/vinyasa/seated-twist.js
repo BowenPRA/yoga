@@ -1,0 +1,42 @@
+export const seatedTwist = {
+  id: 'seated-twist',
+  styles: ['vinyasa'],
+  family: 'twist',
+  level: 'moderate',
+  en: 'Seated Twist',
+  aka: ['Half Lord of the Fishes'],
+  sa: 'Ardha Matsyendrāsana',
+  say: 'AR-dah maht-see-en-DRAH-sah-nah',
+  vi: 'Vặn người ngồi',
+  breath: {
+    en: 'Inhale to lengthen your spine. Exhale to twist a little deeper. Repeat for five breaths.',
+    vi: 'Hít vào, kéo dài cột sống. Thở ra, vặn sâu thêm một chút. Lặp lại trong năm nhịp thở.',
+  },
+  cues: [
+    { id: 'seated-twist__cue-1', kind: 'transition', en: 'Sit with your legs straight, then step your right foot outside your left thigh.', vi: 'Ngồi duỗi thẳng chân, rồi đặt bàn chân phải ra ngoài đùi trái.' },
+    { id: 'seated-twist__cue-2', kind: 'alignment', en: 'Bend your left knee, and tuck your left foot by your right hip.', vi: 'Gập gối trái, và đưa bàn chân trái về cạnh hông phải.' },
+    { id: 'seated-twist__cue-3', kind: 'alignment', en: 'Place your right hand on the floor behind you.', vi: 'Đặt tay phải xuống sàn phía sau lưng.' },
+    { id: 'seated-twist__cue-4', kind: 'alignment', en: 'Inhale, sit tall on both sitting bones, and reach your left arm up.', vi: 'Hít vào, ngồi thẳng trên hai xương ngồi, và vươn tay trái lên.' },
+    { id: 'seated-twist__cue-5', kind: 'alignment', en: 'Exhale, twist to the right, and hug your right knee with your left arm.', vi: 'Thở ra, vặn sang phải, và dùng tay trái ôm gối phải.' },
+    { id: 'seated-twist__cue-6', kind: 'soften', en: 'Twist from your belly, and let your head turn last.', vi: 'Vặn từ bụng, và để đầu xoay sau cùng.' },
+    { id: 'seated-twist__cue-7', kind: 'breath', en: 'Inhale to grow taller. Exhale to twist a little more. Stay for five breaths.', vi: 'Hít vào để ngồi cao hơn. Thở ra để vặn thêm một chút. Giữ năm nhịp thở.' },
+    { id: 'seated-twist__cue-8', kind: 'safety', en: 'Don’t force the twist with your arms. If your back hurts, ease off.', vi: 'Đừng dùng tay ép người vặn. Nếu lưng đau, hãy giảm bớt.' },
+    { id: 'seated-twist__cue-9', kind: 'transition', en: 'Inhale, unwind back to centre, and change sides.', vi: 'Hít vào, xoay trở về giữa, và đổi bên.' },
+  ],
+  modifications: [
+    { id: 'seated-twist__mod-1', en: 'Sit on a folded blanket, so your spine can lengthen.', vi: 'Ngồi lên chăn gấp, để cột sống dễ kéo dài.', props: ['blanket'] },
+    { id: 'seated-twist__mod-2', en: 'Keep your bottom leg straight.', vi: 'Giữ chân dưới duỗi thẳng.', props: [] },
+    { id: 'seated-twist__mod-3', en: 'Place your back hand on a block, so you can sit taller.', vi: 'Đặt tay sau lên một viên gạch, để bạn ngồi cao hơn.', props: ['block'] },
+  ],
+  safety: [
+    { id: 'seated-twist__safe-1', en: 'If you have a back or disc injury, twist gently, and keep your spine long.', vi: 'Nếu bạn có chấn thương lưng hoặc đĩa đệm, vặn nhẹ nhàng, và giữ cột sống dài.' },
+    { id: 'seated-twist__safe-2', en: 'In pregnancy, take an open twist: turn away from your bent knee, so your belly has room.', vi: 'Khi mang thai, vặn theo kiểu mở: xoay người ra xa gối đang gập, để bụng có chỗ.' },
+  ],
+  muscles: {
+    working: ['external-oblique', 'internal-oblique', 'erector-spinae'],
+    lengthening: ['gluteus-maximus', 'piriformis'],
+  },
+  joints: ['thoracic-spine', 'lumbar-spine', 'sit-bones'],
+  transitionsTo: ['seated-forward-fold', 'staff-pose', 'cow-face-pose'],
+  figure: 'seated-twist',
+}

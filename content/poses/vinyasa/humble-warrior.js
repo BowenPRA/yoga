@@ -1,0 +1,42 @@
+export const humbleWarrior = {
+  id: 'humble-warrior',
+  styles: ['vinyasa'],
+  family: 'standing',
+  level: 'moderate',
+  en: 'Humble Warrior',
+  sa: 'Baddha Vīrabhadrāsana',
+  say: 'BAH-dah vee-rah-bah-DRAH-sah-nah',
+  vi: 'Chiến binh khiêm nhường',
+  breath: {
+    en: 'Inhale to lift your chest with your hands clasped behind you. Exhale to bow inside your front knee. Breathe slowly here.',
+    vi: 'Hít vào, nâng ngực với hai tay đan sau lưng. Thở ra, cúi người vào phía trong gối trước. Thở chậm ở đây.',
+  },
+  cues: [
+    { id: 'humble-warrior__cue-1', kind: 'transition', en: 'From Warrior One, interlace your hands behind your back.', vi: 'Từ Chiến binh I, đan hai bàn tay sau lưng.' },
+    { id: 'humble-warrior__cue-2', kind: 'alignment', en: 'Inhale, draw your shoulders back, and lift your chest.', vi: 'Hít vào, kéo vai ra sau, và nâng ngực.' },
+    { id: 'humble-warrior__cue-3', kind: 'alignment', en: 'Exhale, bow forward on the inside of your front knee.', vi: 'Thở ra, cúi người về trước, vào phía trong gối trước.' },
+    { id: 'humble-warrior__cue-4', kind: 'alignment', en: 'Let your hands reach up and over your head.', vi: 'Để hai tay vươn lên và qua đầu.' },
+    { id: 'humble-warrior__cue-5', kind: 'alignment', en: 'Keep your front knee bent, and your back foot rooted.', vi: 'Giữ gối trước gập, và bàn chân sau bám chắc xuống sàn.' },
+    { id: 'humble-warrior__cue-6', kind: 'soften', en: 'Let your head hang heavy, and your neck relax.', vi: 'Để đầu buông nặng, và cổ thả lỏng.' },
+    { id: 'humble-warrior__cue-7', kind: 'breath', en: 'Stay for three breaths.', vi: 'Giữ ba nhịp thở.' },
+    { id: 'humble-warrior__cue-8', kind: 'safety', en: 'Keep your front knee over your ankle. Don’t let it drift inward.', vi: 'Giữ gối trước thẳng trên cổ chân. Đừng để gối đổ vào trong.' },
+    { id: 'humble-warrior__cue-9', kind: 'transition', en: 'Inhale, rise back up slowly, and release your hands.', vi: 'Hít vào, từ từ nâng người lên, và thả hai tay.' },
+  ],
+  modifications: [
+    { id: 'humble-warrior__mod-1', en: 'Hold a strap between your hands if they don’t meet.', vi: 'Cầm dây tập giữa hai tay nếu hai tay chưa chạm nhau.', props: ['strap'] },
+    { id: 'humble-warrior__mod-2', en: 'Rest your hands on blocks on either side of your front foot.', vi: 'Đặt hai tay lên gạch ở hai bên bàn chân trước.', props: ['blocks'] },
+    { id: 'humble-warrior__mod-3', en: 'Shorten your stance for more balance.', vi: 'Thu ngắn khoảng cách hai chân để vững hơn.', props: [] },
+  ],
+  safety: [
+    { id: 'humble-warrior__safe-1', en: 'If you have a shoulder injury, hold a strap, or keep your hands on your hips.', vi: 'Nếu bạn có chấn thương vai, cầm dây tập, hoặc đặt hai tay lên hông.' },
+    { id: 'humble-warrior__safe-2', en: 'If you have high blood pressure or feel dizzy, bow only halfway and keep your chest lifted.', vi: 'Nếu bạn bị huyết áp cao hoặc thấy chóng mặt, chỉ cúi nửa chừng và giữ ngực nâng lên.' },
+    { id: 'humble-warrior__safe-3', en: 'In pregnancy, keep the bow small, and give your belly room.', vi: 'Khi mang thai, chỉ cúi nhẹ, và để bụng có chỗ.' },
+  ],
+  muscles: {
+    working: ['quadriceps', 'gluteus-maximus'],
+    lengthening: ['pectoralis-major', 'deltoids', 'iliopsoas'],
+  },
+  joints: ['shoulder-joint', 'hip-joint', 'knee'],
+  transitionsTo: ['warrior-1', 'warrior-2', 'downward-dog'],
+  figure: 'humble-warrior',
+}

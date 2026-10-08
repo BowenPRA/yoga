@@ -1,0 +1,42 @@
+export const warrior3 = {
+  id: 'warrior-3',
+  styles: ['vinyasa'],
+  family: 'balance',
+  level: 'moderate',
+  en: 'Warrior III',
+  aka: ['Warrior 3'],
+  sa: 'Vīrabhadrāsana III',
+  say: 'vee-rah-bah-DRAH-sah-nah THREE',
+  vi: 'Chiến binh III',
+  breath: {
+    en: 'Inhale to lift your back leg. Breathe steadily for three to five breaths. Exhale to lower your foot.',
+    vi: 'Hít vào, nâng chân sau lên. Thở đều ba đến năm nhịp. Thở ra, hạ chân xuống.',
+  },
+  cues: [
+    { id: 'warrior-3__cue-1', kind: 'transition', en: 'From Crescent Lunge, shift your weight into your front foot.', vi: 'Từ Chùng chân cao, dồn trọng lượng sang bàn chân trước.' },
+    { id: 'warrior-3__cue-2', kind: 'alignment', en: 'Tip forward, and lift your back leg until it makes one line with your back.', vi: 'Nghiêng người về trước, và nâng chân sau cho đến khi chân và lưng thành một đường thẳng.' },
+    { id: 'warrior-3__cue-3', kind: 'alignment', en: 'Point your back toes down to the floor, so your hips stay level.', vi: 'Hướng ngón chân sau xuống sàn, để hai hông ngang bằng.' },
+    { id: 'warrior-3__cue-4', kind: 'alignment', en: 'Reach back through your heel, and forward through the crown of your head.', vi: 'Đẩy ra sau qua gót chân, và vươn về trước qua đỉnh đầu.' },
+    { id: 'warrior-3__cue-5', kind: 'alignment', en: 'Keep a micro-bend in your standing knee.', vi: 'Giữ gối chân trụ hơi chùng một chút.' },
+    { id: 'warrior-3__cue-6', kind: 'soften', en: 'Find a still point on the floor, and soften your jaw.', vi: 'Tìm một điểm cố định trên sàn để nhìn, và thả lỏng hàm.' },
+    { id: 'warrior-3__cue-7', kind: 'breath', en: 'Stay for three breaths.', vi: 'Giữ ba nhịp thở.' },
+    { id: 'warrior-3__cue-8', kind: 'safety', en: 'If you wobble, bring your hands down to blocks. Wobbling is part of balancing.', vi: 'Nếu bị chao đảo, đưa hai tay xuống gạch. Chao đảo cũng là một phần của việc giữ thăng bằng.' },
+    { id: 'warrior-3__cue-9', kind: 'transition', en: 'Exhale, bend your standing knee, and step back into your lunge.', vi: 'Thở ra, chùng gối chân trụ, và bước chân sau về tư thế chùng chân.' },
+  ],
+  modifications: [
+    { id: 'warrior-3__mod-1', en: 'Rest your hands on blocks under your shoulders.', vi: 'Đặt hai tay lên gạch ngay dưới vai.', props: ['blocks'] },
+    { id: 'warrior-3__mod-2', en: 'Hold a wall or the back of a chair in front of you.', vi: 'Vịn vào tường hoặc lưng ghế phía trước.', props: ['wall', 'chair'] },
+    { id: 'warrior-3__mod-3', en: 'Keep your back toes lightly on the floor, like a kickstand.', vi: 'Giữ ngón chân sau chạm nhẹ xuống sàn, như chân chống xe.', props: [] },
+  ],
+  safety: [
+    { id: 'warrior-3__safe-1', en: 'Keep your standing knee soft, never locked.', vi: 'Giữ gối chân trụ mềm, đừng bao giờ khoá gối.' },
+    { id: 'warrior-3__safe-2', en: 'In pregnancy, use a wall or a chair, because your balance changes.', vi: 'Khi mang thai, dùng tường hoặc ghế, vì khả năng giữ thăng bằng của bạn thay đổi.' },
+  ],
+  muscles: {
+    working: ['gluteus-maximus', 'hamstrings', 'gluteus-medius', 'erector-spinae'],
+    lengthening: [],
+  },
+  joints: ['hip-joint', 'knee', 'ankle'],
+  transitionsTo: ['half-moon', 'crescent-lunge', 'standing-forward-fold'],
+  figure: 'warrior-3',
+}

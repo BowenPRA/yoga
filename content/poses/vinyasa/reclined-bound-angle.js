@@ -1,0 +1,42 @@
+export const reclinedBoundAngle = {
+  id: 'reclined-bound-angle',
+  styles: ['vinyasa'],
+  family: 'hip-opener',
+  level: 'gentle',
+  en: 'Reclined Bound Angle',
+  aka: ['Reclining Butterfly'],
+  sa: 'Supta Baddha Koṇāsana',
+  say: 'SOOP-tah BAH-dah koh-NAH-sah-nah',
+  vi: 'Góc cố định nằm',
+  breath: {
+    en: 'Rest one hand on your belly and one on your chest. Let the breath slow down by itself.',
+    vi: 'Đặt một tay lên bụng và một tay lên ngực. Để hơi thở tự chậm lại.',
+  },
+  cues: [
+    { id: 'reclined-bound-angle__cue-1', kind: 'transition', en: 'Lie on your back, and bring the soles of your feet together.', vi: 'Nằm ngửa, và áp hai gan bàn chân vào nhau.' },
+    { id: 'reclined-bound-angle__cue-2', kind: 'alignment', en: 'Let your knees fall open to the sides.', vi: 'Để hai gối mở ra hai bên.' },
+    { id: 'reclined-bound-angle__cue-3', kind: 'alignment', en: 'Slide your heels a comfortable distance from your hips.', vi: 'Đặt gót chân cách hông một khoảng thoải mái.' },
+    { id: 'reclined-bound-angle__cue-4', kind: 'alignment', en: 'Rest your arms by your sides, palms facing up.', vi: 'Đặt hai tay dọc theo người, lòng bàn tay ngửa lên.' },
+    { id: 'reclined-bound-angle__cue-5', kind: 'soften', en: 'Let gravity open your hips. There’s nothing to do.', vi: 'Để trọng lực mở hông. Không cần làm gì cả.' },
+    { id: 'reclined-bound-angle__cue-6', kind: 'breath', en: 'Stay for five breaths, or for a few minutes if you have time.', vi: 'Giữ năm nhịp thở, hoặc vài phút nếu có thời gian.' },
+    { id: 'reclined-bound-angle__cue-7', kind: 'safety', en: 'If your inner thighs or knees strain, place blocks under your knees.', vi: 'Nếu mặt trong đùi hoặc gối bị căng quá, kê gạch dưới gối.' },
+    { id: 'reclined-bound-angle__cue-8', kind: 'transition', en: 'Use your hands to bring your knees together, and roll onto your side.', vi: 'Dùng tay đưa hai gối khép lại, và lăn người sang một bên.' },
+  ],
+  modifications: [
+    { id: 'reclined-bound-angle__mod-1', en: 'Place a block or a bolster under each knee.', vi: 'Kê gạch hoặc gối ôm dưới mỗi bên gối.', props: ['blocks', 'bolster'] },
+    { id: 'reclined-bound-angle__mod-2', en: 'Lie back on a bolster placed along your spine, to open your chest.', vi: 'Nằm tựa lên gối ôm đặt dọc cột sống, để mở ngực.', props: ['bolster'] },
+    { id: 'reclined-bound-angle__mod-3', en: 'Rest your head on a folded blanket.', vi: 'Tựa đầu lên chăn gấp.', props: ['blanket'] },
+  ],
+  safety: [
+    { id: 'reclined-bound-angle__safe-1', en: 'If you have a knee or inner thigh injury, support both knees well.', vi: 'Nếu bạn có chấn thương gối hoặc mặt trong đùi, kê đỡ hai gối thật chắc.' },
+    { id: 'reclined-bound-angle__safe-2', en: 'In later pregnancy, lie back on a bolster, so your head and chest are higher than your belly.', vi: 'Ở giai đoạn sau của thai kỳ, nằm tựa lên gối ôm, để đầu và ngực cao hơn bụng.' },
+    { id: 'reclined-bound-angle__safe-3', en: 'In Yin, this is Reclining Butterfly, held for several minutes. Come out slowly.', vi: 'Trong Yin, đây là tư thế Con bướm nằm, giữ vài phút. Hãy thoát thế từ từ.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['hip-adductors'],
+  },
+  joints: ['hip-joint', 'knee', 'sacrum'],
+  transitionsTo: ['happy-baby', 'supine-twist', 'savasana'],
+  figure: 'reclined-bound-angle',
+}

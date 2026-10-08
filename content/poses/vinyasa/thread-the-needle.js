@@ -1,0 +1,41 @@
+export const threadTheNeedle = {
+  id: 'thread-the-needle',
+  styles: ['vinyasa'],
+  family: 'twist',
+  level: 'gentle',
+  en: 'Thread the Needle',
+  sa: null,
+  say: null,
+  vi: 'Xâu kim',
+  breath: {
+    en: 'Inhale to open your arm to the sky. Exhale to thread it under and rest. Breathe into your upper back.',
+    vi: 'Hít vào, mở tay lên trời. Thở ra, luồn tay xuống dưới và nghỉ. Thở vào lưng trên.',
+  },
+  cues: [
+    { id: 'thread-the-needle__cue-1', kind: 'transition', en: 'Start on all fours, wrists under your shoulders.', vi: 'Bắt đầu ở tư thế bốn điểm, cổ tay dưới vai.' },
+    { id: 'thread-the-needle__cue-2', kind: 'alignment', en: 'Inhale, open your right arm up to the sky.', vi: 'Hít vào, mở tay phải lên trời.' },
+    { id: 'thread-the-needle__cue-3', kind: 'alignment', en: 'Exhale, slide your right arm under your left, palm facing up.', vi: 'Thở ra, luồn tay phải xuống dưới tay trái, lòng bàn tay ngửa lên.' },
+    { id: 'thread-the-needle__cue-4', kind: 'alignment', en: 'Rest your right shoulder and the side of your head on the mat.', vi: 'Đặt vai phải và một bên đầu xuống thảm.' },
+    { id: 'thread-the-needle__cue-5', kind: 'alignment', en: 'Keep your hips high, right over your knees.', vi: 'Giữ hông cao, thẳng trên gối.' },
+    { id: 'thread-the-needle__cue-6', kind: 'soften', en: 'Let your upper back soften into the twist.', vi: 'Để lưng trên mềm ra theo chiều vặn.' },
+    { id: 'thread-the-needle__cue-7', kind: 'breath', en: 'Stay for five breaths, breathing into the space between your shoulder blades.', vi: 'Giữ năm nhịp thở, thở vào khoảng giữa hai bả vai.' },
+    { id: 'thread-the-needle__cue-8', kind: 'safety', en: 'Keep the weight off your neck. If it feels pinched, rest your head on a block.', vi: 'Đừng dồn trọng lượng lên cổ. Nếu thấy bị chèn, tựa đầu lên gạch.' },
+    { id: 'thread-the-needle__cue-9', kind: 'transition', en: 'Press into your left hand, unwind, and change sides.', vi: 'Ấn bàn tay trái xuống, xoay người trở lại, và đổi bên.' },
+  ],
+  modifications: [
+    { id: 'thread-the-needle__mod-1', en: 'Rest your head on a block so your neck stays easy.', vi: 'Tựa đầu lên gạch để cổ được thoải mái.', props: ['block'] },
+    { id: 'thread-the-needle__mod-2', en: 'Fold a blanket under your knees.', vi: 'Gấp chăn kê dưới gối.', props: ['blanket'] },
+    { id: 'thread-the-needle__mod-3', en: 'Thread your arm only halfway, keeping your shoulder off the floor.', vi: 'Chỉ luồn tay một nửa, giữ vai không chạm sàn.', props: [] },
+  ],
+  safety: [
+    { id: 'thread-the-needle__safe-1', en: 'If you have a neck or shoulder injury, keep the twist small and your head supported.', vi: 'Nếu bạn có chấn thương cổ hoặc vai, vặn nhẹ thôi và kê đỡ đầu.' },
+    { id: 'thread-the-needle__safe-2', en: 'In pregnancy, twist gently from your upper back, not your belly.', vi: 'Khi mang thai, vặn nhẹ từ lưng trên, không vặn từ bụng.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['rhomboids', 'trapezius', 'deltoids'],
+  },
+  joints: ['thoracic-spine', 'shoulder-joint', 'cervical-spine'],
+  transitionsTo: ['child-pose', 'cat-pose', 'downward-dog'],
+  figure: 'thread-the-needle',
+}

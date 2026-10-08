@@ -1,0 +1,43 @@
+export const crescentLunge = {
+  id: 'crescent-lunge',
+  styles: ['vinyasa'],
+  family: 'standing',
+  level: 'moderate',
+  en: 'Crescent Lunge',
+  aka: ['High Lunge'],
+  sa: 'Aṣṭa Candrāsana',
+  say: 'AHSH-tah chahn-DRAH-sah-nah',
+  vi: 'Chùng chân cao',
+  breath: {
+    en: 'Inhale to rise up and reach your arms overhead. Breathe steadily for three to five breaths. Exhale to bring your hands down.',
+    vi: 'Hít vào, nâng người lên và vươn hai tay qua đầu. Thở đều ba đến năm nhịp. Thở ra, đưa hai tay xuống.',
+  },
+  cues: [
+    { id: 'crescent-lunge__cue-1', kind: 'transition', en: 'From Downward Dog, step your right foot forward between your hands.', vi: 'Từ Chó úp mặt, bước chân phải lên trước giữa hai tay.' },
+    { id: 'crescent-lunge__cue-2', kind: 'transition', en: 'Inhale, rise up, and reach your arms overhead.', vi: 'Hít vào, nâng người lên, và vươn hai tay qua đầu.' },
+    { id: 'crescent-lunge__cue-3', kind: 'alignment', en: 'Bend your front knee so it stacks over your ankle.', vi: 'Gập gối trước sao cho gối thẳng trên cổ chân.' },
+    { id: 'crescent-lunge__cue-4', kind: 'alignment', en: 'Lift your back thigh, and reach back through your back heel.', vi: 'Nâng đùi sau lên, và đẩy ra sau qua gót chân sau.' },
+    { id: 'crescent-lunge__cue-5', kind: 'alignment', en: 'Draw your belly in, and stack your shoulders over your hips.', vi: 'Thu bụng vào, và đặt vai thẳng trên hông.' },
+    { id: 'crescent-lunge__cue-6', kind: 'soften', en: 'Soften your shoulders down, while your arms stay strong.', vi: 'Thả lỏng vai xuống, trong khi hai tay vẫn vững.' },
+    { id: 'crescent-lunge__cue-7', kind: 'breath', en: 'Stay for three to five breaths.', vi: 'Giữ ba đến năm nhịp thở.' },
+    { id: 'crescent-lunge__cue-8', kind: 'safety', en: 'If balance is hard, widen your stance, like standing on two train tracks.', vi: 'Nếu khó giữ thăng bằng, đặt hai chân rộng ra, như đứng trên hai thanh ray.' },
+    { id: 'crescent-lunge__cue-9', kind: 'transition', en: 'Exhale, hands down to the mat, and step back to Downward Dog.', vi: 'Thở ra, đặt hai tay xuống thảm, và bước về Chó úp mặt.' },
+  ],
+  modifications: [
+    { id: 'crescent-lunge__mod-1', en: 'Lower your back knee to the mat for Low Lunge.', vi: 'Hạ gối sau xuống thảm để làm Chùng chân thấp.', props: [] },
+    { id: 'crescent-lunge__mod-2', en: 'Bring your hands to your hips, or down onto blocks.', vi: 'Đặt hai tay lên hông, hoặc xuống gạch.', props: ['blocks'] },
+    { id: 'crescent-lunge__mod-3', en: 'Hold the back of a chair or a wall for balance.', vi: 'Vịn vào lưng ghế hoặc tường để giữ thăng bằng.', props: ['chair', 'wall'] },
+  ],
+  safety: [
+    { id: 'crescent-lunge__safe-1', en: 'If your front knee hurts, shorten your stance, and don’t bend so deeply.', vi: 'Nếu gối trước đau, thu ngắn khoảng cách hai chân, và đừng gập sâu quá.' },
+    { id: 'crescent-lunge__safe-2', en: 'If your shoulders are tight, take your arms wider, in a V shape.', vi: 'Nếu vai căng, mở hai tay rộng hơn, thành hình chữ V.' },
+    { id: 'crescent-lunge__safe-3', en: 'In pregnancy, keep your feet wider apart for balance.', vi: 'Khi mang thai, đặt hai chân rộng hơn để giữ thăng bằng.' },
+  ],
+  muscles: {
+    working: ['quadriceps', 'gluteus-maximus', 'deltoids'],
+    lengthening: ['iliopsoas'],
+  },
+  joints: ['hip-joint', 'knee', 'ankle'],
+  transitionsTo: ['warrior-3', 'humble-warrior', 'warrior-2'],
+  figure: 'crescent-lunge',
+}

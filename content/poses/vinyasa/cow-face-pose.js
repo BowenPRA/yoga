@@ -1,0 +1,43 @@
+export const cowFacePose = {
+  id: 'cow-face-pose',
+  styles: ['vinyasa'],
+  family: 'seated',
+  level: 'moderate',
+  en: 'Cow Face Pose',
+  aka: ['Cow Face Arms'],
+  sa: 'Gomukhāsana',
+  say: 'goh-moo-KAH-sah-nah',
+  vi: 'Mặt bò',
+  breath: {
+    en: 'Inhale to sit tall. Exhale to settle your hips and let your shoulders open. If you like, fold forward on an exhale.',
+    vi: 'Hít vào, ngồi thẳng. Thở ra, để hông lắng xuống và vai mở ra. Nếu muốn, gập người về trước khi thở ra.',
+  },
+  cues: [
+    { id: 'cow-face-pose__cue-1', kind: 'transition', en: 'Sit, and cross your right knee over your left, stacking your knees.', vi: 'Ngồi, và bắt chéo gối phải lên gối trái, chồng hai gối lên nhau.' },
+    { id: 'cow-face-pose__cue-2', kind: 'alignment', en: 'Bring your feet beside your hips, and sit evenly on both sitting bones.', vi: 'Đưa hai bàn chân về hai bên hông, và ngồi đều trên hai xương ngồi.' },
+    { id: 'cow-face-pose__cue-3', kind: 'alignment', en: 'Reach your left arm up, bend your elbow, and drop your hand down your back.', vi: 'Vươn tay trái lên, gập khuỷu tay, và thả bàn tay xuống sau lưng.' },
+    { id: 'cow-face-pose__cue-4', kind: 'alignment', en: 'Reach your right arm behind you and up, and try to hold your fingers.', vi: 'Đưa tay phải ra sau lưng và lên, và thử móc các ngón tay vào nhau.' },
+    { id: 'cow-face-pose__cue-5', kind: 'alignment', en: 'Lift your top elbow toward the ceiling, and keep your head upright.', vi: 'Nâng khuỷu tay trên lên hướng trần nhà, và giữ đầu thẳng.' },
+    { id: 'cow-face-pose__cue-6', kind: 'soften', en: 'Don’t force your hands together. Let your shoulders open slowly.', vi: 'Đừng ép hai tay chạm nhau. Để vai mở ra từ từ.' },
+    { id: 'cow-face-pose__cue-7', kind: 'breath', en: 'Stay for five breaths.', vi: 'Giữ năm nhịp thở.' },
+    { id: 'cow-face-pose__cue-8', kind: 'safety', en: 'If your knees hurt, straighten your bottom leg, or sit on a block.', vi: 'Nếu gối đau, duỗi thẳng chân dưới, hoặc ngồi lên gạch.' },
+    { id: 'cow-face-pose__cue-9', kind: 'transition', en: 'Release your arms, uncross your legs, and change sides.', vi: 'Thả tay ra, gỡ chân ra, và đổi bên.' },
+  ],
+  modifications: [
+    { id: 'cow-face-pose__mod-1', en: 'Hold a strap between your hands.', vi: 'Cầm dây tập giữa hai tay.', props: ['strap'] },
+    { id: 'cow-face-pose__mod-2', en: 'Sit on a block or a folded blanket.', vi: 'Ngồi lên gạch hoặc chăn gấp.', props: ['block', 'blanket'] },
+    { id: 'cow-face-pose__mod-3', en: 'Keep your bottom leg straight.', vi: 'Giữ chân dưới duỗi thẳng.', props: [] },
+  ],
+  safety: [
+    { id: 'cow-face-pose__safe-1', en: 'If you have a shoulder injury, use a strap, and keep it gentle.', vi: 'Nếu bạn có chấn thương vai, dùng dây tập, và tập nhẹ nhàng.' },
+    { id: 'cow-face-pose__safe-2', en: 'If your knees are sensitive, keep your bottom leg straight, or sit cross-legged and do the arms only.', vi: 'Nếu gối nhạy cảm, giữ chân dưới duỗi thẳng, hoặc ngồi xếp bằng và chỉ làm phần tay.' },
+    { id: 'cow-face-pose__safe-3', en: 'In Yin, the legs of this pose are Shoelace, held for minutes. Come out slowly.', vi: 'Trong Yin, phần chân của tư thế này là tư thế Dây giày, giữ vài phút. Hãy thoát thế từ từ.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['triceps-brachii', 'latissimus-dorsi', 'gluteus-medius', 'piriformis'],
+  },
+  joints: ['shoulder-joint', 'hip-joint', 'knee'],
+  transitionsTo: ['seated-forward-fold', 'seated-twist', 'staff-pose'],
+  figure: 'cow-face-pose',
+}

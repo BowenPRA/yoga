@@ -1,0 +1,43 @@
+export const dolphinPose = {
+  id: 'dolphin-pose',
+  styles: ['vinyasa'],
+  family: 'inversion',
+  level: 'moderate',
+  en: 'Dolphin Pose',
+  sa: 'Ardha Piñcha Mayūrāsana',
+  say: 'AR-dah PIN-chah my-oo-RAH-sah-nah',
+  vi: 'Cá heo',
+  breath: {
+    en: 'Exhale to lift your hips. Breathe steadily for five breaths. Exhale to lower your knees.',
+    vi: 'Thở ra, nâng hông. Thở đều năm nhịp. Thở ra, hạ gối xuống.',
+  },
+  cues: [
+    { id: 'dolphin-pose__cue-1', kind: 'transition', en: 'From all fours, lower onto your forearms, elbows under your shoulders.', vi: 'Từ tư thế bốn điểm, hạ xuống chống cẳng tay, khuỷu tay ngay dưới vai.' },
+    { id: 'dolphin-pose__cue-2', kind: 'alignment', en: 'Keep your forearms parallel, or clasp your hands.', vi: 'Giữ hai cẳng tay song song, hoặc đan hai bàn tay vào nhau.' },
+    { id: 'dolphin-pose__cue-3', kind: 'transition', en: 'Tuck your toes, and lift your hips up and back.', vi: 'Bấm các ngón chân xuống, và nâng hông lên, ra sau.' },
+    { id: 'dolphin-pose__cue-4', kind: 'alignment', en: 'Press your forearms down, and lift your shoulders away from the floor.', vi: 'Ấn cẳng tay xuống, và nâng vai lên xa khỏi sàn.' },
+    { id: 'dolphin-pose__cue-5', kind: 'alignment', en: 'Walk your feet in a little, keeping your back long.', vi: 'Bước chân vào gần hơn một chút, giữ lưng dài.' },
+    { id: 'dolphin-pose__cue-6', kind: 'soften', en: 'Let your head hang freely between your arms.', vi: 'Để đầu buông tự nhiên giữa hai tay.' },
+    { id: 'dolphin-pose__cue-7', kind: 'breath', en: 'Stay for five breaths.', vi: 'Giữ năm nhịp thở.' },
+    { id: 'dolphin-pose__cue-8', kind: 'safety', en: 'If your shoulders sink, bend your knees, and press down harder through your forearms.', vi: 'Nếu vai bị sụp, chùng gối, và ấn cẳng tay xuống mạnh hơn.' },
+    { id: 'dolphin-pose__cue-9', kind: 'transition', en: 'Exhale, lower your knees, and rest in Child’s Pose.', vi: 'Thở ra, hạ gối xuống, và nghỉ ở tư thế Em bé.' },
+  ],
+  modifications: [
+    { id: 'dolphin-pose__mod-1', en: 'Hold a block between your hands to keep your forearms parallel.', vi: 'Kẹp một viên gạch giữa hai bàn tay để giữ cẳng tay song song.', props: ['block'] },
+    { id: 'dolphin-pose__mod-2', en: 'Loop a strap just above your elbows to stop them sliding apart.', vi: 'Vòng dây tập ngay trên khuỷu tay để khuỷu tay không trượt ra hai bên.', props: ['strap'] },
+    { id: 'dolphin-pose__mod-3', en: 'Keep your knees bent, and your heels high.', vi: 'Giữ gối chùng, và gót chân nhấc cao.', props: [] },
+  ],
+  safety: [
+    { id: 'dolphin-pose__safe-1', en: 'If you have a shoulder or neck injury, take Puppy Pose instead.', vi: 'Nếu bạn có chấn thương vai hoặc cổ, thay bằng tư thế Chó con.' },
+    { id: 'dolphin-pose__safe-2', en: 'If you have high blood pressure, keep the hold short.', vi: 'Nếu bạn bị huyết áp cao, giữ ngắn thôi.' },
+    { id: 'dolphin-pose__safe-3', en: 'In later pregnancy, take Puppy Pose with your knees wide instead.', vi: 'Ở giai đoạn sau của thai kỳ, thay bằng tư thế Chó con với hai gối mở rộng.' },
+  ],
+  muscles: {
+    working: ['deltoids', 'serratus-anterior'],
+    lengthening: ['latissimus-dorsi', 'hamstrings', 'calves'],
+  },
+  joints: ['shoulder-joint', 'elbow'],
+  transitionsTo: ['forearm-plank', 'child-pose', 'headstand'],
+  counterPoses: ['child-pose'],
+  figure: 'dolphin-pose',
+}

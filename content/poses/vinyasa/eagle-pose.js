@@ -1,0 +1,43 @@
+export const eaglePose = {
+  id: 'eagle-pose',
+  styles: ['vinyasa'],
+  family: 'balance',
+  level: 'moderate',
+  en: 'Eagle Pose',
+  aka: ['Eagle Arms'],
+  sa: 'Garuḍāsana',
+  say: 'gah-roo-DAH-sah-nah',
+  vi: 'Đại bàng',
+  breath: {
+    en: 'Exhale as you wrap and sink. Breathe into the space between your shoulder blades for five breaths. Inhale to unwind.',
+    vi: 'Thở ra khi quấn tay chân và hạ người. Thở vào khoảng giữa hai bả vai trong năm nhịp. Hít vào để gỡ ra.',
+  },
+  cues: [
+    { id: 'eagle-pose__cue-1', kind: 'transition', en: 'Bend your knees and sink your hips, as if you’re sitting into a chair.', vi: 'Chùng gối và hạ hông, như đang ngồi xuống ghế.' },
+    { id: 'eagle-pose__cue-2', kind: 'alignment', en: 'Cross your right thigh over your left, and hook your foot behind your calf if you can.', vi: 'Bắt chéo đùi phải lên đùi trái, và móc bàn chân ra sau bắp chân nếu được.' },
+    { id: 'eagle-pose__cue-3', kind: 'alignment', en: 'Swing your arms forward, and cross your left arm over your right.', vi: 'Đưa hai tay ra trước, và bắt chéo tay trái lên trên tay phải.' },
+    { id: 'eagle-pose__cue-4', kind: 'alignment', en: 'Bend your elbows, and bring your palms together, or hold your shoulders.', vi: 'Gập khuỷu tay, và chắp hai lòng bàn tay, hoặc ôm lấy vai.' },
+    { id: 'eagle-pose__cue-5', kind: 'alignment', en: 'Lift your elbows to shoulder height, and draw them forward.', vi: 'Nâng khuỷu tay ngang vai, và đưa khuỷu tay ra trước.' },
+    { id: 'eagle-pose__cue-6', kind: 'soften', en: 'Let your shoulders drop down your back.', vi: 'Để vai hạ xuống dọc lưng.' },
+    { id: 'eagle-pose__cue-7', kind: 'breath', en: 'Stay for five breaths, breathing into your upper back.', vi: 'Giữ năm nhịp thở, thở vào lưng trên.' },
+    { id: 'eagle-pose__cue-8', kind: 'safety', en: 'If your knee complains, rest your toes on the floor instead of hooking.', vi: 'Nếu gối khó chịu, đặt ngón chân xuống sàn thay vì móc chân.' },
+    { id: 'eagle-pose__cue-9', kind: 'transition', en: 'Inhale, unwind your arms and legs, and change sides.', vi: 'Hít vào, gỡ tay và chân ra, và đổi bên.' },
+  ],
+  modifications: [
+    { id: 'eagle-pose__mod-1', en: 'Rest your top toes on the floor, like a kickstand.', vi: 'Đặt ngón chân của chân trên xuống sàn, như chân chống xe.', props: [] },
+    { id: 'eagle-pose__mod-2', en: 'Hold a strap between your hands if your palms don’t meet.', vi: 'Cầm dây tập giữa hai tay nếu hai lòng bàn tay chưa chạm nhau.', props: ['strap'] },
+    { id: 'eagle-pose__mod-3', en: 'Sit on a chair, and take Eagle Arms only.', vi: 'Ngồi trên ghế, và chỉ làm phần tay Đại bàng.', props: ['chair'] },
+  ],
+  safety: [
+    { id: 'eagle-pose__safe-1', en: 'If you have a knee injury, take Eagle Arms only, in Chair Pose or seated.', vi: 'Nếu bạn có chấn thương gối, chỉ làm phần tay Đại bàng, ở tư thế Cái ghế hoặc ngồi.' },
+    { id: 'eagle-pose__safe-2', en: 'If your shoulders are tight, give yourself a hug instead of wrapping your forearms.', vi: 'Nếu vai căng, chỉ tự ôm lấy vai thay vì quấn cẳng tay.' },
+    { id: 'eagle-pose__safe-3', en: 'In pregnancy, keep your toes on the floor, or stand near a wall.', vi: 'Khi mang thai, giữ ngón chân trên sàn, hoặc đứng gần tường.' },
+  ],
+  muscles: {
+    working: ['quadriceps', 'hip-adductors'],
+    lengthening: ['rhomboids', 'trapezius', 'it-band'],
+  },
+  joints: ['knee', 'ankle', 'shoulder-joint'],
+  transitionsTo: ['tree-pose', 'chair-pose', 'warrior-3'],
+  figure: 'eagle-pose',
+}
