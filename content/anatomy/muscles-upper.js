@@ -176,7 +176,7 @@ export const MUSCLES_UPPER = [
       { style: 'ashtanga', en: 'In Downward Dog, send your hips back and let the sides of your waist get long.', vi: 'Trong Chó úp mặt, đưa hông ra sau và để hai bên eo dài ra.' },
       { style: 'yin', en: 'In the side bend, breathe into the side ribs.', vi: 'Trong tư thế nghiêng bên, hít thở vào phần sườn bên.' },
     ],
-    works: ['chaturanga', 'wheel-pose', 'arm-balances'], stretches: ['downward-dog', 'puppy-pose', 'side-bend', 'child-pose'],
+    works: ['chaturanga', 'arm-balances'], stretches: ['downward-dog', 'puppy-pose', 'side-bend', 'child-pose', 'wheel-pose'],
     wordTrap: 'Trọng âm “TIS”. “Your lats” là cách nói ngắn quen thuộc; “the sides of your back” là cách nói dễ hiểu nhất.',
     near: ['teres-major', 'erector-spinae', 'external-oblique'], under: [],
   },
