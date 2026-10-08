@@ -6,7 +6,7 @@ export const warrior2 = {
   sa: 'Vīrabhadrāsana II',
   say: 'vee-rah-bah-DRAH-sah-nah TWO',
   vi: 'Chiến binh II',
-  ashtanga: { series: 'primary', section: 'standing', note: { en: 'Comes after Warrior I in the standing sequence; five breaths each side.', vi: 'Đứng sau Chiến binh I trong chuỗi đứng; năm nhịp thở mỗi bên.' } },
+  ashtanga: { series: 'primary', section: 'standing', position: 20, breaths: 5, drishti: 'hand', note: { en: 'Comes after Warrior I in the standing sequence; five breaths each side.', vi: 'Đứng sau Chiến binh I trong chuỗi đứng; năm nhịp thở mỗi bên.' } },
   breath: {
     en: 'Exhale into the pose. Stay for five slow breaths. Inhale to straighten the front leg and change sides.',
     vi: 'Thở ra khi vào tư thế. Giữ năm nhịp thở chậm. Hít vào để duỗi thẳng chân trước và đổi bên.',

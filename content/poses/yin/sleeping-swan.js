@@ -7,7 +7,7 @@ export const sleepingSwan = {
   saNote: { en: 'The Yin name is Sleeping Swan. The Sanskrit belongs to the yang version, Pigeon.', vi: 'Tên Yin là Thiên nga ngủ. Tên Sanskrit thuộc về phiên bản yang, tư thế Bồ câu.' },
   say: 'EH-kah PAH-dah rah-jah-kah-poh-TAH-sah-nah',
   vi: 'Thiên nga ngủ',
-  yin: { holdMinutes: 3, note: { en: 'Three to five minutes each side. Muscles stay soft; the stretch is for the hip, not the knee.', vi: 'Ba đến năm phút mỗi bên. Cơ giữ mềm; kéo giãn ở hông, không phải ở gối.' } },
+  yin: { holdMinutes: 3, target: ['hips'], counter: 'child-pose', note: { en: 'Three to five minutes each side. Muscles stay soft; the stretch is for the hip, not the knee.', vi: 'Ba đến năm phút mỗi bên. Cơ giữ mềm; kéo giãn ở hông, không phải ở gối.' } },
   breath: {
     en: 'Breathe slowly and let each exhale soften you a little further. There is nowhere to get to.',
     vi: 'Thở chậm và để mỗi hơi thở ra giúp bạn mềm hơn một chút. Không cần phải đến đâu cả.',

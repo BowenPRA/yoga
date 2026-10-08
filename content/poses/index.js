@@ -1,6 +1,11 @@
-import { warrior2 } from './warrior-2.js'
-import { downwardDog } from './downward-dog.js'
-import { sleepingSwan } from './sleeping-swan.js'
+import { ASHTANGA_POSES } from './ashtanga/index.js'
+import { VINYASA_POSES } from './vinyasa/index.js'
+import { YIN_POSES } from './yin/index.js'
 
-/** One pose per style for the vertical slice. Order is display order. */
-export const POSES = [warrior2, downwardDog, sleepingSwan]
+/**
+ * The pose library. One folder per style owns its poses (see README.md in
+ * this folder): a pose that belongs to several styles lives in one file and
+ * lists them all in `styles`. Display order within a style is the order of
+ * each folder's index; the Poses tab regroups as it needs.
+ */
+export const POSES = [...ASHTANGA_POSES, ...VINYASA_POSES, ...YIN_POSES]

@@ -6,7 +6,7 @@ export const downwardDog = {
   sa: 'Adho Mukha Śvānāsana',
   say: 'AH-doh MOO-kah shvah-NAH-sah-nah',
   vi: 'Chó úp mặt',
-  ashtanga: { series: 'primary', section: 'surya-namaskara', note: { en: 'The fifth vinyasa of Surya Namaskara A, held for five breaths. The resting point between every seated pose.', vi: 'Vinyasa thứ năm của Chào mặt trời A, giữ năm nhịp thở. Điểm nghỉ giữa mọi tư thế ngồi.' } },
+  ashtanga: { series: 'primary', section: 'surya-a', position: 7, breaths: 5, drishti: 'navel', note: { en: 'The fifth vinyasa of Surya Namaskara A, held for five breaths. The resting point between every seated pose.', vi: 'Vinyasa thứ năm của Chào mặt trời A, giữ năm nhịp thở. Điểm nghỉ giữa mọi tư thế ngồi.' } },
   breath: {
     en: 'Exhale to lift your hips up and back. Stay for five breaths, breathing into the back of your body.',
     vi: 'Thở ra, nâng hông lên và ra sau. Giữ năm nhịp thở, hít thở hướng vào phía sau cơ thể.',
