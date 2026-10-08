@@ -197,7 +197,7 @@ export const BONES = [
     does: { en: 'Flexes and points the foot; its stiffness decides how deep a squat goes.', vi: 'Gập và duỗi bàn chân; độ cứng của nó quyết định bạn ngồi xổm sâu đến đâu.' },
     cues: [
       { style: 'vinyasa', en: 'Stack your knee over your ankle.', vi: 'Đặt gối thẳng trên cổ chân.' },
-      { style: 'ashtanga', en: 'Flex your ankle and point your toes toward your face.', vi: 'Gập cổ chân và hướng ngón chân về phía mặt.' },
+      { style: 'ashtanga', en: 'Flex your ankle and draw your toes toward your face.', vi: 'Gập cổ chân và kéo các ngón chân về phía mặt.' },
       { style: 'yin', en: 'In Toe Squat, go gently; the ankles and toes open slowly.', vi: 'Trong Ngồi trên ngón chân, nhẹ nhàng thôi; cổ chân và ngón chân mở từ từ.' },
     ],
     wordTrap: 'Nhấn âm đầu “ANG”; âm cuối “kul” nhẹ. Số nhiều “ankles” với âm “z”.',
@@ -205,7 +205,7 @@ export const BONES = [
   },
   {
     id: 'heel', en: 'heel', latin: 'calcaneus', plain: 'your heel', vi: 'xương gót', viPlain: 'gót chân',
-    say: 'HEEL', traps: ['long-ee', 'heel-hill', 'final-l'], region: 'foot', kind: 'bone', skeleton: ['TarsalsLeft', 'TarsalsRight'],
+    say: 'HEEL', traps: ['long-ee', 'heel-hill', 'final-l'], region: 'foot', kind: 'bone', skeleton: null,
     does: { en: 'The bone you root through in standing poses and reach down in Downward Dog.', vi: 'Xương bạn bám rễ qua trong các tư thế đứng và hướng xuống trong Chó úp mặt.' },
     cues: [
       { style: 'vinyasa', en: 'Root down through your back heel.', vi: 'Ấn chắc xuống qua gót chân sau.' },
@@ -275,7 +275,7 @@ export const BONES = [
   },
   {
     id: 'shoulder-blades', en: 'shoulder blades', latin: 'scapulae', plain: 'your shoulder blades', vi: 'xương bả vai', viPlain: 'bả vai',
-    say: 'SHOHL-der BLAYDZ', traps: ['cluster-ld', 'cluster-bl', 'final-dz'], region: 'shoulder-girdle', kind: 'bone', skeleton: ['Scapula'],
+    say: 'SHOHL-der BLAYDZ', traps: ['cluster-ld', 'cluster-bl', 'final-dz'], region: 'shoulder-girdle', kind: 'bone', skeleton: null,
     does: { en: 'Two flat triangles that glide on the ribs; most shoulder cues are really about where they sit.', vi: 'Hai xương tam giác dẹt trượt trên lồng ngực; hầu hết cue cho vai thực ra nói về vị trí của chúng.' },
     cues: [
       { style: 'vinyasa', en: 'Slide your shoulder blades down your back.', vi: 'Trượt hai bả vai xuống dọc lưng.' },
@@ -288,7 +288,7 @@ export const BONES = [
   },
   {
     id: 'shoulder-joint', en: 'shoulder', plain: 'your shoulder', vi: 'khớp vai', viPlain: 'vai',
-    say: 'SHOHL-der', traps: ['cluster-ld', 'final-r'], region: 'shoulder-girdle', kind: 'joint', skeleton: ['HumerusLeft', 'HumerusRight'],
+    say: 'SHOHL-der', traps: ['cluster-ld', 'final-r'], region: 'shoulder-girdle', kind: 'joint', skeleton: null,
     does: { en: 'The most mobile joint in the body and the least stable; it needs the rotator cuff and good shoulder-blade position.', vi: 'Khớp linh hoạt nhất cơ thể và kém ổn định nhất; cần chóp xoay và vị trí bả vai tốt.' },
     cues: [
       { style: 'vinyasa', en: 'Relax your shoulders away from your ears.', vi: 'Thả vai xuống, xa khỏi tai.' },

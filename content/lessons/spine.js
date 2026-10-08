@@ -159,7 +159,7 @@ export const spineLesson = {
       type: 'activity',
       activity: {
         type: 'sort', id: 'spine-sort-fold', pose: 'seated-forward-fold',
-        prompt: { vi: 'Trong Gập người về trước ngồi, cơ nào đang làm việc, cơ nào đang được kéo giãn?', en: 'In Seated Forward Fold, which muscles are working and which are stretching?' },
+        prompt: { vi: 'Trong Ngồi gập người về trước, cơ nào đang làm việc, cơ nào đang được kéo giãn?', en: 'In Seated Forward Fold, which muscles are working and which are stretching?' },
         bins: [
           { id: 'working', vi: 'Đang làm việc', en: 'Working' },
           { id: 'stretching', vi: 'Đang kéo giãn', en: 'Stretching' },
@@ -180,7 +180,7 @@ export const spineLesson = {
       type: 'activity',
       activity: {
         type: 'predict', id: 'spine-predict-fold',
-        prompt: { vi: 'Trong Gập người về trước ngồi, lưng dưới của một học viên cong tròn nhiều. Thường là do đâu?', en: 'In Seated Forward Fold, a student’s lower back rounds a lot. What is usually the reason?' },
+        prompt: { vi: 'Trong Ngồi gập người về trước, lưng dưới của một học viên cong tròn nhiều. Thường là do đâu?', en: 'In Seated Forward Fold, a student’s lower back rounds a lot. What is usually the reason?' },
         options: [
           { id: 'hamstrings', en: 'Tight hamstrings: the pelvis can’t tip forward', vi: 'Mặt sau đùi căng: khung chậu không nghiêng về trước được' },
           { id: 'weak-back', en: 'A weak lower back', vi: 'Lưng dưới yếu' },

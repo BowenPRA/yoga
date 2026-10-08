@@ -6805,5 +6805,212 @@
   "tokens": 146,
   "model": "gemini-3.8-flash-lite-tts",
   "batched": true
+ },
+ "half-butterfly__cue-1": {
+  "hash": "de071983fad5",
+  "text": "Sit on a blanket with your right leg straight, and your left foot against your inner right thigh.",
+  "kind": "cue-transition",
+  "tokens": 187,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": false
+ },
+ "half-butterfly__cue-3": {
+  "hash": "fdcfbcc85f82",
+  "text": "Fold forward over your straight leg, or toward the middle. Let your back round.",
+  "kind": "cue-transition",
+  "tokens": 156,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "half-butterfly__cue-8": {
+  "hash": "d41ed437c9f0",
+  "text": "Slowly roll up, with your head coming up last.",
+  "kind": "cue-transition",
+  "tokens": 156,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "dragonfly__cue-1": {
+  "hash": "1482592b9ce5",
+  "text": "Sit on the edge of a folded blanket, and open your legs wide.",
+  "kind": "cue-transition",
+  "tokens": 161,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "dragonfly__cue-3": {
+  "hash": "e21ad72413d3",
+  "text": "Fold forward slowly. Rest on your hands, your forearms or a bolster.",
+  "kind": "cue-transition",
+  "tokens": 161,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "dragonfly__cue-8": {
+  "hash": "02984f0f051a",
+  "text": "Use your hands to roll up slowly, then bring your legs together.",
+  "kind": "cue-transition",
+  "tokens": 161,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "deer__cue-1": {
+  "hash": "1ed0ac101102",
+  "text": "Sit with your knees bent and your feet wide, then let both knees fall to the right.",
+  "kind": "cue-transition",
+  "tokens": 132,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "deer__cue-8": {
+  "hash": "41047f8da74c",
+  "text": "Slowly come upright, and bring your knees back to the middle.",
+  "kind": "cue-transition",
+  "tokens": 132,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "cat-pulling-its-tail__cue-1": {
+  "hash": "23c574257c53",
+  "text": "Lie on your back, and let your knees fall to the left into a twist.",
+  "kind": "cue-transition",
+  "tokens": 132,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "cat-pulling-its-tail__cue-3": {
+  "hash": "d42c85354206",
+  "text": "Bend your left knee, and draw your left foot back behind you.",
+  "kind": "cue-transition",
+  "tokens": 132,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "cat-pulling-its-tail__cue-8": {
+  "hash": "96bbab54e35a",
+  "text": "Slowly release your foot, and roll onto your back.",
+  "kind": "cue-transition",
+  "tokens": 132,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "caterpillar__cue-1": {
+  "hash": "9d5cb5a54d10",
+  "text": "Sit on a folded blanket, with your legs straight out in front of you.",
+  "kind": "cue-transition",
+  "tokens": 132,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "caterpillar__cue-3": {
+  "hash": "6a061ff4c4f9",
+  "text": "Fold forward, and let your back round like a caterpillar.",
+  "kind": "cue-transition",
+  "tokens": 141,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "caterpillar__cue-8": {
+  "hash": "c26159e04014",
+  "text": "Slowly roll up, one vertebra at a time.",
+  "kind": "cue-transition",
+  "tokens": 141,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "snail__cue-1": {
+  "hash": "77d897f3495c",
+  "text": "Lie on your back, with a folded blanket under your shoulders and your head on the mat.",
+  "kind": "cue-transition",
+  "tokens": 141,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "snail__cue-2": {
+  "hash": "c03b095c8949",
+  "text": "Bend your knees, and slowly roll your hips up and over.",
+  "kind": "cue-transition",
+  "tokens": 141,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "snail__cue-7": {
+  "hash": "c5f6bda80a7f",
+  "text": "To come out, bend your knees, and roll down slowly, one vertebra at a time.",
+  "kind": "cue-transition",
+  "tokens": 141,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "sphinx__cue-1": {
+  "hash": "d435d0bfc634",
+  "text": "Lie on your belly, and come up onto your forearms.",
+  "kind": "cue-transition",
+  "tokens": 141,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true
+ },
+ "revolved-triangle__cue-9": {
+  "hash": "aaa9d4c5d375",
+  "text": "Inhale, come up, and turn to the left.",
+  "kind": "cue-transition",
+  "tokens": 139,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true,
+  "copyOf": "triangle__cue-9"
+ },
+ "extended-side-angle__cue-9": {
+  "hash": "aaa9d4c5d375",
+  "text": "Inhale, come up, and turn to the left.",
+  "kind": "cue-transition",
+  "tokens": 139,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true,
+  "copyOf": "triangle__cue-9"
+ },
+ "revolved-side-angle__cue-9": {
+  "hash": "aaa9d4c5d375",
+  "text": "Inhale, come up, and turn to the left.",
+  "kind": "cue-transition",
+  "tokens": 139,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true,
+  "copyOf": "triangle__cue-9"
+ },
+ "pyramid-pose__cue-9": {
+  "hash": "aaa9d4c5d375",
+  "text": "Inhale, come up, and turn to the left.",
+  "kind": "cue-transition",
+  "tokens": 139,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true,
+  "copyOf": "triangle__cue-9"
+ },
+ "crescent-lunge__cue-1": {
+  "hash": "0f2df108b2c0",
+  "text": "From Downward Dog, step your right foot forward between your hands.",
+  "kind": "cue-transition",
+  "tokens": 122,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true,
+  "copyOf": "low-lunge__cue-1"
+ },
+ "dancer-pose__cue-1": {
+  "hash": "49a2ac123c54",
+  "text": "Stand tall, and shift your weight into your left foot.",
+  "kind": "cue-transition",
+  "tokens": 134,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true,
+  "copyOf": "tree-pose__cue-1"
+ },
+ "dolphin-pose__cue-1": {
+  "hash": "0ed555509c98",
+  "text": "From all fours, lower onto your forearms, elbows under your shoulders.",
+  "kind": "cue-transition",
+  "tokens": 155,
+  "model": "gemini-3.8-flash-lite-tts",
+  "batched": true,
+  "copyOf": "forearm-plank__cue-1"
  }
 }

@@ -474,6 +474,12 @@
   "kind": "cue-vinyasa"
  },
  {
+  "id": "forearm-extensors__cue-2",
+  "text": "Spread your fingers wide and lift the backs of your hands away from the mat for a moment.",
+  "lang": "en",
+  "kind": "cue-vinyasa"
+ },
+ {
   "id": "rectus-abdominis",
   "text": "rectus abdominis",
   "lang": "en",
@@ -643,7 +649,7 @@
  },
  {
   "id": "pelvic-floor__cue-2",
-  "text": "Let the pelvic floor soften and widen as you breathe out.",
+  "text": "Let the pelvic floor soften and widen as you breathe in.",
   "lang": "en",
   "kind": "cue-yin"
  },
@@ -1591,7 +1597,7 @@
  },
  {
   "id": "ankle__cue-2",
-  "text": "Flex your ankle and point your toes toward your face.",
+  "text": "Flex your ankle and draw your toes toward your face.",
   "lang": "en",
   "kind": "cue-ashtanga"
  },
@@ -2996,7 +3002,7 @@
  },
  {
   "id": "downward-dog__mod-1",
-  "text": "Keep your knees bent and your heels lifted if the back of your legs feels tight.",
+  "text": "Keep your knees bent and your heels lifted if the backs of your legs feel tight.",
   "lang": "en",
   "kind": "modification"
  },
@@ -3136,7 +3142,7 @@
  {
   "id": "warrior-1__sa",
   "text": "Vīrabhadrāsana I",
-  "say": "vee-rah-bah-DRAH-sah-nah WUN",
+  "say": "vee-rah-bah-DRAH-sah-nah ONE",
   "lang": "sa",
   "kind": "pose-name"
  },
@@ -4129,7 +4135,7 @@
  },
  {
   "id": "half-bound-lotus-standing__en",
-  "text": "Half Bound Lotus Forward Fold",
+  "text": "Standing Half Bound Lotus",
   "lang": "en",
   "kind": "pose-name"
  },
@@ -4226,7 +4232,7 @@
  },
  {
   "id": "half-bound-lotus-standing__safe-3",
-  "text": "In pregnancy, keep the foot on your thigh and stay upright.",
+  "text": "In pregnancy, keep your foot on your thigh and stay upright.",
   "lang": "en",
   "kind": "safety"
  },
@@ -4336,7 +4342,7 @@
  {
   "id": "staff-pose__sa",
   "text": "Daṇḍāsana",
-  "say": "dun-DAH-sah-nah",
+  "say": "dan-DAH-sah-nah",
   "lang": "sa",
   "kind": "pose-name"
  },
@@ -4729,8 +4735,8 @@
  },
  {
   "id": "three-limb-forward-fold__sa",
-  "text": "Tiriaṅg Mukhaikapāda Paścimottānāsana",
-  "say": "tee-ree-ANG moo-kai-kah-PAH-dah pash-chee-moh-tah-NAH-sah-nah",
+  "text": "Triaṅga Mukhaikapāda Paścimottānāsana",
+  "say": "tree-ANG MOO-kah AY-kah PAH-dah pash-chee-moh-tah-NAH-sah-nah",
   "lang": "sa",
   "kind": "pose-name"
  },
@@ -6712,7 +6718,7 @@
  {
   "id": "fish-pose__sa",
   "text": "Matsyāsana",
-  "say": "mat-see-AH-sah-nah",
+  "say": "maht-see-AH-sah-nah",
   "lang": "sa",
   "kind": "pose-name"
  },
@@ -7196,7 +7202,7 @@
  },
  {
   "id": "uplifting-pose__sa",
-  "text": "Utpluthiḥ",
+  "text": "Utplutiḥ",
   "say": "oot-PLOO-tee",
   "lang": "sa",
   "kind": "pose-name"
@@ -10039,7 +10045,7 @@
  {
   "id": "lizard-pose__sa",
   "text": "Uttāna Pṛṣṭhāsana",
-  "say": "oo-TAHN prish-TAH-sah-nah",
+  "say": "oo-TAH-nah prish-TAH-sah-nah",
   "lang": "sa",
   "kind": "pose-name"
  },
@@ -10263,7 +10269,7 @@
  },
  {
   "id": "pigeon__cue-4",
-  "text": "Slide your back leg straight behind you, top of the foot down.",
+  "text": "Slide your back leg straight behind you, top of your foot down.",
   "lang": "en",
   "kind": "cue-alignment"
  },
@@ -10457,7 +10463,7 @@
  },
  {
   "id": "figure-four__cue-2",
-  "text": "Cross your right ankle over your left thigh, just above the knee.",
+  "text": "Cross your right ankle over your left thigh, just above your knee.",
   "lang": "en",
   "kind": "cue-alignment"
  },
@@ -11509,7 +11515,7 @@
  },
  {
   "id": "swan__safe-1",
-  "text": "Feel it in the outer hip and the front of the back hip. Pain in the front knee means come out.",
+  "text": "Feel it in your outer hip and the front of your back hip. Pain in your front knee means come out.",
   "lang": "en",
   "kind": "safety"
  },
@@ -11702,7 +11708,7 @@
  },
  {
   "id": "shoelace__safe-1",
-  "text": "You should feel this in your outer hips. Any pain in the knees means come out, or take Half Shoelace.",
+  "text": "You should feel this in your outer hips. Any pain in your knees means come out, or take Half Shoelace.",
   "lang": "en",
   "kind": "safety"
  },
@@ -11990,13 +11996,13 @@
  },
  {
   "id": "frog__safe-1",
-  "text": "Feel it in your inner thighs. Sharp pain inside the knee means come out.",
+  "text": "Feel it in your inner thighs. Sharp pain inside your knee means come out.",
   "lang": "en",
   "kind": "safety"
  },
  {
   "id": "frog__safe-2",
-  "text": "In pregnancy, or with a tender sacroiliac joint, keep the knees less wide and the hold short.",
+  "text": "In pregnancy, or with a tender sacroiliac joint, keep your knees less wide and the hold short.",
   "lang": "en",
   "kind": "safety"
  },
@@ -12080,7 +12086,7 @@
  },
  {
   "id": "butterfly__safe-1",
-  "text": "The sensation belongs in the lower back and the inner thighs. Nothing sharp in the knees.",
+  "text": "The sensation belongs in your lower back and your inner thighs. Nothing sharp in your knees.",
   "lang": "en",
   "kind": "safety"
  },
@@ -12176,7 +12182,7 @@
  },
  {
   "id": "half-butterfly__safe-1",
-  "text": "Feel it in the back of your leg and your lower back, never behind the knee.",
+  "text": "Feel it in the back of your leg and your lower back, never behind your knee.",
   "lang": "en",
   "kind": "safety"
  },
@@ -12272,7 +12278,7 @@
  },
  {
   "id": "dragonfly__safe-1",
-  "text": "Feel it in your inner thighs and the backs of your legs. Pain inside the knee means bend your knees or come out.",
+  "text": "Feel it in your inner thighs and the backs of your legs. Pain inside your knee means bend your knees or come out.",
   "lang": "en",
   "kind": "safety"
  },
@@ -12332,7 +12338,7 @@
  },
  {
   "id": "deer__cue-7",
-  "text": "If your back knee complains, move your back foot until the knee is quiet.",
+  "text": "If your back knee complains, move your back foot until your knee is quiet.",
   "lang": "en",
   "kind": "cue-safety"
  },
@@ -12350,7 +12356,7 @@
  },
  {
   "id": "deer__mod-1",
-  "text": "Sit on a bolster or a folded blanket to take pressure off the back knee.",
+  "text": "Sit on a bolster or a folded blanket to take pressure off your back knee.",
   "lang": "en",
   "kind": "modification"
  },
@@ -12362,7 +12368,7 @@
  },
  {
   "id": "deer__safe-1",
-  "text": "Watch the back knee. Any twisting feeling in it means come out.",
+  "text": "Watch your back knee. Any twisting feeling in it means come out.",
   "lang": "en",
   "kind": "safety"
  },
@@ -12452,7 +12458,7 @@
  },
  {
   "id": "cat-pulling-its-tail__safe-1",
-  "text": "Feel it in the front of the thigh and across the chest. Sharp pain in the bent knee means let go.",
+  "text": "Feel it in the front of your thigh and across your chest. Sharp pain in your bent knee means let go.",
   "lang": "en",
   "kind": "safety"
  },
@@ -12548,7 +12554,7 @@
  },
  {
   "id": "caterpillar__safe-1",
-  "text": "Feel it along your back and the backs of your legs. Pain or tingling down the leg means bend your knees.",
+  "text": "Feel it along your back and the backs of your legs. Pain or tingling down your leg means bend your knees.",
   "lang": "en",
   "kind": "safety"
  },
@@ -12626,7 +12632,7 @@
  },
  {
   "id": "snail__mod-2",
-  "text": "Take Legs Up the Wall instead, for a gentle inversion with no weight on the neck.",
+  "text": "Take Legs Up the Wall instead, for a gentle inversion with no weight on your neck.",
   "lang": "en",
   "kind": "modification"
  },
@@ -12651,7 +12657,7 @@
  {
   "id": "sphinx__sa",
   "text": "Sālamba Bhujaṅgāsana",
-  "say": "sah-LAHM-bah boo-jahng-GAH-sah-nah",
+  "say": "sah-LAHM-bah boo-jang-GAH-sah-nah",
   "lang": "sa",
   "kind": "pose-name"
  },
@@ -12735,7 +12741,7 @@
  },
  {
   "id": "sphinx__safe-2",
-  "text": "In pregnancy, skip poses on the belly after the first trimester.",
+  "text": "In pregnancy, skip poses on your belly after the first trimester.",
   "lang": "en",
   "kind": "safety"
  },
@@ -12838,7 +12844,7 @@
  {
   "id": "melting-heart__sa",
   "text": "Anāhatāsana",
-  "say": "ah-NAH-hah-TAH-sah-nah",
+  "say": "ah-nah-hah-TAH-sah-nah",
   "lang": "sa",
   "kind": "pose-name"
  },
@@ -13198,7 +13204,7 @@
  },
  {
   "id": "saddle__safe-2",
-  "text": "Feel it in the thighs and the front of the hips. A pinch in the lower back means more height behind you.",
+  "text": "Feel it in your thighs and the front of your hips. A pinch in the lower back means more height behind you.",
   "lang": "en",
   "kind": "safety"
  },
@@ -13216,7 +13222,7 @@
  },
  {
   "id": "half-saddle__cue-1",
-  "text": "Sit with your left leg straight, and bend your right knee back, the foot beside your hip.",
+  "text": "Sit with your left leg straight, and bend your right knee back, your foot beside your hip.",
   "lang": "en",
   "kind": "cue-transition"
  },
@@ -15758,5 +15764,383 @@
   "text": "If your inner thighs are shaking, bring the knees closer together. Wider isn’t better.",
   "lang": "en",
   "kind": "cue-safety"
+ },
+ {
+  "id": "knee__care-femur",
+  "text": "If your knee feels twisted, turn your whole thigh so your knee points the same way as your toes.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "knee__care-shin-bone",
+  "text": "If your knee aches in a lunge, bring your shin upright, with your knee over your ankle.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "knee__care-knee",
+  "text": "Your knee should never hurt. If it does, come out, and we’ll find another way.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "knee__care-kneecap",
+  "text": "If kneeling hurts your kneecaps, fold a blanket under your knees.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "knee__care-quadriceps",
+  "text": "If the front of your thighs burns too much, come up a little and keep breathing.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "knee__care-it-band",
+  "text": "If you feel it on the outside of your knee, not your hip, come out a little.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "knee__care-extension",
+  "text": "If your knees lock back when you straighten your legs, keep a micro-bend.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "knee__care-hamstrings",
+  "text": "If you feel a sharp pull right behind your knee, bend your knees more.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "knee__care-flexion",
+  "text": "If your knees don’t like bending this deeply, put a rolled blanket behind them.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "spine__care-cervical-spine",
+  "text": "If your neck feels pinched, bring your gaze down to the floor.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "spine__care-thoracic-spine",
+  "text": "If your upper back feels stiff, keep the twist small and let your breath open it.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "spine__care-lumbar-spine",
+  "text": "If your lower back hurts, come out and rest in Child’s Pose.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "spine__care-sacrum",
+  "text": "If you feel the block in your lower back, slide it a little lower, under your sacrum.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "spine__care-tailbone",
+  "text": "If sitting hurts your tailbone, sit on the edge of a folded blanket.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "spine__care-pelvic-tilt",
+  "text": "If arching your lower back pinches, make the movement smaller.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "spine__care-erector-spinae",
+  "text": "If your back cramps in Locust, lower down, rest your forehead, and lift a little less.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "spine__care-quadratus-lumborum",
+  "text": "If one side of your lower back feels tight, make the side bend smaller and keep both hips down.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "spine__care-latissimus-dorsi",
+  "text": "If your back rounds in Downward Dog, bend your knees and take your hands a little wider.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "shoulder__care-collarbones",
+  "text": "If your upper back aches while you sit, lean against a wall and broaden across your collarbones.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "shoulder__care-shoulder-blades",
+  "text": "If you feel a sharp pinch by your shoulder blade, back off until it’s only a stretch.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "shoulder__care-shoulder-joint",
+  "text": "If your shoulders pinch with your arms overhead, open your arms into a wide V.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "shoulder__care-trapezius",
+  "text": "If your neck gets tense, rest your hands on your hips for a few breaths.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "shoulder__care-rhomboids",
+  "text": "If you feel a cramp between your shoulder blades, soften the squeeze and breathe.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "shoulder__care-rotator-cuff",
+  "text": "If your shoulder aches when you lower, put your knees down first.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "shoulder__care-serratus-anterior",
+  "text": "If Plank makes your shoulders ache, lower your knees and push the floor away.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "shoulder__care-protraction-retraction",
+  "text": "If your neck tightens when you squeeze your shoulder blades, draw them down instead.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "shoulder__care-pectoralis-major",
+  "text": "If the front of your chest feels strained, bring your arms lower and closer to your body.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "arm__care-hands",
+  "text": "If your hands tingle, come out, shake them out and rest a moment.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "arm__care-wrist",
+  "text": "If your wrists are sore, fold the edge of your mat under the heels of your hands.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "arm__care-forearm-bones",
+  "text": "If your forearms are sore on the hard floor, fold your mat over or slide a blanket underneath.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "arm__care-elbow",
+  "text": "If your elbows ache, don’t lock them. Keep a microbend.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "arm__care-upper-arm-bone",
+  "text": "If your arms get tired, rest in Child’s Pose and join us again when you’re ready.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "arm__care-forearm-flexors",
+  "text": "If your forearms burn, come down to your knees and shake out your wrists.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "arm__care-biceps-brachii",
+  "text": "If you feel a strain at the front of your arms with your hands behind your back, hold your elbows instead.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "arm__care-forearm-extensors",
+  "text": "If the top of your forearm aches, grip the mat a little less.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "arm__care-triceps-brachii",
+  "text": "If your arms shake, that’s okay. Lower your knees whenever you need to.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "foot__care-ankle",
+  "text": "If the fronts of your ankles hurt when you kneel, roll a blanket under them.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "foot__care-heel",
+  "text": "If your heel is sore when you stand, soften your knees and spread your weight through your whole foot.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "foot__care-arch",
+  "text": "If your arch cramps, come out and gently pull your toes back toward you.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "foot__care-toes",
+  "text": "If tucking your toes hurts, tuck one foot at a time.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "foot__care-tibialis-anterior",
+  "text": "If the fronts of your shins pull too much, sit up higher on a block.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "foot__care-dorsiflexion",
+  "text": "If flexing your foot pulls hard behind your knee, bend that knee a little.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "foot__care-plantar-flexion",
+  "text": "If your foot cramps when you point it, flex it for a breath, then point more softly.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "foot__care-achilles-tendon",
+  "text": "If the cord above your heel feels sore, bend your knees and let your heels lift.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "foot__care-plantar-fascia",
+  "text": "If the soles of your feet burn, lean forward and take some weight into your hands.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "breath__care-diaphragm",
+  "text": "If belly breathing feels strange, rest a hand on your belly and just watch it rise and fall.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "breath__care-ribs",
+  "text": "If your chest feels tight, wrap your hands around your lower ribs and breathe into your hands.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "breath__care-collarbones",
+  "text": "If your shoulders creep up to your ears as you breathe in, let them stay heavy.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "breath__belly",
+  "text": "Breathe in through your nose, and let your belly rise.",
+  "lang": "en",
+  "kind": "cue-breath"
+ },
+ {
+  "id": "breath__ribs",
+  "text": "Keep breathing in, and feel your ribs widen.",
+  "lang": "en",
+  "kind": "cue-breath"
+ },
+ {
+  "id": "breath__collarbones",
+  "text": "Let your breath rise all the way up to your collarbones.",
+  "lang": "en",
+  "kind": "cue-breath"
+ },
+ {
+  "id": "breath__exhale-down",
+  "text": "Breathe out slowly, from your collarbones, to your ribs, to your belly.",
+  "lang": "en",
+  "kind": "cue-breath"
+ },
+ {
+  "id": "breath__belly-in",
+  "text": "At the end of your exhale, let your belly draw gently in.",
+  "lang": "en",
+  "kind": "cue-breath"
+ },
+ {
+  "id": "breath__care-sternum",
+  "text": "If your chest feels closed, sit up on a folded blanket and let your breastbone lift.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "breath__care-pelvic-floor",
+  "text": "If you can’t feel your pelvic floor yet, don’t worry. Breathe out fully and notice the gentle lift.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "breath__care-transversus-abdominis",
+  "text": "If drawing your belly in makes you hold your breath, soften it. You should always be able to breathe.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "breath__care-rectus-abdominis",
+  "text": "If your belly shakes and your breath stops, bend your knees and keep breathing.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "breath__care-external-oblique",
+  "text": "If the twist makes breathing hard, come out a little until your breath is easy again.",
+  "lang": "en",
+  "kind": "cue-safety"
+ },
+ {
+  "id": "breath__holding",
+  "text": "If you notice you’re holding your breath, ease off until it flows again.",
+  "lang": "en",
+  "kind": "cue-breath"
+ },
+ {
+  "id": "breath__lengthen-fold",
+  "text": "Inhale, lengthen your spine. Exhale, fold forward from your hips.",
+  "lang": "en",
+  "kind": "cue-breath"
+ },
+ {
+  "id": "breath__floor-together",
+  "text": "As you breathe in, let your pelvic floor soften. As you breathe out, feel it lift.",
+  "lang": "en",
+  "kind": "cue-breath"
+ },
+ {
+  "id": "breath__bandha",
+  "text": "Draw your low belly gently in, just below your navel.",
+  "lang": "en",
+  "kind": "cue-breath"
+ },
+ {
+  "id": "breath__ujjayi",
+  "text": "Breathe through your nose, with a soft ocean sound in your throat.",
+  "lang": "en",
+  "kind": "cue-breath"
  }
 ]

@@ -136,7 +136,7 @@ export const armLesson = {
     {
       type: 'term', term: 'forearm-extensors',
       figure: { kind: 'back', window: BACK_FOREARM, highlight: ['forearm-extensors'] },
-      cues: ['forearm-extensors__cue-1'],
+      cues: ['forearm-extensors__cue-1', 'forearm-extensors__cue-2'],
       care: { id: 'arm__care-forearm-extensors', en: 'If the top of your forearm aches, grip the mat a little less.', vi: 'Nếu mặt ngoài cẳng tay mỏi đau, bấm ngón tay xuống thảm nhẹ hơn một chút.' },
     },
     {

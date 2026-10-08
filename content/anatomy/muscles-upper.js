@@ -261,6 +261,7 @@ export const MUSCLES_UPPER = [
     feel: { en: 'Along the top of the forearm when you make a fist and pull it toward you.', vi: 'Dọc mặt trên cẳng tay khi bạn nắm tay và kéo về phía mình.' },
     cues: [
       { style: 'vinyasa', en: 'Grip the mat lightly with your fingertips to protect your wrists.', vi: 'Bấm nhẹ đầu ngón tay xuống thảm để bảo vệ cổ tay.' },
+      { style: 'vinyasa', en: 'Spread your fingers wide and lift the backs of your hands away from the mat for a moment.', vi: 'Xoè rộng các ngón tay và nhấc mu bàn tay khỏi thảm một lát.' },
     ],
     works: ['crow-pose', 'handstand', 'plank'], stretches: ['wrist-stretches'],
     wordTrap: 'Cụm “kst” ở giữa “extensors” khó với người Việt; đọc chậm “ek-STEN-sers”.',

@@ -10,7 +10,7 @@
  * is produced by some content; lesson figure windows and label pins are sane.
  */
 import { POSES, TERMS, PHRASE_GROUPS, LESSONS, getTerm, allClips, lessonClipIds } from '../src/lib/content.js'
-import { MUSCLE_REGIONS, SKELETON_LANDMARKS } from '../content/anatomy/regions.js'
+import { MUSCLE_REGIONS, SKELETON_LANDMARKS, SKELETON_BOXES } from '../content/anatomy/regions.js'
 
 const strict = process.argv.includes('--strict')
 const errors = []
@@ -136,7 +136,7 @@ function checkWindow(w, fig) {
   if (![x, y, ww, hh].every((n) => typeof n === 'number')) { err(`${w}: figure.window must be [x, y, w, h]`); return }
   if (x < -ww || y < -hh || x + ww > W * 1.5 || y + hh > H * 1.5 || ww <= 0 || hh <= 0) err(`${w}: window ${JSON.stringify(fig.window)} is off the ${fig.kind} figure (${W}×${H})`)
   for (const id of fig.highlight || []) {
-    const on = fig.kind === 'skeleton' ? (getTerm(id)?.skeleton || SKELETON_LANDMARKS[id]) : MUSCLE_REGIONS[fig.kind]?.[id]
+    const on = fig.kind === 'skeleton' ? (getTerm(id)?.skeleton || SKELETON_LANDMARKS[id] || SKELETON_BOXES[id]) : MUSCLE_REGIONS[fig.kind]?.[id]
     if (!on) warn(`${w}: highlight "${id}" is not drawn on the ${fig.kind} figure`)
   }
 }
@@ -178,7 +178,7 @@ for (const L of LESSONS) {
           if (!(a.bank || []).includes(p.id)) err(`${sw}: pin "${p.id}" is not in the bank`)
           if (!Array.isArray(p.to) || p.to.length !== 2) err(`${sw}: pin "${p.id}" needs to: [x, y]`)
           if (!['above', 'below', 'left', 'right'].includes(p.side || 'below')) err(`${sw}: pin "${p.id}" side`)
-          const on = a.figure?.kind === 'skeleton' ? (getTerm(p.id)?.skeleton || SKELETON_LANDMARKS[p.id]) : MUSCLE_REGIONS[a.figure?.kind]?.[p.id]
+          const on = a.figure?.kind === 'skeleton' ? (getTerm(p.id)?.skeleton || SKELETON_LANDMARKS[p.id] || SKELETON_BOXES[p.id]) : MUSCLE_REGIONS[a.figure?.kind]?.[p.id]
           if (!on) warn(`${sw}: pin "${p.id}" is not drawn on the ${a.figure?.kind} figure`)
         }
         if ((a.bank || []).length <= (a.pins || []).length) warn(`${sw}: the bank has no distractor`)
