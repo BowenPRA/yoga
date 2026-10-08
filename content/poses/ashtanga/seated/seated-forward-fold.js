@@ -7,7 +7,7 @@ export const seatedForwardFold = {
   aka: ['Seated Forward Bend'],
   sa: 'Paścimottānāsana',
   say: 'pash-chee-moh-tah-NAH-sah-nah',
-  vi: 'Gập người về trước ngồi',
+  vi: 'Ngồi gập người về trước',
   ashtanga: {
     series: 'primary',
     section: 'seated',
@@ -27,9 +27,9 @@ export const seatedForwardFold = {
   cues: [
     { id: 'seated-forward-fold__cue-1', kind: 'transition', en: 'Wrap your first two fingers around your big toes. Inhale, and lift your chest.', vi: 'Móc hai ngón tay quanh ngón chân cái. Hít vào, và nâng ngực lên.' },
     { id: 'seated-forward-fold__cue-2', kind: 'alignment', en: 'Exhale, fold forward from your hips, leading with your chest.', vi: 'Thở ra, gập người về trước từ hông, ngực dẫn đường.' },
-    { id: 'seated-forward-fold__cue-3', kind: 'alignment', en: 'Keep your feet flexed and your legs active.', vi: 'Gập bàn chân, kéo mũi chân về phía người, và giữ hai chân luôn hoạt động.' },
+    { id: 'seated-forward-fold__cue-3', kind: 'alignment', en: 'Keep your feet flexed and your legs active.', vi: 'Gập bàn chân, kéo mũi chân về phía người, và giữ hai chân chủ động.' },
     { id: 'seated-forward-fold__cue-4', kind: 'alignment', en: 'Bend your elbows out to the sides and draw your shoulders away from your ears.', vi: 'Mở khuỷu tay sang hai bên và kéo vai xa khỏi tai.' },
-    { id: 'seated-forward-fold__cue-5', kind: 'alignment', en: 'Gaze toward your toes and keep the back of your neck long.', vi: 'Nhìn về phía ngón chân và giữ gáy dài.' },
+    { id: 'seated-forward-fold__cue-5', kind: 'alignment', en: 'Gaze toward your toes and keep the back of your neck long.', vi: 'Nhìn về phía ngón chân và giữ phía sau cổ dài.' },
     { id: 'seated-forward-fold__cue-6', kind: 'soften', en: 'Relax your jaw and your shoulders, and let each exhale take you a little deeper.', vi: 'Thả lỏng vai và hàm, để mỗi hơi thở ra đưa bạn sâu thêm một chút.' },
     { id: 'seated-forward-fold__cue-7', kind: 'breath', en: 'Stay for five breaths, then inhale, look up, and change your grip.', vi: 'Giữ năm nhịp thở, rồi hít vào, nhìn lên và đổi cách nắm.' },
     { id: 'seated-forward-fold__cue-8', kind: 'safety', en: 'If your lower back pulls, bend your knees and keep your spine long.', vi: 'Nếu lưng dưới bị kéo căng, hãy chùng gối và giữ cột sống dài.' },

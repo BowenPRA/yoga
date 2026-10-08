@@ -21,7 +21,7 @@ export const butterfly = {
     vi: 'Để hơi thở di chuyển chậm ở phía sau cơ thể. Mỗi hơi thở ra, để cột sống cong tròn thêm một chút.',
   },
   cues: [
-    { id: 'butterfly__cue-1', kind: 'transition', en: 'Sit on a folded blanket, and bring the soles of your feet together.', vi: 'Ngồi trên chăn gấp, và áp hai lòng bàn chân vào nhau.' },
+    { id: 'butterfly__cue-1', kind: 'transition', en: 'Sit on a folded blanket, and bring the soles of your feet together.', vi: 'Ngồi trên chăn gấp, và áp hai gan bàn chân vào nhau.' },
     { id: 'butterfly__cue-2', kind: 'alignment', en: 'Slide your feet away from you, into a long diamond shape.', vi: 'Trượt hai bàn chân ra xa, tạo thành hình thoi dài.' },
     { id: 'butterfly__cue-3', kind: 'alignment', en: 'If your knees float, rest them on blocks.', vi: 'Nếu gối lơ lửng, đặt gạch bên dưới để đỡ.' },
     { id: 'butterfly__cue-4', kind: 'transition', en: 'Fold forward slowly, and let your back round. Your head can hang.', vi: 'Từ từ gập người về trước, để lưng cong tròn. Đầu có thể buông xuống.' },
@@ -37,7 +37,7 @@ export const butterfly = {
     { id: 'butterfly__mod-3', en: 'Sit with your back against a wall, and stay upright if folding hurts your back.', vi: 'Ngồi tựa lưng vào tường, và giữ lưng thẳng nếu gập người làm lưng đau.', props: ['wall'] },
   ],
   safety: [
-    { id: 'butterfly__safe-1', en: 'The sensation belongs in the lower back and the inner thighs. Nothing sharp in the knees.', vi: 'Cảm giác nên ở lưng dưới và mặt trong đùi. Không đau nhói ở gối.' },
+    { id: 'butterfly__safe-1', en: 'The sensation belongs in your lower back and your inner thighs. Nothing sharp in your knees.', vi: 'Cảm giác nên ở lưng dưới và mặt trong đùi. Không đau nhói ở gối.' },
     { id: 'butterfly__safe-2', en: 'With sciatica or a disc injury, keep your spine long and fold only a little.', vi: 'Nếu bị đau thần kinh toạ hoặc thoát vị đĩa đệm, giữ lưng dài và chỉ gập nhẹ.' },
     { id: 'butterfly__safe-3', en: 'In pregnancy, fold only a little, and leave room for your belly.', vi: 'Khi mang thai, chỉ gập nhẹ, và chừa khoảng trống cho bụng.' },
   ],

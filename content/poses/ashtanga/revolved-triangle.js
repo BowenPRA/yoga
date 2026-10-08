@@ -28,7 +28,7 @@ export const revolvedTriangle = {
   },
 
   cues: [
-    { id: 'revolved-triangle__cue-1', kind: 'transition', en: 'Turn your right toes out and your back foot in, and square your hips forward.', vi: 'Xoay mũi chân phải ra ngoài, bàn chân sau xoay vào trong, và hướng hông vuông về phía trước.' },
+    { id: 'revolved-triangle__cue-1', kind: 'transition', en: 'Turn your right toes out and your back foot in, and square your hips forward.', vi: 'Xoay mũi chân phải ra ngoài, bàn chân sau xoay vào trong, và xoay hông hướng thẳng về phía trước.' },
     { id: 'revolved-triangle__cue-2', kind: 'transition', en: 'Exhale, fold over your front leg and bring your left hand outside your right foot.', vi: 'Thở ra, gập người trên chân trước và đặt tay trái ra ngoài bàn chân phải.' },
     { id: 'revolved-triangle__cue-3', kind: 'alignment', en: 'Press your back heel down and keep your back leg strong.', vi: 'Ấn gót chân sau xuống và giữ chân sau vững.' },
     { id: 'revolved-triangle__cue-4', kind: 'alignment', en: 'Draw your right hip back as you twist.', vi: 'Kéo hông phải ra sau khi bạn vặn.' },

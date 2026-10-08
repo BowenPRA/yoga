@@ -33,7 +33,7 @@ export const squat = {
     { id: 'squat__cue-9', kind: 'soften', en: 'Lie back, and notice the rebound in your feet and your lower back.', vi: 'Nằm ngửa, và cảm nhận dư âm ở bàn chân và lưng dưới.' },
   ],
   modifications: [
-    { id: 'squat__mod-1', en: 'Sit on a block or a bolster to take weight off your knees.', vi: 'Ngồi trên viên gạch hoặc gối ôm để giảm trọng lượng dồn lên gối.', props: ['block', 'bolster'] },
+    { id: 'squat__mod-1', en: 'Sit on a block or a bolster to take weight off your knees.', vi: 'Ngồi trên viên gạch hoặc gối ôm để giảm trọng lượng dồn lên đầu gối.', props: ['block', 'bolster'] },
     { id: 'squat__mod-2', en: 'Lean your back against a wall.', vi: 'Tựa lưng vào tường.', props: ['wall'] },
     { id: 'squat__mod-3', en: 'Hold the seat of a chair in front of you for balance.', vi: 'Nắm vào mặt ghế phía trước để giữ thăng bằng.', props: ['chair'] },
   ],

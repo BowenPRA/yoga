@@ -16,7 +16,7 @@ export const warrior3 = {
     { id: 'warrior-3__cue-1', kind: 'transition', en: 'From Crescent Lunge, shift your weight into your front foot.', vi: 'Từ Chùng chân cao, dồn trọng lượng sang bàn chân trước.' },
     { id: 'warrior-3__cue-2', kind: 'alignment', en: 'Tip forward, and lift your back leg until it makes one line with your back.', vi: 'Nghiêng người về trước, và nâng chân sau cho đến khi chân và lưng thành một đường thẳng.' },
     { id: 'warrior-3__cue-3', kind: 'alignment', en: 'Point your back toes down to the floor, so your hips stay level.', vi: 'Hướng ngón chân sau xuống sàn, để hai hông ngang bằng.' },
-    { id: 'warrior-3__cue-4', kind: 'alignment', en: 'Reach back through your heel, and forward through the crown of your head.', vi: 'Đẩy ra sau qua gót chân, và vươn về trước qua đỉnh đầu.' },
+    { id: 'warrior-3__cue-4', kind: 'alignment', en: 'Reach back through your heel, and forward through the crown of your head.', vi: 'Đẩy gót chân ra sau, và vươn đỉnh đầu về phía trước.' },
     { id: 'warrior-3__cue-5', kind: 'alignment', en: 'Keep a micro-bend in your standing knee.', vi: 'Giữ gối chân trụ hơi chùng một chút.' },
     { id: 'warrior-3__cue-6', kind: 'soften', en: 'Find a still point on the floor, and soften your jaw.', vi: 'Tìm một điểm cố định trên sàn để nhìn, và thả lỏng hàm.' },
     { id: 'warrior-3__cue-7', kind: 'breath', en: 'Stay for three breaths.', vi: 'Giữ ba nhịp thở.' },

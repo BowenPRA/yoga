@@ -12,7 +12,7 @@ export const seal = {
     counter: 'child-pose',
     note: {
       en: 'One to five minutes, usually after Sphinx. The arms straighten, so the lower back arches more deeply than in Sphinx. Turn the hands out and place them wider if the wrists or shoulders complain; the lower back should never pinch.',
-      vi: 'Một đến năm phút, thường sau Nhân sư. Hai tay duỗi thẳng nên lưng dưới ưỡn sâu hơn trong Nhân sư. Xoay bàn tay ra ngoài và đặt rộng hơn nếu cổ tay hoặc vai khó chịu; lưng dưới không bao giờ được nhói.',
+      vi: 'Một đến năm phút, thường sau Nhân sư. Hai tay duỗi thẳng nên lưng dưới ưỡn sâu hơn so với Nhân sư. Xoay bàn tay ra ngoài và đặt rộng hơn nếu cổ tay hoặc vai khó chịu; lưng dưới không bao giờ được nhói.',
     },
   },
   breath: {

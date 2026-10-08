@@ -46,7 +46,7 @@ export const triangle = {
   ],
 
   safety: [
-    { id: 'triangle__safe-1', en: 'If your knees tend to push back, keep a soft bend in your front knee.', vi: 'Nếu gối bạn hay bị ưỡn ra sau, giữ gối trước hơi chùng.' },
+    { id: 'triangle__safe-1', en: 'If your knees tend to push back, keep a soft bend in your front knee.', vi: 'Nếu gối bạn hay bị duỗi quá ra sau, giữ gối trước hơi chùng.' },
     { id: 'triangle__safe-2', en: 'With a neck injury, look forward, not up.', vi: 'Nếu cổ có chấn thương, nhìn về trước, không nhìn lên.' },
     { id: 'triangle__safe-3', en: 'In pregnancy, shorten your stance and use a block.', vi: 'Khi mang thai, thu ngắn khoảng cách hai chân và dùng gạch.' },
   ],

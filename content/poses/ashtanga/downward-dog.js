@@ -28,9 +28,9 @@ export const downwardDog = {
 
   cues: [
     { id: 'downward-dog__cue-1', kind: 'transition', en: 'Exhale, roll over your toes and lift your hips up and back.', vi: 'Thở ra, lăn qua các ngón chân và nâng hông lên, ra sau.' },
-    { id: 'downward-dog__cue-2', kind: 'alignment', en: 'Spread your fingers wide and press down through your knuckles.', vi: 'Xoè rộng các ngón tay và ấn xuống qua các khớp ngón tay.' },
+    { id: 'downward-dog__cue-2', kind: 'alignment', en: 'Spread your fingers wide and press down through your knuckles.', vi: 'Xoè rộng các ngón tay và ấn các khớp ngón tay xuống sàn.' },
     { id: 'downward-dog__cue-3', kind: 'alignment', en: 'Let your head hang between your arms, and gaze toward your navel.', vi: 'Để đầu buông giữa hai cánh tay, và nhìn về phía rốn.' },
-    { id: 'downward-dog__cue-4', kind: 'alignment', en: 'Rotate your upper arms outward to make space for your neck.', vi: 'Xoay bắp tay ra ngoài để tạo khoảng trống cho cổ.' },
+    { id: 'downward-dog__cue-4', kind: 'alignment', en: 'Rotate your upper arms outward to make space for your neck.', vi: 'Xoay cánh tay trên ra ngoài để tạo khoảng trống cho cổ.' },
     { id: 'downward-dog__cue-5', kind: 'alignment', en: 'Reach your heels toward the floor. They don’t have to touch.', vi: 'Hướng gót chân xuống sàn. Không nhất thiết phải chạm.' },
     { id: 'downward-dog__cue-6', kind: 'soften', en: 'Bend your knees as much as you need to keep your back long.', vi: 'Chùng gối bao nhiêu tuỳ cần để giữ lưng dài.' },
     { id: 'downward-dog__cue-7', kind: 'breath', en: 'Stay for five breaths. Breathe into the back of your body.', vi: 'Giữ năm nhịp thở. Hít thở hướng vào phía sau cơ thể.' },
@@ -39,13 +39,13 @@ export const downwardDog = {
   ],
 
   modifications: [
-    { id: 'downward-dog__mod-1', en: 'Keep your knees bent and your heels lifted if the back of your legs feels tight.', vi: 'Giữ gối chùng và gót nhấc lên nếu mặt sau chân thấy căng.', props: [] },
+    { id: 'downward-dog__mod-1', en: 'Keep your knees bent and your heels lifted if the backs of your legs feel tight.', vi: 'Giữ gối chùng và gót nhấc lên nếu mặt sau chân thấy căng.', props: [] },
     { id: 'downward-dog__mod-2', en: 'Place your hands on blocks to take weight off your wrists.', vi: 'Đặt hai tay lên gạch để giảm trọng lượng dồn lên cổ tay.', props: ['blocks'] },
     { id: 'downward-dog__mod-3', en: 'Come to your forearms, or rest in Puppy Pose with your knees down.', vi: 'Hạ xuống chống cẳng tay, hoặc nghỉ ở tư thế Chó con với hai gối chạm sàn.', props: [] },
   ],
 
   safety: [
-    { id: 'downward-dog__safe-1', en: 'If your wrists hurt, press through your knuckles and fingertips, not the heel of your hand.', vi: 'Nếu cổ tay đau, ấn qua các khớp và đầu ngón tay, không dồn vào gốc bàn tay.' },
+    { id: 'downward-dog__safe-1', en: 'If your wrists hurt, press through your knuckles and fingertips, not the heel of your hand.', vi: 'Nếu cổ tay đau, dồn lực vào các khớp ngón tay và đầu ngón tay, không dồn vào gốc bàn tay.' },
     { id: 'downward-dog__safe-2', en: 'Late in pregnancy, keep the hold short, or choose a gentler option.', vi: 'Ở giai đoạn cuối thai kỳ, giữ ngắn thôi, hoặc chọn một lựa chọn nhẹ nhàng hơn.' },
   ],
 

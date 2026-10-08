@@ -53,7 +53,7 @@ export const lotusInShoulderstand = {
     { id: 'lotus-in-shoulderstand__safe-2', en: 'With a neck injury, or in pregnancy, skip this and rest on your back.', vi: 'Nếu cổ có chấn thương, hoặc khi mang thai, bỏ qua tư thế này và nằm ngửa nghỉ.' },
   ],
 
-  muscles: { working: ['triceps-brachii', 'rectus-abdominis'], lengthening: ['trapezius', 'erector-spinae'] },
+  muscles: { working: ['rectus-abdominis'], lengthening: ['trapezius', 'erector-spinae'] },
   joints: ['cervical-spine', 'knee', 'hip-joint', 'thoracic-spine'],
   transitionsTo: ['fish-pose'],
   figure: 'lotus-in-shoulderstand',

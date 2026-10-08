@@ -32,13 +32,13 @@ export const catPullingItsTail = {
   ],
   modifications: [
     { id: 'cat-pulling-its-tail__mod-1', en: 'Loop a strap around your foot if you can’t reach it.', vi: 'Quàng dây quanh bàn chân nếu tay chưa với tới.', props: ['strap'] },
-    { id: 'cat-pulling-its-tail__mod-2', en: 'Rest your top knee on a block or a bolster.', vi: 'Kê gạch hoặc gối ôm dưới gối trên.', props: ['block', 'bolster'] },
+    { id: 'cat-pulling-its-tail__mod-2', en: 'Rest your top knee on a block or a bolster.', vi: 'Kê gạch hoặc gối ôm dưới đầu gối trên.', props: ['block', 'bolster'] },
     { id: 'cat-pulling-its-tail__mod-3', en: 'Rest your head on a folded blanket.', vi: 'Kê chăn gấp dưới đầu.', props: ['blanket'] },
   ],
   safety: [
-    { id: 'cat-pulling-its-tail__safe-1', en: 'Feel it in the front of the thigh and across the chest. Sharp pain in the bent knee means let go.', vi: 'Cảm giác nên ở mặt trước đùi và qua ngực. Đau nhói ở gối co nghĩa là cần buông ra.' },
+    { id: 'cat-pulling-its-tail__safe-1', en: 'Feel it in the front of your thigh and across your chest. Sharp pain in your bent knee means let go.', vi: 'Cảm giác nên ở mặt trước đùi và qua ngực. Đau nhói ở gối co nghĩa là cần buông ra.' },
     { id: 'cat-pulling-its-tail__safe-2', en: 'With a tender sacroiliac joint or lower back, keep the twist small.', vi: 'Nếu khớp cùng chậu hoặc lưng dưới nhạy cảm, chỉ vặn nhẹ.' },
-    { id: 'cat-pulling-its-tail__safe-3', en: 'In pregnancy, stay on your side without the twist, with a bolster under your top knee.', vi: 'Khi mang thai, nằm nghiêng mà không vặn, kê gối ôm dưới gối trên.' },
+    { id: 'cat-pulling-its-tail__safe-3', en: 'In pregnancy, stay on your side without the twist, with a bolster under your top knee.', vi: 'Khi mang thai, nằm nghiêng mà không vặn, kê gối ôm dưới đầu gối trên.' },
   ],
   muscles: {
     working: [],

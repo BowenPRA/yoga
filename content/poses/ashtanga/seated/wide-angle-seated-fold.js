@@ -7,13 +7,14 @@ export const wideAngleSeatedFold = {
   aka: ['Seated Wide-Legged Forward Fold'],
   sa: 'Upaviṣṭha Koṇāsana',
   say: 'oo-pah-VEESH-tah koh-NAH-sah-nah',
-  vi: 'Góc mở rộng ngồi',
+  vi: 'Ngồi gập người dang rộng chân',
   ashtanga: {
     series: 'primary',
     section: 'seated',
     position: 34,
+    vinyasas: 15,
     breaths: 5,
-    drishti: 'third-eye',
+    drishti: 'nose',
     note: {
       en: 'A is a wide-legged fold, held in the eighth vinyasa. On an inhale you come straight up into B, balancing on your sitting bones with your legs lifted wide and your gaze up, in the ninth.',
       vi: 'A là gập người dang rộng chân, giữ ở vinyasa thứ tám. Khi hít vào, bạn lên thẳng thế B, giữ thăng bằng trên xương ngồi với hai chân nâng cao và dang rộng, mắt nhìn lên, ở vinyasa thứ chín.',

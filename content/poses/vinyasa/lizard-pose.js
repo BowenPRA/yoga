@@ -5,8 +5,12 @@ export const lizardPose = {
   level: 'moderate',
   en: 'Lizard Pose',
   sa: 'Uttāna Pṛṣṭhāsana',
-  say: 'oo-TAHN prish-TAH-sah-nah',
+  say: 'oo-TAH-nah prish-TAH-sah-nah',
   vi: 'Thằn lằn',
+  saNote: {
+    en: 'A modern name, “stretched-out back”, often written Utthan Pristhasana. Most teachers simply say Lizard.',
+    vi: 'Một cái tên hiện đại, nghĩa là “lưng duỗi dài”, thường được viết là Utthan Pristhasana. Hầu hết giáo viên chỉ gọi là Lizard, tư thế Thằn lằn.',
+  },
   breath: {
     en: 'Exhale to lower onto your hands or forearms. Breathe slowly into your hips for five breaths. Inhale to come up.',
     vi: 'Thở ra, hạ xuống chống bàn tay hoặc cẳng tay. Thở chậm vào vùng hông trong năm nhịp. Hít vào để lên.',
@@ -29,7 +33,7 @@ export const lizardPose = {
   ],
   safety: [
     { id: 'lizard-pose__safe-1', en: 'Keep your front knee pointing toward your toes, not falling inward.', vi: 'Giữ gối trước hướng về mũi chân, không đổ vào trong.' },
-    { id: 'lizard-pose__safe-2', en: 'In Yin, a version of this shape is held for minutes as Dragon. After a long hold, come out slowly.', vi: 'Trong Yin, một biến thể của dáng này được giữ vài phút trong tư thế Rồng. Sau khi giữ lâu, hãy thoát thế từ từ.' },
+    { id: 'lizard-pose__safe-2', en: 'In Yin, a version of this shape is held for minutes as Dragon. After a long hold, come out slowly.', vi: 'Trong Yin, một biến thể của dáng này được giữ vài phút trong tư thế Con rồng. Sau khi giữ lâu, hãy thoát thế từ từ.' },
     { id: 'lizard-pose__safe-3', en: 'In pregnancy, stay on your hands and keep your back knee down.', vi: 'Khi mang thai, giữ trên bàn tay và để gối sau trên sàn.' },
   ],
   muscles: {

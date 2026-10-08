@@ -16,11 +16,12 @@ export const tortoisePose = {
     series: 'primary',
     section: 'seated',
     position: 30,
+    vinyasas: 16,
     breaths: 5,
     drishti: 'third-eye',
     note: {
-      en: 'Follows Shoulder-Pressing Pose, and again you jump in from Downward Dog. Tortoise is held in the seventh vinyasa and Sleeping Tortoise in the eighth, five breaths each.',
-      vi: 'Đứng sau Ép vai, và bạn lại nhảy vào thế từ Chó úp mặt. Con rùa được giữ ở vinyasa thứ bảy và Rùa ngủ ở vinyasa thứ tám, mỗi tư thế năm nhịp thở.',
+      en: 'Follows Shoulder-Pressing Pose, and again you jump in from Downward Dog. Tortoise is held in the seventh vinyasa and Sleeping Tortoise straight after it, five breaths each, within one count of sixteen.',
+      vi: 'Nối tiếp sau Ép vai, và bạn lại nhảy vào thế từ Chó úp mặt. Con rùa được giữ ở vinyasa thứ bảy và Rùa ngủ ngay sau đó, mỗi tư thế năm nhịp thở, trong cùng một cách đếm mười sáu vinyasa.',
     },
   },
   breath: {

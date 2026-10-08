@@ -5,7 +5,7 @@ export const caterpillar = {
   level: 'gentle',
   en: 'Caterpillar',
   sa: null,
-  saNote: { en: 'Caterpillar is the Yin name. The yang pose is Seated Forward Fold, Paścimottānāsana, folded from the hips with a long spine.', vi: 'Sâu bướm là tên Yin. Tư thế yang là Gập người ngồi, Paścimottānāsana, gập từ hông với lưng dài.' },
+  saNote: { en: 'Caterpillar is the Yin name. The yang pose is Seated Forward Fold, Paścimottānāsana, folded from the hips with a long spine.', vi: 'Sâu bướm là tên Yin. Tư thế yang là Ngồi gập người về trước, Paścimottānāsana, gập từ hông với lưng dài.' },
   vi: 'Sâu bướm',
   yin: {
     holdMinutes: 4,
@@ -22,7 +22,7 @@ export const caterpillar = {
   },
   cues: [
     { id: 'caterpillar__cue-1', kind: 'transition', en: 'Sit on a folded blanket, with your legs straight out in front of you.', vi: 'Ngồi trên chăn gấp, hai chân duỗi thẳng phía trước.' },
-    { id: 'caterpillar__cue-2', kind: 'alignment', en: 'Roll a blanket under your knees, or lay a bolster along your legs.', vi: 'Cuộn chăn đặt dưới gối, hoặc đặt gối ôm dọc trên chân.' },
+    { id: 'caterpillar__cue-2', kind: 'alignment', en: 'Roll a blanket under your knees, or lay a bolster along your legs.', vi: 'Cuộn chăn đặt dưới đầu gối, hoặc đặt gối ôm dọc trên chân.' },
     { id: 'caterpillar__cue-3', kind: 'transition', en: 'Fold forward, and let your back round like a caterpillar.', vi: 'Gập người về trước, để lưng cong tròn như một con sâu bướm.' },
     { id: 'caterpillar__cue-4', kind: 'soften', en: 'Find your edge, and let your head hang.', vi: 'Tìm ngưỡng của bạn, và để đầu buông xuống.' },
     { id: 'caterpillar__cue-5', kind: 'soften', en: 'Let the backs of your legs soften. Your feet can relax.', vi: 'Để mặt sau chân mềm ra. Bàn chân có thể thả lỏng.' },
@@ -37,7 +37,7 @@ export const caterpillar = {
     { id: 'caterpillar__mod-3', en: 'Rest your forehead on a block.', vi: 'Tựa trán lên một viên gạch.', props: ['block'] },
   ],
   safety: [
-    { id: 'caterpillar__safe-1', en: 'Feel it along your back and the backs of your legs. Pain or tingling down the leg means bend your knees.', vi: 'Cảm giác nên ở dọc lưng và mặt sau chân. Đau hoặc tê dọc chân nghĩa là cần chùng gối.' },
+    { id: 'caterpillar__safe-1', en: 'Feel it along your back and the backs of your legs. Pain or tingling down your leg means bend your knees.', vi: 'Cảm giác nên ở dọc lưng và mặt sau chân. Đau hoặc tê dọc chân nghĩa là cần chùng gối.' },
     { id: 'caterpillar__safe-2', en: 'With a disc injury in the lower back, skip the rounded fold, and take Legs Up the Wall instead.', vi: 'Nếu bị thoát vị đĩa đệm ở lưng dưới, bỏ qua tư thế gập cong lưng, thay bằng Gác chân lên tường.' },
     { id: 'caterpillar__safe-3', en: 'In pregnancy, open your legs a little to make room for your belly.', vi: 'Khi mang thai, mở hai chân rộng ra một chút để chừa chỗ cho bụng.' },
   ],

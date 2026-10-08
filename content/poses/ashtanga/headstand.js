@@ -38,7 +38,7 @@ export const headstand = {
     { id: 'headstand__cue-5', kind: 'alignment', en: 'Stack your hips over your shoulders, and hug your legs together.', vi: 'Đặt hông thẳng trên vai, và ép hai chân vào nhau.' },
     { id: 'headstand__cue-6', kind: 'soften', en: 'Keep your face and jaw soft.', vi: 'Giữ khuôn mặt và hàm mềm.' },
     { id: 'headstand__cue-7', kind: 'breath', en: 'Stay for up to twenty-five breaths, gazing toward your nose.', vi: 'Giữ đến hai mươi lăm nhịp thở, mắt nhìn về chóp mũi.' },
-    { id: 'headstand__cue-8', kind: 'safety', en: 'Most of your weight is in your forearms. If your neck feels it, come down.', vi: 'Phần lớn trọng lượng nằm ở cẳng tay. Nếu cổ thấy nặng, hãy hạ xuống.' },
+    { id: 'headstand__cue-8', kind: 'safety', en: 'Most of your weight is in your forearms. If your neck feels it, come down.', vi: 'Phần lớn trọng lượng nằm ở cẳng tay. Nếu thấy cổ bị đè nặng, hãy hạ xuống.' },
     { id: 'headstand__cue-9', kind: 'transition', en: 'Exhale, lower your legs slowly, and rest in Child’s Pose.', vi: 'Thở ra, hạ hai chân xuống từ từ, và nghỉ ở tư thế Em bé.' },
   ],
 
@@ -49,7 +49,7 @@ export const headstand = {
   ],
 
   safety: [
-    { id: 'headstand__safe-1', en: 'With a neck injury, high blood pressure or glaucoma, skip Headstand and rest in Child’s Pose.', vi: 'Nếu cổ có chấn thương, bạn bị huyết áp cao hoặc tăng nhãn áp, bỏ qua Trồng chuối và nghỉ ở tư thế Em bé.' },
+    { id: 'headstand__safe-1', en: 'With a neck injury, high blood pressure or glaucoma, skip Headstand and rest in Child’s Pose.', vi: 'Nếu cổ có chấn thương, bạn bị huyết áp cao hoặc tăng nhãn áp, bỏ qua Trồng chuối bằng đầu và nghỉ ở tư thế Em bé.' },
     { id: 'headstand__safe-2', en: 'Never jump or kick up. Lift slowly, with control.', vi: 'Không bao giờ bật nhảy hay đá chân lên. Nâng lên từ từ, có kiểm soát.' },
     { id: 'headstand__safe-3', en: 'In pregnancy, practise it only if it’s already steady in your practice, and near a wall.', vi: 'Khi mang thai, chỉ tập nếu tư thế này đã vững trong buổi tập của bạn, và tập gần tường.' },
   ],

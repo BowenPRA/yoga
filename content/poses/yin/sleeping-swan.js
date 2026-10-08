@@ -35,7 +35,7 @@ export const sleepingSwan = {
   modifications: [
     { id: 'sleeping-swan__mod-1', en: 'Place a bolster or a folded blanket under your front hip so your hips stay level.', vi: 'Kê gối ôm hoặc chăn gấp dưới hông trước để hai bên hông cân bằng.', props: ['bolster', 'blanket'] },
     { id: 'sleeping-swan__mod-2', en: 'Rest your forehead on a block or on your stacked fists.', vi: 'Tựa trán lên gạch hoặc lên hai nắm tay chồng lên nhau.', props: ['block'] },
-    { id: 'sleeping-swan__mod-3', en: 'If the knee complains, lie on your back and take Eye of the Needle instead.', vi: 'Nếu gối khó chịu, nằm ngửa và chuyển sang tư thế Lỗ kim (số 4 nằm).', props: [] },
+    { id: 'sleeping-swan__mod-3', en: 'If the knee complains, lie on your back and take Eye of the Needle instead.', vi: 'Nếu gối khó chịu, nằm ngửa và chuyển sang tư thế Số 4 nằm.', props: [] },
   ],
   safety: [
     { id: 'sleeping-swan__safe-1', en: 'The sensation belongs in the outer hip. Pain in the knee means come out.', vi: 'Cảm giác căng phải ở bên ngoài hông. Đau ở gối nghĩa là cần thoát thế.' },

@@ -5,7 +5,7 @@ export const fishPose = {
   level: 'moderate',
   en: 'Fish Pose',
   sa: 'Matsyāsana',
-  say: 'mat-see-AH-sah-nah',
+  say: 'maht-see-AH-sah-nah',
   vi: 'Con cá',
 
   ashtanga: {
@@ -13,7 +13,7 @@ export const fishPose = {
     section: 'finishing',
     position: 45,
     breaths: 8,
-    drishti: 'nose',
+    drishti: 'third-eye',
     note: {
       en: 'The counterpose to the shoulderstand group: roll down still in lotus, arch your back onto the crown of your head, and hold your feet, for eight breaths. The teacher says “Inhale, Matsyāsana” and counts eight.',
       vi: 'Tư thế đối của nhóm đứng bằng vai: lăn xuống vẫn giữ hoa sen, ưỡn lưng tựa lên đỉnh đầu, và nắm bàn chân, trong tám nhịp thở. Giáo viên nói “Hít vào, Matsyāsana” và đếm tám nhịp.',
@@ -48,7 +48,7 @@ export const fishPose = {
     { id: 'fish-pose__safe-2', en: 'With a lower back injury, keep your legs straight and the arch small.', vi: 'Nếu lưng dưới có chấn thương, giữ hai chân thẳng và chỉ ưỡn nhẹ.' },
   ],
 
-  muscles: { working: ['erector-spinae', 'rhomboids'], lengthening: ['rectus-abdominis', 'sternocleidomastoid'] },
+  muscles: { working: ['erector-spinae'], lengthening: ['rectus-abdominis', 'sternocleidomastoid'] },
   joints: ['thoracic-spine', 'cervical-spine', 'crown', 'knee'],
   transitionsTo: ['extended-leg-pose'],
   figure: 'fish-pose',

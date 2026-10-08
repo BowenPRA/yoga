@@ -16,7 +16,7 @@ export const handstand = {
     { id: 'handstand__cue-2', kind: 'alignment', en: 'Spread your fingers, and grip the mat with your fingertips.', vi: 'Xoè các ngón tay, và bám thảm bằng đầu ngón tay.' },
     { id: 'handstand__cue-3', kind: 'transition', en: 'Step one foot in, and kick up gently with the other leg.', vi: 'Bước một chân vào gần, và nhẹ nhàng đá chân kia lên.' },
     { id: 'handstand__cue-4', kind: 'alignment', en: 'Press the floor away, and stack your shoulders over your wrists.', vi: 'Đẩy sàn ra xa, và đặt vai thẳng trên cổ tay.' },
-    { id: 'handstand__cue-5', kind: 'alignment', en: 'Draw your belly in, and reach up through your heels.', vi: 'Thu bụng vào, và vươn lên qua gót chân.' },
+    { id: 'handstand__cue-5', kind: 'alignment', en: 'Draw your belly in, and reach up through your heels.', vi: 'Thu bụng vào, và vươn gót chân lên cao.' },
     { id: 'handstand__cue-6', kind: 'soften', en: 'Keep your neck relaxed, and look at the floor between your hands.', vi: 'Giữ cổ thả lỏng, và nhìn xuống sàn giữa hai bàn tay.' },
     { id: 'handstand__cue-7', kind: 'breath', en: 'Keep breathing. Stay for three to five breaths.', vi: 'Tiếp tục thở. Giữ ba đến năm nhịp thở.' },
     { id: 'handstand__cue-8', kind: 'safety', en: 'If you lose your balance, turn to one side and step down, like a cartwheel.', vi: 'Nếu mất thăng bằng, xoay người sang một bên và hạ chân xuống, như khi nhào lộn ngang.' },

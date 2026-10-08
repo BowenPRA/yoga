@@ -5,7 +5,7 @@ export const dangling = {
   level: 'gentle',
   en: 'Dangling',
   sa: null,
-  saNote: { en: 'Dangling is the Yin name. The yang pose is Standing Forward Fold, Uttānāsana, done with straighter legs and a longer spine.', vi: 'Treo người là tên Yin. Tư thế yang là Gập người đứng, Uttānāsana, thực hiện với chân thẳng hơn và lưng dài hơn.' },
+  saNote: { en: 'Dangling is the Yin name. The yang pose is Standing Forward Fold, Uttānāsana, done with straighter legs and a longer spine.', vi: 'Treo người là tên Yin. Tư thế yang là Đứng gập người, Uttānāsana, thực hiện với chân thẳng hơn và lưng dài hơn.' },
   vi: 'Treo người',
   yin: {
     holdMinutes: 2,

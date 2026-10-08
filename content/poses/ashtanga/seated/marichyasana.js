@@ -19,8 +19,8 @@ export const marichyasana = {
     breaths: 5,
     drishti: 'toes',
     note: {
-      en: 'Four versions, each side with its own vinyasa. A and B are bound forward folds, held in the eighth vinyasa on the right and the fifteenth on the left; C and D are bound twists toward your bent knee, gazing over your back shoulder. B and D add a half lotus.',
-      vi: 'Bốn phiên bản, mỗi bên có vinyasa riêng. A và B là gập người có khoá tay, giữ ở vinyasa thứ tám bên phải và thứ mười lăm bên trái; C và D là vặn người có khoá tay về phía gối co, nhìn qua vai phía sau. B và D có thêm nửa hoa sen.',
+      en: 'Four versions, each side with its own vinyasa. A and B are bound forward folds of twenty-two vinyasas, held in the eighth on the right and the fifteenth on the left, gazing at your toes; C and D are bound twists of eighteen vinyasas toward your bent knee, held in the seventh and the twelfth, gazing over your back shoulder. B and D add a half lotus.',
+      vi: 'Bốn phiên bản, mỗi bên có vinyasa riêng. A và B là gập người có khoá tay, mỗi phiên bản hai mươi hai vinyasa, giữ ở vinyasa thứ tám bên phải và thứ mười lăm bên trái, mắt nhìn ngón chân; C và D là vặn người có khoá tay về phía gối co, mỗi phiên bản mười tám vinyasa, giữ ở vinyasa thứ bảy và thứ mười hai, nhìn qua vai phía sau. B và D có thêm nửa hoa sen.',
     },
   },
   breath: {
@@ -35,7 +35,7 @@ export const marichyasana = {
     { id: 'marichyasana__cue-5', kind: 'alignment', en: 'Inhale, lift your chest; exhale, fold forward over your straight leg.', vi: 'Hít vào, nâng ngực; thở ra, gập người về trước trên chân duỗi thẳng.' },
     { id: 'marichyasana__cue-6', kind: 'soften', en: 'Let your shoulders roll back and your neck relax.', vi: 'Để vai xoay về sau và cổ thả lỏng.' },
     { id: 'marichyasana__cue-7', kind: 'breath', en: 'Stay for five breaths, gazing toward your toes.', vi: 'Giữ năm nhịp thở, nhìn về phía ngón chân.' },
-    { id: 'marichyasana__cue-8', kind: 'safety', en: 'In B and D, if your half-lotus knee hurts, sit cross-legged on that side instead.', vi: 'Ở B và D, nếu gối bên nửa hoa sen bị đau, hãy ngồi xếp bằng ở bên đó.' },
+    { id: 'marichyasana__cue-8', kind: 'safety', en: 'In B and D, if your half-lotus knee hurts, sit cross-legged on that side instead.', vi: 'Ở B và D, nếu gối bên nửa hoa sen bị đau, hãy co chân bên đó vào thế ngồi xếp bằng.' },
     { id: 'marichyasana__cue-9', kind: 'transition', en: 'Inhale, look up, release your hands, and take a vinyasa before the other side.', vi: 'Hít vào, nhìn lên, thả tay ra, và làm một vinyasa trước khi đổi bên.' },
   ],
   modifications: [

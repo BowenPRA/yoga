@@ -14,7 +14,7 @@ export const childPose = {
   cues: [
     { id: 'child-pose__cue-1', kind: 'transition', en: 'Bring your big toes together, and sit back toward your heels.', vi: 'Chạm hai ngón chân cái vào nhau, và ngồi lùi về phía gót chân.' },
     { id: 'child-pose__cue-2', kind: 'alignment', en: 'Open your knees as wide as your mat, or keep them together.', vi: 'Mở hai gối rộng bằng thảm, hoặc giữ hai gối khép lại.' },
-    { id: 'child-pose__cue-3', kind: 'alignment', en: 'Walk your hands forward, and rest your forehead on the mat.', vi: 'Đưa hai tay về trước, và tựa đầu xuống thảm.' },
+    { id: 'child-pose__cue-3', kind: 'alignment', en: 'Walk your hands forward, and rest your forehead on the mat.', vi: 'Đưa hai tay về trước, và tựa trán xuống thảm.' },
     { id: 'child-pose__cue-4', kind: 'alignment', en: 'Let your hips sink back toward your heels.', vi: 'Để hông chìm dần về phía gót chân.' },
     { id: 'child-pose__cue-5', kind: 'soften', en: 'Let your shoulders and your whole back soften.', vi: 'Để vai và cả lưng mềm xuống.' },
     { id: 'child-pose__cue-6', kind: 'breath', en: 'Take five slow breaths here. Breathe into your back.', vi: 'Thở chậm năm nhịp ở đây. Thở vào lưng.' },
@@ -23,8 +23,8 @@ export const childPose = {
     { id: 'child-pose__cue-9', kind: 'transition', en: 'When you’re ready, walk your hands back and slowly sit up.', vi: 'Khi sẵn sàng, đưa hai tay về và từ từ ngồi dậy.' },
   ],
   modifications: [
-    { id: 'child-pose__mod-1', en: 'Rest your chest on a bolster, placed lengthwise between your knees.', vi: 'Tựa ngực lên gối ôm, đặt dọc giữa hai gối.', props: ['bolster'] },
-    { id: 'child-pose__mod-2', en: 'Place a block under your forehead if it doesn’t reach the mat.', vi: 'Kê gạch dưới đầu nếu đầu chưa chạm thảm.', props: ['block'] },
+    { id: 'child-pose__mod-1', en: 'Rest your chest on a bolster, placed lengthwise between your knees.', vi: 'Tựa ngực lên gối ôm, đặt dọc giữa hai đầu gối.', props: ['bolster'] },
+    { id: 'child-pose__mod-2', en: 'Place a block under your forehead if it doesn’t reach the mat.', vi: 'Kê gạch dưới trán nếu trán chưa chạm thảm.', props: ['block'] },
     { id: 'child-pose__mod-3', en: 'Put a rolled blanket between your hips and your heels.', vi: 'Đặt chăn cuộn giữa hông và gót chân.', props: ['blanket'] },
   ],
   safety: [

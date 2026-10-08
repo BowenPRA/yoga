@@ -15,7 +15,7 @@ export const plank = {
   cues: [
     { id: 'plank__cue-1', kind: 'transition', en: 'From Downward Dog, inhale and shift forward, shoulders over your wrists.', vi: 'Từ Chó úp mặt, hít vào và dịch người về trước, vai thẳng trên cổ tay.' },
     { id: 'plank__cue-2', kind: 'alignment', en: 'Spread your fingers wide and press the floor away.', vi: 'Xoè rộng các ngón tay và đẩy sàn ra xa.' },
-    { id: 'plank__cue-3', kind: 'alignment', en: 'Draw your belly in and reach back through your heels.', vi: 'Thu bụng vào và đẩy ra sau qua gót chân.' },
+    { id: 'plank__cue-3', kind: 'alignment', en: 'Draw your belly in and reach back through your heels.', vi: 'Thu bụng vào và đẩy gót chân ra sau.' },
     { id: 'plank__cue-4', kind: 'alignment', en: 'Make one long line from the crown of your head to your heels.', vi: 'Tạo một đường thẳng dài từ đỉnh đầu đến gót chân.' },
     { id: 'plank__cue-5', kind: 'alignment', en: 'Keep your neck long, and look at the floor just in front of your hands.', vi: 'Giữ cổ dài, và nhìn xuống sàn ngay phía trước hai bàn tay.' },
     { id: 'plank__cue-6', kind: 'soften', en: 'Let your shoulders stay wide, and soften your jaw.', vi: 'Giữ vai rộng, và thả lỏng hàm.' },
@@ -29,7 +29,7 @@ export const plank = {
     { id: 'plank__mod-3', en: 'Practise Plank standing up, with your hands on a wall.', vi: 'Tập Tấm ván ở tư thế đứng, hai tay chống vào tường.', props: ['wall'] },
   ],
   safety: [
-    { id: 'plank__safe-1', en: 'If your wrists hurt, press into your knuckles and fingertips, or come down onto your forearms.', vi: 'Nếu cổ tay đau, ấn qua các khớp và đầu ngón tay, hoặc hạ xuống chống cẳng tay.' },
+    { id: 'plank__safe-1', en: 'If your wrists hurt, press into your knuckles and fingertips, or come down onto your forearms.', vi: 'Nếu cổ tay đau, dồn lực vào các khớp ngón tay và đầu ngón tay, hoặc hạ xuống chống cẳng tay.' },
     { id: 'plank__safe-2', en: 'If your lower back sags or aches, lower your knees and draw your belly in.', vi: 'Nếu lưng dưới bị võng hoặc mỏi, hạ gối xuống và thu bụng vào.' },
     { id: 'plank__safe-3', en: 'In pregnancy, keep the hold short, and take your knees down whenever you need to.', vi: 'Khi mang thai, giữ ngắn thôi, và hạ gối xuống bất cứ khi nào bạn cần.' },
   ],

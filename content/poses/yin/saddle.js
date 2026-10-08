@@ -5,7 +5,7 @@ export const saddle = {
   level: 'strong',
   en: 'Saddle',
   sa: null,
-  saNote: { en: 'Saddle is the Yin name. The yang pose is Reclined Hero, Supta Vīrāsana, where the spine stays long and the lower back does not arch.', vi: 'Yên ngựa là tên Yin. Tư thế yang tương ứng là Supta Vīrāsana, trong đó cột sống giữ dài và lưng dưới không ưỡn.' },
+  saNote: { en: 'Saddle is the Yin name. The yang pose is Reclined Hero, Supta Vīrāsana, where the spine stays long and the lower back does not arch.', vi: 'Yên ngựa là tên Yin. Tư thế yang tương ứng là Anh hùng nằm, Supta Vīrāsana, trong đó cột sống giữ dài và lưng dưới không ưỡn.' },
   vi: 'Yên ngựa',
   yin: {
     holdMinutes: 3,
@@ -38,7 +38,7 @@ export const saddle = {
   ],
   safety: [
     { id: 'saddle__safe-1', en: 'Saddle asks a lot of the knees. With a knee injury, skip it or take Half Saddle.', vi: 'Yên ngựa đòi hỏi gối rất nhiều. Nếu gối bị chấn thương, bỏ qua hoặc chuyển sang Nửa yên ngựa.' },
-    { id: 'saddle__safe-2', en: 'Feel it in the thighs and the front of the hips. A pinch in the lower back means more height behind you.', vi: 'Cảm giác nên ở đùi và phía trước hông. Lưng dưới bị nhói nghĩa là cần kê cao hơn phía sau.' },
+    { id: 'saddle__safe-2', en: 'Feel it in your thighs and the front of your hips. A pinch in the lower back means more height behind you.', vi: 'Cảm giác nên ở đùi và phía trước hông. Lưng dưới bị nhói nghĩa là cần kê cao hơn phía sau.' },
     { id: 'saddle__safe-3', en: 'In pregnancy, stay up on your hands, or on a high stack of props.', vi: 'Khi mang thai, giữ người cao, chống tay hoặc tựa lên chồng dụng cụ cao.' },
   ],
   muscles: {

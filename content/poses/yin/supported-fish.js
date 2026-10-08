@@ -6,7 +6,7 @@ export const supportedFish = {
   en: 'Supported Fish',
   sa: null,
   saNote: { en: 'The yang pose is Fish, Matsyāsana, held with effort; here the props do all the work.', vi: 'Tư thế yang là Con cá, Matsyāsana, giữ bằng sức cơ; ở đây dụng cụ hỗ trợ làm hết mọi việc.' },
-  vi: 'Cá có đỡ',
+  vi: 'Con cá có hỗ trợ',
   yin: {
     holdMinutes: 5,
     target: ['chest', 'shoulders'],
@@ -24,7 +24,7 @@ export const supportedFish = {
     { id: 'supported-fish__cue-1', kind: 'transition', en: 'Place one block under your shoulder blades, and another, a little higher, under your head.', vi: 'Đặt một viên gạch dưới bả vai, và một viên khác, cao hơn một chút, dưới đầu.' },
     { id: 'supported-fish__cue-2', kind: 'transition', en: 'Lie back slowly over the props, using your hands to lower down.', vi: 'Từ từ nằm ngả ra sau lên dụng cụ, dùng tay đỡ khi hạ xuống.' },
     { id: 'supported-fish__cue-3', kind: 'alignment', en: 'Let your arms rest out to the sides, palms up.', vi: 'Để hai tay nghỉ hai bên, lòng bàn tay ngửa lên.' },
-    { id: 'supported-fish__cue-4', kind: 'alignment', en: 'Your legs can be straight, or bring the soles of your feet together.', vi: 'Hai chân có thể duỗi thẳng, hoặc áp hai lòng bàn chân vào nhau.' },
+    { id: 'supported-fish__cue-4', kind: 'alignment', en: 'Your legs can be straight, or bring the soles of your feet together.', vi: 'Hai chân có thể duỗi thẳng, hoặc áp hai gan bàn chân vào nhau.' },
     { id: 'supported-fish__cue-5', kind: 'soften', en: 'Find a gentle edge across your chest, and let everything else rest.', vi: 'Tìm một ngưỡng nhẹ nhàng ở ngực, và để mọi phần khác được nghỉ.' },
     { id: 'supported-fish__cue-6', kind: 'breath', en: 'Halfway. Let your breath be slow and wide. There is nothing to do.', vi: 'Được một nửa rồi. Để hơi thở chậm và rộng. Không có gì phải làm cả.' },
     { id: 'supported-fish__cue-7', kind: 'safety', en: 'If your neck or your lower back complains, lower the blocks.', vi: 'Nếu cổ hoặc lưng dưới khó chịu, hạ thấp các viên gạch.' },

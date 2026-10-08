@@ -20,7 +20,7 @@ export const halfSaddle = {
     vi: 'Thở vào mặt trước của chân co. Để mỗi hơi thở ra giúp bạn ngả ra sau thêm một chút.',
   },
   cues: [
-    { id: 'half-saddle__cue-1', kind: 'transition', en: 'Sit with your left leg straight, and bend your right knee back, the foot beside your hip.', vi: 'Ngồi với chân trái duỗi thẳng, co gối phải về sau, bàn chân đặt cạnh hông.' },
+    { id: 'half-saddle__cue-1', kind: 'transition', en: 'Sit with your left leg straight, and bend your right knee back, your foot beside your hip.', vi: 'Ngồi với chân trái duỗi thẳng, co gối phải về sau, bàn chân đặt cạnh hông.' },
     { id: 'half-saddle__cue-2', kind: 'alignment', en: 'Bend your left knee, and place your foot on the floor to protect your lower back.', vi: 'Co gối trái, và đặt bàn chân xuống sàn để bảo vệ lưng dưới.' },
     { id: 'half-saddle__cue-3', kind: 'transition', en: 'Lean back onto your hands, your elbows, or a bolster.', vi: 'Ngả người ra sau chống tay, chống khuỷu, hoặc tựa lên gối ôm.' },
     { id: 'half-saddle__cue-4', kind: 'soften', en: 'Stop where you find your edge, in the front of your right thigh.', vi: 'Dừng lại khi bạn chạm ngưỡng, ở mặt trước đùi phải.' },

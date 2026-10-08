@@ -24,14 +24,14 @@ export const supineTwist = {
     { id: 'supine-twist__cue-9', kind: 'transition', en: 'Inhale, roll back to centre, and change sides.', vi: 'Hít vào, lăn người về giữa, và đổi bên.' },
   ],
   modifications: [
-    { id: 'supine-twist__mod-1', en: 'Place a block or a bolster under your top knee.', vi: 'Kê gạch hoặc gối ôm dưới gối trên.', props: ['block', 'bolster'] },
+    { id: 'supine-twist__mod-1', en: 'Place a block or a bolster under your top knee.', vi: 'Kê gạch hoặc gối ôm dưới đầu gối trên.', props: ['block', 'bolster'] },
     { id: 'supine-twist__mod-2', en: 'Bend both knees, and let them fall to the side together.', vi: 'Gập cả hai gối, và để hai gối cùng đổ sang một bên.', props: [] },
     { id: 'supine-twist__mod-3', en: 'Keep your head facing up.', vi: 'Giữ đầu hướng lên trên.', props: [] },
   ],
   safety: [
     { id: 'supine-twist__safe-1', en: 'If you have a back or disc injury, keep the twist small, and support your knee.', vi: 'Nếu bạn có chấn thương lưng hoặc đĩa đệm, chỉ vặn nhẹ, và kê đỡ đầu gối.' },
     { id: 'supine-twist__safe-2', en: 'In later pregnancy, lie on your side instead, or twist gently while seated.', vi: 'Ở giai đoạn sau của thai kỳ, thay bằng nằm nghiêng, hoặc vặn nhẹ khi ngồi.' },
-    { id: 'supine-twist__safe-3', en: 'In Yin, this is Reclined Twist, held for a few minutes. After a long hold, come back to centre slowly.', vi: 'Trong Yin, tư thế này có tên Reclined Twist và được giữ vài phút. Sau khi giữ lâu, hãy về giữa từ từ.' },
+    { id: 'supine-twist__safe-3', en: 'In Yin, this is Reclined Twist, held for a few minutes. After a long hold, come back to centre slowly.', vi: 'Trong Yin, đây là tư thế Vặn mình nằm ngửa, được giữ vài phút. Sau khi giữ lâu, hãy về giữa từ từ.' },
   ],
   muscles: {
     working: [],

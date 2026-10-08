@@ -14,7 +14,7 @@ export const legsUpTheWall = {
     counter: 'savasana',
     note: {
       en: 'Five minutes or more, often near the end of class. The legs rest on the wall, the backs of the legs lengthen gently, and the whole body settles. If the feet tingle, bend the knees or bring the soles together; the lower back should feel supported, not arched.',
-      vi: 'Năm phút hoặc lâu hơn, thường gần cuối buổi tập. Hai chân tựa lên tường, mặt sau chân được kéo dài nhẹ nhàng, và toàn bộ cơ thể lắng xuống. Nếu bàn chân bị tê, co gối hoặc áp hai lòng bàn chân vào nhau; lưng dưới nên thấy được đỡ, không bị ưỡn.',
+      vi: 'Năm phút hoặc lâu hơn, thường gần cuối buổi tập. Hai chân tựa lên tường, mặt sau chân được kéo dài nhẹ nhàng, và toàn bộ cơ thể lắng xuống. Nếu bàn chân bị tê, co gối hoặc áp hai gan bàn chân vào nhau; lưng dưới nên thấy được đỡ, không bị ưỡn.',
     },
   },
   breath: {

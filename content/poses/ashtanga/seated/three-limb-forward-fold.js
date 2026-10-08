@@ -5,9 +5,13 @@ export const threeLimbForwardFold = {
   level: 'moderate',
   en: 'Three-Limb Forward Fold',
   aka: ['Half Hero Forward Fold'],
-  sa: 'Tiriaṅg Mukhaikapāda Paścimottānāsana',
-  say: 'tee-ree-ANG moo-kai-kah-PAH-dah pash-chee-moh-tah-NAH-sah-nah',
+  sa: 'Triaṅga Mukhaikapāda Paścimottānāsana',
+  say: 'tree-ANG MOO-kah AY-kah PAH-dah pash-chee-moh-tah-NAH-sah-nah',
   vi: 'Gập người một chân co sau',
+  saNote: {
+    en: 'Ashtanga charts often write it Triang Mukha Eka Pada Paschimottanasana, and teachers say it that way, as separate words.',
+    vi: 'Các bảng chuỗi Ashtanga thường viết là Triang Mukha Eka Pada Paschimottanasana, và giáo viên cũng đọc tách từng từ như vậy.',
+  },
   ashtanga: {
     series: 'primary',
     section: 'seated',
@@ -17,7 +21,7 @@ export const threeLimbForwardFold = {
     drishti: 'toes',
     note: {
       en: 'Follows Half Bound Lotus Forward Fold: one leg folds back beside your hip while you fold over the other. It is held in the eighth vinyasa on the right and the fifteenth on the left.',
-      vi: 'Đứng sau Gập người nửa hoa sen: một chân co về sau cạnh hông trong khi bạn gập người trên chân kia. Tư thế được giữ ở vinyasa thứ tám bên phải và thứ mười lăm bên trái.',
+      vi: 'Nối tiếp sau Gập người nửa hoa sen: một chân co về sau cạnh hông trong khi bạn gập người trên chân kia. Tư thế được giữ ở vinyasa thứ tám bên phải và thứ mười lăm bên trái.',
     },
   },
   breath: {

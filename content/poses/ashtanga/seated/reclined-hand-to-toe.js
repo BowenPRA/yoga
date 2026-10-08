@@ -12,11 +12,12 @@ export const reclinedHandToToe = {
     series: 'primary',
     section: 'seated',
     position: 36,
+    vinyasas: 28,
     breaths: 5,
     drishti: 'toes',
     note: {
-      en: 'Two holds on each side: chin toward shin with your gaze on your toes, then your leg out to the side while you gaze the other way. It ends with a backward roll, Chakrasana, into the vinyasa.',
-      vi: 'Hai lần giữ mỗi bên: cằm hướng về ống chân, mắt nhìn ngón chân; rồi đưa chân sang bên, mắt nhìn về phía ngược lại. Kết thúc bằng một cú lăn ra sau, Chakrasana, vào vinyasa.',
+      en: 'Two holds on each side: chin toward shin with your gaze on your toes, then your leg out to the side while you gaze the other way. It ends with a backward roll, Cakrāsana, into the vinyasa.',
+      vi: 'Hai lần giữ mỗi bên: cằm hướng về ống chân, mắt nhìn ngón chân; rồi đưa chân sang bên, mắt nhìn về phía ngược lại. Kết thúc bằng một cú lăn ra sau, Cakrāsana, vào vinyasa.',
     },
   },
   breath: {

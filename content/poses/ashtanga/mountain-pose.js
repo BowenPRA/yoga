@@ -31,13 +31,13 @@ export const mountainPose = {
 
   cues: [
     { id: 'mountain-pose__cue-1', kind: 'transition', en: 'Come to the front of your mat and stand with your feet together.', vi: 'Bước lên đầu thảm và đứng với hai bàn chân khép lại.' },
-    { id: 'mountain-pose__cue-2', kind: 'alignment', en: 'Spread your toes and press evenly through both feet.', vi: 'Xoè các ngón chân và ấn đều qua hai bàn chân.' },
+    { id: 'mountain-pose__cue-2', kind: 'alignment', en: 'Spread your toes and press evenly through both feet.', vi: 'Xoè các ngón chân và ấn đều hai bàn chân xuống sàn.' },
     { id: 'mountain-pose__cue-3', kind: 'alignment', en: 'Lift your kneecaps to wake up the front of your thighs.', vi: 'Nâng xương bánh chè để đánh thức mặt trước đùi.' },
     { id: 'mountain-pose__cue-4', kind: 'alignment', en: 'Lengthen your tailbone toward your heels and draw your belly in gently.', vi: 'Kéo dài xương cụt về phía gót chân và hóp nhẹ bụng vào.' },
-    { id: 'mountain-pose__cue-5', kind: 'alignment', en: 'Let your arms rest by your sides, and lengthen through the crown of your head.', vi: 'Để hai tay buông dọc thân, và kéo dài lên qua đỉnh đầu.' },
+    { id: 'mountain-pose__cue-5', kind: 'alignment', en: 'Let your arms rest by your sides, and lengthen through the crown of your head.', vi: 'Để hai tay buông dọc thân, và vươn đỉnh đầu lên cao.' },
     { id: 'mountain-pose__cue-6', kind: 'soften', en: 'Relax your shoulders away from your ears, and soften your jaw.', vi: 'Thả vai xuống, xa khỏi tai, và thả lỏng hàm.' },
     { id: 'mountain-pose__cue-7', kind: 'breath', en: 'Close your mouth and breathe slowly, with a soft sound in your throat.', vi: 'Khép miệng và thở chậm, với một âm thanh nhẹ ở cổ họng.' },
-    { id: 'mountain-pose__cue-8', kind: 'safety', en: 'If your knees tend to push back, keep them very slightly bent.', vi: 'Nếu gối bạn hay bị ưỡn ra sau, hãy giữ gối hơi chùng một chút.' },
+    { id: 'mountain-pose__cue-8', kind: 'safety', en: 'If your knees tend to push back, keep them very slightly bent.', vi: 'Nếu gối bạn hay bị duỗi quá ra sau, hãy giữ gối hơi chùng một chút.' },
     { id: 'mountain-pose__cue-9', kind: 'transition', en: 'From here, inhale and reach your arms up.', vi: 'Từ đây, hít vào và vươn hai tay lên.' },
   ],
 

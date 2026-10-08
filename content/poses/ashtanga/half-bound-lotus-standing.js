@@ -3,11 +3,11 @@ export const halfBoundLotusStanding = {
   styles: ['ashtanga'],
   family: 'balance',
   level: 'strong',
-  en: 'Half Bound Lotus Forward Fold',
-  aka: ['Standing Half Bound Lotus'],
+  en: 'Standing Half Bound Lotus',
+  aka: ['Standing Half Bound Lotus Forward Fold'],
   sa: 'Ardha Baddha Padmottānāsana',
   say: 'AR-dah BAH-dah pad-moh-tah-NAH-sah-nah',
-  vi: 'Nửa hoa sen đứng gập người',
+  vi: 'Đứng gập người nửa hoa sen',
 
   ashtanga: {
     series: 'primary',
@@ -48,11 +48,11 @@ export const halfBoundLotusStanding = {
   safety: [
     { id: 'half-bound-lotus-standing__safe-1', en: 'Never force the lotus. Pain in your knee means come out.', vi: 'Đừng bao giờ ép hoa sen. Đau ở gối nghĩa là cần thoát ra.' },
     { id: 'half-bound-lotus-standing__safe-2', en: 'Fold only when your foot sits high on your thigh and your knee feels easy.', vi: 'Chỉ gập người khi bàn chân đã nằm cao trên đùi và gối thấy dễ chịu.' },
-    { id: 'half-bound-lotus-standing__safe-3', en: 'In pregnancy, keep the foot on your thigh and stay upright.', vi: 'Khi mang thai, giữ bàn chân trên đùi và giữ thân thẳng.' },
+    { id: 'half-bound-lotus-standing__safe-3', en: 'In pregnancy, keep your foot on your thigh and stay upright.', vi: 'Khi mang thai, giữ bàn chân trên đùi và giữ thân thẳng.' },
   ],
 
   muscles: {
-    working: ['quadriceps', 'gluteus-medius', 'deep-rotators'],
+    working: ['quadriceps', 'gluteus-medius'],
     lengthening: ['hamstrings', 'calves'],
   },
   joints: ['knee', 'hip-joint', 'ankle', 'shoulder-joint'],

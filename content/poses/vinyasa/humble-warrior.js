@@ -15,7 +15,7 @@ export const humbleWarrior = {
     { id: 'humble-warrior__cue-1', kind: 'transition', en: 'From Warrior One, interlace your hands behind your back.', vi: 'Từ Chiến binh I, đan hai bàn tay sau lưng.' },
     { id: 'humble-warrior__cue-2', kind: 'alignment', en: 'Inhale, draw your shoulders back, and lift your chest.', vi: 'Hít vào, kéo vai ra sau, và nâng ngực.' },
     { id: 'humble-warrior__cue-3', kind: 'alignment', en: 'Exhale, bow forward on the inside of your front knee.', vi: 'Thở ra, cúi người về trước, vào phía trong gối trước.' },
-    { id: 'humble-warrior__cue-4', kind: 'alignment', en: 'Let your hands reach up and over your head.', vi: 'Để hai tay vươn lên và qua đầu.' },
+    { id: 'humble-warrior__cue-4', kind: 'alignment', en: 'Let your hands reach up and over your head.', vi: 'Để hai tay vươn lên cao rồi đổ về phía trước, qua đầu.' },
     { id: 'humble-warrior__cue-5', kind: 'alignment', en: 'Keep your front knee bent, and your back foot rooted.', vi: 'Giữ gối trước gập, và bàn chân sau bám chắc xuống sàn.' },
     { id: 'humble-warrior__cue-6', kind: 'soften', en: 'Let your head hang heavy, and your neck relax.', vi: 'Để đầu buông nặng, và cổ thả lỏng.' },
     { id: 'humble-warrior__cue-7', kind: 'breath', en: 'Stay for three breaths.', vi: 'Giữ ba nhịp thở.' },

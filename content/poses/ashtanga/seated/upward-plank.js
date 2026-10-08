@@ -17,7 +17,7 @@ export const upwardPlank = {
     drishti: 'nose',
     note: {
       en: 'The counterpose to Seated Forward Fold: after folding, you open the whole front of your body. It is held in the eighth vinyasa, for five breaths.',
-      vi: 'Tư thế đối trọng của Gập người về trước ngồi: sau khi gập, bạn mở toàn bộ mặt trước cơ thể. Tư thế được giữ ở vinyasa thứ tám, năm nhịp thở.',
+      vi: 'Tư thế đối của Ngồi gập người về trước: sau khi gập, bạn mở toàn bộ mặt trước cơ thể. Tư thế được giữ ở vinyasa thứ tám, năm nhịp thở.',
     },
   },
   breath: {
@@ -46,7 +46,7 @@ export const upwardPlank = {
   ],
   muscles: {
     working: ['gluteus-maximus', 'hamstrings', 'triceps-brachii', 'erector-spinae'],
-    lengthening: ['pectoralis-major', 'biceps-brachii', 'rectus-abdominis'],
+    lengthening: ['pectoralis-major', 'biceps-brachii'],
   },
   joints: ['wrist', 'shoulder-joint', 'hip-joint', 'cervical-spine'],
   transitionsTo: ['half-bound-lotus-forward-fold'],

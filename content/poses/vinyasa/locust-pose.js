@@ -15,7 +15,7 @@ export const locustPose = {
     { id: 'locust-pose__cue-1', kind: 'transition', en: 'Lie on your belly, arms by your sides, palms facing down.', vi: 'Nằm sấp, hai tay dọc theo người, lòng bàn tay úp xuống.' },
     { id: 'locust-pose__cue-2', kind: 'alignment', en: 'Press the tops of your feet down, and reach your legs long.', vi: 'Ấn mu bàn chân xuống, và duỗi dài hai chân.' },
     { id: 'locust-pose__cue-3', kind: 'alignment', en: 'Inhale, lift your chest, your arms and your legs.', vi: 'Hít vào, nâng ngực, hai tay và hai chân lên.' },
-    { id: 'locust-pose__cue-4', kind: 'alignment', en: 'Reach back through your fingertips, and draw your shoulder blades together.', vi: 'Vươn ra sau qua đầu ngón tay, và khép hai bả vai lại.' },
+    { id: 'locust-pose__cue-4', kind: 'alignment', en: 'Reach back through your fingertips, and draw your shoulder blades together.', vi: 'Vươn dài hai tay ra sau đến tận đầu ngón tay, và khép hai bả vai lại.' },
     { id: 'locust-pose__cue-5', kind: 'alignment', en: 'Keep your legs hip-width apart, and lift from your inner thighs.', vi: 'Giữ hai chân rộng bằng hông, và nâng từ mặt trong đùi.' },
     { id: 'locust-pose__cue-6', kind: 'soften', en: 'Keep your neck long, and soften your jaw.', vi: 'Giữ cổ dài, và thả lỏng hàm.' },
     { id: 'locust-pose__cue-7', kind: 'breath', en: 'Stay for three to five breaths.', vi: 'Giữ ba đến năm nhịp thở.' },

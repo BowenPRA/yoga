@@ -19,8 +19,8 @@ export const setuBandhasana = {
     breaths: 5,
     drishti: 'nose',
     note: {
-      en: 'The last pose of the seated sequence, held in the ninth vinyasa. You come out with a backward roll, Chakrasana, before the finishing sequence.',
-      vi: 'Tư thế cuối cùng của chuỗi ngồi, giữ ở vinyasa thứ chín. Bạn thoát thế bằng một cú lăn ra sau, Chakrasana, trước chuỗi kết thúc.',
+      en: 'The last pose of the seated sequence, held in the ninth vinyasa. You come out with a backward roll, Cakrāsana, before the finishing sequence.',
+      vi: 'Tư thế cuối cùng của chuỗi ngồi, giữ ở vinyasa thứ chín. Bạn thoát thế bằng một cú lăn ra sau, Cakrāsana, trước chuỗi kết thúc.',
     },
   },
   breath: {
@@ -32,7 +32,7 @@ export const setuBandhasana = {
     { id: 'setu-bandhasana__cue-2', kind: 'alignment', en: 'Press your elbows down, lift your chest, and rest the top of your head on the floor.', vi: 'Ấn khuỷu tay xuống, nâng ngực lên, và đặt đỉnh đầu xuống sàn.' },
     { id: 'setu-bandhasana__cue-3', kind: 'alignment', en: 'Cross your arms over your chest, with your hands on your shoulders.', vi: 'Bắt chéo hai tay trên ngực, bàn tay đặt lên vai.' },
     { id: 'setu-bandhasana__cue-4', kind: 'alignment', en: 'Inhale, press into your feet and lift your hips, straightening your legs.', vi: 'Hít vào, ấn bàn chân xuống và nâng hông lên, duỗi thẳng chân.' },
-    { id: 'setu-bandhasana__cue-5', kind: 'alignment', en: 'Keep your heels together and press through the outer edges of your feet.', vi: 'Giữ hai gót chân chạm nhau và ấn qua cạnh ngoài bàn chân.' },
+    { id: 'setu-bandhasana__cue-5', kind: 'alignment', en: 'Keep your heels together and press through the outer edges of your feet.', vi: 'Giữ hai gót chân chạm nhau và ấn cạnh ngoài bàn chân xuống sàn.' },
     { id: 'setu-bandhasana__cue-6', kind: 'soften', en: 'Breathe steadily and keep your jaw soft.', vi: 'Thở đều và giữ hàm mềm.' },
     { id: 'setu-bandhasana__cue-7', kind: 'breath', en: 'Stay for five breaths, gazing toward your nose.', vi: 'Giữ năm nhịp thở, nhìn về phía chóp mũi.' },
     { id: 'setu-bandhasana__cue-8', kind: 'safety', en: 'Take only as much weight onto your head as feels safe. If your neck hurts, come down.', vi: 'Chỉ dồn lên đầu mức trọng lượng bạn thấy an toàn. Nếu cổ đau, hãy hạ xuống.' },

@@ -36,8 +36,8 @@ export const frog = {
     { id: 'frog__mod-3', en: 'Pad your knees with folded blankets, or double the mat.', vi: 'Kê chăn gấp dưới gối, hoặc gấp đôi thảm.', props: ['blanket'] },
   ],
   safety: [
-    { id: 'frog__safe-1', en: 'Feel it in your inner thighs. Sharp pain inside the knee means come out.', vi: 'Cảm giác nên ở mặt trong đùi. Đau nhói phía trong gối nghĩa là cần thoát thế.' },
-    { id: 'frog__safe-2', en: 'In pregnancy, or with a tender sacroiliac joint, keep the knees less wide and the hold short.', vi: 'Khi mang thai, hoặc khi khớp cùng chậu nhạy cảm, mở gối ít rộng hơn và giữ ngắn thôi.' },
+    { id: 'frog__safe-1', en: 'Feel it in your inner thighs. Sharp pain inside your knee means come out.', vi: 'Cảm giác nên ở mặt trong đùi. Đau nhói phía trong gối nghĩa là cần thoát thế.' },
+    { id: 'frog__safe-2', en: 'In pregnancy, or with a tender sacroiliac joint, keep your knees less wide and the hold short.', vi: 'Khi mang thai, hoặc khi khớp cùng chậu nhạy cảm, mở gối ít rộng hơn và giữ ngắn thôi.' },
   ],
   muscles: {
     working: [],
