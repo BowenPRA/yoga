@@ -1,0 +1,52 @@
+export const bananasana = {
+  id: 'bananasana',
+  styles: ['yin'],
+  family: 'supine',
+  level: 'gentle',
+  en: 'Bananasana',
+  aka: ['Banana Pose'],
+  sa: null,
+  saNote: { en: 'Bananasana is a playful Yin name: an English word with a Sanskrit ending. It is not a classical pose.', vi: 'Bananasana là một cái tên Yin vui: từ tiếng Anh “banana” (quả chuối) ghép với đuôi Sanskrit “-āsana”. Đây không phải tư thế cổ điển.' },
+  vi: 'Quả chuối',
+  yin: {
+    holdMinutes: 3,
+    target: ['spine'],
+    counter: 'savasana',
+    note: {
+      en: 'Three to five minutes each side. A long side bend lying down: one whole side of the body lengthens, from the outer hip through the waist to the armpit. Keep both hips on the floor; the short side should never pinch.',
+      vi: 'Ba đến năm phút mỗi bên. Nghiêng người dài khi nằm: cả một bên thân được kéo dài, từ hông ngoài qua eo lên đến nách. Giữ cả hai bên hông trên sàn; phía bên bị co lại không bao giờ được nhói.',
+    },
+  },
+  breath: {
+    en: 'Breathe into the long side of your body. Feel your ribs widen on each inhale.',
+    vi: 'Thở vào bên thân đang được kéo dài. Cảm nhận xương sườn mở rộng mỗi lần hít vào.',
+  },
+  cues: [
+    { id: 'bananasana__cue-1', kind: 'transition', en: 'Lie on your back, and stretch your arms overhead.', vi: 'Nằm ngửa, và vươn hai tay lên quá đầu.' },
+    { id: 'bananasana__cue-2', kind: 'alignment', en: 'Walk your feet over to the right, then your upper body, into a banana shape.', vi: 'Dịch hai bàn chân sang phải, rồi dịch thân trên, tạo thành hình quả chuối.' },
+    { id: 'bananasana__cue-3', kind: 'alignment', en: 'Keep both hips on the floor, and cross your left ankle over your right.', vi: 'Giữ cả hai bên hông trên sàn, và bắt chéo cổ chân trái lên trên cổ chân phải.' },
+    { id: 'bananasana__cue-4', kind: 'alignment', en: 'Hold your left wrist with your right hand, or rest your arms on a bolster.', vi: 'Dùng tay phải nắm cổ tay trái, hoặc để hai tay tựa trên gối ôm.' },
+    { id: 'bananasana__cue-5', kind: 'soften', en: 'Find your edge along your left side, and let your body grow heavy.', vi: 'Tìm ngưỡng dọc bên thân trái, và để cơ thể nặng xuống.' },
+    { id: 'bananasana__cue-6', kind: 'breath', en: 'Halfway. Breathe into your left ribs. Curve a little more, or stay.', vi: 'Được một nửa rồi. Thở vào xương sườn bên trái. Cong thêm một chút, hoặc cứ ở yên.' },
+    { id: 'bananasana__cue-7', kind: 'safety', en: 'If your lower back or your shoulders complain, make the curve smaller.', vi: 'Nếu lưng dưới hoặc vai khó chịu, giảm độ cong lại.' },
+    { id: 'bananasana__cue-8', kind: 'transition', en: 'Uncross your ankles, and slowly come back to the middle.', vi: 'Gỡ chéo cổ chân, và từ từ trở về giữa.' },
+    { id: 'bananasana__cue-9', kind: 'soften', en: 'Lie still, and notice the difference between your two sides.', vi: 'Nằm yên, và cảm nhận sự khác biệt giữa hai bên cơ thể.' },
+  ],
+  modifications: [
+    { id: 'bananasana__mod-1', en: 'If your shoulders are tight, bend your elbows or keep your arms by your sides.', vi: 'Nếu vai bị căng, gập khuỷu tay hoặc để hai tay dọc thân.', props: [] },
+    { id: 'bananasana__mod-2', en: 'Rest your arms on a bolster or a folded blanket overhead.', vi: 'Để hai tay tựa trên gối ôm hoặc chăn gấp phía trên đầu.', props: ['bolster', 'blanket'] },
+    { id: 'bananasana__mod-3', en: 'Leave your ankles uncrossed for a gentler side stretch.', vi: 'Không bắt chéo cổ chân để kéo giãn bên thân nhẹ nhàng hơn.', props: [] },
+  ],
+  safety: [
+    { id: 'bananasana__safe-1', en: 'Feel it along the long side of your body. A pinch in the lower back means make the curve smaller.', vi: 'Cảm giác nên ở dọc bên thân đang được kéo dài. Lưng dưới bị nhói nghĩa là cần giảm độ cong.' },
+    { id: 'bananasana__safe-2', en: 'With a shoulder injury, keep your arms down by your sides.', vi: 'Nếu vai bị chấn thương, để hai tay xuôi dọc thân.' },
+    { id: 'bananasana__safe-3', en: 'In later pregnancy, prop your upper body on a bolster rather than lying flat.', vi: 'Ở giai đoạn cuối thai kỳ, kê gối ôm nâng thân trên thay vì nằm phẳng.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['quadratus-lumborum', 'external-oblique', 'latissimus-dorsi'],
+  },
+  joints: ['lumbar-spine', 'thoracic-spine', 'shoulder-joint'],
+  transitionsTo: ['reclined-twist', 'savasana'],
+  figure: 'bananasana',
+}

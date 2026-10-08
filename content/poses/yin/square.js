@@ -1,0 +1,52 @@
+export const square = {
+  id: 'square',
+  styles: ['yin'],
+  family: 'hip-opener',
+  level: 'strong',
+  en: 'Square',
+  aka: ['Double Pigeon', 'Fire Log'],
+  sa: null,
+  saNote: { en: 'Square is the Yin name. Yang classes call it Double Pigeon or Fire Log, Agnistambhāsana.', vi: 'Hình vuông là tên Yin. Các lớp yang gọi là Bồ câu đôi hay Khúc gỗ, Agnistambhāsana.' },
+  vi: 'Hình vuông (Bồ câu đôi)',
+  yin: {
+    holdMinutes: 3,
+    target: ['hips'],
+    counter: 'reclined-twist',
+    note: {
+      en: 'Three to five minutes each side. Both hips turn out deeply, for the glutes and the piriformis. Of all the Yin hip poses, this one asks the most of the knees: if either knee hurts, sit higher or sit cross-legged instead.',
+      vi: 'Ba đến năm phút mỗi bên. Cả hai hông xoay ngoài sâu, tác động lên cơ mông và cơ hình lê. Trong các tư thế Yin cho hông, đây là tư thế đòi hỏi gối nhiều nhất: nếu gối nào đau, ngồi cao hơn hoặc chuyển sang ngồi xếp bằng.',
+    },
+  },
+  breath: {
+    en: 'Breathe slowly and evenly. Let each exhale soften your outer hips, one breath at a time.',
+    vi: 'Thở chậm và đều. Để mỗi hơi thở ra làm mềm hông ngoài, từng hơi một.',
+  },
+  cues: [
+    { id: 'square__cue-1', kind: 'transition', en: 'Sit on a folded blanket, with your left shin parallel to the front of your mat.', vi: 'Ngồi trên chăn gấp, ống chân trái song song với mép trước thảm.' },
+    { id: 'square__cue-2', kind: 'alignment', en: 'Stack your right shin on top: right ankle over left knee, right knee over left ankle.', vi: 'Xếp ống chân phải lên trên: cổ chân phải trên gối trái, gối phải trên cổ chân trái.' },
+    { id: 'square__cue-3', kind: 'alignment', en: 'If your top knee is high, slide a block or a blanket under it.', vi: 'Nếu gối trên còn cao, kê một viên gạch hoặc chăn bên dưới.' },
+    { id: 'square__cue-4', kind: 'soften', en: 'Stay upright, or fold forward until you find your edge.', vi: 'Ngồi thẳng, hoặc gập người về trước đến khi chạm ngưỡng của bạn.' },
+    { id: 'square__cue-5', kind: 'soften', en: 'Let your arms rest. Let your hips be heavy.', vi: 'Để hai tay nghỉ. Để hông nặng xuống.' },
+    { id: 'square__cue-6', kind: 'breath', en: 'We’re halfway. Stay where you are, or fold a little further if your body invites it.', vi: 'Chúng ta đã đi được nửa chặng. Ở yên đó, hoặc gập sâu thêm chút nữa nếu cơ thể cho phép.' },
+    { id: 'square__cue-7', kind: 'safety', en: 'If either knee hurts, come out and sit cross-legged instead.', vi: 'Nếu gối nào đau, hãy thoát thế và chuyển sang ngồi xếp bằng.' },
+    { id: 'square__cue-8', kind: 'transition', en: 'Use your hands to roll up slowly, then unstack your legs.', vi: 'Chống tay, từ từ cuộn người lên, rồi gỡ hai chân ra.' },
+    { id: 'square__cue-9', kind: 'soften', en: 'Lie back with your knees bent, and notice the rebound.', vi: 'Nằm ngửa, co gối, và cảm nhận dư âm.' },
+  ],
+  modifications: [
+    { id: 'square__mod-1', en: 'Sit cross-legged, one shin in front of the other, instead of stacking them.', vi: 'Ngồi xếp bằng, ống chân này đặt phía trước ống chân kia, thay vì chồng lên nhau.', props: [] },
+    { id: 'square__mod-2', en: 'Sit high on a bolster, and support your top knee with a block.', vi: 'Ngồi cao trên gối ôm, và đỡ gối trên bằng một viên gạch.', props: ['bolster', 'block'] },
+    { id: 'square__mod-3', en: 'Rest your forehead on a bolster or a block in front of you.', vi: 'Tựa trán lên gối ôm hoặc viên gạch phía trước.', props: ['bolster', 'block'] },
+  ],
+  safety: [
+    { id: 'square__safe-1', en: 'Feel this in your outer hips, never in your knees.', vi: 'Cảm giác phải ở hông ngoài, không bao giờ ở gối.' },
+    { id: 'square__safe-2', en: 'Flexing your feet a little can help your knees feel steadier.', vi: 'Gập nhẹ bàn chân có thể giúp gối thấy vững hơn.' },
+    { id: 'square__safe-3', en: 'In pregnancy, stay upright and sit high on a bolster.', vi: 'Khi mang thai, giữ lưng thẳng và ngồi cao trên gối ôm.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['piriformis', 'gluteus-maximus', 'gluteus-medius'],
+  },
+  joints: ['hip-joint', 'knee', 'ankle'],
+  transitionsTo: ['reclined-twist', 'caterpillar'],
+  figure: 'square',
+}

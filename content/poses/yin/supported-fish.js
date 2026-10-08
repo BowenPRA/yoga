@@ -1,0 +1,50 @@
+export const supportedFish = {
+  id: 'supported-fish',
+  styles: ['yin'],
+  family: 'restorative',
+  level: 'gentle',
+  en: 'Supported Fish',
+  sa: null,
+  saNote: { en: 'The yang pose is Fish, Matsyāsana, held with effort; here the props do all the work.', vi: 'Tư thế yang là Con cá, Matsyāsana, giữ bằng sức cơ; ở đây dụng cụ hỗ trợ làm hết mọi việc.' },
+  vi: 'Cá có đỡ',
+  yin: {
+    holdMinutes: 5,
+    target: ['chest', 'shoulders'],
+    counter: 'savasana',
+    note: {
+      en: 'Five minutes or longer. A gentle, supported opening for the chest and the front of the shoulders, with the upper back resting over the props. The head is always supported: nothing should strain in the neck or pinch in the lower back.',
+      vi: 'Năm phút hoặc lâu hơn. Mở ngực và phía trước vai một cách nhẹ nhàng, có hỗ trợ, với lưng trên nằm tựa trên dụng cụ. Đầu luôn được đỡ: cổ không được căng và lưng dưới không được nhói.',
+    },
+  },
+  breath: {
+    en: 'Breathe into your chest, and feel your ribs widen. Let each exhale sink you into the props.',
+    vi: 'Thở vào ngực, và cảm nhận xương sườn mở rộng. Để mỗi hơi thở ra giúp bạn chìm vào dụng cụ.',
+  },
+  cues: [
+    { id: 'supported-fish__cue-1', kind: 'transition', en: 'Place one block under your shoulder blades, and another, a little higher, under your head.', vi: 'Đặt một viên gạch dưới bả vai, và một viên khác, cao hơn một chút, dưới đầu.' },
+    { id: 'supported-fish__cue-2', kind: 'transition', en: 'Lie back slowly over the props, using your hands to lower down.', vi: 'Từ từ nằm ngả ra sau lên dụng cụ, dùng tay đỡ khi hạ xuống.' },
+    { id: 'supported-fish__cue-3', kind: 'alignment', en: 'Let your arms rest out to the sides, palms up.', vi: 'Để hai tay nghỉ hai bên, lòng bàn tay ngửa lên.' },
+    { id: 'supported-fish__cue-4', kind: 'alignment', en: 'Your legs can be straight, or bring the soles of your feet together.', vi: 'Hai chân có thể duỗi thẳng, hoặc áp hai lòng bàn chân vào nhau.' },
+    { id: 'supported-fish__cue-5', kind: 'soften', en: 'Find a gentle edge across your chest, and let everything else rest.', vi: 'Tìm một ngưỡng nhẹ nhàng ở ngực, và để mọi phần khác được nghỉ.' },
+    { id: 'supported-fish__cue-6', kind: 'breath', en: 'Halfway. Let your breath be slow and wide. There is nothing to do.', vi: 'Được một nửa rồi. Để hơi thở chậm và rộng. Không có gì phải làm cả.' },
+    { id: 'supported-fish__cue-7', kind: 'safety', en: 'If your neck or your lower back complains, lower the blocks.', vi: 'Nếu cổ hoặc lưng dưới khó chịu, hạ thấp các viên gạch.' },
+    { id: 'supported-fish__cue-8', kind: 'transition', en: 'To come out, bend your knees, roll to one side, and slide the props away.', vi: 'Để thoát thế, co gối, lăn người sang một bên, và đẩy dụng cụ ra.' },
+    { id: 'supported-fish__cue-9', kind: 'soften', en: 'Lie flat on your back, and feel the rebound across your chest.', vi: 'Nằm ngửa phẳng trên sàn, và cảm nhận dư âm lan qua ngực.' },
+  ],
+  modifications: [
+    { id: 'supported-fish__mod-1', en: 'Lie on a bolster placed lengthways under your spine, instead of blocks.', vi: 'Nằm trên gối ôm đặt dọc dưới cột sống, thay cho gạch.', props: ['bolster'] },
+    { id: 'supported-fish__mod-2', en: 'Put a folded blanket under your head if your chin lifts.', vi: 'Kê chăn gấp dưới đầu nếu cằm bị ngửa lên.', props: ['blanket'] },
+    { id: 'supported-fish__mod-3', en: 'Rest your knees over a bolster to ease your lower back.', vi: 'Kê gối ôm dưới đầu gối để lưng dưới dễ chịu hơn.', props: ['bolster'] },
+  ],
+  safety: [
+    { id: 'supported-fish__safe-1', en: 'Keep your head supported. Your neck should never hang.', vi: 'Luôn đỡ đầu. Cổ không bao giờ được buông thõng.' },
+    { id: 'supported-fish__safe-2', en: 'In later pregnancy, lie on an inclined bolster so your chest stays higher than your hips.', vi: 'Ở giai đoạn cuối thai kỳ, nằm trên gối ôm kê dốc để ngực luôn cao hơn hông.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['pectoralis-major', 'pectoralis-minor'],
+  },
+  joints: ['thoracic-spine', 'shoulder-joint'],
+  transitionsTo: ['savasana', 'reclined-twist'],
+  figure: 'supported-fish',
+}

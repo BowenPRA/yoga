@@ -2,12 +2,21 @@ export const sleepingSwan = {
   id: 'sleeping-swan',
   styles: ['yin'],
   family: 'hip-opener',
+  level: 'moderate',
   en: 'Sleeping Swan',
   sa: 'Eka Pāda Rājakapotāsana',
   saNote: { en: 'The Yin name is Sleeping Swan. The Sanskrit belongs to the yang version, Pigeon.', vi: 'Tên Yin là Thiên nga ngủ. Tên Sanskrit thuộc về phiên bản yang, tư thế Bồ câu.' },
   say: 'EH-kah PAH-dah rah-jah-kah-poh-TAH-sah-nah',
   vi: 'Thiên nga ngủ',
-  yin: { holdMinutes: 3, target: ['hips'], counter: 'child-pose', note: { en: 'Three to five minutes each side. Muscles stay soft; the stretch is for the hip, not the knee.', vi: 'Ba đến năm phút mỗi bên. Cơ giữ mềm; kéo giãn ở hông, không phải ở gối.' } },
+  yin: {
+    holdMinutes: 3,
+    target: ['hips'],
+    counter: 'child-pose',
+    note: {
+      en: 'Three to five minutes each side, often after Swan. A long, passive stress on the outer hip of the front leg: the glutes and the deep rotators, with every muscle soft. The front knee should feel nothing.',
+      vi: 'Ba đến năm phút mỗi bên, thường sau tư thế Thiên nga. Một lực kéo dài và thụ động lên hông ngoài của chân trước: cơ mông và các cơ nhỏ sâu trong hông, trong khi mọi cơ đều thả mềm. Gối trước không được có cảm giác gì.',
+    },
+  },
   breath: {
     en: 'Breathe slowly and let each exhale soften you a little further. There is nowhere to get to.',
     vi: 'Thở chậm và để mỗi hơi thở ra giúp bạn mềm hơn một chút. Không cần phải đến đâu cả.',
@@ -21,6 +30,7 @@ export const sleepingSwan = {
     { id: 'sleeping-swan__cue-6', kind: 'soften', en: 'Let the muscles go soft. We’re here for three minutes.', vi: 'Để các cơ mềm ra. Chúng ta ở đây ba phút.' },
     { id: 'sleeping-swan__cue-7', kind: 'safety', en: 'If you feel any sharp pain in your knee, come out of the pose.', vi: 'Nếu thấy đau nhói ở gối, hãy thoát khỏi tư thế.' },
     { id: 'sleeping-swan__cue-8', kind: 'transition', en: 'To come out, press your hands down and slowly lift up.', vi: 'Để thoát thế, ấn hai tay xuống và từ từ nâng người lên.' },
+    { id: 'sleeping-swan__cue-9', kind: 'soften', en: 'Rest in Child’s Pose for a few breaths, and feel the rebound.', vi: 'Nghỉ ở tư thế Em bé vài hơi thở, và cảm nhận dư âm.' },
   ],
   modifications: [
     { id: 'sleeping-swan__mod-1', en: 'Place a bolster or a folded blanket under your front hip so your hips stay level.', vi: 'Kê gối ôm hoặc chăn gấp dưới hông trước để hai bên hông cân bằng.', props: ['bolster', 'blanket'] },
@@ -30,10 +40,11 @@ export const sleepingSwan = {
   safety: [
     { id: 'sleeping-swan__safe-1', en: 'The sensation belongs in the outer hip. Pain in the knee means come out.', vi: 'Cảm giác căng phải ở bên ngoài hông. Đau ở gối nghĩa là cần thoát thế.' },
     { id: 'sleeping-swan__safe-2', en: 'Come out slowly. After a long hold the joint needs a moment.', vi: 'Thoát thế từ từ. Sau khi giữ lâu, khớp cần một chút thời gian.' },
+    { id: 'sleeping-swan__safe-3', en: 'In pregnancy, or with a tender sacroiliac joint, stay upright in Swan with a bolster under your hip.', vi: 'Khi mang thai, hoặc khi khớp cùng chậu nhạy cảm, hãy ở lại tư thế Thiên nga với thân người thẳng, kê gối ôm dưới hông.' },
   ],
   muscles: {
     working: [],
-    lengthening: ['piriformis', 'deep-rotators', 'gluteus-maximus', 'iliopsoas', 'it-band'],
+    lengthening: ['piriformis', 'deep-rotators', 'gluteus-maximus', 'iliopsoas'],
   },
   joints: ['hip-joint', 'knee', 'sacrum'],
   transitionsTo: ['child-pose', 'reclined-twist'],

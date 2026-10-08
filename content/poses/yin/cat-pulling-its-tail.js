@@ -1,0 +1,50 @@
+export const catPullingItsTail = {
+  id: 'cat-pulling-its-tail',
+  styles: ['yin'],
+  family: 'twist',
+  level: 'moderate',
+  en: 'Cat Pulling Its Tail',
+  sa: null,
+  vi: 'Mèo kéo đuôi',
+  yin: {
+    holdMinutes: 3,
+    target: ['quads', 'spine'],
+    counter: 'savasana',
+    note: {
+      en: 'Three to five minutes each side, often straight after Reclined Twist. The spine stays twisted while the bottom leg bends back, lengthening the front of that thigh and hip. Nothing sharp in the bent knee or in the lower back.',
+      vi: 'Ba đến năm phút mỗi bên, thường nối tiếp ngay sau Vặn mình nằm ngửa. Cột sống vẫn ở thế vặn trong khi chân dưới co về sau, kéo dài mặt trước đùi và phía trước hông của chân đó. Không đau nhói ở gối co hay ở lưng dưới.',
+    },
+  },
+  breath: {
+    en: 'Breathe into the front of your bent leg and across your chest. Let each exhale settle you a little deeper.',
+    vi: 'Thở vào mặt trước của chân co và mở rộng qua ngực. Để mỗi hơi thở ra giúp bạn lắng sâu thêm một chút.',
+  },
+  cues: [
+    { id: 'cat-pulling-its-tail__cue-1', kind: 'transition', en: 'Lie on your back, and let your knees fall to the left into a twist.', vi: 'Nằm ngửa, và để hai gối ngả sang trái vào thế vặn.' },
+    { id: 'cat-pulling-its-tail__cue-2', kind: 'alignment', en: 'Straighten your left leg, and leave your right knee resting on the floor or on a block.', vi: 'Duỗi thẳng chân trái, để gối phải nằm yên trên sàn hoặc trên viên gạch.' },
+    { id: 'cat-pulling-its-tail__cue-3', kind: 'transition', en: 'Bend your left knee, and draw your left foot back behind you.', vi: 'Co gối trái, và đưa bàn chân trái về phía sau.' },
+    { id: 'cat-pulling-its-tail__cue-4', kind: 'alignment', en: 'Reach your right hand back to hold your left foot, or use a strap.', vi: 'Đưa tay phải ra sau giữ bàn chân trái, hoặc dùng dây.' },
+    { id: 'cat-pulling-its-tail__cue-5', kind: 'soften', en: 'Find your edge in the front of your left thigh, then let everything else go soft.', vi: 'Tìm ngưỡng ở mặt trước đùi trái, rồi để mọi phần khác mềm ra.' },
+    { id: 'cat-pulling-its-tail__cue-6', kind: 'breath', en: 'Halfway. If it feels right, let your right shoulder roll back toward the floor.', vi: 'Được một nửa rồi. Nếu thấy phù hợp, để vai phải lăn dần về phía sàn.' },
+    { id: 'cat-pulling-its-tail__cue-7', kind: 'safety', en: 'If your knee or your lower back complains, let go of your foot.', vi: 'Nếu gối hoặc lưng dưới khó chịu, buông bàn chân ra.' },
+    { id: 'cat-pulling-its-tail__cue-8', kind: 'transition', en: 'Slowly release your foot, and roll onto your back.', vi: 'Từ từ buông bàn chân, và lăn người về nằm ngửa.' },
+    { id: 'cat-pulling-its-tail__cue-9', kind: 'soften', en: 'Stretch out your legs, and feel the rebound before the other side.', vi: 'Duỗi dài hai chân, và cảm nhận dư âm trước khi đổi bên.' },
+  ],
+  modifications: [
+    { id: 'cat-pulling-its-tail__mod-1', en: 'Loop a strap around your foot if you can’t reach it.', vi: 'Quàng dây quanh bàn chân nếu tay chưa với tới.', props: ['strap'] },
+    { id: 'cat-pulling-its-tail__mod-2', en: 'Rest your top knee on a block or a bolster.', vi: 'Kê gạch hoặc gối ôm dưới gối trên.', props: ['block', 'bolster'] },
+    { id: 'cat-pulling-its-tail__mod-3', en: 'Rest your head on a folded blanket.', vi: 'Kê chăn gấp dưới đầu.', props: ['blanket'] },
+  ],
+  safety: [
+    { id: 'cat-pulling-its-tail__safe-1', en: 'Feel it in the front of the thigh and across the chest. Sharp pain in the bent knee means let go.', vi: 'Cảm giác nên ở mặt trước đùi và qua ngực. Đau nhói ở gối co nghĩa là cần buông ra.' },
+    { id: 'cat-pulling-its-tail__safe-2', en: 'With a tender sacroiliac joint or lower back, keep the twist small.', vi: 'Nếu khớp cùng chậu hoặc lưng dưới nhạy cảm, chỉ vặn nhẹ.' },
+    { id: 'cat-pulling-its-tail__safe-3', en: 'In pregnancy, stay on your side without the twist, with a bolster under your top knee.', vi: 'Khi mang thai, nằm nghiêng mà không vặn, kê gối ôm dưới gối trên.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['quadriceps', 'iliopsoas', 'external-oblique'],
+  },
+  joints: ['knee', 'hip-joint', 'thoracic-spine', 'lumbar-spine'],
+  transitionsTo: ['reclined-twist', 'savasana'],
+  figure: 'cat-pulling-its-tail',
+}

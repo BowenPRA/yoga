@@ -1,0 +1,51 @@
+export const sphinx = {
+  id: 'sphinx',
+  styles: ['yin', 'vinyasa'],
+  family: 'backbend',
+  level: 'gentle',
+  en: 'Sphinx',
+  sa: 'Sālamba Bhujaṅgāsana',
+  say: 'sah-LAHM-bah boo-jahng-GAH-sah-nah',
+  saNote: { en: 'The Sanskrit means Supported Cobra, the name Vinyasa classes often use. In Yin it is simply Sphinx, held for minutes.', vi: 'Tên Sanskrit nghĩa là Rắn hổ mang có hỗ trợ, cái tên các lớp Vinyasa hay dùng. Trong Yin, tư thế chỉ gọi là Nhân sư và được giữ nhiều phút.' },
+  vi: 'Nhân sư',
+  yin: {
+    holdMinutes: 3,
+    target: ['spine'],
+    counter: 'child-pose',
+    note: {
+      en: 'Three to five minutes, often before Seal. A long, gentle compression of the lower back while the belly and seat stay soft. A dull, spread-out sensation is fine; a sharp pinch in the lower back is not.',
+      vi: 'Ba đến năm phút, thường trước Hải cẩu. Lưng dưới được nén nhẹ và lâu trong khi bụng và mông thả mềm. Cảm giác âm ỉ, lan toả là được; đau nhói ở lưng dưới thì không.',
+    },
+  },
+  breath: {
+    en: 'In Yin, breathe slowly and let your belly soften onto the floor. In a Vinyasa flow, stay for five breaths, drawing your chest forward on each inhale.',
+    vi: 'Trong Yin, thở chậm và để bụng mềm xuống sàn. Trong chuỗi Vinyasa, giữ năm nhịp thở, mỗi lần hít vào kéo ngực về trước.',
+  },
+  cues: [
+    { id: 'sphinx__cue-1', kind: 'transition', en: 'Lie on your belly, and come up onto your forearms.', vi: 'Nằm sấp, và chống người lên cẳng tay.' },
+    { id: 'sphinx__cue-2', kind: 'alignment', en: 'Place your elbows a little in front of your shoulders.', vi: 'Đặt khuỷu tay hơi phía trước vai.' },
+    { id: 'sphinx__cue-3', kind: 'alignment', en: 'For less, slide your elbows further forward, or rest your chest on a bolster.', vi: 'Để nhẹ hơn, trượt khuỷu tay xa hơn về trước, hoặc tựa ngực lên gối ôm.' },
+    { id: 'sphinx__cue-4', kind: 'soften', en: 'Find your edge, then let your belly and your seat soften.', vi: 'Tìm ngưỡng của bạn, rồi để bụng và mông mềm ra.' },
+    { id: 'sphinx__cue-5', kind: 'soften', en: 'Let your head drop forward, if your neck likes it.', vi: 'Để đầu buông về trước, nếu cổ thấy dễ chịu.' },
+    { id: 'sphinx__cue-6', kind: 'breath', en: 'Halfway. Notice the sensation in your lower back. Dull is fine; sharp is not.', vi: 'Được một nửa rồi. Để ý cảm giác ở lưng dưới. Âm ỉ thì được; nhói thì không.' },
+    { id: 'sphinx__cue-7', kind: 'safety', en: 'If your lower back pinches, lower your chest, or come down.', vi: 'Nếu lưng dưới bị nhói, hạ ngực thấp xuống, hoặc nằm xuống.' },
+    { id: 'sphinx__cue-8', kind: 'transition', en: 'Slowly lower down, and rest your head on your hands.', vi: 'Từ từ hạ người xuống, và tựa đầu lên hai bàn tay.' },
+    { id: 'sphinx__cue-9', kind: 'soften', en: 'Rest here, and feel the rebound in your lower back.', vi: 'Nghỉ ở đây, và cảm nhận dư âm ở lưng dưới.' },
+  ],
+  modifications: [
+    { id: 'sphinx__mod-1', en: 'Rest your chest on a bolster to make the backbend smaller.', vi: 'Tựa ngực lên gối ôm để giảm độ ngả sau.', props: ['bolster'] },
+    { id: 'sphinx__mod-2', en: 'Slide a folded blanket under your hip points if they press into the floor.', vi: 'Kê chăn gấp dưới hai mỏm xương phía trước hông nếu chúng bị cấn xuống sàn.', props: ['blanket'] },
+    { id: 'sphinx__mod-3', en: 'In a Vinyasa class, press your forearms down and draw your chest forward for five breaths.', vi: 'Trong lớp Vinyasa, ấn cẳng tay xuống và kéo ngực về trước trong năm nhịp thở.', props: [] },
+  ],
+  safety: [
+    { id: 'sphinx__safe-1', en: 'Feel a dull, spread-out sensation in the lower back. A sharp pinch means come down.', vi: 'Cảm giác nên âm ỉ, lan toả ở lưng dưới. Đau nhói nghĩa là cần nằm xuống.' },
+    { id: 'sphinx__safe-2', en: 'In pregnancy, skip poses on the belly after the first trimester.', vi: 'Khi mang thai, bỏ qua các tư thế nằm sấp sau ba tháng đầu.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['rectus-abdominis'],
+  },
+  joints: ['lumbar-spine', 'sacrum', 'shoulder-joint'],
+  transitionsTo: ['seal', 'child-pose'],
+  figure: 'sphinx',
+}

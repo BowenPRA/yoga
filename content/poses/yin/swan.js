@@ -1,0 +1,50 @@
+export const swan = {
+  id: 'swan',
+  styles: ['yin'],
+  family: 'hip-opener',
+  level: 'moderate',
+  en: 'Swan',
+  sa: null,
+  saNote: { en: 'Swan is the Yin name. Yang classes call this shape Pigeon, Eka Pāda Rājakapotāsana; in Yin it is held longer, with the muscles soft.', vi: 'Thiên nga là tên Yin. Các lớp yang gọi dáng này là Bồ câu, Eka Pāda Rājakapotāsana; trong Yin, tư thế được giữ lâu hơn, với các cơ thả mềm.' },
+  vi: 'Thiên nga',
+  yin: {
+    holdMinutes: 2,
+    target: ['hips', 'spine'],
+    counter: 'child-pose',
+    note: {
+      en: 'One to three minutes each side, often before Sleeping Swan. The front hip turns out deeply, the front of the back hip lengthens, and the lower back takes a gentle arch. Nothing in the front knee, and no pinch in the lower back.',
+      vi: 'Một đến ba phút mỗi bên, thường trước Thiên nga ngủ. Hông chân trước xoay ngoài sâu, phía trước hông chân sau được kéo dài, và lưng dưới ưỡn nhẹ. Gối trước không có cảm giác gì, và lưng dưới không bị nhói.',
+    },
+  },
+  breath: {
+    en: 'Breathe slowly into the front of your back hip. With each exhale, let your hips sink a little.',
+    vi: 'Thở chậm, hướng hơi thở vào phía trước hông chân sau. Mỗi hơi thở ra, để hông chìm xuống thêm một chút.',
+  },
+  cues: [
+    { id: 'swan__cue-1', kind: 'transition', en: 'From all fours, bring your right knee forward, behind your right wrist.', vi: 'Từ tư thế bốn điểm, đưa gối phải lên trước, đặt phía sau cổ tay phải.' },
+    { id: 'swan__cue-2', kind: 'alignment', en: 'If your right hip floats, slide a bolster or a blanket under it.', vi: 'Nếu hông phải lơ lửng, kê gối ôm hoặc chăn bên dưới.' },
+    { id: 'swan__cue-3', kind: 'alignment', en: 'Slide your left leg straight back, and rest the top of your foot on the mat.', vi: 'Trượt chân trái duỗi thẳng ra sau, đặt mu bàn chân xuống thảm.' },
+    { id: 'swan__cue-4', kind: 'alignment', en: 'Walk your hands back under your shoulders, and lift your chest.', vi: 'Đưa hai tay lùi về dưới vai, và nâng ngực lên.' },
+    { id: 'swan__cue-5', kind: 'soften', en: 'Find your edge, then let the weight of your hips do the work.', vi: 'Tìm ngưỡng của bạn, rồi để trọng lượng của hông làm việc.' },
+    { id: 'swan__cue-6', kind: 'breath', en: 'We’re halfway. If your hips have softened, sink a little lower. Or stay.', vi: 'Đã được một nửa thời gian. Nếu hông đã mềm ra, hạ thấp thêm một chút. Hoặc cứ ở yên.' },
+    { id: 'swan__cue-7', kind: 'safety', en: 'If your front knee or your lower back complains, come down onto your forearms.', vi: 'Nếu gối trước hoặc lưng dưới khó chịu, hạ xuống chống cẳng tay.' },
+    { id: 'swan__cue-8', kind: 'transition', en: 'To come out, tuck your back toes and slowly press back to all fours.', vi: 'Để thoát thế, bấm các ngón chân sau xuống và từ từ đẩy người về tư thế bốn điểm.' },
+    { id: 'swan__cue-9', kind: 'soften', en: 'Pause here, and notice the rebound in your right hip.', vi: 'Dừng lại ở đây, và cảm nhận dư âm ở hông phải.' },
+  ],
+  modifications: [
+    { id: 'swan__mod-1', en: 'Rest your front hip on a bolster or a folded blanket so your hips stay level.', vi: 'Kê gối ôm hoặc chăn gấp dưới hông trước để hai bên hông cân bằng.', props: ['bolster', 'blanket'] },
+    { id: 'swan__mod-2', en: 'Place your hands on blocks if your lower back pinches.', vi: 'Đặt hai tay lên gạch nếu lưng dưới bị nhói.', props: ['blocks'] },
+    { id: 'swan__mod-3', en: 'If your front knee is unhappy, lie on your back and take Eye of the Needle.', vi: 'Nếu gối trước không thoải mái, nằm ngửa và chuyển sang tư thế Lỗ kim (số 4 nằm).', props: [] },
+  ],
+  safety: [
+    { id: 'swan__safe-1', en: 'Feel it in the outer hip and the front of the back hip. Pain in the front knee means come out.', vi: 'Cảm giác nên ở hông ngoài và phía trước hông chân sau. Đau ở gối trước nghĩa là cần thoát thế.' },
+    { id: 'swan__safe-2', en: 'In pregnancy, or with a tender sacroiliac joint, use a bolster under your front hip and keep the hold short.', vi: 'Khi mang thai, hoặc khi khớp cùng chậu nhạy cảm, kê gối ôm dưới hông trước và giữ ngắn thôi.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['piriformis', 'gluteus-maximus', 'iliopsoas'],
+  },
+  joints: ['hip-joint', 'knee', 'lumbar-spine', 'sacrum'],
+  transitionsTo: ['sleeping-swan', 'child-pose'],
+  figure: 'swan',
+}

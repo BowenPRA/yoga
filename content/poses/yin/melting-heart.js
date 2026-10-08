@@ -1,0 +1,53 @@
+export const meltingHeart = {
+  id: 'melting-heart',
+  styles: ['yin'],
+  family: 'backbend',
+  level: 'gentle',
+  en: 'Melting Heart',
+  aka: ['Extended Puppy'],
+  sa: 'Anāhatāsana',
+  say: 'ah-NAH-hah-TAH-sah-nah',
+  saNote: { en: 'Anāhata is the heart chakra. Some Vinyasa teachers call a similar shape Extended Puppy, Uttāna Śiśosana.', vi: 'Anāhata là luân xa tim. Một số giáo viên Vinyasa gọi dáng tương tự là Chó con duỗi dài, Uttāna Śiśosana.' },
+  vi: 'Tan chảy trái tim',
+  yin: {
+    holdMinutes: 3,
+    target: ['shoulders', 'spine'],
+    counter: 'child-pose',
+    note: {
+      en: 'Three to five minutes. The upper back sinks into a gentle backbend while the arms reach forward, opening the shoulders and armpits. Feel it in the upper back and shoulders; tingling hands or a pinch in a shoulder means bring the arms wider or lower.',
+      vi: 'Ba đến năm phút. Lưng trên chìm vào một tư thế ngả sau nhẹ trong khi hai tay vươn về trước, mở vai và nách. Cảm giác nên ở lưng trên và vai; tê tay hoặc nhói ở vai nghĩa là cần đặt tay rộng hơn hoặc thấp hơn.',
+    },
+  },
+  breath: {
+    en: 'Breathe into your upper back and the space under your arms. Let each exhale melt your chest toward the floor.',
+    vi: 'Thở vào lưng trên và khoảng dưới cánh tay. Để mỗi hơi thở ra làm ngực tan chảy xuống sàn.',
+  },
+  cues: [
+    { id: 'melting-heart__cue-1', kind: 'transition', en: 'Come onto all fours, and pad your knees with a blanket.', vi: 'Về tư thế bốn điểm, và kê chăn dưới gối.' },
+    { id: 'melting-heart__cue-2', kind: 'alignment', en: 'Keep your hips over your knees, and walk your hands forward.', vi: 'Giữ hông thẳng trên gối, và từ từ bước hai tay về phía trước.' },
+    { id: 'melting-heart__cue-3', kind: 'transition', en: 'Let your chest sink toward the floor. Rest your forehead, or your chin, on the mat.', vi: 'Để ngực chìm xuống sàn. Đặt trán, hoặc cằm, xuống thảm.' },
+    { id: 'melting-heart__cue-4', kind: 'soften', en: 'Find your edge, then let your arms and shoulders go soft.', vi: 'Tìm ngưỡng của bạn, rồi để hai tay và vai mềm ra.' },
+    { id: 'melting-heart__cue-5', kind: 'soften', en: 'Let your heart melt down. There’s nothing to hold.', vi: 'Để trái tim tan chảy xuống. Không cần giữ gì cả.' },
+    { id: 'melting-heart__cue-6', kind: 'breath', en: 'Halfway there. Breathe into your upper back, and notice what has softened.', vi: 'Được một nửa rồi. Thở vào lưng trên, và để ý những gì đã mềm ra.' },
+    { id: 'melting-heart__cue-7', kind: 'safety', en: 'If your hands tingle or your shoulders pinch, widen your arms or bend your elbows.', vi: 'Nếu tay bị tê hoặc vai bị nhói, mở rộng hai tay hoặc gập khuỷu tay.' },
+    { id: 'melting-heart__cue-8', kind: 'transition', en: 'To come out, slowly walk your hands back, and sit back toward your heels.', vi: 'Để thoát thế, từ từ đưa tay lùi về, và ngồi lùi về phía gót chân.' },
+    { id: 'melting-heart__cue-9', kind: 'soften', en: 'Rest in Child’s Pose, and feel the rebound across your shoulders.', vi: 'Nghỉ ở tư thế Em bé, và cảm nhận dư âm lan qua vai.' },
+  ],
+  modifications: [
+    { id: 'melting-heart__mod-1', en: 'Rest your hands or your forearms on blocks to ease your shoulders.', vi: 'Đặt tay hoặc cẳng tay lên gạch để vai nhẹ nhàng hơn.', props: ['blocks'] },
+    { id: 'melting-heart__mod-2', en: 'Place a bolster under your chest.', vi: 'Đặt một gối ôm dưới ngực.', props: ['bolster'] },
+    { id: 'melting-heart__mod-3', en: 'Reach one arm forward at a time, and rest your head on the other forearm.', vi: 'Vươn từng tay một về trước, và tựa đầu lên cẳng tay còn lại.', props: [] },
+  ],
+  safety: [
+    { id: 'melting-heart__safe-1', en: 'With a shoulder injury, keep your arms wide and your chest higher, on a bolster.', vi: 'Nếu vai bị chấn thương, đặt hai tay rộng và giữ ngực cao hơn, tựa trên gối ôm.' },
+    { id: 'melting-heart__safe-2', en: 'Rest your forehead, not your chin, if your neck doesn’t like the arch.', vi: 'Tựa trán, không phải cằm, nếu cổ không thoải mái khi ngửa.' },
+    { id: 'melting-heart__safe-3', en: 'In pregnancy, take your knees wider to make room for your belly.', vi: 'Khi mang thai, mở hai gối rộng hơn để chừa chỗ cho bụng.' },
+  ],
+  muscles: {
+    working: [],
+    lengthening: ['latissimus-dorsi', 'teres-major'],
+  },
+  joints: ['shoulder-joint', 'thoracic-spine'],
+  transitionsTo: ['child-pose', 'sphinx'],
+  figure: 'melting-heart',
+}
