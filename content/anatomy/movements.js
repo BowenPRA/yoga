@@ -71,7 +71,7 @@ export const MOVEMENTS = [
       { style: 'ashtanga', en: 'Roll your back thigh in so the hips face forward.', vi: 'Xoay đùi sau vào trong để hông hướng về trước.' },
       { style: 'vinyasa', en: 'Turn your palms to face behind you.', vi: 'Xoay lòng bàn tay hướng ra sau.' },
     ],
-    poses: ['warrior-1', 'reverse-prayer', 'cow-face-arms'],
+    poses: ['warrior-1', 'reverse-prayer', 'cow-face-pose'],
     wordTrap: 'Người Việt hay nhầm “inner” (bên trong) và “internal” (xoay trong). “Inner thigh” là vị trí, “turn in” là động tác.',
   },
   {
