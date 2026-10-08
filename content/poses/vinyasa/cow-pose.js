@@ -7,6 +7,10 @@ export const cowPose = {
   sa: 'Bitilāsana',
   say: 'bih-tih-LAH-sah-nah',
   vi: 'Con bò',
+  saNote: {
+    en: 'A modern name, not a classical Sanskrit word for cow. Most teachers simply say Cow, or Cat-Cow for the pair.',
+    vi: 'Một cái tên hiện đại, không phải từ Sanskrit cổ điển chỉ con bò. Hầu hết giáo viên chỉ nói Cow, hoặc Cat-Cow cho cả cặp Con mèo và Con bò.',
+  },
   breath: {
     en: 'Cow moves with the inhale: lift your chest as you breathe in. Pair it with Cat on the exhale.',
     vi: 'Con bò đi cùng hơi hít vào: nâng ngực khi hít vào. Kết hợp với Con mèo khi thở ra.',

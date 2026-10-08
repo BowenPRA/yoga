@@ -7,7 +7,7 @@ export const handUnderFootPose = {
   aka: ['Gorilla Pose'],
   sa: 'Pādahastāsana',
   say: 'pah-dah-hah-STAH-sah-nah',
-  vi: 'Gập người, tay dưới bàn chân',
+  vi: 'Bàn tay dưới bàn chân',
 
   ashtanga: {
     series: 'primary',

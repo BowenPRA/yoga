@@ -23,14 +23,14 @@ export const reclinedBoundAngle = {
     { id: 'reclined-bound-angle__cue-8', kind: 'transition', en: 'Use your hands to bring your knees together, and roll onto your side.', vi: 'Dùng tay đưa hai gối khép lại, và lăn người sang một bên.' },
   ],
   modifications: [
-    { id: 'reclined-bound-angle__mod-1', en: 'Place a block or a bolster under each knee.', vi: 'Kê gạch hoặc gối ôm dưới mỗi bên gối.', props: ['blocks', 'bolster'] },
+    { id: 'reclined-bound-angle__mod-1', en: 'Place a block or a bolster under each knee.', vi: 'Kê gạch hoặc gối ôm dưới mỗi bên đầu gối.', props: ['blocks', 'bolster'] },
     { id: 'reclined-bound-angle__mod-2', en: 'Lie back on a bolster placed along your spine, to open your chest.', vi: 'Nằm tựa lên gối ôm đặt dọc cột sống, để mở ngực.', props: ['bolster'] },
     { id: 'reclined-bound-angle__mod-3', en: 'Rest your head on a folded blanket.', vi: 'Tựa đầu lên chăn gấp.', props: ['blanket'] },
   ],
   safety: [
     { id: 'reclined-bound-angle__safe-1', en: 'If you have a knee or inner thigh injury, support both knees well.', vi: 'Nếu bạn có chấn thương gối hoặc mặt trong đùi, kê đỡ hai gối thật chắc.' },
     { id: 'reclined-bound-angle__safe-2', en: 'In later pregnancy, lie back on a bolster, so your head and chest are higher than your belly.', vi: 'Ở giai đoạn sau của thai kỳ, nằm tựa lên gối ôm, để đầu và ngực cao hơn bụng.' },
-    { id: 'reclined-bound-angle__safe-3', en: 'In Yin, this is Reclining Butterfly, held for several minutes. Come out slowly.', vi: 'Trong Yin, đây là tư thế Con bướm nằm, giữ vài phút. Hãy thoát thế từ từ.' },
+    { id: 'reclined-bound-angle__safe-3', en: 'In Yin, this is Reclining Butterfly, held for several minutes. Come out slowly.', vi: 'Trong Yin, tư thế này gọi là Con bướm nằm và được giữ vài phút. Hãy thoát thế từ từ.' },
   ],
   muscles: {
     working: [],

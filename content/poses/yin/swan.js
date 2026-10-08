@@ -34,10 +34,10 @@ export const swan = {
   modifications: [
     { id: 'swan__mod-1', en: 'Rest your front hip on a bolster or a folded blanket so your hips stay level.', vi: 'Kê gối ôm hoặc chăn gấp dưới hông trước để hai bên hông cân bằng.', props: ['bolster', 'blanket'] },
     { id: 'swan__mod-2', en: 'Place your hands on blocks if your lower back pinches.', vi: 'Đặt hai tay lên gạch nếu lưng dưới bị nhói.', props: ['blocks'] },
-    { id: 'swan__mod-3', en: 'If your front knee is unhappy, lie on your back and take Eye of the Needle.', vi: 'Nếu gối trước không thoải mái, nằm ngửa và chuyển sang tư thế Lỗ kim (số 4 nằm).', props: [] },
+    { id: 'swan__mod-3', en: 'If your front knee is unhappy, lie on your back and take Eye of the Needle.', vi: 'Nếu gối trước không thoải mái, nằm ngửa và chuyển sang tư thế Số 4 nằm.', props: [] },
   ],
   safety: [
-    { id: 'swan__safe-1', en: 'Feel it in the outer hip and the front of the back hip. Pain in the front knee means come out.', vi: 'Cảm giác nên ở hông ngoài và phía trước hông chân sau. Đau ở gối trước nghĩa là cần thoát thế.' },
+    { id: 'swan__safe-1', en: 'Feel it in your outer hip and the front of your back hip. Pain in your front knee means come out.', vi: 'Cảm giác nên ở hông ngoài và phía trước hông chân sau. Đau ở gối trước nghĩa là cần thoát thế.' },
     { id: 'swan__safe-2', en: 'In pregnancy, or with a tender sacroiliac joint, use a bolster under your front hip and keep the hold short.', vi: 'Khi mang thai, hoặc khi khớp cùng chậu nhạy cảm, kê gối ôm dưới hông trước và giữ ngắn thôi.' },
   ],
   muscles: {

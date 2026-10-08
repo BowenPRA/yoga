@@ -16,7 +16,7 @@ export const crescentLunge = {
     { id: 'crescent-lunge__cue-1', kind: 'transition', en: 'From Downward Dog, step your right foot forward between your hands.', vi: 'Từ Chó úp mặt, bước chân phải lên trước giữa hai tay.' },
     { id: 'crescent-lunge__cue-2', kind: 'transition', en: 'Inhale, rise up, and reach your arms overhead.', vi: 'Hít vào, nâng người lên, và vươn hai tay qua đầu.' },
     { id: 'crescent-lunge__cue-3', kind: 'alignment', en: 'Bend your front knee so it stacks over your ankle.', vi: 'Gập gối trước sao cho gối thẳng trên cổ chân.' },
-    { id: 'crescent-lunge__cue-4', kind: 'alignment', en: 'Lift your back thigh, and reach back through your back heel.', vi: 'Nâng đùi sau lên, và đẩy ra sau qua gót chân sau.' },
+    { id: 'crescent-lunge__cue-4', kind: 'alignment', en: 'Lift your back thigh, and reach back through your back heel.', vi: 'Nâng đùi sau lên, và đẩy gót chân sau ra phía sau.' },
     { id: 'crescent-lunge__cue-5', kind: 'alignment', en: 'Draw your belly in, and stack your shoulders over your hips.', vi: 'Thu bụng vào, và đặt vai thẳng trên hông.' },
     { id: 'crescent-lunge__cue-6', kind: 'soften', en: 'Soften your shoulders down, while your arms stay strong.', vi: 'Thả lỏng vai xuống, trong khi hai tay vẫn vững.' },
     { id: 'crescent-lunge__cue-7', kind: 'breath', en: 'Stay for three to five breaths.', vi: 'Giữ ba đến năm nhịp thở.' },

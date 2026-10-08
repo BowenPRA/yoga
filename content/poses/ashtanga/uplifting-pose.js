@@ -5,9 +5,13 @@ export const upliftingPose = {
   level: 'strong',
   en: 'Uplifting Pose',
   aka: ['Scale Pose', 'Lifted Lotus'],
-  sa: 'Utpluthiḥ',
+  sa: 'Utplutiḥ',
   say: 'oot-PLOO-tee',
   vi: 'Hoa sen nâng người',
+  saNote: {
+    en: 'Ashtanga books usually spell it Utpluthiḥ; the Sanskrit word is utpluti, “leaping up”. Outside Ashtanga the same lift is often called Tolāsana, Scale Pose.',
+    vi: 'Sách Ashtanga thường viết là Utpluthiḥ; từ Sanskrit là utpluti, nghĩa là “bật lên”. Ngoài Ashtanga, động tác nâng người này thường được gọi là Tolāsana, tư thế Cái cân.',
+  },
 
   ashtanga: {
     series: 'primary',

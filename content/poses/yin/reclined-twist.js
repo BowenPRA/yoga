@@ -23,7 +23,7 @@ export const reclinedTwist = {
   },
   cues: [
     { id: 'reclined-twist__cue-1', kind: 'transition', en: 'Lie on your back, bend your knees, and shift your hips a little to the right.', vi: 'Nằm ngửa, co gối, và dịch hông sang phải một chút.' },
-    { id: 'reclined-twist__cue-2', kind: 'transition', en: 'Let both knees fall to the left. If they don’t reach the floor, rest them on a bolster.', vi: 'Để hai gối ngả sang trái. Nếu gối chưa chạm sàn, kê gối ôm bên dưới.' },
+    { id: 'reclined-twist__cue-2', kind: 'transition', en: 'Let both knees fall to the left. If they don’t reach the floor, rest them on a bolster.', vi: 'Để hai đầu gối ngả sang trái. Nếu đầu gối chưa chạm sàn, kê gối ôm bên dưới.' },
     { id: 'reclined-twist__cue-3', kind: 'alignment', en: 'Open your arms wide, palms facing up.', vi: 'Dang rộng hai tay, lòng bàn tay ngửa lên.' },
     { id: 'reclined-twist__cue-4', kind: 'alignment', en: 'Turn your head to the right, only if your neck enjoys it.', vi: 'Quay đầu sang phải, chỉ khi cổ thấy dễ chịu.' },
     { id: 'reclined-twist__cue-5', kind: 'soften', en: 'Find your edge, and let gravity do the twisting.', vi: 'Tìm ngưỡng của bạn, và để trọng lực vặn giúp bạn.' },

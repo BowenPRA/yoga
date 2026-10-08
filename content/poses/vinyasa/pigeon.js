@@ -19,7 +19,7 @@ export const pigeon = {
     { id: 'pigeon__cue-1', kind: 'transition', en: 'From Downward Dog, bring your right knee forward, behind your right wrist.', vi: 'Từ Chó úp mặt, đưa gối phải lên trước, đặt phía sau cổ tay phải.' },
     { id: 'pigeon__cue-2', kind: 'alignment', en: 'Let your right foot rest toward your left hip, or move it forward if your knee allows.', vi: 'Để bàn chân phải hướng về phía hông trái, hoặc đưa bàn chân lên trước nếu gối cho phép.' },
     { id: 'pigeon__cue-3', kind: 'alignment', en: 'Flex your front foot to protect your knee.', vi: 'Gập bàn chân trước để bảo vệ gối.' },
-    { id: 'pigeon__cue-4', kind: 'alignment', en: 'Slide your back leg straight behind you, top of the foot down.', vi: 'Duỗi thẳng chân sau ra phía sau, mu bàn chân úp xuống.' },
+    { id: 'pigeon__cue-4', kind: 'alignment', en: 'Slide your back leg straight behind you, top of your foot down.', vi: 'Duỗi thẳng chân sau ra phía sau, mu bàn chân úp xuống.' },
     { id: 'pigeon__cue-5', kind: 'alignment', en: 'Square your hips toward the front of your mat.', vi: 'Đưa hai hông hướng thẳng về phía đầu thảm.' },
     { id: 'pigeon__cue-6', kind: 'soften', en: 'Fold forward, and let your outer hip soften a little more with each exhale.', vi: 'Gập người về trước, và để hông ngoài mềm thêm một chút sau mỗi hơi thở ra.' },
     { id: 'pigeon__cue-7', kind: 'breath', en: 'Stay for five breaths, or longer if it feels good.', vi: 'Giữ năm nhịp thở, hoặc lâu hơn nếu thấy dễ chịu.' },

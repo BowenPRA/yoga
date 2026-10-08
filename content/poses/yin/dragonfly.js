@@ -6,7 +6,7 @@ export const dragonfly = {
   en: 'Dragonfly',
   aka: ['Straddle'],
   sa: null,
-  saNote: { en: 'Dragonfly is the Yin name. The yang pose is Wide-Angle Seated Forward Bend, Upaviṣṭha Koṇāsana.', vi: 'Chuồn chuồn là tên Yin. Tư thế yang là Gập người ngồi dang rộng chân, Upaviṣṭha Koṇāsana.' },
+  saNote: { en: 'Dragonfly is the Yin name. The yang pose is Wide-Angle Seated Forward Bend, Upaviṣṭha Koṇāsana.', vi: 'Chuồn chuồn là tên Yin. Tư thế yang là Ngồi gập người dang rộng chân, Upaviṣṭha Koṇāsana.' },
   vi: 'Chuồn chuồn',
   yin: {
     holdMinutes: 3,
@@ -38,7 +38,7 @@ export const dragonfly = {
     { id: 'dragonfly__mod-3', en: 'Lie on your back with your legs up the wall in a wide V.', vi: 'Nằm ngửa, gác chân lên tường và dang thành hình chữ V.', props: ['wall'] },
   ],
   safety: [
-    { id: 'dragonfly__safe-1', en: 'Feel it in your inner thighs and the backs of your legs. Pain inside the knee means bend your knees or come out.', vi: 'Cảm giác nên ở mặt trong đùi và mặt sau chân. Đau ở mặt trong gối nghĩa là cần chùng gối hoặc thoát thế.' },
+    { id: 'dragonfly__safe-1', en: 'Feel it in your inner thighs and the backs of your legs. Pain inside your knee means bend your knees or come out.', vi: 'Cảm giác nên ở mặt trong đùi và mặt sau chân. Đau ở mặt trong gối nghĩa là cần chùng gối hoặc thoát thế.' },
     { id: 'dragonfly__safe-2', en: 'With sciatica or a lower back injury, keep your spine longer and fold less.', vi: 'Nếu bị đau thần kinh toạ hoặc chấn thương lưng dưới, giữ lưng dài hơn và gập ít lại.' },
     { id: 'dragonfly__safe-3', en: 'In pregnancy, keep your legs less wide, and fold only a little.', vi: 'Khi mang thai, dang chân ít rộng hơn, và chỉ gập nhẹ.' },
   ],

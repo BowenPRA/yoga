@@ -5,7 +5,7 @@ export const sphinx = {
   level: 'gentle',
   en: 'Sphinx',
   sa: 'Sālamba Bhujaṅgāsana',
-  say: 'sah-LAHM-bah boo-jahng-GAH-sah-nah',
+  say: 'sah-LAHM-bah boo-jang-GAH-sah-nah',
   saNote: { en: 'The Sanskrit means Supported Cobra, the name Vinyasa classes often use. In Yin it is simply Sphinx, held for minutes.', vi: 'Tên Sanskrit nghĩa là Rắn hổ mang có hỗ trợ, cái tên các lớp Vinyasa hay dùng. Trong Yin, tư thế chỉ gọi là Nhân sư và được giữ nhiều phút.' },
   vi: 'Nhân sư',
   yin: {
@@ -39,7 +39,7 @@ export const sphinx = {
   ],
   safety: [
     { id: 'sphinx__safe-1', en: 'Feel a dull, spread-out sensation in the lower back. A sharp pinch means come down.', vi: 'Cảm giác nên âm ỉ, lan toả ở lưng dưới. Đau nhói nghĩa là cần nằm xuống.' },
-    { id: 'sphinx__safe-2', en: 'In pregnancy, skip poses on the belly after the first trimester.', vi: 'Khi mang thai, bỏ qua các tư thế nằm sấp sau ba tháng đầu.' },
+    { id: 'sphinx__safe-2', en: 'In pregnancy, skip poses on your belly after the first trimester.', vi: 'Khi mang thai, bỏ qua các tư thế nằm sấp sau ba tháng đầu.' },
   ],
   muscles: {
     working: [],

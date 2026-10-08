@@ -21,7 +21,7 @@ export const halfButterfly = {
     vi: 'Thở vào phía sau cơ thể. Để mỗi hơi thở ra giúp bạn mềm xuống trên chân.',
   },
   cues: [
-    { id: 'half-butterfly__cue-1', kind: 'transition', en: 'Sit on a blanket with your right leg straight, and your left foot against your inner right thigh.', vi: 'Ngồi trên chăn, chân phải duỗi thẳng, lòng bàn chân trái áp vào mặt trong đùi phải.' },
+    { id: 'half-butterfly__cue-1', kind: 'transition', en: 'Sit on a blanket with your right leg straight, and your left foot against your inner right thigh.', vi: 'Ngồi trên chăn, chân phải duỗi thẳng, bàn chân trái áp vào mặt trong đùi phải.' },
     { id: 'half-butterfly__cue-2', kind: 'alignment', en: 'Lay a bolster across your right leg, if you’d like something to rest on.', vi: 'Đặt một gối ôm ngang trên chân phải, nếu bạn muốn có chỗ để tựa.' },
     { id: 'half-butterfly__cue-3', kind: 'transition', en: 'Fold forward over your straight leg, or toward the middle. Let your back round.', vi: 'Gập người về trước trên chân duỗi, hoặc về giữa. Để lưng cong tròn.' },
     { id: 'half-butterfly__cue-4', kind: 'soften', en: 'Find your edge, and let your head and arms be heavy.', vi: 'Tìm ngưỡng của bạn, và để đầu và hai tay nặng xuống.' },
@@ -37,7 +37,7 @@ export const halfButterfly = {
     { id: 'half-butterfly__mod-3', en: 'If your bent knee floats, support it with a block.', vi: 'Nếu gối co lơ lửng, đỡ bằng một viên gạch.', props: ['block'] },
   ],
   safety: [
-    { id: 'half-butterfly__safe-1', en: 'Feel it in the back of your leg and your lower back, never behind the knee.', vi: 'Cảm giác nên ở mặt sau chân và lưng dưới, không bao giờ ở phía sau gối.' },
+    { id: 'half-butterfly__safe-1', en: 'Feel it in the back of your leg and your lower back, never behind your knee.', vi: 'Cảm giác nên ở mặt sau chân và lưng dưới, không bao giờ ở phía sau gối.' },
     { id: 'half-butterfly__safe-2', en: 'With sciatica, keep your straight knee bent, and fold less.', vi: 'Nếu bị đau thần kinh toạ, giữ gối chân duỗi hơi chùng, và gập ít lại.' },
     { id: 'half-butterfly__safe-3', en: 'In pregnancy, fold toward the middle, leaving room for your belly.', vi: 'Khi mang thai, gập về giữa, chừa khoảng trống cho bụng.' },
   ],

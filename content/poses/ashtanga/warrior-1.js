@@ -6,7 +6,7 @@ export const warrior1 = {
   en: 'Warrior I',
   aka: ['Warrior 1', 'Warrior A'],
   sa: 'Vīrabhadrāsana I',
-  say: 'vee-rah-bah-DRAH-sah-nah WUN',
+  say: 'vee-rah-bah-DRAH-sah-nah ONE',
   vi: 'Chiến binh I',
   saNote: {
     en: 'Ashtanga calls this Vīrabhadrāsana A (vee-rah-bah-DRAH-sah-nah AY). In a Vinyasa class it is Vīrabhadrāsana I, Warrior One.',
@@ -44,7 +44,7 @@ export const warrior1 = {
   ],
 
   modifications: [
-    { id: 'warrior-1__mod-1', en: 'Lift your back heel into a high lunge if your back ankle is tight.', vi: 'Nhấc gót chân sau lên thành tư thế chùng chân cao nếu cổ chân sau bị căng.', props: [] },
+    { id: 'warrior-1__mod-1', en: 'Lift your back heel into a high lunge if your back ankle is tight.', vi: 'Nhấc gót chân sau lên thành tư thế Chùng chân cao nếu cổ chân sau bị căng.', props: [] },
     { id: 'warrior-1__mod-2', en: 'Step your feet wider apart, like train tracks, for more balance.', vi: 'Đặt hai bàn chân rộng sang hai bên, như hai đường ray, để vững hơn.', props: [] },
     { id: 'warrior-1__mod-3', en: 'Keep your hands on your hips if your shoulders are tired.', vi: 'Đặt tay lên hông nếu vai đã mỏi.', props: [] },
   ],

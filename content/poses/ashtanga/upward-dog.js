@@ -13,7 +13,7 @@ export const upwardDog = {
     series: 'primary',
     section: 'surya-a',
     position: 6,
-    drishti: 'nose',
+    drishti: 'third-eye',
     note: {
       en: 'Pañca, the fifth vinyasa of Surya Namaskara A, on an inhale; it follows every Chaturanga in the series. A passing count, never held; the teacher counts “Pañca, inhale”.',
       vi: 'Pañca, vinyasa thứ năm của Chào mặt trời A, khi hít vào; tư thế này theo sau mọi lần Chaturanga trong cả chuỗi. Một nhịp đi qua, không bao giờ giữ lại; giáo viên đếm “Pañca, hít vào”.',

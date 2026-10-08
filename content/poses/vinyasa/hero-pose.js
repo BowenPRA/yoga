@@ -16,7 +16,7 @@ export const heroPose = {
     { id: 'hero-pose__cue-2', kind: 'transition', en: 'Roll your calves out with your hands, and sit down between your heels.', vi: 'Dùng tay đẩy bắp chân ra ngoài, và ngồi xuống giữa hai gót chân.' },
     { id: 'hero-pose__cue-3', kind: 'alignment', en: 'Point your toes straight back, with the tops of your feet on the mat.', vi: 'Hướng ngón chân thẳng ra sau, mu bàn chân đặt trên thảm.' },
     { id: 'hero-pose__cue-4', kind: 'alignment', en: 'Rest your hands on your thighs.', vi: 'Đặt hai tay lên đùi.' },
-    { id: 'hero-pose__cue-5', kind: 'alignment', en: 'Lift your chest, and lengthen up through the crown of your head.', vi: 'Nâng ngực, và kéo dài lên qua đỉnh đầu.' },
+    { id: 'hero-pose__cue-5', kind: 'alignment', en: 'Lift your chest, and lengthen up through the crown of your head.', vi: 'Nâng ngực, và vươn đỉnh đầu lên cao.' },
     { id: 'hero-pose__cue-6', kind: 'soften', en: 'Soften your shoulders, and let your hands rest.', vi: 'Thả lỏng vai, và để hai tay nghỉ.' },
     { id: 'hero-pose__cue-7', kind: 'breath', en: 'Stay for five breaths, or longer.', vi: 'Giữ năm nhịp thở, hoặc lâu hơn.' },
     { id: 'hero-pose__cue-8', kind: 'safety', en: 'If your knees hurt, sit up higher on a block.', vi: 'Nếu gối đau, ngồi cao hơn trên một viên gạch.' },

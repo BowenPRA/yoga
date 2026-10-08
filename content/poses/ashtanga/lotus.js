@@ -30,7 +30,7 @@ export const lotus = {
     { id: 'lotus__cue-1', kind: 'transition', en: 'Bring your right foot onto your left thigh, then your left foot onto your right thigh.', vi: 'Đặt bàn chân phải lên đùi trái, rồi bàn chân trái lên đùi phải.' },
     { id: 'lotus__cue-2', kind: 'alignment', en: 'Let your knees drop toward the floor.', vi: 'Để hai gối hạ dần xuống về phía sàn.' },
     { id: 'lotus__cue-3', kind: 'alignment', en: 'Rest your hands on your knees, thumb and first finger touching.', vi: 'Đặt hai tay lên gối, ngón cái và ngón trỏ chạm nhau.' },
-    { id: 'lotus__cue-4', kind: 'alignment', en: 'Root down through your sitting bones and lengthen up.', vi: 'Bám rễ qua xương ngồi và kéo dài lên.' },
+    { id: 'lotus__cue-4', kind: 'alignment', en: 'Root down through your sitting bones and lengthen up.', vi: 'Ấn hai xương ngồi xuống sàn và vươn dài lên.' },
     { id: 'lotus__cue-5', kind: 'alignment', en: 'Lower your chin slightly, and lengthen the back of your neck.', vi: 'Hạ cằm nhẹ, và kéo dài phía sau cổ.' },
     { id: 'lotus__cue-6', kind: 'soften', en: 'Soften your shoulders, your face, your belly.', vi: 'Thả lỏng vai, khuôn mặt, và bụng.' },
     { id: 'lotus__cue-7', kind: 'breath', en: 'Stay for ten breaths. Let each one be a little slower.', vi: 'Giữ mười nhịp thở. Để mỗi hơi thở chậm hơn một chút.' },
@@ -45,11 +45,11 @@ export const lotus = {
   ],
 
   safety: [
-    { id: 'lotus__safe-1', en: 'Lotus comes from your hips, not your knees. Never force your foot into place.', vi: 'Hoa sen đến từ hông, không phải từ gối. Đừng bao giờ ép bàn chân vào vị trí.' },
+    { id: 'lotus__safe-1', en: 'Lotus comes from your hips, not your knees. Never force your foot into place.', vi: 'Thế hoa sen đến từ khớp háng, không phải từ gối. Đừng bao giờ ép bàn chân vào vị trí.' },
     { id: 'lotus__safe-2', en: 'With a knee injury, sit cross-legged instead.', vi: 'Nếu gối có chấn thương, ngồi xếp bằng thay thế.' },
   ],
 
-  muscles: { working: ['deep-rotators', 'erector-spinae'], lengthening: ['tibialis-anterior'] },
+  muscles: { working: ['erector-spinae'], lengthening: ['tibialis-anterior'] },
   joints: ['hip-joint', 'knee', 'ankle', 'sit-bones'],
   transitionsTo: ['uplifting-pose'],
   figure: 'lotus',

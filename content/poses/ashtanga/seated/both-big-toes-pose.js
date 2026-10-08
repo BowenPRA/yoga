@@ -11,6 +11,7 @@ export const bothBigToesPose = {
     series: 'primary',
     section: 'seated',
     position: 37,
+    vinyasas: 15,
     breaths: 5,
     drishti: 'up',
     note: {

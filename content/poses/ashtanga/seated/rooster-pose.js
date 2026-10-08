@@ -34,12 +34,12 @@ export const roosterPose = {
     { id: 'rooster-pose__cue-8', kind: 'transition', en: 'Exhale, lower down, release your arms and your lotus, and take a vinyasa.', vi: 'Thở ra, hạ xuống, rút tay và gỡ thế hoa sen, rồi làm một vinyasa.' },
   ],
   modifications: [
-    { id: 'rooster-pose__mod-1', en: 'Skip the threading: press your hands down beside your hips and lift your lotus, in Scale Pose.', vi: 'Bỏ bước luồn tay: ấn hai tay xuống cạnh hông và nâng thế hoa sen lên, ở tư thế Cái cân.', props: [] },
+    { id: 'rooster-pose__mod-1', en: 'Skip the threading: press your hands down beside your hips and lift your lotus, in Scale Pose.', vi: 'Bỏ bước luồn tay: ấn hai tay xuống cạnh hông và nâng thế hoa sen lên, như tư thế Hoa sen nâng người.', props: [] },
     { id: 'rooster-pose__mod-2', en: 'Put blocks under your hands to give yourself more height.', vi: 'Kê gạch dưới hai tay để có thêm độ cao.', props: ['blocks'] },
     { id: 'rooster-pose__mod-3', en: 'If lotus isn’t comfortable, sit cross-legged, press your hands down and lift your hips.', vi: 'Nếu thế hoa sen chưa thoải mái, ngồi xếp bằng, ấn hai tay xuống và nâng hông lên.', props: [] },
   ],
   safety: [
-    { id: 'rooster-pose__safe-1', en: 'Press through your fingertips and the base of your fingers to protect your wrists.', vi: 'Ấn qua đầu ngón tay và gốc các ngón tay để bảo vệ cổ tay.' },
+    { id: 'rooster-pose__safe-1', en: 'Press through your fingertips and the base of your fingers to protect your wrists.', vi: 'Dồn lực vào đầu ngón tay và gốc các ngón tay để bảo vệ cổ tay.' },
     { id: 'rooster-pose__safe-2', en: 'If your knees hurt in lotus, don’t take this pose; choose the cross-legged lift.', vi: 'Nếu gối đau trong thế hoa sen, đừng vào tư thế này; hãy chọn cách ngồi xếp bằng và nâng người.' },
     { id: 'rooster-pose__safe-3', en: 'If you’re pregnant, skip this pose.', vi: 'Nếu bạn đang mang thai, hãy bỏ qua tư thế này.' },
   ],

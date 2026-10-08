@@ -31,7 +31,7 @@ export const lowLunge = {
   safety: [
     { id: 'low-lunge__safe-1', en: 'If your front knee is sensitive, keep it over your ankle, not past your toes.', vi: 'Nếu gối trước nhạy cảm, giữ gối thẳng trên cổ chân, không vượt quá mũi chân.' },
     { id: 'low-lunge__safe-2', en: 'If your lower back pinches, lift your chest and lengthen your tailbone, rather than sinking deeper.', vi: 'Nếu lưng dưới bị chèn, nâng ngực và kéo dài xương cụt, thay vì hạ sâu hơn.' },
-    { id: 'low-lunge__safe-3', en: 'In Yin, this shape is Dragon, held for a few minutes. After a long hold, come out slowly.', vi: 'Trong Yin, dáng này là tư thế Rồng, giữ vài phút. Sau khi giữ lâu, hãy thoát thế từ từ.' },
+    { id: 'low-lunge__safe-3', en: 'In Yin, this shape is Dragon, held for a few minutes. After a long hold, come out slowly.', vi: 'Trong Yin, dáng này là tư thế Con rồng, giữ vài phút. Sau khi giữ lâu, hãy thoát thế từ từ.' },
   ],
   muscles: {
     working: ['gluteus-maximus'],

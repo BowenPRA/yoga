@@ -7,7 +7,7 @@ export const square = {
   aka: ['Double Pigeon', 'Fire Log'],
   sa: null,
   saNote: { en: 'Square is the Yin name. Yang classes call it Double Pigeon or Fire Log, Agnistambhāsana.', vi: 'Hình vuông là tên Yin. Các lớp yang gọi là Bồ câu đôi hay Khúc gỗ, Agnistambhāsana.' },
-  vi: 'Hình vuông (Bồ câu đôi)',
+  vi: 'Hình vuông',
   yin: {
     holdMinutes: 3,
     target: ['hips'],
@@ -34,7 +34,7 @@ export const square = {
   ],
   modifications: [
     { id: 'square__mod-1', en: 'Sit cross-legged, one shin in front of the other, instead of stacking them.', vi: 'Ngồi xếp bằng, ống chân này đặt phía trước ống chân kia, thay vì chồng lên nhau.', props: [] },
-    { id: 'square__mod-2', en: 'Sit high on a bolster, and support your top knee with a block.', vi: 'Ngồi cao trên gối ôm, và đỡ gối trên bằng một viên gạch.', props: ['bolster', 'block'] },
+    { id: 'square__mod-2', en: 'Sit high on a bolster, and support your top knee with a block.', vi: 'Ngồi cao trên gối ôm, và đỡ đầu gối trên bằng một viên gạch.', props: ['bolster', 'block'] },
     { id: 'square__mod-3', en: 'Rest your forehead on a bolster or a block in front of you.', vi: 'Tựa trán lên gối ôm hoặc viên gạch phía trước.', props: ['bolster', 'block'] },
   ],
   safety: [

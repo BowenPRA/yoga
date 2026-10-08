@@ -29,7 +29,7 @@ export const halfSplits = {
     { id: 'half-splits__mod-3', en: 'Keep your front knee bent.', vi: 'Giữ gối trước chùng.', props: [] },
   ],
   safety: [
-    { id: 'half-splits__safe-1', en: 'If you have a hamstring injury, keep your front knee bent, and stay well out of the strong stretch.', vi: 'Nếu bạn có chấn thương mặt sau đùi, giữ gối trước chùng, và tránh xa cảm giác giãn mạnh.' },
+    { id: 'half-splits__safe-1', en: 'If you have a hamstring injury, keep your front knee bent, and stay well out of the strong stretch.', vi: 'Nếu bạn có chấn thương cơ gân kheo, giữ gối trước chùng, và tránh xa cảm giác giãn mạnh.' },
     { id: 'half-splits__safe-2', en: 'Fold from your hips and keep your back long, to protect your lower back.', vi: 'Gập từ hông và giữ lưng dài, để bảo vệ lưng dưới.' },
   ],
   muscles: {

@@ -7,7 +7,7 @@ export const boundAngle = {
   aka: ['Butterfly', 'Cobbler’s Pose'],
   sa: 'Baddha Koṇāsana',
   say: 'BAH-dah koh-NAH-sah-nah',
-  vi: 'Góc cố định (Con bướm)',
+  vi: 'Góc cố định',
   ashtanga: {
     series: 'primary',
     section: 'seated',

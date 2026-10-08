@@ -14,7 +14,7 @@ export const figureFour = {
   },
   cues: [
     { id: 'figure-four__cue-1', kind: 'transition', en: 'Lie on your back, with your knees bent and your feet on the mat.', vi: 'Nằm ngửa, gập gối, bàn chân đặt trên thảm.' },
-    { id: 'figure-four__cue-2', kind: 'alignment', en: 'Cross your right ankle over your left thigh, just above the knee.', vi: 'Đặt cổ chân phải lên đùi trái, ngay trên gối.' },
+    { id: 'figure-four__cue-2', kind: 'alignment', en: 'Cross your right ankle over your left thigh, just above your knee.', vi: 'Đặt cổ chân phải lên đùi trái, ngay trên gối.' },
     { id: 'figure-four__cue-3', kind: 'alignment', en: 'Flex your right foot.', vi: 'Gập bàn chân phải.' },
     { id: 'figure-four__cue-4', kind: 'alignment', en: 'Thread your right hand through the gap, and hold behind your left thigh.', vi: 'Luồn tay phải qua khoảng trống, và ôm phía sau đùi trái.' },
     { id: 'figure-four__cue-5', kind: 'alignment', en: 'Draw your left thigh in toward your chest.', vi: 'Kéo đùi trái về phía ngực.' },
@@ -30,7 +30,7 @@ export const figureFour = {
   ],
   safety: [
     { id: 'figure-four__safe-1', en: 'If your knee complains, keep your bottom foot on the floor.', vi: 'Nếu gối khó chịu, giữ bàn chân dưới trên sàn.' },
-    { id: 'figure-four__safe-2', en: 'In Yin, this is Eye of the Needle, held for a few minutes. After a long hold, come out slowly.', vi: 'Trong Yin, đây là tư thế Lỗ kim, giữ vài phút. Sau khi giữ lâu, hãy thoát thế từ từ.' },
+    { id: 'figure-four__safe-2', en: 'In Yin, this is Eye of the Needle, held for a few minutes. After a long hold, come out slowly.', vi: 'Trong Yin, tư thế này gọi là Lỗ kim và được giữ vài phút. Sau khi giữ lâu, hãy thoát thế từ từ.' },
     { id: 'figure-four__safe-3', en: 'In later pregnancy, do this seated on a chair instead of lying on your back.', vi: 'Ở giai đoạn sau của thai kỳ, thực hiện khi ngồi trên ghế thay vì nằm ngửa.' },
   ],
   muscles: {

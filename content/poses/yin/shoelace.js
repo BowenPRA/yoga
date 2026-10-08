@@ -33,11 +33,11 @@ export const shoelace = {
   ],
   modifications: [
     { id: 'shoelace__mod-1', en: 'Keep your bottom leg straight. This is Half Shoelace, kinder to the knees.', vi: 'Giữ chân dưới duỗi thẳng. Đây là Nửa dây giày, nhẹ nhàng hơn với gối.', props: [] },
-    { id: 'shoelace__mod-2', en: 'Sit higher, on a bolster or a thicker blanket, so your knees can rest.', vi: 'Ngồi cao hơn, trên gối ôm hoặc chăn gấp dày hơn, để gối được nghỉ.', props: ['bolster', 'blanket'] },
+    { id: 'shoelace__mod-2', en: 'Sit higher, on a bolster or a thicker blanket, so your knees can rest.', vi: 'Ngồi cao hơn, trên gối ôm hoặc chăn gấp dày hơn, để đầu gối được nghỉ.', props: ['bolster', 'blanket'] },
     { id: 'shoelace__mod-3', en: 'If your top knee floats, rest it on a block.', vi: 'Nếu gối trên lơ lửng, đặt một viên gạch bên dưới để đỡ.', props: ['block'] },
   ],
   safety: [
-    { id: 'shoelace__safe-1', en: 'You should feel this in your outer hips. Any pain in the knees means come out, or take Half Shoelace.', vi: 'Bạn nên cảm thấy ở hông ngoài. Đau ở gối nghĩa là cần thoát thế, hoặc chuyển sang Nửa dây giày.' },
+    { id: 'shoelace__safe-1', en: 'You should feel this in your outer hips. Any pain in your knees means come out, or take Half Shoelace.', vi: 'Bạn nên cảm thấy ở hông ngoài. Đau ở gối nghĩa là cần thoát thế, hoặc chuyển sang Nửa dây giày.' },
     { id: 'shoelace__safe-2', en: 'If you have sciatica, stay upright and skip the fold.', vi: 'Nếu bị đau thần kinh toạ, ngồi thẳng và bỏ qua phần gập người.' },
     { id: 'shoelace__safe-3', en: 'In pregnancy, sit tall and don’t fold over your belly.', vi: 'Khi mang thai, ngồi thẳng lưng và đừng gập người ép bụng.' },
   ],

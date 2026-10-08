@@ -18,7 +18,7 @@ export const boundLotus = {
     section: 'finishing',
     position: 48,
     breaths: 10,
-    drishti: 'nose',
+    drishti: 'third-eye',
     note: {
       en: 'The first of the last three seated poses: bind your feet from behind in lotus, Baddha Padmāsana, then fold forward into Yoga Mudrā for ten breaths. The teacher says “Inhale, Baddha Padmāsana; exhale, Yoga Mudrā” and counts ten.',
       vi: 'Tư thế đầu tiên trong ba tư thế ngồi cuối cùng: khoá bàn chân từ phía sau trong hoa sen, Baddha Padmāsana, rồi gập người về trước vào Yoga Mudrā trong mười nhịp thở. Giáo viên nói “Hít vào, Baddha Padmāsana; thở ra, Yoga Mudrā” và đếm mười nhịp.',
@@ -53,7 +53,7 @@ export const boundLotus = {
     { id: 'bound-lotus__safe-2', en: 'In pregnancy, sit cross-legged and skip the forward fold.', vi: 'Khi mang thai, ngồi xếp bằng và bỏ qua bước gập người.' },
   ],
 
-  muscles: { working: ['rhomboids', 'deep-rotators'], lengthening: ['pectoralis-major', 'erector-spinae'] },
+  muscles: { working: ['rhomboids'], lengthening: ['pectoralis-major', 'erector-spinae'] },
   joints: ['hip-joint', 'knee', 'ankle', 'shoulder-joint'],
   transitionsTo: ['lotus'],
   figure: 'bound-lotus',

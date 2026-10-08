@@ -32,7 +32,7 @@ export const snail = {
   ],
   modifications: [
     { id: 'snail__mod-1', en: 'Rest your feet on a chair or a bolster behind you instead of the floor.', vi: 'Đặt bàn chân lên ghế hoặc gối ôm phía sau, thay vì xuống sàn.', props: ['chair', 'bolster'] },
-    { id: 'snail__mod-2', en: 'Take Legs Up the Wall instead, for a gentle inversion with no weight on the neck.', vi: 'Thay bằng Gác chân lên tường, một tư thế đảo ngược nhẹ nhàng không dồn trọng lượng lên cổ.', props: ['wall'] },
+    { id: 'snail__mod-2', en: 'Take Legs Up the Wall instead, for a gentle inversion with no weight on your neck.', vi: 'Thay bằng Gác chân lên tường, một tư thế đảo ngược nhẹ nhàng không dồn trọng lượng lên cổ.', props: ['wall'] },
   ],
   safety: [
     { id: 'snail__safe-1', en: 'Skip this pose with a neck injury, high blood pressure, glaucoma, or in pregnancy.', vi: 'Bỏ qua tư thế này nếu bị chấn thương cổ, huyết áp cao, tăng nhãn áp, hoặc khi mang thai.' },

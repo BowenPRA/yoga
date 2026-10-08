@@ -5,7 +5,7 @@ export const staffPose = {
   level: 'gentle',
   en: 'Staff Pose',
   sa: 'Daṇḍāsana',
-  say: 'dun-DAH-sah-nah',
+  say: 'dan-DAH-sah-nah',
   vi: 'Cây gậy',
   ashtanga: {
     series: 'primary',

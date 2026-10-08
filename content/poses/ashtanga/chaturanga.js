@@ -7,7 +7,7 @@ export const chaturanga = {
   aka: ['Four-Limbed Staff Pose', 'Low Plank'],
   sa: 'Caturaṅga Daṇḍāsana',
   say: 'chah-too-RANG-gah dan-DAH-sah-nah',
-  vi: 'Tấm ván thấp',
+  vi: 'Chống đẩy thấp',
 
   ashtanga: {
     series: 'primary',
@@ -27,7 +27,7 @@ export const chaturanga = {
 
   cues: [
     { id: 'chaturanga__cue-1', kind: 'transition', en: 'Exhale, step or jump back, and lower halfway down.', vi: 'Thở ra, bước hoặc nhảy ra sau, và hạ người xuống nửa chừng.' },
-    { id: 'chaturanga__cue-2', kind: 'alignment', en: 'Hug your elbows in toward your ribs as you lower.', vi: 'Ôm khuỷu tay sát vào sườn khi bạn hạ xuống.' },
+    { id: 'chaturanga__cue-2', kind: 'alignment', en: 'Hug your elbows in toward your ribs as you lower.', vi: 'Ép khuỷu tay sát vào sườn khi bạn hạ xuống.' },
     { id: 'chaturanga__cue-3', kind: 'alignment', en: 'Keep your elbows stacked over your wrists.', vi: 'Giữ khuỷu tay thẳng trên cổ tay.' },
     { id: 'chaturanga__cue-4', kind: 'alignment', en: 'Keep your body in one long line, from your head to your heels.', vi: 'Giữ cơ thể thành một đường dài, từ đầu đến gót chân.' },
     { id: 'chaturanga__cue-5', kind: 'alignment', en: 'Stop when your shoulders are level with your elbows.', vi: 'Dừng lại khi vai ngang bằng với khuỷu tay.' },
@@ -45,7 +45,7 @@ export const chaturanga = {
 
   safety: [
     { id: 'chaturanga__safe-1', en: 'With a shoulder injury, keep your knees down, or skip it and lower to the floor.', vi: 'Nếu vai có chấn thương, giữ gối chạm sàn, hoặc bỏ qua và hạ hẳn xuống sàn.' },
-    { id: 'chaturanga__safe-2', en: 'If your wrists hurt, press through your knuckles and fingertips.', vi: 'Nếu cổ tay đau, ấn qua các khớp ngón và đầu ngón tay.' },
+    { id: 'chaturanga__safe-2', en: 'If your wrists hurt, press through your knuckles and fingertips.', vi: 'Nếu cổ tay đau, dồn lực vào các khớp ngón tay và đầu ngón tay.' },
     { id: 'chaturanga__safe-3', en: 'From the middle of pregnancy, keep your knees down or skip it.', vi: 'Từ giữa thai kỳ, giữ gối chạm sàn hoặc bỏ qua tư thế này.' },
   ],
 

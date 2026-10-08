@@ -6,9 +6,9 @@ export const meltingHeart = {
   en: 'Melting Heart',
   aka: ['Extended Puppy'],
   sa: 'Anāhatāsana',
-  say: 'ah-NAH-hah-TAH-sah-nah',
-  saNote: { en: 'Anāhata is the heart chakra. Some Vinyasa teachers call a similar shape Extended Puppy, Uttāna Śiśosana.', vi: 'Anāhata là luân xa tim. Một số giáo viên Vinyasa gọi dáng tương tự là Chó con duỗi dài, Uttāna Śiśosana.' },
-  vi: 'Tan chảy trái tim',
+  say: 'ah-nah-hah-TAH-sah-nah',
+  saNote: { en: 'Anāhata is the heart chakra. Some Vinyasa teachers call a similar shape Extended Puppy, Uttāna Śiśosana.', vi: 'Anāhata là luân xa tim. Một số giáo viên Vinyasa gọi dáng tương tự là Chó con, Uttāna Śiśosana.' },
+  vi: 'Trái tim tan chảy',
   yin: {
     holdMinutes: 3,
     target: ['shoulders', 'spine'],
