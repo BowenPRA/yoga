@@ -2,7 +2,7 @@
  * Production build for GitHub Pages. Sets the repo base path, the API URL and
  * the app version, then runs vite build. Override with env vars if the names
  * ever change:
- *   PAGES_BASE=/studio-notes/  API_BASE=https://studio-notes-api.vercel.app
+ *   PAGES_BASE=/yoga/  API_BASE=https://studio-notes-api.vercel.app
  *
  * VITE_FEEDBACK_EMAIL (from the environment or .env.local) is where "Send to
  * Bowen" addresses its email when the phone has no share sheet. It is passed
@@ -12,7 +12,7 @@ import { execSync } from 'node:child_process'
 import { readFileSync } from 'node:fs'
 import { loadEnv } from 'vite'
 
-const base = process.env.PAGES_BASE || '/studio-notes/'
+const base = process.env.PAGES_BASE || '/yoga/'
 const api = process.env.API_BASE || 'https://studio-notes-api.vercel.app'
 const { version } = JSON.parse(readFileSync(new URL('../package.json', import.meta.url), 'utf8'))
 let commit = ''

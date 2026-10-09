@@ -13,7 +13,7 @@
      pose's or a lesson's clips ahead of time through this route, and finds
      this cache by its `audio-` prefix.
    Bump VERSION to drop old caches (a regenerated clip keeps its id). */
-const VERSION = 'v3'
+const VERSION = 'v4'
 const SHELL = `shell-${VERSION}`
 const AUDIO = `audio-${VERSION}`
 const SCOPE = self.registration.scope

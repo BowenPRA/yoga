@@ -129,9 +129,13 @@ speech, because an iPhone refuses audio that starts seconds after a tap.
 
 ## Deploy
 
-- **App:** GitHub Pages from the `gh-pages` branch of `BowenPRA/studio-notes`,
-  served at `https://bowenpra.github.io/studio-notes/`.
+- **App:** GitHub Pages from the `gh-pages` branch of `BowenPRA/yoga`,
+  served at `https://bowenpra.github.io/yoga/`.
   `npm run deploy` builds with the right base path and API URL and pushes.
+  The repo was called `studio-notes` until 2026-10-09; a separate repo of
+  that name now holds only a page that forwards the old address (and its
+  `#/route`) to `/yoga/` and unregisters the old service worker. Same
+  origin, so her IndexedDB and settings carried over.
 - **API:** Vercel project `studio-notes-api` (functions in `api/`),
   `https://studio-notes-api.vercel.app`. `npx vercel --prod` deploys. Env vars
   live in Vercel: `GEMINI_API_KEY`, `ALLOWED_ORIGINS`.
