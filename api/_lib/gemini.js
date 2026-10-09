@@ -103,16 +103,22 @@ export async function speak({ text, style, voice = VOICE, models = TTS_FALLBACKS
       return await speakWith({ text, style, voice, model })
     } catch (err) {
       lastErr = err
-      if (!/429|quota|rate/i.test(err.message)) throw err
+      // A preview model can refuse the style annotation (3.1 Flash TTS
+      // does); plain delivery is better than silence.
+      if (style && /not supported|style|speech_metadata/i.test(err.message)) {
+        try { return await speakWith({ text, voice, model }) } catch (again) { lastErr = again }
+      }
+      if (!/429|quota|rate|not supported/i.test(lastErr.message)) throw lastErr
     }
   }
   throw lastErr
 }
 
 async function speakWith({ text, style, voice, model }) {
+  const annotations = style ? [{ type: 'speech_metadata', style }] : []
   const body = {
     model,
-    input: [{ type: 'user_input', content: [{ type: 'text', text, annotations: [{ type: 'speech_metadata', style }] }] }],
+    input: [{ type: 'user_input', content: [{ type: 'text', text, ...(annotations.length ? { annotations } : {}) }] }],
     response_format: { type: 'audio' },
     generation_config: { speech_config: [{ voice }] },
   }
@@ -125,7 +131,22 @@ async function speakWith({ text, style, voice, model }) {
   const d = await r.json()
   const part = (d.steps || []).flatMap((s) => s.content || []).find((c) => c.type === 'audio')
   if (!part) throw new Error('No audio returned')
-  return { bytes: Buffer.from(part.data, 'base64'), mime: part.mime_type || 'audio/wav' }
+  const bytes = Buffer.from(part.data, 'base64')
+  const mime = part.mime_type || 'audio/wav'
+  // The 3.1 preview answers with bare PCM ("audio/l16; rate=24000"), which no
+  // phone will play; give it a WAV header.
+  return /^audio\/(l16|pcm)/i.test(mime) ? { bytes: wavFromPcm(bytes, mime), mime: 'audio/wav' } : { bytes, mime }
+}
+
+function wavFromPcm(pcm, mime) {
+  const rate = Number(/rate=(\d+)/.exec(mime)?.[1]) || 24000
+  const channels = Number(/channels=(\d+)/.exec(mime)?.[1]) || 1
+  const h = Buffer.alloc(44)
+  h.write('RIFF', 0); h.writeUInt32LE(36 + pcm.length, 4); h.write('WAVE', 8)
+  h.write('fmt ', 12); h.writeUInt32LE(16, 16); h.writeUInt16LE(1, 20); h.writeUInt16LE(channels, 22)
+  h.writeUInt32LE(rate, 24); h.writeUInt32LE(rate * channels * 2, 28); h.writeUInt16LE(channels * 2, 32); h.writeUInt16LE(16, 34)
+  h.write('data', 36); h.writeUInt32LE(pcm.length, 40)
+  return Buffer.concat([h, pcm])
 }
 
 export function fail(res, err, where) {

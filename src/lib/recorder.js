@@ -11,7 +11,8 @@ export function canRecord() {
   return typeof window !== 'undefined' && !!navigator.mediaDevices?.getUserMedia && typeof window.MediaRecorder !== 'undefined'
 }
 
-export async function startRecording() {
+/** `onLimit` runs when the recording stops itself at `maxMs`; call stop() then. */
+export async function startRecording({ maxMs = MAX_MS, onLimit } = {}) {
   const stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true } })
   const mime = ['audio/webm;codecs=opus', 'audio/webm', 'audio/mp4', 'audio/ogg'].find((m) => MediaRecorder.isTypeSupported?.(m)) || ''
   const rec = new MediaRecorder(stream, mime ? { mimeType: mime } : undefined)
@@ -19,7 +20,7 @@ export async function startRecording() {
   rec.ondataavailable = (e) => { if (e.data?.size) chunks.push(e.data) }
   const stopped = new Promise((resolve) => { rec.onstop = resolve })
   rec.start(250)
-  const timer = setTimeout(() => { if (rec.state === 'recording') rec.stop() }, MAX_MS)
+  const timer = setTimeout(() => { if (rec.state === 'recording') { rec.stop(); onLimit?.() } }, maxMs)
 
   return {
     /** Stop and return { base64, seconds }. */

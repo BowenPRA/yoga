@@ -21,6 +21,7 @@ const routes = {
   '/api/coach': () => import('./coach.js'),
   '/api/speak': () => import('./speak.js'),
   '/api/pronounce': () => import('./pronounce.js'),
+  '/api/translate': () => import('./translate.js'),
 }
 
 function wrap(res) {

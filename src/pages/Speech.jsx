@@ -1,19 +1,116 @@
 import { useEffect, useRef, useState } from 'react'
-import { ArrowRight, Bookmark, BookmarkCheck, Mic, MicOff, Sparkles, Trash2, Volume2 } from 'lucide-react'
+import { ArrowRight, Bookmark, BookmarkCheck, Mic, MicOff, Sparkles, Square, Trash2, Volume2 } from 'lucide-react'
 import { useLang } from '../lib/i18n.jsx'
 import { api } from '../lib/api.js'
 import { audio } from '../lib/audio.js'
 import { learn } from '../lib/learning.js'
-import { Button, Eyebrow, Header, SayHint, Section } from '../components/ui.jsx'
+import { availableClips } from '../lib/offline.js'
+import { useSpeaking } from '../lib/useSpeaking.js'
+import { Button, Eyebrow, Header, PlayButton, SayHint, Section } from '../components/ui.jsx'
 import { SettingsButton } from '../components/SettingsSheet.jsx'
+import SayInEnglish from '../components/SayInEnglish.jsx'
+import PractiseLine from '../components/PractiseLine.jsx'
+
+const MODES = ['say', 'coach']
+const readMode = () => {
+  try {
+    const m = localStorage.getItem('ye.speechMode')
+    return MODES.includes(m) ? m : 'say'
+  } catch {
+    return 'say'
+  }
+}
+const writeMode = (m) => {
+  try {
+    localStorage.setItem('ye.speechMode', m)
+  } catch {
+    /* private mode: fine, the choice just won't stick */
+  }
+}
 
 /**
- * Speech: she writes or dictates a cue in her own English; Gemini returns the
- * natural teacher version, the changes explained in Vietnamese, pronunciation
- * warnings and a line of praise. She can hear it and save it. Saved lines sit
- * below.
+ * Speech, in two modes:
+ *   say    she types or says what she wants to say, in Vietnamese or
+ *          English, and hears it in natural English (SayInEnglish)
+ *   coach  she writes or dictates a cue in her own English; Gemini returns
+ *          the natural teacher version, the changes explained in Vietnamese,
+ *          pronunciation warnings and a line of praise
+ * Either way she can hear the line, save it and practise saying it. Saved
+ * lines sit below, with their audio when it was kept.
  */
 export default function Speech() {
+  const { t } = useLang()
+  const s = t.speech
+  const [mode, setModeState] = useState(readMode)
+  const [lines, setLines] = useState([])
+  const [voiced, setVoiced] = useState(() => new Set())
+  const [clips, setClips] = useState(() => new Set())
+  const speaking = useSpeaking()
+
+  const refresh = () => Promise.all([learn.phrases(), learn.voiced()]).then(([rows, ids]) => { setLines(rows); setVoiced(ids) })
+  useEffect(() => {
+    refresh()
+    availableClips().then((ids) => ids && setClips(ids))
+  }, [])
+
+  const setMode = (m) => { audio.stop(); setModeState(m); writeMode(m) }
+  const remove = async (id) => { await learn.removePhrase(id); refresh() }
+  const playSaved = async (id) => {
+    const key = `saved:${id}`
+    if (speaking === key) { audio.stop(); return }
+    audio.unlock()
+    const blob = await learn.voice(id)
+    if (blob) audio.playBlob(blob, key)
+  }
+
+  return (
+    <div className="tint-sage">
+      <Header title={s.title} subtitle={mode === 'say' ? s.sayIntro : s.intro} right={<SettingsButton />} />
+
+      <div role="tablist" className="mb-4 grid grid-cols-2 gap-1 rounded-full bg-tint-soft p-1">
+        {MODES.map((m) => (
+          <button key={m} role="tab" aria-selected={mode === m} onClick={() => setMode(m)}
+            className={`press min-h-[40px] rounded-full px-3 text-[14px] font-medium transition-colors ${mode === m ? 'bg-paper text-tint-deep shadow-sm' : 'text-tint-deep/75'}`}>
+            {m === 'say' ? s.modeSay : s.modeCoach}
+          </button>
+        ))}
+      </div>
+
+      {mode === 'say' ? <SayInEnglish onSaved={refresh} /> : <Coach onSaved={refresh} />}
+
+      <Section title={s.saved}>
+        {lines.length === 0 ? (
+          <p className="rounded-3xl border border-dashed border-line bg-paper/60 p-5 text-center text-caption text-muted">{s.savedEmpty}</p>
+        ) : (
+          <div className="divide-y divide-line/70 rounded-3xl border border-line/70 bg-paper shadow-card">
+            {lines.map((p) => {
+              const on = speaking === `saved:${p.id}`
+              return (
+                <div key={p.id} className="flex items-start gap-3 p-3.5">
+                  {voiced.has(p.id) ? (
+                    <button onClick={() => playSaved(p.id)} aria-label={s.listen}
+                      className={`press grid h-10 w-10 shrink-0 place-items-center rounded-full ${on ? 'bg-tint-deep text-paper speaking' : 'bg-tint-soft text-tint-deep'}`}>
+                      {on ? <Square size={14} /> : <Volume2 size={19} />}
+                    </button>
+                  ) : clips.has(p.id) ? <PlayButton id={p.id} /> : null}
+                  <div className="min-w-0 flex-1">
+                    <div className="text-body text-ink">{p.en}</div>
+                    {p.vi && <div className="text-caption text-muted">{p.vi}</div>}
+                    {p.original && <div className={`text-[12px] text-muted ${p.source === 'coach' ? 'line-through' : ''}`}>{p.original}</div>}
+                  </div>
+                  <button onClick={() => remove(p.id)} className="press grid h-9 w-9 shrink-0 place-items-center rounded-full text-line hover:text-clay" aria-label={s.remove}><Trash2 size={16} /></button>
+                </div>
+              )
+            })}
+          </div>
+        )}
+      </Section>
+    </div>
+  )
+}
+
+/** Cue Coach: her English cue in; the natural version and the reasons out. */
+function Coach({ onSaved }) {
   const { t } = useLang()
   const s = t.speech
   const [cue, setCue] = useState('')
@@ -24,12 +121,10 @@ export default function Speech() {
   const [saved, setSaved] = useState(false)
   const [speaking, setSpeaking] = useState(false)
   const [listening, setListening] = useState(false)
-  const [lines, setLines] = useState([])
   const recRef = useRef(null)
   const blobRef = useRef(null)
 
-  const refresh = () => learn.phrases().then(setLines)
-  useEffect(() => { refresh() }, [])
+  useEffect(() => () => { recRef.current?.stop?.(); audio.stop() }, [])
 
   const Recognition = typeof window !== 'undefined' && (window.SpeechRecognition || window.webkitSpeechRecognition)
 
@@ -68,6 +163,7 @@ export default function Speech() {
   const listen = async () => {
     if (!result) return
     if (speaking) { audio.stop(); setSpeaking(false); return }
+    audio.unlock()
     setSpeaking(true)
     try {
       if (!blobRef.current) blobRef.current = await api.speak(result.natural)
@@ -78,17 +174,14 @@ export default function Speech() {
 
   const save = async () => {
     if (!result) return
-    await learn.savePhrase({ id: `coach:${Date.now()}`, en: result.natural, vi: result.meaning_vi || '', original: cue, source: 'coach' })
+    await learn.savePhrase({ id: `coach:${Date.now()}`, en: result.natural, vi: result.meaning_vi || '', original: cue, source: 'coach' }, blobRef.current)
     setSaved(true)
-    refresh()
+    onSaved?.()
   }
-  const remove = async (id) => { await learn.removePhrase(id); refresh() }
-  const reset = () => { setResult(null); setCue(''); setSaved(false); setError(null); blobRef.current = null }
+  const reset = () => { audio.stop(); setResult(null); setCue(''); setSaved(false); setError(null); blobRef.current = null }
 
   return (
-    <div className="tint-sage">
-      <Header title={s.title} subtitle={s.intro} right={<SettingsButton />} />
-
+    <>
       {!result && (
         <form onSubmit={submit} className="wash rounded-4xl border border-line/60 p-4 shadow-card">
           <textarea value={cue} onChange={(e) => setCue(e.target.value)} rows={4} placeholder={s.placeholder}
@@ -147,28 +240,10 @@ export default function Speech() {
           )}
 
           {result.praise_vi && <div className="wash mt-5 rounded-3xl border border-line/60 px-4 py-3.5 text-body text-tint-deep">{result.praise_vi}</div>}
+          <PractiseLine key={result.natural} text={result.natural} className="mt-5" />
           <div className="mt-6"><Button kind="secondary" size="lg" onClick={reset} className="w-full">{s.again}</Button></div>
         </>
       )}
-
-      <Section title={s.saved}>
-        {lines.length === 0 ? (
-          <p className="rounded-3xl border border-dashed border-line bg-paper/60 p-5 text-center text-caption text-muted">{s.savedEmpty}</p>
-        ) : (
-          <div className="divide-y divide-line/70 rounded-3xl border border-line/70 bg-paper shadow-card">
-            {lines.map((p) => (
-              <div key={p.id} className="flex items-start gap-3 p-3.5">
-                <div className="min-w-0 flex-1">
-                  <div className="text-body text-ink">{p.en}</div>
-                  {p.vi && <div className="text-caption text-muted">{p.vi}</div>}
-                  {p.original && <div className="text-[12px] text-muted line-through">{p.original}</div>}
-                </div>
-                <button onClick={() => remove(p.id)} className="press grid h-9 w-9 shrink-0 place-items-center rounded-full text-line hover:text-clay" aria-label={s.remove}><Trash2 size={16} /></button>
-              </div>
-            ))}
-          </div>
-        )}
-      </Section>
-    </div>
+    </>
   )
 }

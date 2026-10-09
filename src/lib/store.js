@@ -10,10 +10,13 @@ import { openDB } from 'idb'
  *               kept after sending, so a sent note is never sent twice
  *   progress    lessons (done or not, where she stopped, her answers) and
  *               terms (when she labelled it, said it, used it in a cue)
+ *   voices      the spoken audio of a line she saved from Speech, keyed by
+ *               its phrasebook id: { id, mime, data: ArrayBuffer }. Left out
+ *               of the backup (it would swell the file; the words are kept).
  * localStorage holds only device preferences (see i18n.jsx).
  */
 const DB = 'yoga-english'
-const VERSION = 2
+const VERSION = 3
 const BACKED_UP = ['cards', 'met', 'phrasebook', 'classes', 'progress', 'suggestions']
 
 let dbp
@@ -29,6 +32,7 @@ function db() {
           d.createObjectStore('suggestions', { keyPath: 'id' })
         }
         if (oldVersion < 2) d.createObjectStore('progress', { keyPath: 'id' })
+        if (oldVersion < 3) d.createObjectStore('voices', { keyPath: 'id' })
       },
     })
   }
@@ -38,6 +42,7 @@ function db() {
 export const store = {
   async get(name, id) { return (await db()).get(name, id) },
   async all(name) { return (await db()).getAll(name) },
+  async keys(name) { return (await db()).getAllKeys(name) },
   async put(name, value) { return (await db()).put(name, value) },
   async del(name, id) { return (await db()).delete(name, id) },
   async count(name) { return (await db()).count(name) },

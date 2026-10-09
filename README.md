@@ -110,6 +110,23 @@ where you feel it), `predict`, `chain` (build a cue from pieces),
 `/api/pronounce`). Progress is in IndexedDB (`progress` store): a lesson is
 done or not; a term is known once labelled, said and used in a cue.
 
+## Speech
+
+Two modes, switched at the top of the tab (the choice is kept on the phone):
+
+- **Say it in English**: she types or records what she wants to say, in
+  Vietnamese, English or a mix. `/api/translate` returns the line a native
+  teacher would say, its meaning back in Vietnamese and up to three chunks
+  worth keeping; the voice reads it aloud as soon as it arrives
+  (`/api/speak`), and again slower at 0.75. A recording goes to Gemini as
+  audio, so either language works on any phone.
+- **Coach my English**: her own English cue through `/api/coach`.
+
+Both end with "Now you say it" (`/api/pronounce`). A saved line keeps its
+audio in IndexedDB (`voices`, not in the backup), so it plays offline and
+spends no TTS request. `audio.unlock()` runs on the tap that asks for
+speech, because an iPhone refuses audio that starts seconds after a tap.
+
 ## Deploy
 
 - **App:** GitHub Pages from the `gh-pages` branch of `BowenPRA/studio-notes`,
@@ -126,7 +143,7 @@ content/           data: anatomy (muscles, bones, movements, figure regions), po
 src/lib/           i18n + support level, store (IndexedDB, progress, suggestions), audio, offline, content registry, figures, tints (a colour per place), api, recorder
 src/components/    ui primitives, bottom nav, figure viewer and crops, term sheet, suggest-a-fix, lesson/ (slides, activities)
 src/pages/         Poses, Pose, Anatomy (with the lesson row), Lesson, Speech, Phrases
-api/               Vercel functions: coach, speak, pronounce; _lib/gemini.js; dev-server.mjs
+api/               Vercel functions: coach, translate, speak, pronounce; _lib/gemini.js; dev-server.mjs
 scripts/           export-clips, gen_audio, build-pages, check-content
 public/audio/      generated mp3 clips + manifest
 ```
