@@ -25,4 +25,6 @@ export const api = {
   translate: (input) => post('/api/translate', input),
   /** Her recording (base64 WAV) against the text she meant to say. */
   pronounce: (audio, target, say) => post('/api/pronounce', { audio, target, say }),
+  /** The Class Builder's one call: her request, the plan built on the phone, the pose catalogue and the tags. */
+  plan: (request, plan, catalog, tags) => post('/api/plan', { request, plan, catalog, tags }),
 }

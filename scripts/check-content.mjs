@@ -11,6 +11,8 @@
  */
 import { POSES, TERMS, PHRASE_GROUPS, LESSONS, getTerm, allClips, lessonClipIds } from '../src/lib/content.js'
 import { MUSCLE_REGIONS, SKELETON_LANDMARKS, SKELETON_BOXES } from '../content/anatomy/regions.js'
+import { GOALS, CAUTIONS, TWO_SIDED, POSTURES, BRIDGES, MOMENTS } from '../content/planning.js'
+import { buildPlan, parseRequest, scriptOf } from '../src/lib/planner.js'
 
 const strict = process.argv.includes('--strict')
 const errors = []
@@ -209,6 +211,65 @@ for (const L of LESSONS) {
   for (const id of lessonClipIds(L)) if (!clipIds.has(id)) err(`${w}: plays clip "${id}" that no content produces`)
   const first = L.slides[0]?.type, lastT = L.slides[L.slides.length - 1]?.type
   if (first !== 'intro' || lastT !== 'done') warn(`${w}: slides should start with intro and end with done`)
+}
+
+// ── the class planner's data ─────────────────────────────────────────────
+// Every pose, term and phrase the planner names must exist, and a class
+// must build for every style and mode without a pose it cannot play.
+const phraseLineIds = new Set(PHRASE_GROUPS.flatMap((g) => g.lines.map((l) => l.id)))
+const FAM = [...FAMILIES]
+for (const g of GOALS) {
+  const w = `goal ${g.id}`
+  checkBi(`${w}.label`, g.label); checkBi(`${w}.theme`, g.theme)
+  if (!g.keywords?.length) err(`${w}: no keywords`)
+  for (const f of g.families) if (!FAMILIES.has(f)) err(`${w}: family "${f}"`)
+  for (const id of [...g.lengthening, ...g.working]) if (!termIds.has(id)) err(`${w}: muscle "${id}" is not in content/anatomy`)
+  for (const id of g.peak) if (!poseIds.has(id)) err(`${w}: peak pose "${id}" has no content`)
+  if (g.welcome && !phraseLineIds.has(g.welcome)) err(`${w}: welcome line "${g.welcome}" is not a phrase`)
+}
+for (const c of CAUTIONS) {
+  const w = `caution ${c.id}`
+  checkBi(`${w}.label`, c.label)
+  if (!c.keywords?.length) err(`${w}: no keywords`)
+  if (!(c.match instanceof RegExp)) err(`${w}: match must be a RegExp`)
+  for (const f of c.avoidFamilies) if (!FAMILIES.has(f)) err(`${w}: family "${f}"`)
+  for (const id of [...c.avoid, ...c.prefer]) if (!poseIds.has(id)) err(`${w}: pose "${id}" has no content`)
+  for (const id of c.terms) if (!termIds.has(id)) err(`${w}: term "${id}" is not in content/anatomy`)
+  for (const id of c.lines) if (!phraseLineIds.has(id)) err(`${w}: line "${id}" is not a phrase`)
+}
+for (const id of TWO_SIDED) if (!poseIds.has(id)) err(`planning: two-sided pose "${id}" has no content`)
+const postured = new Set()
+for (const [k, ids] of Object.entries(POSTURES)) for (const id of ids) {
+  if (!poseIds.has(id)) err(`planning: ${k} pose "${id}" has no content`)
+  if (postured.has(id)) err(`planning: pose "${id}" has two postures`)
+  postured.add(id)
+}
+for (const [k, id] of Object.entries(BRIDGES)) if (!phraseLineIds.has(id)) err(`planning: bridge ${k} "${id}" is not a phrase`)
+for (const [k, v] of Object.entries(MOMENTS)) {
+  if (Array.isArray(v)) { for (const id of v) if (!phraseLineIds.has(id)) err(`planning: moment ${k} line "${id}" is not a phrase`) }
+  else if (!PHRASE_GROUPS.some((g) => g.id === v)) err(`planning: moment ${k} group "${v}" is not a phrase group`)
+}
+const famOf = (id) => POSES.find((p) => p.id === id)?.family
+if (!FAM.length) err('planning: no families')
+for (const spec of [
+  { style: 'vinyasa', minutes: 60, goals: ['hips'] }, { style: 'yin', minutes: 60, goals: ['spine'] }, { style: 'ashtanga', minutes: 90 },
+  { style: 'vinyasa', minutes: 30, level: 'gentle', cautions: ['knee', 'pregnancy'] }, { mode: 'student', goals: ['hamstrings'], cautions: ['lower-back'] },
+  ...GOALS.map((g) => ({ style: 'vinyasa', minutes: 45, goals: [g.id] })), ...CAUTIONS.map((c) => ({ style: 'yin', minutes: 45, cautions: [c.id] })),
+]) {
+  const w = `plan ${JSON.stringify(spec)}`
+  try {
+    const plan = buildPlan({ ...spec, seed: 1 })
+    const poses = plan.sections.flatMap((s) => s.steps.flatMap((st) => (st.kind === 'pose' ? [st.pose] : st.kind === 'flow' ? st.poses : [])))
+    if (poses.length < (spec.mode === 'student' ? 3 : 6)) warn(`${w}: only ${poses.length} poses`)
+    for (const id of poses) if (!poseIds.has(id)) err(`${w}: pose "${id}"`)
+    for (const it of scriptOf(plan)) if (it.clip && !clipIds.has(it.clip)) err(`${w}: plays clip "${it.clip}" that no content produces`)
+    if (spec.cautions) for (const id of poses) for (const c of spec.cautions) { const x = CAUTIONS.find((y) => y.id === c); if (x.avoid.includes(id) || x.avoidFamilies.includes(famOf(id))) err(`${w}: gives "${id}" despite the ${c} caution`) }
+  } catch (e) { err(`${w}: ${e.message}`) }
+}
+for (const [text, want] of [['mở hông', 'hips'], ['hip opening', 'hips'], ['cổ tay', null], ['đau lưng dưới', null], ['yin for the spine', 'spine']]) {
+  const got = parseRequest(text)
+  if (want && got.goals[0] !== want) err(`parse "${text}": goals ${JSON.stringify(got.goals)}, expected ${want} first`)
+  if (!want && got.goals.length) err(`parse "${text}": should be a caution, not goals ${JSON.stringify(got.goals)}`)
 }
 
 // ── report ───────────────────────────────────────────────────────────────

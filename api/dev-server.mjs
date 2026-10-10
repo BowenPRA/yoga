@@ -22,6 +22,7 @@ const routes = {
   '/api/speak': () => import('./speak.js'),
   '/api/pronounce': () => import('./pronounce.js'),
   '/api/translate': () => import('./translate.js'),
+  '/api/plan': () => import('./plan.js'),
 }
 
 function wrap(res) {

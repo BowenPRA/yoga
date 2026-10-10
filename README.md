@@ -127,6 +127,53 @@ audio in IndexedDB (`voices`, not in the backup), so it plays offline and
 spends no TTS request. `audio.unlock()` runs on the tap that asks for
 speech, because an iPhone refuses audio that starts seconds after a tap.
 
+## Class Builder
+
+Behind the Poses tab (`#/classes`). She writes what the class is for, or
+what a student said, in Vietnamese or English; the class is built on the
+phone, with no network:
+
+- `content/planning.js` is what the planner knows that the pose files do
+  not: **goals** (hips, hamstrings, backbends, shoulders, spine, core,
+  balance, legs, calm, energy, flexibility, inversions, feet, breath,
+  meditation), each with bilingual keywords, the families, Yin targets and
+  muscles it picks poses by, and its peak poses; **cautions** (knee, lower
+  back, wrist, neck, shoulder, pregnancy, hip, hamstring injury, blood
+  pressure, ankle), each with the poses and families it removes, a regex
+  matched against a pose's own safety lines, a gentle `prefer` sequence,
+  the anatomy terms whose lesson "care" lines apply, and phrase lines worth
+  saying; which poses are two-sided; each pose's posture (so a class goes
+  down to the floor and not back up); and the phrase lines used as bridges
+  and class moments.
+- `src/lib/planner.js` reads a request (`parseRequest`: longest keyword
+  wins, so "cổ tay" is the wrist before "cổ" is the neck; style, minutes
+  and level too), scores and screens poses, and builds a plan
+  (`buildPlan`): Vinyasa as arrive, warm-up, sun salutations, standing flows
+  (right side then left), the heart of the class, the floor, savasana,
+  closing; Yin as long holds with rebounds and counterposes; Ashtanga as the
+  series itself, cut to the time; and a **student** mode (what to say now,
+  a short practice, the poses in class to watch with them). A step keeps the
+  pose's own safety line for each caution in play. `scriptOf` turns a plan
+  into the lines the voice reads, with the hold after each breath cue;
+  `planText` is the share text; `alternatives`, `addable`, `stepFor`,
+  `nextHold` serve the editor.
+- `/api/plan` is the one Gemini call, made only when she taps it: given her
+  words, the built plan and the catalogue of pose ids, it returns a title,
+  the opening line, a few cues in the theme, up to three swaps restricted to
+  the catalogue, and for a student what to say to them. `applyAI` folds that
+  into the plan; when the app could not read the request at all, Gemini's
+  goal and caution tags rebuild it. AI-written lines are spoken live
+  (`/api/speak`) and kept in `voices` under a hash of the text
+  (`src/lib/voice.js`), so each is fetched once.
+- Pages: `Classes` (the request, what was understood as chips she can
+  correct, style, length, level, goals, cautions, saved classes) and
+  `ClassPlan` (the plan by section, each step movable, swappable, removable,
+  its hold tappable; add a pose from a sheet; Gemini; share; keep offline;
+  **Lead it**, a full-screen teleprompter on `src/lib/useRunner.js`). Drafts
+  live in the tab session until saved to IndexedDB `classes`.
+- `scripts/check-content.mjs` checks every id the planner names and builds
+  a class for every goal, caution and style.
+
 ## Deploy
 
 - **App:** GitHub Pages from the `gh-pages` branch of `BowenPRA/yoga`,
@@ -143,11 +190,11 @@ speech, because an iPhone refuses audio that starts seconds after a tap.
 ## Layout
 
 ```
-content/           data: anatomy (muscles, bones, movements, figure regions), poses, phrases, lessons
+content/           data: anatomy (muscles, bones, movements, figure regions), poses, phrases, lessons, planning (goals, cautions, postures)
 src/lib/           i18n + support level, store (IndexedDB, progress, suggestions), audio, offline, content registry, figures, tints (a colour per place), api, recorder
 src/components/    ui primitives, bottom nav, figure viewer and crops, term sheet, suggest-a-fix, lesson/ (slides, activities)
-src/pages/         Poses, Pose, Anatomy (with the lesson row), Lesson, Speech, Phrases
-api/               Vercel functions: coach, translate, speak, pronounce; _lib/gemini.js; dev-server.mjs
+src/pages/         Poses, Pose, Classes + ClassPlan (the Class Builder), Anatomy (with the lesson row), Lesson, Speech, Phrases
+api/               Vercel functions: coach, translate, speak, pronounce, plan; _lib/gemini.js; dev-server.mjs
 scripts/           export-clips, gen_audio, build-pages, check-content
 public/audio/      generated mp3 clips + manifest
 ```

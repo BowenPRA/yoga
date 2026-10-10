@@ -6,6 +6,8 @@ import Anatomy from './pages/Anatomy.jsx'
 import Speech from './pages/Speech.jsx'
 import Phrases from './pages/Phrases.jsx'
 import Lesson from './pages/Lesson.jsx'
+import Classes from './pages/Classes.jsx'
+import ClassPlan from './pages/ClassPlan.jsx'
 
 export default function App() {
   return (
@@ -16,6 +18,8 @@ export default function App() {
             <Route path="/" element={<Navigate to="/anatomy" replace />} />
             <Route path="/poses" element={<Poses />} />
             <Route path="/poses/:id" element={<Pose />} />
+            <Route path="/classes" element={<Classes />} />
+            <Route path="/classes/:id" element={<ClassPlan />} />
             <Route path="/anatomy" element={<Anatomy />} />
             <Route path="/anatomy/:tab" element={<Anatomy />} />
             <Route path="/anatomy/:tab/:id" element={<Anatomy />} />

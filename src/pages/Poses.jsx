@@ -1,5 +1,6 @@
 import { memo, useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
-import { Search, X } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { ChevronRight, ClipboardList, Search, X } from 'lucide-react'
 import { useLang } from '../lib/i18n.jsx'
 import { ashtangaSeries, familiesOf, posesByStyle, searchPoses, yinByTarget } from '../lib/content.js'
 import { Chip, Header, PlayButton, PoseArt, ScrollMemory, Tag } from '../components/ui.jsx'
@@ -151,6 +152,16 @@ export default function Poses() {
     <div className={tintClass(tint)}>
       <ScrollMemory id={view} anchor="[data-anchor]" />
       <Header title={P.title} right={<SettingsButton />} />
+
+      {/* The Class Builder lives behind the library: a theme or a student's words become a class the voice can lead. */}
+      <Link to="/classes" className="tint-gold wash press mb-4 flex items-center gap-3.5 rounded-3xl border border-line/60 p-4 shadow-card">
+        <span className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-tint-soft text-tint-deep"><ClipboardList size={22} /></span>
+        <div className="min-w-0 flex-1">
+          <div className="font-serif text-[18px] leading-snug text-ink">{t.classes.entry}</div>
+          <div className="text-caption leading-snug text-muted">{t.classes.entryLead}</div>
+        </div>
+        <ChevronRight size={18} className="shrink-0 text-muted" />
+      </Link>
 
       <div className="mb-4 flex items-center gap-2.5 rounded-full border border-line/70 bg-paper px-4 py-2.5 shadow-card focus-within:border-tint">
         <Search size={17} className="shrink-0 text-muted" />

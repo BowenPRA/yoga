@@ -10,6 +10,15 @@
       ],
       "port": 5178,
       "autoPort": true
+    },
+    {
+      "name": "yoga-api",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "api"
+      ],
+      "port": 8787
     }
   ]
 }
