@@ -1,5 +1,6 @@
 import { POSES, PHRASE_GROUPS, LESSONS, getPose, getTerm, fold, lessonLines } from './content.js'
-import { GOALS, CAUTIONS, TWO_SIDED, BRIDGES, MOMENTS, POSTURES } from '../../content/planning.js'
+import { GOALS, CAUTIONS, TWO_SIDED, BRIDGES, MOMENTS, POSTURES, COUNTERS, PEAKS } from '../../content/planning.js'
+import { themesFor, getTheme } from '../../content/themes.js'
 
 /**
  * The Class Builder's brain, and it lives on the phone. A request in
@@ -11,10 +12,15 @@ import { GOALS, CAUTIONS, TWO_SIDED, BRIDGES, MOMENTS, POSTURES } from '../../co
  *
  * A plan:
  *   { id, at, mode: 'class' | 'student', style, minutes, level, goals, cautions,
- *     request, seed, title: { en, vi }, sections: [{ key, steps }], careful?, ai? }
+ *     request, seed, peak?, upTo?, theme?, notes, taught: [ms],
+ *     title: { en, vi }, sections: [{ key, steps }], careful?, ai? }
+ *   `peak` is the pose the class builds toward (Vinyasa, Yin); `upTo` the
+ *   last pose of the series she will teach (Ashtanga, Mysore style); `theme`
+ *   the thought for the class (content/themes.js); `taught` when she led it.
  * A step:
  *   { kind: 'lines', id, lines: [phraseId], scale? }          a spoken moment
- *   { kind: 'pose', id, pose, sides, breaths? | minutes?, notes, counter? }
+ *   { kind: 'thought', id, theme }                            the thought for the class
+ *   { kind: 'pose', id, pose, sides, breaths? | minutes?, notes, counter?, peak? }
  *   { kind: 'flow', id, poses: [poseId], sides: 2 }           standing poses, right then left
  *   { kind: 'sun', id, a, b }                                 rounds of Surya Namaskara
  */
@@ -180,6 +186,7 @@ export const sidesOf = (p) => (TWO_SIDED.has(p.id) ? 2 : 1)
  * a line plus any settling it asks for.
  */
 export function stepSeconds(step, style) {
+  if (step.kind === 'thought') return 15
   if (step.kind === 'lines') {
     const lines = step.lines.map(phraseLine).filter(Boolean)
     return (step.settle || 0) + lines.reduce((s, l) => s + 4 + Math.max(6, (l.pauseAfter || 2) * (step.scale || 1)), 0)
@@ -216,8 +223,11 @@ const SURYA_A = ['mountain-pose', 'upward-salute', 'standing-forward-fold', 'hal
 const SURYA_B = ['chair-pose', 'warrior-1']
 
 /**
- * Build a plan. `spec`: { mode, style, minutes, level, goals, cautions, seed, request }.
- * Missing fields take sensible defaults; `goals` and `cautions` are ids.
+ * Build a plan. `spec`: { mode, style, minutes, level, goals, cautions, seed,
+ * request, peak?, upTo?, notes?, taught? }. Missing fields take sensible
+ * defaults; `goals` and `cautions` are ids. A `peak` (Vinyasa, Yin) is a
+ * pose id the class builds toward; `upTo` (Ashtanga) the last pose of the
+ * series to teach before the finishing poses.
  */
 export function buildPlan(spec = {}) {
   const mode = spec.mode === 'student' ? 'student' : 'class'
@@ -225,27 +235,95 @@ export function buildPlan(spec = {}) {
   const goals = uniq(spec.goals || []).map((id) => goalById.get(id)).filter(Boolean)
   const cautions = uniq(spec.cautions || []).map((id) => cautionById.get(id)).filter(Boolean)
   const seed = spec.seed ?? Math.floor(Math.random() * 1e9)
-  const level = LEVELS.includes(spec.level) ? spec.level : mode === 'student' ? 'gentle' : goals.find((g) => g.level)?.level || 'moderate'
+  const peakPose = mode === 'class' && style !== 'ashtanga' && spec.peak ? getPose(spec.peak) : null
+  const peak = peakPose && (style === 'yin' ? peakPose.yin : peakPose.styles.includes(style)) && !cautions.some((c) => flagged(peakPose, c)) ? peakPose : null
+  const upToPose = mode === 'class' && style === 'ashtanga' && spec.upTo ? getPose(spec.upTo) : null
+  const upTo = upToPose?.ashtanga ? upToPose : null
+  // A peak sets the floor of the level: a class toward Wheel is a strong class.
+  const level = LEVELS.includes(spec.level) ? spec.level : mode === 'student' ? 'gentle' : peak?.level || goals.find((g) => g.level)?.level || 'moderate'
   const minutes = spec.minutes || (mode === 'student' ? 15 : 60)
-  const base = { id: spec.id || `plan:${Date.now()}`, at: Date.now(), mode, style, minutes, level, goals: goals.map((g) => g.id), cautions: cautions.map((c) => c.id), request: spec.request || '', seed, ai: null }
-  const ctx = { goals, cautions, level, style, rnd: rng(seed), used: new Set() }
+  const base = {
+    id: spec.id || `plan:${Date.now()}`, at: Date.now(), mode, style, minutes, level, goals: goals.map((g) => g.id), cautions: cautions.map((c) => c.id), request: spec.request || '', seed,
+    peak: peak?.id || null, upTo: upTo?.id || null, theme: null, notes: spec.notes || '', taught: spec.taught || [], ai: null,
+  }
+  const ctx = { goals, cautions, level: peak && RANK[peak.level] > RANK[level] ? peak.level : level, style, rnd: rng(seed), used: new Set(), peak, prepScore: peak ? (p) => prepScore(peak, p) : null }
 
   if (mode === 'student') return finish({ ...base, ...buildStudent(ctx, minutes) }, ctx)
-  const built = style === 'yin' ? buildYin(ctx, minutes) : style === 'ashtanga' ? buildAshtanga(ctx, minutes) : buildVinyasa(ctx, minutes)
+  const built = style === 'yin' ? buildYin(ctx, minutes) : style === 'ashtanga' ? buildAshtanga(ctx, minutes, upTo) : buildVinyasa(ctx, minutes)
   return finish({ ...base, ...built }, ctx)
 }
 
 function finish(plan, ctx) {
   plan.sections = plan.sections.filter((s) => s.steps.length)
   plan.title = plan.title || titleFor(plan, ctx)
+  if (plan.mode === 'class') { stretchToFit(plan); withThought(plan) }
   return plan
 }
 
-function titleFor(plan, { goals, cautions }) {
+/**
+ * A class that comes out well short of its minutes (a peak ladder is only
+ * three poses) holds its poses longer rather than adding more: the heart
+ * of the class first, then the floor, then the standing poses, a notch at
+ * a time, until it is within about a tenth of the time asked for.
+ */
+function stretchToFit(plan) {
+  if (plan.style === 'ashtanga') return plan
+  const want = plan.minutes * 60 * 0.9
+  const total = () => plan.sections.reduce((s, sec) => s + sectionSeconds(sec, plan.style), 0)
+  const breaths = [3, 4, 5, 6, 8, 10]
+  for (let round = 0; round < 4; round++) {
+    let moved = false
+    for (const key of ['peak', 'holds', 'floor', 'standing', 'warm']) {
+      const sec = plan.sections.find((s) => s.key === key)
+      if (!sec) continue
+      for (const st of sec.steps) {
+        if (total() >= want) return plan
+        if (st.kind !== 'pose') continue
+        if (st.minutes) { if (st.minutes < 5) { st.minutes += 1; moved = true } }
+        else { const i = breaths.indexOf(st.breaths); if (i >= 0 && i < breaths.length - 1) { st.breaths = breaths[i + 1]; moved = true } }
+      }
+    }
+    if (!moved) break
+  }
+  return plan
+}
+
+/**
+ * Give a plan its thought for the class (content/themes.js): the one that
+ * suits its theme, or `themeId`; it sits at the end of the arriving section.
+ * Mutates and returns the plan.
+ */
+export function withThought(plan, themeId) {
+  const theme = themeId ? getTheme(themeId) : themesFor(plan, plan.seed)[0]
+  const arrive = plan.sections.find((s) => s.key === 'arrive')
+  if (!theme || !arrive) return plan
+  plan.theme = theme.id
+  const step = { kind: 'thought', id: sid(), theme: theme.id }
+  const i = arrive.steps.findIndex((s) => s.kind === 'thought')
+  if (i >= 0) arrive.steps[i] = step
+  else arrive.steps.push(step)
+  return plan
+}
+
+/** The same plan with the next thought that suits it (a new plan; the old one is untouched). */
+export function nextThought(plan) {
+  const list = themesFor(plan, 0)
+  if (!list.length) return plan
+  const i = list.findIndex((t) => t.id === plan.theme)
+  const next = list[(i + 1) % list.length]
+  return withThought({ ...plan, sections: plan.sections.map((s) => ({ ...s, steps: s.steps.slice() })) }, next.id)
+}
+
+function titleFor(plan, { goals, cautions, peak }) {
   const styleName = { vinyasa: 'Vinyasa', yin: 'Yin', ashtanga: 'Ashtanga' }[plan.style]
   if (plan.mode === 'student') {
     const what = [...goals.map((g) => g.label), ...cautions.map((c) => c.label)]
     return { en: `For a student: ${what.map((l) => l.en.toLowerCase()).join(', ') || 'a gentle practice'}`, vi: `Cho học viên: ${what.map((l) => l.vi.toLowerCase()).join(', ') || 'bài tập nhẹ'}` }
+  }
+  if (peak) return { en: `Toward ${peak.en} · ${styleName} · ${plan.minutes} min`, vi: `Hướng đến ${peak.vi} · ${styleName} · ${plan.minutes} phút` }
+  if (plan.upTo) {
+    const u = getPose(plan.upTo)
+    return { en: `Primary series up to ${u.en}`, vi: `Chuỗi sơ cấp đến ${u.vi}` }
   }
   const theme = goals.slice(0, 2).map((g) => g.label)
   return {
@@ -254,19 +332,71 @@ function titleFor(plan, { goals, cautions }) {
   }
 }
 
-/** The poses of one style that this student may do, scored for the goals. */
+/** The poses of one style that this student may do, scored for the goals (and for the peak, when there is one). */
 function pool(ctx, filter = () => true) {
   const list = POSES.filter((p) => {
     if (ctx.style === 'yin' ? !p.yin : !p.styles.includes(ctx.style)) return false
     if (p.id === 'savasana') return false
+    if (ctx.peak && p.id === ctx.peak.id) return false
     if (!allowed(p, ctx.level)) return false
     if (ctx.cautions.some((c) => flagged(p, c))) return false
     return filter(p)
   })
   return list
-    .map((p) => ({ p, score: goalScore(p, ctx.goals) + ctx.rnd() * 0.9 }))
+    .map((p) => ({ p, score: goalScore(p, ctx.goals) + (ctx.prepScore ? ctx.prepScore(p) : 0) + ctx.rnd() * 0.9 }))
     .sort((a, b) => b.score - a.score)
 }
+
+// ── Building toward a peak ──────────────────────────────────────────────
+const shared = (a = [], b = []) => a.filter((x) => b.includes(x)).length
+
+/**
+ * How well a pose prepares the body for `peak`: what both stretch counts
+ * most, then what both work, the joints, the family, a known transition
+ * into it. A pose harder than the peak, or a resting one, does not prepare.
+ */
+export function prepScore(peak, p) {
+  if (!peak || p.id === peak.id) return 0
+  if (RANK[p.level || 'moderate'] > RANK[peak.level || 'moderate']) return -2
+  if (p.family === 'restorative' || p.id === 'savasana') return -3
+  let s = 3 * shared(p.muscles?.lengthening, peak.muscles?.lengthening)
+  s += shared(p.muscles?.working, peak.muscles?.working)
+  s += shared(p.joints, peak.joints)
+  if (p.family === peak.family) s += 2
+  if ((p.transitionsTo || []).includes(peak.id)) s += 3
+  return s
+}
+
+const freeCtx = (pose) => ({ goals: [], cautions: [], level: 'strong', style: pose.yin ? 'yin' : pose.styles[0], rnd: rng(1), used: new Set() })
+
+/** Up to `n` poses, no harder than the peak, that open or warm what it needs, best first; screened for the plan's cautions. */
+export function prepFor(peak, ctx = freeCtx(peak), n = 6) {
+  if (!peak) return []
+  return pool({ ...ctx, prepScore: null, goals: [], peak: null, rnd: rng(1) }, (p) => p.id !== peak.id)
+    .map((x) => ({ p: x.p, s: prepScore(peak, x.p) }))
+    .filter((x) => x.s > 0)
+    .sort((a, b) => b.s - a.s)
+    .slice(0, n)
+    .map((x) => x.p)
+}
+
+/** The poses that undo a peak: its own counterposes first, then its family's (COUNTERS), in the plan's style. */
+export function compensationFor(peak, ctx = freeCtx(peak), n = 3) {
+  if (!peak) return []
+  const style = ctx.style || (peak.yin ? 'yin' : peak.styles[0])
+  const fam = COUNTERS[peak.family] || { families: [], poses: [] }
+  const ok = (p) => p && p.id !== peak.id && p.id !== 'savasana' && (style === 'yin' ? p.yin || p.styles.includes('yin') : p.styles.includes(style)) && !(ctx.cautions || []).some((c) => flagged(p, c))
+  const out = []
+  for (const id of [...(peak.counterPoses || []), peak.yin?.counter, ...fam.poses].filter(Boolean)) {
+    const p = getPose(id)
+    if (ok(p) && !out.includes(p)) out.push(p)
+  }
+  if (out.length < n) for (const p of POSES) if (fam.families.includes(p.family) && p.level === 'gentle' && ok(p) && !out.includes(p)) out.push(p)
+  return out.slice(0, n)
+}
+
+/** The peaks the Classes tab offers for a style, as poses. */
+export const peaksFor = (style) => (PEAKS[style] || []).map(getPose).filter(Boolean)
 
 /** Take poses from a scored list while `budget` seconds last: at least `min`, at most `max`. */
 function take(ctx, scored, budget, min, mk, max = 6) {
@@ -324,13 +454,15 @@ function buildVinyasa(ctx, T) {
   const arriveLines = [...MOMENTS.arrive, ...(goals[0]?.welcome ? [goals[0].welcome] : []), ...(breathy ? MOMENTS.pranayama : [])]
   const sav = Math.max(4, Math.min(9, Math.round(T * 0.12)))
   const R = Math.max(10, T - 3 - sav - 1.5 - (meditate ? 6 : 0)) * 60
+  // A long class holds more poses in each section, not only longer holds.
+  const k = Math.max(1, T / 60)
   const sections = []
   sections.push({ key: 'arrive', steps: [linesStep(arriveLines, 1, 90)] })
 
   // Warm-up: cat and cow, then a few gentle shapes that already serve the theme, ending on the feet.
   const warmBudget = R * 0.15
   const warmers = pool(ctx, (p) => WARMERS.includes(p.id)).map((x) => ({ ...x, score: x.score + (x.p.id === 'cat-pose' || x.p.id === 'cow-pose' ? 10 : 0) })).sort((a, b) => b.score - a.score)
-  const warm = take(ctx, warmers, warmBudget, 2, (p) => poseStep(p, { ...ctx, breaths: 4 }), 5)
+  const warm = take(ctx, warmers, warmBudget, 2, (p) => poseStep(p, { ...ctx, breaths: 4 }), Math.round(5 * k))
   sections.push({ key: 'warm', steps: [bridge('toAllFours'), ...arrange(warm, UP)] })
 
   // Sun salutations: rounds by time and level; B joins once there are three rounds and the level allows it.
@@ -346,7 +478,7 @@ function buildVinyasa(ctx, T) {
   // Standing: flows of standing poses done right then left, then the balances and the one-sided poses.
   const standBudget = R * 0.3
   const standing = pool(ctx, (p) => (p.family === 'standing' || p.family === 'balance' || STANDING_EXTRA.has(p.id)) && !SURYA_A.includes(p.id))
-  const standSteps = take(ctx, standing, standBudget, 2, (p) => poseStep(p, ctx), 8)
+  const standSteps = take(ctx, standing, standBudget, 2, (p) => poseStep(p, ctx), Math.round(8 * k))
   const flowable = standSteps.filter((s) => s.sides === 2 && getPose(s.pose).family !== 'balance')
   const rest = standSteps.filter((s) => !flowable.includes(s))
   const flows = []
@@ -357,21 +489,34 @@ function buildVinyasa(ctx, T) {
   standOut.push(...arrange(rest))
   sections.push({ key: 'standing', steps: standOut })
 
-  // The heart of the class: the poses that score highest for the theme.
+  // The heart of the class: the poses that score highest for the theme; or,
+  // with a peak, two steps of its ladder (no lower on the floor than the peak
+  // itself, so the class keeps moving down) and then the peak, held longer.
   const peakBudget = R * 0.2
-  const peakPool = pool(ctx, (p) => !['restorative', 'supine', 'sun-salutation'].includes(p.family))
-  const peak = take(ctx, peakPool.filter((x) => x.score >= 2), peakBudget, 1, (p) => poseStep(p, { ...ctx, breaths: 6 }), 5)
-  const peakSteps = withFloorBridges(arrange(peak))
-  sections.push({ key: 'peak', steps: peakSteps })
+  let peak
+  if (ctx.peak) {
+    const top = { ...poseStep(ctx.peak, { ...ctx, breaths: 8 }), peak: true }
+    const ladder = prepFor(ctx.peak, ctx, 12).filter((p) => !ctx.used.has(p.id) && DOWN[postureOf(p)] <= DOWN[postureOf(ctx.peak)])
+    const preps = take(ctx, ladder.map((p) => ({ p, score: 0 })), Math.max(0, peakBudget - stepSeconds(top, 'vinyasa')), 1, (p) => poseStep(p, { ...ctx, breaths: 5 }), 2)
+    ctx.used.add(ctx.peak.id)
+    peak = [...arrange(preps), top]
+  } else {
+    const peakPool = pool(ctx, (p) => !['restorative', 'supine', 'sun-salutation'].includes(p.family))
+    peak = arrange(take(ctx, peakPool.filter((x) => x.score >= 2), peakBudget, 1, (p) => poseStep(p, { ...ctx, breaths: 6 }), Math.round(5 * k)))
+  }
+  sections.push({ key: 'peak', steps: withFloorBridges(peak) })
 
-  // The floor: what the theme still asks for, the counterposes, and a twist to finish; winding down, not up.
-  const floorBudget = R * 0.2
+  // The floor: what undoes the peak first, then what the theme still asks
+  // for, and a twist to finish; winding down, not up. A short peak section
+  // (a ladder of two and the peak) leaves its time to the floor.
+  const floorBudget = R * 0.2 + Math.max(0, peakBudget - peak.reduce((s, st) => s + stepSeconds(st, 'vinyasa'), 0))
   const counters = uniq(peak.flatMap((s) => [...(getPose(s.pose).counterPoses || []), getPose(s.pose).yin?.counter].filter(Boolean)))
+  const undo = ctx.peak ? compensationFor(ctx.peak, ctx, 3).map((p) => p.id) : []
   const bending = goals.some((g) => g.families.includes('backbend'))
-  const floorPool = pool(ctx, (p) => FLOOR_FAMILIES.has(p.family) && p.family !== 'prone' && p.level !== 'strong' && postureOf(p) !== 'standing')
-    .map((x) => ({ ...x, score: x.score + (counters.includes(x.p.id) ? 3 : 0) + (x.p.id === 'supine-twist' || x.p.id === 'happy-baby' ? 2 : 0) + ({ supine: 2, restorative: 2, seated: 1 }[x.p.family] || 0) - (x.p.family === 'backbend' && !bending ? 2 : 0) }))
+  const floorPool = pool({ ...ctx, prepScore: null }, (p) => FLOOR_FAMILIES.has(p.family) && p.family !== 'prone' && p.level !== 'strong' && postureOf(p) !== 'standing')
+    .map((x) => ({ ...x, score: x.score + (undo.includes(x.p.id) ? 6 : 0) + (counters.includes(x.p.id) ? 3 : 0) + (x.p.id === 'supine-twist' || x.p.id === 'happy-baby' ? 2 : 0) + ({ supine: 2, restorative: 2, seated: 1 }[x.p.family] || 0) - (x.p.family === 'backbend' && !bending ? 2 : 0) }))
   floorPool.sort((a, b) => b.score - a.score)
-  const floor = take(ctx, floorPool, floorBudget, 2, (p) => poseStep(p, { ...ctx, breaths: 8 }), 5)
+  const floor = take(ctx, floorPool, floorBudget, 2, (p) => poseStep(p, { ...ctx, breaths: 8 }), Math.round(5 * k))
   sections.push({ key: 'floor', steps: withFloorBridges(arrange(floor)) })
 
   if (meditate) sections.push({ key: 'meditation', steps: [scriptStep('meditation', 6)] })
@@ -407,10 +552,24 @@ function buildYin(ctx, T) {
   const meditate = goals.some((g) => g.meditation)
   const R = Math.max(10, T - 3 - sav - 1.5 - (meditate ? 6 : 0)) * 60
   const sections = [{ key: 'arrive', steps: [linesStep([...MOMENTS.arriveYin, ...(goals[0]?.welcome ? [goals[0].welcome] : [])], 1, 90)] }]
-  // Long holds, each followed by its rebound; the counterpose when the hold asks for one.
-  const holds = take(ctx, pool(ctx), R, 2, (p) => poseStep(p, ctx), 12)
+  // Long holds, each followed by its rebound; the counterpose when the hold
+  // asks for one. With a peak: the holds that open what it needs, the peak,
+  // what undoes it, then the rest of the time.
+  let holds
+  if (ctx.peak) {
+    const top = { ...poseStep(ctx.peak, ctx), peak: true }
+    const preps = take(ctx, prepFor(ctx.peak, ctx, 10).map((p) => ({ p, score: 0 })), R * 0.4, 1, (p) => poseStep(p, ctx), 3)
+    ctx.used.add(ctx.peak.id)
+    const after = compensationFor(ctx.peak, ctx, 2).filter((p) => !ctx.used.has(p.id))
+    const undo = take(ctx, after.map((p) => ({ p, score: 0 })), R * 0.15, 0, (p) => poseStep(p, { ...ctx, minutes: 2 }), 1)
+    const spent = [...preps, top, ...undo].reduce((s, st) => s + stepSeconds(st, 'yin'), 0)
+    const more = take(ctx, pool({ ...ctx, prepScore: null }), Math.max(0, R - spent), 0, (p) => poseStep(p, ctx), 6)
+    holds = [...arrange(preps), top, ...undo, ...arrange(more)]
+  } else {
+    holds = arrange(take(ctx, pool(ctx), R, 2, (p) => poseStep(p, ctx), 12))
+  }
   const steps = []
-  for (const s of arrange(holds)) {
+  for (const s of holds) {
     steps.push(s)
     const p = getPose(s.pose)
     const counter = p.yin?.counter || p.counterPoses?.[0]
@@ -425,27 +584,34 @@ function buildYin(ctx, T) {
   return { sections }
 }
 
-function buildAshtanga(ctx, T) {
+/**
+ * The primary series as taught: Surya A and B, standing, as much of the
+ * seated sequence as the time allows, the finishing poses. With `upTo` (the
+ * Mysore way: a student practises up to their current pose, then finishes)
+ * the series is cut at that pose instead of by the clock.
+ */
+function buildAshtanga(ctx, T, upTo = null) {
   const series = POSES.filter((p) => p.ashtanga).sort((a, b) => a.ashtanga.position - b.ashtanga.position)
+  const cut = upTo ? upTo.ashtanga.position : Infinity
   const ok = (p) => !ctx.cautions.some((c) => flagged(p, c))
   const sav = Math.max(4, Math.min(8, Math.round(T * 0.1)))
   const sections = [{ key: 'arrive', steps: [linesStep(MOMENTS.arriveAshtanga, 1, 60)] }]
   // Fixed costs first, then as much of the seated sequence as the time allows.
-  const long = T >= 75
+  const long = T >= 75 || (upTo && upTo.ashtanga.section === 'finishing')
   const a = T >= 60 ? 5 : 3
   const b = T >= 60 ? 5 : T >= 45 ? 3 : 2
   sections.push({ key: 'sun', steps: [{ kind: 'sun', id: sid(), a, b }] })
-  const standing = series.filter((p) => p.ashtanga.section === 'standing' && ok(p)).map((p) => poseStep(p, ctx))
+  const standing = series.filter((p) => p.ashtanga.section === 'standing' && ok(p) && p.ashtanga.position <= cut).map((p) => poseStep(p, ctx))
   sections.push({ key: 'standing', steps: standing })
   const finishingIds = long ? series.filter((p) => p.ashtanga.section === 'finishing').map((p) => p.id) : ['shoulderstand', 'plow-pose', 'fish-pose', 'lotus']
-  const finishing = finishingIds.map(getPose).filter((p) => p && ok(p) && p.id !== 'savasana' && (ctx.level === 'strong' || !['wheel-pose', 'headstand'].includes(p.id))).map((p) => poseStep(p, ctx))
+  const finishing = finishingIds.map(getPose).filter((p) => p && ok(p) && p.id !== 'savasana' && (ctx.level === 'strong' || !['wheel-pose', 'headstand'].includes(p.id)) && (!upTo || upTo.ashtanga.section !== 'finishing' || p.ashtanga.position <= cut)).map((p) => poseStep(p, ctx))
   const fixed = 3 * 60 + a * 60 + b * 95 + standing.reduce((s, st) => s + stepSeconds(st, 'ashtanga'), 0) + finishing.reduce((s, st) => s + stepSeconds(st, 'ashtanga'), 0) + sav * 60 + 90
   let left = T * 60 - fixed
   const seated = []
-  for (const p of series.filter((x) => x.ashtanga.section === 'seated' && ok(x))) {
+  for (const p of series.filter((x) => x.ashtanga.section === 'seated' && ok(x) && x.ashtanga.position <= cut)) {
     const step = poseStep(p, ctx)
     const secs = stepSeconds(step, 'ashtanga')
-    if (secs > left) break
+    if (!upTo && secs > left) break
     seated.push(step)
     left -= secs
   }
@@ -489,8 +655,132 @@ function buildStudent(ctx, T) {
   return { sections, care, careful }
 }
 
+// ── Reading a plan: what to bring, what to practise, what to fix ────────
+const idsOf = (st) => (st.kind === 'pose' ? [st.pose] : st.kind === 'flow' ? st.poses : st.kind === 'sun' ? [...SURYA_A, ...(st.b ? SURYA_B : [])] : [])
+
+/** Every pose in the plan, in order: [{ p, sec, step }] (sun salutations expanded). */
+export function posesIn(plan) {
+  const out = []
+  for (const s of plan.sections) for (const st of s.steps) for (const id of idsOf(st)) { const p = getPose(id); if (p) out.push({ p, sec: s.key, step: st }) }
+  return out
+}
+
+/** The props the class will need, most used first: [{ prop, poses }], read off each pose's modifications. */
+export function propsFor(plan) {
+  const m = new Map()
+  for (const { p } of posesIn(plan)) for (const mod of p.modifications || []) for (const prop of mod.props || []) {
+    const key = prop === 'blocks' ? 'block' : prop
+    if (!m.has(key)) m.set(key, new Set())
+    m.get(key).add(p.id)
+  }
+  return [...m.entries()].map(([prop, ids]) => ({ prop, poses: [...ids] })).sort((a, b) => b.poses.length - a.poses.length)
+}
+
+/** What the class works and stretches, most often first: { working: [{ id, n }], lengthening: [...] }. */
+export function musclesOf(plan, n = 6) {
+  const count = (key) => {
+    const m = new Map()
+    for (const { p } of posesIn(plan)) for (const id of p.muscles?.[key] || []) if (getTerm(id)) m.set(id, (m.get(id) || 0) + 1)
+    return [...m.entries()].map(([id, k]) => ({ id, n: k })).sort((a, b) => b.n - a.n).slice(0, n)
+  }
+  return { working: count('working'), lengthening: count('lengthening') }
+}
+
+const HARD = /th(?!e\b)|str|tw|spl|sh|ch/i
+/**
+ * The words in this class worth saying aloud before it: Sanskrit names with
+ * their stress (the peak first), muscle terms with a known trap, and English
+ * names with a cluster or a "th". Each is { kind: 'sa' | 'term' | 'en',
+ * clip, text, sub, say?, trap?, pose? | term? }.
+ */
+export function wordsFor(plan, n = 8) {
+  const out = []
+  const have = (kind) => out.filter((w) => w.kind === kind).length
+  const list = posesIn(plan)
+  const ordered = [...list.filter((x) => x.step.peak), ...list.filter((x) => !x.step.peak)]
+  const seen = new Set()
+  for (const { p } of ordered) {
+    if (seen.has(p.id)) continue
+    seen.add(p.id)
+    if (p.sa && p.say && have('sa') < 3) out.push({ kind: 'sa', clip: `${p.id}__sa`, text: p.sa, say: p.say, sub: p.en, pose: p.id })
+  }
+  const m = musclesOf(plan, 8)
+  for (const { id } of [...m.lengthening, ...m.working]) {
+    const t = getTerm(id)
+    if (t && (t.wordTrap || t.traps?.length) && !out.some((w) => w.term === id) && have('term') < 3) out.push({ kind: 'term', clip: t.id, text: t.en, say: t.say, trap: t.wordTrap, sub: t.vi, term: id })
+  }
+  for (const { p } of ordered) {
+    if (HARD.test(p.en) && !out.some((w) => w.kind === 'en' && w.pose === p.id) && have('en') < 2) out.push({ kind: 'en', clip: `${p.id}__en`, text: p.en, sub: p.vi, pose: p.id })
+  }
+  return out.slice(0, n)
+}
+
+/** The class against the clock: { target, actual, diff } in minutes; diff > 0 is over. */
+export const timeBalance = (plan) => { const actual = planMinutes(plan); return { target: plan.minutes, actual, diff: actual - plan.minutes } }
+
+/** The fields that rebuild a plan (another version keeps her notes and her dates). */
+export const specOf = (p) => ({ id: p.id, mode: p.mode, style: p.style, minutes: p.minutes, level: p.level, goals: p.goals, cautions: p.cautions, request: p.request, seed: p.seed, peak: p.peak, upTo: p.upTo, notes: p.notes, taught: p.taught })
+
+/** A copy she can change without touching the original: a new id, not yet saved, never taught. */
+export function duplicatePlan(plan) {
+  const { savedAt: _saved, ...rest } = plan
+  void _saved
+  return { ...rest, id: `plan:${Date.now()}`, at: Date.now(), taught: [], title: { en: `${plan.title.en} (copy)`, vi: `${plan.title.vi} (bản sao)` } }
+}
+
+const DEEP = new Set(['backbend', 'inversion', 'arm-balance'])
+/**
+ * What a teacher would notice reading the plan: a deep pose while the body
+ * is still cold, a deep shape with nothing after it to undo it, a climb back
+ * to standing after the floor, a pose a stated caution forbids, a pose
+ * twice. Each note is { kind, step, pose, caution? }; the page words it.
+ * One counter note per family, so a Yin class of folds gets one, not five.
+ */
+export function checkPlan(plan) {
+  const notes = []
+  const cautions = plan.cautions.map((id) => cautionById.get(id)).filter(Boolean)
+  const all = posesIn(plan).filter((x) => x.step.kind === 'pose' || x.step.kind === 'flow')
+  const seen = new Set()
+  let floor = false
+  for (let i = 0; i < all.length; i++) {
+    const { p, sec, step } = all[i]
+    if (sec === 'warm' && !WARMERS.includes(p.id) && (p.level === 'strong' || (DEEP.has(p.family) && p.level !== 'gentle'))) notes.push({ kind: 'cold', step: step.id, pose: p.id })
+    // Deep enough to need undoing: a strong pose of a deep family, or a
+    // moderate backbend that is not on the back (Fish or Bridge after an
+    // inversion is itself the undoing). A Yin fold wants a backbend somewhere
+    // in the class, before or after, since a fold is often the counter.
+    const deep = DEEP.has(p.family) && (p.level === 'strong' || (p.level === 'moderate' && !(p.family === 'backbend' && postureOf(p) === 'supine')))
+    const yinFold = plan.style === 'yin' && p.family === 'forward-fold'
+    const c = COUNTERS[p.family]
+    if ((deep || yinFold) && c && !notes.some((n) => n.kind === 'counter' && getPose(n.pose).family === p.family)) {
+      const undoes = (x) => x.p.family !== p.family && (c.families.includes(x.p.family) || c.poses.includes(x.p.id) || x.p.id === 'child-pose')
+      const found = yinFold ? all.some(undoes) : all.slice(i + 1).some(undoes)
+      if (!found) notes.push({ kind: 'counter', step: step.id, pose: p.id })
+    }
+    if (['peak', 'floor', 'holds', 'practice'].includes(sec)) {
+      if (postureOf(p) !== 'standing') floor = true
+      else if (floor && step.kind === 'pose') notes.push({ kind: 'climb', step: step.id, pose: p.id })
+    }
+    for (const x of cautions) if (flagged(p, x)) notes.push({ kind: 'flagged', step: step.id, pose: p.id, caution: x.id })
+    if (seen.has(p.id) && step.kind === 'pose') notes.push({ kind: 'twice', step: step.id, pose: p.id })
+    seen.add(p.id)
+  }
+  return notes.filter((n, i) => notes.findIndex((m) => m.kind === n.kind && m.step === n.step && m.pose === n.pose) === i)
+}
+
 // ── Editing a plan ──────────────────────────────────────────────────────
 const used = (plan) => new Set(plan.sections.flatMap((s) => s.steps.flatMap((st) => (st.kind === 'pose' ? [st.pose] : st.kind === 'flow' ? st.poses : []))))
+
+/** The poses that follow naturally from `prevId` (its own transitions first, then the same posture), screened for the plan; or the best of the style when there is no previous pose. */
+export function followers(plan, prevId, n = 6) {
+  const prev = getPose(prevId)
+  const have = used(plan)
+  const list = pool({ ...ctxOf(plan), level: 'strong' }, (p) => !have.has(p.id) && (!prev || p.id !== prev.id)).map((x) => x.p)
+  if (!prev) return list.slice(0, n)
+  const next = (prev.transitionsTo || []).map(getPose).filter((p) => p && list.includes(p))
+  const same = list.filter((p) => !next.includes(p) && postureOf(p) === postureOf(prev))
+  return [...next, ...same].slice(0, n)
+}
 
 /** Up to `n` poses that could stand in for a step: same family first, then the theme's next best. */
 export function alternatives(plan, step, n = 4) {
@@ -512,10 +802,12 @@ export function addable(plan) {
 }
 
 function ctxOf(plan) {
+  const peak = plan.peak ? getPose(plan.peak) : null
   return {
     goals: plan.goals.map((id) => goalById.get(id)).filter(Boolean),
     cautions: plan.cautions.map((id) => cautionById.get(id)).filter(Boolean),
     level: plan.level, style: plan.style, rnd: rng(plan.seed + 1), used: used(plan),
+    peak: null, prepScore: peak ? (p) => prepScore(peak, p) : null,
   }
 }
 
@@ -536,7 +828,7 @@ export function nextHold(step) {
 /** The compact view of a plan that api/plan.js is given. */
 export function planForAI(plan) {
   return {
-    mode: plan.mode, style: plan.style, minutes: plan.minutes, level: plan.level, goals: plan.goals, cautions: plan.cautions,
+    mode: plan.mode, style: plan.style, minutes: plan.minutes, level: plan.level, goals: plan.goals, cautions: plan.cautions, peak: plan.peak || null,
     sections: plan.sections.map((s) => ({ key: s.key, poses: s.steps.flatMap((st) => (st.kind === 'pose' ? [st.pose] : st.kind === 'flow' ? st.poses : st.kind === 'sun' ? ['sun-salutations'] : [])) })),
   }
 }
@@ -558,7 +850,7 @@ export function applyAI(plan, out) {
     if (plan.cautions.some((id) => flagged(to, cautionById.get(id)))) continue
     for (const s of next.sections) {
       s.steps = s.steps.map((st) => {
-        if (st.kind === 'pose' && st.pose === from.id) return { ...stepFor(next, to.id), id: st.id, breaths: st.breaths, minutes: st.minutes && (to.yin?.holdMinutes || st.minutes), swapped: { from: from.id, why_vi: sw.why_vi || '' } }
+        if (st.kind === 'pose' && st.pose === from.id) return { ...stepFor(next, to.id), id: st.id, breaths: st.breaths, minutes: st.minutes && (to.yin?.holdMinutes || st.minutes), ...(st.peak ? { peak: true } : {}), swapped: { from: from.id, why_vi: sw.why_vi || '' } }
         if (st.kind === 'flow' && st.poses.includes(from.id)) return { ...st, poses: st.poses.map((id) => (id === from.id ? to.id : id)), swapped: { from: from.id, why_vi: sw.why_vi || '' } }
         return st
       })
@@ -626,6 +918,13 @@ export function scriptOf(plan) {
           const l = phraseLine(id)
           if (l) push({ clip: `phrase__${l.id}`, en: l.en, vi: l.vi, head: null, step: step.id, pauseAfter: Math.round((l.pauseAfter || 2) * (step.scale || 1)) })
         }
+      } else if (step.kind === 'thought') {
+        // Her own sentence about the thought: a generated clip when a phrase says it, else the live voice.
+        const th = getTheme(step.theme)
+        if (!th) continue
+        const head = { en: th.term, vi: th.ref }
+        if (th.line && phraseLine(th.line)) push({ clip: `phrase__${th.line}`, en: th.inClass.en, vi: th.inClass.vi, head, step: step.id, pauseAfter: 4 })
+        else push({ text: th.inClass.en, en: th.inClass.en, vi: th.inClass.vi, head, step: step.id, kind: 'ai', pauseAfter: 4 })
       } else if (step.kind === 'sun') {
         const round = (ids, label, i) => {
           for (const id of ids) {
@@ -689,19 +988,23 @@ export function planText(plan, titles = {}) {
     lines.push('', `## ${t ? `${t.en} / ${t.vi}` : sec.key}`)
     for (const st of sec.steps) {
       if (st.kind === 'lines') for (const id of st.lines) { const l = phraseLine(id); if (l) lines.push(`  “${l.en}”`, `    ${l.vi}`) }
+      else if (st.kind === 'thought') { const th = getTheme(st.theme); if (th) lines.push(`  “${th.quote.en}” (${th.ref})`, `  “${th.inClass.en}”`, `    ${th.inClass.vi}`) }
       else if (st.kind === 'sun') lines.push(`- Sun Salutation A × ${st.a}${st.b ? `, B × ${st.b}` : ''}`)
       else if (st.kind === 'flow') lines.push(`- Flow, right then left: ${st.poses.map((id) => getPose(id)?.en).filter(Boolean).join(' → ')}`)
       else {
         const p = getPose(st.pose)
         if (!p) continue
         const hold = st.minutes ? `${st.minutes} min` : `${st.breaths} breaths`
-        lines.push(`- ${p.en} (${p.vi}${p.sa ? `, ${p.sa}` : ''}) · ${hold}${st.sides === 2 ? ' each side' : ''}`)
+        lines.push(`- ${st.peak ? '★ ' : ''}${p.en} (${p.vi}${p.sa ? `, ${p.sa}` : ''}) · ${hold}${st.sides === 2 ? ' each side' : ''}`)
         for (const c of st.cues || []) lines.push(`    ★ ${c.en}`, `      ${c.vi}`)
         for (const n of st.notes || []) lines.push(`    ! ${n.en}`, `      ${n.vi}`)
       }
     }
   }
   if (plan.ai?.toStudent) lines.push('', `To the student: ${plan.ai.toStudent.en}`, plan.ai.toStudent.vi)
+  const props = propsFor(plan)
+  if (props.length) lines.push('', `Props: ${props.map((x) => x.prop).join(', ')}`)
+  if (plan.notes) lines.push('', `Notes: ${plan.notes}`)
   return lines.join('\n')
 }
 

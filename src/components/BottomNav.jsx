@@ -1,5 +1,5 @@
-import { NavLink, useLocation } from 'react-router-dom'
-import { PersonStanding, Mic, MessageSquareText } from 'lucide-react'
+import { NavLink } from 'react-router-dom'
+import { PersonStanding, ClipboardList, Mic, MessageSquareText } from 'lucide-react'
 import { useLang } from '../lib/i18n.jsx'
 
 function BodyIcon({ size = 20, strokeWidth = 1.8 }) {
@@ -15,39 +15,34 @@ function BodyIcon({ size = 20, strokeWidth = 1.8 }) {
 
 const TABS = [
   { to: '/poses', key: 'poses', Icon: PersonStanding },
+  { to: '/classes', key: 'classes', Icon: ClipboardList },
   { to: '/anatomy', key: 'anatomy', Icon: BodyIcon },
   { to: '/speech', key: 'speech', Icon: Mic },
   { to: '/phrases', key: 'phrases', Icon: MessageSquareText },
 ]
 
-/** The four tabs: a soft bar that floats over the page, no hard edge. */
+/** The five tabs: a soft bar that floats over the page, no hard edge. */
 export default function BottomNav() {
   const { t } = useLang()
-  const { pathname } = useLocation()
-  // The Class Builder lives under the Poses tab.
-  const lit = (key, isActive) => isActive || (key === 'poses' && pathname.startsWith('/classes'))
   return (
     <nav className="tint-sage fixed inset-x-0 bottom-0 z-20 bg-paper/90 shadow-up backdrop-blur-md pb-safe">
-      <div className="mx-auto grid max-w-xl grid-cols-4 pt-1.5">
+      <div className="mx-auto grid max-w-xl grid-cols-5 pt-1.5">
         {TABS.map(({ to, key, Icon }) => (
           <NavLink
             key={key}
             to={to}
             className={({ isActive }) =>
-              `press flex flex-col items-center gap-1 py-1.5 text-[11px] font-medium transition-colors ${lit(key, isActive) ? 'text-tint-deep' : 'text-muted'}`
+              `press flex flex-col items-center gap-1 py-1.5 text-[11px] font-medium transition-colors ${isActive ? 'text-tint-deep' : 'text-muted'}`
             }
           >
-            {({ isActive }) => {
-              const on = lit(key, isActive)
-              return (
-                <>
-                  <span className={`rounded-full px-4 py-1 transition-colors duration-200 ${on ? 'bg-tint-soft' : ''}`}>
-                    <Icon size={20} strokeWidth={on ? 2.2 : 1.8} />
-                  </span>
-                  {t.nav[key]}
-                </>
-              )
-            }}
+            {({ isActive }) => (
+              <>
+                <span className={`rounded-full px-3.5 py-1 transition-colors duration-200 ${isActive ? 'bg-tint-soft' : ''}`}>
+                  <Icon size={20} strokeWidth={isActive ? 2.2 : 1.8} />
+                </span>
+                {t.nav[key]}
+              </>
+            )}
           </NavLink>
         ))}
       </div>

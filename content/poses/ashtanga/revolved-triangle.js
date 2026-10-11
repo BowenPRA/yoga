@@ -1,5 +1,6 @@
 export const revolvedTriangle = {
   id: 'revolved-triangle',
+  wiki: 'Trikonasana',
   styles: ['vinyasa', 'ashtanga'],
   family: 'twist',
   level: 'strong',

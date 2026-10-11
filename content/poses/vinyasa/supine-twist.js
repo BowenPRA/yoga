@@ -1,5 +1,6 @@
 export const supineTwist = {
   id: 'supine-twist',
+  wiki: 'Matsyendrasana',
   styles: ['vinyasa'],
   family: 'twist',
   level: 'gentle',

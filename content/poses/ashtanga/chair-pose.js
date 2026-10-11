@@ -1,5 +1,6 @@
 export const chairPose = {
   id: 'chair-pose',
+  wiki: 'Utkatasana',
   styles: ['vinyasa', 'ashtanga'],
   family: 'standing',
   level: 'moderate',

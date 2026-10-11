@@ -1,5 +1,6 @@
 export const dancerPose = {
   id: 'dancer-pose',
+  wiki: 'Natarajasana',
   styles: ['vinyasa'],
   family: 'balance',
   level: 'moderate',

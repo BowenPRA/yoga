@@ -1,5 +1,6 @@
 export const bowPose = {
   id: 'bow-pose',
+  wiki: 'Dhanurasana',
   styles: ['vinyasa'],
   family: 'backbend',
   level: 'moderate',

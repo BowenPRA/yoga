@@ -68,6 +68,13 @@ const MOMENT = {
 }
 export const momentTint = (groupId) => MOMENT[groupId] || 'sage'
 
+/** The sections of a class plan: gold for ritual, clay for the peak, mist for the floor, dusk for stillness. */
+const SECTION = {
+  arrive: 'gold', warm: 'sage', sun: 'gold', standing: 'sage', peak: 'clay', floor: 'mist', holds: 'dusk',
+  seated: 'gold', finishing: 'gold', meditation: 'dusk', rest: 'dusk', close: 'gold', say: 'clay', practice: 'sage',
+}
+export const sectionTint = (key) => SECTION[key] || 'sage'
+
 /** Kinds of term on the anatomy tab. */
 export const termTint = (term) => (term?.kind === 'movement' ? 'mist' : term?.isBone ? 'gold' : regionTint(term?.region))
 

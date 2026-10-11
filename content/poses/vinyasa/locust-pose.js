@@ -1,5 +1,6 @@
 export const locustPose = {
   id: 'locust-pose',
+  wiki: 'Salabhasana',
   styles: ['vinyasa'],
   family: 'backbend',
   level: 'moderate',

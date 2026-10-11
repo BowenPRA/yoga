@@ -1,5 +1,6 @@
 export const chaturanga = {
   id: 'chaturanga',
+  wiki: 'Chaturanga_Dandasana',
   styles: ['vinyasa', 'ashtanga'],
   family: 'arm-balance',
   level: 'strong',

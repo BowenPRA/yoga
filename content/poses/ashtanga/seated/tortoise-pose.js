@@ -1,5 +1,6 @@
 export const tortoisePose = {
   id: 'tortoise-pose',
+  wiki: 'Kurmasana',
   styles: ['ashtanga'],
   family: 'forward-fold',
   level: 'strong',

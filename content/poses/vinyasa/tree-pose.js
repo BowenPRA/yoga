@@ -1,5 +1,6 @@
 export const treePose = {
   id: 'tree-pose',
+  wiki: 'Tree_pose',
   styles: ['vinyasa'],
   family: 'balance',
   level: 'gentle',

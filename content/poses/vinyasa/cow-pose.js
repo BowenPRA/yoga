@@ -1,5 +1,6 @@
 export const cowPose = {
   id: 'cow-pose',
+  wiki: 'Cat/Cow_pose',
   styles: ['vinyasa'],
   family: 'restorative',
   level: 'gentle',

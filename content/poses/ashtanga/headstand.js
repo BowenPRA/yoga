@@ -1,5 +1,6 @@
 export const headstand = {
   id: 'headstand',
+  wiki: 'Shirshasana',
   styles: ['vinyasa', 'ashtanga'],
   family: 'inversion',
   level: 'strong',

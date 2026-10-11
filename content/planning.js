@@ -359,6 +359,29 @@ export const BRIDGES = {
   release: 'breath-8',
 }
 
+/**
+ * What a deep shape owes afterwards: the families and the poses that undo
+ * it (the compensation of the Krishnamacharya tradition, sequencewiz.org;
+ * Yin's counterposes, yinyoga.com). A backbend asks for a fold or a twist, a
+ * fold for a gentle backbend, an inversion or an arm balance for rest, a
+ * twist for something symmetrical, a deep hip opener for the back.
+ */
+export const COUNTERS = {
+  backbend: { families: ['forward-fold', 'twist'], poses: ['child-pose', 'supine-twist', 'happy-baby', 'seated-forward-fold', 'caterpillar', 'reclined-twist', 'figure-four'] },
+  'forward-fold': { families: ['backbend'], poses: ['sphinx', 'bridge-pose', 'cobra', 'upward-plank', 'seal', 'locust-pose', 'cow-pose', 'supported-fish', 'melting-heart'] },
+  inversion: { families: ['restorative'], poses: ['child-pose', 'fish-pose', 'supported-fish', 'savasana'] },
+  'arm-balance': { families: ['restorative'], poses: ['child-pose', 'thread-the-needle', 'puppy-pose'] },
+  twist: { families: ['forward-fold', 'supine'], poses: ['seated-forward-fold', 'staff-pose', 'happy-baby', 'child-pose', 'caterpillar', 'savasana'] },
+  'hip-opener': { families: ['supine'], poses: ['happy-baby', 'bridge-pose', 'supine-twist', 'reclined-twist', 'savasana'] },
+  core: { families: ['backbend', 'restorative'], poses: ['sphinx', 'cobra', 'child-pose', 'bridge-pose'] },
+}
+
+/** Poses worth building a whole class toward, by style, as the Classes tab offers them. */
+export const PEAKS = {
+  vinyasa: ['wheel-pose', 'camel-pose', 'crow-pose', 'headstand', 'pigeon', 'half-moon', 'dancer-pose', 'half-splits', 'warrior-3', 'bow-pose', 'eagle-pose', 'revolved-triangle', 'dolphin-pose', 'side-plank', 'wild-thing', 'malasana', 'lizard-pose', 'boat-pose'],
+  yin: ['sleeping-swan', 'saddle', 'dragon', 'frog', 'square', 'snail', 'shoelace', 'dragonfly', 'caterpillar', 'seal'],
+}
+
 /** The moments a class opens and closes with, as phrase ids. */
 export const MOMENTS = {
   arrive: ['welcome-1', 'welcome-2', 'welcome-4', 'welcome-5'],

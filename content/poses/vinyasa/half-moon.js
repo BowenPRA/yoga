@@ -1,5 +1,6 @@
 export const halfMoon = {
   id: 'half-moon',
+  wiki: 'Ardha_chandrasana',
   styles: ['vinyasa'],
   family: 'balance',
   level: 'moderate',

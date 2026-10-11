@@ -1,5 +1,6 @@
 export const wheelPose = {
   id: 'wheel-pose',
+  wiki: 'Chakrasana',
   styles: ['vinyasa', 'ashtanga'],
   family: 'backbend',
   level: 'strong',

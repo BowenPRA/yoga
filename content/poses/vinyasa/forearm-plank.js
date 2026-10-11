@@ -1,5 +1,6 @@
 export const forearmPlank = {
   id: 'forearm-plank',
+  wiki: 'Plank_(exercise)',
   styles: ['vinyasa'],
   family: 'core',
   level: 'moderate',

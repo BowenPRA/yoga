@@ -1,5 +1,6 @@
 export const upwardPlank = {
   id: 'upward-plank',
+  wiki: 'Chaturanga_Dandasana',
   styles: ['vinyasa', 'ashtanga'],
   family: 'backbend',
   level: 'moderate',

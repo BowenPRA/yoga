@@ -1,5 +1,6 @@
 export const downwardDog = {
   id: 'downward-dog',
+  wiki: 'Downward_Dog_Pose',
   styles: ['vinyasa', 'ashtanga'],
   family: 'inversion',
   level: 'moderate',

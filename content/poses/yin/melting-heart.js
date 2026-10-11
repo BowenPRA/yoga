@@ -1,5 +1,6 @@
 export const meltingHeart = {
   id: 'melting-heart',
+  wiki: 'Balasana',
   styles: ['yin'],
   family: 'backbend',
   level: 'gentle',

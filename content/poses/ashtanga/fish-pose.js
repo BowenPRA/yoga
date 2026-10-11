@@ -1,5 +1,6 @@
 export const fishPose = {
   id: 'fish-pose',
+  wiki: 'Matsyasana',
   styles: ['vinyasa', 'ashtanga'],
   family: 'backbend',
   level: 'moderate',

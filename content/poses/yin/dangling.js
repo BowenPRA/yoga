@@ -1,5 +1,6 @@
 export const dangling = {
   id: 'dangling',
+  wiki: 'Uttanasana',
   styles: ['yin'],
   family: 'forward-fold',
   level: 'gentle',

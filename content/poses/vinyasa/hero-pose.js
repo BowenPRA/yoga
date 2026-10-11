@@ -1,5 +1,6 @@
 export const heroPose = {
   id: 'hero-pose',
+  wiki: 'Virasana',
   styles: ['vinyasa'],
   family: 'seated',
   level: 'gentle',

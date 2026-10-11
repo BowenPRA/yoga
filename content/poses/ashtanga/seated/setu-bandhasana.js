@@ -1,5 +1,6 @@
 export const setuBandhasana = {
   id: 'setu-bandhasana',
+  wiki: 'Setu_Bandha_Sarvangasana',
   styles: ['ashtanga'],
   family: 'backbend',
   level: 'strong',

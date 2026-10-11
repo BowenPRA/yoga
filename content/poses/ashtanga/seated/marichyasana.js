@@ -1,5 +1,6 @@
 export const marichyasana = {
   id: 'marichyasana',
+  wiki: 'Marichyasana',
   styles: ['ashtanga'],
   family: 'forward-fold',
   level: 'strong',

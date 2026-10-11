@@ -127,11 +127,49 @@ audio in IndexedDB (`voices`, not in the backup), so it plays offline and
 spends no TTS request. `audio.unlock()` runs on the tap that asks for
 speech, because an iPhone refuses audio that starts seconds after a tap.
 
-## Class Builder
+## Classes
 
-Behind the Poses tab (`#/classes`). She writes what the class is for, or
-what a student said, in Vietnamese or English; the class is built on the
-phone, with no network:
+Its own tab (`#/classes`): one way in for a new class, a few quick starts,
+the peaks a class can build toward, and the shelf of saved classes with
+when she taught them. The builder (`#/classes/new`) takes a theme or a
+student's words, in Vietnamese or English, a peak pose (Vinyasa, Yin) or,
+for Ashtanga, the pose to practise up to (the Mysore way); the class is
+built on the phone, with no network:
+
+- **Building toward a peak** (`prepScore`, `prepFor`, `compensationFor`):
+  poses no harder than the peak that stretch and work what it needs come
+  into the warm-up and the standing section; the heart of the class is two
+  steps of the ladder, no lower on the floor than the peak, then the peak
+  held longer; the floor opens with what undoes it (`COUNTERS` in
+  `content/planning.js`: a fold or a twist after a backbend, a backbend
+  after folds, rest after an inversion or an arm balance). A pose page
+  shows the same "prepare with" and "undo it with" and a button into the
+  builder. `PEAKS` lists the peaks the tab offers.
+- **Reading the plan** (`checkPlan`): what a teacher would notice, worded
+  on the page and tappable to the step: a deep pose in the warm-up, a deep
+  shape with nothing after it to undo it, standing up again after the
+  floor, a pose a stated caution forbids, a pose twice. The checker warns
+  when a plan the builder makes itself earns a note.
+- **Before class** (`propsFor`, `wordsFor`, `musclesOf`): the props to set
+  out, read off the modifications of every pose in the plan; the words to
+  say aloud first (Sanskrit names with their stress, muscle terms with a
+  known trap, English names with a cluster); what the class works and
+  stretches, as chips into the Anatomy tab.
+- **A thought for the class** (`content/themes.js`, `withThought`,
+  `nextThought`): one line from a text she teaches from, quoted word for
+  word from a public-domain or CC0 translation, with its reference, a
+  Vietnamese rendering labelled as the app's own, and a sentence she can
+  say to the class; it sits at the end of the arriving section and is read
+  in the rehearsal. "Another thought" rotates through the ones that suit
+  the theme.
+- **The arc** (`ArcBar`): one segment per section, as wide as its minutes;
+  the header says how the class stands against the clock
+  (`timeBalance`). **Mat view** (`MatView`) is the whole class as a short
+  list in large type, screen kept awake. **Taught today** stamps a date on
+  the class (`taught`); **Duplicate** copies it; **Your notes** are kept
+  with it. Adding a pose to a section offers first the poses that follow
+  naturally from its last one (`followers`: its transitions, then the same
+  posture).
 
 - `content/planning.js` is what the planner knows that the pose files do
   not: **goals** (hips, hamstrings, backbends, shoulders, spine, core,
@@ -171,8 +209,24 @@ phone, with no network:
   its hold tappable; add a pose from a sheet; Gemini; share; keep offline;
   **Lead it**, a full-screen teleprompter on `src/lib/useRunner.js`). Drafts
   live in the tab session until saved to IndexedDB `classes`.
-- `scripts/check-content.mjs` checks every id the planner names and builds
-  a class for every goal, caution and style.
+- `scripts/check-content.mjs` checks every id the planner names, builds a
+  class for every goal, caution, style, peak and Ashtanga cut, and warns
+  when a built class earns a reading note.
+
+## Sources
+
+`content/sources.js` is the registry of where the content comes from
+(Wikipedia's list of asanas and one article per pose, named in each pose
+file's `wiki`; the Ashtanga and Yin references; the public-domain Yoga
+Sutras, Hatha Yoga Pradipika and Bhagavad Gita translations and the CC0
+SuttaCentral texts the thoughts quote; OpenStax and Wikimedia Commons for
+the anatomy; Vietnamese Wikipedia for the Buddhist bridges), each with its
+licence and a bilingual note, and an `own` entry that says plainly what
+was written for the app. The Sources page (`#/sources`, from Settings and
+from the foot of a pose or a plan) shows it by area; a pose page lists what
+it rests on (`sourcesFor`). `docs/SOURCES.md` is the same list for people
+reading the repo. The checker rejects unknown licences, areas and source
+ids, and warns about a pose with no `wiki` title.
 
 ## Deploy
 

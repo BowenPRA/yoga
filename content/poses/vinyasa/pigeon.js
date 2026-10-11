@@ -1,5 +1,6 @@
 export const pigeon = {
   id: 'pigeon',
+  wiki: 'Eka_Pada_Rajakapotasana',
   styles: ['vinyasa'],
   family: 'hip-opener',
   level: 'moderate',

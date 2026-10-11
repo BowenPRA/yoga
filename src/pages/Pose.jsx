@@ -1,9 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
 import { Navigate, useNavigate, useParams } from 'react-router-dom'
-import { Bookmark, BookmarkCheck, ChevronLeft, ChevronRight, Play, Square } from 'lucide-react'
+import { ArrowRight, Bookmark, BookmarkCheck, ChevronLeft, ChevronRight, ExternalLink, Play, Square } from 'lucide-react'
 import { useLang } from '../lib/i18n.jsx'
 import { STRINGS } from '../lib/strings.js'
 import { getPose, getTerm, nextInSeries, poseClipIds, poseName, prevInSeries, seriesLength } from '../lib/content.js'
+import { compensationFor, prepFor } from '../lib/planner.js'
+import { sourcesFor } from '../../content/sources.js'
+import { SourcesLink } from '../components/plan.jsx'
 import { audio } from '../lib/audio.js'
 import { learn } from '../lib/learning.js'
 import { store } from '../lib/store.js'
@@ -150,6 +153,11 @@ export default function Pose() {
   const joints = pose.joints || []
   const transitions = pose.transitionsTo || []
   const counters = pose.counterPoses || []
+  const preps = prepFor(pose, undefined, 5)
+  const undo = compensationFor(pose, undefined, 3)
+  const sources = sourcesFor(pose)
+  // A class can build toward a Vinyasa or Yin pose; an Ashtanga-only pose is a point in the series to practise up to.
+  const buildTo = pose.yin || pose.styles.includes('vinyasa') ? `/classes/new?peak=${pose.id}` : pose.ashtanga ? `/classes/new?upTo=${pose.id}` : null
 
   const play = async (which) => {
     if (playing) { stopRef.current = true; audio.stop(); setPlaying(null); return }
@@ -318,9 +326,49 @@ export default function Pose() {
         </Section>
       )}
 
+      {(preps.length > 0 || undo.length > 0 || buildTo) && (
+        <Section title={P.inClass}>
+          <div className="wash rounded-3xl border border-line/60 p-4 shadow-card">
+            {preps.length > 0 && (
+              <div className="mb-4">
+                <Eyebrow className="mb-1.5">{P.prepWith}</Eyebrow>
+                <div className="flex flex-wrap gap-2">{preps.map((x) => <PoseChip key={x.id} id={x.id} />)}</div>
+              </div>
+            )}
+            {undo.length > 0 && (
+              <div className="mb-4">
+                <Eyebrow className="mb-1.5">{P.followWith}</Eyebrow>
+                <div className="flex flex-wrap gap-2">{undo.map((x) => <PoseChip key={x.id} id={x.id} />)}</div>
+              </div>
+            )}
+            {buildTo && (
+              <Button kind="secondary" onClick={() => navigate(buildTo)} className="w-full">
+                {pose.yin || pose.styles.includes('vinyasa') ? P.buildToward : P.upToThis} <ArrowRight size={17} />
+              </Button>
+            )}
+          </div>
+        </Section>
+      )}
+
+      <Section title={P.sources}>
+        <div className="rounded-3xl border border-line/70 bg-paper p-2 shadow-card">
+          {sources.filter((s) => s.url).map((s) => (
+            <a key={s.id + (s.page || '')} href={s.url} target="_blank" rel="noreferrer" className="press flex items-center gap-3 rounded-2xl px-2 py-2 hover:bg-sand/70">
+              <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-tint-soft text-tint-deep"><ExternalLink size={15} /></span>
+              <span className="min-w-0 flex-1">
+                <span className="block truncate text-body text-ink">{s.page ? `${t.sources.wiki}: ${s.page}` : s.title}</span>
+                <span className="block truncate text-[12px] text-muted">{s.by}{s.licence ? ` · ${t.sources.licence[s.licence] || s.licence}` : ''}</span>
+              </span>
+            </a>
+          ))}
+          <p className="px-2 pb-1 pt-2 text-[12px] text-muted">{t.sources.cuesOwn}</p>
+        </div>
+      </Section>
+
       <div className="mt-8 flex flex-col items-start gap-1">
         <KeepOffline key={pose.id} ids={poseClipIds(pose)} label={t.common.offline.pose} />
         <SuggestFix key={`fix-${pose.id}`} target={pose.id} />
+        <SourcesLink className="mt-1 px-1" />
       </div>
       <AnatomyCard term={term} onClose={() => setTerm(null)} onOpen={(tid) => { const x = getTerm(tid); setTerm(null); navigate(`/anatomy/${x?.kind === 'movement' ? 'movements' : x?.isBone ? 'bones' : 'muscles'}/${tid}`) }} />
     </div>

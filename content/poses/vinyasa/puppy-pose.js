@@ -1,5 +1,6 @@
 export const puppyPose = {
   id: 'puppy-pose',
+  wiki: 'Balasana',
   styles: ['vinyasa'],
   family: 'restorative',
   level: 'gentle',

@@ -1,5 +1,6 @@
 export const caterpillar = {
   id: 'caterpillar',
+  wiki: 'Paschimottanasana',
   styles: ['yin'],
   family: 'forward-fold',
   level: 'gentle',

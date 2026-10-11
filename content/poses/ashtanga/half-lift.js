@@ -1,5 +1,6 @@
 export const halfLift = {
   id: 'half-lift',
+  wiki: 'Uttanasana',
   styles: ['vinyasa', 'ashtanga'],
   family: 'sun-salutation',
   level: 'gentle',

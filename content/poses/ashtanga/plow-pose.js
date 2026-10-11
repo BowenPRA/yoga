@@ -1,5 +1,6 @@
 export const plowPose = {
   id: 'plow-pose',
+  wiki: 'Halasana',
   styles: ['vinyasa', 'ashtanga'],
   family: 'inversion',
   level: 'strong',

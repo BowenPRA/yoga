@@ -1,5 +1,6 @@
 export const humbleWarrior = {
   id: 'humble-warrior',
+  wiki: 'Virabhadrasana',
   styles: ['vinyasa'],
   family: 'standing',
   level: 'moderate',

@@ -7,7 +7,9 @@ import Speech from './pages/Speech.jsx'
 import Phrases from './pages/Phrases.jsx'
 import Lesson from './pages/Lesson.jsx'
 import Classes from './pages/Classes.jsx'
+import ClassNew from './pages/ClassNew.jsx'
 import ClassPlan from './pages/ClassPlan.jsx'
+import Sources from './pages/Sources.jsx'
 
 export default function App() {
   return (
@@ -19,6 +21,7 @@ export default function App() {
             <Route path="/poses" element={<Poses />} />
             <Route path="/poses/:id" element={<Pose />} />
             <Route path="/classes" element={<Classes />} />
+            <Route path="/classes/new" element={<ClassNew />} />
             <Route path="/classes/:id" element={<ClassPlan />} />
             <Route path="/anatomy" element={<Anatomy />} />
             <Route path="/anatomy/:tab" element={<Anatomy />} />
@@ -26,6 +29,7 @@ export default function App() {
             <Route path="/learn/:id" element={<Lesson />} />
             <Route path="/speech" element={<Speech />} />
             <Route path="/phrases" element={<Phrases />} />
+            <Route path="/sources" element={<Sources />} />
             <Route path="*" element={<Navigate to="/anatomy" replace />} />
           </Routes>
         </div>

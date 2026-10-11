@@ -1,5 +1,6 @@
 export const lotus = {
   id: 'lotus',
+  wiki: 'Lotus_position',
   styles: ['vinyasa', 'ashtanga'],
   family: 'seated',
   level: 'strong',

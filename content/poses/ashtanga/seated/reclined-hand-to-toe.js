@@ -1,5 +1,6 @@
 export const reclinedHandToToe = {
   id: 'reclined-hand-to-toe',
+  wiki: 'Shavasana',
   styles: ['vinyasa', 'ashtanga'],
   family: 'supine',
   level: 'moderate',

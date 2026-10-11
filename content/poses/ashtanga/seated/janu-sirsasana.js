@@ -1,5 +1,6 @@
 export const januSirsasana = {
   id: 'janu-sirsasana',
+  wiki: 'Paschimottanasana',
   styles: ['vinyasa', 'ashtanga'],
   family: 'forward-fold',
   level: 'moderate',

@@ -1,5 +1,6 @@
 export const roosterPose = {
   id: 'rooster-pose',
+  wiki: 'Kukkutasana',
   styles: ['ashtanga'],
   family: 'arm-balance',
   level: 'strong',

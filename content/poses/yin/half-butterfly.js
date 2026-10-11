@@ -1,5 +1,6 @@
 export const halfButterfly = {
   id: 'half-butterfly',
+  wiki: 'Paschimottanasana',
   styles: ['yin'],
   family: 'forward-fold',
   level: 'gentle',

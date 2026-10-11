@@ -1,5 +1,6 @@
 export const upwardSalute = {
   id: 'upward-salute',
+  wiki: 'Tadasana',
   styles: ['vinyasa', 'ashtanga'],
   family: 'sun-salutation',
   level: 'gentle',

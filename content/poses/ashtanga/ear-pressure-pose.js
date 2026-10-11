@@ -1,5 +1,6 @@
 export const earPressurePose = {
   id: 'ear-pressure-pose',
+  wiki: 'Halasana',
   styles: ['ashtanga'],
   family: 'inversion',
   level: 'strong',

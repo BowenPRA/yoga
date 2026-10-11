@@ -1,5 +1,6 @@
 export const shoelace = {
   id: 'shoelace',
+  wiki: 'Gomukhasana',
   styles: ['yin'],
   family: 'hip-opener',
   level: 'moderate',

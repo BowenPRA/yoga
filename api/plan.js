@@ -65,7 +65,7 @@ export default async function handler(req, res) {
   const prompt = [
     `Mode: ${plan.mode === 'student' ? 'a student said this; the plan is a short practice for them' : 'planning a class'}.`,
     `Her request:\n${asData('REQUEST', request || '(none: she chose the options by hand)', 500)}`,
-    `The plan: style ${slug(plan.style)}, ${Number(plan.minutes) || 60} minutes, level ${slug(plan.level)}, goals [${(plan.goals || []).map(slug).join(', ')}], cautions [${(plan.cautions || []).map(slug).join(', ')}].\n${planText}`,
+    `The plan: style ${slug(plan.style)}, ${Number(plan.minutes) || 60} minutes, level ${slug(plan.level)}, goals [${(plan.goals || []).map(slug).join(', ')}], cautions [${(plan.cautions || []).map(slug).join(', ')}]${plan.peak ? `, built toward the peak pose ${slug(plan.peak)} (keep it; the poses before it prepare for it, the floor undoes it)` : ''}.\n${planText}`,
     `GOALS: ${(tags.goals || []).map((g) => `${slug(g.id)} (${String(g.en || '').slice(0, 40)})`).join(', ')}`,
     `CAUTIONS: ${(tags.cautions || []).map((c) => `${slug(c.id)} (${String(c.en || '').slice(0, 40)})`).join(', ')}`,
     `Catalogue (id (name; family; level; styles)):\n${catalogText}`,

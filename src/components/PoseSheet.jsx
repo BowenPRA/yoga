@@ -11,13 +11,14 @@ import { poseTint, styleTint, tintClass } from '../lib/tints.js'
  * screened for its cautions, best for its theme), then everything else,
  * with the same search as the Poses tab.
  */
-export default function PoseSheet({ open, onClose, onPick, suggested = [], tint = 'sage' }) {
+export default function PoseSheet({ open, onClose, onPick, suggested = [], tint = 'sage', only = null, title = null, suggestedTitle = null }) {
   const { t } = useLang()
   const C = t.classes
   const [q, setQ] = useState('')
   const ids = useMemo(() => new Set(suggested.map((p) => p.id)), [suggested])
   const top = useMemo(() => searchPoses(q, suggested).slice(0, q ? 40 : 12), [q, suggested])
-  const rest = useMemo(() => searchPoses(q, POSES.filter((p) => !ids.has(p.id))).slice(0, q ? 40 : 30), [q, ids])
+  // `only` narrows the rest of the library (a Yin peak must be a Yin pose).
+  const rest = useMemo(() => searchPoses(q, POSES.filter((p) => !ids.has(p.id) && (!only || only(p)))).slice(0, q ? 40 : 30), [q, ids, only])
   const row = (p) => (
     <button key={p.id} onClick={() => { onPick(p.id); setQ('') }} className={`${tintClass(poseTint(p))} press flex w-full items-center gap-3 rounded-2xl px-2 py-2 text-left hover:bg-paper/70`}>
       <PoseArt pose={p} size={44} className="" />
@@ -31,7 +32,7 @@ export default function PoseSheet({ open, onClose, onPick, suggested = [], tint 
     </button>
   )
   return (
-    <Sheet open={open} onClose={() => { setQ(''); onClose() }} title={C.pickPose} tint={tint}>
+    <Sheet open={open} onClose={() => { setQ(''); onClose() }} title={title || C.pickPose} tint={tint}>
       <div className="mb-3 mt-2 flex items-center gap-2.5 rounded-full border border-line/70 bg-paper px-4 py-2.5 focus-within:border-tint">
         <Search size={17} className="shrink-0 text-muted" />
         <input
@@ -41,7 +42,7 @@ export default function PoseSheet({ open, onClose, onPick, suggested = [], tint 
       </div>
       {top.length > 0 && (
         <>
-          <Eyebrow tone="tint" className="mb-1 px-2">{C.suggested}</Eyebrow>
+          <Eyebrow tone="tint" className="mb-1 px-2">{suggestedTitle || C.suggested}</Eyebrow>
           <div className="mb-3 space-y-0.5">{top.map(row)}</div>
         </>
       )}

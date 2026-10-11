@@ -1,5 +1,6 @@
 export const reclinedTwist = {
   id: 'reclined-twist',
+  wiki: 'Matsyendrasana',
   styles: ['yin'],
   family: 'twist',
   level: 'gentle',

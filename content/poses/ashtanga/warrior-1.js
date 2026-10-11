@@ -1,5 +1,6 @@
 export const warrior1 = {
   id: 'warrior-1',
+  wiki: 'Virabhadrasana',
   styles: ['vinyasa', 'ashtanga'],
   family: 'standing',
   level: 'moderate',

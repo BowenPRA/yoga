@@ -1,5 +1,6 @@
 export const dragonfly = {
   id: 'dragonfly',
+  wiki: 'Paschimottanasana',
   styles: ['yin'],
   family: 'hip-opener',
   level: 'moderate',

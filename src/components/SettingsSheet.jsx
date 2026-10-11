@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
-import { Download, Send, Settings, Upload } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
+import { BookOpen, ChevronRight, Download, Send, Settings, Upload } from 'lucide-react'
 import Sheet from './Sheet.jsx'
 import { Button, Chip, Eyebrow } from './ui.jsx'
 import { useLang } from '../lib/i18n.jsx'
@@ -42,6 +43,7 @@ export function SettingsButton() {
 export default function SettingsSheet({ open, onClose }) {
   const { t, ui, setUi, support, setSupport, theme, setTheme } = useLang()
   const S = t.settings
+  const navigate = useNavigate()
   const fileRef = useRef(null)
   const [notes, setNotes] = useState([])
   const [status, setStatus] = useState(null)
@@ -136,6 +138,14 @@ export default function SettingsSheet({ open, onClose }) {
             <Button kind="secondary" onClick={send} className="mt-3"><Send size={16} /> {S.sendToBowen}</Button>
           )}
         </div>
+        <button onClick={() => { onClose(); navigate('/sources') }} className="press flex w-full items-center gap-3 py-5 text-left">
+          <span className="grid h-10 w-10 shrink-0 place-items-center rounded-2xl bg-tint-soft text-tint-deep"><BookOpen size={18} /></span>
+          <span className="min-w-0 flex-1">
+            <span className="block font-medium text-ink">{S.sources}</span>
+            <span className="block text-caption text-muted">{S.sourcesLead}</span>
+          </span>
+          <ChevronRight size={18} className="shrink-0 text-muted" />
+        </button>
         <div className="flex gap-2.5 py-5">
           <Button kind="secondary" onClick={backup}><Download size={16} /> {S.backup}</Button>
           <Button kind="secondary" onClick={() => fileRef.current?.click()}><Upload size={16} /> {S.restore}</Button>

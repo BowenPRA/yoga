@@ -11,8 +11,10 @@
  */
 import { POSES, TERMS, PHRASE_GROUPS, LESSONS, getTerm, allClips, lessonClipIds } from '../src/lib/content.js'
 import { MUSCLE_REGIONS, SKELETON_LANDMARKS, SKELETON_BOXES } from '../content/anatomy/regions.js'
-import { GOALS, CAUTIONS, TWO_SIDED, POSTURES, BRIDGES, MOMENTS } from '../content/planning.js'
-import { buildPlan, parseRequest, scriptOf } from '../src/lib/planner.js'
+import { GOALS, CAUTIONS, TWO_SIDED, POSTURES, BRIDGES, MOMENTS, COUNTERS, PEAKS } from '../content/planning.js'
+import { THEMES, themesFor } from '../content/themes.js'
+import { SOURCES, AREAS, sourcesFor } from '../content/sources.js'
+import { buildPlan, checkPlan, parseRequest, scriptOf } from '../src/lib/planner.js'
 
 const strict = process.argv.includes('--strict')
 const errors = []
@@ -270,6 +272,85 @@ for (const [text, want] of [['mở hông', 'hips'], ['hip opening', 'hips'], ['c
   const got = parseRequest(text)
   if (want && got.goals[0] !== want) err(`parse "${text}": goals ${JSON.stringify(got.goals)}, expected ${want} first`)
   if (!want && got.goals.length) err(`parse "${text}": should be a caution, not goals ${JSON.stringify(got.goals)}`)
+}
+
+// ── counterposes, peaks, thoughts and sources ────────────────────────────
+for (const [fam, c] of Object.entries(COUNTERS)) {
+  if (!FAMILIES.has(fam)) err(`counters: family "${fam}"`)
+  for (const f of c.families) if (!FAMILIES.has(f)) err(`counters ${fam}: family "${f}"`)
+  for (const id of c.poses) if (!poseIds.has(id)) err(`counters ${fam}: pose "${id}" has no content`)
+}
+for (const [style, ids] of Object.entries(PEAKS)) {
+  for (const id of ids) {
+    const p = POSES.find((x) => x.id === id)
+    if (!p) { err(`peaks ${style}: pose "${id}" has no content`); continue }
+    if (style === 'yin' ? !p.yin : !p.styles.includes(style)) err(`peaks ${style}: "${id}" is not a ${style} pose`)
+  }
+}
+const sourceIds = new Set()
+const LICENCES = new Set(['CC BY-SA 4.0', 'CC BY-NC-SA 4.0', 'CC0', 'Public domain', 'Free to read', null])
+for (const s of SOURCES) {
+  const w = `source ${s.id}`
+  if (sourceIds.has(s.id)) err(`${w}: duplicate id`)
+  sourceIds.add(s.id)
+  if (!s.title || !s.by) err(`${w}: needs title and by`)
+  if (s.url !== null && !/^https:\/\//.test(s.url || '')) err(`${w}: url must be https or null`)
+  if (!LICENCES.has(s.licence)) err(`${w}: licence "${s.licence}"`)
+  for (const a of s.covers) if (!AREAS.includes(a)) err(`${w}: area "${a}"`)
+  checkBi(`${w}.note`, s.note)
+}
+const goalIds = new Set([...GOALS.map((g) => g.id), 'student'])
+const themeIds = new Set()
+for (const th of THEMES) {
+  const w = `theme ${th.id}`
+  if (themeIds.has(th.id)) err(`${w}: duplicate id`)
+  themeIds.add(th.id)
+  if (!sourceIds.has(th.source)) err(`${w}: source "${th.source}" is not in content/sources.js`)
+  if (!['sa', 'pi'].includes(th.lang)) err(`${w}: lang "${th.lang}"`)
+  if (!th.term || !th.say || !th.ref) err(`${w}: needs term, say and ref`)
+  checkBi(`${w}.quote`, th.quote); checkBi(`${w}.inClass`, th.inClass)
+  if (th.meaning) checkBi(`${w}.meaning`, th.meaning)
+  for (const g of th.goals) if (!goalIds.has(g)) err(`${w}: goal "${g}"`)
+  for (const s of th.styles || []) if (!STYLES.has(s)) err(`${w}: style "${s}"`)
+  if (th.line) {
+    const line = PHRASE_GROUPS.flatMap((g) => g.lines).find((l) => l.id === th.line)
+    if (!line) err(`${w}: line "${th.line}" is not a phrase`)
+    else if (line.en.replace(/\s+/g, ' ').trim() !== th.inClass.en.replace(/\s+/g, ' ').trim()) warn(`${w}: its clip "${th.line}" says "${line.en}" but inClass is "${th.inClass.en}"`)
+  }
+}
+for (const g of GOALS) if (!THEMES.some((th) => th.goals.includes(g.id))) warn(`goal ${g.id}: no thought names it (themesFor falls back to the style)`)
+if (!themesFor({ goals: [], style: 'vinyasa' }).length) err('themes: nothing to offer a plan with no goals')
+for (const p of POSES) {
+  if (!p.wiki) warn(`pose ${p.id}: no Wikipedia article (wiki) named`)
+  else if (!/^[A-Za-z0-9_().,'\/À-ɏḀ-ỿ-]+$/.test(p.wiki)) err(`pose ${p.id}: wiki "${p.wiki}" should be an article title with underscores`)
+  if (sourcesFor(p).length < 2) err(`pose ${p.id}: sourcesFor gives fewer than two sources`)
+}
+// A class built toward every peak must hold that peak, and a built class
+// should give a teacher nothing to notice.
+for (const [style, ids] of Object.entries(PEAKS)) for (const id of ids) {
+  const w = `plan toward ${id} (${style})`
+  try {
+    const plan = buildPlan({ style, minutes: 60, peak: id, seed: 1 })
+    const steps = plan.sections.flatMap((s) => s.steps)
+    if (!steps.some((st) => st.kind === 'pose' && st.pose === id && st.peak)) err(`${w}: the peak is not in the plan`)
+    if (!steps.some((st) => st.kind === 'thought')) err(`${w}: no thought for the class`)
+    for (const it of scriptOf(plan)) if (it.clip && !clipIds.has(it.clip)) err(`${w}: plays clip "${it.clip}" that no content produces`)
+    for (const n of checkPlan(plan)) warn(`${w}: ${n.kind} ${n.pose}${n.caution ? ` (${n.caution})` : ''}`)
+  } catch (e) { err(`${w}: ${e.message}`) }
+}
+for (const id of ['janu-sirsasana', 'boat-pose', 'setu-bandhasana', 'lotus']) {
+  const w = `plan ashtanga up to ${id}`
+  try {
+    const plan = buildPlan({ style: 'ashtanga', minutes: 90, upTo: id, seed: 1 })
+    const poses = plan.sections.flatMap((s) => s.steps.filter((st) => st.kind === 'pose').map((st) => st.pose))
+    const cut = POSES.find((p) => p.id === id).ashtanga.position
+    if (!poses.includes(id)) err(`${w}: "${id}" is not in the plan`)
+    for (const pid of poses) { const a = POSES.find((p) => p.id === pid).ashtanga; if (a && a.section !== 'finishing' && a.position > cut) err(`${w}: "${pid}" comes after the cut`) }
+  } catch (e) { err(`${w}: ${e.message}`) }
+}
+for (const g of GOALS) for (const style of ['vinyasa', 'yin']) {
+  const plan = buildPlan({ style, minutes: 60, goals: [g.id], seed: 2 })
+  for (const n of checkPlan(plan)) warn(`plan ${g.id} (${style}): ${n.kind} ${n.pose}`)
 }
 
 // ── report ───────────────────────────────────────────────────────────────

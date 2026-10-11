@@ -1,5 +1,6 @@
 export const camelPose = {
   id: 'camel-pose',
+  wiki: 'Ustrasana',
   styles: ['vinyasa'],
   family: 'backbend',
   level: 'moderate',

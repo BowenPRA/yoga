@@ -1,5 +1,6 @@
 export const seal = {
   id: 'seal',
+  wiki: 'Cobra_pose',
   styles: ['yin'],
   family: 'backbend',
   level: 'moderate',

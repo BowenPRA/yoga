@@ -1,5 +1,6 @@
 export const sphinx = {
   id: 'sphinx',
+  wiki: 'Cobra_pose',
   styles: ['yin', 'vinyasa'],
   family: 'backbend',
   level: 'gentle',

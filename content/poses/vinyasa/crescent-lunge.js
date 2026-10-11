@@ -1,5 +1,6 @@
 export const crescentLunge = {
   id: 'crescent-lunge',
+  wiki: 'Anjaneyasana',
   styles: ['vinyasa'],
   family: 'standing',
   level: 'moderate',

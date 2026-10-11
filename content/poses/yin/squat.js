@@ -1,5 +1,6 @@
 export const squat = {
   id: 'squat',
+  wiki: 'Malasana',
   styles: ['yin'],
   family: 'hip-opener',
   level: 'moderate',

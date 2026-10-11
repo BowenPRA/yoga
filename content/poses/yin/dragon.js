@@ -1,5 +1,6 @@
 export const dragon = {
   id: 'dragon',
+  wiki: 'Anjaneyasana',
   styles: ['yin'],
   family: 'hip-opener',
   level: 'moderate',

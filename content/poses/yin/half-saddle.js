@@ -1,5 +1,6 @@
 export const halfSaddle = {
   id: 'half-saddle',
+  wiki: 'Virasana',
   styles: ['yin'],
   family: 'backbend',
   level: 'moderate',

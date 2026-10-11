@@ -1,5 +1,6 @@
 export const embryoPose = {
   id: 'embryo-pose',
+  wiki: 'Garbha_Pindasana',
   styles: ['ashtanga'],
   family: 'seated',
   level: 'strong',

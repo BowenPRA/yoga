@@ -1,5 +1,6 @@
 export const pyramidPose = {
   id: 'pyramid-pose',
+  wiki: 'Parshvottanasana',
   styles: ['vinyasa', 'ashtanga'],
   family: 'forward-fold',
   level: 'moderate',

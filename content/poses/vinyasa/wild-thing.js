@@ -1,5 +1,6 @@
 export const wildThing = {
   id: 'wild-thing',
+  wiki: 'Utthita_Vasisthasana',
   styles: ['vinyasa'],
   family: 'backbend',
   level: 'strong',

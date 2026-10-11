@@ -1,5 +1,6 @@
 export const cobra = {
   id: 'cobra',
+  wiki: 'Cobra_pose',
   styles: ['vinyasa'],
   family: 'backbend',
   level: 'gentle',

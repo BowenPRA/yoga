@@ -1,5 +1,6 @@
 export const savasana = {
   id: 'savasana',
+  wiki: 'Shavasana',
   styles: ['vinyasa', 'ashtanga', 'yin'],
   family: 'restorative',
   level: 'gentle',

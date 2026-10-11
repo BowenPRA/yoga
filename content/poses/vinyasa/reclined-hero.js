@@ -1,5 +1,6 @@
 export const reclinedHero = {
   id: 'reclined-hero',
+  wiki: 'Virasana',
   styles: ['vinyasa'],
   family: 'seated',
   level: 'moderate',

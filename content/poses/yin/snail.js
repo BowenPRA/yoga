@@ -1,5 +1,6 @@
 export const snail = {
   id: 'snail',
+  wiki: 'Halasana',
   styles: ['yin'],
   family: 'inversion',
   level: 'strong',

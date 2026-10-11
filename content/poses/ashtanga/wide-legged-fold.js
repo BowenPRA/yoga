@@ -1,5 +1,6 @@
 export const wideLeggedFold = {
   id: 'wide-legged-fold',
+  wiki: 'Prasarita_Padottanasana',
   styles: ['vinyasa', 'ashtanga'],
   family: 'forward-fold',
   level: 'moderate',

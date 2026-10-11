@@ -1,5 +1,6 @@
 export const sleepingSwan = {
   id: 'sleeping-swan',
+  wiki: 'Eka_Pada_Rajakapotasana',
   styles: ['yin'],
   family: 'hip-opener',
   level: 'moderate',

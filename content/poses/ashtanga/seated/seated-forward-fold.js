@@ -1,5 +1,6 @@
 export const seatedForwardFold = {
   id: 'seated-forward-fold',
+  wiki: 'Paschimottanasana',
   styles: ['vinyasa', 'ashtanga'],
   family: 'forward-fold',
   level: 'moderate',

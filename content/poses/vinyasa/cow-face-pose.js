@@ -1,5 +1,6 @@
 export const cowFacePose = {
   id: 'cow-face-pose',
+  wiki: 'Gomukhasana',
   styles: ['vinyasa'],
   family: 'seated',
   level: 'moderate',

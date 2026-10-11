@@ -1,5 +1,6 @@
 export const triangle = {
   id: 'triangle',
+  wiki: 'Trikonasana',
   styles: ['vinyasa', 'ashtanga'],
   family: 'standing',
   level: 'moderate',

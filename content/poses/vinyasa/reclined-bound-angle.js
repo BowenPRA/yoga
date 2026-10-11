@@ -1,5 +1,6 @@
 export const reclinedBoundAngle = {
   id: 'reclined-bound-angle',
+  wiki: 'Baddha_Konasana',
   styles: ['vinyasa'],
   family: 'hip-opener',
   level: 'gentle',

@@ -1,5 +1,6 @@
 export const butterfly = {
   id: 'butterfly',
+  wiki: 'Baddha_Konasana',
   styles: ['yin'],
   family: 'hip-opener',
   level: 'gentle',

@@ -1,5 +1,6 @@
 export const eaglePose = {
   id: 'eagle-pose',
+  wiki: 'Garudasana',
   styles: ['vinyasa'],
   family: 'balance',
   level: 'moderate',
