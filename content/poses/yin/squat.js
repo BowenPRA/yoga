@@ -1,6 +1,5 @@
 export const squat = {
   id: 'squat',
-  wiki: 'Malasana',
   styles: ['yin'],
   family: 'hip-opener',
   level: 'moderate',
@@ -49,4 +48,7 @@ export const squat = {
   joints: ['ankle', 'knee', 'hip-joint', 'lumbar-spine'],
   transitionsTo: ['dangling', 'savasana'],
   figure: 'squat',
+  refs: [
+    { source: 'yinyoga', ref: 'Squat', url: 'https://yinyoga.com/yinsights/squat/' },
+  ],
 }

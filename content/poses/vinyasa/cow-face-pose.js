@@ -1,6 +1,5 @@
 export const cowFacePose = {
   id: 'cow-face-pose',
-  wiki: 'Gomukhasana',
   styles: ['vinyasa'],
   family: 'seated',
   level: 'moderate',
@@ -41,4 +40,8 @@ export const cowFacePose = {
   joints: ['shoulder-joint', 'hip-joint', 'knee'],
   transitionsTo: ['seated-forward-fold', 'seated-twist', 'staff-pose'],
   figure: 'cow-face-pose',
+  refs: [
+    { source: 'hyp', ref: '1.22', url: 'https://sacred-texts.com/hin/hyp/hyp03.htm' },
+    { source: 'gheranda', ref: '2.16', url: 'https://archive.org/details/in.ernet.dli.2015.36514' },
+  ],
 }

@@ -1,6 +1,5 @@
 export const sidePlank = {
   id: 'side-plank',
-  wiki: 'Utthita_Vasisthasana',
   styles: ['vinyasa'],
   family: 'core',
   level: 'moderate',

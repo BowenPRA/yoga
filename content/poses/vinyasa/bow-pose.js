@@ -1,6 +1,5 @@
 export const bowPose = {
   id: 'bow-pose',
-  wiki: 'Dhanurasana',
   styles: ['vinyasa'],
   family: 'backbend',
   level: 'moderate',
@@ -40,4 +39,8 @@ export const bowPose = {
   transitionsTo: ['child-pose', 'downward-dog', 'locust-pose'],
   counterPoses: ['child-pose'],
   figure: 'bow-pose',
+  refs: [
+    { source: 'hyp', ref: '1.27', url: 'https://sacred-texts.com/hin/hyp/hyp03.htm' },
+    { source: 'gheranda', ref: '2.18', url: 'https://archive.org/details/in.ernet.dli.2015.36514' },
+  ],
 }

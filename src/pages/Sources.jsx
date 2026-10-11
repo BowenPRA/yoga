@@ -4,7 +4,7 @@ import { AREAS, SOURCES } from '../../content/sources.js'
 import { Bi, Eyebrow, Header, Section, Tag } from '../components/ui.jsx'
 import { SettingsButton } from '../components/SettingsSheet.jsx'
 
-const AREA_TINT = { poses: 'sage', ashtanga: 'gold', yin: 'dusk', sequencing: 'clay', philosophy: 'gold', meditation: 'dusk', vietnamese: 'mist', anatomy: 'mist', own: 'sage' }
+const AREA_TINT = { poses: 'sage', ashtanga: 'gold', yin: 'dusk', sequencing: 'clay', safety: 'clay', philosophy: 'gold', meditation: 'dusk', vietnamese: 'mist', anatomy: 'mist', own: 'sage' }
 
 /** One source: what it is, who made it, on what terms, and what we took from it. */
 function SourceCard({ s }) {

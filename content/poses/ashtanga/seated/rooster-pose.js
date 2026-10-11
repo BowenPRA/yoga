@@ -1,6 +1,5 @@
 export const roosterPose = {
   id: 'rooster-pose',
-  wiki: 'Kukkutasana',
   styles: ['ashtanga'],
   family: 'arm-balance',
   level: 'strong',
@@ -51,4 +50,8 @@ export const roosterPose = {
   joints: ['wrist', 'elbow', 'knee', 'hip-joint'],
   transitionsTo: ['bound-angle'],
   figure: 'rooster-pose',
+  refs: [
+    { source: 'hyp', ref: '1.25', url: 'https://sacred-texts.com/hin/hyp/hyp03.htm' },
+    { source: 'gheranda', ref: '2.31', url: 'https://archive.org/details/in.ernet.dli.2015.36514' },
+  ],
 }

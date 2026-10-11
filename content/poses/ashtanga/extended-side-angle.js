@@ -1,6 +1,5 @@
 export const extendedSideAngle = {
   id: 'extended-side-angle',
-  wiki: 'Utthita_Parshvakonasana',
   styles: ['vinyasa', 'ashtanga'],
   family: 'standing',
   level: 'moderate',

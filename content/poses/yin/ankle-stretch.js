@@ -44,4 +44,7 @@ export const ankleStretch = {
   joints: ['ankle', 'knee', 'toes'],
   transitionsTo: ['caterpillar'],
   figure: 'ankle-stretch',
+  refs: [
+    { source: 'yinyoga', ref: 'Ankle Stretch', url: 'https://yinyoga.com/yinsights/ankle-stretch/' },
+  ],
 }

@@ -1,6 +1,5 @@
 export const halfSplits = {
   id: 'half-splits',
-  wiki: 'Hanumanasana',
   styles: ['vinyasa'],
   family: 'forward-fold',
   level: 'moderate',

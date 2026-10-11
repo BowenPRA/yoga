@@ -1,6 +1,5 @@
 export const butterfly = {
   id: 'butterfly',
-  wiki: 'Baddha_Konasana',
   styles: ['yin'],
   family: 'hip-opener',
   level: 'gentle',
@@ -49,4 +48,7 @@ export const butterfly = {
   joints: ['lumbar-spine', 'hip-joint'],
   transitionsTo: ['half-butterfly', 'savasana'],
   figure: 'butterfly',
+  refs: [
+    { source: 'yinyoga', ref: 'Butterfly', url: 'https://yinyoga.com/yinsights/butterfly/' },
+  ],
 }

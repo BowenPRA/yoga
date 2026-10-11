@@ -1,6 +1,5 @@
 export const shoulderPressingPose = {
   id: 'shoulder-pressing-pose',
-  wiki: 'Tittibhasana',
   styles: ['ashtanga'],
   family: 'arm-balance',
   level: 'strong',

@@ -1,6 +1,5 @@
 export const dragonfly = {
   id: 'dragonfly',
-  wiki: 'Paschimottanasana',
   styles: ['yin'],
   family: 'hip-opener',
   level: 'moderate',
@@ -50,4 +49,7 @@ export const dragonfly = {
   joints: ['hip-joint', 'knee', 'lumbar-spine'],
   transitionsTo: ['butterfly', 'savasana'],
   figure: 'dragonfly',
+  refs: [
+    { source: 'yinyoga', ref: 'Dragonfly (Straddle)', url: 'https://yinyoga.com/yinsights/dragonfly-aka-straddle/' },
+  ],
 }

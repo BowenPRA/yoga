@@ -1,6 +1,5 @@
 export const boundAngle = {
   id: 'bound-angle',
-  wiki: 'Baddha_Konasana',
   styles: ['vinyasa', 'ashtanga'],
   family: 'hip-opener',
   level: 'gentle',

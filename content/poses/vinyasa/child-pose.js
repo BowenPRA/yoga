@@ -1,6 +1,5 @@
 export const childPose = {
   id: 'child-pose',
-  wiki: 'Balasana',
   styles: ['vinyasa'],
   family: 'restorative',
   level: 'gentle',

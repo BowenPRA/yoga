@@ -1,6 +1,5 @@
 export const eaglePose = {
   id: 'eagle-pose',
-  wiki: 'Garudasana',
   styles: ['vinyasa'],
   family: 'balance',
   level: 'moderate',
@@ -41,4 +40,7 @@ export const eaglePose = {
   joints: ['knee', 'ankle', 'shoulder-joint'],
   transitionsTo: ['tree-pose', 'chair-pose', 'warrior-3'],
   figure: 'eagle-pose',
+  refs: [
+    { source: 'gheranda', ref: '2.37', url: 'https://archive.org/details/in.ernet.dli.2015.36514' },
+  ],
 }

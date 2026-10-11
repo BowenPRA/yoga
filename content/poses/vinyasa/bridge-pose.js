@@ -1,6 +1,5 @@
 export const bridgePose = {
   id: 'bridge-pose',
-  wiki: 'Setu_Bandha_Sarvangasana',
   styles: ['vinyasa'],
   family: 'backbend',
   level: 'gentle',

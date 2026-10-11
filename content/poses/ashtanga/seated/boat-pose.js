@@ -1,6 +1,5 @@
 export const boatPose = {
   id: 'boat-pose',
-  wiki: 'Navasana',
   styles: ['vinyasa', 'ashtanga'],
   family: 'core',
   level: 'moderate',

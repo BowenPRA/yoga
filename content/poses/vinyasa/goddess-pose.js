@@ -1,6 +1,5 @@
 export const goddessPose = {
   id: 'goddess-pose',
-  wiki: 'Utkatasana',
   styles: ['vinyasa'],
   family: 'standing',
   level: 'moderate',

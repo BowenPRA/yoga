@@ -1,11 +1,13 @@
 import { useEffect, useRef, useState } from 'react'
 import { Navigate, useNavigate, useParams } from 'react-router-dom'
-import { ArrowRight, Bookmark, BookmarkCheck, ChevronLeft, ChevronRight, ExternalLink, Play, Square } from 'lucide-react'
+import { ArrowRight, Bookmark, BookmarkCheck, BookOpen, ChevronLeft, ChevronRight, ExternalLink, Play, Square } from 'lucide-react'
 import { useLang } from '../lib/i18n.jsx'
 import { STRINGS } from '../lib/strings.js'
 import { getPose, getTerm, nextInSeries, poseClipIds, poseName, prevInSeries, seriesLength } from '../lib/content.js'
 import { compensationFor, prepFor } from '../lib/planner.js'
-import { sourcesFor } from '../../content/sources.js'
+import { getSource, sourcesFor } from '../../content/sources.js'
+
+const getSourceUrl = (id) => getSource(id)?.url || null
 import { SourcesLink } from '../components/plan.jsx'
 import { audio } from '../lib/audio.js'
 import { learn } from '../lib/learning.js'
@@ -352,15 +354,23 @@ export default function Pose() {
 
       <Section title={P.sources}>
         <div className="rounded-3xl border border-line/70 bg-paper p-2 shadow-card">
-          {sources.filter((s) => s.url).map((s) => (
-            <a key={s.id + (s.page || '')} href={s.url} target="_blank" rel="noreferrer" className="press flex items-center gap-3 rounded-2xl px-2 py-2 hover:bg-sand/70">
-              <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-tint-soft text-tint-deep"><ExternalLink size={15} /></span>
-              <span className="min-w-0 flex-1">
-                <span className="block truncate text-body text-ink">{s.page ? `${t.sources.wiki}: ${s.page}` : s.title}</span>
-                <span className="block truncate text-[12px] text-muted">{s.by}{s.licence ? ` · ${t.sources.licence[s.licence] || s.licence}` : ''}</span>
-              </span>
-            </a>
-          ))}
+          {sources.filter((s) => s.id !== 'own').map((s) => {
+            // A verse of a classical text ("Gheraṇḍa Saṃhitā 2.42"), a page on a teacher's site, or the reference work itself.
+            const label = s.ref ? (s.url && s.url !== getSourceUrl(s.id) ? `${s.title}: ${s.ref}` : `${s.title} ${s.ref}`) : s.title
+            const inner = (
+              <>
+                <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-tint-soft text-tint-deep">{s.url ? <ExternalLink size={15} /> : <BookOpen size={15} />}</span>
+                <span className="min-w-0 flex-1">
+                  <span className="block truncate text-body text-ink">{label}</span>
+                  <span className="block truncate text-[12px] text-muted">{s.by}{s.year ? `, ${s.year}` : ''}{s.licence ? ` · ${t.sources.licence[s.licence] || s.licence}` : ''}</span>
+                </span>
+              </>
+            )
+            const cls = 'flex items-center gap-3 rounded-2xl px-2 py-2'
+            return s.url
+              ? <a key={`${s.id}:${s.ref || ''}`} href={s.url} target="_blank" rel="noreferrer" className={`${cls} press hover:bg-sand/70`}>{inner}</a>
+              : <div key={`${s.id}:${s.ref || ''}`} className={cls}>{inner}</div>
+          })}
           <p className="px-2 pb-1 pt-2 text-[12px] text-muted">{t.sources.cuesOwn}</p>
         </div>
       </Section>

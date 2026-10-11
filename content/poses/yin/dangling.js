@@ -1,6 +1,5 @@
 export const dangling = {
   id: 'dangling',
-  wiki: 'Uttanasana',
   styles: ['yin'],
   family: 'forward-fold',
   level: 'gentle',
@@ -49,4 +48,7 @@ export const dangling = {
   joints: ['lumbar-spine', 'hip-joint'],
   transitionsTo: ['squat', 'savasana'],
   figure: 'dangling',
+  refs: [
+    { source: 'yinyoga', ref: 'Dangling', url: 'https://yinyoga.com/yinsights/dangling/' },
+  ],
 }

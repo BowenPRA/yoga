@@ -1,6 +1,5 @@
 export const seatedTwist = {
   id: 'seated-twist',
-  wiki: 'Matsyendrasana',
   styles: ['vinyasa'],
   family: 'twist',
   level: 'moderate',
@@ -40,4 +39,8 @@ export const seatedTwist = {
   joints: ['thoracic-spine', 'lumbar-spine', 'sit-bones'],
   transitionsTo: ['seated-forward-fold', 'staff-pose', 'cow-face-pose'],
   figure: 'seated-twist',
+  refs: [
+    { source: 'hyp', ref: '1.28–29', url: 'https://sacred-texts.com/hin/hyp/hyp03.htm' },
+    { source: 'gheranda', ref: '2.22–23', url: 'https://archive.org/details/in.ernet.dli.2015.36514' },
+  ],
 }

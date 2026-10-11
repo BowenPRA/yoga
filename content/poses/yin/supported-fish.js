@@ -1,6 +1,5 @@
 export const supportedFish = {
   id: 'supported-fish',
-  wiki: 'Matsyasana',
   styles: ['yin'],
   family: 'restorative',
   level: 'gentle',

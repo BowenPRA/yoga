@@ -1,6 +1,5 @@
 export const upwardFacingForwardFold = {
   id: 'upward-facing-forward-fold',
-  wiki: 'Paschimottanasana',
   styles: ['ashtanga'],
   family: 'forward-fold',
   level: 'moderate',

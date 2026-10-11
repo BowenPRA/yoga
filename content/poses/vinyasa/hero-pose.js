@@ -1,6 +1,5 @@
 export const heroPose = {
   id: 'hero-pose',
-  wiki: 'Virasana',
   styles: ['vinyasa'],
   family: 'seated',
   level: 'gentle',
@@ -39,4 +38,8 @@ export const heroPose = {
   joints: ['knee', 'ankle'],
   transitionsTo: ['reclined-hero', 'camel-pose', 'child-pose'],
   figure: 'hero-pose',
+  refs: [
+    { source: 'hyp', ref: '1.23', url: 'https://sacred-texts.com/hin/hyp/hyp03.htm' },
+    { source: 'gheranda', ref: '2.17', url: 'https://archive.org/details/in.ernet.dli.2015.36514' },
+  ],
 }

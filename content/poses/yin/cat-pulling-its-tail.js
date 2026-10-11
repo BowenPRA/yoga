@@ -47,4 +47,7 @@ export const catPullingItsTail = {
   joints: ['knee', 'hip-joint', 'thoracic-spine', 'lumbar-spine'],
   transitionsTo: ['reclined-twist', 'savasana'],
   figure: 'cat-pulling-its-tail',
+  refs: [
+    { source: 'yinyoga', ref: 'Cat Pulling Its Tail', url: 'https://yinyoga.com/yinsights/cat-pulling-its-tail/' },
+  ],
 }

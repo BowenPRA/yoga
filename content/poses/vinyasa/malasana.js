@@ -1,6 +1,5 @@
 export const malasana = {
   id: 'malasana',
-  wiki: 'Malasana',
   styles: ['vinyasa'],
   family: 'hip-opener',
   level: 'moderate',

@@ -1,6 +1,5 @@
 export const handUnderFootPose = {
   id: 'hand-under-foot-pose',
-  wiki: 'Uttanasana',
   styles: ['ashtanga'],
   family: 'forward-fold',
   level: 'moderate',

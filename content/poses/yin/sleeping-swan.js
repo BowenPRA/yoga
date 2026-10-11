@@ -1,6 +1,5 @@
 export const sleepingSwan = {
   id: 'sleeping-swan',
-  wiki: 'Eka_Pada_Rajakapotasana',
   styles: ['yin'],
   family: 'hip-opener',
   level: 'moderate',
@@ -50,4 +49,7 @@ export const sleepingSwan = {
   joints: ['hip-joint', 'knee', 'sacrum'],
   transitionsTo: ['child-pose', 'reclined-twist'],
   figure: 'sleeping-swan',
+  refs: [
+    { source: 'yinyoga', ref: 'Swan and Sleeping Swan', url: 'https://yinyoga.com/yinsights/swan/' },
+  ],
 }

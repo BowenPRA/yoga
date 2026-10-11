@@ -1,6 +1,5 @@
 export const seatedForwardFold = {
   id: 'seated-forward-fold',
-  wiki: 'Paschimottanasana',
   styles: ['vinyasa', 'ashtanga'],
   family: 'forward-fold',
   level: 'moderate',
@@ -53,4 +52,8 @@ export const seatedForwardFold = {
   joints: ['hip-joint', 'lumbar-spine', 'sit-bones'],
   transitionsTo: ['upward-plank'],
   figure: 'seated-forward-fold',
+  refs: [
+    { source: 'hyp', ref: '1.30', url: 'https://sacred-texts.com/hin/hyp/hyp03.htm' },
+    { source: 'gheranda', ref: '2.24', url: 'https://archive.org/details/in.ernet.dli.2015.36514' },
+  ],
 }

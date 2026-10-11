@@ -1,6 +1,5 @@
 export const treePose = {
   id: 'tree-pose',
-  wiki: 'Tree_pose',
   styles: ['vinyasa'],
   family: 'balance',
   level: 'gentle',
@@ -38,4 +37,7 @@ export const treePose = {
   joints: ['ankle', 'knee', 'hip-joint'],
   transitionsTo: ['eagle-pose', 'mountain-pose', 'warrior-3'],
   figure: 'tree-pose',
+  refs: [
+    { source: 'gheranda', ref: '2.36', url: 'https://archive.org/details/in.ernet.dli.2015.36514' },
+  ],
 }

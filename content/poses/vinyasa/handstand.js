@@ -1,6 +1,5 @@
 export const handstand = {
   id: 'handstand',
-  wiki: 'Handstand',
   styles: ['vinyasa'],
   family: 'inversion',
   level: 'strong',

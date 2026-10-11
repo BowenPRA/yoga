@@ -1,6 +1,5 @@
 export const caterpillar = {
   id: 'caterpillar',
-  wiki: 'Paschimottanasana',
   styles: ['yin'],
   family: 'forward-fold',
   level: 'gentle',
@@ -49,4 +48,9 @@ export const caterpillar = {
   joints: ['lumbar-spine', 'hip-joint'],
   transitionsTo: ['savasana', 'reclined-twist'],
   figure: 'caterpillar',
+  refs: [
+    { source: 'yinyoga', ref: 'Caterpillar', url: 'https://yinyoga.com/yinsights/caterpillar/' },
+    { source: 'hyp', ref: '1.30', url: 'https://sacred-texts.com/hin/hyp/hyp03.htm' },
+    { source: 'gheranda', ref: '2.24', url: 'https://archive.org/details/in.ernet.dli.2015.36514' },
+  ],
 }

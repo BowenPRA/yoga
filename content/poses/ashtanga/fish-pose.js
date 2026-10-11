@@ -1,6 +1,5 @@
 export const fishPose = {
   id: 'fish-pose',
-  wiki: 'Matsyasana',
   styles: ['vinyasa', 'ashtanga'],
   family: 'backbend',
   level: 'moderate',
@@ -53,4 +52,7 @@ export const fishPose = {
   joints: ['thoracic-spine', 'cervical-spine', 'crown', 'knee'],
   transitionsTo: ['extended-leg-pose'],
   figure: 'fish-pose',
+  refs: [
+    { source: 'gheranda', ref: '2.21', url: 'https://archive.org/details/in.ernet.dli.2015.36514' },
+  ],
 }

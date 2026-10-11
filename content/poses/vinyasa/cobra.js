@@ -1,6 +1,5 @@
 export const cobra = {
   id: 'cobra',
-  wiki: 'Cobra_pose',
   styles: ['vinyasa'],
   family: 'backbend',
   level: 'gentle',
@@ -40,4 +39,7 @@ export const cobra = {
   transitionsTo: ['downward-dog', 'child-pose', 'locust-pose'],
   counterPoses: ['child-pose'],
   figure: 'cobra',
+  refs: [
+    { source: 'gheranda', ref: '2.42–43', url: 'https://archive.org/details/in.ernet.dli.2015.36514' },
+  ],
 }

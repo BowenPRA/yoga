@@ -1,6 +1,5 @@
 export const meltingHeart = {
   id: 'melting-heart',
-  wiki: 'Balasana',
   styles: ['yin'],
   family: 'backbend',
   level: 'gentle',
@@ -51,4 +50,7 @@ export const meltingHeart = {
   joints: ['shoulder-joint', 'thoracic-spine'],
   transitionsTo: ['child-pose', 'sphinx'],
   figure: 'melting-heart',
+  refs: [
+    { source: 'yinyoga', ref: 'Anahatasana (Melting Heart)', url: 'https://yinyoga.com/yinsights/anahatasana/' },
+  ],
 }

@@ -1,6 +1,5 @@
 export const standingHandToToe = {
   id: 'standing-hand-to-toe',
-  wiki: 'Utthita_Padangusthasana',
   styles: ['ashtanga'],
   family: 'balance',
   level: 'strong',

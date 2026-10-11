@@ -1,6 +1,5 @@
 export const halfSaddle = {
   id: 'half-saddle',
-  wiki: 'Virasana',
   styles: ['yin'],
   family: 'backbend',
   level: 'moderate',
@@ -46,4 +45,7 @@ export const halfSaddle = {
   joints: ['knee', 'ankle', 'hip-joint', 'lumbar-spine'],
   transitionsTo: ['saddle', 'caterpillar'],
   figure: 'half-saddle',
+  refs: [
+    { source: 'yinyoga', ref: 'Saddle', url: 'https://yinyoga.com/yinsights/saddle/' },
+  ],
 }

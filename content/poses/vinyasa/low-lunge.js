@@ -1,6 +1,5 @@
 export const lowLunge = {
   id: 'low-lunge',
-  wiki: 'Anjaneyasana',
   styles: ['vinyasa'],
   family: 'standing',
   level: 'gentle',

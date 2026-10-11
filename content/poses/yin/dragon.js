@@ -1,6 +1,5 @@
 export const dragon = {
   id: 'dragon',
-  wiki: 'Anjaneyasana',
   styles: ['yin'],
   family: 'hip-opener',
   level: 'moderate',
@@ -49,4 +48,7 @@ export const dragon = {
   joints: ['hip-joint', 'knee', 'ankle'],
   transitionsTo: ['child-pose', 'downward-dog'],
   figure: 'dragon',
+  refs: [
+    { source: 'yinyoga', ref: 'Dragons', url: 'https://yinyoga.com/yinsights/dragon/' },
+  ],
 }

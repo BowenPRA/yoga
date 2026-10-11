@@ -1,6 +1,5 @@
 export const mountainPose = {
   id: 'mountain-pose',
-  wiki: 'Tadasana',
   styles: ['vinyasa', 'ashtanga'],
   family: 'standing',
   level: 'gentle',

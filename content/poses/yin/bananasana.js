@@ -49,4 +49,7 @@ export const bananasana = {
   joints: ['lumbar-spine', 'thoracic-spine', 'shoulder-joint'],
   transitionsTo: ['reclined-twist', 'savasana'],
   figure: 'bananasana',
+  refs: [
+    { source: 'yinyoga', ref: 'Bananasana', url: 'https://yinyoga.com/yinsights/bananasana/' },
+  ],
 }

@@ -1,6 +1,5 @@
 export const happyBaby = {
   id: 'happy-baby',
-  wiki: 'Balasana',
   styles: ['vinyasa'],
   family: 'hip-opener',
   level: 'gentle',

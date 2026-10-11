@@ -1,6 +1,5 @@
 export const shoelace = {
   id: 'shoelace',
-  wiki: 'Gomukhasana',
   styles: ['yin'],
   family: 'hip-opener',
   level: 'moderate',
@@ -49,4 +48,7 @@ export const shoelace = {
   joints: ['hip-joint', 'knee', 'lumbar-spine'],
   transitionsTo: ['reclined-twist', 'caterpillar'],
   figure: 'shoelace',
+  refs: [
+    { source: 'yinyoga', ref: 'Shoelace', url: 'https://yinyoga.com/yinsights/shoelace/' },
+  ],
 }

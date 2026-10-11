@@ -1,6 +1,5 @@
 export const wideAngleSeatedFold = {
   id: 'wide-angle-seated-fold',
-  wiki: 'Paschimottanasana',
   styles: ['vinyasa', 'ashtanga'],
   family: 'forward-fold',
   level: 'moderate',

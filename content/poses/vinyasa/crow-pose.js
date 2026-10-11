@@ -1,6 +1,5 @@
 export const crowPose = {
   id: 'crow-pose',
-  wiki: 'Bakasana',
   styles: ['vinyasa'],
   family: 'arm-balance',
   level: 'strong',

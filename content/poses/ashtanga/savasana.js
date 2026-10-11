@@ -1,6 +1,5 @@
 export const savasana = {
   id: 'savasana',
-  wiki: 'Shavasana',
   styles: ['vinyasa', 'ashtanga', 'yin'],
   family: 'restorative',
   level: 'gentle',
@@ -59,4 +58,9 @@ export const savasana = {
   joints: ['sacrum', 'shoulder-blades', 'cervical-spine'],
   transitionsTo: [],
   figure: 'savasana',
+  refs: [
+    { source: 'hyp', ref: '1.34', url: 'https://sacred-texts.com/hin/hyp/hyp03.htm' },
+    { source: 'gheranda', ref: '2.19', url: 'https://archive.org/details/in.ernet.dli.2015.36514' },
+    { source: 'yinyoga', ref: 'Shavasana', url: 'https://yinyoga.com/yinsights/shavasana/' },
+  ],
 }

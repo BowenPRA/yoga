@@ -1,6 +1,5 @@
 export const snail = {
   id: 'snail',
-  wiki: 'Halasana',
   styles: ['yin'],
   family: 'inversion',
   level: 'strong',
@@ -46,4 +45,7 @@ export const snail = {
   joints: ['cervical-spine', 'thoracic-spine', 'lumbar-spine', 'shoulder-joint'],
   transitionsTo: ['supported-fish', 'savasana'],
   figure: 'snail',
+  refs: [
+    { source: 'yinyoga', ref: 'Snail', url: 'https://yinyoga.com/yinsights/snail/' },
+  ],
 }

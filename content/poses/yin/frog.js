@@ -46,4 +46,7 @@ export const frog = {
   joints: ['hip-joint', 'knee', 'lumbar-spine'],
   transitionsTo: ['child-pose', 'sphinx'],
   figure: 'frog',
+  refs: [
+    { source: 'yinyoga', ref: 'Frog', url: 'https://yinyoga.com/yinsights/frog/' },
+  ],
 }

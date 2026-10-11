@@ -288,7 +288,7 @@ for (const [style, ids] of Object.entries(PEAKS)) {
   }
 }
 const sourceIds = new Set()
-const LICENCES = new Set(['CC BY-SA 4.0', 'CC BY-NC-SA 4.0', 'CC0', 'Public domain', 'Free to read', null])
+const LICENCES = new Set(['CC BY-SA 4.0', 'CC BY-NC-SA 4.0', 'CC0', 'Public domain', 'Free to read', 'Book', null])
 for (const s of SOURCES) {
   const w = `source ${s.id}`
   if (sourceIds.has(s.id)) err(`${w}: duplicate id`)
@@ -321,8 +321,12 @@ for (const th of THEMES) {
 for (const g of GOALS) if (!THEMES.some((th) => th.goals.includes(g.id))) warn(`goal ${g.id}: no thought names it (themesFor falls back to the style)`)
 if (!themesFor({ goals: [], style: 'vinyasa' }).length) err('themes: nothing to offer a plan with no goals')
 for (const p of POSES) {
-  if (!p.wiki) warn(`pose ${p.id}: no Wikipedia article (wiki) named`)
-  else if (!/^[A-Za-z0-9_().,'\/À-ɏḀ-ỿ-]+$/.test(p.wiki)) err(`pose ${p.id}: wiki "${p.wiki}" should be an article title with underscores`)
+  for (const r of p.refs || []) {
+    if (!sourceIds.has(r.source)) err(`pose ${p.id}: ref source "${r.source}" is not in content/sources.js`)
+    if (!r.ref || typeof r.ref !== 'string') err(`pose ${p.id}: ref for ${r.source} needs a verse or page label`)
+    if (r.url && !/^https:\/\//.test(r.url)) err(`pose ${p.id}: ref url must be https`)
+  }
+  if (p.yin && !(p.refs || []).some((r) => r.source === 'yinyoga')) warn(`pose ${p.id}: a Yin pose with no yinyoga.com page named`)
   if (sourcesFor(p).length < 2) err(`pose ${p.id}: sourcesFor gives fewer than two sources`)
 }
 // A class built toward every peak must hold that peak, and a built class

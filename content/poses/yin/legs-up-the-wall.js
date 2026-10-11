@@ -1,6 +1,5 @@
 export const legsUpTheWall = {
   id: 'legs-up-the-wall',
-  wiki: 'Viparita_Karani',
   styles: ['yin'],
   family: 'restorative',
   level: 'gentle',

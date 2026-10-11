@@ -1,6 +1,5 @@
 export const staffPose = {
   id: 'staff-pose',
-  wiki: 'Paschimottanasana',
   styles: ['vinyasa', 'ashtanga'],
   family: 'seated',
   level: 'gentle',

@@ -46,4 +46,7 @@ export const toeSquat = {
   joints: ['toes', 'ankle', 'knee'],
   transitionsTo: ['ankle-stretch'],
   figure: 'toe-squat',
+  refs: [
+    { source: 'yinyoga', ref: 'Toe Squat', url: 'https://yinyoga.com/yinsights/toe-squat/' },
+  ],
 }

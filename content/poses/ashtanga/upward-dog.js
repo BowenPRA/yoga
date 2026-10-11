@@ -1,6 +1,5 @@
 export const upwardDog = {
   id: 'upward-dog',
-  wiki: 'Cobra_pose',
   styles: ['vinyasa', 'ashtanga'],
   family: 'backbend',
   level: 'moderate',

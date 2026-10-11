@@ -1,9 +1,13 @@
 /**
  * Where the app's content comes from, so she can say "this comes from
- * somewhere". Every entry is free to read online; `licence` says what may be
- * reused and on what terms. A pose file names its Wikipedia article in
- * `wiki`; a concept card in content/phrases.js names its own `source`; a
- * thought for a class (content/themes.js) names the text it quotes.
+ * somewhere": the classical texts that first describe a pose, the modern
+ * references every teacher training uses, the official sites of the
+ * traditions, the public-domain translations the thoughts quote, and the
+ * anatomy the figure is drawn from. Every entry is free to read online or
+ * a book any library has; `licence` says what may be reused and on what
+ * terms. A pose file names the texts and pages that describe it in `refs`;
+ * a concept card in content/phrases.js names its own `source`; a thought
+ * (content/themes.js) names the text it quotes.
  *
  * What is NOT taken from anywhere: the cues, modifications, safety lines,
  * the Vietnamese, and the class plans. Those were written for this app in the
@@ -11,69 +15,75 @@
  * are corrected through "Suggest a fix". The `own` entry says so on the page.
  *
  * An entry: { id, covers: [area], title, by, year?, url, licence, note: { en, vi } }
- *   covers   'poses' | 'ashtanga' | 'yin' | 'sequencing' | 'philosophy' | 'meditation' | 'vietnamese' | 'anatomy' | 'own'
- *   licence  'CC BY-SA 4.0' | 'CC BY-NC-SA 4.0' | 'CC0' | 'Public domain' | 'Free to read'
- *            ("Free to read" is copyrighted text that anyone can open and cite, but not copy)
+ *   covers   'poses' | 'ashtanga' | 'yin' | 'sequencing' | 'safety' | 'philosophy' | 'meditation' | 'vietnamese' | 'anatomy' | 'own'
+ *   licence  'Public domain' | 'CC0' | 'CC BY-NC-SA 4.0' | 'CC BY-SA 4.0' | 'Free to read' | 'Book'
+ *            ("Free to read" is copyrighted text anyone can open and cite, but not copy;
+ *             "Book" is a reference work cited by title, with no link)
  */
-export const AREAS = ['poses', 'ashtanga', 'yin', 'sequencing', 'philosophy', 'meditation', 'vietnamese', 'anatomy', 'own']
+export const AREAS = ['poses', 'ashtanga', 'yin', 'sequencing', 'safety', 'philosophy', 'meditation', 'vietnamese', 'anatomy', 'own']
 
 export const SOURCES = [
+  // ── The classical texts ───────────────────────────────────────────────
   {
-    id: 'wikipedia-asanas', covers: ['poses'],
-    title: 'List of asanas', by: 'Wikipedia', url: 'https://en.wikipedia.org/wiki/List_of_asanas', licence: 'CC BY-SA 4.0',
+    id: 'hyp', covers: ['poses', 'philosophy'],
+    title: 'Haṭha Yoga Pradīpikā', by: 'Svātmārāma (15th century), translated by Pancham Sinh', year: 1914, url: 'https://sacred-texts.com/hin/hyp/', licence: 'Public domain',
     note: {
-      en: 'The names, Sanskrit spellings and types of about a hundred poses, with the oldest text each one appears in. Its Yin Yoga column maps the Yin names to their hatha equivalents.',
-      vi: 'Tên, cách viết Sanskrit và loại của khoảng một trăm tư thế, cùng văn bản cổ nhất ghi lại từng tư thế. Cột Yin Yoga đối chiếu tên Yin với tư thế hatha tương ứng.',
+      en: 'The oldest surviving manual of hatha yoga. Chapter 1 describes fifteen āsanas, among them Gomukhāsana, Vīrāsana, Kūrmāsana, Kukkuṭāsana, Dhanurāsana, Matsyendrāsana, Paścimottānāsana, Śavāsana and Padmāsana; chapter 2 is the breath. Verse numbers in this app follow Sinh’s edition.',
+      vi: 'Cẩm nang hatha yoga cổ nhất còn lại. Chương 1 mô tả mười lăm āsana, trong đó có Gomukhāsana, Vīrāsana, Kūrmāsana, Kukkuṭāsana, Dhanurāsana, Matsyendrāsana, Paścimottānāsana, Śavāsana và Padmāsana; chương 2 nói về hơi thở. Số câu trong ứng dụng theo bản của Sinh.',
     },
   },
   {
-    id: 'wikipedia', covers: ['poses'],
-    title: 'Wikipedia, one article per pose', by: 'Wikipedia', url: 'https://en.wikipedia.org/wiki/Asana', licence: 'CC BY-SA 4.0',
+    id: 'gheranda', covers: ['poses'],
+    title: 'Gheraṇḍa Saṃhitā', by: 'translated by Rai Bahadur Srisa Chandra Vasu', year: 1915, url: 'https://archive.org/details/in.ernet.dli.2015.36514', licence: 'Public domain',
     note: {
-      en: 'Most poses link to their own article: what the name means, where the pose comes from, and its usual variations.',
-      vi: 'Hầu hết tư thế dẫn đến bài viết riêng: nghĩa của tên, tư thế có từ đâu, và các biến thể thường gặp.',
+      en: 'A 17th-century manual whose second lesson describes thirty-two āsanas, including Bhujaṅgāsana, Śalabhāsana, Uṣṭrāsana, Vṛkṣāsana, Garuḍāsana, Matsyāsana and Utkaṭāsana: the first written record of several poses every class still uses.',
+      vi: 'Cẩm nang thế kỷ 17; bài học thứ hai mô tả ba mươi hai āsana, trong đó có Bhujaṅgāsana, Śalabhāsana, Uṣṭrāsana, Vṛkṣāsana, Garuḍāsana, Matsyāsana và Utkaṭāsana: ghi chép bằng văn bản sớm nhất của nhiều tư thế mà mọi lớp vẫn dùng.',
+    },
+  },
+  // ── The modern references ─────────────────────────────────────────────
+  {
+    id: 'light-on-yoga', covers: ['poses'],
+    title: 'Light on Yoga', by: 'B. K. S. Iyengar', year: 1966, url: null, licence: 'Book',
+    note: {
+      en: 'The reference every teacher training uses for the Sanskrit names and the standard form of the modern poses: Warrior, Triangle, Downward Dog, Pigeon and the rest. The English and Sanskrit names in this app follow it.',
+      vi: 'Tài liệu tham chiếu mà mọi khoá đào tạo giáo viên dùng cho tên Sanskrit và hình chuẩn của các tư thế hiện đại: Chiến binh, Tam giác, Chó úp mặt, Bồ câu và những tư thế còn lại. Tên tiếng Anh và Sanskrit trong ứng dụng theo sách này.',
     },
   },
   {
-    id: 'wikipedia-ashtanga', covers: ['ashtanga'],
-    title: 'Ashtanga vinyasa yoga', by: 'Wikipedia', url: 'https://en.wikipedia.org/wiki/Ashtanga_vinyasa_yoga', licence: 'CC BY-SA 4.0',
+    id: 'yoga-journal', covers: ['poses'],
+    title: 'Yoga Journal pose library', by: 'Yoga Journal', url: 'https://www.yogajournal.com/poses/', licence: 'Free to read',
     note: {
-      en: 'The shape of the practice: five Sun Salutations A and five B, the standing sequence, the primary series (Yoga Chikitsa), the finishing poses, five breaths a pose, and the Mysore style. How it came from Krishnamacharya to K. Pattabhi Jois.',
-      vi: 'Hình hài của buổi tập: năm vòng Chào mặt trời A và năm vòng B, chuỗi đứng, chuỗi sơ cấp (Yoga Chikitsa), chuỗi kết thúc, năm nhịp thở mỗi tư thế, và lối tập Mysore. Phương pháp truyền từ Krishnamacharya đến K. Pattabhi Jois.',
+      en: 'One page per pose with its Sanskrit name, how to get in, variations and cautions. Used to check that the cues and modifications here match what teachers commonly say.',
+      vi: 'Mỗi tư thế một trang, với tên Sanskrit, cách vào thế, biến thể và lưu ý. Dùng để kiểm tra rằng câu cue và biến thể ở đây khớp với cách giáo viên thường nói.',
     },
   },
+  // ── Ashtanga ──────────────────────────────────────────────────────────
   {
-    id: 'wikipedia-surya', covers: ['ashtanga', 'poses'],
-    title: 'Surya Namaskar', by: 'Wikipedia', url: 'https://en.wikipedia.org/wiki/Surya_Namaskar', licence: 'CC BY-SA 4.0',
+    id: 'sharath-yoga-centre', covers: ['ashtanga'],
+    title: 'Sharath Yoga Centre, Mysuru', by: 'the official site of Paramaguru Sharath Jois, lineage holder of Ashtanga Yoga', url: 'https://sharathyogacentre.com/about-us/', licence: 'Free to read',
     note: {
-      en: 'The order of Sun Salutation A and B as Ashtanga teaches them, and where the sequence came from (Aundh in the 1920s, then Krishnamacharya in Mysore).',
-      vi: 'Thứ tự Chào mặt trời A và B theo cách Ashtanga dạy, và chuỗi này có từ đâu (Aundh những năm 1920, rồi Krishnamacharya ở Mysore).',
+      en: 'The home of the method as taught by K. Pattabhi Jois and his grandson Sharath Jois: how the series are learned one pose at a time in the Mysore style, and the authorised-teacher directory.',
+      vi: 'Nơi của phương pháp như K. Pattabhi Jois và cháu ông là Sharath Jois giảng dạy: cách học các chuỗi từng tư thế một theo lối Mysore, và danh sách giáo viên được uỷ quyền.',
     },
   },
   {
     id: 'ashtangayoga-info', covers: ['ashtanga'],
-    title: 'Primary Series: Yoga Chikitsa', by: 'AshtangaYoga.info (Ronald Steiner)', url: 'https://www.ashtangayoga.info/ashtanga-yoga/primary-series-yoga-chikitsa/', licence: 'Free to read',
+    title: 'Primary Series: Yoga Chikitsa', by: 'AshtangaYoga.info (Dr Ronald Steiner)', url: 'https://www.ashtangayoga.info/ashtanga-yoga/primary-series-yoga-chikitsa/', licence: 'Free to read',
     note: {
       en: 'The pose-by-pose order of the primary series with its vinyasa counts: the reference for the positions, breaths and counts in this app.',
       vi: 'Thứ tự từng tư thế của chuỗi sơ cấp cùng số vinyasa: tài liệu tham chiếu cho vị trí, nhịp thở và số đếm trong ứng dụng này.',
     },
   },
-  {
-    id: 'wikipedia-yin', covers: ['yin'],
-    title: 'Yin Yoga', by: 'Wikipedia', url: 'https://en.wikipedia.org/wiki/Yin_Yoga', licence: 'CC BY-SA 4.0',
-    note: {
-      en: 'Where Yin comes from (Paulie Zink, Paul Grilley, Sarah Powers), why the holds are long and passive, and which hatha poses the Yin names correspond to.',
-      vi: 'Yin có từ đâu (Paulie Zink, Paul Grilley, Sarah Powers), vì sao giữ thế lâu và thụ động, và tên Yin tương ứng với tư thế hatha nào.',
-    },
-  },
+  // ── Yin ───────────────────────────────────────────────────────────────
   {
     id: 'yinyoga', covers: ['yin', 'sequencing'],
     title: 'Yin Yoga asanas, and counter poses', by: 'Bernie Clark, yinyoga.com', url: 'https://yinyoga.com/yinsights/yin-yoga-asanas/', licence: 'Free to read',
     note: {
-      en: 'The Yin pose names this app uses, what each hold reaches, how long to stay, and the rules for counterposes and the rebound (yinyoga.com/yinsights/counter-poses).',
-      vi: 'Tên các tư thế Yin mà ứng dụng dùng, mỗi thế giữ chạm đến đâu, giữ bao lâu, và quy tắc tư thế đối và dư âm (yinyoga.com/yinsights/counter-poses).',
+      en: 'The teacher who wrote the Yin textbooks. Each Yin pose in this app links to his page for it: what the hold reaches, how long to stay, the counterpose and the rebound.',
+      vi: 'Người viết các giáo trình Yin. Mỗi tư thế Yin trong ứng dụng dẫn đến trang của ông về tư thế đó: thế giữ chạm đến đâu, giữ bao lâu, tư thế đối và dư âm.',
     },
   },
+  // ── Sequencing ────────────────────────────────────────────────────────
   {
     id: 'sequencewiz', covers: ['sequencing'],
     title: 'Compensation postures, and sequencing in the Krishnamacharya tradition', by: 'Olga Kabel, sequencewiz.org', url: 'https://sequencewiz.org/2015/04/08/compensation-postures/', licence: 'Free to read',
@@ -83,19 +93,29 @@ export const SOURCES = [
     },
   },
   {
+    id: 'stephens', covers: ['sequencing'],
+    title: 'Yoga Sequencing: Designing Transformative Yoga Classes', by: 'Mark Stephens', year: 2012, url: null, licence: 'Book',
+    note: {
+      en: 'The standard book on building a class: the arc from warming to the peak to integration, preparing each part of a peak pose, and the counterposes that follow it.',
+      vi: 'Cuốn sách chuẩn về cách soạn một lớp: mạch từ khởi động đến tư thế đỉnh rồi lắng lại, chuẩn bị từng phần cho tư thế đỉnh, và các tư thế bù theo sau.',
+    },
+  },
+  // ── Safety ────────────────────────────────────────────────────────────
+  {
+    id: 'nccih', covers: ['safety'],
+    title: 'Yoga: Effectiveness and Safety', by: 'National Center for Complementary and Integrative Health, US National Institutes of Health', year: 2023, url: 'https://www.nccih.nih.gov/health/yoga-effectiveness-and-safety', licence: 'Public domain',
+    note: {
+      en: 'What the research says, and who needs modifications: knee and hip injuries, lumbar spine disease, severe high blood pressure, balance problems, glaucoma, and pregnancy. The safety lines and the cautions in the Class Builder follow it.',
+      vi: 'Nghiên cứu nói gì, và ai cần điều chỉnh: chấn thương gối và hông, bệnh cột sống thắt lưng, cao huyết áp nặng, vấn đề thăng bằng, tăng nhãn áp, và thai kỳ. Lời nhắc an toàn và phần "cần chú ý" trong Soạn bài theo tài liệu này.',
+    },
+  },
+  // ── Philosophy ────────────────────────────────────────────────────────
+  {
     id: 'yoga-sutras', covers: ['philosophy'],
     title: 'The Yoga Sutras of Patanjali', by: 'Patañjali, translated by Charles Johnston', year: 1912, url: 'https://sacred-texts.com/hin/ysp/', licence: 'Public domain',
     note: {
       en: 'The thoughts for a class that quote Patañjali use this translation, old enough to be free. The Vietnamese under each quote is this app’s own rendering, not a published translation.',
       vi: 'Những lời dẫn cho lớp trích Patañjali dùng bản dịch này, đã đủ cũ để tự do sử dụng. Phần tiếng Việt dưới mỗi câu là cách diễn giải của ứng dụng, không phải bản dịch đã xuất bản.',
-    },
-  },
-  {
-    id: 'hatha-pradipika', covers: ['philosophy'],
-    title: 'Hatha Yoga Pradipika', by: 'Svātmārāma, translated by Pancham Sinh', year: 1914, url: 'https://sacred-texts.com/hin/hyp/', licence: 'Public domain',
-    note: {
-      en: 'The oldest surviving manual of hatha yoga: āsana first, then breath. Quoted in the thoughts for a class.',
-      vi: 'Cẩm nang hatha yoga cổ nhất còn lại: āsana trước, rồi đến hơi thở. Được trích trong những lời dẫn cho lớp.',
     },
   },
   {
@@ -107,45 +127,64 @@ export const SOURCES = [
     },
   },
   {
-    id: 'suttacentral', covers: ['meditation'],
-    title: 'SuttaCentral: the Pali suttas in Bhikkhu Sujato’s translation', by: 'SuttaCentral', url: 'https://suttacentral.net/', licence: 'CC0',
+    id: 'monier-williams', covers: ['philosophy'],
+    title: 'A Sanskrit-English Dictionary', by: 'Monier Monier-Williams (1899), Cologne Digital Sanskrit Dictionaries', url: 'https://www.sanskrit-lexicon.uni-koeln.de/scans/MWScan/2020/web/index.php', licence: 'Free to read',
     note: {
-      en: 'The Pali lines in the meditation thoughts and their English. Sujato’s translations are dedicated to the public domain (CC0); the site also carries Thích Minh Châu’s Vietnamese.',
-      vi: 'Các câu Pali trong những lời dẫn về thiền và bản tiếng Anh. Bản dịch của Sujato được hiến vào phạm vi công cộng (CC0); trang này cũng có bản Việt của HT Thích Minh Châu.',
+      en: 'The dictionary behind the meanings of the Sanskrit terms and pose names: what sthira, sukha, ujjāyī or kapota actually say.',
+      vi: 'Cuốn từ điển đứng sau nghĩa của các thuật ngữ Sanskrit và tên tư thế: sthira, sukha, ujjāyī hay kapota thực sự nói gì.',
+    },
+  },
+  // ── Meditation ────────────────────────────────────────────────────────
+  {
+    id: 'suttacentral', covers: ['meditation', 'vietnamese'],
+    title: 'SuttaCentral: the Pali suttas', by: 'Bhikkhu Sujato (English, CC0) and HT Thích Minh Châu (Vietnamese)', url: 'https://suttacentral.net/', licence: 'CC0',
+    note: {
+      en: 'The Pali lines in the meditation thoughts and their English. Sujato’s translations are dedicated to the public domain (CC0); the same site carries Thích Minh Châu’s Vietnamese, the translation Vietnamese Buddhists read.',
+      vi: 'Các câu Pali trong những lời dẫn về thiền và bản tiếng Anh. Bản dịch của Sujato được hiến vào phạm vi công cộng (CC0); cùng trang có bản Việt của HT Thích Minh Châu, bản dịch mà Phật tử Việt Nam đọc.',
     },
   },
   {
-    id: 'vi-wikipedia', covers: ['vietnamese', 'meditation'],
-    title: 'Wikipedia tiếng Việt', by: 'Wikipedia', url: 'https://vi.wikipedia.org/', licence: 'CC BY-SA 4.0',
+    id: 'phatgiao-dictionary', covers: ['vietnamese', 'meditation'],
+    title: 'Từ điển Phật học online', by: 'Cổng thông tin Phật giáo, Giáo hội Phật giáo Việt Nam (the Vietnam Buddhist Sangha)', year: 2019, url: 'https://phatgiao.org.vn/tu-dien-phat-hoc-online.html', licence: 'Free to read',
     note: {
-      en: 'The Sino-Vietnamese Buddhist terms the Sanskrit and Pali cards bridge to (vô thường, vô ngã, từ, nghiệp, pháp, thiền, luân xa) were checked here; each card links to its article.',
-      vi: 'Các thuật ngữ Phật giáo Hán Việt mà thẻ Sanskrit và Pali nối đến (vô thường, vô ngã, từ, nghiệp, pháp, thiền, luân xa) được đối chiếu ở đây; mỗi thẻ dẫn đến bài viết tương ứng.',
+      en: 'The Sangha’s own dictionary, compiled from the Phật Quang and Đạo Uyển dictionaries among others. Every Sanskrit and Pali card that bridges to a Sino-Vietnamese term (vô thường, vô ngã, từ, nghiệp, pháp, thiền, luân xa) links to its entry here. The site welcomes copying without citation.',
+      vi: 'Từ điển của chính Giáo hội, biên soạn từ Phật Quang Đại từ điển, Từ điển Đạo Uyển và các bộ khác. Mỗi thẻ Sanskrit và Pali nối đến một thuật ngữ Hán Việt (vô thường, vô ngã, từ, nghiệp, pháp, thiền, luân xa) dẫn đến mục từ tương ứng ở đây. Trang cho phép sao chép không cần trích dẫn.',
     },
   },
+  {
+    id: 'pts-ped', covers: ['meditation'],
+    title: 'The Pali Text Society’s Pali-English Dictionary', by: 'T. W. Rhys Davids and William Stede (1921–25), Digital South Asia Library, University of Chicago', url: 'https://dsal.uchicago.edu/dictionaries/pali/', licence: 'Free to read',
+    note: {
+      en: 'The dictionary behind the Pali terms: anicca, dukkha, anattā, sati, mettā, vedanā, saṅkhāra.',
+      vi: 'Cuốn từ điển đứng sau các thuật ngữ Pali: anicca, dukkha, anattā, sati, mettā, vedanā, saṅkhāra.',
+    },
+  },
+  // ── Anatomy ───────────────────────────────────────────────────────────
   {
     id: 'openstax', covers: ['anatomy'],
     title: 'Anatomy and Physiology 2e', by: 'OpenStax, Rice University', year: 2022, url: 'https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction', licence: 'CC BY-NC-SA 4.0',
     note: {
-      en: 'The muscle and bone names, their actions, and the figure the Anatomy tab is built on. Access for free at openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction.',
-      vi: 'Tên cơ và xương, chức năng của chúng, và hình minh hoạ mà thẻ Cơ thể dựa trên. Đọc miễn phí tại openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction.',
+      en: 'The muscle and bone names, their actions, and figure 11.5, which the Anatomy tab’s figure is redrawn from. Access for free at openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction.',
+      vi: 'Tên cơ và xương, chức năng của chúng, và hình 11.5 mà hình minh hoạ ở thẻ Cơ thể được vẽ lại từ đó. Đọc miễn phí tại openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction.',
     },
   },
   {
-    id: 'commons-muscles', covers: ['anatomy'],
-    title: 'Anterior and posterior views of muscles (figure 11.5)', by: 'Pk0001 after OpenStax, Wikimedia Commons', url: 'https://commons.wikimedia.org/wiki/File:1105_Anterior_and_Posterior_Views_of_Muscles_enko_png.svg', licence: 'CC BY-SA 4.0',
+    id: 'grays', covers: ['anatomy'],
+    title: 'Anatomy of the Human Body', by: 'Henry Gray, 20th edition (1918), Bartleby', year: 1918, url: 'https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/', licence: 'Public domain',
     note: {
-      en: 'The muscle figure she taps, redrawn from the OpenStax plate and cleaned of its leader lines for this app.',
-      vi: 'Hình cơ bắp mà bạn chạm vào, vẽ lại từ hình của OpenStax và được xoá các đường chỉ dẫn cho ứng dụng này.',
+      en: '"Gray’s Anatomy": where each muscle attaches and what it does, in the words physiotherapists still use. The "does" line of every muscle was checked against it.',
+      vi: '"Gray’s Anatomy": mỗi cơ bám vào đâu và làm gì, bằng ngôn ngữ mà chuyên viên vật lý trị liệu vẫn dùng. Dòng "chức năng" của mọi cơ được đối chiếu với sách này.',
     },
   },
   {
-    id: 'commons-skeleton', covers: ['anatomy'],
-    title: 'Human skeleton, front and back', by: 'Mariana Ruiz Villarreal (LadyofHats), Wikimedia Commons', url: 'https://commons.wikimedia.org/wiki/File:Human_skeleton_front_en.svg', licence: 'Public domain',
+    id: 'figure-credit', covers: ['anatomy'],
+    title: 'Figure credit: the muscle figure', by: 'redrawn from OpenStax figure 11.5 by Pk0001 (CC BY-SA 4.0), cleaned of its labels for this app', url: 'https://commons.wikimedia.org/wiki/File:1105_Anterior_and_Posterior_Views_of_Muscles_enko_png.svg', licence: 'CC BY-SA 4.0',
     note: {
-      en: 'The skeleton figure on the Bones tab.',
-      vi: 'Hình bộ xương ở mục Xương.',
+      en: 'The licence of the redrawn figure asks for this credit. The skeleton is a public-domain drawing by Mariana Ruiz Villarreal.',
+      vi: 'Giấy phép của hình vẽ lại yêu cầu ghi nhận này. Hình bộ xương là tranh vẽ thuộc phạm vi công cộng của Mariana Ruiz Villarreal.',
     },
   },
+  // ── Written here ──────────────────────────────────────────────────────
   {
     id: 'own', covers: ['own'],
     title: 'Written for this app', by: 'Bowen, with AI help', url: null, licence: null,
@@ -159,21 +198,21 @@ export const SOURCES = [
 const byId = new Map(SOURCES.map((s) => [s.id, s]))
 export const getSource = (id) => byId.get(id)
 
-const SURYA = new Set(['mountain-pose', 'upward-salute', 'standing-forward-fold', 'half-lift', 'chaturanga', 'upward-dog', 'downward-dog', 'chair-pose', 'warrior-1'])
-
 /**
- * What a pose rests on, most specific first: its own Wikipedia article (the
- * `wiki` title in its file), the list of asanas, and the references for the
- * traditions it belongs to. The cue text itself is `own`.
+ * What a pose rests on, most specific first: the texts and pages that
+ * describe it (its `refs`: { source, ref, url? }, where `ref` is the verse
+ * or the page title), then the references of the traditions it belongs
+ * to. The cue text itself is `own`. Each item is a source with `ref` and
+ * `url` filled in.
  */
 export function sourcesFor(pose) {
   if (!pose) return []
   const out = []
-  if (pose.wiki) out.push({ ...byId.get('wikipedia'), page: pose.wiki.replace(/_/g, ' '), url: `https://en.wikipedia.org/wiki/${encodeURIComponent(pose.wiki)}` })
-  out.push(byId.get('wikipedia-asanas'))
-  if (pose.family === 'sun-salutation' || SURYA.has(pose.id)) out.push(byId.get('wikipedia-surya'))
-  if (pose.ashtanga) out.push(byId.get('wikipedia-ashtanga'), byId.get('ashtangayoga-info'))
-  if (pose.yin) out.push(byId.get('wikipedia-yin'), byId.get('yinyoga'))
-  out.push(byId.get('own'))
-  return out.filter(Boolean)
+  const add = (id, extra = {}) => { const s = byId.get(id); if (s && !out.some((x) => x.id === id && x.ref === extra.ref)) out.push({ ...s, ...extra }) }
+  for (const r of pose.refs || []) add(r.source, { ref: r.ref, url: r.url || byId.get(r.source)?.url })
+  if (pose.ashtanga) { add('sharath-yoga-centre'); add('ashtangayoga-info') }
+  if (pose.yin && !(pose.refs || []).some((r) => r.source === 'yinyoga')) add('yinyoga')
+  if (pose.styles.includes('vinyasa') || pose.styles.includes('ashtanga')) { add('light-on-yoga'); add('yoga-journal') }
+  add('own')
+  return out
 }

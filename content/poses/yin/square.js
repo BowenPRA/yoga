@@ -49,4 +49,7 @@ export const square = {
   joints: ['hip-joint', 'knee', 'ankle'],
   transitionsTo: ['reclined-twist', 'caterpillar'],
   figure: 'square',
+  refs: [
+    { source: 'yinyoga', ref: 'Square', url: 'https://yinyoga.com/yinsights/square/' },
+  ],
 }

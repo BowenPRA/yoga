@@ -1,6 +1,5 @@
 export const reverseWarrior = {
   id: 'reverse-warrior',
-  wiki: 'Virabhadrasana',
   styles: ['vinyasa'],
   family: 'standing',
   level: 'moderate',

@@ -1,6 +1,5 @@
 export const gatePose = {
   id: 'gate-pose',
-  wiki: 'Parighasana',
   styles: ['vinyasa'],
   family: 'seated',
   level: 'gentle',

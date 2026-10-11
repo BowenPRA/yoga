@@ -1,6 +1,5 @@
 export const camelPose = {
   id: 'camel-pose',
-  wiki: 'Ustrasana',
   styles: ['vinyasa'],
   family: 'backbend',
   level: 'moderate',
@@ -41,4 +40,7 @@ export const camelPose = {
   transitionsTo: ['child-pose', 'hero-pose'],
   counterPoses: ['child-pose'],
   figure: 'camel-pose',
+  refs: [
+    { source: 'gheranda', ref: '2.41', url: 'https://archive.org/details/in.ernet.dli.2015.36514' },
+  ],
 }

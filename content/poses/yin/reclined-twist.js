@@ -1,6 +1,5 @@
 export const reclinedTwist = {
   id: 'reclined-twist',
-  wiki: 'Matsyendrasana',
   styles: ['yin'],
   family: 'twist',
   level: 'gentle',
@@ -48,4 +47,7 @@ export const reclinedTwist = {
   joints: ['thoracic-spine', 'lumbar-spine', 'sacrum'],
   transitionsTo: ['cat-pulling-its-tail', 'savasana'],
   figure: 'reclined-twist',
+  refs: [
+    { source: 'yinyoga', ref: 'Reclining Twists', url: 'https://yinyoga.com/yinsights/reclining-twist/' },
+  ],
 }

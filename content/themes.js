@@ -82,14 +82,14 @@ export const THEMES = [
     goals: ['balance', 'backbends', 'inversions'],
   },
   {
-    id: 'hyp-1-66', source: 'hatha-pradipika', ref: 'Hatha Yoga Pradipika 1.66 (Sinh’s numbering; 1.64 in most editions)', lang: 'sa',
+    id: 'hyp-1-66', source: 'hyp', ref: 'Hatha Yoga Pradipika 1.66 (Sinh’s numbering; 1.64 in most editions)', lang: 'sa',
     term: 'haṭha', say: 'HUH-tuh',
     quote: { en: 'Whether young, old or too old, sick or lean, one who discards laziness, gets success if he practises Yoga.', vi: 'Dù trẻ, già hay rất già, ốm yếu hay gầy gò, ai bỏ được sự lười biếng sẽ thành công nếu chuyên cần tập yoga.' },
     inClass: { en: 'It doesn’t matter how old you are or how stiff you feel. What matters is that you came.', vi: 'Không quan trọng bạn bao nhiêu tuổi hay cứng đến đâu. Quan trọng là bạn đã đến.' },
     goals: ['energy', 'legs', 'flexibility'], styles: ['vinyasa'],
   },
   {
-    id: 'hyp-2-2', source: 'hatha-pradipika', ref: 'Hatha Yoga Pradipika 2.2', lang: 'sa',
+    id: 'hyp-2-2', source: 'hyp', ref: 'Hatha Yoga Pradipika 2.2', lang: 'sa',
     term: 'prāṇāyāma', say: 'PRAH-nah-YAH-muh',
     quote: { en: 'Respiration being disturbed, the mind becomes disturbed. By restraining respiration, the Yogî gets steadiness of mind.', vi: 'Hơi thở rối thì tâm rối. Làm chủ được hơi thở, người tập yoga có được sự vững vàng của tâm.' },
     inClass: { en: 'When the breath is steady, the mind is steady. If you lose the breath, you’ve gone too far.', vi: 'Khi hơi thở đều, tâm sẽ đều. Nếu mất hơi thở, bạn đã đi quá xa.' },

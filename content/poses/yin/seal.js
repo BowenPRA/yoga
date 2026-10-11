@@ -1,6 +1,5 @@
 export const seal = {
   id: 'seal',
-  wiki: 'Cobra_pose',
   styles: ['yin'],
   family: 'backbend',
   level: 'moderate',
@@ -47,4 +46,7 @@ export const seal = {
   joints: ['lumbar-spine', 'sacrum', 'wrist', 'shoulder-joint'],
   transitionsTo: ['child-pose'],
   figure: 'seal',
+  refs: [
+    { source: 'yinyoga', ref: 'Sphinx and Seal', url: 'https://yinyoga.com/yinsights/sphinx-seal/' },
+  ],
 }

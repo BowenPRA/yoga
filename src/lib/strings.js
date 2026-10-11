@@ -5,10 +5,10 @@ export const STRINGS = {
     nav: { poses: 'Tư thế', classes: 'Lớp học', anatomy: 'Cơ thể', speech: 'Luyện nói', phrases: 'Câu nói' },
     sources: {
       title: 'Nguồn tài liệu', lead: 'Tư thế, triết lý và giải phẫu trong ứng dụng dựa trên đâu, và phần nào do chúng tôi tự viết.',
-      areas: { poses: 'Tư thế', ashtanga: 'Ashtanga', yin: 'Yin', sequencing: 'Cách soạn bài', philosophy: 'Triết lý', meditation: 'Thiền và Pali', vietnamese: 'Tiếng Việt', anatomy: 'Giải phẫu', own: 'Do ứng dụng viết' },
-      licence: { 'CC BY-SA 4.0': 'Creative Commons BY-SA 4.0', 'CC BY-NC-SA 4.0': 'Creative Commons BY-NC-SA 4.0', CC0: 'CC0, phạm vi công cộng', 'Public domain': 'Phạm vi công cộng', 'Free to read': 'Đọc miễn phí, có bản quyền' },
+      areas: { poses: 'Tư thế', ashtanga: 'Ashtanga', yin: 'Yin', sequencing: 'Cách soạn bài', safety: 'An toàn', philosophy: 'Triết lý', meditation: 'Thiền và Pali', vietnamese: 'Tiếng Việt', anatomy: 'Giải phẫu', own: 'Do ứng dụng viết' },
+      licence: { 'CC BY-SA 4.0': 'Creative Commons BY-SA 4.0', 'CC BY-NC-SA 4.0': 'Creative Commons BY-NC-SA 4.0', CC0: 'CC0, phạm vi công cộng', 'Public domain': 'Phạm vi công cộng', 'Free to read': 'Đọc miễn phí, có bản quyền', Book: 'Sách' },
       open: 'Mở', forPose: 'Tư thế này dựa trên', cuesOwn: 'Các câu cue, biến thể, lời nhắc an toàn và tiếng Việt do ứng dụng viết, đã đối chiếu với các nguồn trên.', all: 'Xem tất cả nguồn',
-      quoteFrom: 'Trích từ', wiki: 'Bài trên Wikipedia',
+      quoteFrom: 'Trích từ', described: 'Mô tả trong', onSite: 'Trang về tư thế này',
     },
     home: {
       morning: 'Chào buổi sáng', afternoon: 'Chào buổi chiều', evening: 'Chào buổi tối',
@@ -235,10 +235,10 @@ export const STRINGS = {
     nav: { poses: 'Poses', classes: 'Classes', anatomy: 'Anatomy', speech: 'Speech', phrases: 'Phrases' },
     sources: {
       title: 'Sources', lead: 'Where the poses, the philosophy and the anatomy in this app come from, and what was written here.',
-      areas: { poses: 'Poses', ashtanga: 'Ashtanga', yin: 'Yin', sequencing: 'Sequencing', philosophy: 'Philosophy', meditation: 'Meditation and Pali', vietnamese: 'Vietnamese', anatomy: 'Anatomy', own: 'Written for this app' },
-      licence: { 'CC BY-SA 4.0': 'Creative Commons BY-SA 4.0', 'CC BY-NC-SA 4.0': 'Creative Commons BY-NC-SA 4.0', CC0: 'CC0, public domain', 'Public domain': 'Public domain', 'Free to read': 'Free to read, copyrighted' },
+      areas: { poses: 'Poses', ashtanga: 'Ashtanga', yin: 'Yin', sequencing: 'Sequencing', safety: 'Safety', philosophy: 'Philosophy', meditation: 'Meditation and Pali', vietnamese: 'Vietnamese', anatomy: 'Anatomy', own: 'Written for this app' },
+      licence: { 'CC BY-SA 4.0': 'Creative Commons BY-SA 4.0', 'CC BY-NC-SA 4.0': 'Creative Commons BY-NC-SA 4.0', CC0: 'CC0, public domain', 'Public domain': 'Public domain', 'Free to read': 'Free to read, copyrighted', Book: 'Book' },
       open: 'Open', forPose: 'This pose rests on', cuesOwn: 'The cues, modifications, safety lines and Vietnamese were written for this app and checked against the sources above.', all: 'See every source',
-      quoteFrom: 'From', wiki: 'Wikipedia article',
+      quoteFrom: 'From', described: 'Described in', onSite: 'Its page on',
     },
     home: {
       morning: 'Good morning', afternoon: 'Good afternoon', evening: 'Good evening',

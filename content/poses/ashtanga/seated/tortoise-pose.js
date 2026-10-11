@@ -1,6 +1,5 @@
 export const tortoisePose = {
   id: 'tortoise-pose',
-  wiki: 'Kurmasana',
   styles: ['ashtanga'],
   family: 'forward-fold',
   level: 'strong',
@@ -57,4 +56,8 @@ export const tortoisePose = {
   joints: ['hip-joint', 'lumbar-spine', 'shoulder-joint', 'knee'],
   transitionsTo: ['embryo-pose'],
   figure: 'tortoise-pose',
+  refs: [
+    { source: 'hyp', ref: '1.24', url: 'https://sacred-texts.com/hin/hyp/hyp03.htm' },
+    { source: 'gheranda', ref: '2.32', url: 'https://archive.org/details/in.ernet.dli.2015.36514' },
+  ],
 }

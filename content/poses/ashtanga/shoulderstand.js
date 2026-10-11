@@ -1,6 +1,5 @@
 export const shoulderstand = {
   id: 'shoulderstand',
-  wiki: 'Sarvangasana',
   styles: ['vinyasa', 'ashtanga'],
   family: 'inversion',
   level: 'strong',

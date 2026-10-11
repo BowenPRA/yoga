@@ -1,6 +1,5 @@
 export const saddle = {
   id: 'saddle',
-  wiki: 'Virasana',
   styles: ['yin'],
   family: 'backbend',
   level: 'strong',
@@ -49,4 +48,7 @@ export const saddle = {
   joints: ['knee', 'ankle', 'lumbar-spine', 'sacrum'],
   transitionsTo: ['caterpillar', 'savasana'],
   figure: 'saddle',
+  refs: [
+    { source: 'yinyoga', ref: 'Saddle', url: 'https://yinyoga.com/yinsights/saddle/' },
+  ],
 }

@@ -1,6 +1,5 @@
 export const locustPose = {
   id: 'locust-pose',
-  wiki: 'Salabhasana',
   styles: ['vinyasa'],
   family: 'backbend',
   level: 'moderate',
@@ -40,4 +39,7 @@ export const locustPose = {
   transitionsTo: ['bow-pose', 'child-pose', 'downward-dog'],
   counterPoses: ['child-pose'],
   figure: 'locust-pose',
+  refs: [
+    { source: 'gheranda', ref: '2.39', url: 'https://archive.org/details/in.ernet.dli.2015.36514' },
+  ],
 }

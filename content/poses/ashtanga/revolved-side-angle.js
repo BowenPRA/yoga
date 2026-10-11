@@ -1,6 +1,5 @@
 export const revolvedSideAngle = {
   id: 'revolved-side-angle',
-  wiki: 'Utthita_Parshvakonasana',
   styles: ['vinyasa', 'ashtanga'],
   family: 'twist',
   level: 'strong',

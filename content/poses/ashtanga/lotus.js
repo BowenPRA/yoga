@@ -1,6 +1,5 @@
 export const lotus = {
   id: 'lotus',
-  wiki: 'Lotus_position',
   styles: ['vinyasa', 'ashtanga'],
   family: 'seated',
   level: 'strong',
@@ -54,4 +53,8 @@ export const lotus = {
   joints: ['hip-joint', 'knee', 'ankle', 'sit-bones'],
   transitionsTo: ['uplifting-pose'],
   figure: 'lotus',
+  refs: [
+    { source: 'hyp', ref: '1.46–50', url: 'https://sacred-texts.com/hin/hyp/hyp03.htm' },
+    { source: 'gheranda', ref: '2.8', url: 'https://archive.org/details/in.ernet.dli.2015.36514' },
+  ],
 }

@@ -1,6 +1,5 @@
 export const chairPose = {
   id: 'chair-pose',
-  wiki: 'Utkatasana',
   styles: ['vinyasa', 'ashtanga'],
   family: 'standing',
   level: 'moderate',
@@ -59,4 +58,7 @@ export const chairPose = {
   joints: ['knee', 'ankle', 'hip-joint', 'shoulder-joint'],
   transitionsTo: ['standing-forward-fold', 'warrior-1'],
   figure: 'chair-pose',
+  refs: [
+    { source: 'gheranda', ref: '2.27', url: 'https://archive.org/details/in.ernet.dli.2015.36514' },
+  ],
 }

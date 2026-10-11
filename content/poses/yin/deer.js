@@ -45,4 +45,7 @@ export const deer = {
   joints: ['hip-joint', 'knee'],
   transitionsTo: ['reclined-twist', 'shoelace'],
   figure: 'deer',
+  refs: [
+    { source: 'yinyoga', ref: 'Deer', url: 'https://yinyoga.com/yinsights/deer/' },
+  ],
 }

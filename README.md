@@ -215,18 +215,23 @@ built on the phone, with no network:
 
 ## Sources
 
-`content/sources.js` is the registry of where the content comes from
-(Wikipedia's list of asanas and one article per pose, named in each pose
-file's `wiki`; the Ashtanga and Yin references; the public-domain Yoga
-Sutras, Hatha Yoga Pradipika and Bhagavad Gita translations and the CC0
-SuttaCentral texts the thoughts quote; OpenStax and Wikimedia Commons for
-the anatomy; Vietnamese Wikipedia for the Buddhist bridges), each with its
-licence and a bilingual note, and an `own` entry that says plainly what
-was written for the app. The Sources page (`#/sources`, from Settings and
-from the foot of a pose or a plan) shows it by area; a pose page lists what
-it rests on (`sourcesFor`). `docs/SOURCES.md` is the same list for people
-reading the repo. The checker rejects unknown licences, areas and source
-ids, and warns about a pose with no `wiki` title.
+`content/sources.js` is the registry of where the content comes from: the
+classical texts (Hatha Yoga Pradipika, Gheranda Samhita, in public-domain
+translations) that first describe a pose, cited by verse in the pose file's
+`refs`; *Light on Yoga* and the Yoga Journal pose library for the modern
+poses; the Sharath Yoga Centre and AshtangaYoga.info for the series; Bernie
+Clark's yinyoga.com, one page per Yin pose in `refs`; Sequence Wiz and
+Mark Stephens for sequencing; the NIH's NCCIH page for safety; the Yoga
+Sutras, Gita and SuttaCentral texts the thoughts quote, with the
+Monier-Williams and PTS dictionaries; the Vietnam Buddhist Sangha's
+dictionary for the Sino-Vietnamese bridges on the concept cards; OpenStax
+and Gray's Anatomy for the anatomy. Each entry has its licence and a
+bilingual note, and an `own` entry says plainly what was written for the
+app. The Sources page (`#/sources`, from Settings and from the foot of a
+pose or a plan) shows it by area; a pose page lists what it rests on
+(`sourcesFor`). `docs/SOURCES.md` is the same list for people reading the
+repo. The checker rejects unknown licences, areas and source ids, and a
+`ref` that names no source.
 
 ## Deploy
 

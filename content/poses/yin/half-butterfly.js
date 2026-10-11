@@ -1,6 +1,5 @@
 export const halfButterfly = {
   id: 'half-butterfly',
-  wiki: 'Paschimottanasana',
   styles: ['yin'],
   family: 'forward-fold',
   level: 'gentle',
@@ -49,4 +48,7 @@ export const halfButterfly = {
   joints: ['lumbar-spine', 'hip-joint', 'knee'],
   transitionsTo: ['butterfly', 'caterpillar'],
   figure: 'half-butterfly',
+  refs: [
+    { source: 'yinyoga', ref: 'Half Butterfly', url: 'https://yinyoga.com/yinsights/half-butterfly/' },
+  ],
 }
