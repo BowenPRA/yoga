@@ -52,7 +52,7 @@ export const THEMES = [
   {
     id: 'ys-1-33', source: 'yoga-sutras', ref: 'Yoga Sutras 1.33', lang: 'sa',
     term: 'maitrī, karuṇā, muditā, upekṣā', say: 'MY-tree, kuh-roo-NAH, moo-dee-TAH, oo-PAYK-shah',
-    quote: { en: 'By sympathy with the happy, compassion for the sorrowful, delight in the holy, disregard of the unholy, the psychic nature moves to gracious peace.', vi: 'Vui với người hạnh phúc, thương người đau khổ, mừng cho người tốt, bình thản trước người xấu: tâm trở nên an hoà.' },
+    quote: { en: 'By sympathy with the happy, compassion for the sorrowful, delight in the holy, disregard of the unholy, the psychic nature moves to gracious peace.', vi: 'Vui với người hạnh phúc, thương người đau khổ, mừng cho người thiện, buông xả trước điều bất thiện: tâm trở nên an hoà.' },
     meaning: { en: 'The four attitudes she already knows as tứ vô lượng tâm: từ, bi, hỷ, xả.', vi: 'Bốn tâm thái bạn đã biết là tứ vô lượng tâm: từ, bi, hỷ, xả.' },
     inClass: { en: 'Bring a little kindness to the person on the mat next to you, and to yourself.', vi: 'Mang một chút tử tế đến người tập bên cạnh bạn, và đến chính bạn.' },
     goals: ['calm', 'meditation'],
@@ -61,7 +61,7 @@ export const THEMES = [
     id: 'ys-1-34', source: 'yoga-sutras', ref: 'Yoga Sutras 1.34', lang: 'sa',
     term: 'prāṇa', say: 'PRAH-nuh',
     quote: { en: 'Or peace may be reached by the even sending forth and control of the life-breath.', vi: 'Hoặc sự an tĩnh có thể đến nhờ thở ra đều đặn và làm chủ hơi thở.' },
-    inClass: { en: 'Make the exhale long and even, and let the mind follow the breath.', vi: 'Thở ra dài và đều, rồi để tâm theo hơi thở.' },
+    inClass: { en: 'Make the exhale long and even, and let the mind follow the breath.', vi: 'Thở ra thật dài và đều, rồi để tâm đi theo hơi thở.' },
     goals: ['breath', 'calm'],
   },
   {
@@ -84,22 +84,22 @@ export const THEMES = [
   {
     id: 'hyp-1-66', source: 'hyp', ref: 'Hatha Yoga Pradipika 1.66 (Sinh’s numbering; 1.64 in most editions)', lang: 'sa',
     term: 'haṭha', say: 'HUH-tuh',
-    quote: { en: 'Whether young, old or too old, sick or lean, one who discards laziness, gets success if he practises Yoga.', vi: 'Dù trẻ, già hay rất già, ốm yếu hay gầy gò, ai bỏ được sự lười biếng sẽ thành công nếu chuyên cần tập yoga.' },
-    inClass: { en: 'It doesn’t matter how old you are or how stiff you feel. What matters is that you came.', vi: 'Không quan trọng bạn bao nhiêu tuổi hay cứng đến đâu. Quan trọng là bạn đã đến.' },
+    quote: { en: 'Whether young, old or too old, sick or lean, one who discards laziness, gets success if he practises Yoga.', vi: 'Dù trẻ, già hay rất già, ốm yếu hay gầy gò, ai bỏ được sự lười biếng đều sẽ thành công nếu chuyên cần tập yoga.' },
+    inClass: { en: 'It doesn’t matter how old you are or how stiff you feel. What matters is that you came.', vi: 'Không quan trọng bạn bao nhiêu tuổi hay người cứng đến đâu. Quan trọng là bạn đã đến đây.' },
     goals: ['energy', 'legs', 'flexibility'], styles: ['vinyasa'],
   },
   {
     id: 'hyp-2-2', source: 'hyp', ref: 'Hatha Yoga Pradipika 2.2', lang: 'sa',
     term: 'prāṇāyāma', say: 'PRAH-nah-YAH-muh',
-    quote: { en: 'Respiration being disturbed, the mind becomes disturbed. By restraining respiration, the Yogî gets steadiness of mind.', vi: 'Hơi thở rối thì tâm rối. Làm chủ được hơi thở, người tập yoga có được sự vững vàng của tâm.' },
-    inClass: { en: 'When the breath is steady, the mind is steady. If you lose the breath, you’ve gone too far.', vi: 'Khi hơi thở đều, tâm sẽ đều. Nếu mất hơi thở, bạn đã đi quá xa.' },
+    quote: { en: 'Respiration being disturbed, the mind becomes disturbed. By restraining respiration, the Yogî gets steadiness of mind.', vi: 'Hơi thở rối thì tâm rối. Làm chủ được hơi thở, người tập yoga có được tâm vững vàng.' },
+    inClass: { en: 'When the breath is steady, the mind is steady. If you lose the breath, you’ve gone too far.', vi: 'Khi hơi thở đều, tâm cũng đều. Nếu bạn bị hụt hơi, nghĩa là đã đi quá xa.' },
     goals: ['breath', 'core', 'energy'],
   },
   {
     id: 'gita-2-47', source: 'gita', ref: 'Bhagavad Gita 2.47', lang: 'sa',
     term: 'karma-yoga', say: 'KAR-muh YOH-guh',
     quote: { en: 'Your business is with action alone; not by any means with fruit.', vi: 'Việc của bạn là hành động, không phải là kết quả.' },
-    inClass: { en: 'Do the pose for the doing, not for how it looks. The result is not your business today.', vi: 'Tập tư thế vì chính việc tập, không phải vì hình dáng. Hôm nay, kết quả không phải việc của bạn.' },
+    inClass: { en: 'Do the pose for the doing, not for how it looks. The result is not your business today.', vi: 'Tập tư thế vì chính việc tập, không phải vì dáng tư thế trông thế nào. Hôm nay, kết quả không phải việc của bạn.' },
     goals: ['inversions', 'core', 'energy', 'balance'],
   },
   {
@@ -123,7 +123,7 @@ export const THEMES = [
     term: 'sabbe sattā bhavantu sukhitattā', say: 'SUB-bay SUT-tah buh-VUN-too soo-kee-TUT-tah',
     quote: { en: 'May all beings be happy!', vi: 'Nguyện cho tất cả chúng sinh được an vui.' },
     meaning: { en: 'Pali: Sabbasattā bhavantu sukhitattā. The line Vietnamese Buddhists know as a wish of từ, loving-kindness.', vi: 'Pali: Sabbasattā bhavantu sukhitattā. Câu mà người Phật tử Việt biết như một lời nguyện của tâm từ.' },
-    inClass: { en: 'As we close, send a little of this ease to everyone in the room, and then to everyone outside it.', vi: 'Khi kết thúc, hãy gửi một chút sự an ổn này đến mọi người trong phòng, rồi đến mọi người ngoài kia.' },
+    inClass: { en: 'As we close, send a little of this ease to everyone in the room, and then to everyone outside it.', vi: 'Trước khi kết thúc, hãy gửi một chút an ổn này đến mọi người trong phòng, rồi đến mọi người ngoài kia.' },
     goals: ['calm', 'meditation', 'student'],
   },
 ]

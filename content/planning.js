@@ -44,7 +44,7 @@ export const GOALS = [
     lengthening: ['hamstrings', 'calves'],
     working: [],
     peak: ['standing-forward-fold', 'pyramid-pose', 'wide-legged-fold', 'half-splits', 'seated-forward-fold', 'janu-sirsasana'],
-    theme: { en: 'Today we work slowly into the backs of the legs. Bend your knees as much as you need.', vi: 'Hôm nay chúng ta từ từ đi vào mặt sau chân. Chùng gối bao nhiêu tuỳ cần.' },
+    theme: { en: 'Today we work slowly into the backs of the legs. Bend your knees as much as you need.', vi: 'Hôm nay chúng ta từ từ đi vào mặt sau chân. Cứ chùng gối, bao nhiêu cũng được.' },
   },
   {
     id: 'backbends',
@@ -55,7 +55,7 @@ export const GOALS = [
     lengthening: ['pectoralis-major', 'pectoralis-minor', 'rectus-abdominis', 'iliopsoas'],
     working: ['erector-spinae', 'gluteus-maximus'],
     peak: ['camel-pose', 'bow-pose', 'bridge-pose', 'dancer-pose', 'wild-thing', 'wheel-pose', 'upward-dog'],
-    theme: { en: 'Today we open across the front of the body and lift the heart. Keep the lower back long and easy.', vi: 'Hôm nay chúng ta mở phía trước cơ thể và nâng tim lên. Giữ lưng dưới dài và thoải mái.' },
+    theme: { en: 'Today we open across the front of the body and lift the heart. Keep the lower back long and easy.', vi: 'Hôm nay chúng ta mở mặt trước cơ thể và nâng ngực lên. Giữ lưng dưới dài và thoải mái.' },
   },
   {
     id: 'shoulders',
@@ -66,7 +66,7 @@ export const GOALS = [
     lengthening: ['trapezius', 'levator-scapulae', 'rhomboids', 'deltoids', 'latissimus-dorsi', 'teres-major', 'pectoralis-major', 'pectoralis-minor'],
     working: ['serratus-anterior', 'rotator-cuff', 'rhomboids'],
     peak: ['puppy-pose', 'thread-the-needle', 'eagle-pose', 'cow-face-pose', 'dolphin-pose', 'melting-heart', 'supported-fish'],
-    theme: { en: 'Today we make space in the shoulders and the neck. Let them stay soft all the way through.', vi: 'Hôm nay chúng ta tạo khoảng trống cho vai và cổ. Để chúng mềm suốt buổi tập.' },
+    theme: { en: 'Today we make space in the shoulders and the neck. Let them stay soft all the way through.', vi: 'Hôm nay chúng ta tạo khoảng trống cho vai và cổ. Giữ vai cổ mềm suốt buổi tập.' },
   },
   {
     id: 'spine',
@@ -88,7 +88,7 @@ export const GOALS = [
     lengthening: [],
     working: ['rectus-abdominis', 'transversus-abdominis', 'external-oblique', 'internal-oblique', 'serratus-anterior', 'iliopsoas'],
     peak: ['boat-pose', 'plank', 'side-plank', 'forearm-plank', 'crow-pose', 'chair-pose'],
-    theme: { en: 'Today we build heat and steadiness through the centre of the body. Keep breathing: if the breath stops, ease off.', vi: 'Hôm nay chúng ta tạo nhiệt và sự vững vàng từ trung tâm cơ thể. Tiếp tục thở: nếu hơi thở ngừng lại, nhẹ bớt đi.' },
+    theme: { en: 'Today we build heat and steadiness through the centre of the body. Keep breathing: if the breath stops, ease off.', vi: 'Hôm nay chúng ta tạo nhiệt và sự vững vàng từ trung tâm cơ thể. Nhớ thở đều: nếu hơi thở ngừng lại, hãy nhẹ bớt.' },
   },
   {
     id: 'balance',
@@ -99,7 +99,7 @@ export const GOALS = [
     lengthening: [],
     working: ['gluteus-medius', 'tibialis-posterior', 'fibularis-longus', 'quadriceps'],
     peak: ['tree-pose', 'warrior-3', 'half-moon', 'dancer-pose', 'eagle-pose', 'standing-hand-to-toe'],
-    theme: { en: 'Today we play with balance. Wobbling is part of it; find one point to look at and breathe.', vi: 'Hôm nay chúng ta chơi với thăng bằng. Lắc lư là một phần của nó; tìm một điểm để nhìn và thở.' },
+    theme: { en: 'Today we play with balance. Wobbling is part of it; find one point to look at and breathe.', vi: 'Hôm nay chúng ta chơi với thăng bằng. Lắc lư cũng là một phần của bài; tìm một điểm để nhìn và thở.' },
   },
   {
     id: 'legs',
@@ -145,7 +145,7 @@ export const GOALS = [
     lengthening: ['hamstrings', 'hip-adductors', 'iliopsoas', 'quadriceps', 'calves'],
     working: [],
     peak: ['half-splits', 'pigeon', 'wide-legged-fold', 'bound-angle', 'low-lunge', 'reclined-hand-to-toe'],
-    theme: { en: 'Today we stretch slowly and stay a little longer. Go to where you feel it, not past it.', vi: 'Hôm nay chúng ta kéo giãn chậm và ở lại lâu hơn một chút. Đi đến nơi bạn cảm nhận được, đừng vượt quá.' },
+    theme: { en: 'Today we stretch slowly and stay a little longer. Go to where you feel it, not past it.', vi: 'Hôm nay chúng ta kéo giãn chậm và ở lại lâu hơn một chút. Đi đến chỗ bạn cảm nhận được, đừng vượt quá.' },
   },
   {
     id: 'inversions',
@@ -157,7 +157,7 @@ export const GOALS = [
     working: ['deltoids', 'serratus-anterior', 'triceps-brachii', 'transversus-abdominis'],
     peak: ['dolphin-pose', 'crow-pose', 'headstand', 'handstand', 'shoulderstand', 'forearm-plank'],
     level: 'strong',
-    theme: { en: 'Today we go upside down. We build it step by step, and the wall is always there.', vi: 'Hôm nay chúng ta lộn ngược. Chúng ta xây từng bước một, và bức tường luôn ở đó.' },
+    theme: { en: 'Today we go upside down. We build it step by step, and the wall is always there.', vi: 'Hôm nay chúng ta tập đảo ngược. Xây từng bước một, và bức tường luôn ở đó.' },
   },
   {
     id: 'feet',
@@ -193,7 +193,7 @@ export const GOALS = [
     peak: ['hero-pose', 'bound-angle', 'lotus', 'butterfly', 'child-pose'],
     meditation: true,
     level: 'gentle',
-    theme: { en: 'Today we move only enough to sit still. The practice is the sitting at the end.', vi: 'Hôm nay chúng ta chỉ chuyển động vừa đủ để ngồi yên. Buổi tập chính là lúc ngồi thiền cuối giờ.' },
+    theme: { en: 'Today we move only enough to sit still. The practice is the sitting at the end.', vi: 'Hôm nay chúng ta chỉ chuyển động vừa đủ để ngồi yên được. Phần chính của buổi tập là lúc ngồi thiền cuối giờ.' },
   },
 ]
 
@@ -266,7 +266,7 @@ export const CAUTIONS = [
   },
   {
     id: 'hip',
-    label: { en: 'Hips (pain or a replacement)', vi: 'Hông đau hoặc đã thay khớp' },
+    label: { en: 'Hips (pain or a replacement)', vi: 'Hông đau hoặc đã thay khớp háng' },
     keywords: ['hip pain', 'hip replacement', 'hip injury', 'bad hip', 'sore hip', 'đau hông', 'dau hong', 'đau háng', 'thay khớp háng', 'chấn thương hông'],
     match: /\bhip\b|\bhips\b/i,
     terms: ['hip-joint', 'iliopsoas', 'piriformis', 'gluteus-medius', 'hip-adductors'],
