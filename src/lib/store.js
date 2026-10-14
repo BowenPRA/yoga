@@ -137,3 +137,27 @@ export const suggestions = {
     }
   },
 }
+
+// ── practice (wave2-practice) ────────────────────────────────────────────
+/**
+ * "Practise this pose": a pose is practised or not, and when, never how
+ * well. Rows `practice:<poseId>` in the `progress` store, so the backup
+ * keeps them; `progress.lessons()` and `progress.terms()` ignore them.
+ */
+export const practice = {
+  get: (poseId) => store.get('progress', `practice:${poseId}`),
+  /** Mark a pose practised now; the first time is kept as `first`. */
+  async done(poseId) {
+    const id = `practice:${poseId}`
+    const row = (await store.get('progress', id)) || { id }
+    const now = Date.now()
+    const next = { ...row, first: row.first || now, done: now, at: now }
+    await store.put('progress', next)
+    return next
+  },
+  /** Every practised pose: { poseId: row }. */
+  async all() {
+    const rows = await store.all('progress')
+    return Object.fromEntries(rows.filter((r) => r.id.startsWith('practice:')).map((r) => [r.id.slice(9), r]))
+  },
+}
