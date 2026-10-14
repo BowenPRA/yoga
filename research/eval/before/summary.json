@@ -1,0 +1,56 @@
+{
+ "coach": {
+  "cases": 15,
+  "ok": 15,
+  "ms": {
+   "mean": 5644,
+   "median": 5110,
+   "p90": 7287,
+   "max": 8173
+  },
+  "tokensPerCall": {
+   "prompt": 540,
+   "output": 479,
+   "thinking": 0,
+   "total": 1019
+  },
+  "model": "gemini-3.8-flash",
+  "ranThisTime": 15
+ },
+ "translate": {
+  "cases": 10,
+  "ok": 10,
+  "ms": {
+   "mean": 2859,
+   "median": 2821,
+   "p90": 3725,
+   "max": 3725
+  },
+  "tokensPerCall": {
+   "prompt": 560,
+   "output": 203,
+   "thinking": 0,
+   "total": 763
+  },
+  "model": "gemini-3.8-flash",
+  "ranThisTime": 10
+ },
+ "plan": {
+  "cases": 7,
+  "ok": 7,
+  "ms": {
+   "mean": 7571,
+   "median": 7632,
+   "p90": 8931,
+   "max": 8931
+  },
+  "tokensPerCall": {
+   "prompt": 3307,
+   "output": 747,
+   "thinking": 0,
+   "total": 4054
+  },
+  "model": "gemini-3.8-flash",
+  "ranThisTime": 7
+ }
+}

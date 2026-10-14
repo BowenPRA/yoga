@@ -1,0 +1,60 @@
+{
+ "id": "c14-good-warrior1",
+ "endpoint": "coach",
+ "input": {
+  "cue": "Root down through your back heel and lengthen through the crown of your head.",
+  "context": "Warrior I, Vinyasa"
+ },
+ "status": 200,
+ "ms": 4862,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 4857,
+  "usage": {
+   "promptTokenCount": 536,
+   "candidatesTokenCount": 448,
+   "totalTokenCount": 984,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 536
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "natural": "Root down through your back heel and lengthen through the crown of your head.",
+  "meaning_vi": "Bám chắc gót chân sau xuống thảm và kéo dài đỉnh đầu lên cao.",
+  "changes": [
+   {
+    "from": "Root down through your back heel",
+    "to": "Root down through your back heel",
+    "why_vi": "Cách dùng cụm 'root down through' của bạn đã rất tự nhiên và chuẩn xác trong ngữ cảnh Warrior I, không cần chỉnh sửa gì."
+   },
+   {
+    "from": "lengthen through the crown of your head",
+    "to": "lengthen through the crown of your head",
+    "why_vi": "Cụm 'crown of your head' là cách diễn đạt chuẩn của giáo viên bản xứ để chỉ đỉnh đầu khi tạo cảm giác vươn dài cột sống."
+   }
+  ],
+  "pronunciation": [
+   {
+    "word": "lengthen",
+    "say": "LENGK-thuhn",
+    "tip_vi": "Chú ý âm 'th' cần đặt đầu lưỡi giữa hai hàm răng và thổi nhẹ, tránh phát âm thành âm 't' hay 's'."
+   },
+   {
+    "word": "heel",
+    "say": "HEEL",
+    "tip_vi": "Đây là âm 'ee' dài, cần kéo dài nguyên âm và kết thúc bằng âm 'l' nhẹ ở vòm họng, tránh đọc cộc lốc như 'hil'."
+   },
+   {
+    "word": "crown",
+    "say": "KROWN",
+    "tip_vi": "Nhớ phát âm rõ tổ hợp phụ âm 'kr' ở đầu từ và giữ nguyên âm đôi 'ow' mượt mà."
+   }
+  ],
+  "praise_vi": "Câu dẫn của bạn quá xuất sắc, chuẩn xác cả về từ vựng yoga bản xứ lẫn nhịp điệu hướng dẫn định tuyến."
+ }
+}

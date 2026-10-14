@@ -1,0 +1,70 @@
+{
+ "id": "c07-past-ed",
+ "endpoint": "coach",
+ "input": {
+  "cue": "Last week we practice hip opening, today we work on the hamstring and the back of leg.",
+  "context": "Talking to the class at the start"
+ },
+ "status": 200,
+ "ms": 5394,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 5214,
+  "usage": {
+   "promptTokenCount": 541,
+   "candidatesTokenCount": 573,
+   "totalTokenCount": 1114,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 541
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "natural": "Last week we practiced hip openers, and today we'll focus on the hamstrings and the back of the legs.",
+  "meaning_vi": "Tuần trước chúng ta đã tập mở hông, còn hôm nay chúng ta sẽ tập trung vào cơ gân kheo và mặt sau của đôi chân.",
+  "changes": [
+   {
+    "from": "we practice",
+    "to": "we practiced",
+    "why_vi": "Vì có 'last week' chỉ thời gian trong quá khứ, bạn cần chia động từ ở thì quá khứ đơn 'practiced'."
+   },
+   {
+    "from": "hip opening",
+    "to": "hip openers",
+    "why_vi": "Giáo viên bản xứ thường dùng danh từ số nhiều 'hip openers' để chỉ chuỗi bài tập mở hông nghe tự nhiên hơn."
+   },
+   {
+    "from": "today we work on",
+    "to": "today we'll focus on",
+    "why_vi": "Dùng 'we will' (viết tắt là we'll) cho kế hoạch của buổi tập hôm nay, và 'focus on' nghe chuyên nghiệp, êm tai hơn 'work on'."
+   },
+   {
+    "from": "the hamstring and the back of leg",
+    "to": "the hamstrings and the back of the legs",
+    "why_vi": "Nhớ thêm đuôi số nhiều '-s' cho 'hamstrings' và 'legs' vì chúng ta luôn tập cho cả hai chân."
+   }
+  ],
+  "pronunciation": [
+   {
+    "word": "practiced",
+    "say": "PRAK-tist",
+    "tip_vi": "Đuôi '-ed' ở đây phát âm là âm /t/, bạn nhớ bật âm đuôi dứt khoát nhé."
+   },
+   {
+    "word": "hamstrings",
+    "say": "HAM-stringz",
+    "tip_vi": "Chú ý cụm phụ âm /str/ và đừng quên âm /z/ ở cuối từ."
+   },
+   {
+    "word": "focus",
+    "say": "FOH-kuhs",
+    "tip_vi": "Nhấn trọng âm vào âm tiết đầu tiên và nhớ bật nhẹ âm /s/ ở cuối."
+   }
+  ],
+  "praise_vi": "Bạn mở đầu buổi tập rất rõ ràng, giúp học viên nắm bắt ngay được chủ đề và định hướng của bài học hôm nay."
+ }
+}

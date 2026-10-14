@@ -1,0 +1,42 @@
+{
+ "id": "t05-ask-injury",
+ "endpoint": "translate",
+ "input": {
+  "text": "Bạn có bị đau ở đâu không? Hôm nay đầu gối của bạn thế nào rồi?"
+ },
+ "status": 200,
+ "ms": 2650,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 2645,
+  "usage": {
+   "promptTokenCount": 556,
+   "candidatesTokenCount": 166,
+   "totalTokenCount": 722,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 556
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "heard": "Bạn có bị đau ở đâu không? Hôm nay đầu gối của bạn thế nào rồi?",
+  "lang": "vi",
+  "english": "Do you have any pain anywhere? How is your knee feeling today?",
+  "meaning_vi": "Bạn có bị đau ở đâu không? Hôm nay đầu gối bạn thấy thế nào rồi?",
+  "phrases": [
+   {
+    "en": "pain anywhere",
+    "vi": "đau ở đâu đó"
+   },
+   {
+    "en": "How is your knee feeling today?",
+    "vi": "Hôm nay đầu gối của bạn thấy thế nào rồi?"
+   }
+  ],
+  "note_vi": ""
+ }
+}

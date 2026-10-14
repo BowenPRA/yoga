@@ -1,0 +1,65 @@
+{
+ "id": "c12-savasana",
+ "endpoint": "coach",
+ "input": {
+  "cue": "Now you lie down, close the eye, relax all body, don't sleep.",
+  "context": "Savasana, the end of class"
+ },
+ "status": 200,
+ "ms": 5118,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 5112,
+  "usage": {
+   "promptTokenCount": 541,
+   "candidatesTokenCount": 527,
+   "totalTokenCount": 1068,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 541
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "natural": "Lie down, close your eyes, relax your whole body, try to stay awake.",
+  "meaning_vi": "Hãy nằm xuống, nhắm mắt lại, thư giãn toàn bộ cơ thể và cố gắng giữ tỉnh táo nhé.",
+  "changes": [
+   {
+    "from": "close the eye",
+    "to": "close your eyes",
+    "why_vi": "Trong tiếng Anh khi nói về bộ phận cơ thể của học viên, bạn nên dùng tính từ sở hữu 'your' thay vì 'the', và nhớ thêm đuôi số nhiều '-s' cho 'eyes' nhé."
+   },
+   {
+    "from": "relax all body",
+    "to": "relax your whole body",
+    "why_vi": "Người bản xứ thường dùng cụm 'your whole body' hoặc 'your entire body' để chỉ toàn bộ cơ thể thay vì ghép từ 'all body'."
+   },
+   {
+    "from": "don't sleep",
+    "to": "try to stay awake",
+    "why_vi": "Trong Savasana, thay vì ra lệnh cấm 'don't sleep' nghe hơi cứng, bạn nên dùng cách nói tích cực và êm dịu hơn như 'try to stay awake' (cố gắng giữ tỉnh thức)."
+   }
+  ],
+  "pronunciation": [
+   {
+    "word": "eyes",
+    "say": "EYEZ",
+    "tip_vi": "Nhớ phát âm âm đuôi /z/ rõ ràng ở cuối từ, người Việt mình rất hay quên bật âm này."
+   },
+   {
+    "word": "whole",
+    "say": "HOHL",
+    "tip_vi": "Âm đầu là /h/ (chữ 'w' bị câm), và nhớ cong nhẹ đầu lưỡi ở cuối từ cho âm /l/ nhé."
+   },
+   {
+    "word": "awake",
+    "say": "uh-WAYK",
+    "tip_vi": "Nhấn trọng âm vào âm tiết thứ hai, và nhớ bật âm /k/ nhẹ ở cuối từ."
+   }
+  ],
+  "praise_vi": "Câu dẫn của bạn đi đúng trình tự thư giãn rất chuẩn cho Savasana, từ tư thế nằm, khép mắt đến nhắc nhở giữ tỉnh thức."
+ }
+}

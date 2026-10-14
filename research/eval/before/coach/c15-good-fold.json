@@ -1,0 +1,60 @@
+{
+ "id": "c15-good-fold",
+ "endpoint": "coach",
+ "input": {
+  "cue": "On your next exhale, fold forward from your hips and let your head hang heavy.",
+  "context": "Standing Forward Fold, Vinyasa"
+ },
+ "status": 200,
+ "ms": 4738,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 4726,
+  "usage": {
+   "promptTokenCount": 539,
+   "candidatesTokenCount": 421,
+   "totalTokenCount": 960,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 539
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "natural": "On your exhale, fold forward from the hips, letting your head hang heavy.",
+  "meaning_vi": "Thở ra, gập người về phía trước từ hông, thả lỏng cho đầu rơi tự nhiên.",
+  "changes": [
+   {
+    "from": "On your next exhale",
+    "to": "On your exhale",
+    "why_vi": "Bỏ bớt từ 'next' giúp câu ngắn gọn và nhịp nhàng hơn với hơi thở khi đang dẫn lớp Vinyasa."
+   },
+   {
+    "from": "from your hips",
+    "to": "from the hips",
+    "why_vi": "Giáo viên bản xứ thường dùng 'the hips' thay vì lặp lại 'your' quá nhiều lần trong một câu dẫn."
+   },
+   {
+    "from": "and let your head hang heavy",
+    "to": "letting your head hang heavy",
+    "why_vi": "Dùng dạng đuôi '-ing' giúp câu trôi chảy và tạo cảm giác động tác diễn ra mượt mà, tự nhiên hơn."
+   }
+  ],
+  "pronunciation": [
+   {
+    "word": "exhale",
+    "say": "EKS-hayl",
+    "tip_vi": "Chú ý âm 'ks' ở âm tiết đầu và nhấn mạnh vào âm 'EKS', kết thúc bằng âm 'l' nhẹ."
+   },
+   {
+    "word": "heavy",
+    "say": "HEV-ee",
+    "tip_vi": "Âm đầu là 'h' bật hơi nhẹ và nguyên âm ngắn 'e', tránh đọc kéo dài thành âm 'i'."
+   }
+  ],
+  "praise_vi": "Câu của bạn vốn dĩ đã rất chuẩn xác và mang hình ảnh gợi mở rất đẹp cho học viên."
+ }
+}

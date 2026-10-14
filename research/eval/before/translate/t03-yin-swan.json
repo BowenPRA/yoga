@@ -1,0 +1,46 @@
+{
+ "id": "t03-yin-swan",
+ "endpoint": "translate",
+ "input": {
+  "text": "Từ tư thế Em bé, chậm rãi vào tư thế Thiên nga ngủ. Ở yên ba phút, để trọng lượng cơ thể làm việc, không cần cố gắng."
+ },
+ "status": 200,
+ "ms": 2821,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 2740,
+  "usage": {
+   "promptTokenCount": 570,
+   "candidatesTokenCount": 248,
+   "totalTokenCount": 818,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 570
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "heard": "Từ tư thế Em bé, chậm rãi vào tư thế Thiên nga ngủ. Ở yên ba phút, để trọng lượng cơ thể làm việc, không cần cố gắng.",
+  "lang": "vi",
+  "english": "From Child's Pose, slowly ease into Sleeping Swan. Stay still for three minutes, letting the weight of your body do the work, no effort needed.",
+  "meaning_vi": "Từ tư thế Em bé, chậm rãi vào tư thế Thiên nga ngủ. Giữ yên trong ba phút, để sức nặng cơ thể tự làm việc, không cần gắng sức.",
+  "phrases": [
+   {
+    "en": "slowly ease into",
+    "vi": "chậm rãi đi vào tư thế"
+   },
+   {
+    "en": "letting the weight of your body do the work",
+    "vi": "để sức nặng cơ thể tự làm việc"
+   },
+   {
+    "en": "no effort needed",
+    "vi": "không cần gắng sức"
+   }
+  ],
+  "note_vi": ""
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "id": "c09-mixed-sun",
+ "endpoint": "coach",
+ "input": {
+  "cue": "Hít vào, raise the arm lên, thở ra fold down chạm sàn.",
+  "context": "Sun salutation A"
+ },
+ "status": 200,
+ "ms": 5275,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 5259,
+  "usage": {
+   "promptTokenCount": 535,
+   "candidatesTokenCount": 497,
+   "totalTokenCount": 1032,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 535
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "natural": "Inhale, reach your arms up, exhale, fold forward, hands to the mat.",
+  "meaning_vi": "Hít vào, vươn hai tay lên cao, thở ra, gập người về phía trước, hai tay chạm thảm.",
+  "changes": [
+   {
+    "from": "raise the arm lên",
+    "to": "reach your arms up",
+    "why_vi": "Trong tiếng Anh cần thêm số nhiều 'arms' vì bạn đang dùng cả hai tay, và 'reach your arms up' nghe tự nhiên, mang năng lượng vươn dài hơn."
+   },
+   {
+    "from": "fold down",
+    "to": "fold forward",
+    "why_vi": "Trong chuỗi Chào mặt trời, giáo viên bản xứ luôn dùng cụm 'fold forward' để chỉ hành động gập người từ hông thay vì 'fold down'."
+   },
+   {
+    "from": "chạm sàn",
+    "to": "hands to the mat",
+    "why_vi": "Trong lớp yoga, dùng 'hands to the mat' (tay đặt lên thảm) sẽ cụ thể và mang tính hướng dẫn chuẩn xác hơn."
+   }
+  ],
+  "pronunciation": [
+   {
+    "word": "arms",
+    "say": "AHRMZ",
+    "tip_vi": "Chú ý nhớ phát âm âm cuối /z/ cho số nhiều, tránh đọc thành 'am' bị thiếu đuôi."
+   },
+   {
+    "word": "breathe / inhale",
+    "say": "in-HEYL",
+    "tip_vi": "Nhấn trọng âm vào âm tiết thứ hai, phát âm rõ âm 'ey' kéo dài."
+   },
+   {
+    "word": "forward",
+    "say": "FOR-werd",
+    "tip_vi": "Nhấn mạnh âm tiết đầu 'FOR', âm sau lướt nhẹ và nhớ bật âm /d/ ở cuối."
+   }
+  ],
+  "praise_vi": "Bạn đã kết hợp nhịp thở và chuyển động rất nhịp nhàng, đúng chuẩn tinh thần của chuỗi Chào mặt trời!"
+ }
+}

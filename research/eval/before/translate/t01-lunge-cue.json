@@ -1,0 +1,46 @@
+{
+ "id": "t01-lunge-cue",
+ "endpoint": "translate",
+ "input": {
+  "text": "Bước chân phải lên giữa hai tay, gập gối trước, gối thẳng trên cổ chân."
+ },
+ "status": 200,
+ "ms": 2737,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 2648,
+  "usage": {
+   "promptTokenCount": 558,
+   "candidatesTokenCount": 211,
+   "totalTokenCount": 769,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 558
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "heard": "Bước chân phải lên giữa hai tay, gập gối trước, gối thẳng trên cổ chân.",
+  "lang": "vi",
+  "english": "Step your right foot between your hands, bend your front knee, knee directly over your ankle.",
+  "meaning_vi": "Bước chân phải lên giữa hai bàn tay, gập gối trước, gối thẳng hàng ngay trên cổ chân.",
+  "phrases": [
+   {
+    "en": "Step your right foot between your hands",
+    "vi": "bước chân phải lên giữa hai tay"
+   },
+   {
+    "en": "bend your front knee",
+    "vi": "gập gối trước"
+   },
+   {
+    "en": "knee directly over your ankle",
+    "vi": "đầu gối thẳng ngay trên cổ chân"
+   }
+  ],
+  "note_vi": ""
+ }
+}

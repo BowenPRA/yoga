@@ -1,0 +1,46 @@
+{
+ "id": "t07-vipassana",
+ "endpoint": "translate",
+ "input": {
+  "text": "Quan sát hơi thở đi vào và đi ra ở vùng mũi. Nếu tâm đi lang thang, nhẹ nhàng đưa nó trở về."
+ },
+ "status": 200,
+ "ms": 2582,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 2575,
+  "usage": {
+   "promptTokenCount": 563,
+   "candidatesTokenCount": 220,
+   "totalTokenCount": 783,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 563
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "heard": "Quan sát hơi thở đi vào và đi ra ở vùng mũi. Nếu tâm đi lang thang, nhẹ nhàng đưa nó trở về.",
+  "lang": "vi",
+  "english": "Notice the breath moving in and out around the nostrils. If the mind wanders, gently bring it back.",
+  "meaning_vi": "Quan sát hơi thở đi vào và đi ra quanh vùng cánh mũi. Nếu tâm trí xao lãng, hãy nhẹ nhàng đưa nó quay trở lại.",
+  "phrases": [
+   {
+    "en": "moving in and out",
+    "vi": "đi vào và đi ra"
+   },
+   {
+    "en": "If the mind wanders",
+    "vi": "Nếu tâm trí xao lãng"
+   },
+   {
+    "en": "gently bring it back",
+    "vi": "nhẹ nhàng đưa nó quay trở lại"
+   }
+  ],
+  "note_vi": ""
+ }
+}

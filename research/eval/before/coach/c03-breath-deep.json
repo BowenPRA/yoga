@@ -1,0 +1,65 @@
+{
+ "id": "c03-breath-deep",
+ "endpoint": "coach",
+ "input": {
+  "cue": "Breath deep and long, feel the breathe go down to the belly.",
+  "context": "Arriving, the start of class, seated"
+ },
+ "status": 200,
+ "ms": 7268,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 5156,
+  "usage": {
+   "promptTokenCount": 538,
+   "candidatesTokenCount": 508,
+   "totalTokenCount": 1046,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 538
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "natural": "Breathe deeply and slowly, feeling your breath travel down into your belly.",
+  "meaning_vi": "Hít thở sâu và chậm rãi, cảm nhận hơi thở đi sâu xuống tận bụng.",
+  "changes": [
+   {
+    "from": "Breath deep and long",
+    "to": "Breathe deeply and slowly",
+    "why_vi": "Bạn dùng 'breathe' (có chữ e ở cuối) cho động từ, và dùng trạng từ 'deeply' thay vì tính từ 'deep'. Từ 'slowly' nghe tự nhiên và thư thái hơn 'long' khi hướng dẫn thở."
+   },
+   {
+    "from": "the breathe",
+    "to": "your breath",
+    "why_vi": "'Breath' (không có e) mới là danh từ chỉ hơi thở. Giáo viên bản xứ cũng hay dùng 'your breath' thay vì 'the' để tạo cảm giác kết nối cá nhân."
+   },
+   {
+    "from": "go down to the belly",
+    "to": "travel down into your belly",
+    "why_vi": "Dùng 'travel down into' hoặc 'move down into' nghe êm tai và gợi mở cảm giác hơn từ 'go down to'."
+   }
+  ],
+  "pronunciation": [
+   {
+    "word": "breathe",
+    "say": "BREETH",
+    "tip_vi": "Đây là động từ, nguyên âm đọc là 'ee' dài và kết thúc bằng âm 'th' rung nhẹ ở lưỡi."
+   },
+   {
+    "word": "breath",
+    "say": "BRETH",
+    "tip_vi": "Đây là danh từ, nguyên âm đọc là 'e' ngắn và kết thúc bằng âm 'th' không rung (thổi gió)."
+   },
+   {
+    "word": "deeply",
+    "say": "DEEP-lee",
+    "tip_vi": "Chú ý kéo dài âm 'ee' và bật nhẹ âm /p/ trước khi chuyển sang 'lee'."
+   }
+  ],
+  "praise_vi": "Cách bạn dẫn dắt học viên cảm nhận hơi thở đi xuống bụng ngay đầu giờ rất đúng tinh thần lắng dịu của yoga."
+ }
+}

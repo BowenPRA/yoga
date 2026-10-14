@@ -75,6 +75,7 @@ export async function generateJSON({ system, prompt, parts, schema, model = MODE
       ...(thinking ? { thinkingConfig: { thinkingLevel: thinking } } : {}),
     },
   }
+  const t0 = Date.now()
   const r = await fetch(`${API}/models/${model}:generateContent?key=${process.env.GEMINI_API_KEY}`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -83,13 +84,17 @@ export async function generateJSON({ system, prompt, parts, schema, model = MODE
   if (!r.ok) throw new Error(`gemini ${r.status}: ${(await r.text()).slice(0, 200)}`)
   const d = await r.json()
   const text = d?.candidates?.[0]?.content?.parts?.[0]?.text || ''
+  let out
   try {
-    return JSON.parse(text)
+    out = JSON.parse(text)
   } catch {
     const a = text.indexOf('{'), b = text.lastIndexOf('}')
     if (a === -1 || b === -1) throw new Error('Model did not return JSON')
-    return JSON.parse(text.slice(a, b + 1))
+    out = JSON.parse(text.slice(a, b + 1))
   }
+  // research/eval runs the dev server with EVAL_META=1 to record cost and time.
+  if (process.env.EVAL_META === '1') out._meta = { model, ms: Date.now() - t0, usage: d.usageMetadata || null }
+  return out
 }
 
 /**

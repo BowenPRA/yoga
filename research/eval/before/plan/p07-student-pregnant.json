@@ -1,0 +1,117 @@
+{
+ "id": "p07-student-pregnant",
+ "endpoint": "plan",
+ "input": {
+  "request": "A student told me she is five months pregnant and her hips feel tight; she wants to keep practising",
+  "plan": {
+   "mode": "student",
+   "style": "vinyasa",
+   "minutes": 15,
+   "level": "gentle",
+   "goals": [
+    "hips"
+   ],
+   "cautions": [
+    "pregnancy"
+   ],
+   "peak": null,
+   "sections": [
+    {
+     "key": "say",
+     "poses": []
+    },
+    {
+     "key": "practice",
+     "poses": [
+      "malasana",
+      "goddess-pose",
+      "pigeon",
+      "child-pose",
+      "lizard-pose",
+      "bound-angle",
+      "figure-four"
+     ]
+    }
+   ]
+  }
+ },
+ "status": 200,
+ "ms": 8099,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 8088,
+  "usage": {
+   "promptTokenCount": 3249,
+   "candidatesTokenCount": 860,
+   "totalTokenCount": 4109,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 3249
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "title": {
+   "en": "Gentle Hip Opening for Pregnancy",
+   "vi": "Mở hông nhẹ nhàng cho thai kỳ"
+  },
+  "theme": {
+   "en": "Today we focus on creating space and ease in your hips while keeping your belly comfortable. Move gently, never push past your natural boundaries, and let your breath guide your pace.",
+   "vi": "Hôm nay chúng ta sẽ tập trung tạo sự thông thoáng và dễ chịu cho vùng hông, đồng thời giữ cho bụng luôn thoải mái. Hãy di chuyển nhẹ nhàng, đừng ép cơ thể vượt quá giới hạn tự nhiên và để hơi thở dẫn dắt nhịp độ của bạn."
+  },
+  "goals": [
+   "hips",
+   "calm"
+  ],
+  "cautions": [
+   "pregnancy"
+  ],
+  "swaps": [
+   {
+    "out": "pigeon",
+    "in": "low-lunge",
+    "why_vi": "Tư thế bồ câu dễ chèn ép lên bụng bầu và khớp háng khi mang thai tháng thứ năm, đổi sang low lunge rộng chân an toàn hơn."
+   }
+  ],
+  "cues": [
+   {
+    "pose": "malasana",
+    "en": "Step your feet wide and sit your hips down, keeping your spine long.",
+    "vi": "Bước rộng hai chân và hạ hông xuống, giữ cho cột sống của bạn vươn dài."
+   },
+   {
+    "pose": "goddess-pose",
+    "en": "Turn your toes out, bend your knees, and gently open your pelvis.",
+    "vi": "Xoay các ngón chân ra ngoài, chùng gối và nhẹ nhàng mở rộng khung chậu của bạn."
+   },
+   {
+    "pose": "child-pose",
+    "en": "Take your knees wide apart to make plenty of space for your belly.",
+    "vi": "Mở rộng hai đầu gối sang hai bên để chừa nhiều khoảng trống cho bụng của bạn."
+   },
+   {
+    "pose": "bound-angle",
+    "en": "Bring the soles of your feet together and let your knees fall gently open.",
+    "vi": "Áp hai lòng bàn chân vào nhau và để hai đầu gối mở sang hai bên một cách tự nhiên."
+   }
+  ],
+  "toStudent": {
+   "en": "It is wonderful that you want to keep moving, and we will keep everything gentle and spacious for your belly. Because pregnancy hormones soften your ligaments, never push to your maximum flexibility—stay where you feel stable and supported. If you feel any dizziness, pelvic pain, or discomfort, ease out immediately and rest.",
+   "vi": "Thật tuyệt vời khi bạn muốn duy trì tập luyện, chúng ta sẽ giữ mọi động tác nhẹ nhàng và tạo nhiều không gian cho em bé. Do hormone thai kỳ làm các dây chằng mềm ra, bạn đừng ép mình căng giãn tối đa mà hãy dừng lại ở mức thấy vững vàng. Nếu thấy chóng mặt, đau vùng chậu hoặc khó chịu, bạn hãy lập tức thả lỏng và nghỉ ngơi nhé."
+  },
+  "watch": [
+   {
+    "en": "Watch for sensation in the belly of the muscles rather than any pulling or pinching in the pubic bone or groin.",
+    "vi": "Chú ý cảm giác căng nhẹ ở phần cơ thay vì cảm giác giằng kéo hay nhói buốt ở xương mu hoặc khớp háng."
+   },
+   {
+    "en": "Ensure her belly has ample space in forward folds and deep squats, never feeling compressed.",
+    "vi": "Đảm bảo bụng bầu luôn có đủ khoảng trống khi gập người hoặc ngồi xổm, tuyệt đối không bị chèn ép."
+   }
+  ],
+  "note_vi": ""
+ }
+}

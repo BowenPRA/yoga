@@ -1,0 +1,46 @@
+{
+ "id": "t02-sun-breath",
+ "endpoint": "translate",
+ "input": {
+  "text": "Hít vào, vươn hai tay lên cao. Thở ra, gập người về trước, chạm tay xuống sàn."
+ },
+ "status": 200,
+ "ms": 2957,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 2877,
+  "usage": {
+   "promptTokenCount": 564,
+   "candidatesTokenCount": 214,
+   "totalTokenCount": 778,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 564
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "heard": "Hít vào, vươn hai tay lên cao. Thở ra, gập người về trước, chạm tay xuống sàn.",
+  "lang": "vi",
+  "english": "Inhale, reach your arms up. Exhale, fold forward, hands to the mat.",
+  "meaning_vi": "Hít vào, vươn hai tay lên. Thở ra, gập người về phía trước, đặt hai tay xuống thảm.",
+  "phrases": [
+   {
+    "en": "reach your arms up",
+    "vi": "vươn hai tay lên cao"
+   },
+   {
+    "en": "fold forward",
+    "vi": "gập người về phía trước"
+   },
+   {
+    "en": "hands to the mat",
+    "vi": "đặt hai tay xuống thảm"
+   }
+  ],
+  "note_vi": ""
+ }
+}

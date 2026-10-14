@@ -1,0 +1,42 @@
+{
+ "id": "t06-consent",
+ "endpoint": "translate",
+ "input": {
+  "text": "Tôi có thể chạm vào lưng bạn để chỉnh tư thế được không?"
+ },
+ "status": 200,
+ "ms": 2839,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 2831,
+  "usage": {
+   "promptTokenCount": 551,
+   "candidatesTokenCount": 151,
+   "totalTokenCount": 702,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 551
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "heard": "Tôi có thể chạm vào lưng bạn để chỉnh tư thế được không?",
+  "lang": "vi",
+  "english": "May I offer a hands-on adjustment on your back?",
+  "meaning_vi": "Tôi có thể chạm tay để chỉnh lưng cho bạn được không?",
+  "phrases": [
+   {
+    "en": "offer a hands-on adjustment",
+    "vi": "chạm tay để nắn chỉnh tư thế"
+   },
+   {
+    "en": "on your back",
+    "vi": "trên lưng của bạn"
+   }
+  ],
+  "note_vi": ""
+ }
+}

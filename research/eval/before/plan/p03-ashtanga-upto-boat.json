@@ -1,0 +1,153 @@
+{
+ "id": "p03-ashtanga-upto-boat",
+ "endpoint": "plan",
+ "input": {
+  "request": "Ashtanga primary series, 90 minutes, Mysore style, up to Navasana",
+  "plan": {
+   "mode": "class",
+   "style": "ashtanga",
+   "minutes": 90,
+   "level": "moderate",
+   "goals": [],
+   "cautions": [],
+   "peak": null,
+   "sections": [
+    {
+     "key": "arrive",
+     "poses": []
+    },
+    {
+     "key": "sun",
+     "poses": [
+      "sun-salutations"
+     ]
+    },
+    {
+     "key": "standing",
+     "poses": [
+      "big-toe-pose",
+      "hand-under-foot-pose",
+      "triangle",
+      "revolved-triangle",
+      "extended-side-angle",
+      "revolved-side-angle",
+      "wide-legged-fold",
+      "pyramid-pose",
+      "standing-hand-to-toe",
+      "half-bound-lotus-standing",
+      "warrior-2"
+     ]
+    },
+    {
+     "key": "seated",
+     "poses": [
+      "staff-pose",
+      "seated-forward-fold",
+      "upward-plank",
+      "half-bound-lotus-forward-fold",
+      "three-limb-forward-fold",
+      "janu-sirsasana",
+      "marichyasana",
+      "boat-pose"
+     ]
+    },
+    {
+     "key": "finishing",
+     "poses": [
+      "shoulderstand",
+      "plow-pose",
+      "ear-pressure-pose",
+      "lotus-in-shoulderstand",
+      "fish-pose",
+      "extended-leg-pose",
+      "bound-lotus",
+      "lotus",
+      "uplifting-pose"
+     ]
+    },
+    {
+     "key": "rest",
+     "poses": []
+    },
+    {
+     "key": "close",
+     "poses": []
+    }
+   ]
+  }
+ },
+ "status": 200,
+ "ms": 7967,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 7519,
+  "usage": {
+   "promptTokenCount": 3386,
+   "candidatesTokenCount": 734,
+   "totalTokenCount": 4120,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 3386
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "title": {
+   "en": "Ashtanga Primary Series to Navasana",
+   "vi": "Ashtanga Sơ Cấp Đến Navasana"
+  },
+  "theme": {
+   "en": "Today we move through the primary series up to boat pose at your own natural pace. Focus on steady breath and clear gaze in each posture, honoring where your body stops today.",
+   "vi": "Hôm nay chúng ta thực hành chuỗi sơ cấp Ashtanga đến tư thế chiếc thuyền theo nhịp thở tự nhiên của bạn. Hãy giữ hơi thở đều đặn và điểm nhìn tập trung trong từng tư thế, tôn trọng giới hạn của cơ thể hôm nay."
+  },
+  "goals": [
+   "breath",
+   "hamstrings",
+   "core"
+  ],
+  "cautions": [],
+  "swaps": [
+   {
+    "out": "warrior-2",
+    "in": "warrior-1",
+    "why_vi": "Trong chuỗi Ashtanga chuẩn sau các tư thế đứng thăng bằng là chuỗi Chiến binh I và II nối tiếp từ Sun Salutation B, đưa Chiến binh I vào sẽ đúng trình tự truyền thống hơn."
+   }
+  ],
+  "cues": [
+   {
+    "pose": "big-toe-pose",
+    "en": "Catch your big toes with two fingers, lengthen your chest forward, then fold with your elbows wide.",
+    "vi": "Dùng hai ngón tay móc ngón chân cái, vươn dài ngực về phía trước rồi gập người sâu, mở rộng hai khuỷu tay."
+   },
+   {
+    "pose": "standing-hand-to-toe",
+    "en": "Ground down through your standing foot, keep your spine tall, and fix your gaze on one point.",
+    "vi": "Ấn chắc bàn chân trụ xuống thảm, giữ cột sống thẳng dài và cố định ánh nhìn vào một điểm."
+   },
+   {
+    "pose": "marichyasana",
+    "en": "Wrap your arm around your shin, interlace your fingers behind your back, and fold straight forward.",
+    "vi": "Vòng tay ôm quanh cẳng chân, móc các ngón tay sau lưng và gập người thẳng về phía trước."
+   },
+   {
+    "pose": "boat-pose",
+    "en": "Lift your chest, draw your lower belly in, and reach your arms parallel to the floor.",
+    "vi": "Nâng cao lồng ngực, rút sâu bụng dưới và vươn hai tay song song với sàn."
+   },
+   {
+    "pose": "uplifting-pose",
+    "en": "Plant your hands firmly beside your hips and press down to lift your hips and legs off the mat.",
+    "vi": "Đặt chắc hai bàn tay cạnh hông, ấn mạnh xuống sàn để nhấc bổng hông và hai chân lên khỏi thảm."
+   }
+  ],
+  "toStudent": {
+   "en": "",
+   "vi": ""
+  },
+  "watch": [],
+  "note_vi": "Giáo án được thiết kế chuẩn theo nửa đầu chuỗi Ashtanga Primary (tới Navasana) và hoàn thiện bằng phần kết truyền thống."
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "id": "c06-word-order",
+ "endpoint": "coach",
+ "input": {
+  "cue": "Knee front bend, back leg straight strong, two arm open wide.",
+  "context": "Warrior II, Vinyasa"
+ },
+ "status": 200,
+ "ms": 5110,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 5085,
+  "usage": {
+   "promptTokenCount": 536,
+   "candidatesTokenCount": 497,
+   "totalTokenCount": 1033,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 536
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "natural": "Bend your front knee, keep your back leg straight and strong, and open your arms wide.",
+  "meaning_vi": "Khuỵu gối trước, giữ chân sau thẳng và khỏe, rồi mở rộng hai tay.",
+  "changes": [
+   {
+    "from": "Knee front bend",
+    "to": "Bend your front knee",
+    "why_vi": "Trong tiếng Anh, tính từ đi trước danh từ ('front knee') và chúng ta bắt đầu bằng động từ mệnh lệnh ('bend') kèm đại từ sở hữu ('your') để câu mượt mà hơn."
+   },
+   {
+    "from": "back leg straight strong",
+    "to": "keep your back leg straight and strong",
+    "why_vi": "Thêm động từ 'keep' (giữ) và từ nối 'and' giúp câu hướng dẫn hành động rõ ràng và tự nhiên hơn."
+   },
+   {
+    "from": "two arm open wide",
+    "to": "open your arms wide",
+    "why_vi": "Giáo viên bản xứ thường dùng động từ trước ('open') và nói 'your arms' (nhớ âm 's' số nhiều) thay vì dịch từng chữ là 'two arm'."
+   }
+  ],
+  "pronunciation": [
+   {
+    "word": "bend",
+    "say": "BEND",
+    "tip_vi": "Nhớ phát âm rõ âm đuôi /nd/, tránh đọc cụt thành 'ben'."
+   },
+   {
+    "word": "straight",
+    "say": "STRAYT",
+    "tip_vi": "Chú ý cụm phụ âm /str/ ở đầu và bật nhẹ âm /t/ ở cuối từ."
+   },
+   {
+    "word": "arms",
+    "say": "AHRMZ",
+    "tip_vi": "Kéo dài âm 'ar' và nhớ phát âm âm /z/ ở cuối vì là hai cánh tay số nhiều."
+   }
+  ],
+  "praise_vi": "Các chỉ dẫn chuyển động của bạn rất rõ ràng, đi thẳng vào các điểm định tuyến cốt lõi của tư thế Chiến binh II."
+ }
+}

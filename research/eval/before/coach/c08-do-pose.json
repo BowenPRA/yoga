@@ -1,0 +1,55 @@
+{
+ "id": "c08-do-pose",
+ "endpoint": "coach",
+ "input": {
+  "cue": "Now we do the downward dog pose. Do it 5 breath.",
+  "context": "Vinyasa, after a sun salutation"
+ },
+ "status": 200,
+ "ms": 4824,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 4727,
+  "usage": {
+   "promptTokenCount": 538,
+   "candidatesTokenCount": 411,
+   "totalTokenCount": 949,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 538
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "natural": "Come into Downward-Facing Dog, hold for five breaths.",
+  "meaning_vi": "Vào tư thế Chó úp mặt, giữ lại trong năm nhịp thở.",
+  "changes": [
+   {
+    "from": "Now we do the downward dog pose",
+    "to": "Come into Downward-Facing Dog",
+    "why_vi": "Trong tiếng Anh, giáo viên yoga thường dùng cụm tự nhiên như 'Come into...' thay vì 'we do', và tên tư thế chuẩn thường gọi tắt là 'Downward-Facing Dog' hoặc 'Downward Dog' mà không cần thêm chữ 'pose'."
+   },
+   {
+    "from": "Do it 5 breath",
+    "to": "hold for five breaths",
+    "why_vi": "Khi chỉ thời gian duy trì tư thế, bạn nên dùng 'hold for...' thay vì 'do it'. Ngoài ra, sau số lượng nhiều hơn một thì danh từ 'breath' cần thêm số nhiều thành 'breaths'."
+   }
+  ],
+  "pronunciation": [
+   {
+    "word": "breaths",
+    "say": "BRETHS",
+    "tip_vi": "Từ này có âm 'th' thổi nhẹ qua kẽ răng rồi tới âm 's' ở cuối, chú ý đừng nhầm với động từ 'breathe' (nguyên âm dài)."
+   },
+   {
+    "word": "downward",
+    "say": "DOWN-werd",
+    "tip_vi": "Trọng âm rơi vào âm tiết đầu tiên, âm đuôi 'd' ở cuối cần bật nhẹ."
+   }
+  ],
+  "praise_vi": "Lời hướng dẫn của bạn rất ngắn gọn, rõ ràng và đúng ngay trọng tâm học viên cần làm sau chuỗi Chào mặt trời."
+ }
+}

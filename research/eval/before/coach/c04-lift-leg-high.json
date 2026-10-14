@@ -1,0 +1,65 @@
+{
+ "id": "c04-lift-leg-high",
+ "endpoint": "coach",
+ "input": {
+  "cue": "Lift the leg up high, the knee straight, the toe point to the ceiling.",
+  "context": "Lying on the back, a strap around the right foot (Reclined Hand-to-Big-Toe)"
+ },
+ "status": 200,
+ "ms": 7287,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 5264,
+  "usage": {
+   "promptTokenCount": 556,
+   "candidatesTokenCount": 494,
+   "totalTokenCount": 1050,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 556
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "natural": "Lift your leg high, keep the knee straight, and point your toes to the ceiling.",
+  "meaning_vi": "Nâng chân lên cao, giữ thẳng đầu gối và hướng các ngón chân lên trần nhà.",
+  "changes": [
+   {
+    "from": "the leg / the toe",
+    "to": "your leg / your toes",
+    "why_vi": "Trong tiếng Anh, giáo viên yoga thường dùng 'your' thay vì 'the' để lời dẫn nghe gần gũi và trực tiếp hơn với học viên."
+   },
+   {
+    "from": "the knee straight",
+    "to": "keep the knee straight",
+    "why_vi": "Thêm động từ 'keep' giúp câu có cấu trúc rõ ràng và nghe tự nhiên hơn so với việc chỉ ghép danh từ và tính từ."
+   },
+   {
+    "from": "the toe point",
+    "to": "point your toes",
+    "why_vi": "Bàn chân có nhiều ngón chân nên cần dùng số nhiều 'toes', đồng thời đảo động từ 'point' lên trước để tạo thành câu mệnh lệnh rõ ràng."
+   }
+  ],
+  "pronunciation": [
+   {
+    "word": "ceiling",
+    "say": "SEE-ling",
+    "tip_vi": "Nhấn mạnh vào âm tiết đầu tiên 'SEE', đừng phát âm thành âm 'cê' hay thiếu âm đuôi."
+   },
+   {
+    "word": "straight",
+    "say": "STRAYT",
+    "tip_vi": "Chú ý cụm phụ âm đầu 'str' và bật âm đuôi /t/ thật rõ ở cuối từ."
+   },
+   {
+    "word": "toes",
+    "say": "TOHZ",
+    "tip_vi": "Âm 'oe' đọc như 'o-u' và kết thúc bằng âm /z/, tránh đọc cụt lủn như tiếng Việt."
+   }
+  ],
+  "praise_vi": "Bạn đã chọn từ vựng rất chuẩn xác và sắp xếp thứ tự hành động vô cùng logic cho học viên dễ theo dõi."
+ }
+}

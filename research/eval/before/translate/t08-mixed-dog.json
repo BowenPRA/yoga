@@ -1,0 +1,46 @@
+{
+ "id": "t08-mixed-dog",
+ "endpoint": "translate",
+ "input": {
+  "text": "Vào tư thế chó úp mặt, giữ 5 hơi thở, press your heels xuống sàn."
+ },
+ "status": 200,
+ "ms": 2771,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 2766,
+  "usage": {
+   "promptTokenCount": 558,
+   "candidatesTokenCount": 213,
+   "totalTokenCount": 771,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 558
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "heard": "Vào tư thế chó úp mặt, giữ 5 hơi thở, press your heels xuống sàn.",
+  "lang": "mixed",
+  "english": "Come into Downward-Facing Dog, hold for five breaths, press your heels down into the mat.",
+  "meaning_vi": "Vào tư thế Chó úp mặt, giữ trong năm nhịp thở, ấn gót chân xuống thảm.",
+  "phrases": [
+   {
+    "en": "Come into Downward-Facing Dog",
+    "vi": "vào tư thế Chó úp mặt"
+   },
+   {
+    "en": "hold for five breaths",
+    "vi": "giữ trong năm nhịp thở"
+   },
+   {
+    "en": "press your heels down",
+    "vi": "ấn gót chân xuống"
+   }
+  ],
+  "note_vi": ""
+ }
+}

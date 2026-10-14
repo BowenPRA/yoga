@@ -1,0 +1,158 @@
+{
+ "id": "p04-vinyasa-peak-crow",
+ "endpoint": "plan",
+ "input": {
+  "request": "A strong 75 minute class building toward Crow",
+  "plan": {
+   "mode": "class",
+   "style": "vinyasa",
+   "minutes": 75,
+   "level": "strong",
+   "goals": [
+    "core",
+    "inversions"
+   ],
+   "cautions": [],
+   "peak": "crow-pose",
+   "sections": [
+    {
+     "key": "arrive",
+     "poses": []
+    },
+    {
+     "key": "warm",
+     "poses": [
+      "cat-pose",
+      "cow-pose",
+      "thread-the-needle",
+      "reclined-hand-to-toe",
+      "downward-dog",
+      "side-bend"
+     ]
+    },
+    {
+     "key": "sun",
+     "poses": [
+      "sun-salutations"
+     ]
+    },
+    {
+     "key": "standing",
+     "poses": [
+      "pyramid-pose",
+      "warrior-2",
+      "revolved-triangle",
+      "revolved-side-angle",
+      "triangle",
+      "crescent-lunge",
+      "humble-warrior",
+      "eagle-pose",
+      "half-moon",
+      "wide-legged-fold"
+     ]
+    },
+    {
+     "key": "peak",
+     "poses": [
+      "handstand",
+      "plank",
+      "crow-pose"
+     ]
+    },
+    {
+     "key": "floor",
+     "poses": [
+      "child-pose",
+      "puppy-pose",
+      "seated-twist",
+      "staff-pose",
+      "happy-baby",
+      "supine-twist"
+     ]
+    },
+    {
+     "key": "rest",
+     "poses": []
+    },
+    {
+     "key": "close",
+     "poses": []
+    }
+   ]
+  }
+ },
+ "status": 200,
+ "ms": 7632,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 7216,
+  "usage": {
+   "promptTokenCount": 3365,
+   "candidatesTokenCount": 711,
+   "totalTokenCount": 4076,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 3365
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "title": {
+   "en": "Building Core Strength Toward Crow Pose",
+   "vi": "Xây Dựng Sức Mạnh Cho Tư Thế Con Quạ"
+  },
+  "theme": {
+   "en": "Today we build heat, core connection, and wrist stability to take flight in Crow Pose. Remember that balance comes from drawing your center in, not just pushing through your hands. Approach each shape with curiosity and take rest whenever you need it.",
+   "vi": "Hôm nay chúng ta sẽ tạo nhiệt lượng, kích hoạt cơ trọng tâm và ổn định cổ tay để chuẩn bị bay lên trong tư thế Con Quạ. Hãy nhớ rằng sự thăng bằng đến từ việc gom sức mạnh vào trung tâm, chứ không chỉ dùng lực đẩy của bàn tay. Hãy khám phá từng tư thế với sự tò mò và nghỉ ngơi bất cứ khi nào bạn cần."
+  },
+  "goals": [
+   "inversions",
+   "core",
+   "balance"
+  ],
+  "cautions": [],
+  "swaps": [
+   {
+    "out": "handstand",
+    "in": "malasana",
+    "why_vi": "Đổi Handstand lấy Malasana giúp mở hông sâu và tập nén người sát sàn, bước đệm trực tiếp và an toàn hơn cho tư thế Con Quạ."
+   },
+   {
+    "out": "reclined-hand-to-toe",
+    "in": "boat-pose",
+    "why_vi": "Thay tư thế nằm kéo chân bằng Boat Pose để kích hoạt nhóm cơ bụng sâu cần thiết cho việc nâng cơ thể trong Con Quạ."
+   }
+  ],
+  "cues": [
+   {
+    "pose": "cat-pose",
+    "en": "Press the floor away, round your upper back, and pull your belly button deep into your spine.",
+    "vi": "Ấn mạnh bàn tay xuống sàn, cuộn tròn lưng trên và rút rốn thật sâu về phía cột sống của bạn."
+   },
+   {
+    "pose": "plank",
+    "en": "Push through your shoulder blades to create a dome, hugging your front ribs into your body.",
+    "vi": "Đẩy mạnh qua hai bả vai để làm đầy lưng trên, ôm xương sườn trước gọn vào trong cơ thể."
+   },
+   {
+    "pose": "crow-pose",
+    "en": "Gaze forward past your fingers, squeeze your knees into your upper arms, and lift your feet together.",
+    "vi": "Nhìn về phía trước qua khỏi các ngón tay, ép chặt hai đầu gối vào bắp tay trên và nhấc hai bàn chân lên cùng nhau."
+   },
+   {
+    "pose": "eagle-pose",
+    "en": "Squeeze your inner thighs tightly together and draw your elbows toward your belly.",
+    "vi": "Siết chặt hai đùi trong vào nhau và rút hai khuỷu tay lại gần về phía bụng của bạn."
+   }
+  ],
+  "toStudent": {
+   "en": "",
+   "vi": ""
+  },
+  "watch": [],
+  "note_vi": ""
+ }
+}

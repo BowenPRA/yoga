@@ -1,0 +1,60 @@
+{
+ "id": "c13-vipassana",
+ "endpoint": "coach",
+ "input": {
+  "cue": "Notice the sensation on the body, don't react, only observe, everything is change.",
+  "context": "Vipassana, a body scan sit"
+ },
+ "status": 200,
+ "ms": 4630,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 4610,
+  "usage": {
+   "promptTokenCount": 543,
+   "candidatesTokenCount": 492,
+   "totalTokenCount": 1035,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 543
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "natural": "Notice the sensations in your body, without reacting, just observe, everything is changing.",
+  "meaning_vi": "Hãy nhận biết các cảm giác trên cơ thể, không phản ứng, chỉ quan sát, mọi thứ đều đang thay đổi.",
+  "changes": [
+   {
+    "from": "the sensation on the body",
+    "to": "the sensations in your body",
+    "why_vi": "Trong thiền, chúng ta thường dùng số nhiều 'sensations' vì có nhiều cảm giác cùng lúc, và dùng giới từ 'in your body' nghe tự nhiên, gần gũi hơn 'on the body'."
+   },
+   {
+    "from": "don't react, only observe",
+    "to": "without reacting, just observe",
+    "why_vi": "Cụm 'without reacting' giúp câu dẫn nhẹ nhàng hơn cách dùng mệnh lệnh phủ định 'don't react', và 'just observe' là cách nói quen thuộc hơn 'only observe' trong thiền."
+   },
+   {
+    "from": "everything is change",
+    "to": "everything is changing",
+    "why_vi": "Sau 'is' cần một tính từ hoặc động từ đuôi -ing ('changing') để diễn tả sự việc đang liên tục biến đổi, còn 'change' ở đây chỉ là danh từ hoặc động từ nguyên mẫu."
+   }
+  ],
+  "pronunciation": [
+   {
+    "word": "sensations",
+    "say": "sen-SAY-shunz",
+    "tip_vi": "Nhấn vào âm tiết thứ hai, chú ý âm đuôi /z/ ở cuối từ và không bỏ quên âm /sh/ ở giữa."
+   },
+   {
+    "word": "observe",
+    "say": "ub-ZURV",
+    "tip_vi": "Âm đầu là /ə/ nhẹ, trọng âm rơi vào 'ZURV' và cần phát âm rõ âm /v/ ở cuối."
+   }
+  ],
+  "praise_vi": "Lời dẫn của bạn nắm rất đúng tinh thần cốt lõi của Vipassana với các ý ngắn gọn, rõ ràng và tĩnh lặng."
+ }
+}

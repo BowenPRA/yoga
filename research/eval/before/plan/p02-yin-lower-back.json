@@ -1,0 +1,130 @@
+{
+ "id": "p02-yin-lower-back",
+ "endpoint": "plan",
+ "input": {
+  "request": "Yin 75 phút cho lưng dưới, thư giãn trước khi ngủ",
+  "plan": {
+   "mode": "class",
+   "style": "yin",
+   "minutes": 75,
+   "level": "gentle",
+   "goals": [
+    "calm"
+   ],
+   "cautions": [
+    "lower-back"
+   ],
+   "peak": null,
+   "sections": [
+    {
+     "key": "arrive",
+     "poses": []
+    },
+    {
+     "key": "holds",
+     "poses": [
+      "melting-heart",
+      "ankle-stretch",
+      "caterpillar",
+      "half-butterfly",
+      "butterfly",
+      "deer",
+      "sphinx",
+      "legs-up-the-wall",
+      "supported-fish",
+      "reclined-twist",
+      "bananasana"
+     ]
+    },
+    {
+     "key": "rest",
+     "poses": []
+    },
+    {
+     "key": "close",
+     "poses": []
+    }
+   ]
+  }
+ },
+ "status": 200,
+ "ms": 6770,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 6335,
+  "usage": {
+   "promptTokenCount": 3262,
+   "candidatesTokenCount": 630,
+   "totalTokenCount": 3892,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 3262
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "title": {
+   "en": "Gentle Bedtime Yin for Lower Back",
+   "vi": "Yin Êm Dịu Cho Lưng Dưới Trước Giờ Ngủ"
+  },
+  "theme": {
+   "en": "Tonight's practice is all about slowing down and letting go of tension in your lower back. Give your body full permission to soften into the floor and prepare your mind for deep, restful sleep.",
+   "vi": "Buổi tập tối nay giúp bạn chậm lại và giải tỏa căng thẳng ở vùng lưng dưới. Hãy cho phép cơ thể thả lỏng hoàn toàn xuống sàn để chuẩn bị cho một giấc ngủ thật sâu."
+  },
+  "goals": [
+   "calm",
+   "spine"
+  ],
+  "cautions": [
+   "lower-back"
+  ],
+  "swaps": [
+   {
+    "out": "ankle-stretch",
+    "in": "child-pose",
+    "why_vi": "Tư thế Ankle Stretch có thể gây gắt gối và kéo căng không cần thiết trước khi ngủ, đổi sang Child's Pose giúp xoa dịu lưng dưới tốt hơn."
+   },
+   {
+    "out": "melting-heart",
+    "in": "savasana",
+    "why_vi": "Melting Heart tác động mạnh vào khớp vai và lưng trên, thêm Savasana vào cuối chuỗi giúp thư giãn sâu trước giấc ngủ."
+   }
+  ],
+  "cues": [
+   {
+    "pose": "caterpillar",
+    "en": "Bend your knees softly and let your spine round naturally forward.",
+    "vi": "Trùng nhẹ hai đầu gối và để cột sống thả lỏng cong tròn tự nhiên về phía trước."
+   },
+   {
+    "pose": "deer",
+    "en": "Soften your hips into the mat and breathe slowly into your lower back.",
+    "vi": "Thả lỏng phần hông xuống thảm và hít thở thật chậm vào vùng lưng dưới của bạn."
+   },
+   {
+    "pose": "sphinx",
+    "en": "Rest onto your forearms and let your belly and glutes completely relax.",
+    "vi": "Tựa nhẹ lên cẳng tay, thả lỏng toàn bộ cơ bụng và cơ mông của bạn."
+   },
+   {
+    "pose": "legs-up-the-wall",
+    "en": "Allow the weight of your legs to ground your lower back to the earth.",
+    "vi": "Để sức nặng của đôi chân giúp lưng dưới chìm sâu và thư giãn trên mặt đất."
+   },
+   {
+    "pose": "reclined-twist",
+    "en": "Drop both knees to one side and soften your shoulders away from your ears.",
+    "vi": "Hạ hai gối sang một bên và thả mềm hai vai ra xa khỏi tai."
+   }
+  ],
+  "toStudent": {
+   "en": "",
+   "vi": ""
+  },
+  "watch": [],
+  "note_vi": ""
+ }
+}

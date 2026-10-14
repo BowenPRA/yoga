@@ -1,0 +1,60 @@
+{
+ "id": "c01-hand-floor",
+ "endpoint": "coach",
+ "input": {
+  "cue": "Put your hand on floor, spread your finger wide and press down the palm.",
+  "context": "Downward Dog, Vinyasa"
+ },
+ "status": 200,
+ "ms": 8173,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 5756,
+  "usage": {
+   "promptTokenCount": 537,
+   "candidatesTokenCount": 386,
+   "totalTokenCount": 923,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 537
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "natural": "Plant your hands on the mat, spread your fingers wide, and press down through your palms.",
+  "meaning_vi": "Đặt hai tay xuống thảm, xòe rộng các ngón tay và ấn chặt lòng bàn tay xuống.",
+  "changes": [
+   {
+    "from": "hand / finger",
+    "to": "hands / fingers",
+    "why_vi": "Cả hai bàn tay và các ngón tay đều ở số nhiều, bạn nhớ thêm đuôi '-s' để phát âm rõ ràng và đúng ngữ pháp nhé."
+   },
+   {
+    "from": "on floor",
+    "to": "on the mat",
+    "why_vi": "Trong lớp yoga, giáo viên bản xứ thường dùng 'on the mat' hơn là 'on floor', và luôn cần mạo từ 'the'."
+   },
+   {
+    "from": "press down the palm",
+    "to": "press down through your palms",
+    "why_vi": "Cụm 'press down through your palms' nghe tự nhiên và truyền tải lực ấn bàn tay vững chãi hơn nhiều trong tiếng Anh."
+   }
+  ],
+  "pronunciation": [
+   {
+    "word": "spread",
+    "say": "spred",
+    "tip_vi": "Chú ý cụm phụ âm đầu 'spr-', đọc liền mạch và bật nhẹ âm /d/ ở cuối từ."
+   },
+   {
+    "word": "palms",
+    "say": "PAHMZ",
+    "tip_vi": "Chữ 'l' ở đây là âm câm, bạn không phát âm chữ l mà chỉ đọc là 'pahmz' kèm âm đuôi /z/ nhé."
+   }
+  ],
+  "praise_vi": "Các bước chỉ dẫn của bạn rất rõ ràng, tuần tự và đúng kỹ thuật nền tảng cho tư thế Downward Dog."
+ }
+}

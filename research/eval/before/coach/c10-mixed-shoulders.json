@@ -1,0 +1,60 @@
+{
+ "id": "c10-mixed-shoulders",
+ "endpoint": "coach",
+ "input": {
+  "cue": "Thả lỏng vai, shoulder away from the ear, giữ 5 hơi thở.",
+  "context": "Warrior II, Vinyasa"
+ },
+ "status": 200,
+ "ms": 4754,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 4718,
+  "usage": {
+   "promptTokenCount": 539,
+   "candidatesTokenCount": 397,
+   "totalTokenCount": 936,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 539
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "natural": "Relax your shoulders, draw them away from your ears, and hold for five breaths.",
+  "meaning_vi": "Thả lỏng hai vai, hạ vai xa khỏi tai và giữ trong năm nhịp thở.",
+  "changes": [
+   {
+    "from": "Thả lỏng vai",
+    "to": "Relax your shoulders",
+    "why_vi": "Trong tiếng Anh, bạn nên thêm tính từ sở hữu 'your' và dùng số nhiều 'shoulders' vì cơ thể chúng ta có hai bên vai."
+   },
+   {
+    "from": "shoulder away from the ear",
+    "to": "draw them away from your ears",
+    "why_vi": "Dùng động từ hành động như 'draw them' giúp câu có nhịp điệu tự nhiên hơn, đồng thời nhớ đổi 'ear' thành số nhiều 'ears'."
+   },
+   {
+    "from": "giữ 5 hơi thở",
+    "to": "and hold for five breaths",
+    "why_vi": "Khi nói về khoảng thời gian hoặc số nhịp đếm, bạn cần thêm giới từ 'for' trước cụm thời lượng (for five breaths)."
+   }
+  ],
+  "pronunciation": [
+   {
+    "word": "shoulders",
+    "say": "SHOHL-derz",
+    "tip_vi": "Nhớ phát âm âm đuôi /z/ ở cuối từ số nhiều, đừng bỏ quên nhé."
+   },
+   {
+    "word": "breaths",
+    "say": "breths",
+    "tip_vi": "Từ này có nguyên âm ngắn /e/ và kết thúc bằng cụm âm /θs/, tránh nhầm với động từ 'breathe' có âm /iː/ dài."
+   }
+  ],
+  "praise_vi": "Cụm 'away from the ear' bạn dùng rất chuẩn hình ảnh thường gặp trong lớp yoga quốc tế."
+ }
+}

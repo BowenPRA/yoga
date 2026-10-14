@@ -1,0 +1,65 @@
+{
+ "id": "c02-open-hip",
+ "endpoint": "coach",
+ "input": {
+  "cue": "Open your hip, let the knee fall to the side, relax the leg.",
+  "context": "Butterfly, Yin, the first minute of a five-minute hold"
+ },
+ "status": 200,
+ "ms": 7154,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 6189,
+  "usage": {
+   "promptTokenCount": 544,
+   "candidatesTokenCount": 502,
+   "totalTokenCount": 1046,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 544
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "natural": "Open through your hips, let your knees fall open to the sides, and soften your legs.",
+  "meaning_vi": "Mở rộng khớp hông, để hai đầu gối buông nhẹ sang hai bên và thả lỏng toàn bộ đôi chân.",
+  "changes": [
+   {
+    "from": "hip",
+    "to": "hips",
+    "why_vi": "Cơ thể có hai bên hông nên bạn cần dùng số nhiều 'hips', và cụm 'open through your hips' nghe rất tự nhiên trong yoga."
+   },
+   {
+    "from": "let the knee fall to the side",
+    "to": "let your knees fall open to the sides",
+    "why_vi": "Bạn nên dùng số nhiều 'knees' và 'sides' vì cả hai gối cùng thả sang hai bên; thêm từ 'open' giúp câu gợi hình hơn."
+   },
+   {
+    "from": "relax the leg",
+    "to": "soften your legs",
+    "why_vi": "Trong lớp Yin, từ 'soften' mang lại cảm giác mềm mại, tĩnh lặng hơn rất nhiều so với 'relax'."
+   }
+  ],
+  "pronunciation": [
+   {
+    "word": "hips",
+    "say": "HIPS",
+    "tip_vi": "Nhớ bật âm 'p' rồi xì âm 's' ở cuối, tránh nuốt đuôi 'ps'."
+   },
+   {
+    "word": "knees",
+    "say": "NEEZ",
+    "tip_vi": "Âm đầu là 'n' (k câm), nguyên âm 'ee' kéo dài và kết thúc bằng âm 'z' rung nhẹ."
+   },
+   {
+    "word": "soften",
+    "say": "SOF-uhn",
+    "tip_vi": "Chữ 't' là âm câm, bạn đọc lướt từ âm 'f' sang 'n' luôn nhé."
+   }
+  ],
+  "praise_vi": "Ý tưởng hướng dẫn của bạn rất đúng tinh thần Yin yoga khi tập trung vào việc buông lỏng và thả cho trọng lực làm việc."
+ }
+}

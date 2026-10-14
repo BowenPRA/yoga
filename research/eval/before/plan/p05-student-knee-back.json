@@ -1,0 +1,130 @@
+{
+ "id": "p05-student-knee-back",
+ "endpoint": "plan",
+ "input": {
+  "request": "Học viên nói: tôi bị đau gối khi ngồi xếp bằng, và lưng dưới hay mỏi khi gập người về trước",
+  "plan": {
+   "mode": "student",
+   "style": "vinyasa",
+   "minutes": 15,
+   "level": "gentle",
+   "goals": [
+    "hamstrings"
+   ],
+   "cautions": [
+    "lower-back",
+    "knee"
+   ],
+   "peak": null,
+   "sections": [
+    {
+     "key": "say",
+     "poses": []
+    },
+    {
+     "key": "practice",
+     "poses": [
+      "pyramid-pose",
+      "wide-legged-fold",
+      "half-splits",
+      "seated-forward-fold",
+      "janu-sirsasana",
+      "staff-pose",
+      "happy-baby"
+     ]
+    }
+   ]
+  }
+ },
+ "status": 200,
+ "ms": 8931,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 8910,
+  "usage": {
+   "promptTokenCount": 3270,
+   "candidatesTokenCount": 987,
+   "totalTokenCount": 4257,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 3270
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "title": {
+   "en": "Gentle Release for Back and Knees",
+   "vi": "Thả lỏng lưng dưới và gối nhẹ nhàng"
+  },
+  "theme": {
+   "en": "Today we focus on creating space in the hamstrings while protecting the knees and lower back. Move gently, bend your knees generously in folds, and listen to what your joints tell you.",
+   "vi": "Hôm nay chúng ta sẽ kéo giãn gân kheo thật an toàn để bảo vệ khớp gối và lưng dưới. Hãy di chuyển chậm rãi, chủ động chùng gối khi gập người và luôn lắng nghe cảm giác từ các khớp của bạn."
+  },
+  "goals": [
+   "hamstrings",
+   "hips",
+   "spine"
+  ],
+  "cautions": [
+   "knee",
+   "lower-back"
+  ],
+  "swaps": [
+   {
+    "out": "janu-sirsasana",
+    "in": "figure-four",
+    "why_vi": "Janu Sirsasana gập sâu một gối dễ gây đau khớp gối và kéo căng lưng dưới, nên thay bằng Figure Four nằm ngửa an toàn hơn."
+   },
+   {
+    "out": "seated-forward-fold",
+    "in": "reclined-hand-to-toe",
+    "why_vi": "Tư thế nằm ngửa với dây giúp kéo giãn gân kheo mà giữ lưng dưới nằm phẳng, tránh gây mỏi hay chấn thương cột sống."
+   }
+  ],
+  "cues": [
+   {
+    "pose": "pyramid-pose",
+    "en": "Micro-bend your front knee and lengthen your spine forward.",
+    "vi": "Chùng nhẹ gối trước và kéo dài cột sống về phía trước."
+   },
+   {
+    "pose": "wide-legged-fold",
+    "en": "Hinge from your hips and keep a soft bend in both knees.",
+    "vi": "Gập người từ khớp hông và giữ hai đầu gối chùng nhẹ tự nhiên."
+   },
+   {
+    "pose": "half-splits",
+    "en": "Keep your front knee soft and pull your hips back evenly.",
+    "vi": "Thả mềm gối chân trước và cân chỉnh hai hông đều về phía sau."
+   },
+   {
+    "pose": "staff-pose",
+    "en": "Sit tall on your sit bones, lifting through your chest.",
+    "vi": "Ngồi thẳng trên hai xương ngồi và nâng nhẹ lồng ngực lên."
+   },
+   {
+    "pose": "happy-baby",
+    "en": "Hold behind your thighs and keep your tailbone heavy on the mat.",
+    "vi": "Ôm nhẹ phía sau đùi và giữ xương cụt áp sát xuống thảm."
+   }
+  ],
+  "toStudent": {
+   "en": "We will avoid forcing your knees to bend deeply today, and always keep a soft bend in your legs when folding to protect your lower back. Please never push into any sharp pinch in the knees or aching in the back. If the knee pain continues during simple everyday movements, it is best to check in with a doctor or physiotherapist.",
+   "vi": "Hôm nay chúng ta sẽ tránh gập gối quá sâu và luôn giữ gối chùng nhẹ khi gập người để bảo vệ lưng dưới. Bạn hãy nhớ đừng bao giờ cố ép khi thấy nhói ở gối hay căng tức ở thắt lưng nhé. Nếu cơn đau gối vẫn kéo dài trong sinh hoạt hàng ngày, bạn nên đi khám bác sĩ hoặc chuyên viên vật lý trị liệu."
+  },
+  "watch": [
+   {
+    "en": "Sensation should stay in the belly of the hamstrings and hips, never as pulling at the sit bones or knee joints.",
+    "vi": "Cảm giác căng chỉ nên nằm ở giữa cơ gân kheo và hông, không bao giờ căng tức ở khớp gối hay điểm bám xương ngồi."
+   },
+   {
+    "en": "The lower back must remain long and relaxed without any sharp pinching or burning.",
+    "vi": "Vùng lưng dưới cần giữ được sự thoải mái, kéo dài, không bị nhói buốt hay mỏi gắt."
+   }
+  ],
+  "note_vi": ""
+ }
+}

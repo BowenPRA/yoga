@@ -1,0 +1,65 @@
+{
+ "id": "c05-belly-sky",
+ "endpoint": "coach",
+ "input": {
+  "cue": "Turn the belly to the sky, push the hip up high, the head go back.",
+  "context": "Reverse Tabletop, Vinyasa"
+ },
+ "status": 200,
+ "ms": 5072,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 4797,
+  "usage": {
+   "promptTokenCount": 540,
+   "candidatesTokenCount": 497,
+   "totalTokenCount": 1037,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 540
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "natural": "Lift your belly toward the sky, press your hips up high, and let your head drop back.",
+  "meaning_vi": "Nâng bụng hướng lên trần nhà, đẩy hông lên cao và thả lỏng đầu ngửa ra sau.",
+  "changes": [
+   {
+    "from": "Turn the belly to the sky",
+    "to": "Lift your belly toward the sky",
+    "why_vi": "Trong tư thế Cái Bàn Ngửa, phần bụng được nâng hướng lên trên thay vì xoay ('turn'). Dùng 'your' tự nhiên hơn 'the'."
+   },
+   {
+    "from": "push the hip up high",
+    "to": "press your hips up high",
+    "why_vi": "Từ 'hips' cần ở dạng số nhiều vì có hai bên hông, và động từ 'press' nghe đĩnh đạc, chắc chắn hơn trong yoga."
+   },
+   {
+    "from": "the head go back",
+    "to": "let your head drop back",
+    "why_vi": "'The head go back' bị sai ngữ pháp; giáo viên bản ngữ hay dùng cụm 'let your head drop back' để gợi ý thả lỏng cổ một cách an toàn."
+   }
+  ],
+  "pronunciation": [
+   {
+    "word": "hips",
+    "say": "HIPS",
+    "tip_vi": "Nhớ bật rõ âm đuôi /ps/, tránh quên âm 's' ở cuối từ."
+   },
+   {
+    "word": "toward",
+    "say": "tuh-WARD",
+    "tip_vi": "Nhấn vào âm tiết thứ hai, đừng đọc là 'to-quát'."
+   },
+   {
+    "word": "drop",
+    "say": "DROP",
+    "tip_vi": "Chú ý phát âm rõ cụm phụ âm /dr/ ở đầu và bật nhẹ âm /p/ ở cuối."
+   }
+  ],
+  "praise_vi": "Bạn dùng hình ảnh 'to the sky' và 'up high' rất trực quan, giúp học viên dễ hình dung hướng chuyển động của cơ thể."
+ }
+}

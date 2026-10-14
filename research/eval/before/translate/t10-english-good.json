@@ -1,0 +1,42 @@
+{
+ "id": "t10-english-good",
+ "endpoint": "translate",
+ "input": {
+  "text": "Inhale, lift your chest. Exhale, lower down slowly."
+ },
+ "status": 200,
+ "ms": 3725,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 3535,
+  "usage": {
+   "promptTokenCount": 551,
+   "candidatesTokenCount": 153,
+   "totalTokenCount": 704,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 551
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "heard": "Inhale, lift your chest. Exhale, lower down slowly.",
+  "lang": "en",
+  "english": "Inhale, lift your chest. Exhale, lower down slowly.",
+  "meaning_vi": "Hít vào, nâng ngực lên. Thở ra, hạ người xuống chậm rãi.",
+  "phrases": [
+   {
+    "en": "lift your chest",
+    "vi": "nâng ngực lên"
+   },
+   {
+    "en": "lower down slowly",
+    "vi": "hạ người xuống chậm rãi"
+   }
+  ],
+  "note_vi": ""
+ }
+}

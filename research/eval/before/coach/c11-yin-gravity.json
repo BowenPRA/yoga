@@ -1,0 +1,70 @@
+{
+ "id": "c11-yin-gravity",
+ "endpoint": "coach",
+ "input": {
+  "cue": "Stay in the pose 3 minute, don't use the muscle, let the gravity work, if pain come out.",
+  "context": "Yin, Dragon"
+ },
+ "status": 200,
+ "ms": 4999,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 4993,
+  "usage": {
+   "promptTokenCount": 544,
+   "candidatesTokenCount": 532,
+   "totalTokenCount": 1076,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 544
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "natural": "Stay here for three minutes, soften your muscles, let gravity do the work, and if you feel pain, come out.",
+  "meaning_vi": "Giữ ở đây trong ba phút, thả lỏng các cơ, để trọng lực tự làm việc, và nếu thấy đau thì hãy thoát thế.",
+  "changes": [
+   {
+    "from": "3 minute",
+    "to": "for three minutes",
+    "why_vi": "Khi nói về khoảng thời gian, bạn cần dùng giới từ 'for' và thêm đuôi 's' cho số nhiều (minutes)."
+   },
+   {
+    "from": "don't use the muscle",
+    "to": "soften your muscles",
+    "why_vi": "Trong lớp Yin, thay vì dùng câu phủ định 'don't use', giáo viên bản xứ thường dùng động từ gợi mở như 'soften' hoặc 'relax' để học viên dễ thả lỏng hơn."
+   },
+   {
+    "from": "let the gravity work",
+    "to": "let gravity do the work",
+    "why_vi": "'Gravity' là danh từ trừu tượng nên không cần mạo từ 'the', và cụm quen thuộc tự nhiên trong tiếng Anh là 'let gravity do the work'."
+   },
+   {
+    "from": "if pain come out",
+    "to": "if you feel pain, come out",
+    "why_vi": "Câu cần có chủ ngữ và động từ đầy đủ 'if you feel pain' để câu nói mượt mà, đúng ngữ pháp hơn."
+   }
+  ],
+  "pronunciation": [
+   {
+    "word": "minutes",
+    "say": "MIN-its",
+    "tip_vi": "Nhớ phát âm âm cuối /s/ nhẹ ở cuối từ, và âm 'u' phát âm như chữ 'i' ngắn."
+   },
+   {
+    "word": "muscles",
+    "say": "MUSS-uhlz",
+    "tip_vi": "Chữ 'c' là âm câm, bạn chỉ phát âm như 'mussel' và nhớ rung nhẹ âm /z/ ở cuối."
+   },
+   {
+    "word": "gravity",
+    "say": "GRAV-uh-tee",
+    "tip_vi": "Nhấn trọng âm vào âm tiết đầu tiên 'GRAV', âm 'a' phát âm mở rộng miệng giống 'cat'."
+   }
+  ],
+  "praise_vi": "Lời hướng dẫn của bạn rất chuẩn tinh thần Yin Yoga, đi thẳng vào trọng tâm là thả lỏng cơ bắp và lắng nghe cơ thể."
+ }
+}

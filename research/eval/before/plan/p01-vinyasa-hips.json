@@ -1,0 +1,150 @@
+{
+ "id": "p01-vinyasa-hips",
+ "endpoint": "plan",
+ "input": {
+  "request": "Lớp vinyasa 60 phút mở hông cho người mới",
+  "plan": {
+   "mode": "class",
+   "style": "vinyasa",
+   "minutes": 60,
+   "level": "gentle",
+   "goals": [
+    "hips"
+   ],
+   "cautions": [],
+   "peak": null,
+   "sections": [
+    {
+     "key": "arrive",
+     "poses": []
+    },
+    {
+     "key": "warm",
+     "poses": [
+      "cow-pose",
+      "cat-pose",
+      "child-pose",
+      "happy-baby",
+      "supine-twist"
+     ]
+    },
+    {
+     "key": "sun",
+     "poses": [
+      "sun-salutations"
+     ]
+    },
+    {
+     "key": "standing",
+     "poses": [
+      "low-lunge",
+      "side-bend",
+      "tree-pose"
+     ]
+    },
+    {
+     "key": "peak",
+     "poses": [
+      "gate-pose",
+      "bound-angle",
+      "cobra",
+      "figure-four",
+      "reclined-bound-angle"
+     ]
+    },
+    {
+     "key": "floor",
+     "poses": [
+      "puppy-pose",
+      "hero-pose",
+      "thread-the-needle",
+      "staff-pose",
+      "bridge-pose"
+     ]
+    },
+    {
+     "key": "rest",
+     "poses": []
+    },
+    {
+     "key": "close",
+     "poses": []
+    }
+   ]
+  }
+ },
+ "status": 200,
+ "ms": 6778,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 6342,
+  "usage": {
+   "promptTokenCount": 3310,
+   "candidatesTokenCount": 596,
+   "totalTokenCount": 3906,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 3310
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "title": {
+   "en": "Gentle Hip Flow for Beginners",
+   "vi": "Vinyasa mở hông nhẹ nhàng cho người mới"
+  },
+  "theme": {
+   "en": "Today we focus on gently creating space in your hips. Move slowly, listen to your body, and never force a deeper stretch.",
+   "vi": "Hôm nay chúng ta sẽ nhẹ nhàng giải phóng và mở rộng khớp hông. Hãy di chuyển chậm rãi, lắng nghe cơ thể và đừng ép mình vào tư thế quá sâu."
+  },
+  "goals": [
+   "hips",
+   "flexibility",
+   "calm"
+  ],
+  "cautions": [],
+  "swaps": [
+   {
+    "out": "cobra",
+    "in": "malasana",
+    "why_vi": "Malasana giúp mở hông ngoài và háng rất hiệu quả và phù hợp với chủ đề hơn cobra trong chuỗi đỉnh."
+   }
+  ],
+  "cues": [
+   {
+    "pose": "happy-baby",
+    "en": "Grip the outer edges of your feet and let your knees soften toward the floor.",
+    "vi": "Nắm lấy mép ngoài bàn chân và thả lỏng đầu gối hướng về phía thảm."
+   },
+   {
+    "pose": "low-lunge",
+    "en": "Slide your hips gently forward and keep your front knee stacked over your ankle.",
+    "vi": "Hạ nhẹ hông về phía trước và giữ đầu gối trước thẳng hàng trên cổ chân."
+   },
+   {
+    "pose": "tree-pose",
+    "en": "Place your foot against your calf or inner thigh, opening your knee to the side.",
+    "vi": "Đặt bàn chân lên bắp chân hoặc đùi trong, mở nhẹ đầu gối sang ngang."
+   },
+   {
+    "pose": "bound-angle",
+    "en": "Bring the soles of your feet together and lengthen up through your spine.",
+    "vi": "Áp hai lòng bàn chân vào nhau và kéo dài cột sống hướng lên."
+   },
+   {
+    "pose": "figure-four",
+    "en": "Cross your right ankle over your left knee and flex your right foot to protect the joint.",
+    "vi": "Gác cổ chân phải lên đầu gối trái và gập nhẹ cổ chân phải để bảo vệ khớp gối."
+   }
+  ],
+  "toStudent": {
+   "en": "",
+   "vi": ""
+  },
+  "watch": [],
+  "note_vi": ""
+ }
+}

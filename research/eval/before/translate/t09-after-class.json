@@ -1,0 +1,46 @@
+{
+ "id": "t09-after-class",
+ "endpoint": "translate",
+ "input": {
+  "text": "Hôm nay bạn tập rất tốt. Lần sau nhớ mang theo nước nhé, và đừng ăn no trước khi tập."
+ },
+ "status": 200,
+ "ms": 2549,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 2400,
+  "usage": {
+   "promptTokenCount": 562,
+   "candidatesTokenCount": 211,
+   "totalTokenCount": 773,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 562
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "heard": "Hôm nay bạn tập rất tốt. Lần sau nhớ mang theo nước nhé, và đừng ăn no trước khi tập.",
+  "lang": "vi",
+  "english": "You did great today. Next time, remember to bring some water, and try not to eat a heavy meal before class.",
+  "meaning_vi": "Hôm nay bạn tập rất tốt. Lần tới nhớ mang theo nước nhé, và cố gắng đừng ăn no trước buổi tập.",
+  "phrases": [
+   {
+    "en": "You did great today",
+    "vi": "hôm nay bạn tập rất tốt"
+   },
+   {
+    "en": "remember to bring",
+    "vi": "nhớ mang theo"
+   },
+   {
+    "en": "a heavy meal",
+    "vi": "bữa ăn no"
+   }
+  ],
+  "note_vi": ""
+ }
+}

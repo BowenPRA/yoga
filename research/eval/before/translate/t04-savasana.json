@@ -1,0 +1,46 @@
+{
+ "id": "t04-savasana",
+ "endpoint": "translate",
+ "input": {
+  "text": "Nằm ngửa, để hai chân rơi tự nhiên sang hai bên, buông lỏng toàn bộ cơ thể. Không còn gì phải làm nữa."
+ },
+ "status": 200,
+ "ms": 2963,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 2869,
+  "usage": {
+   "promptTokenCount": 568,
+   "candidatesTokenCount": 245,
+   "totalTokenCount": 813,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 568
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "heard": "Nằm ngửa, để hai chân rơi tự nhiên sang hai bên, buông lỏng toàn bộ cơ thể. Không còn gì phải làm nữa.",
+  "lang": "vi",
+  "english": "Lie on your back, let your feet flop open to the sides, and completely relax your whole body. There is nothing left to do.",
+  "meaning_vi": "Nằm ngửa, để hai bàn chân mở tự nhiên sang hai bên, và thả lỏng hoàn toàn toàn bộ cơ thể. Không còn việc gì cần phải làm nữa.",
+  "phrases": [
+   {
+    "en": "let your feet flop open",
+    "vi": "để hai bàn chân mở tự nhiên sang hai bên"
+   },
+   {
+    "en": "completely relax your whole body",
+    "vi": "thả lỏng hoàn toàn toàn bộ cơ thể"
+   },
+   {
+    "en": "nothing left to do",
+    "vi": "không còn gì phải làm nữa"
+   }
+  ],
+  "note_vi": ""
+ }
+}

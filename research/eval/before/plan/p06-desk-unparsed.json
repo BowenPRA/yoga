@@ -1,0 +1,143 @@
+{
+ "id": "p06-desk-unparsed",
+ "endpoint": "plan",
+ "input": {
+  "request": "Something for people who sit at a desk all day",
+  "plan": {
+   "mode": "class",
+   "style": "vinyasa",
+   "minutes": 60,
+   "level": "moderate",
+   "goals": [],
+   "cautions": [],
+   "peak": null,
+   "sections": [
+    {
+     "key": "arrive",
+     "poses": []
+    },
+    {
+     "key": "warm",
+     "poses": [
+      "cat-pose",
+      "cow-pose",
+      "supine-twist",
+      "happy-baby",
+      "side-bend"
+     ]
+    },
+    {
+     "key": "sun",
+     "poses": [
+      "sun-salutations"
+     ]
+    },
+    {
+     "key": "standing",
+     "poses": [
+      "warrior-2",
+      "pyramid-pose",
+      "extended-side-angle",
+      "half-moon",
+      "dancer-pose",
+      "tree-pose",
+      "eagle-pose",
+      "wide-legged-fold"
+     ]
+    },
+    {
+     "key": "floor",
+     "poses": [
+      "child-pose",
+      "puppy-pose",
+      "gate-pose",
+      "staff-pose",
+      "reclined-hand-to-toe"
+     ]
+    },
+    {
+     "key": "rest",
+     "poses": []
+    },
+    {
+     "key": "close",
+     "poses": []
+    }
+   ]
+  }
+ },
+ "status": 200,
+ "ms": 6819,
+ "meta": {
+  "model": "gemini-3.8-flash",
+  "ms": 6688,
+  "usage": {
+   "promptTokenCount": 3306,
+   "candidatesTokenCount": 709,
+   "totalTokenCount": 4015,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 3306
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "response": {
+  "title": {
+   "en": "Relief for the Desk Body",
+   "vi": "Giải toả cơ thể bàn làm việc"
+  },
+  "theme": {
+   "en": "Sitting all day compresses your spine, tightens your hips, and rounds your shoulders forward. Today, we will gently unwind that posture with open chest work, mindful twists, and deep hip openers. Take your time, breathe deeply, and give your body the space it misses during the workday.",
+   "vi": "Ngồi cả ngày khiến cột sống bị nén, hông bị co cứng và vai dễ gù về phía trước. Hôm nay, chúng ta sẽ nhẹ nhàng giải tỏa tư thế đó bằng cách mở ngực, vặn xoắn và giải phóng khớp hông. Hãy thả lỏng, thở sâu và cho cơ thể không gian mà nó thiếu vắng suốt ngày dài làm việc."
+  },
+  "goals": [
+   "shoulders",
+   "hips",
+   "spine"
+  ],
+  "cautions": [],
+  "swaps": [
+   {
+    "out": "staff-pose",
+    "in": "cobra",
+    "why_vi": "Thay tư thế ngồi gập người bằng tư thế nằm sấp mở ngực để giải toả lưng trên bị gù do ngồi máy tính nhiều."
+   }
+  ],
+  "cues": [
+   {
+    "pose": "cat-pose",
+    "en": "Exhale, press the floor away, and dome your upper back toward the ceiling.",
+    "vi": "Thở ra, ấn mạnh hai bàn tay xuống sàn và cuộn tròn lưng trên hướng lên trần nhà."
+   },
+   {
+    "pose": "puppy-pose",
+    "en": "Walk your hands forward, keep your hips high, and soften your chest toward the mat.",
+    "vi": "Bước dài hai tay về phía trước, giữ hông trên cao và nhẹ nhàng thả mềm lồng ngực xuống thảm."
+   },
+   {
+    "pose": "extended-side-angle",
+    "en": "Reach your top arm overhead, creating one long line from your outer heel to your fingertips.",
+    "vi": "Vươn dài cánh tay trên qua đầu, tạo thành một đường thẳng tắp từ gót chân ngoài tới các đầu ngón tay."
+   },
+   {
+    "pose": "eagle-pose",
+    "en": "Lift your elbows to shoulder height and press your forearms away from your face to open your upper back.",
+    "vi": "Nâng khuỷu tay ngang tầm vai và đưa cẳng tay ra xa mặt để mở rộng vùng lưng trên."
+   },
+   {
+    "pose": "gate-pose",
+    "en": "Anchor your outer foot firmly and lengthen your side body as you sweep your arm overhead.",
+    "vi": "Bám chắc cạnh bàn chân ngoài xuống sàn và kéo giãn toàn bộ lườn khi vươn tay qua đầu."
+   }
+  ],
+  "toStudent": {
+   "en": "",
+   "vi": ""
+  },
+  "watch": [],
+  "note_vi": ""
+ }
+}
