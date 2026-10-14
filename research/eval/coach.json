@@ -1,0 +1,126 @@
+{
+  "endpoint": "/api/coach",
+  "about": "Cue Coach inputs written the way an intermediate Vietnamese speaker writes a cue: dropped plurals and past endings, missing articles, Vietnamese word order, over-literal translations, 'do the pose' verbs, mixed Vietnamese and English, and two cues that are already good. `expect` is what a good answer does; `watch` is what a bad answer would do.",
+  "cases": [
+    {
+      "id": "c01-hand-floor",
+      "cue": "Put your hand on floor, spread your finger wide and press down the palm.",
+      "context": "Downward Dog, Vinyasa",
+      "targets": ["plural -s", "missing article", "press down through"],
+      "expect": "Plant your hands on the floor, spread your fingers wide, and press down through your palms. Explains hands/fingers/palms plural and 'the floor'.",
+      "watch": "Adds new alignment she did not give; textbook anatomy."
+    },
+    {
+      "id": "c02-open-hip",
+      "cue": "Open your hip, let the knee fall to the side, relax the leg.",
+      "context": "Butterfly, Yin, the first minute of a five-minute hold",
+      "targets": ["plural hips/knees", "both sides", "Yin passive register"],
+      "expect": "Let your knees fall open to the sides and let your legs relax. Plural, 'your', Yin passive verbs (let, soften).",
+      "watch": "Keeps 'open your hip' singular; makes it active ('push your knees down')."
+    },
+    {
+      "id": "c03-breath-deep",
+      "cue": "Breath deep and long, feel the breathe go down to the belly.",
+      "context": "Arriving, the start of class, seated",
+      "targets": ["breath/breathe", "breathe deep", "into your belly"],
+      "expect": "Breathe in deeply and slowly, and feel your breath move down into your belly. Names breath (noun) vs breathe (verb) with the vowel difference.",
+      "watch": "Misses the breath/breathe swap; pronunciation without th or the long ee."
+    },
+    {
+      "id": "c04-lift-leg-high",
+      "cue": "Lift the leg up high, the knee straight, the toe point to the ceiling.",
+      "context": "Lying on the back, a strap around the right foot (Reclined Hand-to-Big-Toe)",
+      "targets": ["'up high' redundancy", "the -> your", "toes plural", "point vs flex"],
+      "expect": "Lift your right leg toward the ceiling, keep your knee straight, and reach your toes up. 'the' becomes 'your'; drops 'up high'.",
+      "watch": "Changes the meaning to 'flex your foot' without saying so; keeps 'the leg'."
+    },
+    {
+      "id": "c05-belly-sky",
+      "cue": "Turn the belly to the sky, push the hip up high, the head go back.",
+      "context": "Reverse Tabletop, Vinyasa",
+      "targets": ["over-literal 'belly to the sky'", "hips plural", "verb agreement", "neck safety"],
+      "expect": "Lift your hips high and open your chest to the ceiling. Let your head drop back gently, if your neck is happy. Explains that 'belly to the sky' is a word-for-word Vietnamese image.",
+      "watch": "Keeps 'belly to the sky' or calls it wrong without offering the native image."
+    },
+    {
+      "id": "c06-word-order",
+      "cue": "Knee front bend, back leg straight strong, two arm open wide.",
+      "context": "Warrior II, Vinyasa",
+      "targets": ["word order (front knee)", "missing verbs", "plural arms", "straight and strong"],
+      "expect": "Bend your front knee, keep your back leg straight and strong, and reach your arms out wide. Names adjective-before-noun word order.",
+      "watch": "Adds gaze or other cues she did not say."
+    },
+    {
+      "id": "c07-past-ed",
+      "cue": "Last week we practice hip opening, today we work on the hamstring and the back of leg.",
+      "context": "Talking to the class at the start",
+      "targets": ["past -ed", "hamstrings plural", "missing article/possessive"],
+      "expect": "Last week we worked on opening the hips; today we'll work on the hamstrings, the backs of your legs. Names the past -ed ending and its sound.",
+      "watch": "Misses the past tense; pronunciation ignores the -ed or -s finals."
+    },
+    {
+      "id": "c08-do-pose",
+      "cue": "Now we do the downward dog pose. Do it 5 breath.",
+      "context": "Vinyasa, after a sun salutation",
+      "targets": ["'do the pose' -> come into", "numbers as words", "breaths plural", "stay for"],
+      "expect": "Come into Downward Dog, and stay here for five breaths.",
+      "watch": "Keeps 'do'; writes 5."
+    },
+    {
+      "id": "c09-mixed-sun",
+      "cue": "Hít vào, raise the arm lên, thở ra fold down chạm sàn.",
+      "context": "Sun salutation A",
+      "targets": ["mixed Vietnamese", "inhale/exhale", "plural arms", "fold forward"],
+      "expect": "Inhale, reach your arms up. Exhale, fold forward and touch the floor. Explains inhale/exhale as the class words for hít vào / thở ra.",
+      "watch": "Translates word for word; keeps Vietnamese in 'natural'."
+    },
+    {
+      "id": "c10-mixed-shoulders",
+      "cue": "Thả lỏng vai, shoulder away from the ear, giữ 5 hơi thở.",
+      "context": "Warrior II, Vinyasa",
+      "targets": ["mixed Vietnamese", "plural shoulders/ears", "stay for five breaths"],
+      "expect": "Relax your shoulders away from your ears. Stay here for five breaths.",
+      "watch": "'Keep five breaths' (literal giữ)."
+    },
+    {
+      "id": "c11-yin-gravity",
+      "cue": "Stay in the pose 3 minute, don't use the muscle, let the gravity work, if pain come out.",
+      "context": "Yin, Dragon",
+      "targets": ["minutes plural", "numbers as words", "'the gravity'", "missing subject in 'if pain'", "Yin register"],
+      "expect": "Stay here for three minutes. Let your muscles soften and let gravity do the work. If you feel any sharp pain, come out.",
+      "watch": "Keeps 'the gravity'; turns it into a Vinyasa-style active cue."
+    },
+    {
+      "id": "c12-savasana",
+      "cue": "Now you lie down, close the eye, relax all body, don't sleep.",
+      "context": "Savasana, the end of class",
+      "targets": ["eyes plural", "'all body' -> your whole body", "softening 'don't sleep'", "savasana register"],
+      "expect": "Lie down on your back and close your eyes. Let your whole body relax. Try to stay awake. A softer, slower register.",
+      "watch": "Keeps the bare command 'don't sleep'; adds a long script."
+    },
+    {
+      "id": "c13-vipassana",
+      "cue": "Notice the sensation on the body, don't react, only observe, everything is change.",
+      "context": "Vipassana, a body scan sit",
+      "targets": ["sensations plural", "in your body", "only -> just", "change/changing"],
+      "expect": "Notice the sensations in your body. Don't react; just observe. Everything is changing. Keeps the meditation register (anicca).",
+      "watch": "Turns it into a yoga cue or adds Pali she did not use."
+    },
+    {
+      "id": "c14-good-warrior1",
+      "cue": "Root down through your back heel and lengthen through the crown of your head.",
+      "context": "Warrior I, Vinyasa",
+      "good": true,
+      "expect": "Says it is already natural; zero changes or one optional; pronunciation on 'through' (th), 'lengthen', 'crown'.",
+      "watch": "Rewrites a good cue; invents changes."
+    },
+    {
+      "id": "c15-good-fold",
+      "cue": "On your next exhale, fold forward from your hips and let your head hang heavy.",
+      "context": "Standing Forward Fold, Vinyasa",
+      "good": true,
+      "expect": "Says it is already natural; zero changes; pronunciation on 'exhale' (stress), 'hips' (final s), 'heavy'.",
+      "watch": "Rewrites a good cue; invents changes."
+    }
+  ]
+}

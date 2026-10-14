@@ -1,0 +1,1644 @@
+{
+ "endpoint": "/api/plan",
+ "about": "Built by build-plans.mjs with the real planner (fixed seeds). Each request body is { ...case.body, catalog, tags }.",
+ "catalog": [
+  {
+   "id": "mountain-pose",
+   "en": "Mountain Pose",
+   "family": "standing",
+   "level": "gentle",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "upward-salute",
+   "en": "Upward Salute",
+   "family": "sun-salutation",
+   "level": "gentle",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "standing-forward-fold",
+   "en": "Standing Forward Fold",
+   "family": "forward-fold",
+   "level": "gentle",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "half-lift",
+   "en": "Half Lift",
+   "family": "sun-salutation",
+   "level": "gentle",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "chaturanga",
+   "en": "Chaturanga",
+   "family": "arm-balance",
+   "level": "strong",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "upward-dog",
+   "en": "Upward-Facing Dog",
+   "family": "backbend",
+   "level": "moderate",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "downward-dog",
+   "en": "Downward-Facing Dog",
+   "family": "inversion",
+   "level": "moderate",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "chair-pose",
+   "en": "Chair Pose",
+   "family": "standing",
+   "level": "moderate",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "warrior-1",
+   "en": "Warrior I",
+   "family": "standing",
+   "level": "moderate",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "big-toe-pose",
+   "en": "Big Toe Pose",
+   "family": "forward-fold",
+   "level": "moderate",
+   "styles": [
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "hand-under-foot-pose",
+   "en": "Hand Under Foot Pose",
+   "family": "forward-fold",
+   "level": "moderate",
+   "styles": [
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "triangle",
+   "en": "Triangle Pose",
+   "family": "standing",
+   "level": "moderate",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "revolved-triangle",
+   "en": "Revolved Triangle",
+   "family": "twist",
+   "level": "strong",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "extended-side-angle",
+   "en": "Extended Side Angle",
+   "family": "standing",
+   "level": "moderate",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "revolved-side-angle",
+   "en": "Revolved Side Angle",
+   "family": "twist",
+   "level": "strong",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "wide-legged-fold",
+   "en": "Wide-Legged Forward Fold",
+   "family": "forward-fold",
+   "level": "moderate",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "pyramid-pose",
+   "en": "Pyramid Pose",
+   "family": "forward-fold",
+   "level": "moderate",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "standing-hand-to-toe",
+   "en": "Extended Hand-to-Big-Toe Pose",
+   "family": "balance",
+   "level": "strong",
+   "styles": [
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "half-bound-lotus-standing",
+   "en": "Standing Half Bound Lotus",
+   "family": "balance",
+   "level": "strong",
+   "styles": [
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "warrior-2",
+   "en": "Warrior II",
+   "family": "standing",
+   "level": "moderate",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "staff-pose",
+   "en": "Staff Pose",
+   "family": "seated",
+   "level": "gentle",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "seated-forward-fold",
+   "en": "Seated Forward Fold",
+   "family": "forward-fold",
+   "level": "moderate",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "upward-plank",
+   "en": "Upward Plank",
+   "family": "backbend",
+   "level": "moderate",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "half-bound-lotus-forward-fold",
+   "en": "Half Bound Lotus Forward Fold",
+   "family": "forward-fold",
+   "level": "strong",
+   "styles": [
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "three-limb-forward-fold",
+   "en": "Three-Limb Forward Fold",
+   "family": "forward-fold",
+   "level": "moderate",
+   "styles": [
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "janu-sirsasana",
+   "en": "Head-to-Knee Pose",
+   "family": "forward-fold",
+   "level": "moderate",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "marichyasana",
+   "en": "Marichi’s Pose",
+   "family": "forward-fold",
+   "level": "strong",
+   "styles": [
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "boat-pose",
+   "en": "Boat Pose",
+   "family": "core",
+   "level": "moderate",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "shoulder-pressing-pose",
+   "en": "Shoulder-Pressing Pose",
+   "family": "arm-balance",
+   "level": "strong",
+   "styles": [
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "tortoise-pose",
+   "en": "Tortoise Pose",
+   "family": "forward-fold",
+   "level": "strong",
+   "styles": [
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "embryo-pose",
+   "en": "Embryo in the Womb",
+   "family": "seated",
+   "level": "strong",
+   "styles": [
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "rooster-pose",
+   "en": "Rooster Pose",
+   "family": "arm-balance",
+   "level": "strong",
+   "styles": [
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "bound-angle",
+   "en": "Bound Angle Pose",
+   "family": "hip-opener",
+   "level": "gentle",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "wide-angle-seated-fold",
+   "en": "Wide-Angle Seated Forward Fold",
+   "family": "forward-fold",
+   "level": "moderate",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "reclined-angle-pose",
+   "en": "Reclined Angle Pose",
+   "family": "inversion",
+   "level": "strong",
+   "styles": [
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "reclined-hand-to-toe",
+   "en": "Reclined Hand-to-Big-Toe Pose",
+   "family": "supine",
+   "level": "moderate",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "both-big-toes-pose",
+   "en": "Both Big Toes Pose",
+   "family": "balance",
+   "level": "moderate",
+   "styles": [
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "upward-facing-forward-fold",
+   "en": "Upward-Facing Forward Fold",
+   "family": "forward-fold",
+   "level": "moderate",
+   "styles": [
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "setu-bandhasana",
+   "en": "Ashtanga Bridge",
+   "family": "backbend",
+   "level": "strong",
+   "styles": [
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "wheel-pose",
+   "en": "Wheel Pose",
+   "family": "backbend",
+   "level": "strong",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "shoulderstand",
+   "en": "Shoulderstand",
+   "family": "inversion",
+   "level": "strong",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "plow-pose",
+   "en": "Plow Pose",
+   "family": "inversion",
+   "level": "strong",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "ear-pressure-pose",
+   "en": "Ear Pressure Pose",
+   "family": "inversion",
+   "level": "strong",
+   "styles": [
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "lotus-in-shoulderstand",
+   "en": "Lotus in Shoulderstand",
+   "family": "inversion",
+   "level": "strong",
+   "styles": [
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "fish-pose",
+   "en": "Fish Pose",
+   "family": "backbend",
+   "level": "moderate",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "extended-leg-pose",
+   "en": "Extended Leg Pose",
+   "family": "backbend",
+   "level": "strong",
+   "styles": [
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "headstand",
+   "en": "Headstand",
+   "family": "inversion",
+   "level": "strong",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "bound-lotus",
+   "en": "Bound Lotus",
+   "family": "seated",
+   "level": "strong",
+   "styles": [
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "lotus",
+   "en": "Lotus Pose",
+   "family": "seated",
+   "level": "strong",
+   "styles": [
+    "vinyasa",
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "uplifting-pose",
+   "en": "Uplifting Pose",
+   "family": "arm-balance",
+   "level": "strong",
+   "styles": [
+    "ashtanga"
+   ]
+  },
+  {
+   "id": "savasana",
+   "en": "Savasana",
+   "family": "restorative",
+   "level": "gentle",
+   "styles": [
+    "vinyasa",
+    "ashtanga",
+    "yin"
+   ]
+  },
+  {
+   "id": "child-pose",
+   "en": "Child’s Pose",
+   "family": "restorative",
+   "level": "gentle",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "cat-pose",
+   "en": "Cat Pose",
+   "family": "restorative",
+   "level": "gentle",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "cow-pose",
+   "en": "Cow Pose",
+   "family": "restorative",
+   "level": "gentle",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "puppy-pose",
+   "en": "Puppy Pose",
+   "family": "restorative",
+   "level": "gentle",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "plank",
+   "en": "Plank Pose",
+   "family": "core",
+   "level": "moderate",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "forearm-plank",
+   "en": "Forearm Plank",
+   "family": "core",
+   "level": "moderate",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "side-plank",
+   "en": "Side Plank",
+   "family": "core",
+   "level": "moderate",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "low-lunge",
+   "en": "Low Lunge",
+   "family": "standing",
+   "level": "gentle",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "crescent-lunge",
+   "en": "Crescent Lunge",
+   "family": "standing",
+   "level": "moderate",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "reverse-warrior",
+   "en": "Reverse Warrior",
+   "family": "standing",
+   "level": "moderate",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "humble-warrior",
+   "en": "Humble Warrior",
+   "family": "standing",
+   "level": "moderate",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "goddess-pose",
+   "en": "Goddess Pose",
+   "family": "standing",
+   "level": "moderate",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "side-bend",
+   "en": "Standing Side Bend",
+   "family": "standing",
+   "level": "gentle",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "tree-pose",
+   "en": "Tree Pose",
+   "family": "balance",
+   "level": "gentle",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "eagle-pose",
+   "en": "Eagle Pose",
+   "family": "balance",
+   "level": "moderate",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "warrior-3",
+   "en": "Warrior III",
+   "family": "balance",
+   "level": "moderate",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "half-moon",
+   "en": "Half Moon",
+   "family": "balance",
+   "level": "moderate",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "dancer-pose",
+   "en": "Dancer’s Pose",
+   "family": "balance",
+   "level": "moderate",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "crow-pose",
+   "en": "Crow Pose",
+   "family": "arm-balance",
+   "level": "strong",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "dolphin-pose",
+   "en": "Dolphin Pose",
+   "family": "inversion",
+   "level": "moderate",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "handstand",
+   "en": "Handstand",
+   "family": "inversion",
+   "level": "strong",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "cobra",
+   "en": "Cobra Pose",
+   "family": "backbend",
+   "level": "gentle",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "locust-pose",
+   "en": "Locust Pose",
+   "family": "backbend",
+   "level": "moderate",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "bow-pose",
+   "en": "Bow Pose",
+   "family": "backbend",
+   "level": "moderate",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "camel-pose",
+   "en": "Camel Pose",
+   "family": "backbend",
+   "level": "moderate",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "bridge-pose",
+   "en": "Bridge Pose",
+   "family": "backbend",
+   "level": "gentle",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "wild-thing",
+   "en": "Wild Thing",
+   "family": "backbend",
+   "level": "strong",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "lizard-pose",
+   "en": "Lizard Pose",
+   "family": "hip-opener",
+   "level": "moderate",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "half-splits",
+   "en": "Half Splits",
+   "family": "forward-fold",
+   "level": "moderate",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "pigeon",
+   "en": "Pigeon Pose",
+   "family": "hip-opener",
+   "level": "moderate",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "malasana",
+   "en": "Malasana",
+   "family": "hip-opener",
+   "level": "moderate",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "figure-four",
+   "en": "Figure Four",
+   "family": "hip-opener",
+   "level": "gentle",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "happy-baby",
+   "en": "Happy Baby",
+   "family": "hip-opener",
+   "level": "gentle",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "reclined-bound-angle",
+   "en": "Reclined Bound Angle",
+   "family": "hip-opener",
+   "level": "gentle",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "hero-pose",
+   "en": "Hero Pose",
+   "family": "seated",
+   "level": "gentle",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "reclined-hero",
+   "en": "Reclined Hero",
+   "family": "seated",
+   "level": "moderate",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "gate-pose",
+   "en": "Gate Pose",
+   "family": "seated",
+   "level": "gentle",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "cow-face-pose",
+   "en": "Cow Face Pose",
+   "family": "seated",
+   "level": "moderate",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "thread-the-needle",
+   "en": "Thread the Needle",
+   "family": "twist",
+   "level": "gentle",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "seated-twist",
+   "en": "Seated Twist",
+   "family": "twist",
+   "level": "moderate",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "supine-twist",
+   "en": "Supine Twist",
+   "family": "twist",
+   "level": "gentle",
+   "styles": [
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "swan",
+   "en": "Swan",
+   "family": "hip-opener",
+   "level": "moderate",
+   "styles": [
+    "yin"
+   ]
+  },
+  {
+   "id": "sleeping-swan",
+   "en": "Sleeping Swan",
+   "family": "hip-opener",
+   "level": "moderate",
+   "styles": [
+    "yin"
+   ]
+  },
+  {
+   "id": "shoelace",
+   "en": "Shoelace",
+   "family": "hip-opener",
+   "level": "moderate",
+   "styles": [
+    "yin"
+   ]
+  },
+  {
+   "id": "square",
+   "en": "Square",
+   "family": "hip-opener",
+   "level": "strong",
+   "styles": [
+    "yin"
+   ]
+  },
+  {
+   "id": "dragon",
+   "en": "Dragon",
+   "family": "hip-opener",
+   "level": "moderate",
+   "styles": [
+    "yin"
+   ]
+  },
+  {
+   "id": "frog",
+   "en": "Frog",
+   "family": "hip-opener",
+   "level": "strong",
+   "styles": [
+    "yin"
+   ]
+  },
+  {
+   "id": "butterfly",
+   "en": "Butterfly",
+   "family": "hip-opener",
+   "level": "gentle",
+   "styles": [
+    "yin"
+   ]
+  },
+  {
+   "id": "half-butterfly",
+   "en": "Half Butterfly",
+   "family": "forward-fold",
+   "level": "gentle",
+   "styles": [
+    "yin"
+   ]
+  },
+  {
+   "id": "dragonfly",
+   "en": "Dragonfly",
+   "family": "hip-opener",
+   "level": "moderate",
+   "styles": [
+    "yin"
+   ]
+  },
+  {
+   "id": "deer",
+   "en": "Deer",
+   "family": "hip-opener",
+   "level": "gentle",
+   "styles": [
+    "yin"
+   ]
+  },
+  {
+   "id": "cat-pulling-its-tail",
+   "en": "Cat Pulling Its Tail",
+   "family": "twist",
+   "level": "moderate",
+   "styles": [
+    "yin"
+   ]
+  },
+  {
+   "id": "caterpillar",
+   "en": "Caterpillar",
+   "family": "forward-fold",
+   "level": "gentle",
+   "styles": [
+    "yin"
+   ]
+  },
+  {
+   "id": "snail",
+   "en": "Snail",
+   "family": "inversion",
+   "level": "strong",
+   "styles": [
+    "yin"
+   ]
+  },
+  {
+   "id": "sphinx",
+   "en": "Sphinx",
+   "family": "backbend",
+   "level": "gentle",
+   "styles": [
+    "yin",
+    "vinyasa"
+   ]
+  },
+  {
+   "id": "seal",
+   "en": "Seal",
+   "family": "backbend",
+   "level": "moderate",
+   "styles": [
+    "yin"
+   ]
+  },
+  {
+   "id": "melting-heart",
+   "en": "Melting Heart",
+   "family": "backbend",
+   "level": "gentle",
+   "styles": [
+    "yin"
+   ]
+  },
+  {
+   "id": "bananasana",
+   "en": "Bananasana",
+   "family": "supine",
+   "level": "gentle",
+   "styles": [
+    "yin"
+   ]
+  },
+  {
+   "id": "reclined-twist",
+   "en": "Reclined Twist",
+   "family": "twist",
+   "level": "gentle",
+   "styles": [
+    "yin"
+   ]
+  },
+  {
+   "id": "saddle",
+   "en": "Saddle",
+   "family": "backbend",
+   "level": "strong",
+   "styles": [
+    "yin"
+   ]
+  },
+  {
+   "id": "half-saddle",
+   "en": "Half Saddle",
+   "family": "backbend",
+   "level": "moderate",
+   "styles": [
+    "yin"
+   ]
+  },
+  {
+   "id": "toe-squat",
+   "en": "Toe Squat",
+   "family": "seated",
+   "level": "moderate",
+   "styles": [
+    "yin"
+   ]
+  },
+  {
+   "id": "ankle-stretch",
+   "en": "Ankle Stretch",
+   "family": "seated",
+   "level": "gentle",
+   "styles": [
+    "yin"
+   ]
+  },
+  {
+   "id": "squat",
+   "en": "Squat",
+   "family": "hip-opener",
+   "level": "moderate",
+   "styles": [
+    "yin"
+   ]
+  },
+  {
+   "id": "dangling",
+   "en": "Dangling",
+   "family": "forward-fold",
+   "level": "gentle",
+   "styles": [
+    "yin"
+   ]
+  },
+  {
+   "id": "supported-fish",
+   "en": "Supported Fish",
+   "family": "restorative",
+   "level": "gentle",
+   "styles": [
+    "yin"
+   ]
+  },
+  {
+   "id": "legs-up-the-wall",
+   "en": "Legs Up the Wall",
+   "family": "restorative",
+   "level": "gentle",
+   "styles": [
+    "yin"
+   ]
+  }
+ ],
+ "tags": {
+  "goals": [
+   {
+    "id": "hips",
+    "en": "Hip opening"
+   },
+   {
+    "id": "hamstrings",
+    "en": "Hamstrings and forward folds"
+   },
+   {
+    "id": "backbends",
+    "en": "Backbends and heart opening"
+   },
+   {
+    "id": "shoulders",
+    "en": "Shoulders and neck"
+   },
+   {
+    "id": "spine",
+    "en": "Spine and twists"
+   },
+   {
+    "id": "core",
+    "en": "Core and strength"
+   },
+   {
+    "id": "balance",
+    "en": "Balance"
+   },
+   {
+    "id": "legs",
+    "en": "Strong legs"
+   },
+   {
+    "id": "calm",
+    "en": "Calm and rest"
+   },
+   {
+    "id": "energy",
+    "en": "Energy and flow"
+   },
+   {
+    "id": "flexibility",
+    "en": "Flexibility"
+   },
+   {
+    "id": "inversions",
+    "en": "Inversions and arm balances"
+   },
+   {
+    "id": "feet",
+    "en": "Feet and ankles"
+   },
+   {
+    "id": "breath",
+    "en": "Breath and pranayama"
+   },
+   {
+    "id": "meditation",
+    "en": "Meditation and stillness"
+   }
+  ],
+  "cautions": [
+   {
+    "id": "knee",
+    "en": "Knees"
+   },
+   {
+    "id": "lower-back",
+    "en": "Lower back"
+   },
+   {
+    "id": "wrist",
+    "en": "Wrists"
+   },
+   {
+    "id": "neck",
+    "en": "Neck"
+   },
+   {
+    "id": "shoulder",
+    "en": "Shoulders"
+   },
+   {
+    "id": "pregnancy",
+    "en": "Pregnancy"
+   },
+   {
+    "id": "hip",
+    "en": "Hips (pain or a replacement)"
+   },
+   {
+    "id": "hamstring",
+    "en": "A hamstring injury"
+   },
+   {
+    "id": "blood-pressure",
+    "en": "Blood pressure, eyes"
+   },
+   {
+    "id": "ankle",
+    "en": "Ankles"
+   }
+  ]
+ },
+ "cases": [
+  {
+   "id": "p01-vinyasa-hips",
+   "covers": "Vinyasa, a theme in Vietnamese, beginners",
+   "body": {
+    "request": "Lớp vinyasa 60 phút mở hông cho người mới",
+    "plan": {
+     "mode": "class",
+     "style": "vinyasa",
+     "minutes": 60,
+     "level": "gentle",
+     "goals": [
+      "hips"
+     ],
+     "cautions": [],
+     "peak": null,
+     "sections": [
+      {
+       "key": "arrive",
+       "poses": []
+      },
+      {
+       "key": "warm",
+       "poses": [
+        "cow-pose",
+        "cat-pose",
+        "child-pose",
+        "happy-baby",
+        "supine-twist"
+       ]
+      },
+      {
+       "key": "sun",
+       "poses": [
+        "sun-salutations"
+       ]
+      },
+      {
+       "key": "standing",
+       "poses": [
+        "low-lunge",
+        "side-bend",
+        "tree-pose"
+       ]
+      },
+      {
+       "key": "peak",
+       "poses": [
+        "gate-pose",
+        "bound-angle",
+        "cobra",
+        "figure-four",
+        "reclined-bound-angle"
+       ]
+      },
+      {
+       "key": "floor",
+       "poses": [
+        "puppy-pose",
+        "hero-pose",
+        "thread-the-needle",
+        "staff-pose",
+        "bridge-pose"
+       ]
+      },
+      {
+       "key": "rest",
+       "poses": []
+      },
+      {
+       "key": "close",
+       "poses": []
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "p02-yin-lower-back",
+   "covers": "Yin, a caution read from the theme (lower back), an evening class",
+   "body": {
+    "request": "Yin 75 phút cho lưng dưới, thư giãn trước khi ngủ",
+    "plan": {
+     "mode": "class",
+     "style": "yin",
+     "minutes": 75,
+     "level": "gentle",
+     "goals": [
+      "calm"
+     ],
+     "cautions": [
+      "lower-back"
+     ],
+     "peak": null,
+     "sections": [
+      {
+       "key": "arrive",
+       "poses": []
+      },
+      {
+       "key": "holds",
+       "poses": [
+        "melting-heart",
+        "ankle-stretch",
+        "caterpillar",
+        "half-butterfly",
+        "butterfly",
+        "deer",
+        "sphinx",
+        "legs-up-the-wall",
+        "supported-fish",
+        "reclined-twist",
+        "bananasana"
+       ]
+      },
+      {
+       "key": "rest",
+       "poses": []
+      },
+      {
+       "key": "close",
+       "poses": []
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "p03-ashtanga-upto-boat",
+   "covers": "Ashtanga, the series cut the Mysore way",
+   "body": {
+    "request": "Ashtanga primary series, 90 minutes, Mysore style, up to Navasana",
+    "plan": {
+     "mode": "class",
+     "style": "ashtanga",
+     "minutes": 90,
+     "level": "moderate",
+     "goals": [],
+     "cautions": [],
+     "peak": null,
+     "sections": [
+      {
+       "key": "arrive",
+       "poses": []
+      },
+      {
+       "key": "sun",
+       "poses": [
+        "sun-salutations"
+       ]
+      },
+      {
+       "key": "standing",
+       "poses": [
+        "big-toe-pose",
+        "hand-under-foot-pose",
+        "triangle",
+        "revolved-triangle",
+        "extended-side-angle",
+        "revolved-side-angle",
+        "wide-legged-fold",
+        "pyramid-pose",
+        "standing-hand-to-toe",
+        "half-bound-lotus-standing",
+        "warrior-2"
+       ]
+      },
+      {
+       "key": "seated",
+       "poses": [
+        "staff-pose",
+        "seated-forward-fold",
+        "upward-plank",
+        "half-bound-lotus-forward-fold",
+        "three-limb-forward-fold",
+        "janu-sirsasana",
+        "marichyasana",
+        "boat-pose"
+       ]
+      },
+      {
+       "key": "finishing",
+       "poses": [
+        "shoulderstand",
+        "plow-pose",
+        "ear-pressure-pose",
+        "lotus-in-shoulderstand",
+        "fish-pose",
+        "extended-leg-pose",
+        "bound-lotus",
+        "lotus",
+        "uplifting-pose"
+       ]
+      },
+      {
+       "key": "rest",
+       "poses": []
+      },
+      {
+       "key": "close",
+       "poses": []
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "p04-vinyasa-peak-crow",
+   "covers": "a peak pose ladder",
+   "body": {
+    "request": "A strong 75 minute class building toward Crow",
+    "plan": {
+     "mode": "class",
+     "style": "vinyasa",
+     "minutes": 75,
+     "level": "strong",
+     "goals": [
+      "core",
+      "inversions"
+     ],
+     "cautions": [],
+     "peak": "crow-pose",
+     "sections": [
+      {
+       "key": "arrive",
+       "poses": []
+      },
+      {
+       "key": "warm",
+       "poses": [
+        "cat-pose",
+        "cow-pose",
+        "thread-the-needle",
+        "reclined-hand-to-toe",
+        "downward-dog",
+        "side-bend"
+       ]
+      },
+      {
+       "key": "sun",
+       "poses": [
+        "sun-salutations"
+       ]
+      },
+      {
+       "key": "standing",
+       "poses": [
+        "pyramid-pose",
+        "warrior-2",
+        "revolved-triangle",
+        "revolved-side-angle",
+        "triangle",
+        "crescent-lunge",
+        "humble-warrior",
+        "eagle-pose",
+        "half-moon",
+        "wide-legged-fold"
+       ]
+      },
+      {
+       "key": "peak",
+       "poses": [
+        "handstand",
+        "plank",
+        "crow-pose"
+       ]
+      },
+      {
+       "key": "floor",
+       "poses": [
+        "child-pose",
+        "puppy-pose",
+        "seated-twist",
+        "staff-pose",
+        "happy-baby",
+        "supine-twist"
+       ]
+      },
+      {
+       "key": "rest",
+       "poses": []
+      },
+      {
+       "key": "close",
+       "poses": []
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "p05-student-knee-back",
+   "covers": "a student's words in Vietnamese, two cautions",
+   "body": {
+    "request": "Học viên nói: tôi bị đau gối khi ngồi xếp bằng, và lưng dưới hay mỏi khi gập người về trước",
+    "plan": {
+     "mode": "student",
+     "style": "vinyasa",
+     "minutes": 15,
+     "level": "gentle",
+     "goals": [
+      "hamstrings"
+     ],
+     "cautions": [
+      "lower-back",
+      "knee"
+     ],
+     "peak": null,
+     "sections": [
+      {
+       "key": "say",
+       "poses": []
+      },
+      {
+       "key": "practice",
+       "poses": [
+        "pyramid-pose",
+        "wide-legged-fold",
+        "half-splits",
+        "seated-forward-fold",
+        "janu-sirsasana",
+        "staff-pose",
+        "happy-baby"
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "p06-desk-unparsed",
+   "covers": "a theme the phone cannot read: Gemini must name the goals",
+   "body": {
+    "request": "Something for people who sit at a desk all day",
+    "plan": {
+     "mode": "class",
+     "style": "vinyasa",
+     "minutes": 60,
+     "level": "moderate",
+     "goals": [],
+     "cautions": [],
+     "peak": null,
+     "sections": [
+      {
+       "key": "arrive",
+       "poses": []
+      },
+      {
+       "key": "warm",
+       "poses": [
+        "cat-pose",
+        "cow-pose",
+        "supine-twist",
+        "happy-baby",
+        "side-bend"
+       ]
+      },
+      {
+       "key": "sun",
+       "poses": [
+        "sun-salutations"
+       ]
+      },
+      {
+       "key": "standing",
+       "poses": [
+        "warrior-2",
+        "pyramid-pose",
+        "extended-side-angle",
+        "half-moon",
+        "dancer-pose",
+        "tree-pose",
+        "eagle-pose",
+        "wide-legged-fold"
+       ]
+      },
+      {
+       "key": "floor",
+       "poses": [
+        "child-pose",
+        "puppy-pose",
+        "gate-pose",
+        "staff-pose",
+        "reclined-hand-to-toe"
+       ]
+      },
+      {
+       "key": "rest",
+       "poses": []
+      },
+      {
+       "key": "close",
+       "poses": []
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "p07-student-pregnant",
+   "covers": "a student's words in English, pregnancy",
+   "body": {
+    "request": "A student told me she is five months pregnant and her hips feel tight; she wants to keep practising",
+    "plan": {
+     "mode": "student",
+     "style": "vinyasa",
+     "minutes": 15,
+     "level": "gentle",
+     "goals": [
+      "hips"
+     ],
+     "cautions": [
+      "pregnancy"
+     ],
+     "peak": null,
+     "sections": [
+      {
+       "key": "say",
+       "poses": []
+      },
+      {
+       "key": "practice",
+       "poses": [
+        "malasana",
+        "goddess-pose",
+        "pigeon",
+        "child-pose",
+        "lizard-pose",
+        "bound-angle",
+        "figure-four"
+       ]
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

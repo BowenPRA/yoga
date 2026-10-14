@@ -1,0 +1,66 @@
+{
+  "endpoint": "/api/translate",
+  "about": "Say it in English: what she types in Vietnamese, a mix, or English. `expect` is a native teacher's line, not a dictionary gloss.",
+  "cases": [
+    {
+      "id": "t01-lunge-cue",
+      "text": "Bước chân phải lên giữa hai tay, gập gối trước, gối thẳng trên cổ chân.",
+      "expect": "Step your right foot forward between your hands, and bend your front knee so it stacks over your ankle.",
+      "watch": "'Step the right leg up between the two hands'; 'knee straight above ankle' (thẳng misread as straight)."
+    },
+    {
+      "id": "t02-sun-breath",
+      "text": "Hít vào, vươn hai tay lên cao. Thở ra, gập người về trước, chạm tay xuống sàn.",
+      "expect": "Inhale, reach your arms up. Exhale, fold forward and bring your hands to the floor.",
+      "watch": "'Breathe in, stretch two hands up high'; 'bend the body forward'."
+    },
+    {
+      "id": "t03-yin-swan",
+      "text": "Từ tư thế Em bé, chậm rãi vào tư thế Thiên nga ngủ. Ở yên ba phút, để trọng lượng cơ thể làm việc, không cần cố gắng.",
+      "expect": "From Child's Pose, slowly come into Sleeping Swan. Stay here for three minutes. Let the weight of your body do the work; there's nothing to force.",
+      "watch": "'Baby pose', 'Sleeping Swan posture'; 'no need to try hard'."
+    },
+    {
+      "id": "t04-savasana",
+      "text": "Nằm ngửa, để hai chân rơi tự nhiên sang hai bên, buông lỏng toàn bộ cơ thể. Không còn gì phải làm nữa.",
+      "expect": "Lie on your back and let your feet fall open naturally. Let your whole body relax. There's nothing left to do.",
+      "watch": "'Lie face up'; 'release the whole body loose'."
+    },
+    {
+      "id": "t05-ask-injury",
+      "text": "Bạn có bị đau ở đâu không? Hôm nay đầu gối của bạn thế nào rồi?",
+      "expect": "Are you feeling any pain anywhere? How's your knee today?",
+      "watch": "Turns a question into a cue; 'Do you have pain at where?'"
+    },
+    {
+      "id": "t06-consent",
+      "text": "Tôi có thể chạm vào lưng bạn để chỉnh tư thế được không?",
+      "expect": "Is it okay if I touch your back to help you adjust?",
+      "watch": "'Can I touch your back to fix your posture?' ('fix' sounds critical)."
+    },
+    {
+      "id": "t07-vipassana",
+      "text": "Quan sát hơi thở đi vào và đi ra ở vùng mũi. Nếu tâm đi lang thang, nhẹ nhàng đưa nó trở về.",
+      "expect": "Notice the breath coming in and going out at your nostrils. If your mind wanders, gently bring it back.",
+      "watch": "'Observe the breath going in and out at the nose area'; 'the heart-mind'."
+    },
+    {
+      "id": "t08-mixed-dog",
+      "text": "Vào tư thế chó úp mặt, giữ 5 hơi thở, press your heels xuống sàn.",
+      "expect": "Come into Downward Dog. Stay for five breaths, and press your heels toward the floor.",
+      "watch": "'Downward-facing dog posture'; 'keep 5 breaths'; heels 'down to the floor' (most students cannot)."
+    },
+    {
+      "id": "t09-after-class",
+      "text": "Hôm nay bạn tập rất tốt. Lần sau nhớ mang theo nước nhé, và đừng ăn no trước khi tập.",
+      "expect": "You did really well today. Next time, remember to bring some water, and try not to eat a big meal before class.",
+      "watch": "'Don't eat full'; stiff, textbook register."
+    },
+    {
+      "id": "t10-english-good",
+      "text": "Inhale, lift your chest. Exhale, lower down slowly.",
+      "expect": "Kept as it is (or barely touched); lang 'en'; meaning_vi correct.",
+      "watch": "Rewrites a good English line."
+    }
+  ]
+}
