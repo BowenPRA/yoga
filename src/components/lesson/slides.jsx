@@ -2,13 +2,31 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Check } from 'lucide-react'
 import { useLang } from '../../lib/i18n.jsx'
-import { getTerm, getPose, LESSONS, lessonClipIds } from '../../lib/content.js'
+import { getTerm, getPose, LESSONS } from '../../lib/content.js'
 import { audio } from '../../lib/audio.js'
 import { store, facetsFor } from '../../lib/store.js'
 import { Bi, Chip, Eyebrow, KeepOffline, PlayButton, Porthole, Ring, Say, SayHint, Section, Tag } from '../ui.jsx'
 import FigureCrop from '../FigureCrop.jsx'
-import { useText } from '../../lib/lesson.js'
+import { useText, lineOf, poseOfClip, partsOf, lessonPlays, sizeText } from '../../lib/lesson.js'
 import { lessonArt, tintClass, poseTint } from '../../lib/tints.js'
+
+/** A lesson's parts as a quiet list: each title, and the words it teaches. */
+function PartList({ parts }) {
+  const text = useText()
+  return (
+    <div className="divide-y divide-line/70 rounded-3xl border border-line/70 bg-paper shadow-card">
+      {parts.map((p, i) => (
+        <div key={i} className="flex items-start gap-3 px-4 py-3">
+          <span className="mt-[9px] h-1.5 w-1.5 shrink-0 rounded-full bg-tint" />
+          <div className="min-w-0">
+            <div className="text-body text-ink">{text(p.title)}</div>
+            {p.words?.length > 0 && <div className="text-caption text-muted">{p.words.map((w) => w.en).join(' · ')}</div>}
+          </div>
+        </div>
+      ))}
+    </div>
+  )
+}
 
 /** The opening slide: what the lesson is for, the words she will meet, how it works. */
 export function IntroSlide({ lesson }) {
@@ -16,23 +34,97 @@ export function IntroSlide({ lesson }) {
   const text = useText()
   const L = t.learn
   const art = lessonArt(lesson)
+  const parts = partsOf(lesson)
   return (
     <div className="pt-2">
       {art && <Porthole kind={art.kind} window={art.window} size={112} className="mb-5 shadow-card" />}
       <Eyebrow tone="tint">{L.lessons}</Eyebrow>
       <h1 className="mt-1.5 font-serif text-display text-ink">{text(lesson.title)}</h1>
       <div className="mt-4"><Bi en={lesson.lead.en} vi={lesson.lead.vi} size="lg" /></div>
-      <div className="mt-3 text-caption text-muted">{lesson.terms.length} {L.words} · {lesson.minutes} {L.minutes}</div>
-      <KeepOffline key={lesson.id} ids={lessonClipIds(lesson)} label={t.common.offline.lesson} className="-ml-1 mt-2" />
-      <Section title={L.youWillMeet}>
-        <div className="flex flex-wrap gap-2">
-          {lesson.terms.map((id) => {
-            const term = getTerm(id)
-            return term ? <Chip key={id} onClick={() => audio.play(id)}>{lesson.labels?.[id] || term.en} <span className="ml-1 font-normal opacity-70">· {term.vi}</span></Chip> : null
+      <div className="mt-3 text-caption text-muted">{sizeText(lesson, t)}</div>
+      <KeepOffline key={lesson.id} ids={lessonPlays(lesson)} label={t.common.offline.lesson} className="-ml-1 mt-2" />
+      {parts.length > 0 && <Section title={t.lessonsLanguage.parts}><PartList parts={parts} /></Section>}
+      {lesson.terms.length > 0 && (
+        <Section title={L.youWillMeet}>
+          <div className="flex flex-wrap gap-2">
+            {lesson.terms.map((id) => {
+              const term = getTerm(id)
+              return term ? <Chip key={id} onClick={() => audio.play(id)}>{lesson.labels?.[id] || term.en} <span className="ml-1 font-normal opacity-70">· {term.vi}</span></Chip> : null
+            })}
+          </div>
+        </Section>
+      )}
+      <Section title={L.how}><Bi en={lesson.how.en} vi={lesson.how.vi} /></Section>
+    </div>
+  )
+}
+
+/** The words a part teaches, underlined wherever they fall in a line. */
+function Marked({ text, mark }) {
+  if (!mark?.length || typeof text !== 'string') return text
+  const esc = [...mark].sort((a, b) => b.length - a.length).map((m) => m.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+  const re = new RegExp(`(^|[^A-Za-z’'])(${esc.join('|')})(?=$|[^A-Za-z’'])`, 'gi')
+  const out = []
+  let last = 0
+  for (const m of text.matchAll(re)) {
+    const start = m.index + m[1].length
+    if (start > last) out.push(text.slice(last, start))
+    out.push(<span key={start} className="font-medium text-tint-deep underline decoration-tint/40 decoration-2 underline-offset-4">{m[2]}</span>)
+    last = start + m[2].length
+  }
+  if (last < text.length) out.push(text.slice(last))
+  return out
+}
+
+/**
+ * One part of a lesson on language: the words (English, Vietnamese, the
+ * stress), the lines a native teacher says with them, each playable, with
+ * the words underlined and the pose a line belongs to, then the trap.
+ */
+export function PartSlide({ slide, lesson }) {
+  const { t } = useLang()
+  const text = useText()
+  const part = slide.part
+  const words = part.words || []
+  const mark = part.mark || words.map((w) => w.en)
+  return (
+    <div className="pt-1">
+      <Eyebrow tone="tint">{text(part.kicker) || text(lesson.title)}</Eyebrow>
+      <h1 className="mt-1.5 font-serif text-title text-ink">{text(part.title)}</h1>
+      {part.lead && <p className="mt-2 text-body text-muted">{text(part.lead)}</p>}
+      {words.length > 0 && (
+        <div className="mt-5 grid grid-cols-2 gap-2.5">
+          {words.map((w, i) => (
+            <div key={w.en} className={`rounded-3xl border border-line/70 bg-paper px-4 py-3 shadow-card ${i === words.length - 1 && words.length % 2 ? 'col-span-2' : ''}`}>
+              <div className="font-serif text-[21px] leading-tight text-ink">{w.en}</div>
+              {w.say && <SayHint say={w.say} />}
+              <div className="mt-1 text-caption leading-snug text-muted">{w.vi}</div>
+            </div>
+          ))}
+        </div>
+      )}
+      <Section title={t.learn.inClass}>
+        <div className="rounded-3xl border border-line/70 bg-paper p-2 shadow-card">
+          {(part.cues || []).map((id) => {
+            const line = lineOf(id)
+            if (!line) return null
+            const pose = poseOfClip(id)
+            const en = (
+              <>
+                <Marked text={line.en} mark={mark} />
+                {pose && <span className="mt-1 block"><Tag>{pose.en}</Tag></span>}
+              </>
+            )
+            return <Say key={id} id={id} en={en} vi={line.vi} />
           })}
         </div>
       </Section>
-      <Section title={L.how}><Bi en={lesson.how.en} vi={lesson.how.vi} /></Section>
+      {part.note && (
+        <div className="tint-gold wash mt-6 rounded-3xl border border-line/60 px-4 py-3.5">
+          <Eyebrow tone="tint" className="mb-1">{t.anatomy.sayRight}</Eyebrow>
+          <p className="text-body text-ink">{text(part.note)}</p>
+        </div>
+      )}
     </div>
   )
 }
@@ -86,13 +178,16 @@ export function TermSlide({ slide, lesson }) {
       <Section title={L.inClass}>
         <div className="rounded-3xl border border-line/70 bg-paper p-2 shadow-card">
           {(slide.cues || []).map((cid) => {
-            const i = Number(cid.split('__cue-')[1]) - 1
-            const c = term.cues?.[i]
+            // The term's own cues carry a style; a pose line, a phrase or a
+            // lesson's own line may stand beside them, tagged with its pose.
+            const own = cid.startsWith(`${term.id}__cue-`)
+            const c = own ? term.cues?.[Number(cid.split('__cue-')[1]) - 1] : lineOf(cid)
             if (!c) return null
+            const tag = own ? t.anatomy.styles[c.style] || c.style : poseOfClip(cid)?.en
             return (
               <div key={cid} className="flex items-start gap-1">
                 <div className="min-w-0 flex-1"><Say id={cid} en={c.en} vi={c.vi} /></div>
-                <Tag className="mr-1 mt-3.5 uppercase tracking-wider">{t.anatomy.styles[c.style] || c.style}</Tag>
+                {tag && <Tag className={`mr-1 mt-3.5 ${own ? 'uppercase tracking-wider' : 'max-w-[38%] text-right'}`}>{tag}</Tag>}
               </div>
             )
           })}
@@ -191,34 +286,39 @@ export function DoneSlide({ lesson, termRows }) {
   const pose = lesson.pose ? getPose(lesson.pose) : null
   const idx = LESSONS.findIndex((l) => l.id === lesson.id)
   const next = LESSONS[idx + 1]
+  const parts = partsOf(lesson)
   return (
     <div>
       <div className="flex flex-col items-center pb-5 pt-6 text-center">
         <Ring value={1} done size={84} stroke={5} className="mb-5" />
         <div className="font-serif text-display text-ink">{L.doneTitle}</div>
-        <p className="mt-2 max-w-[26ch] text-body text-muted">{L.doneLead}</p>
+        <p className="mt-2 max-w-[26ch] text-body text-muted">{lesson.count === 'lines' ? t.lessonsLanguage.doneLeadLines : L.doneLead}</p>
       </div>
-      <div className="divide-y divide-line/70 rounded-3xl border border-line/70 bg-paper shadow-card">
-        {lesson.terms.map((id) => {
-          const term = getTerm(id)
-          if (!term) return null
-          return (
-            <div key={id} className="flex items-center gap-3 px-3.5 py-3">
-              <PlayButton id={id} size={38} />
-              <div className="min-w-0 flex-1">
-                <div className="text-body text-ink">{lesson.labels?.[id] || term.en} <span className="text-caption text-muted">· {term.vi}</span></div>
-                <KnownMarks row={termRows?.[id]} term={term} compact />
+      {lesson.terms.length > 0 && (
+        <div className="divide-y divide-line/70 rounded-3xl border border-line/70 bg-paper shadow-card">
+          {lesson.terms.map((id) => {
+            const term = getTerm(id)
+            if (!term) return null
+            return (
+              <div key={id} className="flex items-center gap-3 px-3.5 py-3">
+                <PlayButton id={id} size={38} />
+                <div className="min-w-0 flex-1">
+                  <div className="text-body text-ink">{lesson.labels?.[id] || term.en} <span className="text-caption text-muted">· {term.vi}</span></div>
+                  <KnownMarks row={termRows?.[id]} term={term} compact />
+                </div>
               </div>
-            </div>
-          )
-        })}
-      </div>
+            )
+          })}
+        </div>
+      )}
+      {parts.length > 0 && <Section title={t.lessonsLanguage.recap} className={lesson.terms.length ? '' : '!mt-0'}><PartList parts={parts} /></Section>}
       {next && (
         <p className="mt-6 px-1 text-caption text-muted">{L.nextLesson}: <span className="text-ink">{text(next.title)}</span>{next.slides ? '' : ` · ${L.soon}`}</p>
       )}
       <div className="mt-4 flex flex-wrap gap-2">
         <Chip to="/anatomy">{L.toAnatomy}</Chip>
         {pose && <Chip to={`/poses/${pose.id}`} tone={poseTint(pose)}>{L.toPose}: {pose.en}</Chip>}
+        {(lesson.links || []).map((l) => <Chip key={l.to} to={l.to}>{text(l.label)}</Chip>)}
       </div>
     </div>
   )

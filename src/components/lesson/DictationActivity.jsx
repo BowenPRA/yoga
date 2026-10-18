@@ -1,13 +1,12 @@
 import { useEffect, useState } from 'react'
 import { Volume2 } from 'lucide-react'
 import { useLang } from '../../lib/i18n.jsx'
-import { cueText } from '../../lib/content.js'
 import { audio } from '../../lib/audio.js'
 import { useSpeaking } from '../../lib/useSpeaking.js'
 import { similarity, wordDiff } from '../../lib/similarity.js'
 import { Button } from '../ui.jsx'
 import { Prompt, Verdict, CheckButton } from './shared.jsx'
-import { useText } from '../../lib/lesson.js'
+import { useText, lineOf } from '../../lib/lesson.js'
 
 const PASS = 0.85
 
@@ -20,7 +19,7 @@ export default function DictationActivity({ activity, result, onResult }) {
   const { t } = useLang()
   const text = useText()
   const L = t.learn
-  const cue = cueText(activity.clip)
+  const cue = lineOf(activity.clip) || { en: '', vi: '' }
   const speaking = useSpeaking()
   const [typed, setTyped] = useState(result?.typed || '')
   const [attempt, setAttempt] = useState(null) // { score, diff } of a failed try

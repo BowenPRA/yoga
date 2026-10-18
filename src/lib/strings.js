@@ -229,6 +229,12 @@ export const STRINGS = {
         saving: 'Đang lưu…', done: 'Đã lưu, dùng được khi không có mạng', retry: 'Chưa lưu hết. Chạm để thử lại.',
       },
     },
+    lessonsLanguage: {
+      row: 'Ngôn ngữ đứng lớp', rowIntro: 'Những chữ nhỏ làm nên một câu cue, và cách nói chuyện với học viên.',
+      lines: 'câu', parts: 'Trong bài này', recap: 'Bạn đã gặp',
+      doneLeadLines: 'Bạn đã nghe và nói thử các câu của bài này.',
+      student: 'Học viên nói',
+    },
   },
   en: {
     appName: 'Yoga English',
@@ -458,6 +464,12 @@ export const STRINGS = {
         pose: 'Keep this pose offline', lesson: 'Keep this lesson offline',
         saving: 'Saving…', done: 'Kept offline on this phone', retry: 'Not all saved. Tap to try again.',
       },
+    },
+    lessonsLanguage: {
+      row: 'The language of teaching', rowIntro: 'The small words that make a cue, and how to talk to your students.',
+      lines: 'lines', parts: 'In this lesson', recap: 'You met',
+      doneLeadLines: 'You have heard and said every line in this lesson.',
+      student: 'A student says',
     },
   },
 }

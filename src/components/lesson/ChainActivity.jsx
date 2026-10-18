@@ -1,12 +1,11 @@
 import { useMemo, useState } from 'react'
 import { Volume2 } from 'lucide-react'
 import { useLang } from '../../lib/i18n.jsx'
-import { cueText } from '../../lib/content.js'
 import { audio } from '../../lib/audio.js'
 import { useSpeaking } from '../../lib/useSpeaking.js'
 import { Button } from '../ui.jsx'
 import { Prompt, Verdict, CheckButton, Piece, Board, Bank, Hint } from './shared.jsx'
-import { seededShuffle, useText } from '../../lib/lesson.js'
+import { seededShuffle, useText, lineOf } from '../../lib/lesson.js'
 
 /**
  * Build a cue from its pieces (verb, body part, direction, breath), after the
@@ -22,7 +21,7 @@ export default function ChainActivity({ activity, result, onResult }) {
   const bankAll = useMemo(() => seededShuffle([...activity.pieces, ...(activity.traps || [])], activity.id), [activity])
   const [line, setLine] = useState(() => result?.line || [])
   const checked = !!result?.done
-  const cue = cueText(activity.clip)
+  const cue = lineOf(activity.clip)
 
   const add = (piece) => { if (!checked && line.length < activity.pieces.length) setLine([...line, piece]) }
   const takeBack = (i) => { if (!checked) setLine(line.slice(0, i)) }

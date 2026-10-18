@@ -1,11 +1,10 @@
 import { useRef, useState } from 'react'
 import { ChevronDown, ChevronUp, Check, Play, Square } from 'lucide-react'
 import { useLang } from '../../lib/i18n.jsx'
-import { cueText } from '../../lib/content.js'
 import { audio } from '../../lib/audio.js'
 import { Button, PlayButton } from '../ui.jsx'
 import { Prompt, Verdict, CheckButton } from './shared.jsx'
-import { seededShuffle, useText } from '../../lib/lesson.js'
+import { seededShuffle, useText, lineOf } from '../../lib/lesson.js'
 
 /**
  * Order the cues of a pose, after the Dashboard's OrderActivity: the steps
@@ -41,7 +40,7 @@ export default function OrderActivity({ activity, result, onResult }) {
       <Prompt>{text(activity.prompt)}</Prompt>
       <ol className="space-y-2.5">
         {order.map((id, i) => {
-          const line = cueText(id)
+          const line = lineOf(id)
           const ok = checked ? steps[i] === id : null
           const look = checked ? (ok ? 'border-sage/50 bg-sage-soft/60' : 'border-clay/50 bg-clay-soft/50') : 'border-line/70 bg-paper shadow-card'
           return (

@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Mic, Square, Volume2 } from 'lucide-react'
 import { useLang } from '../../lib/i18n.jsx'
-import { cueText } from '../../lib/content.js'
 import { audio } from '../../lib/audio.js'
 import { api } from '../../lib/api.js'
 import { canRecord, startRecording } from '../../lib/recorder.js'
@@ -9,7 +8,7 @@ import { useSpeaking } from '../../lib/useSpeaking.js'
 import { Button, Dots, SayHint } from '../ui.jsx'
 import PronounceFeedback from '../PronounceFeedback.jsx'
 import { Prompt, Board } from './shared.jsx'
-import { useText } from '../../lib/lesson.js'
+import { useText, lineOf } from '../../lib/lesson.js'
 
 /**
  * Say it: hear the model, record herself, and Gemini says in Vietnamese
@@ -30,7 +29,7 @@ export default function SayItActivity({ activity, result, onResult }) {
   const recRef = useRef(null)
   const speaking = useSpeaking()
   const item = items[i]
-  const cue = item.kind === 'cue' ? cueText(item.clip) : null
+  const cue = item.kind === 'cue' ? lineOf(item.clip) : null
   const done = !!result?.done
 
   useEffect(() => () => { recRef.current?.cancel?.() }, [])
