@@ -51,9 +51,13 @@ export default function Lesson() {
   const mainRef = useRef(null)
 
   // Resume where she stopped; a finished lesson starts again from the top.
+  // Another lesson (a new id, same page) starts blank, reset while rendering
+  // rather than in the effect, so the last lesson's slide is never saved
+  // under the new id before its own progress is read.
+  const [shownId, setShownId] = useState(id)
+  if (shownId !== id) { setShownId(id); setIndex(0); setResults({}); setReady(false) }
   useEffect(() => {
     let live = true
-    setIndex(0); setResults({}); setReady(false)
     progress.lesson(id).then((row) => {
       if (!live) return
       if (row && !row.done && row.slide) { setIndex(Math.min(row.slide, (lesson?.slides?.length || 1) - 1)); setResults(row.results || {}) }
@@ -66,7 +70,10 @@ export default function Lesson() {
   useEffect(() => { audio.stop(); mainRef.current?.scrollTo?.({ top: 0 }) }, [index])
   useEffect(() => () => audio.stop(), [])
 
-  const slides = lesson?.slides || []
+  // One empty list for a missing lesson, so `slides` keeps its identity
+  // between renders (onResult depends on it).
+  const [noSlides] = useState(() => [])
+  const slides = lesson?.slides || noSlides
   const slide = slides[index]
   const last = index === slides.length - 1
 
