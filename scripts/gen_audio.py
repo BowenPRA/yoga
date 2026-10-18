@@ -146,13 +146,19 @@ def synth(text, style, k):
             d = r.json()
             part = next(c for s in d["steps"] for c in s["content"] if c.get("type") == "audio")
             return base64.b64decode(part["data"]), d.get("usage", {}).get("total_output_tokens", 0)
-        if r.status_code == 429 and "per day" in r.text:
+        if r.status_code == 429 and daily_cap(r.text):
             raise QuotaExhausted(f"daily quota exhausted for {MODEL}: {r.text[:160]}")
         if r.status_code in (429, 500, 503):
             time.sleep(3 * (attempt + 1))
             continue
         raise RuntimeError(f"{r.status_code} {r.text[:200]}")
     raise RuntimeError("gave up after retries")
+
+
+def daily_cap(text):
+    """A 429 for the daily request cap (not the per-minute one)."""
+    t = text.lower()
+    return "per day" in t or "perday" in t or "per_day" in t
 
 
 def synth_legacy(text, style, k):
@@ -187,7 +193,7 @@ def synth_legacy(text, style, k):
                 w.setframerate(rate)
                 w.writeframes(pcm)
             return buf.getvalue(), d.get("usageMetadata", {}).get("candidatesTokenCount", 0)
-        if r.status_code == 429 and "per day" in r.text:
+        if r.status_code == 429 and daily_cap(r.text):
             raise QuotaExhausted(f"daily quota exhausted for {MODEL}: {r.text[:160]}")
         if r.status_code in (429, 500, 503):
             time.sleep(3 * (attempt + 1))
@@ -247,6 +253,13 @@ def needs(clip, manifest):
     if rec.get("hash") != digest(clip):
         return True
     return MODEL == PREFERRED and rec.get("model") != PREFERRED
+
+
+def redo_only(clip, manifest):
+    """Needed only because a fallback model made it: the file exists and says
+    the current line."""
+    rec = manifest.get(clip["id"])
+    return bool(rec) and rec.get("hash") == digest(clip) and os.path.exists(os.path.join(OUT, clip["id"] + ".mp3"))
 
 
 def save_manifest(manifest):
@@ -398,11 +411,17 @@ def main():
         print(f"{len(twins)} clips will be copied from identical lines in this run")
     first = [c for c in todo if c["id"] in set(priority)]
     rest = [] if "--priority-only" in args else [c for c in todo if c["id"] not in set(priority)]
+    # Outside the lessons, a clip with no audio (or audio of an old line) comes
+    # before one that only needs redoing on Flash: a fallback-model clip
+    # already says the right thing, so it waits for spare quota.
+    redo = [c for c in rest if redo_only(c, manifest)]
+    rest = [c for c in rest if not redo_only(c, manifest)]
     if single:
-        batches = [[c] for c in first + rest]
+        batches = [[c] for c in first + rest + redo]
     else:
-        batches = make_batches(first) + make_batches(rest)
-    print(f"model {MODEL}: {len(clips)} clips, {len(todo)} to generate in {len(batches)} requests ({len(first)} lesson clips first)")
+        batches = make_batches(first) + make_batches(rest) + make_batches(redo)
+    print(f"model {MODEL}: {len(clips)} clips, {len(todo)} to generate in {len(batches)} requests "
+          f"({len(first)} lesson clips first, {len(redo)} fallback-model redos last)")
     if dry:
         for b in batches[:40]:
             print(" ", len(b), "|", " / ".join(c["id"] for c in b)[:110])
@@ -411,6 +430,7 @@ def main():
     ff = ffmpeg()
     tokens = 0
     counter = [0]
+    fails = 0
     try:
         for i, b in enumerate(batches, 1):
             if counter[0] >= max_req:
@@ -419,11 +439,16 @@ def main():
             try:
                 print(f"[{i}/{len(batches)}] batch of {len(b)}: {', '.join(c['id'] for c in b)[:100]}", flush=True)
                 tokens += run_batch(b, k, ff, manifest, counter)
+                fails = 0
             except QuotaExhausted as e:
                 print(e)
                 break
             except Exception as e:  # noqa: BLE001
                 print(f"[{i}/{len(batches)}] FAIL {', '.join(c['id'] for c in b)[:80]}: {str(e)[:160]}", flush=True)
+                fails += 1
+                if fails >= 4:
+                    print("stopping: four batches in a row failed (an unrecognised cap or an outage?)")
+                    break
             save_manifest(manifest)
     finally:
         copy_twins(twins, manifest)

@@ -1,0 +1,76 @@
+start 05:41:48
+57 clips will be copied from identical lines in this run
+model gemini-3.8-flash-tts: 2657 clips, 2155 to generate in 505 requests (319 lesson clips first, 235 fallback-model redos last)
+[1/505] batch of 6: trapezius, rhomboids, rotator-cuff, serratus-anterior, latissimus-dorsi, erector-spinae
+[2/505] batch of 2: calves, crown
+[3/505] batch of 6: trapezius__plain, rhomboids__plain, rotator-cuff__plain, pectoralis-major__plain, serratus-anterior_
+[4/505] batch of 6: erector-spinae__plain, quadratus-lumborum__plain, biceps-brachii__plain, forearm-flexors__plain, for
+[5/505] batch of 6: external-oblique__plain, transversus-abdominis__plain, diaphragm__plain, pelvic-floor__plain, it-ban
+[6/505] batch of 6: tibialis-posterior__plain, fibularis-longus__plain, achilles-tendon__plain, plantar-fascia__plain, c
+[7/505] batch of 6: lumbar-spine__plain, femur__plain, kneecap__plain, shin-bone__plain, heel__plain, arch__plain
+[8/505] batch of 6: toes__plain, ribs__plain, sternum__plain, collarbones__plain, shoulder-blades__plain, upper-arm-bone
+[9/505] batch of 6: elbow__plain, forearm-bones__plain, wrist__plain, hands__plain, flexion__plain, extension__plain
+    split mismatch on 6, retrying as 3 + 3
+[10/505] batch of 4: plantar-flexion__plain, dorsiflexion__plain, protraction-retraction__plain, pelvic-tilt__plain
+    split mismatch on 4, retrying as 2 + 2
+    split mismatch on 2, retrying as 1 + 1
+    ok protraction-retraction__plain
+    ok pelvic-tilt__plain
+[11/505] batch of 6: trapezius__cue-1, trapezius__cue-2, rhomboids__cue-1, rotator-cuff__cue-1, pectoralis-major__cue-1, 
+[12/505] batch of 6: serratus-anterior__cue-1, forearm-extensors__cue-2, rectus-abdominis__cue-1, rectus-abdominis__cue-4
+[13/505] batch of 1: it-band__cue-2
+    ok it-band__cue-2
+[14/505] batch of 4: pectoralis-major__cue-3, rectus-abdominis__cue-2, transversus-abdominis__cue-2, ankle__cue-2
+[15/505] batch of 4: pectoralis-major__cue-4, rectus-abdominis__cue-3, pelvic-floor__cue-2, it-band__cue-1
+[16/505] batch of 1: mountain-pose__sa
+    ok mountain-pose__sa
+[17/505] batch of 6: mountain-pose__cue-1, mountain-pose__cue-9, standing-forward-fold__cue-1, downward-dog__cue-1, downw
+[18/505] batch of 6: chair-pose__cue-9, warrior-1__cue-1, warrior-1__cue-9, seated-forward-fold__cue-1, seated-forward-fo
+[19/505] batch of 6: upward-plank__cue-2, upward-plank__cue-9, boat-pose__cue-1, boat-pose__cue-2, boat-pose__cue-9, sava
+[20/505] batch of 6: savasana__cue-8, cat-pose__cue-1, cat-pose__cue-8, cow-pose__cue-1, cow-pose__cue-8, plank__cue-1
+[21/505] batch of 4: plank__cue-9, locust-pose__cue-1, locust-pose__cue-9, toe-squat__cue-3
+[22/505] batch of 6: mountain-pose__cue-2, mountain-pose__cue-3, mountain-pose__cue-4, mountain-pose__cue-5, chaturanga__
+[23/505] batch of 6: downward-dog__cue-3, downward-dog__cue-4, downward-dog__cue-5, chair-pose__cue-2, chair-pose__cue-3,
+[24/505] batch of 6: warrior-1__cue-2, warrior-1__cue-3, warrior-1__cue-4, warrior-1__cue-5, seated-forward-fold__cue-2, 
+[25/505] batch of 6: seated-forward-fold__cue-4, seated-forward-fold__cue-5, upward-plank__cue-3, upward-plank__cue-4, up
+[26/505] batch of 6: boat-pose__cue-4, boat-pose__cue-5, savasana__cue-2, savasana__cue-3, savasana__cue-4, cat-pose__cue
+[27/505] batch of 6: cat-pose__cue-3, cat-pose__cue-4, cow-pose__cue-2, cow-pose__cue-3, cow-pose__cue-4, plank__cue-2
+[28/505] batch of 6: plank__cue-3, plank__cue-4, plank__cue-5, locust-pose__cue-2, locust-pose__cue-3, locust-pose__cue-4
+[29/505] batch of 1: locust-pose__cue-5
+    ok locust-pose__cue-5
+[30/505] batch of 6: mountain-pose__cue-6, downward-dog__cue-6, chair-pose__cue-6, warrior-1__cue-6, seated-forward-fold_
+    split mismatch on 6, retrying as 3 + 3
+[31/505] batch of 6: boat-pose__cue-6, savasana__cue-5, cat-pose__cue-5, cow-pose__cue-5, plank__cue-6, locust-pose__cue-
+[32/505] batch of 6: mountain-pose__cue-7, downward-dog__cue-7, chair-pose__cue-7, warrior-1__cue-7, seated-forward-fold_
+[33/505] batch of 6: savasana__cue-6, cat-pose__cue-6, cow-pose__cue-6, plank__cue-7, breath__belly, breath__ribs
+    split mismatch on 6, retrying as 3 + 3
+    split mismatch on 3, retrying as 1 + 2
+    ok savasana__cue-6
+[34/505] batch of 6: breath__collarbones, breath__exhale-down, breath__belly-in, breath__holding, breath__lengthen-fold, 
+    split mismatch on 6, retrying as 3 + 3
+[35/505] batch of 2: breath__bandha, breath__ujjayi
+[36/505] batch of 6: mountain-pose__cue-8, mountain-pose__safe-1, mountain-pose__safe-2, downward-dog__cue-8, downward-do
+[37/505] batch of 6: chair-pose__cue-8, chair-pose__safe-1, chair-pose__safe-2, chair-pose__safe-3, warrior-1__cue-8, war
+[38/505] batch of 6: warrior-1__safe-2, warrior-1__safe-3, seated-forward-fold__cue-8, seated-forward-fold__safe-1, seate
+[39/505] batch of 6: upward-plank__cue-8, upward-plank__safe-1, upward-plank__safe-2, upward-plank__safe-3, boat-pose__cu
+    split mismatch on 6, retrying as 3 + 3
+[40/505] batch of 6: boat-pose__safe-2, savasana__cue-7, savasana__safe-1, savasana__safe-2, cat-pose__cue-7, cat-pose__s
+[41/505] batch of 6: cat-pose__safe-2, cow-pose__cue-7, cow-pose__safe-1, cow-pose__safe-2, plank__cue-8, plank__safe-1
+[42/505] batch of 6: plank__safe-2, plank__safe-3, locust-pose__cue-8, locust-pose__safe-1, locust-pose__safe-2, hero-pos
+    split mismatch on 6, retrying as 3 + 3
+[43/505] batch of 6: knee__care-femur, knee__care-shin-bone, knee__care-knee, knee__care-kneecap, knee__care-quadriceps, 
+[44/505] batch of 6: knee__care-extension, knee__care-hamstrings, knee__care-flexion, spine__care-cervical-spine, spine__
+[45/505] batch of 6: spine__care-sacrum, spine__care-tailbone, spine__care-pelvic-tilt, spine__care-erector-spinae, spine
+[46/505] batch of 6: shoulder__care-collarbones, shoulder__care-shoulder-blades, shoulder__care-shoulder-joint, shoulder_
+[47/505] batch of 6: shoulder__care-serratus-anterior, shoulder__care-protraction-retraction, shoulder__care-pectoralis-m
+[48/505] batch of 6: arm__care-elbow, arm__care-upper-arm-bone, arm__care-forearm-flexors, arm__care-biceps-brachii, arm_
+[48/505] FAIL arm__care-elbow, arm__care-upper-arm-bone, arm__care-forearm-flexors, arm__care-: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/interactions (Caused by NameResolutionError("HTT
+[49/505] batch of 6: foot__care-ankle, foot__care-heel, foot__care-arch, foot__care-toes, foot__care-tibialis-anterior, f
+[49/505] FAIL foot__care-ankle, foot__care-heel, foot__care-arch, foot__care-toes, foot__care-: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/interactions (Caused by NameResolutionError("HTT
+[50/505] batch of 6: foot__care-plantar-flexion, foot__care-achilles-tendon, foot__care-plantar-fascia, breath__care-diap
+[50/505] FAIL foot__care-plantar-flexion, foot__care-achilles-tendon, foot__care-plantar-fasci: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/interactions (Caused by NameResolutionError("HTT
+[51/505] batch of 5: breath__care-sternum, breath__care-pelvic-floor, breath__care-transversus-abdominis, breath__care-re
+[51/505] FAIL breath__care-sternum, breath__care-pelvic-floor, breath__care-transversus-abdomi: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/interactions (Caused by NameResolutionError("HTT
+stopping: four batches in a row failed (an unrecognised cap or an outage?)
+done. 65 requests, 35016 audio tokens ≈ $0.315; 1954 clips still to do
+end 08:19:51

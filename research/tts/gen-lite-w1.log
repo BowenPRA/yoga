@@ -1,0 +1,82 @@
+start 05:50:15
+model gemini-3.8-flash-lite-tts: 542 clips, 542 to generate in 94 requests (0 lesson clips first, 0 fallback-model redos last)
+[1/94] batch of 6: phrase__welcome-7, phrase__welcome-8, phrase__welcome-1, phrase__welcome-2, phrase__welcome-3, phras
+[2/94] batch of 6: phrase__inj-1, phrase__inj-2, phrase__inj-3, phrase__inj-4, phrase__inj-5, phrase__inj-6
+    split mismatch on 6, retrying as 3 + 3
+    split mismatch on 3, retrying as 1 + 2
+    ok phrase__inj-4
+[3/94] batch of 5: phrase__inj-7, phrase__inj-8, phrase__inj-9, phrase__inj-10, phrase__inj-11
+[4/94] batch of 6: phrase__trans-1, phrase__trans-2, phrase__trans-3, phrase__trans-9, phrase__trans-10, phrase__trans-
+    split mismatch on 6, retrying as 3 + 3
+[5/94] batch of 5: phrase__trans-4, phrase__trans-5, phrase__trans-6, phrase__trans-7, phrase__trans-8
+[6/94] batch of 6: phrase__props-1, phrase__props-2, phrase__props-3, phrase__props-4, phrase__props-5, phrase__props-6
+[7/94] batch of 3: phrase__props-7, phrase__props-8, phrase__props-9
+    split mismatch on 3, retrying as 1 + 2
+    ok phrase__props-7
+[8/94] batch of 6: phrase__safe-1, phrase__safe-2, phrase__safe-3, phrase__safe-4, phrase__safe-5, phrase__safe-6
+    split mismatch on 6, retrying as 3 + 3
+[9/94] batch of 6: phrase__yin-7, phrase__yin-1, phrase__yin-8, phrase__yin-2, phrase__yin-3, phrase__yin-4
+    split mismatch on 6, retrying as 3 + 3
+    split mismatch on 3, retrying as 1 + 2
+    ok phrase__yin-7
+    split mismatch on 2, retrying as 1 + 1
+    ok phrase__yin-1
+    ok phrase__yin-8
+[10/94] batch of 4: phrase__yin-5, phrase__yin-9, phrase__yin-10, phrase__yin-6
+    split mismatch on 4, retrying as 2 + 2
+[11/94] batch of 6: phrase__count-1, phrase__count-2, phrase__count-3, phrase__count-4, phrase__count-5, phrase__count-6
+    split mismatch on 6, retrying as 3 + 3
+[12/94] batch of 6: phrase__count-7, phrase__count-8, phrase__count-9, phrase__count-samasthitih, phrase__count-10, phra
+[13/94] batch of 6: phrase__count-12, phrase__count-13, phrase__count-14, phrase__count-15, phrase__count-16, phrase__co
+    split mismatch on 6, retrying as 3 + 3
+[14/94] batch of 6: phrase__count-18, phrase__count-19, phrase__count-20, phrase__count-21, phrase__count-22, phrase__co
+[15/94] batch of 6: phrase__count-24, phrase__count-25, phrase__count-26, phrase__drishti-nasagra, phrase__drishti-bhrum
+    split mismatch on 6, retrying as 3 + 3
+[16/94] batch of 5: phrase__drishti-hastagra, phrase__drishti-padayoragra, phrase__drishti-parsva, phrase__drishti-angus
+[17/94] batch of 6: phrase__pran-1, phrase__pran-2, phrase__pran-3, phrase__pran-4, phrase__pran-5, phrase__pran-6
+    split mismatch on 6, retrying as 3 + 3
+    split mismatch on 3, retrying as 1 + 2
+    ok phrase__pran-1
+[18/94] batch of 5: phrase__pran-7, phrase__pran-8, phrase__pran-9, phrase__pran-10, phrase__pran-11
+    split mismatch on 5, retrying as 2 + 3
+    split mismatch on 3, retrying as 1 + 2
+    ok phrase__pran-9
+[19/94] batch of 6: phrase__sav-8, phrase__sav-9, phrase__sav-10, phrase__sav-11, phrase__sav-1, phrase__sav-12
+[20/94] batch of 6: phrase__sav-2, phrase__sav-13, phrase__sav-3, phrase__sav-14, phrase__sav-4, phrase__sav-15
+    split mismatch on 6, retrying as 3 + 3
+    split mismatch on 3, retrying as 1 + 2
+    ok phrase__sav-2
+[21/94] batch of 4: phrase__sav-5, phrase__sav-16, phrase__sav-6, phrase__sav-7
+[22/94] batch of 6: phrase__close-1, phrase__close-6, phrase__close-2, phrase__close-3, phrase__close-7, phrase__close-4
+    split mismatch on 6, retrying as 3 + 3
+[23/94] batch of 6: phrase__after-1, phrase__after-2, phrase__after-3, phrase__after-4, phrase__after-5, phrase__after-6
+[24/94] batch of 3: phrase__after-7, phrase__after-8, phrase__after-9
+[25/94] batch of 6: phrase__med-1, phrase__med-2, phrase__med-3, phrase__med-4, phrase__med-5, phrase__med-6
+    split mismatch on 6, retrying as 3 + 3
+    split mismatch on 3, retrying as 1 + 2
+    ok phrase__med-4
+[26/94] batch of 6: phrase__med-7, phrase__med-8, phrase__med-9, phrase__med-10, phrase__med-11, phrase__med-12
+    split mismatch on 6, retrying as 3 + 3
+    split mismatch on 3, retrying as 1 + 2
+    ok phrase__med-7
+    split mismatch on 2, retrying as 1 + 1
+    ok phrase__med-8
+    ok phrase__med-9
+    split mismatch on 3, retrying as 1 + 2
+    ok phrase__med-10
+    split mismatch on 2, retrying as 1 + 1
+    ok phrase__med-11
+    ok phrase__med-12
+[27/94] batch of 5: phrase__med-13, phrase__med-14, phrase__med-15, phrase__med-16, phrase__med-17
+    split mismatch on 5, retrying as 2 + 3
+    split mismatch on 3, retrying as 1 + 2
+[27/94] FAIL phrase__med-13, phrase__med-14, phrase__med-15, phrase__med-16, phrase__med-17: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+[28/94] batch of 6: phrase__phil-2, phrase__phil-3, phrase__phil-4, phrase__phil-5, phrase__phil-6, phrase__phil-7
+[28/94] FAIL phrase__phil-2, phrase__phil-3, phrase__phil-4, phrase__phil-5, phrase__phil-6, : HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/interactions (Caused by NameResolutionError("HTT
+[29/94] batch of 5: phrase__phil-8, phrase__phil-9, phrase__phil-10, phrase__phil-11, phrase__phil-12
+[29/94] FAIL phrase__phil-8, phrase__phil-9, phrase__phil-10, phrase__phil-11, phrase__phil-1: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/interactions (Caused by NameResolutionError("HTT
+[30/94] batch of 6: phrase__sa-asana__inclass, phrase__sa-pranayama__inclass, phrase__sa-drishti__inclass, phrase__sa-ba
+[30/94] FAIL phrase__sa-asana__inclass, phrase__sa-pranayama__inclass, phrase__sa-drishti__in: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/interactions (Caused by NameResolutionError("HTT
+stopping: four batches in a row failed (an unrecognised cap or an outage?)
+done. 81 requests, 19686 audio tokens ≈ $0.118; 398 clips still to do
+end 08:19:51
