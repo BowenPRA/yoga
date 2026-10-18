@@ -27,7 +27,7 @@ export const lotusInShoulderstand = {
 
   breath: {
     en: 'Breathe slowly. In Piṇḍāsana your belly is folded, so let the breath move into your back.',
-    vi: 'Thở chậm. Trong Piṇḍāsana bụng đang gập lại, nên để hơi thở đi vào lưng.',
+    vi: 'Thở chậm. Trong Piṇḍāsana bụng đang gập lại, nên hãy hướng hơi thở vào lưng.',
   },
 
   cues: [
@@ -38,7 +38,7 @@ export const lotusInShoulderstand = {
     { id: 'lotus-in-shoulderstand__cue-5', kind: 'alignment', en: 'Hold your wrist or your fingers, and draw your knees in close.', vi: 'Nắm cổ tay hoặc các ngón tay, và kéo gối lại thật gần.' },
     { id: 'lotus-in-shoulderstand__cue-6', kind: 'soften', en: 'Let your back round and soften, like a seed.', vi: 'Để lưng cong tròn và mềm ra, như một hạt mầm.' },
     { id: 'lotus-in-shoulderstand__cue-7', kind: 'breath', en: 'Eight breaths in each, slow and steady.', vi: 'Tám nhịp thở ở mỗi tư thế, chậm và đều.' },
-    { id: 'lotus-in-shoulderstand__cue-8', kind: 'safety', en: 'If lotus pulls on your knees, simply cross your legs instead.', vi: 'Nếu hoa sen kéo căng gối, chỉ cần bắt chéo chân thay thế.' },
+    { id: 'lotus-in-shoulderstand__cue-8', kind: 'safety', en: 'If lotus pulls on your knees, simply cross your legs instead.', vi: 'Nếu hoa sen làm căng gối, chỉ cần bắt chéo chân thay thế.' },
     { id: 'lotus-in-shoulderstand__cue-9', kind: 'transition', en: 'Bring your hands to the floor and roll down slowly, keeping your lotus.', vi: 'Đặt tay xuống sàn và từ từ lăn người xuống, vẫn giữ hoa sen.' },
   ],
 

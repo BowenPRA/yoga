@@ -30,7 +30,7 @@ export const wideAngleSeatedFold = {
     { id: 'wide-angle-seated-fold__cue-3', kind: 'alignment', en: 'Inhale, lift your chest and lengthen your spine.', vi: 'Hít vào, nâng ngực và kéo dài cột sống.' },
     { id: 'wide-angle-seated-fold__cue-4', kind: 'alignment', en: 'Exhale, fold forward from your hips and reach your chin toward the floor.', vi: 'Thở ra, gập người về trước từ hông, đưa cằm về phía sàn.' },
     { id: 'wide-angle-seated-fold__cue-5', kind: 'soften', en: 'Soften your shoulders, and let gravity do the work.', vi: 'Thả lỏng vai, và để trọng lực làm việc.' },
-    { id: 'wide-angle-seated-fold__cue-6', kind: 'breath', en: 'Stay here for five breaths.', vi: 'Giữ ở đây trong năm nhịp thở.' },
+    { id: 'wide-angle-seated-fold__cue-6', kind: 'breath', en: 'Stay here for five breaths.', vi: 'Giữ ở đây năm nhịp thở.' },
     { id: 'wide-angle-seated-fold__cue-7', kind: 'alignment', en: 'For B, inhale and lift your legs, balancing on your sitting bones, and gaze up.', vi: 'Ở B, hít vào và nâng hai chân lên, giữ thăng bằng trên xương ngồi, mắt nhìn lên.' },
     { id: 'wide-angle-seated-fold__cue-8', kind: 'safety', en: 'If your lower back rounds, bend your knees a little or sit on a blanket.', vi: 'Nếu lưng dưới cong tròn, hơi chùng gối hoặc ngồi lên một tấm chăn.' },
     { id: 'wide-angle-seated-fold__cue-9', kind: 'transition', en: 'Exhale, lower your legs, and take a vinyasa.', vi: 'Thở ra, hạ chân xuống, và làm một vinyasa.' },

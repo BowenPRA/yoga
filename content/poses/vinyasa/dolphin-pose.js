@@ -12,7 +12,7 @@ export const dolphinPose = {
     vi: 'Thở ra, nâng hông. Thở đều năm nhịp. Thở ra, hạ gối xuống.',
   },
   cues: [
-    { id: 'dolphin-pose__cue-1', kind: 'transition', en: 'From all fours, lower onto your forearms, elbows under your shoulders.', vi: 'Từ tư thế bốn điểm, hạ xuống chống cẳng tay, khuỷu tay ngay dưới vai.' },
+    { id: 'dolphin-pose__cue-1', kind: 'transition', en: 'From all fours, lower onto your forearms, elbows under your shoulders.', vi: 'Từ tư thế cái bàn, hạ xuống chống cẳng tay, khuỷu tay ngay dưới vai.' },
     { id: 'dolphin-pose__cue-2', kind: 'alignment', en: 'Keep your forearms parallel, or clasp your hands.', vi: 'Giữ hai cẳng tay song song, hoặc đan hai bàn tay vào nhau.' },
     { id: 'dolphin-pose__cue-3', kind: 'transition', en: 'Tuck your toes, and lift your hips up and back.', vi: 'Bấm các ngón chân xuống, và nâng hông lên, ra sau.' },
     { id: 'dolphin-pose__cue-4', kind: 'alignment', en: 'Press your forearms down, and lift your shoulders away from the floor.', vi: 'Ấn cẳng tay xuống, và nâng vai lên xa khỏi sàn.' },

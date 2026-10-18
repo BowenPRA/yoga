@@ -30,7 +30,7 @@ export const cowFacePose = {
   ],
   safety: [
     { id: 'cow-face-pose__safe-1', en: 'If you have a shoulder injury, use a strap, and keep it gentle.', vi: 'Nếu bạn có chấn thương vai, dùng dây tập, và tập nhẹ nhàng.' },
-    { id: 'cow-face-pose__safe-2', en: 'If your knees are sensitive, keep your bottom leg straight, or sit cross-legged and do the arms only.', vi: 'Nếu gối nhạy cảm, giữ chân dưới duỗi thẳng, hoặc ngồi xếp bằng và chỉ làm phần tay.' },
+    { id: 'cow-face-pose__safe-2', en: 'If your knees are sensitive, keep your bottom leg straight, or sit cross-legged and do the arms only.', vi: 'Nếu gối dễ đau, giữ chân dưới duỗi thẳng, hoặc ngồi xếp bằng và chỉ làm phần tay.' },
     { id: 'cow-face-pose__safe-3', en: 'In Yin, the legs of this pose are Shoelace, held for minutes. Come out slowly.', vi: 'Trong Yin, phần chân của tư thế này là tư thế Dây giày, giữ vài phút. Hãy thoát thế từ từ.' },
   ],
   muscles: {

@@ -9,17 +9,17 @@ export const threadTheNeedle = {
   vi: 'Xâu kim',
   breath: {
     en: 'Inhale to open your arm to the sky. Exhale to thread it under and rest. Breathe into your upper back.',
-    vi: 'Hít vào, mở tay lên trời. Thở ra, luồn tay xuống dưới và nghỉ. Thở vào lưng trên.',
+    vi: 'Hít vào, mở tay lên trời. Thở ra, luồn tay xuống dưới và nghỉ. Hướng hơi thở vào lưng trên.',
   },
   cues: [
-    { id: 'thread-the-needle__cue-1', kind: 'transition', en: 'Start on all fours, wrists under your shoulders.', vi: 'Bắt đầu ở tư thế bốn điểm, cổ tay dưới vai.' },
+    { id: 'thread-the-needle__cue-1', kind: 'transition', en: 'Start on all fours, wrists under your shoulders.', vi: 'Bắt đầu ở tư thế cái bàn, cổ tay dưới vai.' },
     { id: 'thread-the-needle__cue-2', kind: 'alignment', en: 'Inhale, open your right arm up to the sky.', vi: 'Hít vào, mở tay phải lên trời.' },
     { id: 'thread-the-needle__cue-3', kind: 'alignment', en: 'Exhale, slide your right arm under your left, palm facing up.', vi: 'Thở ra, luồn tay phải xuống dưới tay trái, lòng bàn tay ngửa lên.' },
     { id: 'thread-the-needle__cue-4', kind: 'alignment', en: 'Rest your right shoulder and the side of your head on the mat.', vi: 'Đặt vai phải và một bên đầu xuống thảm.' },
     { id: 'thread-the-needle__cue-5', kind: 'alignment', en: 'Keep your hips high, right over your knees.', vi: 'Giữ hông cao, thẳng trên gối.' },
     { id: 'thread-the-needle__cue-6', kind: 'soften', en: 'Let your upper back soften into the twist.', vi: 'Để lưng trên mềm ra theo chiều vặn.' },
-    { id: 'thread-the-needle__cue-7', kind: 'breath', en: 'Stay for five breaths, breathing into the space between your shoulder blades.', vi: 'Giữ năm nhịp thở, thở vào khoảng giữa hai bả vai.' },
-    { id: 'thread-the-needle__cue-8', kind: 'safety', en: 'Keep the weight off your neck. If it feels pinched, rest your head on a block.', vi: 'Đừng dồn trọng lượng lên cổ. Nếu thấy bị chèn, tựa đầu lên gạch.' },
+    { id: 'thread-the-needle__cue-7', kind: 'breath', en: 'Stay for five breaths, breathing into the space between your shoulder blades.', vi: 'Giữ năm nhịp thở, hướng hơi thở vào khoảng giữa hai bả vai.' },
+    { id: 'thread-the-needle__cue-8', kind: 'safety', en: 'Keep the weight off your neck. If it feels pinched, rest your head on a block.', vi: 'Đừng dồn trọng lượng lên cổ. Nếu thấy bị nhói, tựa đầu lên gạch.' },
     { id: 'thread-the-needle__cue-9', kind: 'transition', en: 'Press into your left hand, unwind, and change sides.', vi: 'Ấn bàn tay trái xuống, xoay người trở lại, và đổi bên.' },
   ],
   modifications: [

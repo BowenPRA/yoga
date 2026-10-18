@@ -19,7 +19,7 @@ export const sideBend = {
     { id: 'side-bend__cue-4', kind: 'alignment', en: 'Press your left foot down, and lengthen the whole left side of your body.', vi: 'Ấn bàn chân trái xuống, và kéo dài cả bên trái cơ thể.' },
     { id: 'side-bend__cue-5', kind: 'alignment', en: 'Keep both hips level, and your chest facing forward.', vi: 'Giữ hai hông ngang bằng, và ngực hướng về trước.' },
     { id: 'side-bend__cue-6', kind: 'soften', en: 'Soften your shoulders, and let your neck relax.', vi: 'Thả lỏng vai, và để cổ thư giãn.' },
-    { id: 'side-bend__cue-7', kind: 'breath', en: 'Breathe into your left ribs for three breaths.', vi: 'Thở vào xương sườn bên trái trong ba nhịp thở.' },
+    { id: 'side-bend__cue-7', kind: 'breath', en: 'Breathe into your left ribs for three breaths.', vi: 'Hướng hơi thở vào sườn bên trái trong ba nhịp thở.' },
     { id: 'side-bend__cue-8', kind: 'safety', en: 'If your shoulders feel tight, rest your lower hand on your hip.', vi: 'Nếu vai thấy căng, đặt tay dưới lên hông.' },
     { id: 'side-bend__cue-9', kind: 'transition', en: 'Inhale back to centre, and change sides.', vi: 'Hít vào trở về giữa, và đổi bên.' },
   ],

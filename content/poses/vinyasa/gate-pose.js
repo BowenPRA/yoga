@@ -9,7 +9,7 @@ export const gatePose = {
   vi: 'Cánh cổng',
   breath: {
     en: 'Inhale to reach your arm up. Exhale to bend over your straight leg. Breathe into the long side of your ribs.',
-    vi: 'Hít vào, vươn tay lên. Thở ra, nghiêng người về phía chân duỗi thẳng. Thở vào bên sườn đang được kéo dài.',
+    vi: 'Hít vào, vươn tay lên. Thở ra, nghiêng người về phía chân duỗi thẳng. Hướng hơi thở vào bên sườn đang được kéo dài.',
   },
   cues: [
     { id: 'gate-pose__cue-1', kind: 'transition', en: 'Kneel, and stretch your right leg out to the side.', vi: 'Quỳ, và duỗi chân phải sang một bên.' },
@@ -18,7 +18,7 @@ export const gatePose = {
     { id: 'gate-pose__cue-4', kind: 'alignment', en: 'Inhale, reach your left arm up.', vi: 'Hít vào, vươn tay trái lên.' },
     { id: 'gate-pose__cue-5', kind: 'alignment', en: 'Exhale, bend over your right leg, and rest your right hand on your shin.', vi: 'Thở ra, nghiêng người về phía chân phải, và đặt tay phải lên ống chân.' },
     { id: 'gate-pose__cue-6', kind: 'soften', en: 'Keep your chest open, and soften your neck.', vi: 'Giữ ngực mở, và thả lỏng cổ.' },
-    { id: 'gate-pose__cue-7', kind: 'breath', en: 'Stay for three breaths, breathing into your left ribs.', vi: 'Giữ ba nhịp thở, thở vào xương sườn bên trái.' },
+    { id: 'gate-pose__cue-7', kind: 'breath', en: 'Stay for three breaths, breathing into your left ribs.', vi: 'Giữ ba nhịp thở, hướng hơi thở vào sườn bên trái.' },
     { id: 'gate-pose__cue-8', kind: 'safety', en: 'If your kneeling knee is sensitive, fold a blanket under it.', vi: 'Nếu gối đang quỳ nhạy cảm, gấp chăn kê dưới gối.' },
     { id: 'gate-pose__cue-9', kind: 'transition', en: 'Inhale, come back up, and change sides.', vi: 'Hít vào, trở lên, và đổi bên.' },
   ],

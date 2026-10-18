@@ -17,10 +17,10 @@ export const frog = {
   },
   breath: {
     en: 'Breathe slowly into your inner thighs. Let the floor take the weight of your body.',
-    vi: 'Thở chậm vào mặt trong đùi. Để sàn nhà đỡ trọng lượng cơ thể.',
+    vi: 'Thở chậm, hướng hơi thở vào mặt trong đùi. Để sàn nhà đỡ trọng lượng cơ thể.',
   },
   cues: [
-    { id: 'frog__cue-1', kind: 'transition', en: 'Come onto all fours, with a blanket under your knees.', vi: 'Về tư thế bốn điểm, kê chăn dưới gối.' },
+    { id: 'frog__cue-1', kind: 'transition', en: 'Come onto all fours, with a blanket under your knees.', vi: 'Về tư thế cái bàn, kê chăn dưới gối.' },
     { id: 'frog__cue-2', kind: 'alignment', en: 'Slowly slide your knees out wide, with your ankles in line with your knees.', vi: 'Từ từ trượt hai gối ra rộng, cổ chân thẳng hàng với gối.' },
     { id: 'frog__cue-3', kind: 'transition', en: 'Lower onto your forearms, or rest your chest on a bolster.', vi: 'Hạ xuống chống cẳng tay, hoặc tựa ngực lên gối ôm.' },
     { id: 'frog__cue-4', kind: 'soften', en: 'Let your hips drift back until you find your edge.', vi: 'Để hông trôi dần về sau đến khi chạm ngưỡng của bạn.' },
@@ -37,7 +37,7 @@ export const frog = {
   ],
   safety: [
     { id: 'frog__safe-1', en: 'Feel it in your inner thighs. Sharp pain inside your knee means come out.', vi: 'Cảm giác nên ở mặt trong đùi. Đau nhói phía trong gối nghĩa là cần thoát thế.' },
-    { id: 'frog__safe-2', en: 'In pregnancy, or with a tender sacroiliac joint, keep your knees less wide and the hold short.', vi: 'Khi mang thai, hoặc khi khớp cùng chậu nhạy cảm, mở gối ít rộng hơn và giữ ngắn thôi.' },
+    { id: 'frog__safe-2', en: 'In pregnancy, or with a tender sacroiliac joint, keep your knees less wide and the hold short.', vi: 'Khi mang thai, hoặc khi khớp cùng chậu dễ đau, mở gối ít rộng hơn và giữ ngắn thôi.' },
   ],
   muscles: {
     working: [],

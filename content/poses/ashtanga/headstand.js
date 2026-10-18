@@ -51,7 +51,7 @@ export const headstand = {
   safety: [
     { id: 'headstand__safe-1', en: 'With a neck injury, high blood pressure or glaucoma, skip Headstand and rest in Child’s Pose.', vi: 'Nếu cổ có chấn thương, bạn bị huyết áp cao hoặc tăng nhãn áp, bỏ qua Trồng chuối bằng đầu và nghỉ ở tư thế Em bé.' },
     { id: 'headstand__safe-2', en: 'Never jump or kick up. Lift slowly, with control.', vi: 'Không bao giờ bật nhảy hay đá chân lên. Nâng lên từ từ, có kiểm soát.' },
-    { id: 'headstand__safe-3', en: 'In pregnancy, practise it only if it’s already steady in your practice, and near a wall.', vi: 'Khi mang thai, chỉ tập nếu tư thế này đã vững trong buổi tập của bạn, và tập gần tường.' },
+    { id: 'headstand__safe-3', en: 'In pregnancy, practise it only if it’s already steady in your practice, and near a wall.', vi: 'Khi mang thai, chỉ tập nếu bạn đã quen và vững với tư thế này từ trước, và tập gần tường.' },
   ],
 
   muscles: { working: ['deltoids', 'serratus-anterior', 'trapezius', 'transversus-abdominis'], lengthening: [] },

@@ -16,7 +16,7 @@ export const halfLift = {
     drishti: 'third-eye',
     note: {
       en: 'Trīṇi, the third vinyasa of Surya Namaskara A, on an inhale, and again sapta, the seventh, after you jump forward; in Surya Namaskara B it is trīṇi and pañcadaśa. A passing count; the teacher counts “Trīṇi, inhale, look up”.',
-      vi: 'Trīṇi, vinyasa thứ ba của Chào mặt trời A, khi hít vào, và trở lại ở sapta, vinyasa thứ bảy, sau khi bạn nhảy lên; trong Chào mặt trời B là trīṇi và pañcadaśa. Một nhịp đi qua; giáo viên đếm “Trīṇi, hít vào, nhìn lên”.',
+      vi: 'Trīṇi, vinyasa thứ ba của Chào mặt trời A, khi hít vào, và trở lại ở sapta, vinyasa thứ bảy, sau khi bạn nhảy lên; trong Chào mặt trời B là trīṇi và pañcadaśa. Chỉ đi qua trong một nhịp; giáo viên đếm “Trīṇi, hít vào, nhìn lên”.',
     },
   },
 

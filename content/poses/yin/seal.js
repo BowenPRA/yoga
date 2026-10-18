@@ -17,7 +17,7 @@ export const seal = {
   },
   breath: {
     en: 'Breathe slowly into your belly. Let each exhale soften your lower back and your seat.',
-    vi: 'Thở chậm vào bụng. Để mỗi hơi thở ra làm mềm lưng dưới và mông.',
+    vi: 'Thở chậm xuống bụng. Để mỗi hơi thở ra làm mềm lưng dưới và mông.',
   },
   cues: [
     { id: 'seal__cue-1', kind: 'transition', en: 'From Sphinx, place your hands forward and wider than your shoulders, fingers turned out.', vi: 'Từ Nhân sư, đặt hai bàn tay về trước và rộng hơn vai, các ngón tay hướng ra ngoài.' },

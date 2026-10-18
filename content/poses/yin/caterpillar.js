@@ -18,7 +18,7 @@ export const caterpillar = {
   },
   breath: {
     en: 'Breathe into your back. Let each exhale round you a little further.',
-    vi: 'Thở vào lưng. Để mỗi hơi thở ra giúp bạn cong tròn thêm một chút.',
+    vi: 'Hướng hơi thở vào lưng. Để mỗi hơi thở ra giúp bạn cong tròn thêm một chút.',
   },
   cues: [
     { id: 'caterpillar__cue-1', kind: 'transition', en: 'Sit on a folded blanket, with your legs straight out in front of you.', vi: 'Ngồi trên chăn gấp, hai chân duỗi thẳng phía trước.' },

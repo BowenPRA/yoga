@@ -21,14 +21,14 @@ export const swan = {
     vi: 'Thở chậm, hướng hơi thở vào phía trước hông chân sau. Mỗi hơi thở ra, để hông chìm xuống thêm một chút.',
   },
   cues: [
-    { id: 'swan__cue-1', kind: 'transition', en: 'From all fours, bring your right knee forward, behind your right wrist.', vi: 'Từ tư thế bốn điểm, đưa gối phải lên trước, đặt phía sau cổ tay phải.' },
+    { id: 'swan__cue-1', kind: 'transition', en: 'From all fours, bring your right knee forward, behind your right wrist.', vi: 'Từ tư thế cái bàn, đưa gối phải lên trước, đặt phía sau cổ tay phải.' },
     { id: 'swan__cue-2', kind: 'alignment', en: 'If your right hip floats, slide a bolster or a blanket under it.', vi: 'Nếu hông phải lơ lửng, kê gối ôm hoặc chăn bên dưới.' },
     { id: 'swan__cue-3', kind: 'alignment', en: 'Slide your left leg straight back, and rest the top of your foot on the mat.', vi: 'Trượt chân trái duỗi thẳng ra sau, đặt mu bàn chân xuống thảm.' },
     { id: 'swan__cue-4', kind: 'alignment', en: 'Walk your hands back under your shoulders, and lift your chest.', vi: 'Đưa hai tay lùi về dưới vai, và nâng ngực lên.' },
     { id: 'swan__cue-5', kind: 'soften', en: 'Find your edge, then let the weight of your hips do the work.', vi: 'Tìm ngưỡng của bạn, rồi để trọng lượng của hông làm việc.' },
     { id: 'swan__cue-6', kind: 'breath', en: 'We’re halfway. If your hips have softened, sink a little lower. Or stay.', vi: 'Đã được một nửa thời gian. Nếu hông đã mềm ra, hạ thấp thêm một chút. Hoặc cứ ở yên.' },
     { id: 'swan__cue-7', kind: 'safety', en: 'If your front knee or your lower back complains, come down onto your forearms.', vi: 'Nếu gối trước hoặc lưng dưới khó chịu, hạ xuống chống cẳng tay.' },
-    { id: 'swan__cue-8', kind: 'transition', en: 'To come out, tuck your back toes and slowly press back to all fours.', vi: 'Để thoát thế, bấm các ngón chân sau xuống và từ từ đẩy người về tư thế bốn điểm.' },
+    { id: 'swan__cue-8', kind: 'transition', en: 'To come out, tuck your back toes and slowly press back to all fours.', vi: 'Để thoát thế, bấm các ngón chân sau xuống và từ từ đẩy người về tư thế cái bàn.' },
     { id: 'swan__cue-9', kind: 'soften', en: 'Pause here, and notice the rebound in your right hip.', vi: 'Dừng lại ở đây, và cảm nhận dư âm ở hông phải.' },
   ],
   modifications: [
@@ -38,7 +38,7 @@ export const swan = {
   ],
   safety: [
     { id: 'swan__safe-1', en: 'Feel it in your outer hip and the front of your back hip. Pain in your front knee means come out.', vi: 'Cảm giác nên ở hông ngoài và phía trước hông chân sau. Đau ở gối trước nghĩa là cần thoát thế.' },
-    { id: 'swan__safe-2', en: 'In pregnancy, or with a tender sacroiliac joint, use a bolster under your front hip and keep the hold short.', vi: 'Khi mang thai, hoặc khi khớp cùng chậu nhạy cảm, kê gối ôm dưới hông trước và giữ ngắn thôi.' },
+    { id: 'swan__safe-2', en: 'In pregnancy, or with a tender sacroiliac joint, use a bolster under your front hip and keep the hold short.', vi: 'Khi mang thai, hoặc khi khớp cùng chậu dễ đau, kê gối ôm dưới hông trước và giữ ngắn thôi.' },
   ],
   muscles: {
     working: [],

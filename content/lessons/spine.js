@@ -39,7 +39,7 @@ export const spineLesson = {
       type: 'term', term: 'cervical-spine',
       figure: { kind: 'skeleton', window: SPINE, highlight: ['cervical-spine'] },
       cues: ['cervical-spine__cue-1', 'cervical-spine__cue-3'],
-      care: { id: 'spine__care-cervical-spine', en: 'If your neck feels pinched, bring your gaze down to the floor.', vi: 'Nếu cổ thấy bị chèn, hạ ánh nhìn xuống sàn.' },
+      care: { id: 'spine__care-cervical-spine', en: 'If your neck feels pinched, bring your gaze down to the floor.', vi: 'Nếu thấy cổ bị kẹt, hãy hạ ánh nhìn xuống sàn.' },
     },
     {
       type: 'term', term: 'thoracic-spine',
@@ -86,7 +86,7 @@ export const spineLesson = {
       type: 'term', term: 'pelvic-tilt',
       figure: { kind: 'skeleton', window: BASE, highlight: ['pelvis'] },
       cues: ['pelvic-tilt__cue-1', 'pelvic-tilt__cue-2'],
-      care: { id: 'spine__care-pelvic-tilt', en: 'If arching your lower back pinches, make the movement smaller.', vi: 'Nếu ưỡn lưng dưới thấy bị chèn, hãy làm chuyển động nhỏ lại.' },
+      care: { id: 'spine__care-pelvic-tilt', en: 'If arching your lower back pinches, make the movement smaller.', vi: 'Nếu ưỡn lưng dưới mà thấy nhói, hãy làm chuyển động nhỏ lại.' },
     },
     {
       type: 'activity',
@@ -144,7 +144,7 @@ export const spineLesson = {
         type: 'hotspot', id: 'spine-hotspot-dog',
         figure: { kind: 'back', window: BACK },
         clip: 'latissimus-dorsi__cue-2',
-        prompt: { vi: 'Nghe câu cue. Học viên sẽ cảm thấy được kéo dài ở đâu? Chạm vào hình.', en: 'Listen to the cue. Where will your students feel the stretch? Tap the figure.' },
+        prompt: { vi: 'Nghe câu cue. Học viên sẽ cảm thấy kéo giãn ở đâu? Chạm vào hình.', en: 'Listen to the cue. Where will your students feel the stretch? Tap the figure.' },
         accept: ['latissimus-dorsi', 'external-oblique', 'quadratus-lumborum', 'teres-major'],
         reveal: ['latissimus-dorsi'],
         explain: {
@@ -255,7 +255,7 @@ export const spineLesson = {
       type: 'activity',
       activity: {
         type: 'sayit', id: 'spine-say',
-        prompt: { vi: 'Nghe mẫu, rồi ghi âm chính bạn. Gemini sẽ nói bằng tiếng Việt cần sửa gì.', en: 'Hear the model, then record yourself. Gemini will tell you in Vietnamese what to fix.' },
+        prompt: { vi: 'Nghe mẫu, rồi ghi âm chính bạn. Gemini sẽ nói bằng tiếng Việt xem cần sửa gì.', en: 'Hear the model, then record yourself. Gemini will tell you in Vietnamese what to fix.' },
         items: [
           { clip: 'thoracic-spine', text: 'thoracic spine', say: 'thor-AS-ik SPYN', credit: 'thoracic-spine' },
           { clip: 'sacrum', text: 'sacrum', say: 'SAY-krum', credit: 'sacrum' },

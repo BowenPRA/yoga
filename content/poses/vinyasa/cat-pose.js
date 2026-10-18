@@ -12,13 +12,13 @@ export const catPose = {
     vi: 'Con mèo đi cùng hơi thở ra: cong tròn lưng khi thở ra. Kết hợp với Con bò khi hít vào.',
   },
   cues: [
-    { id: 'cat-pose__cue-1', kind: 'transition', en: 'Come onto all fours, wrists under your shoulders, knees under your hips.', vi: 'Về tư thế bốn điểm, cổ tay dưới vai, gối dưới hông.' },
+    { id: 'cat-pose__cue-1', kind: 'transition', en: 'Come onto all fours, wrists under your shoulders, knees under your hips.', vi: 'Về tư thế cái bàn, cổ tay dưới vai, gối dưới hông.' },
     { id: 'cat-pose__cue-2', kind: 'alignment', en: 'Exhale, round your back up toward the ceiling.', vi: 'Thở ra, cong tròn lưng lên hướng trần nhà.' },
     { id: 'cat-pose__cue-3', kind: 'alignment', en: 'Tuck your tailbone and draw your belly in.', vi: 'Cuộn xương cụt xuống và thu bụng vào.' },
     { id: 'cat-pose__cue-4', kind: 'alignment', en: 'Press the floor away, and spread your shoulder blades wide.', vi: 'Đẩy sàn ra xa, và mở rộng hai bả vai.' },
     { id: 'cat-pose__cue-5', kind: 'soften', en: 'Let your head hang heavy, and soften the back of your neck.', vi: 'Để đầu buông nặng, và thả lỏng phía sau cổ.' },
     { id: 'cat-pose__cue-6', kind: 'breath', en: 'Move slowly with your breath. Exhale into Cat, inhale into Cow.', vi: 'Chuyển động chậm theo hơi thở. Thở ra vào Con mèo, hít vào sang Con bò.' },
-    { id: 'cat-pose__cue-7', kind: 'safety', en: 'If your knees are sensitive, fold a blanket under them.', vi: 'Nếu gối nhạy cảm, gấp một tấm chăn kê dưới gối.' },
+    { id: 'cat-pose__cue-7', kind: 'safety', en: 'If your knees are sensitive, fold a blanket under them.', vi: 'Nếu gối dễ đau, gấp một tấm chăn kê dưới gối.' },
     { id: 'cat-pose__cue-8', kind: 'transition', en: 'Inhale, and come back to a flat back.', vi: 'Hít vào, và trở về lưng phẳng.' },
   ],
   modifications: [

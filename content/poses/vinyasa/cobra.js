@@ -19,7 +19,7 @@ export const cobra = {
     { id: 'cobra__cue-5', kind: 'alignment', en: 'Draw your shoulders back and down, and keep your neck long.', vi: 'Kéo vai ra sau và xuống, và giữ cổ dài.' },
     { id: 'cobra__cue-6', kind: 'soften', en: 'Keep a little bend in your elbows, and let your shoulders stay soft.', vi: 'Giữ khuỷu tay hơi chùng, và để vai mềm.' },
     { id: 'cobra__cue-7', kind: 'breath', en: 'Stay for one to three breaths.', vi: 'Giữ một đến ba nhịp thở.' },
-    { id: 'cobra__cue-8', kind: 'safety', en: 'If your lower back pinches, come down lower. A small lift is plenty.', vi: 'Nếu lưng dưới bị chèn, hạ thấp xuống. Nâng một chút là đủ rồi.' },
+    { id: 'cobra__cue-8', kind: 'safety', en: 'If your lower back pinches, come down lower. A small lift is plenty.', vi: 'Nếu lưng dưới bị nhói, hạ thấp xuống. Nâng một chút là đủ rồi.' },
     { id: 'cobra__cue-9', kind: 'transition', en: 'Exhale, and lower your chest down to the mat.', vi: 'Thở ra, và hạ ngực xuống thảm.' },
   ],
   modifications: [
@@ -28,7 +28,7 @@ export const cobra = {
     { id: 'cobra__mod-3', en: 'Place a folded blanket under your hips if your hip points press into the floor.', vi: 'Kê chăn gấp dưới hông nếu hai mỏm xương phía trước hông bị cấn xuống sàn.', props: ['blanket'] },
   ],
   safety: [
-    { id: 'cobra__safe-1', en: 'If you have a lower back injury, keep the lift low, and stop at any pinching.', vi: 'Nếu bạn có chấn thương lưng dưới, nâng thấp thôi, và dừng lại khi thấy bị chèn.' },
+    { id: 'cobra__safe-1', en: 'If you have a lower back injury, keep the lift low, and stop at any pinching.', vi: 'Nếu bạn có chấn thương lưng dưới, nâng thấp thôi, và dừng lại khi thấy bị nhói.' },
     { id: 'cobra__safe-2', en: 'In pregnancy, skip lying on your belly. Try Cat and Cow instead.', vi: 'Khi mang thai, tránh nằm sấp. Thay bằng Con mèo và Con bò.' },
   ],
   muscles: {

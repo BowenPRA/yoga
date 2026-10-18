@@ -18,7 +18,7 @@ export const halfButterfly = {
   },
   breath: {
     en: 'Breathe into the back of your body. Let each exhale soften you over your leg.',
-    vi: 'Thở vào phía sau cơ thể. Để mỗi hơi thở ra giúp bạn mềm xuống trên chân.',
+    vi: 'Hướng hơi thở vào phía sau lưng. Để mỗi hơi thở ra giúp bạn mềm xuống trên chân.',
   },
   cues: [
     { id: 'half-butterfly__cue-1', kind: 'transition', en: 'Sit on a blanket with your right leg straight, and your left foot against your inner right thigh.', vi: 'Ngồi trên chăn, chân phải duỗi thẳng, bàn chân trái áp vào mặt trong đùi phải.' },

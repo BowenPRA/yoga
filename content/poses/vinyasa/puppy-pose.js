@@ -14,17 +14,17 @@ export const puppyPose = {
   },
   breath: {
     en: 'Exhale as your chest melts down. Breathe slowly into your upper back and the sides of your ribs.',
-    vi: 'Thở ra khi ngực chìm xuống. Thở chậm vào lưng trên và hai bên xương sườn.',
+    vi: 'Thở ra khi ngực chìm xuống. Thở chậm, hướng hơi thở vào lưng trên và hai bên sườn.',
   },
   cues: [
-    { id: 'puppy-pose__cue-1', kind: 'transition', en: 'From all fours, keep your hips over your knees, and walk your hands forward.', vi: 'Từ tư thế bốn điểm, giữ hông thẳng trên gối, và đưa hai tay về trước.' },
+    { id: 'puppy-pose__cue-1', kind: 'transition', en: 'From all fours, keep your hips over your knees, and walk your hands forward.', vi: 'Từ tư thế cái bàn, giữ hông thẳng trên gối, và đưa hai tay về trước.' },
     { id: 'puppy-pose__cue-2', kind: 'alignment', en: 'Let your chest melt toward the floor.', vi: 'Để ngực chìm dần xuống sàn.' },
     { id: 'puppy-pose__cue-3', kind: 'alignment', en: 'Rest your forehead on the mat.', vi: 'Tựa trán xuống thảm.' },
     { id: 'puppy-pose__cue-4', kind: 'alignment', en: 'Keep your arms active, and lift your elbows off the floor.', vi: 'Giữ hai tay chủ động, và nâng khuỷu tay khỏi sàn.' },
     { id: 'puppy-pose__cue-5', kind: 'alignment', en: 'Gently draw your hips back to lengthen your spine.', vi: 'Nhẹ nhàng kéo hông ra sau để kéo dài cột sống.' },
     { id: 'puppy-pose__cue-6', kind: 'soften', en: 'Soften your shoulders, and let gravity do the work.', vi: 'Thả lỏng vai, và để trọng lực làm việc.' },
-    { id: 'puppy-pose__cue-7', kind: 'breath', en: 'Stay for five breaths, breathing into your upper back.', vi: 'Giữ năm nhịp thở, thở vào lưng trên.' },
-    { id: 'puppy-pose__cue-8', kind: 'safety', en: 'If your shoulders pinch, move your hands wider apart.', vi: 'Nếu vai bị chèn, đặt hai tay rộng ra hơn.' },
+    { id: 'puppy-pose__cue-7', kind: 'breath', en: 'Stay for five breaths, breathing into your upper back.', vi: 'Giữ năm nhịp thở, hướng hơi thở vào lưng trên.' },
+    { id: 'puppy-pose__cue-8', kind: 'safety', en: 'If your shoulders pinch, move your hands wider apart.', vi: 'Nếu vai bị nhói, đặt hai tay rộng ra hơn.' },
     { id: 'puppy-pose__cue-9', kind: 'transition', en: 'Walk your hands back, and rest in Child’s Pose.', vi: 'Đưa hai tay về, và nghỉ ở tư thế Em bé.' },
   ],
   modifications: [

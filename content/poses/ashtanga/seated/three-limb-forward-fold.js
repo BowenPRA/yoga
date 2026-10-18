@@ -35,7 +35,7 @@ export const threeLimbForwardFold = {
     { id: 'three-limb-forward-fold__cue-4', kind: 'alignment', en: 'Hold your left foot with both hands, or clasp your wrist around it, and lift your chest.', vi: 'Hai tay nắm bàn chân trái, hoặc nắm cổ tay vòng qua bàn chân, và nâng ngực lên.' },
     { id: 'three-limb-forward-fold__cue-5', kind: 'alignment', en: 'Exhale, fold forward, and keep your weight even on both sitting bones.', vi: 'Thở ra, gập người về trước, giữ trọng lượng đều trên hai xương ngồi.' },
     { id: 'three-limb-forward-fold__cue-6', kind: 'soften', en: 'Let your neck relax, and gaze toward your toes.', vi: 'Thả lỏng cổ, nhìn về phía ngón chân.' },
-    { id: 'three-limb-forward-fold__cue-7', kind: 'breath', en: 'Stay for five breaths, breathing into the back of your straight leg.', vi: 'Giữ năm nhịp thở, thở vào mặt sau của chân duỗi thẳng.' },
+    { id: 'three-limb-forward-fold__cue-7', kind: 'breath', en: 'Stay for five breaths, breathing into the back of your straight leg.', vi: 'Giữ năm nhịp thở, hướng hơi thở vào mặt sau của chân duỗi thẳng.' },
     { id: 'three-limb-forward-fold__cue-8', kind: 'safety', en: 'If your bent knee hurts, sit up on a block or a folded blanket.', vi: 'Nếu gối co bị đau, ngồi cao lên trên gạch hoặc chăn gấp.' },
     { id: 'three-limb-forward-fold__cue-9', kind: 'transition', en: 'Inhale, lift your head, then release your leg and jump back.', vi: 'Hít vào, ngẩng đầu, rồi thả chân ra và nhảy về sau.' },
   ],

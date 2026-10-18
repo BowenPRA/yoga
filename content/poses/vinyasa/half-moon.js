@@ -23,7 +23,7 @@ export const halfMoon = {
     { id: 'half-moon__cue-9', kind: 'transition', en: 'Exhale, bend your standing knee, and step back into Warrior Two.', vi: 'Thở ra, chùng gối chân trụ, và bước chân sau về Chiến binh II.' },
   ],
   modifications: [
-    { id: 'half-moon__mod-1', en: 'Use a block under your bottom hand, at its tallest height.', vi: 'Dùng gạch dưới bàn tay dưới, dựng ở độ cao cao nhất.', props: ['block'] },
+    { id: 'half-moon__mod-1', en: 'Use a block under your bottom hand, at its tallest height.', vi: 'Dùng gạch dưới bàn tay dưới, dựng ở nấc cao nhất.', props: ['block'] },
     { id: 'half-moon__mod-2', en: 'Practise with your back against a wall.', vi: 'Tập với lưng tựa vào tường.', props: ['wall'] },
     { id: 'half-moon__mod-3', en: 'Keep your top hand on your hip.', vi: 'Giữ tay trên đặt ở hông.', props: [] },
   ],

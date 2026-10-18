@@ -32,7 +32,7 @@ export const pigeon = {
     { id: 'pigeon__mod-3', en: 'Stay upright on your hands instead of folding forward.', vi: 'Giữ người thẳng, chống trên bàn tay thay vì gập người về trước.', props: [] },
   ],
   safety: [
-    { id: 'pigeon__safe-1', en: 'If your knee is injured or sensitive, choose Figure Four on your back instead.', vi: 'Nếu gối bị chấn thương hoặc nhạy cảm, hãy chọn tư thế Số 4 nằm thay thế.' },
+    { id: 'pigeon__safe-1', en: 'If your knee is injured or sensitive, choose Figure Four on your back instead.', vi: 'Nếu gối bị chấn thương hoặc dễ đau, hãy chọn tư thế Số 4 nằm thay thế.' },
     { id: 'pigeon__safe-2', en: 'In Yin, this shape is Sleeping Swan, held for minutes. After a long hold, come out slowly.', vi: 'Trong Yin, dáng này là Thiên nga ngủ, giữ vài phút. Sau khi giữ lâu, hãy thoát thế từ từ.' },
     { id: 'pigeon__safe-3', en: 'In pregnancy, stay upright on your hands, or prop your front hip high with a bolster.', vi: 'Khi mang thai, giữ người thẳng chống trên bàn tay, hoặc kê gối ôm cao dưới hông trước.' },
   ],

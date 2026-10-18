@@ -19,7 +19,7 @@ export const bowPose = {
     { id: 'bow-pose__cue-5', kind: 'alignment', en: 'Roll your shoulders back, and open across your collarbones.', vi: 'Xoay vai ra sau, và mở rộng ngang xương quai xanh.' },
     { id: 'bow-pose__cue-6', kind: 'soften', en: 'Keep your neck long and your jaw soft.', vi: 'Giữ cổ dài và hàm thả lỏng.' },
     { id: 'bow-pose__cue-7', kind: 'breath', en: 'Stay for three breaths, and let your body rock gently with the breath.', vi: 'Giữ ba nhịp thở, và để cơ thể đung đưa nhẹ theo hơi thở.' },
-    { id: 'bow-pose__cue-8', kind: 'safety', en: 'If you feel pinching in your lower back, ease off and lift less.', vi: 'Nếu thấy bị chèn ở lưng dưới, nhẹ lại và nâng thấp hơn.' },
+    { id: 'bow-pose__cue-8', kind: 'safety', en: 'If you feel pinching in your lower back, ease off and lift less.', vi: 'Nếu thấy nhói ở lưng dưới, nhẹ bớt và nâng thấp hơn.' },
     { id: 'bow-pose__cue-9', kind: 'transition', en: 'Exhale, slowly let go of your ankles, and rest on your belly.', vi: 'Thở ra, từ từ thả cổ chân, và nằm sấp nghỉ.' },
   ],
   modifications: [

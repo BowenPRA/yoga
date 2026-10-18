@@ -22,7 +22,7 @@ export const fishPose = {
 
   breath: {
     en: 'Breathe deeply into your chest. After the closed shoulderstand, it opens wide here.',
-    vi: 'Thở sâu vào ngực. Sau tư thế đứng bằng vai khép kín, ngực được mở rộng ở đây.',
+    vi: 'Hít thở sâu vào lồng ngực. Sau thế Đứng bằng vai khép kín, ngực được mở rộng ở đây.',
   },
 
   cues: [
@@ -32,7 +32,7 @@ export const fishPose = {
     { id: 'fish-pose__cue-4', kind: 'alignment', en: 'Hold your feet, and keep your knees down.', vi: 'Nắm bàn chân, và giữ gối hạ xuống.' },
     { id: 'fish-pose__cue-5', kind: 'alignment', en: 'Lift your breastbone up toward the ceiling.', vi: 'Nâng xương ức lên hướng trần nhà.' },
     { id: 'fish-pose__cue-6', kind: 'soften', en: 'Let your throat stay soft and open.', vi: 'Để cổ họng mềm và mở.' },
-    { id: 'fish-pose__cue-7', kind: 'breath', en: 'Stay for eight breaths, breathing into your chest.', vi: 'Giữ tám nhịp thở, thở vào ngực.' },
+    { id: 'fish-pose__cue-7', kind: 'breath', en: 'Stay for eight breaths, breathing into your chest.', vi: 'Giữ tám nhịp thở, hít sâu vào lồng ngực.' },
     { id: 'fish-pose__cue-8', kind: 'safety', en: 'Keep the weight off your head. Your arms and back hold you up.', vi: 'Đừng dồn trọng lượng lên đầu. Tay và lưng nâng đỡ bạn.' },
     { id: 'fish-pose__cue-9', kind: 'transition', en: 'Inhale, release your lotus, and lift your legs up straight.', vi: 'Hít vào, thả hoa sen ra, và nâng hai chân thẳng lên.' },
   ],

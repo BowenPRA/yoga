@@ -137,7 +137,7 @@ export const armLesson = {
       type: 'term', term: 'forearm-extensors',
       figure: { kind: 'back', window: BACK_FOREARM, highlight: ['forearm-extensors'] },
       cues: ['forearm-extensors__cue-1', 'forearm-extensors__cue-2'],
-      care: { id: 'arm__care-forearm-extensors', en: 'If the top of your forearm aches, grip the mat a little less.', vi: 'Nếu mặt ngoài cẳng tay mỏi đau, bấm ngón tay xuống thảm nhẹ hơn một chút.' },
+      care: { id: 'arm__care-forearm-extensors', en: 'If the top of your forearm aches, grip the mat a little less.', vi: 'Nếu mặt ngoài cẳng tay nhức mỏi, bấm ngón tay xuống thảm nhẹ hơn một chút.' },
     },
     {
       type: 'term', term: 'triceps-brachii',
@@ -261,7 +261,7 @@ export const armLesson = {
       type: 'activity',
       activity: {
         type: 'sayit', id: 'arm-say',
-        prompt: { vi: 'Nghe mẫu, rồi ghi âm chính bạn. Gemini sẽ nói bằng tiếng Việt cần sửa gì.', en: 'Hear the model, then record yourself. Gemini will tell you in Vietnamese what to fix.' },
+        prompt: { vi: 'Nghe mẫu, rồi ghi âm chính bạn. Gemini sẽ nói bằng tiếng Việt xem cần sửa gì.', en: 'Hear the model, then record yourself. Gemini will tell you in Vietnamese what to fix.' },
         items: [
           { clip: 'wrist', text: 'wrist', say: 'RIST', credit: 'wrist' },
           { clip: 'forearm-bones', text: 'forearm', say: 'FOR-arm', credit: 'forearm-bones' },

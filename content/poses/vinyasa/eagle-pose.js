@@ -10,7 +10,7 @@ export const eaglePose = {
   vi: 'Đại bàng',
   breath: {
     en: 'Exhale as you wrap and sink. Breathe into the space between your shoulder blades for five breaths. Inhale to unwind.',
-    vi: 'Thở ra khi quấn tay chân và hạ người. Thở vào khoảng giữa hai bả vai trong năm nhịp. Hít vào để gỡ ra.',
+    vi: 'Thở ra khi quấn tay chân và hạ người. Hướng hơi thở vào khoảng giữa hai bả vai trong năm nhịp. Hít vào để gỡ ra.',
   },
   cues: [
     { id: 'eagle-pose__cue-1', kind: 'transition', en: 'Bend your knees and sink your hips, as if you’re sitting into a chair.', vi: 'Chùng gối và hạ hông, như đang ngồi xuống ghế.' },
@@ -19,7 +19,7 @@ export const eaglePose = {
     { id: 'eagle-pose__cue-4', kind: 'alignment', en: 'Bend your elbows, and bring your palms together, or hold your shoulders.', vi: 'Gập khuỷu tay, và chắp hai lòng bàn tay, hoặc ôm lấy vai.' },
     { id: 'eagle-pose__cue-5', kind: 'alignment', en: 'Lift your elbows to shoulder height, and draw them forward.', vi: 'Nâng khuỷu tay ngang vai, và đưa khuỷu tay ra trước.' },
     { id: 'eagle-pose__cue-6', kind: 'soften', en: 'Let your shoulders drop down your back.', vi: 'Để vai hạ xuống dọc lưng.' },
-    { id: 'eagle-pose__cue-7', kind: 'breath', en: 'Stay for five breaths, breathing into your upper back.', vi: 'Giữ năm nhịp thở, thở vào lưng trên.' },
+    { id: 'eagle-pose__cue-7', kind: 'breath', en: 'Stay for five breaths, breathing into your upper back.', vi: 'Giữ năm nhịp thở, hướng hơi thở vào lưng trên.' },
     { id: 'eagle-pose__cue-8', kind: 'safety', en: 'If your knee complains, rest your toes on the floor instead of hooking.', vi: 'Nếu gối khó chịu, đặt ngón chân xuống sàn thay vì móc chân.' },
     { id: 'eagle-pose__cue-9', kind: 'transition', en: 'Inhale, unwind your arms and legs, and change sides.', vi: 'Hít vào, gỡ tay và chân ra, và đổi bên.' },
   ],

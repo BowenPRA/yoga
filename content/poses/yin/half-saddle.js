@@ -17,7 +17,7 @@ export const halfSaddle = {
   },
   breath: {
     en: 'Breathe into the front of your bent leg. Let each exhale ease you back a little.',
-    vi: 'Thở vào mặt trước của chân co. Để mỗi hơi thở ra giúp bạn ngả ra sau thêm một chút.',
+    vi: 'Hướng hơi thở vào mặt trước đùi của chân co. Để mỗi hơi thở ra giúp bạn ngả ra sau thêm một chút.',
   },
   cues: [
     { id: 'half-saddle__cue-1', kind: 'transition', en: 'Sit with your left leg straight, and bend your right knee back, your foot beside your hip.', vi: 'Ngồi với chân trái duỗi thẳng, co gối phải về sau, bàn chân đặt cạnh hông.' },

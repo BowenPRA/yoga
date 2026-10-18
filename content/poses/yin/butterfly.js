@@ -18,7 +18,7 @@ export const butterfly = {
   },
   breath: {
     en: 'Let the breath move slowly in the back of your body. With each exhale, let your spine round a little more.',
-    vi: 'Để hơi thở di chuyển chậm ở phía sau cơ thể. Mỗi hơi thở ra, để cột sống cong tròn thêm một chút.',
+    vi: 'Hướng hơi thở chậm vào phía sau lưng. Mỗi hơi thở ra, để cột sống cong tròn thêm một chút.',
   },
   cues: [
     { id: 'butterfly__cue-1', kind: 'transition', en: 'Sit on a folded blanket, and bring the soles of your feet together.', vi: 'Ngồi trên chăn gấp, và áp hai gan bàn chân vào nhau.' },

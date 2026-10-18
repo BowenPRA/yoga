@@ -18,7 +18,7 @@ export const handUnderFootPose = {
     drishti: 'nose',
     note: {
       en: 'Follows Pādāṅguṣṭhāsana without coming up: three vinyasas, with the state on dve, five breaths. The teacher counts “Inhale, hands under your feet, look up; dve, exhale, fold”, and after five breaths “Trīṇi, inhale, look up” before you come up to stand.',
-      vi: 'Theo ngay sau Pādāṅguṣṭhāsana mà không đứng lên: ba vinyasa, trạng thái ở dve, năm nhịp thở. Giáo viên đếm “Hít vào, đặt tay dưới bàn chân, nhìn lên; dve, thở ra, gập người”, và sau năm nhịp thở “Trīṇi, hít vào, nhìn lên” trước khi bạn đứng dậy.',
+      vi: 'Theo ngay sau Pādāṅguṣṭhāsana mà không đứng lên: ba vinyasa, giữ thế ở dve, năm nhịp thở. Giáo viên đếm “Hít vào, đặt tay dưới bàn chân, nhìn lên; dve, thở ra, gập người”, và sau năm nhịp thở “Trīṇi, hít vào, nhìn lên” trước khi bạn đứng dậy.',
     },
   },
 

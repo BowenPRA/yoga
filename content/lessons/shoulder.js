@@ -126,7 +126,7 @@ export const shoulderLesson = {
       type: 'term', term: 'serratus-anterior',
       figure: { kind: 'front', window: FRONT, highlight: ['serratus-anterior'] },
       cues: ['serratus-anterior__cue-1', 'serratus-anterior__cue-2'],
-      care: { id: 'shoulder__care-serratus-anterior', en: 'If Plank makes your shoulders ache, lower your knees and push the floor away.', vi: 'Nếu Plank làm vai mỏi đau, hạ gối xuống và đẩy sàn ra xa.' },
+      care: { id: 'shoulder__care-serratus-anterior', en: 'If Plank makes your shoulders ache, lower your knees and push the floor away.', vi: 'Nếu Plank làm vai nhức mỏi, hạ gối xuống và đẩy sàn ra xa.' },
     },
     {
       type: 'term', term: 'protraction-retraction',
@@ -220,7 +220,7 @@ export const shoulderLesson = {
         prompt: { vi: 'Sắp xếp các câu cue vào Chó úp mặt theo đúng thứ tự. Chạm loa để nghe từng câu.', en: 'Put the cues for Downward Dog in order. Tap the speaker to hear each one.' },
         steps: ['downward-dog__cue-1', 'downward-dog__cue-2', 'downward-dog__cue-4', 'downward-dog__cue-7', 'downward-dog__cue-9'],
         explain: {
-          vi: 'Vào thế, rồi xây từ tay lên: bàn tay trước, rồi bắp tay xoay ra ngoài. Giữ năm nhịp thở. Câu cuối đưa học viên ra khỏi thế, ở cuối hơi thở ra.',
+          vi: 'Vào thế, rồi xây từ tay lên: bàn tay trước, rồi cánh tay trên xoay ra ngoài. Giữ năm nhịp thở. Câu cuối đưa học viên ra khỏi thế, ở cuối hơi thở ra.',
           en: 'Come into the pose, then build from the hands up: hands first, then the upper arms turn out. Stay five breaths. The last cue takes your students out, at the end of an exhale.',
         },
       },
@@ -272,7 +272,7 @@ export const shoulderLesson = {
       type: 'activity',
       activity: {
         type: 'sayit', id: 'shoulder-say',
-        prompt: { vi: 'Nghe mẫu, rồi ghi âm chính bạn. Gemini sẽ nói bằng tiếng Việt cần sửa gì.', en: 'Hear the model, then record yourself. Gemini will tell you in Vietnamese what to fix.' },
+        prompt: { vi: 'Nghe mẫu, rồi ghi âm chính bạn. Gemini sẽ nói bằng tiếng Việt xem cần sửa gì.', en: 'Hear the model, then record yourself. Gemini will tell you in Vietnamese what to fix.' },
         items: [
           { clip: 'shoulder-blades', text: 'shoulder blades', say: 'SHOHL-der BLAYDZ', credit: 'shoulder-blades' },
           { clip: 'trapezius', text: 'trapezius', say: 'tra-PEE-zee-us', credit: 'trapezius' },

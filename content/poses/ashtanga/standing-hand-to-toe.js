@@ -40,7 +40,7 @@ export const standingHandToToe = {
   ],
 
   modifications: [
-    { id: 'standing-hand-to-toe__mod-1', en: 'Loop a strap around the ball of your lifted foot.', vi: 'Vòng dây tập quanh gốc ngón chân của bàn chân đang nâng.', props: ['strap'] },
+    { id: 'standing-hand-to-toe__mod-1', en: 'Loop a strap around the ball of your lifted foot.', vi: 'Vòng dây tập qua gan bàn chân đang nâng, ngay dưới các ngón chân.', props: ['strap'] },
     { id: 'standing-hand-to-toe__mod-2', en: 'Hold your bent knee instead of your toe.', vi: 'Ôm gối đang gập thay vì nắm ngón chân.', props: [] },
     { id: 'standing-hand-to-toe__mod-3', en: 'Stand beside a wall and touch it with your free hand for balance.', vi: 'Đứng cạnh tường và chạm tay còn lại vào tường để giữ thăng bằng.', props: ['wall'] },
   ],

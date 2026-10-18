@@ -24,7 +24,7 @@ export const boatPose = {
     vi: 'Hít vào để nâng chân. Giữ năm nhịp thở. Thở ra để hạ xuống, rồi hít vào để nâng người lên khỏi sàn giữa các lần.',
   },
   cues: [
-    { id: 'boat-pose__cue-1', kind: 'transition', en: 'Sit with your knees bent, and lean back a little behind your sitting bones.', vi: 'Ngồi co gối, hơi ngả người ra sau xương ngồi.' },
+    { id: 'boat-pose__cue-1', kind: 'transition', en: 'Sit with your knees bent, and lean back a little behind your sitting bones.', vi: 'Ngồi co gối, hơi ngả người ra sau một chút.' },
     { id: 'boat-pose__cue-2', kind: 'transition', en: 'Inhale, lift your feet and straighten your legs.', vi: 'Hít vào, nhấc bàn chân lên và duỗi thẳng chân.' },
     { id: 'boat-pose__cue-3', kind: 'alignment', en: 'Reach your arms forward, parallel to the floor, palms facing in.', vi: 'Vươn hai tay về trước, song song với sàn, lòng bàn tay hướng vào nhau.' },
     { id: 'boat-pose__cue-4', kind: 'alignment', en: 'Lift your chest and keep your back long.', vi: 'Nâng ngực và giữ lưng dài.' },

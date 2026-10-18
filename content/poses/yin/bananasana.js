@@ -19,7 +19,7 @@ export const bananasana = {
   },
   breath: {
     en: 'Breathe into the long side of your body. Feel your ribs widen on each inhale.',
-    vi: 'Thở vào bên thân đang được kéo dài. Cảm nhận xương sườn mở rộng mỗi lần hít vào.',
+    vi: 'Hướng hơi thở vào bên sườn đang được kéo dài. Cảm nhận xương sườn nở ra mỗi lần hít vào.',
   },
   cues: [
     { id: 'bananasana__cue-1', kind: 'transition', en: 'Lie on your back, and stretch your arms overhead.', vi: 'Nằm ngửa, và vươn hai tay lên quá đầu.' },
@@ -27,7 +27,7 @@ export const bananasana = {
     { id: 'bananasana__cue-3', kind: 'alignment', en: 'Keep both hips on the floor, and cross your left ankle over your right.', vi: 'Giữ cả hai bên hông trên sàn, và bắt chéo cổ chân trái lên trên cổ chân phải.' },
     { id: 'bananasana__cue-4', kind: 'alignment', en: 'Hold your left wrist with your right hand, or rest your arms on a bolster.', vi: 'Dùng tay phải nắm cổ tay trái, hoặc để hai tay tựa trên gối ôm.' },
     { id: 'bananasana__cue-5', kind: 'soften', en: 'Find your edge along your left side, and let your body grow heavy.', vi: 'Tìm ngưỡng dọc bên thân trái, và để cơ thể nặng xuống.' },
-    { id: 'bananasana__cue-6', kind: 'breath', en: 'Halfway. Breathe into your left ribs. Curve a little more, or stay.', vi: 'Được một nửa rồi. Thở vào xương sườn bên trái. Cong thêm một chút, hoặc cứ ở yên.' },
+    { id: 'bananasana__cue-6', kind: 'breath', en: 'Halfway. Breathe into your left ribs. Curve a little more, or stay.', vi: 'Được một nửa rồi. Hướng hơi thở vào sườn bên trái. Cong thêm một chút, hoặc cứ ở yên.' },
     { id: 'bananasana__cue-7', kind: 'safety', en: 'If your lower back or your shoulders complain, make the curve smaller.', vi: 'Nếu lưng dưới hoặc vai khó chịu, giảm độ cong lại.' },
     { id: 'bananasana__cue-8', kind: 'transition', en: 'Uncross your ankles, and slowly come back to the middle.', vi: 'Gỡ chéo cổ chân, và từ từ trở về giữa.' },
     { id: 'bananasana__cue-9', kind: 'soften', en: 'Lie still, and notice the difference between your two sides.', vi: 'Nằm yên, và cảm nhận sự khác biệt giữa hai bên cơ thể.' },

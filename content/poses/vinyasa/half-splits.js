@@ -10,7 +10,7 @@ export const halfSplits = {
   vi: 'Nửa xoạc dọc',
   breath: {
     en: 'Inhale to lengthen your spine. Exhale to fold over your front leg. Breathe slowly into the back of your thigh.',
-    vi: 'Hít vào, kéo dài cột sống. Thở ra, gập người về phía chân trước. Thở chậm vào mặt sau đùi.',
+    vi: 'Hít vào, kéo dài cột sống. Thở ra, gập người về phía chân trước. Thở chậm, hướng hơi thở vào mặt sau đùi.',
   },
   cues: [
     { id: 'half-splits__cue-1', kind: 'transition', en: 'From Low Lunge, shift your hips back over your back knee.', vi: 'Từ Chùng chân thấp, đẩy hông ra sau, thẳng trên gối sau.' },

@@ -37,7 +37,7 @@ export const savasana = {
     { id: 'savasana__cue-2', kind: 'alignment', en: 'Rest your arms a little away from your body, palms facing up.', vi: 'Đặt hai tay cách thân một chút, lòng bàn tay ngửa lên.' },
     { id: 'savasana__cue-3', kind: 'alignment', en: 'Tuck your shoulder blades under, and lengthen the back of your neck.', vi: 'Thu hai bả vai xuống dưới, và kéo dài phía sau cổ.' },
     { id: 'savasana__cue-4', kind: 'alignment', en: 'Let your head rest in the middle, chin slightly down.', vi: 'Để đầu nằm ngay chính giữa, cằm hơi hạ xuống.' },
-    { id: 'savasana__cue-5', kind: 'soften', en: 'Close your eyes, and let your whole body become heavy.', vi: 'Nhắm mắt lại, và để toàn bộ cơ thể trở nên nặng.' },
+    { id: 'savasana__cue-5', kind: 'soften', en: 'Close your eyes, and let your whole body become heavy.', vi: 'Nhắm mắt lại, và để toàn thân nặng dần xuống.' },
     { id: 'savasana__cue-6', kind: 'breath', en: 'Let your breath find its own rhythm.', vi: 'Để hơi thở tự tìm nhịp của nó.' },
     { id: 'savasana__cue-7', kind: 'safety', en: 'If your lower back feels tight, bend your knees, or rest them on a bolster.', vi: 'Nếu lưng dưới thấy căng, co gối lại, hoặc kê gối ôm dưới đầu gối.' },
     { id: 'savasana__cue-8', kind: 'transition', en: 'When you’re ready, deepen your breath, roll onto your right side, and slowly come up to sit.', vi: 'Khi bạn sẵn sàng, hít thở sâu hơn, lăn người sang bên phải, và từ từ ngồi dậy.' },

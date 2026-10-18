@@ -34,7 +34,7 @@ export const extendedSideAngle = {
     { id: 'extended-side-angle__cue-4', kind: 'alignment', en: 'Reach your left arm over your ear, one long line from your back heel to your fingertips.', vi: 'Vươn tay trái qua tai, thành một đường dài từ gót chân sau đến đầu ngón tay.' },
     { id: 'extended-side-angle__cue-5', kind: 'alignment', en: 'Press your knee back into your arm, and open your chest.', vi: 'Ấn gối về sau vào cánh tay, và mở ngực.' },
     { id: 'extended-side-angle__cue-6', kind: 'soften', en: 'Let your neck relax as you gaze up past your top hand.', vi: 'Thả lỏng cổ khi bạn nhìn lên qua bàn tay phía trên.' },
-    { id: 'extended-side-angle__cue-7', kind: 'breath', en: 'Stay for five breaths. Breathe into the long side of your body.', vi: 'Giữ năm nhịp thở. Thở vào bên thân đang được kéo dài.' },
+    { id: 'extended-side-angle__cue-7', kind: 'breath', en: 'Stay for five breaths. Breathe into the long side of your body.', vi: 'Giữ năm nhịp thở. Hướng hơi thở vào bên sườn đang được kéo dài.' },
     { id: 'extended-side-angle__cue-8', kind: 'safety', en: 'Keep your front knee over your ankle. Don’t let it fall inward.', vi: 'Giữ gối trước thẳng trên cổ chân. Đừng để gối đổ vào trong.' },
     { id: 'extended-side-angle__cue-9', kind: 'transition', en: 'Inhale, come up, and turn to the left.', vi: 'Hít vào, đứng lên, và xoay sang trái.' },
   ],

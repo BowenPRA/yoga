@@ -18,7 +18,7 @@ export const bigToePose = {
     drishti: 'nose',
     note: {
       en: 'The first pose of the standing sequence, straight after the sun salutations: three vinyasas, with the state on dve, five breaths. The teacher counts “Ekam, inhale, look up; dve, exhale, fold”.',
-      vi: 'Tư thế đầu tiên của chuỗi đứng, ngay sau các vòng Chào mặt trời: ba vinyasa, trạng thái ở dve, năm nhịp thở. Giáo viên đếm “Ekam, hít vào, nhìn lên; dve, thở ra, gập người”.',
+      vi: 'Tư thế đầu tiên của chuỗi đứng, ngay sau các vòng Chào mặt trời: ba vinyasa, giữ thế ở dve, năm nhịp thở. Giáo viên đếm “Ekam, hít vào, nhìn lên; dve, thở ra, gập người”.',
     },
   },
 
@@ -41,7 +41,7 @@ export const bigToePose = {
 
   modifications: [
     { id: 'big-toe-pose__mod-1', en: 'Bend your knees enough to reach your toes with a long back.', vi: 'Chùng gối vừa đủ để nắm được ngón chân mà lưng vẫn dài.', props: [] },
-    { id: 'big-toe-pose__mod-2', en: 'Loop a strap under the balls of your feet and hold that instead.', vi: 'Vòng dây tập dưới gốc các ngón chân và nắm dây thay cho ngón chân.', props: ['strap'] },
+    { id: 'big-toe-pose__mod-2', en: 'Loop a strap under the balls of your feet and hold that instead.', vi: 'Vòng dây tập qua gan bàn chân, ngay dưới các ngón chân, và nắm dây thay cho ngón chân.', props: ['strap'] },
     { id: 'big-toe-pose__mod-3', en: 'Rest your hands on your shins.', vi: 'Đặt tay lên ống chân.', props: [] },
   ],
 

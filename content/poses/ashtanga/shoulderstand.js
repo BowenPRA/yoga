@@ -47,7 +47,7 @@ export const shoulderstand = {
   safety: [
     { id: 'shoulderstand__safe-1', en: 'With a neck injury, skip Shoulderstand and take legs up the wall.', vi: 'Nếu cổ có chấn thương, bỏ qua Đứng bằng vai và gác chân lên tường.' },
     { id: 'shoulderstand__safe-2', en: 'With high blood pressure or glaucoma, or during your period if you prefer, rest with your legs up the wall.', vi: 'Nếu bạn bị huyết áp cao hoặc tăng nhãn áp, hoặc trong kỳ kinh nếu bạn muốn, hãy nghỉ với hai chân gác lên tường.' },
-    { id: 'shoulderstand__safe-3', en: 'In pregnancy, practise it only if it’s already steady in your practice; otherwise, legs up the wall.', vi: 'Khi mang thai, chỉ tập nếu tư thế này đã vững trong buổi tập của bạn; nếu không, gác chân lên tường.' },
+    { id: 'shoulderstand__safe-3', en: 'In pregnancy, practise it only if it’s already steady in your practice; otherwise, legs up the wall.', vi: 'Khi mang thai, chỉ tập nếu bạn đã quen và vững với tư thế này từ trước; nếu không, hãy gác chân lên tường.' },
   ],
 
   muscles: {

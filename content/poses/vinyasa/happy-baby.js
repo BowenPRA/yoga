@@ -9,7 +9,7 @@ export const happyBaby = {
   vi: 'Em bé vui vẻ',
   breath: {
     en: 'Breathe slowly into your lower back. Let each exhale settle your sacrum a little closer to the mat.',
-    vi: 'Thở chậm vào lưng dưới. Để mỗi hơi thở ra giúp xương cùng chạm thảm thêm một chút.',
+    vi: 'Thở chậm, hướng hơi thở vào lưng dưới. Để mỗi hơi thở ra giúp xương cùng chạm thảm thêm một chút.',
   },
   cues: [
     { id: 'happy-baby__cue-1', kind: 'transition', en: 'Lie on your back, and hug your knees toward your chest.', vi: 'Nằm ngửa, và ôm gối về phía ngực.' },

@@ -20,7 +20,7 @@ export const dancerPose = {
     { id: 'dancer-pose__cue-5', kind: 'alignment', en: 'Kick your foot back into your hand as you tip your chest forward.', vi: 'Đạp bàn chân vào lòng bàn tay khi nghiêng ngực về trước.' },
     { id: 'dancer-pose__cue-6', kind: 'soften', en: 'Keep your standing knee soft and your gaze steady.', vi: 'Giữ gối chân trụ mềm và ánh nhìn vững.' },
     { id: 'dancer-pose__cue-7', kind: 'breath', en: 'Stay for three breaths.', vi: 'Giữ ba nhịp thở.' },
-    { id: 'dancer-pose__cue-8', kind: 'safety', en: 'If your lower back pinches, kick less, and lengthen your tailbone down.', vi: 'Nếu lưng dưới bị chèn, đạp nhẹ hơn, và kéo dài xương cụt xuống.' },
+    { id: 'dancer-pose__cue-8', kind: 'safety', en: 'If your lower back pinches, kick less, and lengthen your tailbone down.', vi: 'Nếu lưng dưới bị nhói, đạp nhẹ hơn, và kéo dài xương cụt xuống.' },
     { id: 'dancer-pose__cue-9', kind: 'transition', en: 'Exhale, slowly lower your foot, and change sides.', vi: 'Thở ra, từ từ hạ bàn chân xuống, và đổi bên.' },
   ],
   modifications: [

@@ -16,7 +16,7 @@ export const upwardSalute = {
     drishti: 'thumbs',
     note: {
       en: 'Ekam, the first vinyasa of Surya Namaskara A, and again nava, the ninth: one inhale, gaze at your thumbs, then straight on. It is a passing count; the state of the salutation is Downward Dog on ṣaṭ. The teacher counts “Ekam, inhale”.',
-      vi: 'Ekam, vinyasa thứ nhất của Chào mặt trời A, và trở lại ở nava, vinyasa thứ chín: một hơi hít vào, nhìn ngón tay cái, rồi đi tiếp. Đây là một nhịp đi qua; trạng thái của cả chuỗi là Chó úp mặt ở ṣaṭ. Giáo viên đếm “Ekam, hít vào”.',
+      vi: 'Ekam, vinyasa thứ nhất của Chào mặt trời A, và trở lại ở nava, vinyasa thứ chín: một hơi hít vào, nhìn ngón tay cái, rồi đi tiếp. Đây chỉ là một nhịp chuyển tiếp; chỗ giữ thế của cả chuỗi là Chó úp mặt ở ṣaṭ. Giáo viên đếm “Ekam, hít vào”.',
     },
   },
 

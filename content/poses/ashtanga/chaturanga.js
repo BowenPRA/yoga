@@ -16,7 +16,7 @@ export const chaturanga = {
     drishti: 'nose',
     note: {
       en: 'Catvāri, the fourth vinyasa of Surya Namaskara A, on an exhale; it comes back after every Warrior I in Surya Namaskara B and in every vinyasa between the seated poses. A passing count; the teacher counts “Catvāri, exhale” as you jump or step back and lower.',
-      vi: 'Catvāri, vinyasa thứ tư của Chào mặt trời A, khi thở ra; tư thế này trở lại sau mỗi lần Chiến binh I trong Chào mặt trời B và trong mỗi vinyasa giữa các tư thế ngồi. Một nhịp đi qua; giáo viên đếm “Catvāri, thở ra” khi bạn nhảy hoặc bước ra sau và hạ xuống.',
+      vi: 'Catvāri, vinyasa thứ tư của Chào mặt trời A, khi thở ra; tư thế này trở lại sau mỗi lần Chiến binh I trong Chào mặt trời B và trong mỗi vinyasa giữa các tư thế ngồi. Chỉ đi qua trong một nhịp; giáo viên đếm “Catvāri, thở ra” khi bạn nhảy hoặc bước ra sau và hạ xuống.',
     },
   },
 

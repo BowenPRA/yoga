@@ -10,7 +10,7 @@ export const reverseWarrior = {
   vi: 'Chiến binh đảo ngược',
   breath: {
     en: 'Inhale as you reach your front arm up and back. Breathe into the long side of your waist. Exhale to flow on.',
-    vi: 'Hít vào khi vươn tay trước lên và ra sau. Thở vào bên eo đang được kéo dài. Thở ra để chuyển tiếp.',
+    vi: 'Hít vào khi vươn tay trước lên và ra sau. Hướng hơi thở vào bên sườn đang được kéo dài. Thở ra để chuyển tiếp.',
   },
   cues: [
     { id: 'reverse-warrior__cue-1', kind: 'transition', en: 'From Warrior Two, turn your front palm up.', vi: 'Từ Chiến binh II, ngửa lòng bàn tay trước lên.' },
@@ -19,7 +19,7 @@ export const reverseWarrior = {
     { id: 'reverse-warrior__cue-4', kind: 'alignment', en: 'Keep your front knee bent, right over your ankle.', vi: 'Giữ gối trước gập, thẳng trên cổ chân.' },
     { id: 'reverse-warrior__cue-5', kind: 'alignment', en: 'Lengthen through both sides of your waist.', vi: 'Kéo dài cả hai bên eo.' },
     { id: 'reverse-warrior__cue-6', kind: 'soften', en: 'Let your gaze float up, or keep it forward if your neck prefers.', vi: 'Để ánh nhìn hướng lên, hoặc nhìn về trước nếu cổ thấy dễ chịu hơn.' },
-    { id: 'reverse-warrior__cue-7', kind: 'breath', en: 'Stay for three breaths, breathing into your side body.', vi: 'Giữ ba nhịp thở, thở vào bên eo đang được kéo dài.' },
+    { id: 'reverse-warrior__cue-7', kind: 'breath', en: 'Stay for three breaths, breathing into your side body.', vi: 'Giữ ba nhịp thở, hướng hơi thở vào bên sườn.' },
     { id: 'reverse-warrior__cue-8', kind: 'safety', en: 'Don’t lean on your back hand. Let your legs do the work.', vi: 'Đừng dồn trọng lượng lên tay sau. Để chân làm việc.' },
     { id: 'reverse-warrior__cue-9', kind: 'transition', en: 'Exhale, and cartwheel your hands down to frame your front foot.', vi: 'Thở ra, và xoay hai tay xuống đặt hai bên bàn chân trước.' },
   ],

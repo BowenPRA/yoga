@@ -10,7 +10,7 @@ export const malasana = {
   vi: 'Vòng hoa',
   breath: {
     en: 'Exhale to sink into the squat. Inhale to lift your chest. Stay for five breaths, breathing into your lower back and hips.',
-    vi: 'Thở ra, hạ người xuống ngồi xổm. Hít vào, nâng ngực. Giữ năm nhịp thở, thở vào lưng dưới và hông.',
+    vi: 'Thở ra, hạ người xuống ngồi xổm. Hít vào, nâng ngực. Giữ năm nhịp thở, hướng hơi thở vào lưng dưới và hông.',
   },
   cues: [
     { id: 'malasana__cue-1', kind: 'transition', en: 'Step your feet a little wider than your hips, toes turned out.', vi: 'Đặt hai bàn chân rộng hơn hông một chút, mũi chân xoay ra ngoài.' },

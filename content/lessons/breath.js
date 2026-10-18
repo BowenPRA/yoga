@@ -20,7 +20,7 @@ export const breathLesson = {
   title: { en: 'Breath', vi: 'Hơi thở' },
   lead: {
     en: 'Eight words for teaching the breath in English: where the breath goes, the muscles that move it, and the gentle lift of the bandhas.',
-    vi: 'Tám từ để dạy về hơi thở bằng tiếng Anh: hơi thở đi đến đâu, các cơ làm nó chuyển động, và cái nâng nhẹ nhàng của bandha.',
+    vi: 'Tám từ để dạy về hơi thở bằng tiếng Anh: hơi thở đi đến đâu, các cơ làm nó chuyển động, và sự nâng nhẹ của các bandha.',
   },
   how: {
     en: 'Meet each word on the figure, hear it, put the breath cues in order, build them, then say them.',
@@ -46,7 +46,7 @@ export const breathLesson = {
       type: 'term', term: 'ribs',
       figure: { kind: 'skeleton', window: CHEST, highlight: ['ribs'] },
       cues: ['ribs__cue-2', 'ribs__cue-1'],
-      care: { id: 'breath__care-ribs', en: 'If your chest feels tight, wrap your hands around your lower ribs and breathe into your hands.', vi: 'Nếu ngực thấy căng, đặt hai tay ôm quanh xương sườn dưới và thở vào lòng bàn tay.' },
+      care: { id: 'breath__care-ribs', en: 'If your chest feels tight, wrap your hands around your lower ribs and breathe into your hands.', vi: 'Nếu ngực thấy căng, đặt hai tay ôm quanh xương sườn dưới và hướng hơi thở vào nơi hai bàn tay đang chạm.' },
     },
     {
       type: 'term', term: 'collarbones',
@@ -129,11 +129,11 @@ export const breathLesson = {
         type: 'hotspot', id: 'breath-hotspot-mula',
         figure: { kind: 'front', window: [190, 400, 320, 300] },
         clip: 'pelvic-floor__cue-1',
-        prompt: { vi: 'Nghe câu cue. Học viên sẽ cảm thấy cái nâng ở đâu? Chạm vào hình.', en: 'Listen to the cue. Where will your students feel the lift? Tap the figure.' },
+        prompt: { vi: 'Nghe câu cue. Học viên sẽ cảm thấy sự nâng lên ở đâu? Chạm vào hình.', en: 'Listen to the cue. Where will your students feel the lift? Tap the figure.' },
         accept: ['pelvic-floor'],
         reveal: ['pelvic-floor'],
         explain: {
-          vi: 'Ở đáy khung chậu, giữa hai xương ngồi: sàn chậu. Nó chuyển động cùng cơ hoành: khi hít vào, cả hai hạ xuống và mềm ra; khi thở ra, cả hai nâng lên. Mula bandha chính là cái nâng đó, giữ thật nhẹ nhàng.',
+          vi: 'Ở đáy khung chậu, giữa hai xương ngồi: sàn chậu. Nó chuyển động cùng cơ hoành: khi hít vào, cả hai hạ xuống và mềm ra; khi thở ra, cả hai nâng lên. Mula bandha chính là sự nâng đó, giữ thật nhẹ nhàng.',
           en: 'At the base of the pelvis, between the sitting bones: the pelvic floor. It moves with the diaphragm: as you breathe in, both soften down; as you breathe out, both lift. Mula bandha is that lift, kept gentle.',
         },
       },
@@ -271,7 +271,7 @@ export const breathLesson = {
       ],
       activity: {
         type: 'sayit', id: 'breath-say',
-        prompt: { vi: 'Nghe mẫu, rồi ghi âm chính bạn. Gemini sẽ nói bằng tiếng Việt cần sửa gì.', en: 'Hear the model, then record yourself. Gemini will tell you in Vietnamese what to fix.' },
+        prompt: { vi: 'Nghe mẫu, rồi ghi âm chính bạn. Gemini sẽ nói bằng tiếng Việt xem cần sửa gì.', en: 'Hear the model, then record yourself. Gemini will tell you in Vietnamese what to fix.' },
         items: [
           { clip: 'diaphragm', text: 'diaphragm', say: 'DY-uh-fram', credit: 'diaphragm' },
           { clip: 'ribs', text: 'ribs', say: 'RIBZ', credit: 'ribs' },

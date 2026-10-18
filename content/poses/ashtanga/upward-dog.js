@@ -16,7 +16,7 @@ export const upwardDog = {
     drishti: 'third-eye',
     note: {
       en: 'Pañca, the fifth vinyasa of Surya Namaskara A, on an inhale; it follows every Chaturanga in the series. A passing count, never held; the teacher counts “Pañca, inhale”.',
-      vi: 'Pañca, vinyasa thứ năm của Chào mặt trời A, khi hít vào; tư thế này theo sau mọi lần Chaturanga trong cả chuỗi. Một nhịp đi qua, không bao giờ giữ lại; giáo viên đếm “Pañca, hít vào”.',
+      vi: 'Pañca, vinyasa thứ năm của Chào mặt trời A, khi hít vào; tư thế này theo sau mọi lần Chaturanga trong cả chuỗi. Chỉ đi qua trong một nhịp, không bao giờ dừng lại; giáo viên đếm “Pañca, hít vào”.',
     },
   },
 
@@ -46,7 +46,7 @@ export const upwardDog = {
   safety: [
     { id: 'upward-dog__safe-1', en: 'Keep the back of your neck long. Don’t drop your head back.', vi: 'Giữ phía sau cổ dài. Đừng ngửa đầu ra sau.' },
     { id: 'upward-dog__safe-2', en: 'With a lower back injury, take Cobra instead, with your elbows bent.', vi: 'Nếu lưng dưới có chấn thương, thay bằng Rắn hổ mang với khuỷu tay hơi gập.' },
-    { id: 'upward-dog__safe-3', en: 'In pregnancy, skip it: go from all fours straight back into Downward Dog.', vi: 'Khi mang thai, bỏ qua tư thế này: từ tư thế bốn điểm chuyển thẳng về Chó úp mặt.' },
+    { id: 'upward-dog__safe-3', en: 'In pregnancy, skip it: go from all fours straight back into Downward Dog.', vi: 'Khi mang thai, bỏ qua tư thế này: từ tư thế cái bàn chuyển thẳng về Chó úp mặt.' },
   ],
 
   muscles: {

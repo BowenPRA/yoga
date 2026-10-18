@@ -37,7 +37,7 @@ export const warrior2 = {
     { id: 'warrior-2__cue-4', kind: 'alignment', en: 'Press into the outer edge of your back foot.', vi: 'Ấn vào cạnh ngoài của bàn chân sau.' },
     { id: 'warrior-2__cue-5', kind: 'alignment', en: 'Reach your arms out wide, and gaze over your front fingertips.', vi: 'Dang rộng hai tay, và nhìn qua đầu ngón tay phía trước.' },
     { id: 'warrior-2__cue-6', kind: 'soften', en: 'Relax your shoulders away from your ears.', vi: 'Thả lỏng vai, hạ vai xa khỏi tai.' },
-    { id: 'warrior-2__cue-7', kind: 'breath', en: 'Stay here for five breaths.', vi: 'Giữ ở đây trong năm nhịp thở.' },
+    { id: 'warrior-2__cue-7', kind: 'breath', en: 'Stay here for five breaths.', vi: 'Giữ ở đây năm nhịp thở.' },
     { id: 'warrior-2__cue-8', kind: 'safety', en: 'Keep your front knee tracking over your second toe. Don’t let it fall inward.', vi: 'Giữ gối trước thẳng hướng với ngón chân thứ hai. Đừng để gối đổ vào trong.' },
     { id: 'warrior-2__cue-9', kind: 'transition', en: 'Inhale, straighten your front leg, and turn to face the other side.', vi: 'Hít vào, duỗi thẳng chân trước, và xoay người sang bên kia.' },
   ],

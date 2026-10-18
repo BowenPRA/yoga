@@ -30,7 +30,7 @@ export const plowPose = {
     { id: 'plow-pose__cue-1', kind: 'transition', en: 'Exhale, lower your feet to the floor behind your head.', vi: 'Thở ra, hạ hai bàn chân xuống sàn phía sau đầu.' },
     { id: 'plow-pose__cue-2', kind: 'alignment', en: 'Keep your legs straight, and lift your sitting bones high.', vi: 'Giữ hai chân thẳng, và nâng xương ngồi lên cao.' },
     { id: 'plow-pose__cue-3', kind: 'alignment', en: 'Interlace your fingers on the floor behind your back, and straighten your arms.', vi: 'Đan các ngón tay trên sàn sau lưng, và duỗi thẳng tay.' },
-    { id: 'plow-pose__cue-4', kind: 'alignment', en: 'Roll your shoulders under, so you rest on the tops of your shoulders, not your neck.', vi: 'Cuộn vai vào bên dưới, để bạn tựa trên đỉnh vai, không phải trên cổ.' },
+    { id: 'plow-pose__cue-4', kind: 'alignment', en: 'Roll your shoulders under, so you rest on the tops of your shoulders, not your neck.', vi: 'Thu hai vai vào bên dưới, để trọng lượng dồn lên vai, không phải lên cổ.' },
     { id: 'plow-pose__cue-5', kind: 'soften', en: 'Let your face and jaw soften.', vi: 'Để khuôn mặt và hàm mềm ra.' },
     { id: 'plow-pose__cue-6', kind: 'breath', en: 'Stay for eight breaths, slow and quiet.', vi: 'Giữ tám nhịp thở, chậm và nhẹ.' },
     { id: 'plow-pose__cue-7', kind: 'safety', en: 'If you feel pressure in your neck, come down. Don’t turn your head.', vi: 'Nếu thấy áp lực ở cổ, hạ xuống. Đừng quay đầu.' },

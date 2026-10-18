@@ -274,7 +274,7 @@ export const footLesson = {
       type: 'activity',
       activity: {
         type: 'sayit', id: 'foot-say',
-        prompt: { vi: 'Nghe mẫu, rồi ghi âm chính bạn. Gemini sẽ nói bằng tiếng Việt cần sửa gì.', en: 'Hear the model, then record yourself. Gemini will tell you in Vietnamese what to fix.' },
+        prompt: { vi: 'Nghe mẫu, rồi ghi âm chính bạn. Gemini sẽ nói bằng tiếng Việt xem cần sửa gì.', en: 'Hear the model, then record yourself. Gemini will tell you in Vietnamese what to fix.' },
         items: [
           { clip: 'heel', text: 'heel', say: 'HEEL', credit: 'heel' },
           { clip: 'ankle', text: 'ankle', say: 'ANG-kul', credit: 'ankle' },

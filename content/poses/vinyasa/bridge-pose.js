@@ -20,7 +20,7 @@ export const bridgePose = {
     { id: 'bridge-pose__cue-2', kind: 'alignment', en: 'Walk your heels in, close enough to brush your fingertips.', vi: 'Đưa gót chân lại gần, đến mức đầu ngón tay chạm được.' },
     { id: 'bridge-pose__cue-3', kind: 'alignment', en: 'Inhale, press into your feet, and lift your hips.', vi: 'Hít vào, ấn bàn chân xuống, và nâng hông lên.' },
     { id: 'bridge-pose__cue-4', kind: 'alignment', en: 'Keep your knees in line with your hips. Don’t let them fall out.', vi: 'Giữ gối thẳng hàng với hông. Đừng để gối đổ ra ngoài.' },
-    { id: 'bridge-pose__cue-5', kind: 'alignment', en: 'Roll your shoulders under, and interlace your hands beneath you.', vi: 'Lần lượt đưa hai vai vào bên dưới người, và đan hai bàn tay dưới lưng.' },
+    { id: 'bridge-pose__cue-5', kind: 'alignment', en: 'Roll your shoulders under, and interlace your hands beneath you.', vi: 'Thu hai vai vào bên dưới, và đan hai bàn tay dưới lưng.' },
     { id: 'bridge-pose__cue-6', kind: 'soften', en: 'Keep your glutes working, but not clenched.', vi: 'Giữ cơ mông làm việc, nhưng không siết chặt.' },
     { id: 'bridge-pose__cue-7', kind: 'breath', en: 'Stay for five breaths.', vi: 'Giữ năm nhịp thở.' },
     { id: 'bridge-pose__cue-8', kind: 'safety', en: 'Keep your head still and look straight up, to protect your neck.', vi: 'Giữ đầu yên và nhìn thẳng lên, để bảo vệ cổ.' },

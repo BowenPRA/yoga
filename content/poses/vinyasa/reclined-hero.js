@@ -9,7 +9,7 @@ export const reclinedHero = {
   vi: 'Anh hùng nằm',
   breath: {
     en: 'Exhale as you lower back. Breathe slowly into your belly and the front of your thighs. Inhale to come up, pressing through your hands.',
-    vi: 'Thở ra khi ngả người ra sau. Thở chậm vào bụng và mặt trước đùi. Hít vào để lên, chống tay đẩy người dậy.',
+    vi: 'Thở ra khi ngả người ra sau. Thở chậm, hướng hơi thở vào bụng và mặt trước đùi. Hít vào để lên, chống tay đẩy người dậy.',
   },
   cues: [
     { id: 'reclined-hero__cue-1', kind: 'transition', en: 'Start sitting between your heels, with your knees together.', vi: 'Bắt đầu ngồi giữa hai gót chân, hai gối khép lại.' },
@@ -29,7 +29,7 @@ export const reclinedHero = {
   ],
   safety: [
     { id: 'reclined-hero__safe-1', en: 'If you have a knee or ankle injury, stretch your thighs in a low lunge instead.', vi: 'Nếu bạn có chấn thương gối hoặc cổ chân, thay bằng giãn đùi trong tư thế Chùng chân thấp.' },
-    { id: 'reclined-hero__safe-2', en: 'If your lower back pinches, use a higher bolster.', vi: 'Nếu lưng dưới bị chèn, dùng gối ôm cao hơn.' },
+    { id: 'reclined-hero__safe-2', en: 'If your lower back pinches, use a higher bolster.', vi: 'Nếu lưng dưới bị nhói, dùng gối ôm cao hơn.' },
     { id: 'reclined-hero__safe-3', en: 'In Yin, this shape is Saddle, held for minutes. Come out slowly, one leg at a time.', vi: 'Trong Yin, dáng này là tư thế Yên ngựa, giữ vài phút. Hãy thoát thế từ từ, từng chân một.' },
   ],
   muscles: {

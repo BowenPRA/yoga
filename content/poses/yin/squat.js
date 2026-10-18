@@ -19,7 +19,7 @@ export const squat = {
   },
   breath: {
     en: 'Breathe into your lower back. Let each exhale settle your hips a little lower.',
-    vi: 'Thở vào lưng dưới. Để mỗi hơi thở ra giúp hông lắng thấp hơn một chút.',
+    vi: 'Hướng hơi thở vào lưng dưới. Để mỗi hơi thở ra giúp hông lắng thấp hơn một chút.',
   },
   cues: [
     { id: 'squat__cue-1', kind: 'transition', en: 'Stand with your feet a little wider than your hips, toes turned out.', vi: 'Đứng hai chân rộng hơn hông một chút, mũi chân hướng ra ngoài.' },

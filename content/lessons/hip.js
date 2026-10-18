@@ -192,7 +192,7 @@ export const hipLesson = {
           { id: 'outer-hip', en: 'Deep in the outer hip of the front leg', vi: 'Sâu bên ngoài hông của chân trước' },
           { id: 'knee', en: 'In the front knee', vi: 'Ở gối trước' },
           { id: 'lower-back', en: 'In the lower back', vi: 'Ở lưng dưới' },
-          { id: 'neck', en: 'In the back of the neck', vi: 'Ở sau gáy' },
+          { id: 'neck', en: 'In the back of the neck', vi: 'Ở phía sau cổ' },
         ],
         correct: 'outer-hip',
         explain: {
@@ -261,7 +261,7 @@ export const hipLesson = {
       type: 'activity',
       activity: {
         type: 'sayit', id: 'hip-say',
-        prompt: { vi: 'Nghe mẫu, rồi ghi âm chính bạn. Gemini sẽ nói bằng tiếng Việt cần sửa gì.', en: 'Hear the model, then record yourself. Gemini will tell you in Vietnamese what to fix.' },
+        prompt: { vi: 'Nghe mẫu, rồi ghi âm chính bạn. Gemini sẽ nói bằng tiếng Việt xem cần sửa gì.', en: 'Hear the model, then record yourself. Gemini will tell you in Vietnamese what to fix.' },
         items: [
           { clip: 'sit-bones', text: 'sitting bones', say: 'SIT-ing BOHNZ', credit: 'sit-bones' },
           { clip: 'gluteus-maximus', text: 'gluteus maximus', say: 'GLOO-tee-us MAK-si-mus', credit: 'gluteus-maximus' },

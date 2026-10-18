@@ -9,7 +9,7 @@ export const treePose = {
   vi: 'Cái cây',
   breath: {
     en: 'Breathe slowly and evenly for five breaths. If you lose the breath, you lose the balance, so come back to the breath first.',
-    vi: 'Thở chậm và đều năm nhịp. Nếu mất hơi thở, bạn sẽ mất thăng bằng, nên hãy quay về với hơi thở trước.',
+    vi: 'Thở chậm và đều năm nhịp. Nếu hụt hơi, bạn sẽ mất thăng bằng, nên hãy quay về với hơi thở trước.',
   },
   cues: [
     { id: 'tree-pose__cue-1', kind: 'transition', en: 'Stand tall, and shift your weight into your left foot.', vi: 'Đứng thẳng, và dồn trọng lượng sang bàn chân trái.' },

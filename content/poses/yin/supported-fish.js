@@ -18,7 +18,7 @@ export const supportedFish = {
   },
   breath: {
     en: 'Breathe into your chest, and feel your ribs widen. Let each exhale sink you into the props.',
-    vi: 'Thở vào ngực, và cảm nhận xương sườn mở rộng. Để mỗi hơi thở ra giúp bạn chìm vào dụng cụ.',
+    vi: 'Hít thở sâu vào lồng ngực, và cảm nhận xương sườn nở ra. Để mỗi hơi thở ra giúp bạn chìm xuống dụng cụ.',
   },
   cues: [
     { id: 'supported-fish__cue-1', kind: 'transition', en: 'Place one block under your shoulder blades, and another, a little higher, under your head.', vi: 'Đặt một viên gạch dưới bả vai, và một viên khác, cao hơn một chút, dưới đầu.' },

@@ -17,7 +17,7 @@ export const catPullingItsTail = {
   },
   breath: {
     en: 'Breathe into the front of your bent leg and across your chest. Let each exhale settle you a little deeper.',
-    vi: 'Thở vào mặt trước của chân co và mở rộng qua ngực. Để mỗi hơi thở ra giúp bạn lắng sâu thêm một chút.',
+    vi: 'Hướng hơi thở vào mặt trước của chân co và vào lồng ngực đang mở. Để mỗi hơi thở ra giúp bạn lắng sâu thêm một chút.',
   },
   cues: [
     { id: 'cat-pulling-its-tail__cue-1', kind: 'transition', en: 'Lie on your back, and let your knees fall to the left into a twist.', vi: 'Nằm ngửa, và để hai gối ngả sang trái vào thế vặn.' },
@@ -37,7 +37,7 @@ export const catPullingItsTail = {
   ],
   safety: [
     { id: 'cat-pulling-its-tail__safe-1', en: 'Feel it in the front of your thigh and across your chest. Sharp pain in your bent knee means let go.', vi: 'Cảm giác nên ở mặt trước đùi và qua ngực. Đau nhói ở gối co nghĩa là cần buông ra.' },
-    { id: 'cat-pulling-its-tail__safe-2', en: 'With a tender sacroiliac joint or lower back, keep the twist small.', vi: 'Nếu khớp cùng chậu hoặc lưng dưới nhạy cảm, chỉ vặn nhẹ.' },
+    { id: 'cat-pulling-its-tail__safe-2', en: 'With a tender sacroiliac joint or lower back, keep the twist small.', vi: 'Nếu khớp cùng chậu hoặc lưng dưới dễ đau, chỉ vặn nhẹ.' },
     { id: 'cat-pulling-its-tail__safe-3', en: 'In pregnancy, stay on your side without the twist, with a bolster under your top knee.', vi: 'Khi mang thai, nằm nghiêng mà không vặn, kê gối ôm dưới đầu gối trên.' },
   ],
   muscles: {

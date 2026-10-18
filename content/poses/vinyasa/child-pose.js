@@ -9,7 +9,7 @@ export const childPose = {
   vi: 'Em bé',
   breath: {
     en: 'Breathe slowly into your back. As you inhale, feel your ribs widen against your thighs.',
-    vi: 'Thở chậm vào lưng. Khi hít vào, cảm nhận xương sườn nở ra chạm vào đùi.',
+    vi: 'Thở chậm, hướng hơi thở vào lưng. Khi hít vào, cảm nhận xương sườn nở ra chạm vào đùi.',
   },
   cues: [
     { id: 'child-pose__cue-1', kind: 'transition', en: 'Bring your big toes together, and sit back toward your heels.', vi: 'Chạm hai ngón chân cái vào nhau, và ngồi lùi về phía gót chân.' },
@@ -17,7 +17,7 @@ export const childPose = {
     { id: 'child-pose__cue-3', kind: 'alignment', en: 'Walk your hands forward, and rest your forehead on the mat.', vi: 'Đưa hai tay về trước, và tựa trán xuống thảm.' },
     { id: 'child-pose__cue-4', kind: 'alignment', en: 'Let your hips sink back toward your heels.', vi: 'Để hông chìm dần về phía gót chân.' },
     { id: 'child-pose__cue-5', kind: 'soften', en: 'Let your shoulders and your whole back soften.', vi: 'Để vai và cả lưng mềm xuống.' },
-    { id: 'child-pose__cue-6', kind: 'breath', en: 'Take five slow breaths here. Breathe into your back.', vi: 'Thở chậm năm nhịp ở đây. Thở vào lưng.' },
+    { id: 'child-pose__cue-6', kind: 'breath', en: 'Take five slow breaths here. Breathe into your back.', vi: 'Thở chậm năm nhịp ở đây. Hướng hơi thở vào lưng.' },
     { id: 'child-pose__cue-7', kind: 'soften', en: 'This is your resting place. You can come back here any time.', vi: 'Đây là chỗ nghỉ của bạn. Bạn có thể trở về đây bất cứ lúc nào.' },
     { id: 'child-pose__cue-8', kind: 'safety', en: 'If your knees don’t like this, put a folded blanket behind them.', vi: 'Nếu gối không thoải mái, kê một tấm chăn gấp phía sau gối.' },
     { id: 'child-pose__cue-9', kind: 'transition', en: 'When you’re ready, walk your hands back and slowly sit up.', vi: 'Khi sẵn sàng, đưa hai tay về và từ từ ngồi dậy.' },

@@ -19,7 +19,7 @@ export const reclinedTwist = {
   },
   breath: {
     en: 'Breathe into your belly and the sides of your waist. With each exhale, let the twist settle without pushing.',
-    vi: 'Thở vào bụng và hai bên eo. Mỗi hơi thở ra, để thế vặn tự lắng xuống mà không ép.',
+    vi: 'Hướng hơi thở xuống bụng và hai bên eo. Mỗi hơi thở ra, để thế vặn tự lắng xuống mà không ép.',
   },
   cues: [
     { id: 'reclined-twist__cue-1', kind: 'transition', en: 'Lie on your back, bend your knees, and shift your hips a little to the right.', vi: 'Nằm ngửa, co gối, và dịch hông sang phải một chút.' },
@@ -27,7 +27,7 @@ export const reclinedTwist = {
     { id: 'reclined-twist__cue-3', kind: 'alignment', en: 'Open your arms wide, palms facing up.', vi: 'Dang rộng hai tay, lòng bàn tay ngửa lên.' },
     { id: 'reclined-twist__cue-4', kind: 'alignment', en: 'Turn your head to the right, only if your neck enjoys it.', vi: 'Quay đầu sang phải, chỉ khi cổ thấy dễ chịu.' },
     { id: 'reclined-twist__cue-5', kind: 'soften', en: 'Find your edge, and let gravity do the twisting.', vi: 'Tìm ngưỡng của bạn, và để trọng lực vặn giúp bạn.' },
-    { id: 'reclined-twist__cue-6', kind: 'breath', en: 'Halfway. Breathe into your belly, and let the twist settle.', vi: 'Được một nửa rồi. Thở vào bụng, và để thế vặn lắng xuống.' },
+    { id: 'reclined-twist__cue-6', kind: 'breath', en: 'Halfway. Breathe into your belly, and let the twist settle.', vi: 'Được một nửa rồi. Thở sâu xuống bụng, và để thế vặn lắng xuống.' },
     { id: 'reclined-twist__cue-7', kind: 'safety', en: 'If your lower back complains, draw your knees a little higher toward your chest.', vi: 'Nếu lưng dưới khó chịu, kéo hai gối cao hơn một chút về phía ngực.' },
     { id: 'reclined-twist__cue-8', kind: 'transition', en: 'On an inhale, slowly bring your knees back to the middle.', vi: 'Khi hít vào, từ từ đưa hai gối về giữa.' },
     { id: 'reclined-twist__cue-9', kind: 'soften', en: 'Rest here with your knees up, and notice the rebound.', vi: 'Nghỉ ở đây với hai gối dựng lên, và cảm nhận dư âm.' },

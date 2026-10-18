@@ -23,7 +23,7 @@ export const earPressurePose = {
 
   breath: {
     en: 'Breathe into the back of your ribs. The front of your body is folded, so the breath will be small.',
-    vi: 'Thở vào phía sau lồng ngực. Phía trước cơ thể đang gập lại, nên hơi thở sẽ nhỏ.',
+    vi: 'Hướng hơi thở vào phía sau lồng ngực. Mặt trước cơ thể đang gập lại, nên hơi thở sẽ ngắn và nhỏ.',
   },
 
   cues: [
@@ -32,7 +32,7 @@ export const earPressurePose = {
     { id: 'ear-pressure-pose__cue-3', kind: 'alignment', en: 'Keep your hands interlaced behind you, or wrap your arms around the backs of your knees.', vi: 'Giữ hai tay đan sau lưng, hoặc vòng tay ôm phía sau gối.' },
     { id: 'ear-pressure-pose__cue-4', kind: 'alignment', en: 'Point your toes, and let the tops of your feet rest on the floor.', vi: 'Duỗi mũi chân, và để mu bàn chân nằm trên sàn.' },
     { id: 'ear-pressure-pose__cue-5', kind: 'soften', en: 'Let your knees gently close over your ears, and listen inward.', vi: 'Để gối khép nhẹ lên tai, và lắng nghe vào bên trong.' },
-    { id: 'ear-pressure-pose__cue-6', kind: 'breath', en: 'Stay for eight breaths, breathing into your back.', vi: 'Giữ tám nhịp thở, thở vào lưng.' },
+    { id: 'ear-pressure-pose__cue-6', kind: 'breath', en: 'Stay for eight breaths, breathing into your back.', vi: 'Giữ tám nhịp thở, hướng hơi thở vào lưng.' },
     { id: 'ear-pressure-pose__cue-7', kind: 'safety', en: 'Keep the weight on your shoulders. If your neck hurts, come out.', vi: 'Giữ trọng lượng trên vai. Nếu cổ đau, thoát thế.' },
     { id: 'ear-pressure-pose__cue-8', kind: 'transition', en: 'Inhale, bring your hands to your back and lift your legs back up.', vi: 'Hít vào, đặt tay đỡ lưng và nâng hai chân trở lại lên trên.' },
   ],

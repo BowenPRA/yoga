@@ -22,7 +22,7 @@ export const wideLeggedFold = {
     drishti: 'nose',
     note: {
       en: 'Four versions in a row, each of five vinyasas with the state on trīṇi, five breaths: A, hands on the floor; B, hands on your waist; C, fingers interlaced behind you; D, holding your big toes. The teacher counts each version from ekam, and at the state says “Trīṇi, exhale, head down”.',
-      vi: 'Bốn biến thể liên tiếp, mỗi biến thể năm vinyasa với trạng thái ở trīṇi, năm nhịp thở: A, tay đặt xuống sàn; B, tay chống eo; C, đan tay sau lưng; D, nắm ngón chân cái. Giáo viên đếm mỗi biến thể từ ekam, và đến trạng thái thì nói “Trīṇi, thở ra, cúi đầu xuống”.',
+      vi: 'Bốn biến thể liên tiếp, mỗi biến thể năm vinyasa, giữ thế ở trīṇi, năm nhịp thở: A, tay đặt xuống sàn; B, tay chống eo; C, đan tay sau lưng; D, nắm ngón chân cái. Giáo viên đếm mỗi biến thể từ ekam, và đến chỗ giữ thế thì nói “Trīṇi, thở ra, cúi đầu xuống”.',
     },
   },
 

@@ -18,17 +18,17 @@ export const dragon = {
   },
   breath: {
     en: 'Breathe into the front of your back hip. On each exhale, let your hips sink a little lower.',
-    vi: 'Thở vào phía trước hông chân sau. Mỗi hơi thở ra, để hông hạ thấp thêm một chút.',
+    vi: 'Hướng hơi thở vào phía trước hông chân sau. Mỗi hơi thở ra, để hông hạ thấp thêm một chút.',
   },
   cues: [
-    { id: 'dragon__cue-1', kind: 'transition', en: 'From all fours, step your right foot forward between your hands.', vi: 'Từ tư thế bốn điểm, bước chân phải lên giữa hai tay.' },
+    { id: 'dragon__cue-1', kind: 'transition', en: 'From all fours, step your right foot forward between your hands.', vi: 'Từ tư thế cái bàn, bước chân phải lên giữa hai tay.' },
     { id: 'dragon__cue-2', kind: 'alignment', en: 'Pad your back knee with a blanket, and slide it back until the front of your left hip opens.', vi: 'Kê chăn dưới gối sau, rồi trượt gối lùi ra sau đến khi phía trước hông trái mở ra.' },
     { id: 'dragon__cue-3', kind: 'alignment', en: 'Rest your hands on blocks on either side of your front foot. This is Baby Dragon.', vi: 'Đặt hai tay lên gạch hai bên bàn chân trước. Đây là Rồng con.' },
     { id: 'dragon__cue-4', kind: 'soften', en: 'Let your hips sink to your edge, and let the weight do the work.', vi: 'Để hông chìm xuống đến ngưỡng của bạn, và để trọng lượng cơ thể làm việc.' },
     { id: 'dragon__cue-5', kind: 'breath', en: 'Halfway. Stay here, or come down onto your forearms for Dragon Flying Low.', vi: 'Được một nửa rồi. Ở yên đây, hoặc hạ xuống chống cẳng tay để vào Rồng bay thấp.' },
     { id: 'dragon__cue-6', kind: 'alignment', en: 'For Winged Dragon, let your front knee roll out onto the outer edge of your foot.', vi: 'Với Rồng có cánh, để gối trước ngả ra ngoài, tựa lên cạnh ngoài bàn chân.' },
     { id: 'dragon__cue-7', kind: 'safety', en: 'If your back knee complains, fold the blanket thicker.', vi: 'Nếu gối sau khó chịu, gấp chăn dày thêm.' },
-    { id: 'dragon__cue-8', kind: 'transition', en: 'To come out, walk your hands back under your shoulders, and step back to all fours.', vi: 'Để thoát thế, đưa hai tay lùi về dưới vai, và lùi chân về tư thế bốn điểm.' },
+    { id: 'dragon__cue-8', kind: 'transition', en: 'To come out, walk your hands back under your shoulders, and step back to all fours.', vi: 'Để thoát thế, đưa hai tay lùi về dưới vai, và lùi chân về tư thế cái bàn.' },
     { id: 'dragon__cue-9', kind: 'soften', en: 'Rest in Child’s Pose, and notice the rebound in the front of your hip.', vi: 'Nghỉ ở tư thế Em bé, và cảm nhận dư âm ở phía trước hông.' },
   ],
   modifications: [

@@ -52,7 +52,7 @@ export const kneeLesson = {
       type: 'term', term: 'knee',
       figure: { kind: 'skeleton', window: SKELETON, highlight: ['knee'] },
       cues: ['knee__cue-1', 'knee__cue-2'],
-      care: { id: 'knee__care-knee', en: 'Your knee should never hurt. If it does, come out, and we’ll find another way.', vi: 'Gối không bao giờ nên bị đau. Nếu đau, hãy thoát thế, rồi chúng ta sẽ tìm cách khác.' },
+      care: { id: 'knee__care-knee', en: 'Your knee should never hurt. If it does, come out, and we’ll find another way.', vi: 'Đầu gối không bao giờ được đau. Nếu đau, hãy thoát thế, rồi chúng ta tìm cách khác.' },
     },
     {
       type: 'activity',
@@ -124,7 +124,7 @@ export const kneeLesson = {
       type: 'term', term: 'extension',
       figure: { kind: 'front', window: FRONT, highlight: ['quadriceps'] },
       cues: ['extension__cue-1', 'extension__cue-2'],
-      care: { id: 'knee__care-extension', en: 'If your knees lock back when you straighten your legs, keep a micro-bend.', vi: 'Nếu gối bị ưỡn ra sau khi duỗi thẳng chân, hãy giữ gối hơi chùng.' },
+      care: { id: 'knee__care-extension', en: 'If your knees lock back when you straighten your legs, keep a micro-bend.', vi: 'Nếu duỗi thẳng chân mà gối bị khoá, ưỡn ra sau, hãy giữ gối hơi chùng.' },
     },
     {
       type: 'activity',
@@ -272,7 +272,7 @@ export const kneeLesson = {
       type: 'activity',
       activity: {
         type: 'sayit', id: 'knee-say',
-        prompt: { vi: 'Nghe mẫu, rồi ghi âm chính bạn. Gemini sẽ nói bằng tiếng Việt cần sửa gì.', en: 'Hear the model, then record yourself. Gemini will tell you in Vietnamese what to fix.' },
+        prompt: { vi: 'Nghe mẫu, rồi ghi âm chính bạn. Gemini sẽ nói bằng tiếng Việt xem cần sửa gì.', en: 'Hear the model, then record yourself. Gemini will tell you in Vietnamese what to fix.' },
         items: [
           { clip: 'femur', text: 'thigh bone', say: 'THY bohn', credit: 'femur' },
           { clip: 'kneecap', text: 'kneecap', say: 'NEE-kap', credit: 'kneecap' },

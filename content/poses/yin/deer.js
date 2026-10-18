@@ -17,7 +17,7 @@ export const deer = {
   },
   breath: {
     en: 'Breathe evenly into both hips. Let each exhale invite the back hip to soften.',
-    vi: 'Thở đều vào cả hai bên hông. Để mỗi hơi thở ra mời hông sau mềm ra.',
+    vi: 'Thở đều, hướng hơi thở vào cả hai bên hông. Để mỗi hơi thở ra giúp hông sau mềm ra.',
   },
   cues: [
     { id: 'deer__cue-1', kind: 'transition', en: 'Sit with your knees bent and your feet wide, then let both knees fall to the right.', vi: 'Ngồi co gối, hai bàn chân đặt rộng, rồi để cả hai gối ngả sang phải.' },

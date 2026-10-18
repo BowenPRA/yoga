@@ -17,13 +17,13 @@ export const downwardDog = {
     drishti: 'navel',
     note: {
       en: 'Ṣaṭ, the sixth vinyasa of Surya Namaskara A, is the state of the salutation: the one place you stay, for five breaths (caturdaśa, the fourteenth, in Surya Namaskara B). The teacher counts “Ṣaṭ, exhale”, then the five breaths.',
-      vi: 'Ṣaṭ, vinyasa thứ sáu của Chào mặt trời A, là trạng thái của cả chuỗi: nơi duy nhất bạn ở lại, trong năm nhịp thở (trong Chào mặt trời B là caturdaśa, vinyasa thứ mười bốn). Giáo viên đếm “Ṣaṭ, thở ra”, rồi đếm năm nhịp thở.',
+      vi: 'Ṣaṭ, vinyasa thứ sáu của Chào mặt trời A, là chỗ giữ thế của cả chuỗi: nơi duy nhất bạn dừng lại, trong năm nhịp thở (trong Chào mặt trời B là caturdaśa, vinyasa thứ mười bốn). Giáo viên đếm “Ṣaṭ, thở ra”, rồi đếm năm nhịp thở.',
     },
   },
 
   breath: {
     en: 'Exhale to lift your hips up and back. Stay for five breaths, breathing into the back of your body.',
-    vi: 'Thở ra, nâng hông lên và ra sau. Giữ năm nhịp thở, hít thở hướng vào phía sau cơ thể.',
+    vi: 'Thở ra, nâng hông lên và ra sau. Giữ năm nhịp thở, hướng hơi thở vào phía sau lưng.',
   },
 
   cues: [
@@ -32,8 +32,8 @@ export const downwardDog = {
     { id: 'downward-dog__cue-3', kind: 'alignment', en: 'Let your head hang between your arms, and gaze toward your navel.', vi: 'Để đầu buông giữa hai cánh tay, và nhìn về phía rốn.' },
     { id: 'downward-dog__cue-4', kind: 'alignment', en: 'Rotate your upper arms outward to make space for your neck.', vi: 'Xoay cánh tay trên ra ngoài để tạo khoảng trống cho cổ.' },
     { id: 'downward-dog__cue-5', kind: 'alignment', en: 'Reach your heels toward the floor. They don’t have to touch.', vi: 'Hướng gót chân xuống sàn. Không nhất thiết phải chạm.' },
-    { id: 'downward-dog__cue-6', kind: 'soften', en: 'Bend your knees as much as you need to keep your back long.', vi: 'Chùng gối bao nhiêu tuỳ cần để giữ lưng dài.' },
-    { id: 'downward-dog__cue-7', kind: 'breath', en: 'Stay for five breaths. Breathe into the back of your body.', vi: 'Giữ năm nhịp thở. Hít thở hướng vào phía sau cơ thể.' },
+    { id: 'downward-dog__cue-6', kind: 'soften', en: 'Bend your knees as much as you need to keep your back long.', vi: 'Cứ chùng gối, bao nhiêu cũng được, để giữ lưng dài.' },
+    { id: 'downward-dog__cue-7', kind: 'breath', en: 'Stay for five breaths. Breathe into the back of your body.', vi: 'Giữ năm nhịp thở. Hướng hơi thở vào phía sau lưng.' },
     { id: 'downward-dog__cue-8', kind: 'safety', en: 'If your shoulders pinch, move your hands a little wider apart.', vi: 'Nếu vai bị kẹt nhói, đặt hai tay rộng ra một chút.' },
     { id: 'downward-dog__cue-9', kind: 'transition', en: 'At the end of your exhale, bend your knees and look between your hands.', vi: 'Cuối hơi thở ra, chùng gối và nhìn về khoảng giữa hai tay.' },
   ],

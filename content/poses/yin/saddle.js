@@ -18,7 +18,7 @@ export const saddle = {
   },
   breath: {
     en: 'Breathe into the front of your thighs and your belly. Let each exhale ease you back a little.',
-    vi: 'Thở vào mặt trước đùi và bụng. Để mỗi hơi thở ra giúp bạn ngả về sau thêm một chút.',
+    vi: 'Hướng hơi thở vào mặt trước đùi và bụng. Để mỗi hơi thở ra giúp bạn ngả về sau thêm một chút.',
   },
   cues: [
     { id: 'saddle__cue-1', kind: 'transition', en: 'Kneel with a bolster lengthways behind you, and sit between your heels or on them.', vi: 'Quỳ với gối ôm đặt dọc phía sau, ngồi giữa hai gót chân hoặc ngồi lên gót.' },

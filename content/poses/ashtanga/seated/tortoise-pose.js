@@ -26,7 +26,7 @@ export const tortoisePose = {
   },
   breath: {
     en: 'Exhale as you slide your arms under your knees and lower your chest. Stay for five breaths in each pose, breathing into your back.',
-    vi: 'Thở ra khi luồn tay dưới gối và hạ ngực xuống. Giữ năm nhịp thở ở mỗi tư thế, thở vào lưng.',
+    vi: 'Thở ra khi luồn tay dưới gối và hạ ngực xuống. Giữ năm nhịp thở ở mỗi tư thế, hướng hơi thở vào lưng.',
   },
   cues: [
     { id: 'tortoise-pose__cue-1', kind: 'transition', en: 'From Downward Dog, jump your feet around your arms and sit down, knees bent.', vi: 'Từ Chó úp mặt, nhảy hai bàn chân ra ngoài hai tay và ngồi xuống, gối co.' },
@@ -35,7 +35,7 @@ export const tortoisePose = {
     { id: 'tortoise-pose__cue-4', kind: 'alignment', en: 'Straighten your legs, pressing your heels forward and away.', vi: 'Duỗi thẳng chân, đẩy gót chân ra xa về phía trước.' },
     { id: 'tortoise-pose__cue-5', kind: 'alignment', en: 'Rest your chin or your forehead on the floor.', vi: 'Đặt cằm hoặc trán xuống sàn.' },
     { id: 'tortoise-pose__cue-6', kind: 'soften', en: 'Let your back round and soften. Don’t force your chest down.', vi: 'Để lưng cong tròn và mềm ra. Đừng ép ngực xuống.' },
-    { id: 'tortoise-pose__cue-7', kind: 'breath', en: 'Stay for five breaths, breathing into your back.', vi: 'Giữ năm nhịp thở, thở vào lưng.' },
+    { id: 'tortoise-pose__cue-7', kind: 'breath', en: 'Stay for five breaths, breathing into your back.', vi: 'Giữ năm nhịp thở, hướng hơi thở vào lưng.' },
     { id: 'tortoise-pose__cue-8', kind: 'safety', en: 'If you feel strain in your lower back or your knees, keep your knees bent.', vi: 'Nếu thấy căng ở lưng dưới hoặc ở gối, hãy giữ gối co.' },
     { id: 'tortoise-pose__cue-9', kind: 'transition', en: 'For Sleeping Tortoise, bend your knees, bind your hands behind your back, and cross your feet.', vi: 'Vào Rùa ngủ: co gối, khoá hai tay sau lưng và bắt chéo hai bàn chân.' },
   ],

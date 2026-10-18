@@ -19,7 +19,7 @@ export const locustPose = {
     { id: 'locust-pose__cue-5', kind: 'alignment', en: 'Keep your legs hip-width apart, and lift from your inner thighs.', vi: 'Giữ hai chân rộng bằng hông, và nâng từ mặt trong đùi.' },
     { id: 'locust-pose__cue-6', kind: 'soften', en: 'Keep your neck long, and soften your jaw.', vi: 'Giữ cổ dài, và thả lỏng hàm.' },
     { id: 'locust-pose__cue-7', kind: 'breath', en: 'Stay for three to five breaths.', vi: 'Giữ ba đến năm nhịp thở.' },
-    { id: 'locust-pose__cue-8', kind: 'safety', en: 'If your lower back pinches, keep your legs down and lift only your chest.', vi: 'Nếu lưng dưới bị chèn, giữ chân trên sàn và chỉ nâng ngực.' },
+    { id: 'locust-pose__cue-8', kind: 'safety', en: 'If your lower back pinches, keep your legs down and lift only your chest.', vi: 'Nếu lưng dưới bị nhói, giữ chân trên sàn và chỉ nâng ngực.' },
     { id: 'locust-pose__cue-9', kind: 'transition', en: 'Exhale, lower down, and rest with your head turned to one side.', vi: 'Thở ra, hạ xuống, và nghỉ với đầu quay sang một bên.' },
   ],
   modifications: [
@@ -28,8 +28,8 @@ export const locustPose = {
     { id: 'locust-pose__mod-3', en: 'Place a folded blanket under your hips for padding.', vi: 'Kê chăn gấp dưới hông cho êm.', props: ['blanket'] },
   ],
   safety: [
-    { id: 'locust-pose__safe-1', en: 'If you have a lower back injury, keep the lift small, and come down at any pinching.', vi: 'Nếu bạn có chấn thương lưng dưới, nâng thấp thôi, và hạ xuống khi thấy bị chèn.' },
-    { id: 'locust-pose__safe-2', en: 'In pregnancy, skip lying on your belly. On all fours, lift one arm and the opposite leg instead.', vi: 'Khi mang thai, tránh nằm sấp. Thay vào đó, ở tư thế bốn điểm, nâng một tay và chân đối diện.' },
+    { id: 'locust-pose__safe-1', en: 'If you have a lower back injury, keep the lift small, and come down at any pinching.', vi: 'Nếu bạn có chấn thương lưng dưới, nâng thấp thôi, và hạ xuống khi thấy bị nhói.' },
+    { id: 'locust-pose__safe-2', en: 'In pregnancy, skip lying on your belly. On all fours, lift one arm and the opposite leg instead.', vi: 'Khi mang thai, tránh nằm sấp. Thay vào đó, ở tư thế cái bàn, nâng một tay và chân đối diện.' },
   ],
   muscles: {
     working: ['erector-spinae', 'gluteus-maximus', 'hamstrings', 'rhomboids'],

@@ -16,7 +16,7 @@ export const standingForwardFold = {
     drishti: 'nose',
     note: {
       en: 'Dve, the second vinyasa of Surya Namaskara A, on an exhale, and again aṣṭau, the eighth; in Surya Namaskara B it is dve and ṣoḍaśa. A passing count with your gaze at your nose; the teacher counts “Dve, exhale”.',
-      vi: 'Dve, vinyasa thứ hai của Chào mặt trời A, khi thở ra, và trở lại ở aṣṭau, vinyasa thứ tám; trong Chào mặt trời B là dve và ṣoḍaśa. Một nhịp đi qua, mắt nhìn chóp mũi; giáo viên đếm “Dve, thở ra”.',
+      vi: 'Dve, vinyasa thứ hai của Chào mặt trời A, khi thở ra, và trở lại ở aṣṭau, vinyasa thứ tám; trong Chào mặt trời B là dve và ṣoḍaśa. Chỉ đi qua trong một nhịp, mắt nhìn chóp mũi; giáo viên đếm “Dve, thở ra”.',
     },
   },
 
@@ -28,9 +28,9 @@ export const standingForwardFold = {
   cues: [
     { id: 'standing-forward-fold__cue-1', kind: 'transition', en: 'Exhale, hinge at your hips and fold forward.', vi: 'Thở ra, gập người về trước từ khớp háng.' },
     { id: 'standing-forward-fold__cue-2', kind: 'alignment', en: 'Bring your fingertips or palms to the floor beside your feet.', vi: 'Đặt đầu ngón tay hoặc lòng bàn tay xuống sàn cạnh bàn chân.' },
-    { id: 'standing-forward-fold__cue-3', kind: 'alignment', en: 'Bend your knees as much as you need to keep your back long.', vi: 'Chùng gối bao nhiêu tuỳ cần để giữ lưng dài.' },
+    { id: 'standing-forward-fold__cue-3', kind: 'alignment', en: 'Bend your knees as much as you need to keep your back long.', vi: 'Cứ chùng gối, bao nhiêu cũng được, để giữ lưng dài.' },
     { id: 'standing-forward-fold__cue-4', kind: 'alignment', en: 'Lift your sitting bones, and let your head hang heavy.', vi: 'Nâng xương ngồi lên, và để đầu buông nặng.' },
-    { id: 'standing-forward-fold__cue-5', kind: 'alignment', en: 'Shift your weight a little forward, toward the balls of your feet.', vi: 'Dồn trọng lượng hơi về trước, lên phía gốc các ngón chân.' },
+    { id: 'standing-forward-fold__cue-5', kind: 'alignment', en: 'Shift your weight a little forward, toward the balls of your feet.', vi: 'Dồn trọng lượng hơi về trước, về phía các ngón chân.' },
     { id: 'standing-forward-fold__cue-6', kind: 'soften', en: 'Soften the back of your neck, and let your shoulders drop.', vi: 'Thả lỏng phía sau cổ, và để vai buông xuống.' },
     { id: 'standing-forward-fold__cue-7', kind: 'breath', en: 'Let the exhale fold you a little deeper.', vi: 'Để hơi thở ra đưa bạn gập sâu thêm một chút.' },
     { id: 'standing-forward-fold__cue-8', kind: 'safety', en: 'If your lower back complains, bend your knees more.', vi: 'Nếu lưng dưới khó chịu, chùng gối nhiều hơn.' },

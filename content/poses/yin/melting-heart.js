@@ -20,15 +20,15 @@ export const meltingHeart = {
   },
   breath: {
     en: 'Breathe into your upper back and the space under your arms. Let each exhale melt your chest toward the floor.',
-    vi: 'Thở vào lưng trên và khoảng dưới cánh tay. Để mỗi hơi thở ra làm ngực tan chảy xuống sàn.',
+    vi: 'Hướng hơi thở vào lưng trên và vùng nách. Để mỗi hơi thở ra làm ngực tan chảy xuống sàn.',
   },
   cues: [
-    { id: 'melting-heart__cue-1', kind: 'transition', en: 'Come onto all fours, and pad your knees with a blanket.', vi: 'Về tư thế bốn điểm, và kê chăn dưới gối.' },
+    { id: 'melting-heart__cue-1', kind: 'transition', en: 'Come onto all fours, and pad your knees with a blanket.', vi: 'Về tư thế cái bàn, và kê chăn dưới gối.' },
     { id: 'melting-heart__cue-2', kind: 'alignment', en: 'Keep your hips over your knees, and walk your hands forward.', vi: 'Giữ hông thẳng trên gối, và từ từ bước hai tay về phía trước.' },
     { id: 'melting-heart__cue-3', kind: 'transition', en: 'Let your chest sink toward the floor. Rest your forehead, or your chin, on the mat.', vi: 'Để ngực chìm xuống sàn. Đặt trán, hoặc cằm, xuống thảm.' },
     { id: 'melting-heart__cue-4', kind: 'soften', en: 'Find your edge, then let your arms and shoulders go soft.', vi: 'Tìm ngưỡng của bạn, rồi để hai tay và vai mềm ra.' },
     { id: 'melting-heart__cue-5', kind: 'soften', en: 'Let your heart melt down. There’s nothing to hold.', vi: 'Để trái tim tan chảy xuống. Không cần giữ gì cả.' },
-    { id: 'melting-heart__cue-6', kind: 'breath', en: 'Halfway there. Breathe into your upper back, and notice what has softened.', vi: 'Được một nửa rồi. Thở vào lưng trên, và để ý những gì đã mềm ra.' },
+    { id: 'melting-heart__cue-6', kind: 'breath', en: 'Halfway there. Breathe into your upper back, and notice what has softened.', vi: 'Được một nửa rồi. Hướng hơi thở vào lưng trên, và để ý xem chỗ nào đã mềm ra.' },
     { id: 'melting-heart__cue-7', kind: 'safety', en: 'If your hands tingle or your shoulders pinch, widen your arms or bend your elbows.', vi: 'Nếu tay bị tê hoặc vai bị nhói, mở rộng hai tay hoặc gập khuỷu tay.' },
     { id: 'melting-heart__cue-8', kind: 'transition', en: 'To come out, slowly walk your hands back, and sit back toward your heels.', vi: 'Để thoát thế, từ từ đưa tay lùi về, và ngồi lùi về phía gót chân.' },
     { id: 'melting-heart__cue-9', kind: 'soften', en: 'Rest in Child’s Pose, and feel the rebound across your shoulders.', vi: 'Nghỉ ở tư thế Em bé, và cảm nhận dư âm lan qua vai.' },
