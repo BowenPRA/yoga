@@ -357,6 +357,62 @@ for (const g of GOALS) for (const style of ['vinyasa', 'yin']) {
   for (const n of checkPlan(plan)) warn(`plan ${g.id} (${style}): ${n.kind} ${n.pose}`)
 }
 
+// ── sounds (Speech › Sounds): BEGIN block owned by the Sounds work ────────
+// content/sounds.js: five pronunciation sets. Ids unique, a clip either one
+// the content already makes (and saying the same words) or a new
+// `sound__<slug>` line, both languages present, the focus found in the
+// words, a stressed respelling on every stress item, and the register.
+{
+  const { SOUNDS, SOUND_CLIP, focusRanges, soundClips } = await import('../content/sounds.js')
+  const textOf = new Map(allClips().map((c) => [c.id, c.text]))
+  const norm = (s) => String(s || '').replace(/\s+/g, ' ').trim()
+  const setIds = new Set()
+  const itemIds = new Set()
+  const newText = new Map()
+  const checkLine = (w, line) => {
+    if (!line.clip) { err(`${w}: clip missing`); return }
+    if (line.clip.startsWith('sound__')) {
+      if (!SOUND_CLIP.test(line.clip)) err(`${w}: clip "${line.clip}" should be sound__<slug> (lowercase, hyphens)`)
+      if (textOf.has(line.clip)) err(`${w}: clip "${line.clip}" is also made by other content`)
+      if (newText.has(line.clip) && newText.get(line.clip) !== norm(line.en)) err(`${w}: clip "${line.clip}" says "${newText.get(line.clip)}" elsewhere but "${line.en}" here`)
+      newText.set(line.clip, norm(line.en))
+    } else if (!textOf.has(line.clip)) err(`${w}: clip "${line.clip}" does not exist (a new line needs a sound__<slug> id)`)
+    else if (norm(textOf.get(line.clip)) !== norm(line.en)) warn(`${w}: the clip "${line.clip}" says "${textOf.get(line.clip)}" but the item says "${line.en}"`)
+    checkEn(`${w}.en`, line.en)
+    checkVi(`${w}.vi`, line.vi)
+    if (!line.focus || !(Array.isArray(line.focus) ? line.focus.length : true)) err(`${w}: focus missing`)
+    else if (!focusRanges(line.en, line.focus)) err(`${w}: focus ${JSON.stringify(line.focus)} is not found, in order, in "${line.en}"`)
+    if (line.say !== undefined && (typeof line.say !== 'string' || !line.say.trim())) err(`${w}: say is empty`)
+  }
+  if (!Array.isArray(SOUNDS) || SOUNDS.length !== 5) err(`sounds: expected five sets, one per target, found ${SOUNDS?.length}`)
+  for (const set of SOUNDS || []) {
+    const w = `sounds ${set.id}`
+    if (!set.id || !/^[a-z0-9]+(-[a-z0-9]+)*$/.test(set.id)) err(`${w}: bad id`)
+    if (setIds.has(set.id)) err(`${w}: duplicate set id`)
+    setIds.add(set.id)
+    checkBi(`${w}.title`, set.title)
+    checkBi(`${w}.note`, set.note)
+    if (!set.sample) warn(`${w}: no sample words for its card`)
+    if (!Array.isArray(set.items) || !set.items.length) { err(`${w}: no items`); continue }
+    if (set.items.length < 8 || set.items.length > 14) warn(`${w}: ${set.items.length} items (expected 8 to 14)`)
+    for (const it of set.items) {
+      const iw = `${w} ${it.id}`
+      if (!it.id || !/^[a-z0-9]+(-[a-z0-9]+)*$/.test(it.id)) err(`${iw}: bad id`)
+      if (itemIds.has(it.id)) err(`${iw}: duplicate item id`)
+      itemIds.add(it.id)
+      checkLine(iw, it)
+      if (it.tip) checkBi(`${iw}.tip`, it.tip)
+      else warn(`${iw}: no tip`)
+      if (it.vs) { checkLine(`${iw}.vs`, it.vs); if (it.vs.clip === it.clip) err(`${iw}: vs plays the same clip`) }
+      if (set.id === 'stress' && !/[A-Z]{2,}/.test(it.say || '')) err(`${iw}: a stress item needs a respelling with the stressed syllable in capitals`)
+    }
+  }
+  const made = soundClips()
+  if (made.some((c) => c.kind !== 'sound' || !c.text)) err('sounds: soundClips() must give kind "sound" and text for every new line')
+  console.log(`sounds: ${SOUNDS.length} sets, ${itemIds.size} items, ${made.length} new sound__ lines`)
+}
+// ── sounds: END ────────────────────────────────────────────────────────────
+
 // ── report ───────────────────────────────────────────────────────────────
 const clips = allClips()
 console.log(`${POSES.length} poses, ${TERMS.length} terms, ${PHRASE_GROUPS.reduce((n, g) => n + g.lines.length, 0)} phrase lines in ${PHRASE_GROUPS.length} groups, ${LESSONS.filter((l) => l.slides).length}/${LESSONS.length} lessons, ${clips.length} clips`)
